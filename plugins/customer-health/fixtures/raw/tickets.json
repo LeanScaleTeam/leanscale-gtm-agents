@@ -1,0 +1,14 @@
+[
+  { "id": "TCK-4411", "account_id": "001Kx000005NwM1QAK", "subject": "Territory rule not applying to two named accounts", "severity": "normal", "status": "closed", "opened_at": "2026-06-04", "closed_at": "2026-06-06" },
+
+  { "id": "TCK-4460", "account_id": "001Kx000005NwMLQA0", "subject": "Dashboard totals do not reconcile with CRM report", "severity": "critical", "status": "open", "opened_at": "2026-05-04", "closed_at": null },
+  { "id": "TCK-4471", "account_id": "001Kx000005NwMLQA0", "subject": "Attribution model recalculation timing out", "severity": "high", "status": "closed", "opened_at": "2026-04-14", "closed_at": "2026-04-29" },
+  { "id": "TCK-4488", "account_id": "001Kx000005NwMLQA0", "subject": "Scheduled export failing silently", "severity": "normal", "status": "closed", "opened_at": "2026-05-18", "closed_at": "2026-05-25" },
+
+  { "id": "TCK-4502", "account_id": "001Kx000005NwLgQAK", "subject": "Requesting an additional sandbox refresh", "severity": "low", "status": "closed", "opened_at": "2026-07-02", "closed_at": "2026-07-03" },
+
+  { "id": "TCK-4520", "account_id": "001Kx000005NwMVQA0", "subject": "Duplicate lead assignment — two reps, one account", "severity": "high", "status": "closed", "opened_at": "2026-05-19", "closed_at": "2026-06-02" },
+  { "id": "TCK-4544", "account_id": "001Kx000005NwMVQA0", "subject": "Duplicate lead assignment recurred after fix", "severity": "high", "status": "open", "opened_at": "2026-08-03", "closed_at": null },
+  { "id": "TCK-4551", "account_id": "001Kx000005NwMVQA0", "subject": "Assignment audit log missing entries", "severity": "normal", "status": "closed", "opened_at": "2026-06-22", "closed_at": "2026-07-01" },
+  { "id": "TCK-4560", "account_id": "001Kx000005NwMVQA0", "subject": "Round-robin skipping a rep on holiday", "severity": "normal", "status": "closed", "opened_at": "2026-07-14", "closed_at": "2026-07-18" }
+]

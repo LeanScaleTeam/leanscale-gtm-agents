@@ -1,0 +1,64 @@
+{
+  "crm": "salesforce",
+  "captured_at": "2026-08-08T13:00:00Z",
+  "note": "Field metadata from the CRM describe, captured during :setup and refreshed on every run. 'updateable: false' and 'picklist_values' are what stop a batch half-failing in the API.",
+  "objects": {
+    "Opportunity": {
+      "label": "Opportunity",
+      "fields": {
+        "NextStep": { "label": "Next Step", "type": "text", "length": 255, "updateable": true },
+        "Next_Step_Date__c": { "label": "Next Step Date", "type": "date", "updateable": true },
+        "Primary_Competitor__c": {
+          "label": "Primary Competitor", "type": "picklist", "updateable": true,
+          "picklist_values": ["Clearwater", "Beacon", "Orbital", "None", "Unknown"]
+        },
+        "Identified_Pain__c": { "label": "Identified Pain", "type": "multiline", "length": 32000, "updateable": true },
+        "Metrics__c": { "label": "Metrics", "type": "multiline", "length": 32000, "updateable": true },
+        "Economic_Buyer__c": { "label": "Economic Buyer", "type": "text", "length": 255, "updateable": true },
+        "Decision_Criteria__c": { "label": "Decision Criteria", "type": "multiline", "length": 32000, "updateable": true },
+        "Decision_Process__c": { "label": "Decision Process", "type": "multiline", "length": 32000, "updateable": true },
+        "Paper_Process__c": { "label": "Paper Process", "type": "multiline", "length": 32000, "updateable": true },
+        "Champion__c": { "label": "Champion", "type": "text", "length": 255, "updateable": true },
+        "Decision_Timeline__c": { "label": "Decision Timeline", "type": "text", "length": 255, "updateable": true },
+        "Description": { "label": "Description", "type": "multiline", "length": 32000, "updateable": true },
+        "Loss_Reason__c": { "label": "Loss Reason", "type": "picklist", "updateable": true, "picklist_values": ["Price", "Competitor", "No Decision", "Security"] },
+        "Amount": { "label": "Amount", "type": "currency", "updateable": true },
+        "CloseDate": { "label": "Close Date", "type": "date", "updateable": true },
+        "StageName": { "label": "Stage", "type": "picklist", "updateable": true, "picklist_values": ["Discovery", "Demo", "Technical Validation", "Proposal", "Negotiation", "Renewal", "Closed Won", "Closed Lost"] },
+        "LastActivityDate": { "label": "Last Activity", "type": "date", "updateable": false, "note": "roll-up, read-only" },
+        "ExpectedRevenue": { "label": "Expected Revenue", "type": "currency", "updateable": false, "note": "formula" }
+      }
+    },
+    "Task": {
+      "label": "Task",
+      "fields": {
+        "Subject": { "label": "Subject", "type": "text", "length": 255, "updateable": true },
+        "Description": { "label": "Comments", "type": "multiline", "length": 32000, "updateable": true },
+        "ActivityDate": { "label": "Due Date", "type": "date", "updateable": true },
+        "Status": { "label": "Status", "type": "picklist", "updateable": true, "picklist_values": ["Not Started", "In Progress", "Completed", "Deferred"] },
+        "Type": { "label": "Type", "type": "picklist", "updateable": true, "picklist_values": ["Call", "Email", "Meeting", "Other"] },
+        "WhatId": { "label": "Related To", "type": "reference", "updateable": true },
+        "WhoId": { "label": "Name", "type": "reference", "updateable": true }
+      }
+    },
+    "Contact": {
+      "label": "Contact",
+      "fields": {
+        "FirstName": { "label": "First Name", "type": "text", "length": 40, "updateable": true },
+        "LastName": { "label": "Last Name", "type": "text", "length": 80, "updateable": true },
+        "Email": { "label": "Email", "type": "email", "length": 80, "updateable": true },
+        "Title": { "label": "Title", "type": "text", "length": 128, "updateable": true },
+        "AccountId": { "label": "Account", "type": "reference", "updateable": true }
+      }
+    },
+    "OpportunityContactRole": {
+      "label": "Opportunity Contact Role",
+      "fields": {
+        "ContactId": { "label": "Contact", "type": "reference", "updateable": true },
+        "OpportunityId": { "label": "Opportunity", "type": "reference", "updateable": true },
+        "Role": { "label": "Role", "type": "picklist", "updateable": true, "picklist_values": ["Champion", "Economic Buyer", "Decision Maker", "Influencer", "Technical Buyer", "Evaluator"] },
+        "IsPrimary": { "label": "Primary", "type": "boolean", "updateable": true }
+      }
+    }
+  }
+}

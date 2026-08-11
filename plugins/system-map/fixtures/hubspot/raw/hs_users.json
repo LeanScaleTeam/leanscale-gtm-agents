@@ -1,0 +1,11 @@
+{
+  "total": 6,
+  "results": [
+    { "id": "101", "email": "morgan.diaz@beaconrobotics.com", "firstName": "Morgan", "lastName": "Diaz", "roleId": "1", "primaryTeamId": "9001", "superAdmin": true },
+    { "id": "102", "email": "sam.oyelaran@beaconrobotics.com", "firstName": "Sam", "lastName": "Oyelaran", "roleId": "2", "primaryTeamId": "9002", "superAdmin": false },
+    { "id": "103", "email": "priya.venkat@beaconrobotics.com", "firstName": "Priya", "lastName": "Venkat", "roleId": "1", "primaryTeamId": "9001", "superAdmin": true },
+    { "id": "104", "email": "revops-integrations@beaconrobotics.com", "firstName": "RevOps", "lastName": "Integrations", "roleId": "1", "primaryTeamId": "9001", "superAdmin": true },
+    { "id": "105", "email": "data-sync-svc@beaconrobotics.com", "firstName": "Data", "lastName": "Sync", "roleId": "2", "primaryTeamId": "9003", "superAdmin": false },
+    { "id": "106", "email": "jordan.wu@beaconrobotics.com", "firstName": "Jordan", "lastName": "Wu", "roleId": "2", "primaryTeamId": "9002", "superAdmin": false }
+  ]
+}

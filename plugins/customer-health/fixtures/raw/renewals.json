@@ -1,0 +1,56 @@
+[
+  {
+    "attributes": { "type": "Opportunity" },
+    "record_kind": "opportunity",
+    "Id": "006Kx0000041aBcQAI",
+    "Name": "Northwind Logistics — FY27 Renewal",
+    "AccountId": "001Kx000005NwM1QAK",
+    "Amount": 264000,
+    "CloseDate": "2026-09-14",
+    "StageName": "Negotiation/Review",
+    "IsClosed": false,
+    "IsWon": false,
+    "Type": "Renewal",
+    "LastModifiedDate": "2026-06-30T16:11:00.000+0000"
+  },
+  {
+    "attributes": { "type": "Opportunity" },
+    "record_kind": "opportunity",
+    "Id": "006Kx0000041aBdQAI",
+    "Name": "Bluepeak Analytics — 2027 Renewal",
+    "AccountId": "001Kx000005NwMLQA0",
+    "Amount": 96000,
+    "CloseDate": "2026-12-01",
+    "StageName": "Discovery",
+    "IsClosed": false,
+    "IsWon": false,
+    "Type": "Renewal",
+    "LastModifiedDate": "2026-04-02T09:40:00.000+0000"
+  },
+  {
+    "attributes": { "type": "Opportunity" },
+    "record_kind": "opportunity",
+    "Id": "006Kx0000041aBeQAI",
+    "Name": "Cascadia Health Systems — 3yr Renewal",
+    "AccountId": "001Kx000005NwLgQAK",
+    "Amount": 420000,
+    "CloseDate": "2027-02-15",
+    "StageName": "Closed Won",
+    "IsClosed": true,
+    "IsWon": true,
+    "Type": "Renewal",
+    "LastModifiedDate": "2026-02-20T18:02:00.000+0000"
+  },
+  {
+    "attributes": { "type": "Contract" },
+    "record_kind": "contract",
+    "Id": "800Kx000000ZqAaQAK",
+    "ContractNumber": "00001284",
+    "AccountId": "001Kx000005NwMVQA0",
+    "ContractValue": 64000,
+    "StartDate": "2025-04-30",
+    "EndDate": "2027-04-30",
+    "Status": "Activated",
+    "ContractTerm": 24
+  }
+]

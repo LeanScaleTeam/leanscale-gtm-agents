@@ -1,0 +1,14 @@
+{
+  "totalSize": 8,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AaCAI", "AppName": "Gong for Salesforce", "UserId": "005A0000001gggGIAQ", "User": { "Name": "Gong Integration User" }, "LastUsedDate": "2026-08-10T02:14:00.000+0000", "UseCount": 184203 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AbCAI", "AppName": "ZoomInfo", "UserId": "005A0000001fffFIAQ", "User": { "Name": "ZoomInfo Integration" }, "LastUsedDate": "2026-08-10T03:00:11.000+0000", "UseCount": 96110 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AcCAI", "AppName": "Hightouch", "UserId": "005A0000001hhhHIAQ", "User": { "Name": "Hightouch Sync" }, "LastUsedDate": "2026-08-09T23:45:00.000+0000", "UseCount": 41288 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AdCAI", "AppName": "Fivetran", "UserId": "005A0000001lllLIAQ", "User": { "Name": "Fivetran Replication" }, "LastUsedDate": "2026-08-10T04:00:00.000+0000", "UseCount": 220994 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AeCAI", "AppName": "Marketo Sales Insight", "UserId": "005A0000001iiiIIAQ", "User": { "Name": "Marketo Sync" }, "LastUsedDate": "2025-11-02T01:05:00.000+0000", "UseCount": 8814 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AfCAI", "AppName": "Salesforce CLI", "UserId": "005A0000001aaaAIAQ", "User": { "Name": "Dana Whitfield" }, "LastUsedDate": "2026-08-07T09:02:00.000+0000", "UseCount": 612 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AgCAI", "AppName": "Chili Piper", "UserId": "005A0000001cccCIAQ", "User": { "Name": "Priya Raman" }, "LastUsedDate": "2026-07-30T11:00:00.000+0000", "UseCount": 15422 },
+    { "attributes": { "type": "OauthToken" }, "Id": "0Ge5f00000001AhCAI", "AppName": "Slack", "UserId": "005A0000001aaaAIAQ", "User": { "Name": "Dana Whitfield" }, "LastUsedDate": "2026-07-22T15:30:00.000+0000", "UseCount": 3301 }
+  ]
+}

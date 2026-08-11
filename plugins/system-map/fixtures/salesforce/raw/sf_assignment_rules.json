@@ -1,0 +1,9 @@
+{
+  "totalSize": 3,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "AssignmentRule" }, "Id": "01QA00000A01", "Name": "Standard Lead Assignment", "SobjectType": "Lead", "Active": true, "LastModifiedDate": "2026-03-05T10:00:00.000+0000", "LastModifiedBy": { "Name": "Priya Raman" } },
+    { "attributes": { "type": "AssignmentRule" }, "Id": "01QA00000A02", "Name": "Case Escalation Routing", "SobjectType": "Case", "Active": true, "LastModifiedDate": "2025-08-16T09:00:00.000+0000", "LastModifiedBy": { "Name": "Tom Okafor" } },
+    { "attributes": { "type": "AssignmentRule" }, "Id": "01QA00000A03", "Name": "Legacy Geo Assignment", "SobjectType": "Lead", "Active": false, "LastModifiedDate": "2021-05-04T09:00:00.000+0000", "LastModifiedBy": { "Name": "Marcus Bell" } }
+  ]
+}

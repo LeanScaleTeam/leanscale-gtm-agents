@@ -1,0 +1,95 @@
+{
+  "_comment": "stage-architect settings. Copied to ~/.leanscale-gtm/stage-architect.json by /stage-architect:setup. Edit by hand any time - every key is documented by the _<key>_help line under it. Nothing here is read from the plugin directory at run time.",
+
+  "crm": "salesforce",
+  "_crm_help": "salesforce | hubspot. Only used to pick default field names; the analysis itself is vendor-neutral.",
+
+  "pipelines_in_scope": ["default"],
+  "_pipelines_in_scope_help": "Pipeline ids to analyse. Salesforce orgs usually have one implicit pipeline ('default'); HubSpot orgs usually have several. The pipeline holding the most deals becomes the primary and gets the full analysis; the rest get headline numbers only.",
+
+  "history_lookback_days": 540,
+  "_history_lookback_days_help": "How far back to pull opportunities and stage history. 540 days (18 months) is the Salesforce field-history retention floor - going further back silently returns partial history and inflates every early-stage rate.",
+
+  "min_cohort_size": 30,
+  "_min_cohort_size_help": "Minimum number of RESOLVED deals a stage needs before its conversion rate is allowed to participate in the non-discriminating-pair test. Below this, two stages can look identical purely from small numbers. Raise it if your deal count is high; do not lower it below ~20.",
+
+  "equivalence_band_pp": 5.0,
+  "_equivalence_band_pp_help": "Two adjacent stages are only called non-discriminating if their forward conversion rates are within this many percentage points AND the difference is not statistically significant. Both conditions must hold - significance alone is not enough at large n.",
+
+  "significance_alpha": 0.05,
+  "_significance_alpha_help": "Two-proportion z-test threshold. p above this means 'we cannot tell these two stages apart'.",
+
+  "zero_dwell_hours": 24,
+  "_zero_dwell_hours_help": "A stage whose MEDIAN time-in-stage is under this many hours is a zero-dwell stage: deals are dragged through it for process compliance, not because anything happened.",
+
+  "skip_rate_flag_pct": 25.0,
+  "_skip_rate_flag_pct_help": "Flag a stage when this share or more of the deals that got past it never entered it.",
+
+  "regression_flag_pct": 8.0,
+  "_regression_flag_pct_help": "Flag backwards movement when this share or more of deals moved to an earlier stage at least once.",
+
+  "zombie_p90_multiple": 6.0,
+  "_zombie_p90_multiple_help": "Flag a stage when its p90 time-in-stage is this many times its median - the signature of a stage that quietly parks dead deals.",
+
+  "loss_reason_fill_floor_pct": 80.0,
+  "_loss_reason_fill_floor_pct_help": "Minimum acceptable fill rate on the closed-lost reason field. Below this, your loss analysis is a survey of the reps who bothered.",
+
+  "loss_reason_dominance_pct": 60.0,
+  "_loss_reason_dominance_pct_help": "If one loss-reason value covers this share or more of populated losses, the picklist is not discriminating - it is a shrug with a dropdown.",
+
+  "history_coverage_floor_pct": 80.0,
+  "_history_coverage_floor_pct_help": "Minimum share of in-window opportunities that must have at least one stage-history row before conversion rates are treated as fully measured.",
+
+  "sales_accepted_stage": "Qualification",
+  "_sales_accepted_stage_help": "The stage at which sales formally accepts the deal as real. Everything before it is marketing/SDR yield; everything after it is sales execution. Named exactly as it appears in the CRM.",
+
+  "lead_lifecycle_exists": true,
+  "_lead_lifecycle_exists_help": "True if a separate lead/contact lifecycle runs ahead of opportunity stages (MQL -> SQL -> SAL). When true the run pulls it and reports how much of the funnel dies at or before sales acceptance.",
+
+  "stages_are_meant_to_be": "buyer_verifiable",
+  "_stages_are_meant_to_be_help": "buyer_verifiable | rep_asserted. What the team INTENDS. Captured so the report can hold the written definitions to the standard the team says it wants, rather than to ours.",
+
+  "stage_definitions": {
+    "Discovery": {
+      "written_definition": "Rep has had a first call and believes there is a fit.",
+      "verifiability": "rep_asserted"
+    },
+    "Qualification": {
+      "written_definition": "Budget, authority, need and timeline confirmed by the rep.",
+      "verifiability": "rep_asserted"
+    }
+  },
+  "_stage_definitions_help": "The team's OWN written definition of each stage, verbatim from the wiki or enablement doc, plus whether that sentence can be verified by a buyer-produced artifact ('buyer_verifiable') or only asserted by the rep ('rep_asserted'). Stages with no entry here are reported as undefined.",
+
+  "believed_conversion_rates": {
+    "headline_metric": "overall_win_rate",
+    "believed_headline_pct": 35.0,
+    "believed_by_stage_pct": {
+      "Discovery": 60.0,
+      "Qualification": 70.0,
+      "Proposal": 80.0
+    }
+  },
+  "_believed_conversion_rates_help": "What the team BELIEVES converts, captured during setup before any measurement is shown. headline_metric is 'overall_win_rate' or 'win_rate_from_sales_accepted'. The delta between these numbers and the measured ones is the primary deliverable of this plugin - do not backfill these from a report.",
+
+  "fields": {
+    "id": "Id",
+    "name": "Name",
+    "stage": "StageName",
+    "amount": "Amount",
+    "created": "CreatedDate",
+    "close_date": "CloseDate",
+    "last_modified": "LastModifiedDate",
+    "loss_reason": "Loss_Reason__c",
+    "pipeline": "Pipeline",
+    "owner": "Owner.Name",
+    "record_type": "RecordType.Name"
+  },
+  "_fields_help": "Field API names on the opportunity/deal record. Salesforce defaults shown. HubSpot equivalents: dealname, dealstage, amount, createdate, closedate, hs_lastmodifieddate, closed_lost_reason, pipeline, hubspot_owner_id. Leave a value out and the analyser falls back through a candidate list.",
+
+  "material_deal_floor": null,
+  "_material_deal_floor_help": "Ignore deals below this amount. null inherits the shared value from ~/.leanscale-gtm/profile.json, which is where it belongs.",
+
+  "org_name": null,
+  "_org_name_help": "Only used when ~/.leanscale-gtm/profile.json is absent (for example when running against the bundled fixtures). Normally leave null."
+}

@@ -1,0 +1,44 @@
+{
+  "matches": [
+    {
+      "meeting_id": "hs-mtg-001",
+      "candidates": [
+        {
+          "object": "deals",
+          "id": "8801234567",
+          "name": "Ridgeline Software — Post-merger consolidation",
+          "account_id": "550011",
+          "account_name": "Ridgeline Software",
+          "stage": "qualifiedtobuy",
+          "is_open": true,
+          "signals": ["crm_link:8801234567", "attendee_domain:ridgelinesoftware.com", "contact_email_exact:lena@ridgelinesoftware.com", "single_open_opp", "recent_activity"]
+        }
+      ]
+    },
+    {
+      "meeting_id": "hs-mtg-002",
+      "candidates": [
+        {
+          "object": "deals",
+          "id": "8809900001",
+          "name": "Fairmont Health — Commercial rollout",
+          "account_id": "550088",
+          "account_name": "Fairmont Health",
+          "stage": "presentationscheduled",
+          "is_open": true,
+          "signals": ["attendee_domain:fairmonthealth.example", "recent_activity", "title_convention:Fairmont Health"]
+        },
+        {
+          "object": "deals",
+          "id": "8809900002",
+          "name": "Fairmont Health — Clinical pilot",
+          "account_id": "550088",
+          "account_name": "Fairmont Health",
+          "stage": "presentationscheduled",
+          "is_open": true,
+          "signals": ["attendee_domain:fairmonthealth.example", "recent_activity", "title_convention:Fairmont Health"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "crm": "salesforce",
+  "org_name": "Northwind Example Corp",
+  "as_of": "2026-09-30",
+  "fiscal_year_start_month": 2,
+  "fiscal_year_naming": "ends_in",
+  "period_label": "FY27-Q3",
+  "period_start": "2026-08-01",
+  "period_end": "2026-10-31",
+  "history_quarters": 8,
+  "multi_currency": true,
+  "currency_note": "Amount is in the deal currency; ConvertedAmount is corporate USD.",
+  "instance_label": "Northwind Production (fixture)"
+}

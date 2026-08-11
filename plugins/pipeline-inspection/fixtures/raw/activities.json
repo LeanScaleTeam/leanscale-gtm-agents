@@ -1,0 +1,1488 @@
+{
+  "totalSize": 78,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600000QAB",
+      "WhatId": "006000000300000QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-07-29",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600001QAB",
+      "WhatId": "006000000300001QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-08-01",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600002QAB",
+      "WhatId": "006000000300002QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-08-06",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-06T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600003QAB",
+      "WhatId": "006000000300002QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-07-30",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-30T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600004QAB",
+      "WhatId": "006000000300003QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-03",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-03T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600005QAB",
+      "WhatId": "006000000300004QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-16",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600006QAB",
+      "WhatId": "006000000300005QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-08-05",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-05T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600007QAB",
+      "WhatId": "006000000300005QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-25",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-25T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600008QAB",
+      "WhatId": "006000000300006QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-05-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-05-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600009QAB",
+      "WhatId": "006000000300006QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-04-26",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-04-26T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600010QAB",
+      "WhatId": "006000000300007QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-03-23",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-03-23T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600011QAB",
+      "WhatId": "006000000300007QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-03-17",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-03-17T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600012QAB",
+      "WhatId": "006000000300008QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-06-10",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-06-10T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600013QAB",
+      "WhatId": "006000000300008QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-06-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-06-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600014QAB",
+      "WhatId": "006000000300008QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-05-23",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-05-23T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600015QAB",
+      "WhatId": "006000000300009QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-06-27",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600016QAB",
+      "WhatId": "006000000300010QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-10",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-10T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600017QAB",
+      "WhatId": "006000000300010QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-06-30",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-06-30T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600018QAB",
+      "WhatId": "006000000300010QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-06-30",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-06-30T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600019QAB",
+      "WhatId": "006000000300011QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-24",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-24T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600020QAB",
+      "WhatId": "006000000300012QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-08-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600021QAB",
+      "WhatId": "006000000300013QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-02",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600022QAB",
+      "WhatId": "006000000300013QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-07-27",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-27T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600023QAB",
+      "WhatId": "006000000300014QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-07-30",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-30T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600024QAB",
+      "WhatId": "006000000300014QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-27",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-27T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600025QAB",
+      "WhatId": "006000000300014QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-20",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600026QAB",
+      "WhatId": "006000000300015QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-01",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600027QAB",
+      "WhatId": "006000000300016QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-27",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-27T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600028QAB",
+      "WhatId": "006000000300016QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-19",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-19T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600029QAB",
+      "WhatId": "006000000300016QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600030QAB",
+      "WhatId": "006000000300017QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-08-08",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-08T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600031QAB",
+      "WhatId": "006000000300017QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-08-03",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-03T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600032QAB",
+      "WhatId": "006000000300017QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-29",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600033QAB",
+      "WhatId": "006000000300018QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-06",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-06T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600034QAB",
+      "WhatId": "006000000300019QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-08-04",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600035QAB",
+      "WhatId": "006000000300020QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600036QAB",
+      "WhatId": "006000000300020QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-22",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600037QAB",
+      "WhatId": "006000000300020QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-25",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-25T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600038QAB",
+      "WhatId": "006000000300021QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-08-03",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-03T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600039QAB",
+      "WhatId": "006000000300022QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-05",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-05T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600040QAB",
+      "WhatId": "006000000300023QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-28",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-28T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600041QAB",
+      "WhatId": "006000000300024QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-22",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600042QAB",
+      "WhatId": "006000000300024QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-07-19",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-19T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600043QAB",
+      "WhatId": "006000000300025QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-02",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600044QAB",
+      "WhatId": "006000000300025QAB",
+      "Subject": "Demo",
+      "ActivityDate": "2026-07-27",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-27T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600045QAB",
+      "WhatId": "006000000300026QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-08-04",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600046QAB",
+      "WhatId": "006000000300027QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-26",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-26T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600047QAB",
+      "WhatId": "006000000300028QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-08",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-08T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600048QAB",
+      "WhatId": "006000000300028QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600049QAB",
+      "WhatId": "006000000300029QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600050QAB",
+      "WhatId": "006000000300030QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-06",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-06T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600051QAB",
+      "WhatId": "006000000300030QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-26",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-26T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600052QAB",
+      "WhatId": "006000000300031QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-08-05",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-05T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600053QAB",
+      "WhatId": "006000000300031QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600054QAB",
+      "WhatId": "006000000300032QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-04",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600055QAB",
+      "WhatId": "006000000300033QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-08-03",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-03T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600056QAB",
+      "WhatId": "006000000300034QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-02",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600057QAB",
+      "WhatId": "006000000300035QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-08-01",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600058QAB",
+      "WhatId": "006000000300035QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-21",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-21T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600059QAB",
+      "WhatId": "006000000300036QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600060QAB",
+      "WhatId": "006000000300037QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-08",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-08T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600061QAB",
+      "WhatId": "006000000300037QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-29",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600062QAB",
+      "WhatId": "006000000300037QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-21",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-21T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600063QAB",
+      "WhatId": "006000000300038QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-07",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-08-07T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600064QAB",
+      "WhatId": "006000000300039QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-08-06",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-06T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600065QAB",
+      "WhatId": "006000000300039QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-28",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-28T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600066QAB",
+      "WhatId": "006000000300039QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600067QAB",
+      "WhatId": "006000000300040QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-08-05",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-05T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600068QAB",
+      "WhatId": "006000000300040QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-31",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600069QAB",
+      "WhatId": "006000000300041QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-08-04",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600070QAB",
+      "WhatId": "006000000300042QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-08-03",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-03T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600071QAB",
+      "WhatId": "006000000300042QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-25",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-25T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600072QAB",
+      "WhatId": "006000000300042QAB",
+      "Subject": "Discovery call",
+      "ActivityDate": "2026-07-16",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600073QAB",
+      "WhatId": "006000000300043QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-02",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Email",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600074QAB",
+      "WhatId": "006000000300043QAB",
+      "Subject": "Follow-up email",
+      "ActivityDate": "2026-07-22",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600075QAB",
+      "WhatId": "006000000300043QAB",
+      "Subject": "Pricing discussion",
+      "ActivityDate": "2026-07-21",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-07-21T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600076QAB",
+      "WhatId": "006000000300044QAB",
+      "Subject": "Check-in",
+      "ActivityDate": "2026-08-01",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000600077QAB",
+      "WhatId": "006000000300044QAB",
+      "Subject": "Contract walkthrough",
+      "ActivityDate": "2026-07-21",
+      "Status": "Completed",
+      "IsClosed": true,
+      "TaskSubtype": "Call",
+      "CreatedDate": "2026-07-21T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura"
+      }
+    }
+  ]
+}

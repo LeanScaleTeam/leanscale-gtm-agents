@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LeanScale GTM Agents — ten RevOps agents for your CRM</title>
+<meta name="description" content="Ten GTM and RevOps agents that run against your own Salesforce or HubSpot inside Claude Code. Read-only by default, local output, verifiable findings.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FFFBFF'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23642585'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='none' stroke='%23E8FFCF' stroke-width='2.5'/%3E%3C/svg%3E">
+<script>document.documentElement.className+=' js';</script>
+<link rel="stylesheet" href="leanscale.css">
+<link rel="stylesheet" href="site.css?v=1786416976">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="dot"></span>LeanScale GTM Agents</a>
+    <div class="nav-links">
+      <a href="#agents">The ten</a>
+      <a href="#how">How they work</a>
+      <a href="#setup">What they ask</a>
+      <a href="#safety">Safety</a>
+      <a href="#install">Install</a>
+      <a href="#downloads">Download</a>
+    </div>
+    <a class="nav-cta" href="#install">Install</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="pip"></span> Claude Code plugin marketplace</span>
+    <h1 class="reveal">Ten RevOps agents that run on <span class="hl">your own CRM.</span></h1>
+    <p class="sub reveal">
+      Install them into Claude Code, point them at your Salesforce or HubSpot, and they audit what
+      your revenue systems are actually doing — not what the dashboard says they're doing. Eight of
+      the suite is strictly read-only. Every finding arrives with the record count and the exact
+      query that produced it, so you can verify it yourself in under a minute.
+    </p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#install">Install the suite <small>2 commands</small></a>
+      <a class="btn btn-ghost" href="#agents">See the ten agents</a>
+    </div>
+    <div class="stats reveal">
+      <div class="chip"><b>9</b><span>Agents</span></div>
+      <div class="chip"><b>8</b><span>Strictly read-only</span></div>
+      <div class="chip"><b>2</b><span>CRMs supported</span></div>
+      <div class="chip"><b>0</b><span>Data leaves your machine</span></div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="band reveal">
+      <div class="lbl">The premise</div>
+      <p>Most GTM tooling tells you what your pipeline says.
+      <em>These tell you whether your pipeline can be believed.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── WHY THESE NINE ───────────────────────── -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">The selection rule</div>
+      <h2>Why these ten, and not the obvious ones</h2>
+      <p>We graded 108 real AI workflows across a panel of 40+ B2B software companies — what they had
+      actually shipped versus what they were still talking about. The pattern decided this roadmap.</p>
+    </div>
+
+    <div class="prins">
+      <div class="prin reveal">
+        <div class="n">1</div>
+        <h4>Bounded tasks ship. Judgment calls stall.</h4>
+        <p>Enrichment reached production in 47% of companies. Config and code generation converted at
+        100% of adopters. AI SDRs reached production in 3% — one company switched theirs off. Agents
+        that do a verifiable task a human already does by hand get used. Agents that ask a human to
+        trust a judgment get piloted and quietly abandoned.</p>
+      </div>
+      <div class="prin reveal">
+        <div class="n">2</div>
+        <h4>So every judgment agent here has an audit attached.</h4>
+        <p>The forecast agent audits whether your CRM can support a forecast before it calls one. The
+        coach scores against your framework with verbatim quotes, not vibes. The health agent splits
+        sentiment from commercial risk. The bounded half is what survives week three.</p>
+      </div>
+      <div class="prin reveal">
+        <div class="n">3</div>
+        <h4>Teams assemble, they don't buy the box.</h4>
+        <p>57% of that panel had assembled their own AI workflow; 10% were running a packaged AI GTM
+        product. So these ship as plugins you install into a stack you control, reading through
+        connectors you already authorised — not as another platform to log into.</p>
+      </div>
+      <div class="prin reveal">
+        <div class="n">4</div>
+        <h4>Read-only is a feature, not a limitation.</h4>
+        <p>30% of that panel had an active AI-governance problem. Read-only is what actually clears a
+        security review. Exactly one agent in this suite can write, it is dry-run by default, and it
+        cannot touch a field you haven't explicitly allow-listed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── THE NINE ───────────────────────── -->
+<section id="agents">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">The suite</div>
+      <h2>Ten agents</h2>
+      <p>Seven run on your CRM alone and install in minutes. Three get materially better when call
+      recordings are connected — and all three still produce their CRM-side findings without them,
+      clearly marked as partial rather than clean.</p>
+    </div>
+
+    <div class="agents">
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>CRM Hygiene</h3></div>
+        <span class="cmd">/crm-hygiene:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span><span class="atag">Start here</span></div>
+        <p class="adesc">Audits whether the data underneath every one of your reports can be trusted,
+        and scores it as a single <b>Hygiene Index</b> you can move quarter over quarter.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>Duplicate accounts and contacts, clustered by domain and normalised company name</li>
+          <li>Dead custom fields — the hundreds sitting under 5% fill</li>
+          <li>Open pipeline owned by people who have left the company</li>
+          <li>Open opportunities whose close date is already in the past</li>
+          <li>Picklist rot: values nobody has used in a year, and near-duplicates</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Pipeline Inspection</h3></div>
+        <span class="cmd">/pipeline-inspection:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span><span class="atag">Weekly</span></div>
+        <p class="adesc">Not "what will we close" — <b>which deals are violating your own rules.</b>
+        A ranked call list for a manager's Monday, measured against your team's real medians rather
+        than someone else's benchmark.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>Deals past twice the measured median days-in-stage — with the medians shown</li>
+          <li>Close dates pushed three or more times, counted from field history</li>
+          <li>Six-figure deals with a single contact on them</li>
+          <li>Close dates clustered on the last day of the quarter</li>
+          <li>Open deals whose close date has already passed, totalled in dollars</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Forecast Agent</h3></div>
+        <span class="cmd">/forecast-agent:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span><span class="atag">Audit-first</span></div>
+        <p class="adesc">Runs in two modes, and <b>the audit is the default</b>. Because the hard part
+        was never the forecast — it's that close dates are fiction and stages aren't exit-criteria
+        based, so the forecast was never going to hold.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>A Forecast Integrity Score, with the formula shown</li>
+          <li>Stage conversion measured on stage <em>entered</em>, not current stage</li>
+          <li>Deals committed in two consecutive quarters</li>
+          <li>Worst / likely / best, and the gap versus the rep-called commit</li>
+          <li>The real slip distribution behind the worst case</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Stage Architect</h3></div>
+        <span class="cmd">/stage-architect:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span></div>
+        <p class="adesc">Derives what your stages <b>actually</b> mean from your own closed history,
+        and puts it next to what your team believes they mean. The gap is the deliverable.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>Adjacent stages with indistinguishable conversion — one stage wearing two hats</li>
+          <li>Stages skipped by most deals, which are therefore not stages</li>
+          <li>Zero-dwell stages that exist for process compliance only</li>
+          <li>Time-in-stage at median, p75 and p90, not a mean a few zombies destroyed</li>
+          <li>Proposed exit criteria that are buyer-verifiable, not rep-asserted</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Lead Source of Truth</h3></div>
+        <span class="cmd">/lead-source:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span></div>
+        <p class="adesc">Deliberately <b>not</b> multi-touch attribution — that needs your MAP and ad
+        platforms and never installs cleanly. This measures whether the source data feeding your
+        channel report can be trusted at all.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>Null / "Other" / "Unknown" rate, broken down by how the record was created</li>
+          <li>Near-duplicate values — "Paid Search", "PPC", "SEM", "Google Ads"</li>
+          <li>Whether source survives the lead-to-opportunity conversion, measured per hop</li>
+          <li>UTMs that disagree with the source field, or get overwritten on later form fills</li>
+          <li>Source values carrying real volume and zero closed-won</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>System Map</h3></div>
+        <span class="cmd">/system-map:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span><span class="atag">Cheapest run</span></div>
+        <p class="adesc">Inventories what is <b>actually</b> wired into your CRM and contrasts it with
+        what your team thinks is wired in. The cheapest run in the suite and usually the most
+        alarming.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>Two or more automations writing the same field on the same object</li>
+          <li>Automation and connected apps owned by people who left</li>
+          <li>Integration users still holding write access and no longer used</li>
+          <li>Flows, triggers, workflow rules and scheduled jobs, with last-modified dates</li>
+          <li>The third-party tools genuinely connected, versus the ones you listed</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Executive Reporting</h3></div>
+        <span class="cmd">/executive-reporting:run</span>
+        <div class="atags"><span class="atag">CRM only</span><span class="atag">Read-only</span><span class="atag">Board-facing</span></div>
+        <p class="adesc">Builds the pack leadership actually runs the business on — and <b>audits whether
+        your CRM can support it before it publishes a number.</b> Every metric lands against a goal;
+        every metric opens into the rows underneath it.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>A stage that isn't being stamped — conversion into it computes above 100%, so the rate is withheld rather than printed</li>
+          <li>The gap between the conversion rate you quote and the one your data supports</li>
+          <li>Cohorts too young to report, suppressed instead of flattering the quarter</li>
+          <li>Bookings concentrated in one rep, or a book concentrated in ten accounts</li>
+          <li>The share of bookings closing with no channel attached at all</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Sales Coach</h3></div>
+        <span class="cmd">/sales-coach:run</span>
+        <div class="atags"><span class="atag calls">Calls</span><span class="atag">Read-only</span><span class="atag">Manager-first</span></div>
+        <p class="adesc">Coaches against <b>your</b> qualification framework — MEDDPICC, MEDDIC, BANT,
+        SPICED, Challenger or your own. The primary output is one team pattern report for the manager,
+        because reps ignore per-call feedback and managers act on patterns.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>The dimension your team fails most often, with the specific calls that show it</li>
+          <li>Every score carrying a verbatim quote and a timestamp — no evidence, no score</li>
+          <li>Tenure-aware coaching: ramping reps judged differently from tenured ones</li>
+          <li>Talk ratio, longest monologue, question rate, next-step-set rate</li>
+          <li>Framework gaps correlated against the deals that later slipped</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Customer Health</h3></div>
+        <span class="cmd">/customer-health:run</span>
+        <div class="atags"><span class="atag calls">Calls optional</span><span class="atag">Read-only</span></div>
+        <p class="adesc">Scores every account <b>twice</b> — sentiment and commercial risk — because
+        they diverge, and the divergence is the point. The account that churns is very often the happy
+        one with an unsigned renewal forty days out.</p>
+        <div class="finds"><span class="lab">Typical findings</span><ul>
+          <li>The happy-but-unsigned quadrant, called out explicitly</li>
+          <li>Champion departures detected from contact status and transcript absence</li>
+          <li>Renewals inside the notice window with no renewal opportunity open</li>
+          <li>Meeting-attendance decay — the senior people quietly stopping</li>
+          <li>A kickoff baseline captured at setup, so later runs can prove movement</li>
+        </ul></div>
+      </article>
+
+      <article class="agent reveal">
+        <div class="agent-top"><h3>Meeting to CRM</h3></div>
+        <span class="cmd">/meeting-to-crm:run</span>
+        <div class="atags"><span class="atag calls">Calls</span><span class="atag write">Proposes writes</span><span class="atag">Daily</span></div>
+        <p class="adesc">Reads the call and proposes the CRM updates the rep would have typed, as an
+        approvable diff. The boring one — which is exactly why it's the one that gets used every day.
+        <b>Dry-run by default; it never writes on the turn it proposes.</b></p>
+        <div class="finds"><span class="lab">What it proposes</span><ul>
+          <li>Next step and next-step date, from what was actually agreed on the call</li>
+          <li>Your qualification-framework fields, mapped to your real field API names</li>
+          <li>New stakeholders heard on the call, as contact roles</li>
+          <li>Competitor mentions, pain, decision process and timeline</li>
+          <li>Every proposal carries the quote and timestamp that justifies it</li>
+        </ul></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── HOW THEY WORK ───────────────────────── -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">Architecture</div>
+      <h2>How they actually work</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="reveal">
+        <b>They use the connectors you've already authorised.</b>
+        <p>No new credentials, no new integration to provision, no data warehouse. The agents call the
+        Salesforce or HubSpot MCP server already connected in your Claude Code, under your own
+        permissions. If you can't see a record, neither can the agent.</p>
+      </li>
+      <li class="reveal">
+        <b>Setup interviews your CRM before it interviews you.</b>
+        <p>Every agent ships a <code>:setup</code> skill that first reads your schema, picklists, field
+        fill-rates, record counts and fiscal settings — then asks only the questions the data couldn't
+        answer, phrased in terms of what it found.</p>
+      </li>
+      <li class="reveal">
+        <b>Analysis is deterministic and offline.</b>
+        <p>Claude fetches; local Python transforms. The maths — conversion rates, medians, fill rates,
+        deltas — runs in a standard-library script on your machine with no network access. Same inputs,
+        same numbers, every time.</p>
+      </li>
+      <li class="reveal">
+        <b>Output is a local file, not a dashboard.</b>
+        <p>Each run writes a markdown report, a self-contained HTML report that opens with the wifi off,
+        the raw responses, a machine-readable findings file, and a manifest recording exactly what was
+        read. Nothing is uploaded anywhere.</p>
+      </li>
+      <li class="reveal">
+        <b>Run one is a baseline. Run two is the value.</b>
+        <p>Every run snapshots itself. From the second run on, every score and every finding carries its
+        delta. Run one says so plainly rather than pretending to be a verdict.</p>
+      </li>
+    </ol>
+
+    <div class="callout reveal">
+      <b>They share one profile.</b> The first agent you set up writes a shared org profile — your CRM,
+      fiscal calendar, quota-carrying rep count, segments, deal floor. Every other agent reads it and
+      only asks for what's missing. You describe your business once, not ten times.
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── SETUP INTERVIEW ───────────────────────── -->
+<section id="setup">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">The setup interview</div>
+      <h2>What they ask you — and what they refuse to ask</h2>
+      <p>An agent that opens with "what are your deal stages?" is an agent that hasn't looked. Every
+      question below is asked only after the CRM has been read, and is phrased in terms of what was
+      found.</p>
+    </div>
+
+    <div class="asks">
+      <div class="ask reveal">
+        <h4>It reads first</h4>
+        <p>Objects and record counts, every picklist it will use, field fill-rates over twelve months,
+        the custom-field inventory, active versus inactive users, fiscal year settings, and how much
+        field history your org actually retains.</p>
+        <span class="q">"I found 412 custom fields on Opportunity. 289 are under 5% filled. Are any of
+        those deliberately sparse, or is that all rot?"</span>
+      </div>
+      <div class="ask reveal">
+        <h4>Then it asks what data can't answer</h4>
+        <p>Which fields are required by policy rather than by schema. Which dedupe key you trust. What
+        "commit" actually means to your team. Where "next step" lives. Who owns data quality.</p>
+        <span class="q">"Your measured median in Negotiation is 34 days, p75 is 61. Should I flag at 68,
+        or do you want a different bar?"</span>
+      </div>
+      <div class="ask reveal">
+        <h4>It captures your beliefs on purpose</h4>
+        <p>Stage Architect asks what you believe your conversion rates are. System Map asks which tools
+        you believe are connected. Then the run measures reality. The gap between the two is the most
+        useful output either one produces.</p>
+        <span class="q">"Your measured Commit-to-Won rate over eight quarters is 71%, but your current
+        Commit total implies you're calling it at 95%. Which should I forecast against?"</span>
+      </div>
+      <div class="ask reveal">
+        <h4>It never assumes the defaults that bite</h4>
+        <p>Never that your fiscal year starts in January. Never that quota lives in the CRM. Never that
+        headcount equals quota-carrying reps. Never that you have Gong. Where it uses an industry
+        default it labels it as one.</p>
+        <span class="q">"I can't find quota anywhere in your CRM. Enter it here and I'll compute
+        coverage — otherwise I'll omit coverage rather than guess at it."</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── SAFETY ───────────────────────── -->
+<section id="safety">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">Safety posture</div>
+      <h2>What these can and cannot do</h2>
+    </div>
+
+    <div class="safety">
+      <div class="safe reveal">
+        <div class="ico">Read-only</div>
+        <p>Nine of the ten cannot write to your CRM at all. Not restricted by configuration — they
+        have no write path.</p>
+      </div>
+      <div class="safe reveal">
+        <div class="ico">One writer, fenced</div>
+        <p>Meeting-to-CRM is dry-run by default, proposes a diff and stops, writes only allow-listed
+        fields, won't overwrite non-empty values unless told to, refuses to run on a schedule, and logs
+        every applied write.</p>
+      </div>
+      <div class="safe reveal">
+        <div class="ico">Nothing leaves</div>
+        <p>No telemetry, no phone-home, no uploads. The only network traffic is the connectors you
+        authorised. Reports are files on your disk.</p>
+      </div>
+      <div class="safe reveal">
+        <div class="ico">Fails loudly</div>
+        <p>If a required source returns zero records the run <em>aborts with a diagnosis</em>. A report
+        claiming "no issues found" because authentication failed is worse than a crash.</p>
+      </div>
+      <div class="safe reveal">
+        <div class="ico">Verifiable</div>
+        <p>Every finding carries its record count, sample record IDs, and the exact query behind it. If
+        you can't reproduce a number, don't believe it.</p>
+      </div>
+      <div class="safe reveal">
+        <div class="ico">Redactable</div>
+        <p>Turn on PII redaction and names and emails become stable pseudonyms in both reports, while
+        the local raw data stays intact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── INSTALL ───────────────────────── -->
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">Install</div>
+      <h2>Two commands</h2>
+      <p>You need Claude Code, Python 3.9 or newer, and a Salesforce or HubSpot MCP connector already
+      authorised. Nothing else — the analysis scripts use only the Python standard library, so there is
+      nothing to pip install.</p>
+    </div>
+
+    <div class="code reveal"><span class="c"># 1. add the marketplace (from the unzipped folder, or your git remote)</span>
+/plugin marketplace add ./leanscale-gtm-agents
+
+<span class="c"># 2. install the agents you want</span>
+/plugin install <span class="k">crm-hygiene</span>@leanscale-gtm
+/plugin install <span class="k">system-map</span>@leanscale-gtm
+
+<span class="c"># 3. set each one up — it reads your CRM, then asks what it couldn't work out</span>
+/crm-hygiene:setup
+
+<span class="c"># 4. run it</span>
+/crm-hygiene:run</div>
+
+    <div class="insight reveal">
+      <span class="tag">Where to start</span>
+      <p>Every agent exposes exactly two commands — <code>:setup</code> and <code>:run</code> — so the
+      fourth one you install behaves like the first. Begin with <strong>CRM Hygiene</strong> and
+      <strong>System Map</strong>: they need nothing but the CRM connector and produce the fastest
+      undeniable finding.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── DOWNLOADS ───────────────────────── -->
+<section id="downloads">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">Download</div>
+      <h2>Get the plugins</h2>
+      <p>Take the whole marketplace, or a single agent. Both install the same way — unzip, then
+      <code>/plugin marketplace add &lt;folder&gt;</code>.</p>
+    </div>
+
+    <div class="hero-actions reveal" style="margin-bottom:26px">
+      <a class="btn btn-primary" href="dist/leanscale-gtm-agents.zip" download>Download all ten <small>full marketplace</small></a>
+    </div>
+
+    <div class="tblwrap reveal">
+    <table class="dl-table">
+      <thead><tr><th>Agent</th><th>Command</th><th>Needs</th><th></th></tr></thead>
+      <tbody>
+        <tr><td><b>CRM Hygiene</b></td><td class="mono">/crm-hygiene:run</td><td class="needs">CRM</td><td><a href="dist/crm-hygiene.zip" download>Download</a></td></tr>
+        <tr><td><b>Pipeline Inspection</b></td><td class="mono">/pipeline-inspection:run</td><td class="needs">CRM</td><td><a href="dist/pipeline-inspection.zip" download>Download</a></td></tr>
+        <tr><td><b>Forecast Agent</b></td><td class="mono">/forecast-agent:run</td><td class="needs">CRM</td><td><a href="dist/forecast-agent.zip" download>Download</a></td></tr>
+        <tr><td><b>Stage Architect</b></td><td class="mono">/stage-architect:run</td><td class="needs">CRM + stage history</td><td><a href="dist/stage-architect.zip" download>Download</a></td></tr>
+        <tr><td><b>Lead Source of Truth</b></td><td class="mono">/lead-source:run</td><td class="needs">CRM</td><td><a href="dist/lead-source.zip" download>Download</a></td></tr>
+        <tr><td><b>System Map</b></td><td class="mono">/system-map:run</td><td class="needs">CRM metadata access</td><td><a href="dist/system-map.zip" download>Download</a></td></tr>
+        <tr><td><b>Executive Reporting</b></td><td class="mono">/executive-reporting:run</td><td class="needs">CRM</td><td><a href="dist/executive-reporting.zip" download>Download</a></td></tr>
+        <tr><td><b>Sales Coach</b></td><td class="mono">/sales-coach:run</td><td class="needs">Call transcripts</td><td><a href="dist/sales-coach.zip" download>Download</a></td></tr>
+        <tr><td><b>Customer Health</b></td><td class="mono">/customer-health:run</td><td class="needs">CRM · transcripts optional</td><td><a href="dist/customer-health.zip" download>Download</a></td></tr>
+        <tr><td><b>Meeting to CRM</b></td><td class="mono">/meeting-to-crm:run</td><td class="needs">CRM + transcripts</td><td><a href="dist/meeting-to-crm.zip" download>Download</a></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class="sub" style="margin-top:22px">Transcripts can come from Gong, Fireflies, Chorus, Grain,
+    Otter, Zoom, a Google Drive folder, or a plain directory of exported files. No agent requires a
+    specific conversation-intelligence vendor — most teams don't have one, and the ones that do
+    shouldn't have to switch.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div>
+      <div class="fbrand"><span class="dot"></span> LeanScale</div>
+      <p>LeanScale builds and runs go-to-market systems for B2B software companies — CRM architecture,
+      pipeline and forecasting, lifecycle and attribution, and the reporting that executives actually
+      trust.</p>
+      <p class="disc">Benchmarks cited on this page come from LeanScale's field study of AI workflows
+      across 40+ B2B software companies.</p>
+    </div>
+    <div>
+      <h4>The rules</h4>
+      <ul class="method">
+        <li>Read-only unless the README says otherwise — exactly one says otherwise</li>
+        <li>Reports are generated locally and never leave your machine</li>
+        <li>Findings carry the query that produced them; verify before you believe</li>
+        <li><a class="site" href="mailto:anthony@leanscale.team">anthony@leanscale.team</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="leanscale.js"></script>
+<script>
+// Second failsafe: if IntersectionObserver never fires for an element (odd
+// viewports, print, embedded renderers), reveal whatever is still hidden.
+addEventListener('load', function () {
+  setTimeout(function () {
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (el) { el.classList.add('in'); });
+  }, 1500);
+});
+</script>
+</body>
+</html>

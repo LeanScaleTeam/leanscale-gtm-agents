@@ -1,0 +1,177 @@
+{
+  "source": "users",
+  "tool": "run_soql_query",
+  "query": "SELECT Id, Name, ManagerId, IsActive, UserRole.Name FROM User WHERE IsActive = true OR Id IN (SELECT OwnerId FROM Opportunity WHERE IsClosed = false)",
+  "fetched_at": "2026-09-30T07:00:00.000+0000",
+  "note": "",
+  "records": [
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A01",
+      "Name": "Dana Whitfield",
+      "ManagerId": "005M0000M01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A02",
+      "Name": "Marcus Feld",
+      "ManagerId": "005M0000M01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A03",
+      "Name": "Priya Raman",
+      "ManagerId": "005M0000M01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A04",
+      "Name": "Toby Nkemelu",
+      "ManagerId": "005M0000M02",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A05",
+      "Name": "Simone Vasquez",
+      "ManagerId": "005M0000M02",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A06",
+      "Name": "Ivan Petrov",
+      "ManagerId": "005M0000M02",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A07",
+      "Name": "Grace Lindqvist",
+      "ManagerId": "005M0000M03",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A08",
+      "Name": "Hector Alonzo",
+      "ManagerId": "005M0000M03",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A09",
+      "Name": "Nadia Osei",
+      "ManagerId": "005M0000M03",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005R00000A10",
+      "Name": "Wes Carmody",
+      "ManagerId": "005M0000M02",
+      "IsActive": false,
+      "UserRole": {
+        "Name": "Account Executive"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005M0000M01",
+      "Name": "Alicia Chen",
+      "ManagerId": "005V0000V01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Sales Manager"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005M0000M02",
+      "Name": "Rob Tanaka",
+      "ManagerId": "005V0000V01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Sales Manager"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005M0000M03",
+      "Name": "Fenella Boyd",
+      "ManagerId": "005V0000V01",
+      "IsActive": true,
+      "UserRole": {
+        "Name": "Sales Manager"
+      }
+    },
+    {
+      "attributes": {
+        "type": "User"
+      },
+      "Id": "005V0000V01",
+      "Name": "Sasha Nolan",
+      "ManagerId": null,
+      "IsActive": true,
+      "UserRole": {
+        "Name": "VP Sales"
+      }
+    }
+  ]
+}

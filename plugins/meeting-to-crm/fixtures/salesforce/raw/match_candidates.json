@@ -1,0 +1,92 @@
+{
+  "note": "One entry per meeting, holding every record that could plausibly be the subject of that call plus the SIGNALS that tie them. Claude gathers the signals; diff.py decides confident vs ambiguous vs unmatched. The decision is deterministic on purpose — a wrong match is the most expensive mistake this plugin can make.",
+  "signal_vocabulary": {
+    "crm_link": "the transcript source itself carried a CRM record id",
+    "calendar_event": "the calendar invite for this meeting is linked to the record",
+    "title_convention": "meeting title follows the agreed '<Account> <> Us' shape",
+    "contact_email_exact": "an attendee email matches a contact on the record",
+    "attendee_domain": "an attendee's email domain matches the account's website domain",
+    "single_open_opp": "the matched account has exactly one open opportunity",
+    "recent_activity": "the record shows activity in the last 30 days"
+  },
+  "matches": [
+    {
+      "meeting_id": "mtg-001",
+      "candidates": [
+        {
+          "object": "Opportunity",
+          "id": "0065f00000NW1AAA",
+          "name": "Northwind Analytics — Platform Expansion",
+          "account_id": "0015f00000NWACCT",
+          "account_name": "Northwind Analytics",
+          "stage": "Discovery",
+          "is_open": true,
+          "signals": ["attendee_domain:northwindanalytics.com", "contact_email_exact:priya@northwindanalytics.com", "single_open_opp", "recent_activity", "title_convention:Northwind Analytics"]
+        }
+      ]
+    },
+    {
+      "meeting_id": "mtg-002",
+      "candidates": [
+        {
+          "object": "Opportunity",
+          "id": "0065f00000HG1AAA",
+          "name": "Helio Grid — Core Rollout",
+          "account_id": "0015f00000HGACCT",
+          "account_name": "Helio Grid",
+          "stage": "Demo",
+          "is_open": true,
+          "signals": ["crm_link:0065f00000HG1AAA", "attendee_domain:heliogrid.io", "single_open_opp"]
+        }
+      ]
+    },
+    {
+      "meeting_id": "mtg-003",
+      "candidates": [
+        {
+          "object": "Opportunity",
+          "id": "0065f00000BP1AAA",
+          "name": "Brightpath Labs — Platform",
+          "account_id": "0015f00000BPACCT",
+          "account_name": "Brightpath Labs",
+          "stage": "Technical Validation",
+          "is_open": true,
+          "signals": ["attendee_domain:brightpathlabs.com", "recent_activity", "title_convention:Brightpath Labs"]
+        },
+        {
+          "object": "Opportunity",
+          "id": "0065f00000BP2AAA",
+          "name": "Brightpath Labs — Services Add-on",
+          "account_id": "0015f00000BPACCT",
+          "account_name": "Brightpath Labs",
+          "stage": "Proposal",
+          "is_open": true,
+          "signals": ["attendee_domain:brightpathlabs.com", "recent_activity", "title_convention:Brightpath Labs"]
+        }
+      ]
+    },
+    {
+      "meeting_id": "mtg-004",
+      "candidates": [
+        {
+          "object": "Opportunity",
+          "id": "0065f00000CV1AAA",
+          "name": "Corvus Logistics — Renewal FY27",
+          "account_id": "0015f00000CVACCT",
+          "account_name": "Corvus Logistics",
+          "stage": "Renewal",
+          "is_open": true,
+          "signals": ["calendar_event:cal-88fb02", "attendee_domain:corvuslogistics.com", "single_open_opp"]
+        }
+      ]
+    },
+    {
+      "meeting_id": "mtg-005",
+      "candidates": []
+    },
+    {
+      "meeting_id": "mtg-006",
+      "candidates": []
+    }
+  ]
+}

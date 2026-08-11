@@ -1,0 +1,72 @@
+{
+  "_comment": "Demo plugin config for the HubSpot-shaped offline fixture (fixtures/raw-hubspot). Note that only crm_fields and customer_definition change between this file and config.demo.json — the model, the weights and the thresholds are identical, because analyze.py never branches on CRM vendor.",
+  "schema_version": 1,
+  "window_days": 180,
+  "notice_window_days": 60,
+
+  "customer_definition": {
+    "crm": "hubspot",
+    "account_filter_hubspot_property": "lifecyclestage",
+    "account_filter_hubspot_value": "customer",
+    "exclude_account_ids": [],
+    "include_paused": false
+  },
+
+  "renewal_source": "renewal_opportunity",
+
+  "crm_fields": {
+    "account_arr": ["arr"],
+    "account_arr_is_monthly": false,
+    "account_name": ["name"],
+    "account_owner": ["hubspot_owner_id"],
+    "account_segment": ["segment"],
+    "renewal_date": ["renewal_date", "closedate"],
+    "contract_start": ["contract_start_date"],
+    "auto_renew": ["auto_renew"],
+    "champion_contact": ["champion_contact"],
+    "economic_buyer": ["economic_buyer"],
+    "contact_is_active": ["is_active"],
+    "contact_bounced_at": ["hs_email_hard_bounce_reason"]
+  },
+
+  "quadrant": { "sentiment_floor": 60, "risk_threshold": 50 },
+  "risk_floors": {
+    "unsigned_renewal_inside_window": 55,
+    "unsigned_renewal_critical": 80,
+    "champion_departed": 62
+  },
+
+  "support_source": null,
+  "usage_source": null,
+
+  "accounts": [
+    {
+      "account_id": "14778211905",
+      "name": "Atlas Freight Group",
+      "kickoff_date": "2024-01-31",
+      "kickoff_arr": 260000,
+      "kickoff_sentiment": 61,
+      "kickoff_engaged_contacts": 2,
+      "kickoff_open_escalations": 0,
+      "champion": { "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "title": "Senior Director, Revenue Operations" },
+      "economic_buyer": { "name": "Desmond Achebe", "email": "desmond.achebe@atlasfreight.example", "title": "Chief Revenue Officer" },
+      "success_criteria": ["Same-day quote turnaround", "Reps build quotes without asking systems for help"],
+      "notes": "Kickoff sentiment reconstructed from the first two recorded sessions."
+    },
+    {
+      "account_id": "14778211903",
+      "name": "Larkspur Media",
+      "kickoff_date": "2024-09-25",
+      "kickoff_arr": 150000,
+      "kickoff_sentiment": 52,
+      "kickoff_engaged_contacts": 2,
+      "kickoff_open_escalations": 2,
+      "champion": { "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "title": "VP Revenue Operations" },
+      "economic_buyer": { "name": "Ingrid Sandoval", "email": "ingrid.sandoval@larkspurmedia.example", "title": "Chief Operating Officer" },
+      "success_criteria": ["Conversion reporting the COO will put in a board deck"],
+      "notes": "Arrived from a failed implementation with another vendor, hence the low starting sentiment and two open escalations on day one."
+    }
+  ],
+
+  "champion_definition": "The person who spends their own political capital to keep you. Not the day-to-day admin, not the signer."
+}

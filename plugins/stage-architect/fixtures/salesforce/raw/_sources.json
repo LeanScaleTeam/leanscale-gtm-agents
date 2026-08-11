@@ -1,0 +1,22 @@
+{
+  "stage_metadata": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, MasterLabel, IsActive, SortOrder, IsClosed, IsWon, DefaultProbability, ForecastCategoryName FROM OpportunityStage ORDER BY SortOrder",
+    "note": "Plus a describe of Opportunity.StageName for the per-record-type picklist subsets."
+  },
+  "opportunities": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, Name, StageName, Amount, CreatedDate, CloseDate, LastModifiedDate, IsClosed, IsWon, Type, LeadSource, Loss_Reason__c, OwnerId, Owner.Name, RecordType.Name FROM Opportunity WHERE CreatedDate = LAST_N_DAYS:540 ORDER BY CreatedDate LIMIT 5000",
+    "note": "Amount floor applied in the analyser, not the query, so the excluded count is reportable."
+  },
+  "stage_history": {
+    "tool": "run_soql_query",
+    "query": "SELECT OpportunityId, StageName, Amount, ExpectedRevenue, CloseDate, CreatedDate, SystemModstamp FROM OpportunityHistory WHERE CreatedDate = LAST_N_DAYS:540 ORDER BY OpportunityId, CreatedDate LIMIT 50000",
+    "note": "OpportunityHistory also writes a row on Amount/CloseDate edits; duplicate consecutive stages are collapsed by the analyser."
+  },
+  "lead_lifecycle": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, Status, CreatedDate, IsConverted, ConvertedOpportunityId, LeadSource FROM Lead WHERE CreatedDate = LAST_N_DAYS:540 LIMIT 5000",
+    "note": ""
+  }
+}

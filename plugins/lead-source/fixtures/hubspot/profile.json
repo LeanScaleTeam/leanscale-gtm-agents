@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "org_name": "Beacon Robotics",
+  "crm": {
+    "system": "hubspot",
+    "mcp_probe": "hubspot-crm-search",
+    "instance_label": "Beacon Robotics Portal",
+    "secondary": null
+  },
+  "fiscal_year_start_month": 1,
+  "fiscal_year_naming": "starts_in",
+  "currency": { "corporate": "USD", "multi_currency": false },
+  "motion": ["inbound_led", "plg"],
+  "quota_carrying_reps": 6,
+  "segments": ["SMB", "Mid-Market"],
+  "segment_field": "",
+  "material_deal_floor": 5000,
+  "team_map": { "roll_up_field": "hubspot_owner_id" },
+  "objects": { "opportunity": "Deal", "account": "Company", "lead": "Contact" },
+  "competitors": [],
+  "redact_pii_in_reports": false
+}

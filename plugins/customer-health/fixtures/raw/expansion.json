@@ -1,0 +1,14 @@
+[
+  {
+    "attributes": { "type": "Opportunity" },
+    "Id": "006Kx0000041aCfQAI",
+    "Name": "Cascadia Health Systems — Analytics module",
+    "AccountId": "001Kx000005NwLgQAK",
+    "Amount": 85000,
+    "CloseDate": "2026-10-31",
+    "StageName": "Proposal",
+    "IsClosed": false,
+    "IsWon": false,
+    "Type": "Expansion"
+  }
+]

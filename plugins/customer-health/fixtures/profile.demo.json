@@ -1,0 +1,23 @@
+{
+  "_comment": "Demo org profile for the offline fixture run ONLY. Your real profile lives at ~/.leanscale-gtm/profile.json and is written by any plugin's :setup skill. See SETUP.md for the offline-run recipe.",
+  "schema_version": 1,
+  "org_name": "Meridian Systems",
+  "crm": {
+    "system": "salesforce",
+    "mcp_probe": "run_soql_query",
+    "instance_label": "Meridian Production",
+    "secondary": null
+  },
+  "fiscal_year_start_month": 2,
+  "fiscal_year_naming": "ends_in",
+  "currency": { "corporate": "USD", "multi_currency": false },
+  "motion": ["enterprise", "inbound_led"],
+  "quota_carrying_reps": 11,
+  "segments": ["SMB", "Mid-Market", "Enterprise"],
+  "segment_field": "Account.Segment__c",
+  "material_deal_floor": 5000,
+  "team_map": { "roll_up_field": "User.ManagerId" },
+  "objects": { "opportunity": "Opportunity", "account": "Account", "lead": "Lead" },
+  "competitors": [],
+  "redact_pii_in_reports": false
+}

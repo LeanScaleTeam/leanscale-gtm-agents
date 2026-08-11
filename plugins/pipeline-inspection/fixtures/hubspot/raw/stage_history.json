@@ -1,0 +1,3205 @@
+{
+  "results": [
+    {
+      "id": "94100000001",
+      "properties": {
+        "dealname": "Fairhaven Bank - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-05-06T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-25T06:29:04.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-03T03:39:46.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-03-16T16:34:24.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-02-04T10:12:47.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-01-06T06:56:38.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-01-02T04:29:08.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000002",
+      "properties": {
+        "dealname": "Silverline Air - New Business 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2024-12-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-12-07T09:08:09.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-11-13T22:36:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-10-30T14:22:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-10-08T02:24:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-09-23T12:02:06.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-09-15T03:00:10.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000003",
+      "properties": {
+        "dealname": "Ionmark Energy - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-09-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-09-06T22:32:36.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-08-18T18:30:34.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-08-08T07:58:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-07-24T18:40:59.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-07-09T10:03:34.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-05-18T07:06:42.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000004",
+      "properties": {
+        "dealname": "Quarry Mining Co - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-12-06T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-11-27T01:02:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-11-13T19:16:32.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-10-10T09:02:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-08-30T09:01:26.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-08-07T08:52:16.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-07-29T02:34:06.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000005",
+      "properties": {
+        "dealname": "Corvid Games - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-06-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-16T15:43:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-05-26T00:37:02.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-04-19T03:08:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-03-31T14:12:01.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-03-21T07:53:11.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-02-17T02:10:03.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000006",
+      "properties": {
+        "dealname": "Ivywood Property - New Business 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2024-12-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-12-03T03:19:49.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-07-19T23:49:09.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-07-03T03:52:12.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-06-10T07:12:27.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-05-22T11:30:30.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-05-14T02:43:17.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000007",
+      "properties": {
+        "dealname": "Vantage Rail - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-02-21T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-13T05:28:57.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-01-30T15:05:13.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-01-26T20:00:35.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-01-09T06:53:49.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-12-22T07:51:18.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-12-08T06:01:10.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000008",
+      "properties": {
+        "dealname": "Pinnacle Textiles - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-01-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-12-28T17:42:40.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-12-01T09:11:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-11-03T23:37:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-10-21T08:34:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-10-03T17:11:36.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-09-26T17:50:33.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000010",
+      "properties": {
+        "dealname": "Cobalt Freight - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-09-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-09-01T18:27:30.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-07-25T18:22:45.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-06-29T23:21:10.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-06-07T08:28:35.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-05-09T18:14:17.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-04-20T04:47:35.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000011",
+      "properties": {
+        "dealname": "Ionmark Energy - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-01-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-01-07T21:03:19.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-12-27T16:15:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-12-10T01:59:24.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-11-16T05:14:50.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-10-14T09:15:51.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-10-02T18:47:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000012",
+      "properties": {
+        "dealname": "Brightpath Health - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-03-08T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-17T02:22:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-01-07T14:58:53.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-12-04T13:42:08.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-11-08T21:35:24.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-10-30T03:41:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-10-18T13:54:51.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000013",
+      "properties": {
+        "dealname": "Vantage Rail - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-01-30T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-01-02T22:23:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-12-20T00:44:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-11-21T15:29:11.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-11-15T18:42:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-10-27T05:04:41.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-10-17T03:22:16.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000014",
+      "properties": {
+        "dealname": "Yarrow Biotech - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-03-22T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-21T20:59:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-02T13:11:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-01-05T12:40:56.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-12-13T04:49:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-11-16T20:07:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-11-10T10:49:23.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000015",
+      "properties": {
+        "dealname": "Cobalt Freight - Expansion 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-01-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-12-27T15:36:38.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-11-24T08:46:25.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-11-06T04:24:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-10-25T09:41:40.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-10-11T23:00:57.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-09-07T21:47:39.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000016",
+      "properties": {
+        "dealname": "Halcyon Marine - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-08-16T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-08-13T15:20:04.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-07-11T20:25:44.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-06-27T05:38:58.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-04-28T03:41:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-04-13T17:37:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-03-29T20:59:09.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000017",
+      "properties": {
+        "dealname": "Xenolith Materials - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-07-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-07-18T10:00:15.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-06-11T13:28:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-05-18T12:09:17.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-05-13T05:36:06.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-04-21T10:32:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-04-14T16:31:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000019",
+      "properties": {
+        "dealname": "Brightpath Health - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-09-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-09-05T01:05:18.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-08-02T10:56:12.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-07-10T17:14:49.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-06-23T16:48:42.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-06-07T07:02:36.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-05-11T09:04:51.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000020",
+      "properties": {
+        "dealname": "Tessellate Software - Expansion 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-02-21T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-02-15T12:58:02.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-01-15T00:36:01.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-12-28T13:32:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-11-24T05:54:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-11-11T10:00:40.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-10-26T05:47:17.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000021",
+      "properties": {
+        "dealname": "Kestrel Semiconductor - Expansion 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2024-12-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-12-17T18:51:47.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-11-29T19:27:02.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-11-09T03:16:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-10-13T21:33:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-09-02T12:26:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-08-22T21:07:44.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000022",
+      "properties": {
+        "dealname": "Dunmore Chemicals - Expansion 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-04-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-04-06T14:47:22.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-03-10T23:10:20.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-02-02T15:26:08.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-01-14T16:53:45.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-11-25T04:25:56.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-10-23T08:44:26.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000023",
+      "properties": {
+        "dealname": "Granite Peak Ski - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-03-30T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-03-15T03:09:29.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-03-05T15:36:11.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-02-12T09:13:17.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-02-03T08:31:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-01-24T20:22:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-01-17T00:12:22.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000024",
+      "properties": {
+        "dealname": "Silverline Air - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-06-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-24T03:04:19.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-21T00:57:28.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-04-10T20:09:47.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-03-15T20:53:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-03-03T09:46:28.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-02-25T13:56:05.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000025",
+      "properties": {
+        "dealname": "Kestrel Semiconductor - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-04-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-03-20T04:55:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-21T08:54:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-02-05T06:14:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-01-15T08:03:58.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-12-16T19:16:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-12-01T08:10:42.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000026",
+      "properties": {
+        "dealname": "Cobalt Freight - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-06-03T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-21T12:26:45.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-11T22:20:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-04-02T03:53:28.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-03-11T23:10:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-02-12T05:08:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-02-05T20:15:41.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000028",
+      "properties": {
+        "dealname": "Umbra Security - New Business 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2024-11-22T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-11-13T03:04:08.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-09-09T04:54:13.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-08-17T04:13:28.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-07-30T05:54:12.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-07-15T09:40:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-06-28T15:41:51.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000029",
+      "properties": {
+        "dealname": "Ardent Logistics - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-06-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-29T00:55:18.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-12T19:12:38.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-02-15T18:36:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-01-25T16:39:24.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-12-12T18:04:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-12-06T22:44:28.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000030",
+      "properties": {
+        "dealname": "Quarry Mining Co - New Business 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2024-12-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-11-24T12:17:26.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2024-11-06T21:16:34.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-10-29T11:27:03.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-10-04T22:26:23.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-09-24T09:06:29.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-09-08T23:02:09.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000031",
+      "properties": {
+        "dealname": "Halcyon Marine - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-11-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-11-10T18:48:04.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-10-13T10:15:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-10-06T13:17:47.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-09-08T23:23:20.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-07-21T12:55:15.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-07-13T07:54:46.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000032",
+      "properties": {
+        "dealname": "Vantage Rail - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-05-05T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-30T03:26:13.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-07T07:58:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-03-18T10:10:45.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-02-28T01:30:55.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-02-24T10:12:28.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-02-16T14:04:08.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000033",
+      "properties": {
+        "dealname": "Juniper Labs - Expansion 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-04-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-04-11T09:14:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-03-17T08:59:14.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-03-12T09:55:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-03-02T06:17:58.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-02-18T22:04:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-02-09T13:17:56.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000034",
+      "properties": {
+        "dealname": "Everline Media - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-06-18T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-06-03T12:51:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-12T21:59:04.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-04-30T19:58:20.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-04-13T13:23:09.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-03-20T05:57:44.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-03-12T23:23:19.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000035",
+      "properties": {
+        "dealname": "Juniper Labs - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-02-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-02-21T14:24:06.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-01-15T22:31:34.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-01-08T09:49:17.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-12-12T23:28:59.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-11-18T22:02:10.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-11-11T01:36:08.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000037",
+      "properties": {
+        "dealname": "Elmridge Schools - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-11-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-11-08T18:39:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-10-18T19:41:22.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-10-04T22:29:48.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-08-22T09:57:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-08-13T20:20:38.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-08-04T05:13:25.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000038",
+      "properties": {
+        "dealname": "Quarry Mining Co - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-02-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-02-07T20:12:26.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-01-27T08:41:15.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-01-21T22:53:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-01-03T08:16:42.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-12-06T15:03:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-11-30T05:56:30.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000039",
+      "properties": {
+        "dealname": "Ivywood Property - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-07-16T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-29T20:09:25.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-05-13T03:07:36.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-06T11:22:50.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-04-12T01:42:35.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-03-31T02:42:20.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-03-23T17:33:38.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000040",
+      "properties": {
+        "dealname": "Quarry Mining Co - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-04-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-04-21T19:53:15.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-03-15T13:41:17.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-02-20T22:40:41.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-01-06T07:13:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-12-04T15:40:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-12-01T17:40:44.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000041",
+      "properties": {
+        "dealname": "Fairhaven Bank - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-06-02T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-20T16:19:56.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-05-11T08:30:50.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-04-10T22:24:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-03-22T04:21:18.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-03-03T08:14:07.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-02-12T05:59:07.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000042",
+      "properties": {
+        "dealname": "Fairhaven Bank - Expansion 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-06-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-11T05:37:33.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-05-23T13:01:24.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-02T13:11:21.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-04-18T23:00:39.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-04-13T11:44:13.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-03-24T04:21:37.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000043",
+      "properties": {
+        "dealname": "Orbit Pay - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-03-21T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-03-16T16:40:43.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-03-02T22:07:54.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-02-25T00:54:34.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-02-12T02:07:55.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-01-26T05:41:01.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-01-09T04:42:04.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000044",
+      "properties": {
+        "dealname": "Westmark Legal - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2025-02-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-02-01T07:14:05.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-01-14T12:14:45.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000046",
+      "properties": {
+        "dealname": "Dunmore Chemicals - New Business 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2026-02-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-02-01T04:46:05.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000047",
+      "properties": {
+        "dealname": "Elmridge Schools - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2025-08-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-08-16T18:36:32.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-08-01T23:11:52.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-07-17T23:44:50.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-06-23T10:13:35.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-05-29T10:44:11.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-05-21T13:14:29.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000048",
+      "properties": {
+        "dealname": "Corvid Games - Expansion 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2025-07-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2025-06-01T20:35:37.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2025-05-24T11:01:18.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2025-05-10T03:23:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2025-04-04T05:19:41.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2025-03-21T23:10:44.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000049",
+      "properties": {
+        "dealname": "Dunmore Chemicals - Expansion 2024"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2024-12-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2024-11-21T15:52:11.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2024-11-01T09:40:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-10-18T16:42:02.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-10-05T06:25:44.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000050",
+      "properties": {
+        "dealname": "Northgate Insurance - New Business 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedlost",
+            "timestamp": "2025-02-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2024-12-22T14:55:31.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2024-11-29T04:28:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000070",
+      "properties": {
+        "dealname": "Northgate Insurance - Renewal 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-06-16T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000071",
+      "properties": {
+        "dealname": "Corvid Games - Renewal 2025"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2025-12-20T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000072",
+      "properties": {
+        "dealname": "Northgate Insurance - Renewal 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-01-16T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000073",
+      "properties": {
+        "dealname": "Corvid Games - Renewal 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-06-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100000074",
+      "properties": {
+        "dealname": "Fairhaven Bank - Renewal 2026"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "closedwon",
+            "timestamp": "2026-04-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300000",
+      "properties": {
+        "dealname": "Redshift Telecom - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-04-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-04-05T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-03-28T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-03-20T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-03-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300001",
+      "properties": {
+        "dealname": "Kestrel Semiconductor - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-05-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-05-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300002",
+      "properties": {
+        "dealname": "Ionmark Energy - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-05T14:24:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-06-01T04:48:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-05-27T19:12:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-23T09:36:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-05-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300003",
+      "properties": {
+        "dealname": "Meridian Foods - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-05-06T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-01T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-04-26T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-04-21T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-04-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300004",
+      "properties": {
+        "dealname": "Harbourline Retail - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-31T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-05-21T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-12T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-05-03T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300005",
+      "properties": {
+        "dealname": "Bexley Utilities - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-06-20T04:48:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-06-13T09:36:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-06-06T14:24:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-30T19:12:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-05-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300006",
+      "properties": {
+        "dealname": "Corvid Games - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-04-02T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-03-20T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300007",
+      "properties": {
+        "dealname": "Quarry Mining Co - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-02-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300008",
+      "properties": {
+        "dealname": "Umbra Security - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-03-31T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-03-14T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-02-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300009",
+      "properties": {
+        "dealname": "Granite Peak Ski - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-04-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300010",
+      "properties": {
+        "dealname": "Foxglove Apparel - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-06-13T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-05-31T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-05-19T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-05-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300011",
+      "properties": {
+        "dealname": "Dunmore Chemicals - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-05-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-05-04T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-04-24T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-04-14T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-04-05T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300012",
+      "properties": {
+        "dealname": "Glacier Robotics - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300013",
+      "properties": {
+        "dealname": "Northgate Insurance - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-05T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-22T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-09T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300014",
+      "properties": {
+        "dealname": "Vantage Rail - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-10T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-06T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-02T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-28T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300015",
+      "properties": {
+        "dealname": "Zephyr Cloud - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300016",
+      "properties": {
+        "dealname": "Alderman Motors - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300017",
+      "properties": {
+        "dealname": "Silverline Air - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-08-01T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300018",
+      "properties": {
+        "dealname": "Yarrow Biotech - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-29T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300019",
+      "properties": {
+        "dealname": "Elmridge Schools - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300020",
+      "properties": {
+        "dealname": "Halcyon Marine - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-08T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300021",
+      "properties": {
+        "dealname": "Ivywood Property - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-22T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300022",
+      "properties": {
+        "dealname": "Tessellate Software - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-06T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300023",
+      "properties": {
+        "dealname": "Pinnacle Textiles - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-20T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300024",
+      "properties": {
+        "dealname": "Westmark Legal - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-06-27T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-20T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300025",
+      "properties": {
+        "dealname": "Orbit Pay - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-03T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-06-29T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-25T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-22T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300026",
+      "properties": {
+        "dealname": "Lumen Grid - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-16T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-04T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-23T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300027",
+      "properties": {
+        "dealname": "Lumen Grid - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-03T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300028",
+      "properties": {
+        "dealname": "Ardent Logistics - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-08-02T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300029",
+      "properties": {
+        "dealname": "Brightpath Health - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300030",
+      "properties": {
+        "dealname": "Cobalt Freight - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-13T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-02T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300031",
+      "properties": {
+        "dealname": "Данные Analytics - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-29T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-26T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-23T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-21T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300032",
+      "properties": {
+        "dealname": "Everline Media - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-22T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-13T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-05T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-06-27T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300033",
+      "properties": {
+        "dealname": "Fairhaven Bank - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-08-02T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-25T14:24:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-18T04:48:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-10T19:12:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-03T09:36:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300034",
+      "properties": {
+        "dealname": "Juniper Labs - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-08-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300035",
+      "properties": {
+        "dealname": "Xenolith Materials - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-30T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-25T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300036",
+      "properties": {
+        "dealname": "Rosewood Freight - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-19T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300037",
+      "properties": {
+        "dealname": "Ardent Logistics - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-20T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-14T06:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-08T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-02T18:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300038",
+      "properties": {
+        "dealname": "Brightpath Health - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-31T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-27T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-23T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-20T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300039",
+      "properties": {
+        "dealname": "Cobalt Freight - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-08-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-28T19:12:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-22T14:24:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-16T09:36:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-10T04:48:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-04T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300040",
+      "properties": {
+        "dealname": "Everline Media - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-08-01T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300041",
+      "properties": {
+        "dealname": "Fairhaven Bank - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-01T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300042",
+      "properties": {
+        "dealname": "Juniper Labs - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-21T08:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-14T16:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-07-08T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300043",
+      "properties": {
+        "dealname": "Zephyr Cloud - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "contractsent",
+            "timestamp": "2026-07-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "decisionmakerboughtin",
+            "timestamp": "2026-07-16T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "presentationscheduled",
+            "timestamp": "2026-07-09T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "qualifiedtobuy",
+            "timestamp": "2026-07-01T12:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-06-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300044",
+      "properties": {
+        "dealname": "Orbit Pay - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "dealstage": [
+          {
+            "value": "appointmentscheduled",
+            "timestamp": "2026-08-03T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "COMPLETE"
+}

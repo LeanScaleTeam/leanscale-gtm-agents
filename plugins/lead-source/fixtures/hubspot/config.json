@@ -1,0 +1,59 @@
+{
+  "_comment": "Fixture config — HubSpot as CRM of record. The team reports on a custom 'original_lead_source' dropdown that reps and imports write to, while HubSpot's own hs_analytics_source sits alongside it saying something different. There is no Lead object, so the conversion hop is Contact to Deal via the association API and the 'converted' marker is the lifecycle-stage timestamp.",
+  "crm": "hubspot",
+  "window_days": 540,
+  "trend_bucket": "quarter",
+  "min_bucket_records": 25,
+
+  "objects": {
+    "primary": { "raw_file": "contacts.json", "label": "Contact", "id_field": "Id", "created_field": "createdate" },
+    "intermediate": { "raw_file": "", "label": "n/a", "id_field": "Id", "created_field": "" },
+    "deal": { "raw_file": "deals.json", "label": "Deal", "id_field": "Id", "created_field": "createdate" }
+  },
+
+  "fields": {
+    "reported_source": { "primary": "original_lead_source", "deal": "original_lead_source" },
+    "first_touch": { "primary": "hs_analytics_source" },
+    "last_touch": { "primary": "hs_latest_source" },
+    "self_reported": { "primary": "how_did_you_hear_about_us" },
+    "utm_source": { "primary": "utm_source" },
+    "utm_medium": { "primary": "utm_medium" },
+    "utm_campaign": { "primary": "utm_campaign" }
+  },
+
+  "extra_source_fields": [
+    { "object": "primary", "field": "hs_analytics_source_data_1" },
+    { "object": "primary", "field": "hs_analytics_source_data_2" }
+  ],
+
+  "intended_taxonomy": [
+    "Paid Search", "Paid Social", "Organic Search", "Email", "Webinar", "Conference",
+    "Referral", "Partner", "Outbound", "Website", "Other"
+  ],
+
+  "conversion": {
+    "enabled": true,
+    "converted_flag_field": "",
+    "converted_date_field": "hs_lifecyclestage_opportunity_date",
+    "to_intermediate_id_field": "",
+    "to_deal_id_field": "",
+    "converted_by_field": "hubspot_owner_name",
+    "lifecycle_progressed_field": "hs_lifecyclestage_opportunity_date",
+    "association_file": "associations.json"
+  },
+
+  "won": { "boolean_field": "hs_is_closed_won", "stage_field": "dealstage", "won_stages": ["closedwon"] },
+
+  "agreement_pairs": [
+    {
+      "object": "primary",
+      "a": "hs_analytics_source",
+      "b": "original_lead_source",
+      "kind": "auto_vs_manual",
+      "label": "HubSpot's automatic hs_analytics_source vs the manually-set Original Lead Source"
+    }
+  ],
+
+  "history_file": "",
+  "field_definitions_file": "properties.json"
+}

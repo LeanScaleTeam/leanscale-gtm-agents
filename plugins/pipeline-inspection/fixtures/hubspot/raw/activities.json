@@ -1,0 +1,859 @@
+{
+  "results": [
+    {
+      "id": "88000000",
+      "properties": {
+        "hs_timestamp": "2026-07-29T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300000"
+      }
+    },
+    {
+      "id": "88000001",
+      "properties": {
+        "hs_timestamp": "2026-07-23T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300000"
+      }
+    },
+    {
+      "id": "88000002",
+      "properties": {
+        "hs_timestamp": "2026-07-21T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300000"
+      }
+    },
+    {
+      "id": "88000003",
+      "properties": {
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300001"
+      }
+    },
+    {
+      "id": "88000004",
+      "properties": {
+        "hs_timestamp": "2026-08-06T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300002"
+      }
+    },
+    {
+      "id": "88000005",
+      "properties": {
+        "hs_timestamp": "2026-07-31T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300002"
+      }
+    },
+    {
+      "id": "88000006",
+      "properties": {
+        "hs_timestamp": "2026-07-03T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300003"
+      }
+    },
+    {
+      "id": "88000007",
+      "properties": {
+        "hs_timestamp": "2026-06-24T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300003"
+      }
+    },
+    {
+      "id": "88000008",
+      "properties": {
+        "hs_timestamp": "2026-06-25T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300003"
+      }
+    },
+    {
+      "id": "88000009",
+      "properties": {
+        "hs_timestamp": "2026-07-16T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300004"
+      }
+    },
+    {
+      "id": "88000010",
+      "properties": {
+        "hs_timestamp": "2026-07-06T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300004"
+      }
+    },
+    {
+      "id": "88000011",
+      "properties": {
+        "hs_timestamp": "2026-06-28T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300004"
+      }
+    },
+    {
+      "id": "88000012",
+      "properties": {
+        "hs_timestamp": "2026-08-05T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300005"
+      }
+    },
+    {
+      "id": "88000013",
+      "properties": {
+        "hs_timestamp": "2026-05-07T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300006"
+      }
+    },
+    {
+      "id": "88000014",
+      "properties": {
+        "hs_timestamp": "2026-05-04T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300006"
+      }
+    },
+    {
+      "id": "88000015",
+      "properties": {
+        "hs_timestamp": "2026-03-23T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300007"
+      }
+    },
+    {
+      "id": "88000016",
+      "properties": {
+        "hs_timestamp": "2026-06-10T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300008"
+      }
+    },
+    {
+      "id": "88000017",
+      "properties": {
+        "hs_timestamp": "2026-06-27T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300009"
+      }
+    },
+    {
+      "id": "88000018",
+      "properties": {
+        "hs_timestamp": "2026-06-24T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300009"
+      }
+    },
+    {
+      "id": "88000019",
+      "properties": {
+        "hs_timestamp": "2026-07-10T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300010"
+      }
+    },
+    {
+      "id": "88000020",
+      "properties": {
+        "hs_timestamp": "2026-07-06T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300010"
+      }
+    },
+    {
+      "id": "88000021",
+      "properties": {
+        "hs_timestamp": "2026-07-02T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300010"
+      }
+    },
+    {
+      "id": "88000022",
+      "properties": {
+        "hs_timestamp": "2026-07-24T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300011"
+      }
+    },
+    {
+      "id": "88000023",
+      "properties": {
+        "hs_timestamp": "2026-07-15T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300011"
+      }
+    },
+    {
+      "id": "88000024",
+      "properties": {
+        "hs_timestamp": "2026-08-07T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300012"
+      }
+    },
+    {
+      "id": "88000025",
+      "properties": {
+        "hs_timestamp": "2026-07-30T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300012"
+      }
+    },
+    {
+      "id": "88000026",
+      "properties": {
+        "hs_timestamp": "2026-07-30T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300012"
+      }
+    },
+    {
+      "id": "88000027",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300013"
+      }
+    },
+    {
+      "id": "88000028",
+      "properties": {
+        "hs_timestamp": "2026-07-27T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300013"
+      }
+    },
+    {
+      "id": "88000029",
+      "properties": {
+        "hs_timestamp": "2026-07-11T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300013"
+      }
+    },
+    {
+      "id": "88000030",
+      "properties": {
+        "hs_timestamp": "2026-07-30T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300014"
+      }
+    },
+    {
+      "id": "88000031",
+      "properties": {
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300015"
+      }
+    },
+    {
+      "id": "88000032",
+      "properties": {
+        "hs_timestamp": "2026-07-23T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300015"
+      }
+    },
+    {
+      "id": "88000033",
+      "properties": {
+        "hs_timestamp": "2026-07-26T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300015"
+      }
+    },
+    {
+      "id": "88000034",
+      "properties": {
+        "hs_timestamp": "2026-07-27T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300016"
+      }
+    },
+    {
+      "id": "88000035",
+      "properties": {
+        "hs_timestamp": "2026-07-17T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300016"
+      }
+    },
+    {
+      "id": "88000036",
+      "properties": {
+        "hs_timestamp": "2026-07-21T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300016"
+      }
+    },
+    {
+      "id": "88000037",
+      "properties": {
+        "hs_timestamp": "2026-08-08T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300017"
+      }
+    },
+    {
+      "id": "88000038",
+      "properties": {
+        "hs_timestamp": "2026-07-28T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300017"
+      }
+    },
+    {
+      "id": "88000039",
+      "properties": {
+        "hs_timestamp": "2026-08-06T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300018"
+      }
+    },
+    {
+      "id": "88000040",
+      "properties": {
+        "hs_timestamp": "2026-08-04T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300019"
+      }
+    },
+    {
+      "id": "88000041",
+      "properties": {
+        "hs_timestamp": "2026-07-31T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300019"
+      }
+    },
+    {
+      "id": "88000042",
+      "properties": {
+        "hs_timestamp": "2026-07-31T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300020"
+      }
+    },
+    {
+      "id": "88000043",
+      "properties": {
+        "hs_timestamp": "2026-07-27T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300020"
+      }
+    },
+    {
+      "id": "88000044",
+      "properties": {
+        "hs_timestamp": "2026-08-03T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300021"
+      }
+    },
+    {
+      "id": "88000045",
+      "properties": {
+        "hs_timestamp": "2026-08-05T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300022"
+      }
+    },
+    {
+      "id": "88000046",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300022"
+      }
+    },
+    {
+      "id": "88000047",
+      "properties": {
+        "hs_timestamp": "2026-07-28T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300023"
+      }
+    },
+    {
+      "id": "88000048",
+      "properties": {
+        "hs_timestamp": "2026-07-18T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300023"
+      }
+    },
+    {
+      "id": "88000049",
+      "properties": {
+        "hs_timestamp": "2026-07-10T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300023"
+      }
+    },
+    {
+      "id": "88000050",
+      "properties": {
+        "hs_timestamp": "2026-07-22T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300024"
+      }
+    },
+    {
+      "id": "88000051",
+      "properties": {
+        "hs_timestamp": "2026-07-17T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300024"
+      }
+    },
+    {
+      "id": "88000052",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300025"
+      }
+    },
+    {
+      "id": "88000053",
+      "properties": {
+        "hs_timestamp": "2026-08-04T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300026"
+      }
+    },
+    {
+      "id": "88000054",
+      "properties": {
+        "hs_timestamp": "2026-07-25T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300026"
+      }
+    },
+    {
+      "id": "88000055",
+      "properties": {
+        "hs_timestamp": "2026-07-26T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300027"
+      }
+    },
+    {
+      "id": "88000056",
+      "properties": {
+        "hs_timestamp": "2026-07-19T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300027"
+      }
+    },
+    {
+      "id": "88000057",
+      "properties": {
+        "hs_timestamp": "2026-07-18T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300027"
+      }
+    },
+    {
+      "id": "88000058",
+      "properties": {
+        "hs_timestamp": "2026-08-08T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300028"
+      }
+    },
+    {
+      "id": "88000059",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300028"
+      }
+    },
+    {
+      "id": "88000060",
+      "properties": {
+        "hs_timestamp": "2026-07-29T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300028"
+      }
+    },
+    {
+      "id": "88000061",
+      "properties": {
+        "hs_timestamp": "2026-08-07T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300029"
+      }
+    },
+    {
+      "id": "88000062",
+      "properties": {
+        "hs_timestamp": "2026-08-06T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300030"
+      }
+    },
+    {
+      "id": "88000063",
+      "properties": {
+        "hs_timestamp": "2026-07-31T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300030"
+      }
+    },
+    {
+      "id": "88000064",
+      "properties": {
+        "hs_timestamp": "2026-08-05T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300031"
+      }
+    },
+    {
+      "id": "88000065",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300031"
+      }
+    },
+    {
+      "id": "88000066",
+      "properties": {
+        "hs_timestamp": "2026-07-24T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300031"
+      }
+    },
+    {
+      "id": "88000067",
+      "properties": {
+        "hs_timestamp": "2026-08-04T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300032"
+      }
+    },
+    {
+      "id": "88000068",
+      "properties": {
+        "hs_timestamp": "2026-07-25T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300032"
+      }
+    },
+    {
+      "id": "88000069",
+      "properties": {
+        "hs_timestamp": "2026-08-03T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300033"
+      }
+    },
+    {
+      "id": "88000070",
+      "properties": {
+        "hs_timestamp": "2026-07-24T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300033"
+      }
+    },
+    {
+      "id": "88000071",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300034"
+      }
+    },
+    {
+      "id": "88000072",
+      "properties": {
+        "hs_timestamp": "2026-07-25T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300034"
+      }
+    },
+    {
+      "id": "88000073",
+      "properties": {
+        "hs_timestamp": "2026-07-17T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300034"
+      }
+    },
+    {
+      "id": "88000074",
+      "properties": {
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300035"
+      }
+    },
+    {
+      "id": "88000075",
+      "properties": {
+        "hs_timestamp": "2026-07-23T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300035"
+      }
+    },
+    {
+      "id": "88000076",
+      "properties": {
+        "hs_timestamp": "2026-07-31T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300036"
+      }
+    },
+    {
+      "id": "88000077",
+      "properties": {
+        "hs_timestamp": "2026-07-27T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300036"
+      }
+    },
+    {
+      "id": "88000078",
+      "properties": {
+        "hs_timestamp": "2026-08-08T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300037"
+      }
+    },
+    {
+      "id": "88000079",
+      "properties": {
+        "hs_timestamp": "2026-08-04T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300037"
+      }
+    },
+    {
+      "id": "88000080",
+      "properties": {
+        "hs_timestamp": "2026-08-07T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300038"
+      }
+    },
+    {
+      "id": "88000081",
+      "properties": {
+        "hs_timestamp": "2026-07-30T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300038"
+      }
+    },
+    {
+      "id": "88000082",
+      "properties": {
+        "hs_timestamp": "2026-07-18T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300038"
+      }
+    },
+    {
+      "id": "88000083",
+      "properties": {
+        "hs_timestamp": "2026-08-06T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300039"
+      }
+    },
+    {
+      "id": "88000084",
+      "properties": {
+        "hs_timestamp": "2026-07-27T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300039"
+      }
+    },
+    {
+      "id": "88000085",
+      "properties": {
+        "hs_timestamp": "2026-07-19T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300039"
+      }
+    },
+    {
+      "id": "88000086",
+      "properties": {
+        "hs_timestamp": "2026-08-05T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300040"
+      }
+    },
+    {
+      "id": "88000087",
+      "properties": {
+        "hs_timestamp": "2026-08-04T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300041"
+      }
+    },
+    {
+      "id": "88000088",
+      "properties": {
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300041"
+      }
+    },
+    {
+      "id": "88000089",
+      "properties": {
+        "hs_timestamp": "2026-07-21T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300041"
+      }
+    },
+    {
+      "id": "88000090",
+      "properties": {
+        "hs_timestamp": "2026-08-03T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300042"
+      }
+    },
+    {
+      "id": "88000091",
+      "properties": {
+        "hs_timestamp": "2026-08-02T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300043"
+      }
+    },
+    {
+      "id": "88000092",
+      "properties": {
+        "hs_timestamp": "2026-07-24T00:00:00.000Z",
+        "hs_engagement_type": "MEETING",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300043"
+      }
+    },
+    {
+      "id": "88000093",
+      "properties": {
+        "hs_timestamp": "2026-07-19T00:00:00.000Z",
+        "hs_engagement_type": "CALL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300043"
+      }
+    },
+    {
+      "id": "88000094",
+      "properties": {
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "hs_engagement_type": "EMAIL",
+        "hs_activity_type": "Sales activity",
+        "dealId": "94100300044"
+      }
+    }
+  ]
+}

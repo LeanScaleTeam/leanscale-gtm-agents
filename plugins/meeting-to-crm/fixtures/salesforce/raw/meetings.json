@@ -1,0 +1,148 @@
+{
+  "source": "fireflies",
+  "fetched_at": "2026-08-08T13:02:00Z",
+  "window": { "start": "2026-08-03", "end": "2026-08-08" },
+  "meetings": [
+    {
+      "id": "mtg-001",
+      "source": "fireflies",
+      "title": "Northwind Analytics <> Acme — Discovery",
+      "meeting_type": "discovery",
+      "started_at": "2026-08-04T15:00:00Z",
+      "duration_minutes": 38,
+      "url": "https://app.example-transcripts.com/view/mtg-001",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": "cal-88fa21",
+      "crm_links": { "opportunity_id": null, "account_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Priya Raman", "email": "priya@northwindanalytics.com", "internal": false, "title": "VP RevOps" }
+      ],
+      "transcript": [
+        { "ts": "00:00:41", "speaker": "Dana Ruiz", "text": "Thanks for making time, Priya. Before we get into the product, tell me what made you take this call." },
+        { "ts": "00:01:05", "speaker": "Priya Raman", "text": "We closed our Series B in March and the board wants us at forty million ARR in eighteen months. Right now our reps spend the first hour of every day fixing records by hand, and I cannot hire my way out of that." },
+        { "ts": "00:02:18", "speaker": "Priya Raman", "text": "The number I care about is ramp time. New reps take about five months to full productivity and we have twelve people starting in Q4. If we got that to three months it is worth roughly two million in incremental bookings next year." },
+        { "ts": "00:04:02", "speaker": "Dana Ruiz", "text": "Who else feels that pain internally?" },
+        { "ts": "00:04:20", "speaker": "Priya Raman", "text": "Marcus Vela runs revenue operations under our CFO and he owns the budget line for anything over fifty thousand dollars. I can champion this internally but Marcus signs." },
+        { "ts": "00:06:47", "speaker": "Priya Raman", "text": "I should be straight with you, we are also looking at Clearwater. They came in through our CFO and their pitch is that everything is in one platform." },
+        { "ts": "00:09:30", "speaker": "Priya Raman", "text": "What usually kills projects here is security review. Our process is a vendor questionnaire, then a thirty day pilot with real data, then procurement. Legal will not start until the questionnaire is back." },
+        { "ts": "00:12:15", "speaker": "Dana Ruiz", "text": "What is your timeline?" },
+        { "ts": "00:12:22", "speaker": "Priya Raman", "text": "We want a decision before the end of the quarter because the new reps start in October and there is no point rolling this out mid ramp." },
+        { "ts": "00:18:40", "speaker": "Priya Raman", "text": "One more person you should know about is Sofia Bhatt, she runs sales enablement and she will be the one deciding whether the team actually adopts it." },
+        { "ts": "00:31:20", "speaker": "Dana Ruiz", "text": "So where do we go from here?" },
+        { "ts": "00:31:34", "speaker": "Priya Raman", "text": "Send me the security questionnaire and I will get it to legal by the fourteenth. Let us put a joint review on the calendar for the eighteenth with Marcus in the room." },
+        { "ts": "00:33:02", "speaker": "Dana Ruiz", "text": "Perfect, I will send the questionnaire today." }
+      ]
+    },
+    {
+      "id": "mtg-002",
+      "source": "fireflies",
+      "title": "Helio Grid <> Acme — Demo",
+      "meeting_type": "demo",
+      "started_at": "2026-08-05T17:30:00Z",
+      "duration_minutes": 29,
+      "url": "https://app.example-transcripts.com/view/mtg-002",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": "cal-88fa77",
+      "crm_links": { "opportunity_id": "0065f00000HG1AAA", "account_id": "0015f00000HGACCT" },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Erin Salas", "email": "erin@heliogrid.io", "internal": false, "title": "VP Sales Operations" }
+      ],
+      "transcript": [
+        { "ts": "00:01:12", "speaker": "Erin Salas", "text": "Before you start, I want to say the reason we are still talking is the forecast problem, not the notes problem." },
+        { "ts": "00:03:40", "speaker": "Erin Salas", "text": "Reps rebuild the same forecast spreadsheet every Monday and by Wednesday it disagrees with the CRM." },
+        { "ts": "00:11:05", "speaker": "Erin Salas", "text": "If the pilot does not clear security we are dead in the water, that is the whole risk." },
+        { "ts": "00:14:30", "speaker": "Dana Ruiz", "text": "On commercials, where would you expect to land?" },
+        { "ts": "00:14:44", "speaker": "Erin Salas", "text": "We would be looking at about a hundred and forty thousand for the first year, assuming the whole go to market team." },
+        { "ts": "00:15:20", "speaker": "Erin Salas", "text": "And we would want paper signed by the end of September so it lands in this fiscal year." },
+        { "ts": "00:19:02", "speaker": "Erin Salas", "text": "The other name that came up internally was Northstar Systems, though nobody has met with them." },
+        { "ts": "00:22:15", "speaker": "Erin Salas", "text": "Timing beyond the pilot, maybe end of the year, honestly it is fuzzy." },
+        { "ts": "00:24:50", "speaker": "Erin Salas", "text": "Everything goes through a security review and then Erin signs, which is me, so at least that part is quick." },
+        { "ts": "00:26:33", "speaker": "Erin Salas", "text": "Send the pricing over to me and legal usually takes a week." }
+      ]
+    },
+    {
+      "id": "mtg-003",
+      "source": "fireflies",
+      "title": "Brightpath Labs <> Acme — Sync",
+      "meeting_type": "technical_validation",
+      "started_at": "2026-08-06T14:00:00Z",
+      "duration_minutes": 22,
+      "url": "https://app.example-transcripts.com/view/mtg-003",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": null,
+      "crm_links": { "opportunity_id": null, "account_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Ruben Ortiz", "email": "ruben@brightpathlabs.com", "internal": false, "title": "Director of Revenue Systems" }
+      ],
+      "transcript": [
+        { "ts": "00:00:50", "speaker": "Ruben Ortiz", "text": "We have two things running with you at once and I am not sure which one this call is about." },
+        { "ts": "00:02:10", "speaker": "Ruben Ortiz", "text": "The platform piece is with my team, the services piece is with finance." },
+        { "ts": "00:05:45", "speaker": "Ruben Ortiz", "text": "Either way the thing that has to be true is that reporting stops being manual by the end of the year." }
+      ]
+    },
+    {
+      "id": "mtg-004",
+      "source": "fireflies",
+      "title": "Corvus Logistics <> Acme — Renewal check-in",
+      "meeting_type": "renewal",
+      "started_at": "2026-08-06T19:00:00Z",
+      "duration_minutes": 26,
+      "url": "https://app.example-transcripts.com/view/mtg-004",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": "cal-88fb02",
+      "crm_links": { "opportunity_id": null, "account_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Nadia Kerr", "email": "nadia@corvuslogistics.com", "internal": false, "title": "Director of Sales Operations" }
+      ],
+      "transcript": [
+        { "ts": "00:02:05", "speaker": "Nadia Kerr", "text": "Renewal is in November and my CFO has asked every vendor to justify the line item this year." },
+        { "ts": "00:07:40", "speaker": "Nadia Kerr", "text": "We will start the renewal conversation in September so we are not doing it in the last two weeks." },
+        { "ts": "00:12:18", "speaker": "Nadia Kerr", "text": "Honestly the team likes the product, my problem is I cannot show what it did for us." }
+      ]
+    },
+    {
+      "id": "mtg-005",
+      "source": "fireflies",
+      "title": "Meridian Foods intro",
+      "meeting_type": "discovery",
+      "started_at": "2026-08-07T16:00:00Z",
+      "duration_minutes": 18,
+      "url": "https://app.example-transcripts.com/view/mtg-005",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": null,
+      "crm_links": { "opportunity_id": null, "account_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Tom Beckett", "email": "tom@meridianfoods.example", "internal": false, "title": "COO" }
+      ],
+      "transcript": [
+        { "ts": "00:00:35", "speaker": "Tom Beckett", "text": "We got your name from our board, we are just starting to look." },
+        { "ts": "00:04:12", "speaker": "Tom Beckett", "text": "Right now everything lives in spreadsheets and one very tired analyst." }
+      ]
+    },
+    {
+      "id": "mtg-006",
+      "source": "fireflies",
+      "title": "Sales standup",
+      "meeting_type": "internal",
+      "started_at": "2026-08-07T13:30:00Z",
+      "duration_minutes": 12,
+      "url": "https://app.example-transcripts.com/view/mtg-006",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": null,
+      "crm_links": { "opportunity_id": null, "account_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Alex Moreau", "email": "alex@acme.io", "internal": true, "title": "Sales Manager" }
+      ],
+      "transcript": [
+        { "ts": "00:00:20", "speaker": "Dana Ruiz", "text": "Quick standup, I will keep it to five minutes." },
+        { "ts": "00:01:10", "speaker": "Dana Ruiz", "text": "Northwind is moving, Helio Grid is waiting on security." }
+      ]
+    }
+  ]
+}

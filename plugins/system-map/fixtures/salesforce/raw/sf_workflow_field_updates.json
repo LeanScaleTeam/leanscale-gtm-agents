@@ -1,0 +1,11 @@
+{
+  "size": 3,
+  "totalSize": 3,
+  "done": true,
+  "entityTypeName": "WorkflowFieldUpdate",
+  "records": [
+    { "attributes": { "type": "WorkflowFieldUpdate" }, "Id": "04YA00000001", "Name": "Update_Forecast_Category", "TableEnumOrId": "Opportunity", "LastModifiedDate": "2022-09-30T10:00:00.000+0000", "Metadata": { "field": "Forecast_Category__c", "name": "Update Forecast Category", "operation": "Literal", "literalValue": "Closed", "protected": false, "reevaluateOnChange": true } },
+    { "attributes": { "type": "WorkflowFieldUpdate" }, "Id": "04YA00000002", "Name": "Set_Lead_Rating", "TableEnumOrId": "Lead", "LastModifiedDate": "2023-02-14T09:00:00.000+0000", "Metadata": { "field": "Rating", "name": "Set Lead Rating", "operation": "Literal", "literalValue": "Warm", "protected": false, "reevaluateOnChange": false } },
+    { "attributes": { "type": "WorkflowFieldUpdate" }, "Id": "04YA00000003", "Name": "Stamp_Account_Tier", "TableEnumOrId": "Account", "LastModifiedDate": "2021-11-05T14:00:00.000+0000", "Metadata": { "field": "Tier__c", "name": "Stamp Account Tier", "operation": "Literal", "literalValue": "Tier 1", "protected": false, "reevaluateOnChange": false } }
+  ]
+}

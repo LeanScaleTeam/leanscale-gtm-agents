@@ -1,0 +1,54 @@
+{
+  "crm": "hubspot",
+  "org_name": "Northwind Systems",
+  "as_of": "2026-08-10",
+  "instance_label": "Northwind HubSpot (portal 41209977)",
+  "notes": [
+    "Synthetic sample data in HubSpot's response shapes: objects with a properties bag,",
+    "batch reads with propertiesWithHistory, and v4 association batch-read results.",
+    "hubspot_owner_name is injected by the run skill after resolving GET /crm/v3/owners."
+  ],
+  "sources": [
+    {
+      "name": "open_opportunities",
+      "tool": "hubspot-search-objects",
+      "query": "POST /crm/v3/objects/deals/search  filter hs_is_closed EQ false"
+    },
+    {
+      "name": "closed_opportunities",
+      "tool": "hubspot-search-objects",
+      "query": "POST /crm/v3/objects/deals/search  filter hs_is_closed EQ true AND closedate GTE <24 months ago>"
+    },
+    {
+      "name": "stage_history",
+      "tool": "hubspot-batch-read-objects",
+      "query": "POST /crm/v3/objects/deals/batch/read  propertiesWithHistory: [dealstage]"
+    },
+    {
+      "name": "field_history",
+      "tool": "hubspot-batch-read-objects",
+      "query": "POST /crm/v3/objects/deals/batch/read  propertiesWithHistory: [closedate, amount]",
+      "note": "HubSpot returns the most recent versions per property; very old changes can be truncated."
+    },
+    {
+      "name": "contact_roles",
+      "tool": "hubspot-list-associations",
+      "query": "POST /crm/v4/associations/deals/contacts/batch/read"
+    },
+    {
+      "name": "activities",
+      "tool": "hubspot-search-objects",
+      "query": "POST /crm/v3/objects/calls/search + /emails/search + /meetings/search, flattened with dealId"
+    },
+    {
+      "name": "open_tasks",
+      "tool": "hubspot-search-objects",
+      "query": "POST /crm/v3/objects/tasks/search  filter hs_task_status EQ NOT_STARTED"
+    },
+    {
+      "name": "stage_metadata",
+      "tool": "hubspot-get-schemas",
+      "query": "GET /crm/v3/pipelines/deals"
+    }
+  ]
+}

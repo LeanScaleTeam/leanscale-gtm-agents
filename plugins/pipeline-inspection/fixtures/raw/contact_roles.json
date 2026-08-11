@@ -1,0 +1,1859 @@
+{
+  "totalSize": 109,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "ContactId": "003000000500001QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Bhatt",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.bhatt@redshiftteleco.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "ContactId": "003000000500002QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Cortez",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.cortez@redshiftteleco.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "ContactId": "003000000500003QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Duarte",
+        "Title": "CFO",
+        "Email": "deepa.duarte@kestrelsemicon.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "ContactId": "003000000500004QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Eriksen",
+        "Title": "Head of Procurement",
+        "Email": "elena.eriksen@kestrelsemicon.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "ContactId": "003000000500005QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Falk",
+        "Title": "IT Director",
+        "Email": "frank.falk@kestrelsemicon.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "ContactId": "003000000500006QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Grewal",
+        "Title": "VP Finance",
+        "Email": "grace.grewal@ionmarkenergy.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "ContactId": "003000000500007QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Hoang",
+        "Title": "Sales Manager",
+        "Email": "hugo.hoang@ionmarkenergy.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "ContactId": "003000000500008QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Ibsen",
+        "Title": "General Counsel",
+        "Email": "iris.ibsen@ionmarkenergy.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "ContactId": "003000000500009QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Jarvis",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.jarvis@ionmarkenergy.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "ContactId": "003000000500010QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Kara Kowal",
+        "Title": "VP Revenue Operations",
+        "Email": "kara.kowal@meridianfoods.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "ContactId": "003000000500011QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Liam Lindqvist",
+        "Title": "Chief Revenue Officer",
+        "Email": "liam.lindqvist@meridianfoods.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300004QAB",
+      "ContactId": "003000000500012QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Maya Moreau",
+        "Title": "Director of Sales Ops",
+        "Email": "maya.moreau@harbourlineret.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "ContactId": "003000000500013QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Noor Nwosu",
+        "Title": "CFO",
+        "Email": "noor.nwosu@bexleyutilitie.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "ContactId": "003000000500014QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Omar Ortiz",
+        "Title": "Head of Procurement",
+        "Email": "omar.ortiz@bexleyutilitie.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "ContactId": "003000000500015QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Pia Pham",
+        "Title": "IT Director",
+        "Email": "pia.pham@bexleyutilitie.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300006QAB",
+      "ContactId": "003000000500016QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Quinn Quintero",
+        "Title": "VP Finance",
+        "Email": "quinn.quintero@corvidgames.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300007QAB",
+      "ContactId": "003000000500017QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Rosa Rossi",
+        "Title": "Sales Manager",
+        "Email": "rosa.rossi@quarryminingco.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300008QAB",
+      "ContactId": "003000000500018QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Sam Abbott",
+        "Title": "General Counsel",
+        "Email": "sam.abbott@umbrasecurity.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300008QAB",
+      "ContactId": "003000000500019QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Tanvi Bhatt",
+        "Title": "Chief Information Officer",
+        "Email": "tanvi.bhatt@umbrasecurity.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300009QAB",
+      "ContactId": "003000000500020QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Alex Cortez",
+        "Title": "VP Revenue Operations",
+        "Email": "alex.cortez@granitepeakski.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300009QAB",
+      "ContactId": "003000000500021QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Duarte",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.duarte@granitepeakski.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "ContactId": "003000000500022QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Eriksen",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.eriksen@foxgloveappare.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "ContactId": "003000000500023QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Falk",
+        "Title": "CFO",
+        "Email": "deepa.falk@foxgloveappare.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "ContactId": "003000000500024QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Grewal",
+        "Title": "Head of Procurement",
+        "Email": "elena.grewal@dunmorechemica.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "ContactId": "003000000500025QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Hoang",
+        "Title": "IT Director",
+        "Email": "frank.hoang@dunmorechemica.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "ContactId": "003000000500026QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Ibsen",
+        "Title": "VP Finance",
+        "Email": "grace.ibsen@dunmorechemica.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300012QAB",
+      "ContactId": "003000000500027QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Jarvis",
+        "Title": "Sales Manager",
+        "Email": "hugo.jarvis@glacierrobotic.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "ContactId": "003000000500028QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Kowal",
+        "Title": "General Counsel",
+        "Email": "iris.kowal@northgateinsur.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "ContactId": "003000000500029QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Lindqvist",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.lindqvist@northgateinsur.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "ContactId": "003000000500030QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Kara Moreau",
+        "Title": "VP Revenue Operations",
+        "Email": "kara.moreau@vantagerail.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "ContactId": "003000000500031QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Liam Nwosu",
+        "Title": "Chief Revenue Officer",
+        "Email": "liam.nwosu@vantagerail.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300017QAB",
+      "ContactId": "003000000500032QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Maya Ortiz",
+        "Title": "Director of Sales Ops",
+        "Email": "maya.ortiz@silverlineair.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300017QAB",
+      "ContactId": "003000000500033QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Noor Pham",
+        "Title": "CFO",
+        "Email": "noor.pham@silverlineair.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300018QAB",
+      "ContactId": "003000000500034QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Omar Quintero",
+        "Title": "Head of Procurement",
+        "Email": "omar.quintero@yarrowbiotech.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300018QAB",
+      "ContactId": "003000000500035QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Pia Rossi",
+        "Title": "IT Director",
+        "Email": "pia.rossi@yarrowbiotech.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "ContactId": "003000000500036QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Quinn Abbott",
+        "Title": "VP Finance",
+        "Email": "quinn.abbott@elmridgeschool.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "ContactId": "003000000500037QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Rosa Bhatt",
+        "Title": "Sales Manager",
+        "Email": "rosa.bhatt@elmridgeschool.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "ContactId": "003000000500038QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Sam Cortez",
+        "Title": "General Counsel",
+        "Email": "sam.cortez@elmridgeschool.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300020QAB",
+      "ContactId": "003000000500039QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Tanvi Duarte",
+        "Title": "Chief Information Officer",
+        "Email": "tanvi.duarte@halcyonmarine.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300021QAB",
+      "ContactId": "003000000500040QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Alex Eriksen",
+        "Title": "VP Revenue Operations",
+        "Email": "alex.eriksen@ivywoodpropert.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300021QAB",
+      "ContactId": "003000000500041QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Falk",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.falk@ivywoodpropert.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "ContactId": "003000000500042QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Grewal",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.grewal@tessellatesoft.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "ContactId": "003000000500043QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Hoang",
+        "Title": "CFO",
+        "Email": "deepa.hoang@tessellatesoft.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "ContactId": "003000000500044QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Ibsen",
+        "Title": "Head of Procurement",
+        "Email": "elena.ibsen@tessellatesoft.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300023QAB",
+      "ContactId": "003000000500045QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Jarvis",
+        "Title": "IT Director",
+        "Email": "frank.jarvis@pinnacletextil.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300023QAB",
+      "ContactId": "003000000500046QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Kowal",
+        "Title": "VP Finance",
+        "Email": "grace.kowal@pinnacletextil.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "ContactId": "003000000500047QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Lindqvist",
+        "Title": "Sales Manager",
+        "Email": "hugo.lindqvist@westmarklegal.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "ContactId": "003000000500048QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Moreau",
+        "Title": "General Counsel",
+        "Email": "iris.moreau@westmarklegal.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "ContactId": "003000000500049QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Nwosu",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.nwosu@orbitpay.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "ContactId": "003000000500050QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Kara Ortiz",
+        "Title": "VP Revenue Operations",
+        "Email": "kara.ortiz@orbitpay.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "ContactId": "003000000500051QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Liam Pham",
+        "Title": "Chief Revenue Officer",
+        "Email": "liam.pham@orbitpay.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "ContactId": "003000000500052QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Maya Quintero",
+        "Title": "Director of Sales Ops",
+        "Email": "maya.quintero@lumengrid.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "ContactId": "003000000500053QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Noor Rossi",
+        "Title": "CFO",
+        "Email": "noor.rossi@lumengrid.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300027QAB",
+      "ContactId": "003000000500054QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Omar Abbott",
+        "Title": "Head of Procurement",
+        "Email": "omar.abbott@lumengrid.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300028QAB",
+      "ContactId": "003000000500055QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Pia Bhatt",
+        "Title": "IT Director",
+        "Email": "pia.bhatt@ardentlogistic.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300028QAB",
+      "ContactId": "003000000500056QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Quinn Cortez",
+        "Title": "VP Finance",
+        "Email": "quinn.cortez@ardentlogistic.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300029QAB",
+      "ContactId": "003000000500057QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Rosa Duarte",
+        "Title": "Sales Manager",
+        "Email": "rosa.duarte@brightpathheal.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300029QAB",
+      "ContactId": "003000000500058QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Sam Eriksen",
+        "Title": "General Counsel",
+        "Email": "sam.eriksen@brightpathheal.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300029QAB",
+      "ContactId": "003000000500059QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Tanvi Falk",
+        "Title": "Chief Information Officer",
+        "Email": "tanvi.falk@brightpathheal.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "ContactId": "003000000500060QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Alex Grewal",
+        "Title": "VP Revenue Operations",
+        "Email": "alex.grewal@cobaltfreight.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "ContactId": "003000000500061QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Hoang",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.hoang@cobaltfreight.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "ContactId": "003000000500062QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Ibsen",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.ibsen@cobaltfreight.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "ContactId": "003000000500063QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Jarvis",
+        "Title": "CFO",
+        "Email": "deepa.jarvis@данныеanalytic.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "ContactId": "003000000500064QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Kowal",
+        "Title": "Head of Procurement",
+        "Email": "elena.kowal@данныеanalytic.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "ContactId": "003000000500065QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Lindqvist",
+        "Title": "IT Director",
+        "Email": "frank.lindqvist@данныеanalytic.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "ContactId": "003000000500066QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Moreau",
+        "Title": "VP Finance",
+        "Email": "grace.moreau@данныеanalytic.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "ContactId": "003000000500067QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Nwosu",
+        "Title": "Sales Manager",
+        "Email": "hugo.nwosu@everlinemedia.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "ContactId": "003000000500068QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Ortiz",
+        "Title": "General Counsel",
+        "Email": "iris.ortiz@everlinemedia.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "ContactId": "003000000500069QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Pham",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.pham@everlinemedia.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500070QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Kara Quintero",
+        "Title": "VP Revenue Operations",
+        "Email": "kara.quintero@fairhavenbank.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500071QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Liam Rossi",
+        "Title": "Chief Revenue Officer",
+        "Email": "liam.rossi@fairhavenbank.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500072QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Maya Abbott",
+        "Title": "Director of Sales Ops",
+        "Email": "maya.abbott@fairhavenbank.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500073QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Noor Bhatt",
+        "Title": "CFO",
+        "Email": "noor.bhatt@fairhavenbank.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500074QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Omar Cortez",
+        "Title": "Head of Procurement",
+        "Email": "omar.cortez@fairhavenbank.com"
+      },
+      "Role": "Evaluator",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "ContactId": "003000000500075QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Pia Duarte",
+        "Title": "IT Director",
+        "Email": "pia.duarte@fairhavenbank.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300034QAB",
+      "ContactId": "003000000500076QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Quinn Eriksen",
+        "Title": "VP Finance",
+        "Email": "quinn.eriksen@juniperlabs.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300034QAB",
+      "ContactId": "003000000500077QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Rosa Falk",
+        "Title": "Sales Manager",
+        "Email": "rosa.falk@juniperlabs.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300035QAB",
+      "ContactId": "003000000500078QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Sam Grewal",
+        "Title": "General Counsel",
+        "Email": "sam.grewal@xenolithmateri.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300035QAB",
+      "ContactId": "003000000500079QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Tanvi Hoang",
+        "Title": "Chief Information Officer",
+        "Email": "tanvi.hoang@xenolithmateri.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300035QAB",
+      "ContactId": "003000000500080QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Alex Ibsen",
+        "Title": "VP Revenue Operations",
+        "Email": "alex.ibsen@xenolithmateri.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300036QAB",
+      "ContactId": "003000000500081QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Jarvis",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.jarvis@rosewoodfreigh.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300036QAB",
+      "ContactId": "003000000500082QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Kowal",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.kowal@rosewoodfreigh.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "ContactId": "003000000500083QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Lindqvist",
+        "Title": "CFO",
+        "Email": "deepa.lindqvist@ardentlogistic.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "ContactId": "003000000500084QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Moreau",
+        "Title": "Head of Procurement",
+        "Email": "elena.moreau@ardentlogistic.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "ContactId": "003000000500085QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Nwosu",
+        "Title": "IT Director",
+        "Email": "frank.nwosu@ardentlogistic.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "ContactId": "003000000500086QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Ortiz",
+        "Title": "VP Finance",
+        "Email": "grace.ortiz@ardentlogistic.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "ContactId": "003000000500087QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Pham",
+        "Title": "Sales Manager",
+        "Email": "hugo.pham@brightpathheal.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "ContactId": "003000000500088QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Quintero",
+        "Title": "General Counsel",
+        "Email": "iris.quintero@brightpathheal.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "ContactId": "003000000500089QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Rossi",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.rossi@brightpathheal.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500090QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Kara Abbott",
+        "Title": "VP Revenue Operations",
+        "Email": "kara.abbott@cobaltfreight.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500091QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Liam Bhatt",
+        "Title": "Chief Revenue Officer",
+        "Email": "liam.bhatt@cobaltfreight.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500092QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Maya Cortez",
+        "Title": "Director of Sales Ops",
+        "Email": "maya.cortez@cobaltfreight.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500093QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Noor Duarte",
+        "Title": "CFO",
+        "Email": "noor.duarte@cobaltfreight.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500094QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Omar Eriksen",
+        "Title": "Head of Procurement",
+        "Email": "omar.eriksen@cobaltfreight.com"
+      },
+      "Role": "Evaluator",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "ContactId": "003000000500095QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Pia Falk",
+        "Title": "IT Director",
+        "Email": "pia.falk@cobaltfreight.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300040QAB",
+      "ContactId": "003000000500096QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Quinn Grewal",
+        "Title": "VP Finance",
+        "Email": "quinn.grewal@everlinemedia.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300040QAB",
+      "ContactId": "003000000500097QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Rosa Hoang",
+        "Title": "Sales Manager",
+        "Email": "rosa.hoang@everlinemedia.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300041QAB",
+      "ContactId": "003000000500098QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Sam Ibsen",
+        "Title": "General Counsel",
+        "Email": "sam.ibsen@fairhavenbank.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300041QAB",
+      "ContactId": "003000000500099QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Tanvi Jarvis",
+        "Title": "Chief Information Officer",
+        "Email": "tanvi.jarvis@fairhavenbank.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300041QAB",
+      "ContactId": "003000000500100QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Alex Kowal",
+        "Title": "VP Revenue Operations",
+        "Email": "alex.kowal@fairhavenbank.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "ContactId": "003000000500101QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Bianca Lindqvist",
+        "Title": "Chief Revenue Officer",
+        "Email": "bianca.lindqvist@juniperlabs.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "ContactId": "003000000500102QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Caleb Moreau",
+        "Title": "Director of Sales Ops",
+        "Email": "caleb.moreau@juniperlabs.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "ContactId": "003000000500103QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Deepa Nwosu",
+        "Title": "CFO",
+        "Email": "deepa.nwosu@juniperlabs.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "ContactId": "003000000500104QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Elena Ortiz",
+        "Title": "Head of Procurement",
+        "Email": "elena.ortiz@zephyrcloud.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "ContactId": "003000000500105QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Frank Pham",
+        "Title": "IT Director",
+        "Email": "frank.pham@zephyrcloud.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "ContactId": "003000000500106QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Grace Quintero",
+        "Title": "VP Finance",
+        "Email": "grace.quintero@zephyrcloud.com"
+      },
+      "Role": "Technical Buyer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "ContactId": "003000000500107QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Hugo Rossi",
+        "Title": "Sales Manager",
+        "Email": "hugo.rossi@zephyrcloud.com"
+      },
+      "Role": "Influencer",
+      "IsPrimary": false
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300044QAB",
+      "ContactId": "003000000500108QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Iris Abbott",
+        "Title": "General Counsel",
+        "Email": "iris.abbott@orbitpay.com"
+      },
+      "Role": "Decision Maker",
+      "IsPrimary": true
+    },
+    {
+      "attributes": {
+        "type": "OpportunityContactRole"
+      },
+      "OpportunityId": "006000000300044QAB",
+      "ContactId": "003000000500109QAB",
+      "Contact": {
+        "attributes": {
+          "type": "Contact"
+        },
+        "Name": "Jonah Bhatt",
+        "Title": "Chief Information Officer",
+        "Email": "jonah.bhatt@orbitpay.com"
+      },
+      "Role": "Economic Buyer",
+      "IsPrimary": false
+    }
+  ]
+}

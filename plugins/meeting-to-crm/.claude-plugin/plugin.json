@@ -1,0 +1,22 @@
+{
+  "name": "meeting-to-crm",
+  "version": "1.0.0",
+  "description": "Reads your call transcripts and proposes the CRM updates a rep would have typed \u2014 as a reviewable diff, dry-run by default, allow-listed fields only.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "salesforce",
+    "hubspot",
+    "crm",
+    "call-transcripts",
+    "meeting-notes",
+    "sales-productivity",
+    "meddpicc"
+  ]
+}

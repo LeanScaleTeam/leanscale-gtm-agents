@@ -1,0 +1,42 @@
+[
+  {
+    "id": "51002001",
+    "properties": {
+      "hs_timestamp": "2026-08-04T10:00:00Z",
+      "hs_engagement_type": "EMAIL",
+      "hs_email_subject": "Renewal paperwork — draft for your legal team",
+      "associatedcompanyid": "14778211903"
+    },
+    "seniority": "ic"
+  },
+  {
+    "id": "51002002",
+    "properties": {
+      "hs_timestamp": "2026-06-30T14:20:00Z",
+      "hs_engagement_type": "CALL",
+      "hs_call_title": "Quarterly check-in",
+      "associatedcompanyid": "14778211904"
+    },
+    "seniority": "ic"
+  },
+  {
+    "id": "51002003",
+    "properties": {
+      "hs_timestamp": "2026-05-19T09:45:00Z",
+      "hs_engagement_type": "EMAIL",
+      "hs_email_subject": "Follow-up: reporting request",
+      "associatedcompanyid": "14778211904"
+    },
+    "seniority": "ic"
+  },
+  {
+    "id": "51002004",
+    "properties": {
+      "hs_timestamp": "2026-08-07T11:30:00Z",
+      "hs_engagement_type": "MEETING",
+      "hs_meeting_title": "Seat expansion scoping",
+      "associatedcompanyid": "14778211905"
+    },
+    "seniority": "senior"
+  }
+]

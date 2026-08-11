@@ -1,0 +1,124 @@
+{
+ "records": [
+  {
+   "name": "Vertex Foundry",
+   "recurring_revenue": 34800.0
+  },
+  {
+   "name": "Fathom Legal",
+   "recurring_revenue": 25200.0
+  },
+  {
+   "name": "Ardent Metrics",
+   "recurring_revenue": 19200.0
+  },
+  {
+   "name": "Halcyon Retail",
+   "recurring_revenue": 18000.0
+  },
+  {
+   "name": "Pinnacle Ops",
+   "recurring_revenue": 17520.0
+  },
+  {
+   "name": "Initech Labs",
+   "recurring_revenue": 16800.0
+  },
+  {
+   "name": "Northwind Systems",
+   "recurring_revenue": 15360.0
+  },
+  {
+   "name": "Verdant Agri",
+   "recurring_revenue": 14640.0
+  },
+  {
+   "name": "Grove Financial",
+   "recurring_revenue": 14400.0
+  },
+  {
+   "name": "Orchid Payments",
+   "recurring_revenue": 13920.0
+  },
+  {
+   "name": "Tessellate",
+   "recurring_revenue": 13200.0
+  },
+  {
+   "name": "Borealis Cloud",
+   "recurring_revenue": 12480.0
+  },
+  {
+   "name": "Quarry Data",
+   "recurring_revenue": 12000.0
+  },
+  {
+   "name": "Lumen Freight",
+   "recurring_revenue": 9600.0
+  },
+  {
+   "name": "Everline Media",
+   "recurring_revenue": 9600.0
+  },
+  {
+   "name": "Nimbus Fleet",
+   "recurring_revenue": 9600.0
+  },
+  {
+   "name": "Solstice Labs",
+   "recurring_revenue": 7920.0
+  },
+  {
+   "name": "Juniper Grid",
+   "recurring_revenue": 7920.0
+  },
+  {
+   "name": "Cobalt Logistics",
+   "recurring_revenue": 7680.0
+  },
+  {
+   "name": "Ulysses Rail",
+   "recurring_revenue": 7200.0
+  },
+  {
+   "name": "Kilo Supply",
+   "recurring_revenue": 4800.0
+  },
+  {
+   "name": "Umbra Analytics",
+   "recurring_revenue": 4560.0
+  },
+  {
+   "name": "Kestrel Bio",
+   "recurring_revenue": 4560.0
+  },
+  {
+   "name": "Ridgeline Foods",
+   "recurring_revenue": 2400.0
+  },
+  {
+   "name": "Meridian Care",
+   "recurring_revenue": 2400.0
+  },
+  {
+   "name": "Harbor Point",
+   "recurring_revenue": 1920.0
+  },
+  {
+   "name": "Drift Robotics",
+   "recurring_revenue": 1920.0
+  },
+  {
+   "name": "Ivory Networks",
+   "recurring_revenue": 960.0
+  },
+  {
+   "name": "Sable Interactive",
+   "recurring_revenue": -4200.0
+  },
+  {
+   "name": "Tidewater Group",
+   "recurring_revenue": -1500.0
+  }
+ ]
+}

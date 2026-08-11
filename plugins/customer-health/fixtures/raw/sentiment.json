@@ -1,0 +1,286 @@
+[
+  {
+    "account_id": "001Kx000005NwM1QAK",
+    "account_name": "Northwind Logistics",
+    "champion_signal": "engaged",
+    "summary": "Consistently positive across the window and improving. The champion volunteers praise unprompted and has started referring the team internally. Nothing in the conversations suggests risk. Note for the reader: this account's renewal paperwork has not moved since June, which no call would tell you.",
+    "readings": [
+      {
+        "interaction_id": "nw-mtg-2026-03-04",
+        "occurred_at": "2026-03-04",
+        "source": "Recorded call — Routing rebuild kickoff review",
+        "tone": 1,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Dana Whitfield",
+        "speaker_role": "VP Revenue Operations",
+        "quote": "This is the first time anyone has actually shown me the routing logic in a way my team can read.",
+        "claude_note": "Positive but early — praise is for the approach, not yet for an outcome."
+      },
+      {
+        "interaction_id": "nw-mtg-2026-04-22",
+        "occurred_at": "2026-04-22",
+        "source": "Recorded call — Weekly working session",
+        "tone": 0,
+        "is_escalation": false,
+        "kind": "neutral",
+        "speaker": "Iris Kaminski",
+        "speaker_role": "Sales Operations Analyst",
+        "quote": "We are behind on the test cases but that is on us, not you.",
+        "claude_note": "Neutral working-session tone. Slippage is self-attributed, so this is not a complaint."
+      },
+      {
+        "interaction_id": "nw-mtg-2026-05-30",
+        "occurred_at": "2026-05-30",
+        "source": "Recorded call — Territory rules UAT walkthrough",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Iris Kaminski",
+        "speaker_role": "Sales Operations Analyst",
+        "quote": "Every single one of the 40 test cases passed on the first run. I have never had that happen.",
+        "claude_note": "Strong, specific, outcome-based praise from the person closest to the work."
+      },
+      {
+        "interaction_id": "nw-mtg-2026-06-18",
+        "occurred_at": "2026-06-18",
+        "source": "Recorded call — Q2 business review",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Grant Mbeki",
+        "speaker_role": "Chief Operating Officer",
+        "quote": "Speed to first touch went from two days to under an hour. That is the number I care about and it moved.",
+        "claude_note": "Executive-level praise tied to a business metric, in a business review. The strongest form of positive signal available."
+      },
+      {
+        "interaction_id": "nw-mtg-2026-07-15",
+        "occurred_at": "2026-07-15",
+        "source": "Recorded call — Weekly working session",
+        "tone": 0,
+        "is_escalation": false,
+        "kind": "neutral",
+        "speaker": "Iris Kaminski",
+        "speaker_role": "Sales Operations Analyst",
+        "quote": "Nothing blocking this week, just housekeeping.",
+        "claude_note": "Routine. No signal either way."
+      },
+      {
+        "interaction_id": "nw-mtg-2026-08-04",
+        "occurred_at": "2026-08-04",
+        "source": "Recorded call — Adoption check-in",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Dana Whitfield",
+        "speaker_role": "VP Revenue Operations",
+        "quote": "I have already recommended you to two other VPs here. You have made me look good this year.",
+        "claude_note": "Champion is spending internal political capital on the relationship. This is as healthy as sentiment gets — and it is not a signature."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwMLQA0",
+    "account_name": "Bluepeak Analytics",
+    "champion_signal": "departed",
+    "summary": "Deteriorated sharply from March onward. Two explicit escalations about a reporting discrepancy, then the champion stopped appearing entirely and the account went quiet after 28 May. The remaining contact is cooperative but has no authority.",
+    "readings": [
+      {
+        "interaction_id": "bp-mtg-2026-03-12",
+        "occurred_at": "2026-03-12",
+        "source": "Recorded call — Monthly review",
+        "tone": 0,
+        "is_escalation": false,
+        "kind": "neutral",
+        "speaker": "Marcus Feld",
+        "speaker_role": "Director of Revenue Operations",
+        "quote": "We are where I expected to be, roughly.",
+        "claude_note": "Flat. 'Roughly' is doing some work here but there is no complaint to point at yet."
+      },
+      {
+        "interaction_id": "bp-mtg-2026-04-18",
+        "occurred_at": "2026-04-18",
+        "source": "Recorded call — Attribution model status",
+        "tone": -1,
+        "is_escalation": false,
+        "kind": "complaint",
+        "speaker": "Marcus Feld",
+        "speaker_role": "Director of Revenue Operations",
+        "quote": "This is the third time we have rebuilt the same report and I still cannot hand it to my CFO.",
+        "claude_note": "First clear dissatisfaction, tied to a repeated failure and an audience that matters."
+      },
+      {
+        "interaction_id": "bp-mtg-2026-05-06",
+        "occurred_at": "2026-05-06",
+        "source": "Recorded call — Escalation: reporting discrepancy",
+        "tone": -2,
+        "is_escalation": true,
+        "kind": "escalation",
+        "speaker": "Tobias Lund",
+        "speaker_role": "Marketing Operations Manager",
+        "quote": "Marcus asked me to say this formally: the numbers in the dashboard do not match the numbers in the CRM, and we have lost confidence in both.",
+        "claude_note": "Explicit escalation language, delivered on behalf of an absent senior stakeholder. Trust in the deliverable is stated as lost."
+      },
+      {
+        "interaction_id": "bp-mtg-2026-05-28",
+        "occurred_at": "2026-05-28",
+        "source": "Recorded call — Escalation follow-up",
+        "tone": -2,
+        "is_escalation": true,
+        "kind": "escalation",
+        "speaker": "Tobias Lund",
+        "speaker_role": "Marketing Operations Manager",
+        "quote": "I do not think I am the right person for this conversation any more. I will find out who is.",
+        "claude_note": "Second escalation and an ownership vacuum. Nobody replaced Marcus in the conversation, and the account goes silent after this call."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwLgQAK",
+    "account_name": "Cascadia Health Systems",
+    "champion_signal": "engaged",
+    "summary": "Strong and stable. The champion is engaged, the CRO showed up to the business review and asked forward-looking questions, and an expansion conversation is live. No escalations in the window.",
+    "readings": [
+      {
+        "interaction_id": "cs-mtg-2026-03-20",
+        "occurred_at": "2026-03-20",
+        "source": "Recorded call — Forecast redesign working session",
+        "tone": 1,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Alina Okonkwo",
+        "speaker_role": "Senior Director, Revenue Systems",
+        "quote": "You caught something in our stage definitions that we have been arguing about internally for a year.",
+        "claude_note": "Credibility-building praise. Positive but about diagnosis, not results."
+      },
+      {
+        "interaction_id": "cs-mtg-2026-05-02",
+        "occurred_at": "2026-05-02",
+        "source": "Recorded call — Forecast redesign go-live readiness",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Alina Okonkwo",
+        "speaker_role": "Senior Director, Revenue Systems",
+        "quote": "We went live a week early and nothing broke. My team is asking what else we can put through this process.",
+        "claude_note": "Outcome praise plus pull for more work — the cleanest possible expansion signal."
+      },
+      {
+        "interaction_id": "cs-mtg-2026-06-11",
+        "occurred_at": "2026-06-11",
+        "source": "Recorded call — Executive business review",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Rebecca Tran",
+        "speaker_role": "Chief Revenue Officer",
+        "quote": "Forecast accuracy is inside five points for the first time since I joined. Keep going.",
+        "claude_note": "Executive sponsor, business metric, explicit mandate to continue."
+      },
+      {
+        "interaction_id": "cs-mtg-2026-07-09",
+        "occurred_at": "2026-07-09",
+        "source": "Recorded call — Analytics module scoping",
+        "tone": 1,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Owen Delacroix",
+        "speaker_role": "Manager, Sales Operations",
+        "quote": "The handover docs were good enough that I did not need to ask you anything for three weeks.",
+        "claude_note": "Quiet, credible praise about self-sufficiency."
+      },
+      {
+        "interaction_id": "cs-mtg-2026-08-01",
+        "occurred_at": "2026-08-01",
+        "source": "Recorded call — Monthly review",
+        "tone": 2,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Alina Okonkwo",
+        "speaker_role": "Senior Director, Revenue Systems",
+        "quote": "Rebecca asked me to get the analytics module into next year's budget. That came from her, not me.",
+        "claude_note": "Expansion pulled by the economic buyer without prompting."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwMVQA0",
+    "account_name": "Ironvale Manufacturing",
+    "champion_signal": "fading",
+    "summary": "Frustrated but engaged. A duplicate-assignment defect has recurred twice and produced two escalations, and the VP-level champion has not joined a call since 21 May — the account is now being run by a director and an admin. The contract runs to April 2027, so there is time to fix this, which is exactly why it should be fixed now.",
+    "readings": [
+      {
+        "interaction_id": "iv-mtg-2026-03-05",
+        "occurred_at": "2026-03-05",
+        "source": "Recorded call — Lead routing design review",
+        "tone": 1,
+        "is_escalation": false,
+        "kind": "praise",
+        "speaker": "Hollis Bennett",
+        "speaker_role": "VP Commercial Operations",
+        "quote": "This is a much better design than the one we wrote ourselves.",
+        "claude_note": "Positive start, champion personally invested in the design."
+      },
+      {
+        "interaction_id": "iv-mtg-2026-04-16",
+        "occurred_at": "2026-04-16",
+        "source": "Recorded call — Routing build checkpoint",
+        "tone": 0,
+        "is_escalation": false,
+        "kind": "neutral",
+        "speaker": "Ray Okafor",
+        "speaker_role": "Director of Sales Operations",
+        "quote": "On track as far as I can tell.",
+        "claude_note": "Neutral status language, no enthusiasm and no complaint."
+      },
+      {
+        "interaction_id": "iv-mtg-2026-05-21",
+        "occurred_at": "2026-05-21",
+        "source": "Recorded call — Escalation: duplicate lead assignment",
+        "tone": -1,
+        "is_escalation": true,
+        "kind": "escalation",
+        "speaker": "Hollis Bennett",
+        "speaker_role": "VP Commercial Operations",
+        "quote": "Two reps called the same account on the same morning. I need this treated as urgent, not as a backlog item.",
+        "claude_note": "Explicit escalation with a named business consequence. Champion is still fighting for the account here — this is the last call he attends."
+      },
+      {
+        "interaction_id": "iv-mtg-2026-06-30",
+        "occurred_at": "2026-06-30",
+        "source": "Recorded call — Routing rules rework session",
+        "tone": -1,
+        "is_escalation": false,
+        "kind": "complaint",
+        "speaker": "Ray Okafor",
+        "speaker_role": "Director of Sales Operations",
+        "quote": "We are spending our Tuesdays on this instead of on the pipeline review.",
+        "claude_note": "Cost-of-ownership complaint rather than a quality complaint."
+      },
+      {
+        "interaction_id": "iv-mtg-2026-07-28",
+        "occurred_at": "2026-07-28",
+        "source": "Recorded call — Weekly working session",
+        "tone": 0,
+        "is_escalation": false,
+        "kind": "neutral",
+        "speaker": "Ray Okafor",
+        "speaker_role": "Director of Sales Operations",
+        "quote": "Quiet week. Nothing new broke.",
+        "claude_note": "Neutral, though the framing assumes breakage is the normal state."
+      },
+      {
+        "interaction_id": "iv-mtg-2026-08-05",
+        "occurred_at": "2026-08-05",
+        "source": "Recorded call — Escalation follow-up: duplicate assignment recurrence",
+        "tone": -1,
+        "is_escalation": true,
+        "kind": "escalation",
+        "speaker": "Ray Okafor",
+        "speaker_role": "Director of Sales Operations",
+        "quote": "It happened again on Monday. Hollis is going to ask me why we are still paying for this.",
+        "claude_note": "Second escalation on the same defect, and the first time the spend itself is questioned out loud. The absent champion is invoked as the person who will ask."
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "crm": "hubspot",
+  "captured_at": "2026-08-08T13:00:00Z",
+  "note": "From GET /crm/v3/properties/deals and /contacts. 'calculated' and 'modificationMetadata.readOnlyValue' properties come back with updateable false — writing to one is a 400 that fails the whole batch.",
+  "objects": {
+    "deals": {
+      "label": "Deal",
+      "fields": {
+        "hs_next_step": { "label": "Next step", "type": "text", "length": 400, "updateable": true },
+        "next_step_date": { "label": "Next step date", "type": "date", "updateable": true },
+        "primary_competitor": { "label": "Primary competitor", "type": "picklist", "updateable": true, "picklist_values": ["Clearwater", "Beacon", "Orbital", "None"] },
+        "identified_pain": { "label": "Identified pain", "type": "multiline", "length": 65536, "updateable": true },
+        "decision_process": { "label": "Decision process", "type": "multiline", "length": 65536, "updateable": true },
+        "decision_timeline": { "label": "Decision timeline", "type": "text", "length": 400, "updateable": true },
+        "economic_buyer": { "label": "Economic buyer", "type": "text", "length": 400, "updateable": true },
+        "description": { "label": "Description", "type": "multiline", "length": 65536, "updateable": true },
+        "amount": { "label": "Amount", "type": "number", "updateable": true },
+        "closedate": { "label": "Close date", "type": "date", "updateable": true },
+        "dealstage": { "label": "Deal stage", "type": "picklist", "updateable": true, "picklist_values": ["appointmentscheduled", "qualifiedtobuy", "presentationscheduled", "decisionmakerboughtin", "contractsent", "closedwon", "closedlost"] },
+        "notes_next_activity_date": { "label": "Next activity date", "type": "date", "updateable": false, "note": "calculated by HubSpot" },
+        "hs_deal_stage_probability": { "label": "Deal probability", "type": "number", "updateable": false, "note": "calculated" }
+      }
+    },
+    "contacts": {
+      "label": "Contact",
+      "fields": {
+        "firstname": { "label": "First name", "type": "text", "length": 255, "updateable": true },
+        "lastname": { "label": "Last name", "type": "text", "length": 255, "updateable": true },
+        "email": { "label": "Email", "type": "text", "length": 255, "updateable": true },
+        "jobtitle": { "label": "Job title", "type": "text", "length": 255, "updateable": true }
+      }
+    },
+    "notes": {
+      "label": "Note",
+      "fields": {
+        "hs_note_body": { "label": "Note body", "type": "multiline", "length": 65536, "updateable": true },
+        "hs_timestamp": { "label": "Timestamp", "type": "datetime", "updateable": true }
+      }
+    },
+    "tasks": {
+      "label": "Task",
+      "fields": {
+        "hs_task_subject": { "label": "Subject", "type": "text", "length": 255, "updateable": true },
+        "hs_task_body": { "label": "Body", "type": "multiline", "length": 65536, "updateable": true },
+        "hs_timestamp": { "label": "Due date", "type": "datetime", "updateable": true },
+        "hs_task_status": { "label": "Status", "type": "picklist", "updateable": true, "picklist_values": ["NOT_STARTED", "IN_PROGRESS", "WAITING", "COMPLETED", "DEFERRED"] }
+      }
+    }
+  }
+}

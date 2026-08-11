@@ -1,0 +1,108 @@
+{
+  "_comment": "Demo plugin config for the offline fixture run ONLY. It is config.example.json with the kickoff baselines filled in for four of the five demo accounts — Solstice Robotics is deliberately left out so the 'progress is unprovable' finding fires. Your real config lives at ~/.leanscale-gtm/customer-health.json.",
+  "schema_version": 1,
+  "window_days": 180,
+  "notice_window_days": 60,
+
+  "customer_definition": {
+    "crm": "salesforce",
+    "account_filter_soql": "Type = 'Customer' AND ARR__c > 0",
+    "exclude_account_ids": [],
+    "include_paused": false
+  },
+
+  "renewal_source": "renewal_opportunity",
+
+  "crm_fields": {
+    "account_arr": ["ARR__c"],
+    "account_arr_is_monthly": false,
+    "account_name": ["Name"],
+    "account_owner": ["CSM__c", "Owner.Name"],
+    "account_segment": ["Segment__c"],
+    "renewal_date": ["Renewal_Date__c", "CloseDate", "EndDate"],
+    "contract_start": ["Contract_Start_Date__c", "StartDate"],
+    "auto_renew": ["Auto_Renew__c"],
+    "champion_contact": ["Champion__c"],
+    "economic_buyer": ["Economic_Buyer__c"],
+    "contact_is_active": ["Is_Active__c"],
+    "contact_bounced_at": ["EmailBouncedDate"]
+  },
+
+  "quadrant": { "sentiment_floor": 60, "risk_threshold": 50 },
+  "risk_floors": {
+    "unsigned_renewal_inside_window": 55,
+    "unsigned_renewal_critical": 80,
+    "champion_departed": 62
+  },
+
+  "support_source": "support_desk",
+  "usage_source": null,
+
+  "accounts": [
+    {
+      "account_id": "001Kx000005NwLgQAK",
+      "name": "Cascadia Health Systems",
+      "kickoff_date": "2024-02-15",
+      "kickoff_arr": 300000,
+      "kickoff_sentiment": 64,
+      "kickoff_engaged_contacts": 3,
+      "kickoff_open_escalations": 1,
+      "champion": { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "title": "Senior Director, Revenue Systems" },
+      "economic_buyer": { "name": "Rebecca Tran", "email": "rebecca.tran@cascadiahealth.example", "title": "Chief Revenue Officer" },
+      "success_criteria": [
+        "Forecast accuracy inside 10 points by the end of the first year",
+        "One agreed stage definition document that survives a quarter without an argument"
+      ],
+      "notes": "Kickoff sentiment reconstructed from the first three recorded calls. They arrived sceptical after a failed internal rebuild."
+    },
+    {
+      "account_id": "001Kx000005NwM1QAK",
+      "name": "Northwind Logistics",
+      "kickoff_date": "2025-03-10",
+      "kickoff_arr": 195000,
+      "kickoff_sentiment": 58,
+      "kickoff_engaged_contacts": 2,
+      "kickoff_open_escalations": 0,
+      "champion": { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "title": "VP Revenue Operations" },
+      "economic_buyer": { "name": "Grant Mbeki", "email": "grant.mbeki@northwindlogistics.example", "title": "Chief Operating Officer" },
+      "success_criteria": [
+        "Speed to first touch under one hour",
+        "Routing logic a non-technical operations analyst can read and change"
+      ],
+      "notes": "Signed after a competitive evaluation. The economic buyer at signature was the previous CFO, who has since left."
+    },
+    {
+      "account_id": "001Kx000005NwMLQA0",
+      "name": "Bluepeak Analytics",
+      "kickoff_date": "2024-12-01",
+      "kickoff_arr": 120000,
+      "kickoff_sentiment": 71,
+      "kickoff_engaged_contacts": 4,
+      "kickoff_open_escalations": 0,
+      "champion": { "name": "Marcus Feld", "email": "marcus.feld@bluepeakanalytics.example", "title": "Director of Revenue Operations" },
+      "economic_buyer": { "name": "Marcus Feld", "email": "marcus.feld@bluepeakanalytics.example", "title": "Director of Revenue Operations" },
+      "success_criteria": [
+        "One attribution number the CFO will accept without a follow-up question"
+      ],
+      "notes": "Champion and economic buyer are the same person — flagged as a single point of failure at kickoff, and it turned out to be one."
+    },
+    {
+      "account_id": "001Kx000005NwMVQA0",
+      "name": "Ironvale Manufacturing",
+      "kickoff_date": "2025-04-30",
+      "kickoff_arr": 64000,
+      "kickoff_sentiment": 55,
+      "kickoff_engaged_contacts": 3,
+      "kickoff_open_escalations": 0,
+      "champion": { "name": "Hollis Bennett", "email": "hollis.bennett@ironvalemfg.example", "title": "VP Commercial Operations" },
+      "economic_buyer": { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations" },
+      "success_criteria": [
+        "No duplicate assignment incidents in a quarter",
+        "Routing changes made by the customer without a support request"
+      ],
+      "notes": "Two-year contract to April 2027, auto-renewing. Long runway is the reason to fix the defect now rather than at renewal."
+    }
+  ],
+
+  "champion_definition": "The person who spends their own political capital to keep you. Not the day-to-day admin, not the signer."
+}

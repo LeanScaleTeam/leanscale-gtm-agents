@@ -1,0 +1,20 @@
+{
+  "sObjects": [
+    { "count": 41208, "name": "Account" },
+    { "count": 186043, "name": "Contact" },
+    { "count": 302914, "name": "Lead" },
+    { "count": 58771, "name": "Opportunity" },
+    { "count": 12440, "name": "Case" },
+    { "count": 904118, "name": "Task" },
+    { "count": 210553, "name": "Event" },
+    { "count": 84226, "name": "Integration_Log__c" },
+    { "count": 41007, "name": "Legacy_Territory__c" },
+    { "count": 1204882, "name": "Product_Usage_Event__c" },
+    { "count": 22190, "name": "SBQQ__Quote__c" },
+    { "count": 96401, "name": "gong__Gong_Call__c" },
+    { "count": 155002, "name": "LeanData__Routing_Log__c" },
+    { "count": 38120, "name": "JBCXM__CustomerInfo__c" },
+    { "count": 6102, "name": "nortlgcy__Sync_Queue__c" },
+    { "count": 118, "name": "Deal_Desk_Request__c" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+ "source": "coverage",
+ "crm": "hubspot",
+ "tool": "n/a",
+ "fixture": true,
+ "as_of": "2026-08-10",
+ "records": [],
+ "unavailable": [
+  {
+   "check": "Duplicate-rule governance",
+   "reason": "HubSpot's duplicate management lives in the Data Quality Command Center and has no public API. Nothing can be read about which rules are on."
+  },
+  {
+   "check": "Validation-rule governance",
+   "reason": "HubSpot has no validation-rule object. Enforcement is per-form and per-workflow, and neither is exposed as a rule set the API can list."
+  },
+  {
+   "check": "Schema-required fields",
+   "reason": "HubSpot properties have no object-level required flag \u2014 'required' is a property of a form, not of the schema. Every policy-required field in this org is therefore unenforced by definition."
+  },
+  {
+   "check": "Opportunity contact roles",
+   "reason": "Read as deal-to-contact associations instead. Association LABELS are the closest analogue to a contact role and are only present if this portal configured them."
+  },
+  {
+   "check": "Lead object",
+   "reason": "No separate Lead object in this portal; lead-stage contacts are audited as contacts instead."
+  }
+ ],
+ "note": "Fixture portal: a HubSpot-as-CRM org. Every property value is a STRING, including booleans and numbers, exactly as the API returns them. All names are synthetic."
+}

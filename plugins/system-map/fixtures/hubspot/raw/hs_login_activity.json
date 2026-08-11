@@ -1,0 +1,9 @@
+{
+  "results": [
+    { "userId": "101", "email": "morgan.diaz@beaconrobotics.com", "occurredAt": "2026-08-10T08:00:00Z", "location": "Boston, MA", "status": "SUCCESS" },
+    { "userId": "103", "email": "priya.venkat@beaconrobotics.com", "occurredAt": "2026-08-10T09:00:00Z", "location": "Austin, TX", "status": "SUCCESS" },
+    { "userId": "102", "email": "sam.oyelaran@beaconrobotics.com", "occurredAt": "2026-08-09T14:00:00Z", "location": "London, UK", "status": "SUCCESS" },
+    { "userId": "104", "email": "revops-integrations@beaconrobotics.com", "occurredAt": "2026-08-10T03:00:00Z", "location": "Ashburn, VA", "status": "SUCCESS" },
+    { "userId": "105", "email": "data-sync-svc@beaconrobotics.com", "occurredAt": "2026-08-10T02:00:00Z", "location": "Ashburn, VA", "status": "SUCCESS" }
+  ]
+}

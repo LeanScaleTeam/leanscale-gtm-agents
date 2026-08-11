@@ -1,0 +1,89 @@
+{
+  "source": "users",
+  "tool": "hubspot_get_owners",
+  "query": "GET /crm/v3/owners",
+  "fetched_at": "2026-09-30T07:00:00.000+0000",
+  "note": "",
+  "records": [
+    {
+      "id": "81100201",
+      "properties": {
+        "firstName": "Rosa",
+        "lastName": "Delgado",
+        "Name": "Rosa Delgado",
+        "ManagerId": "81100901",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100202",
+      "properties": {
+        "firstName": "Kwame",
+        "lastName": "Boateng",
+        "Name": "Kwame Boateng",
+        "ManagerId": "81100901",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100203",
+      "properties": {
+        "firstName": "Lena",
+        "lastName": "Fischer",
+        "Name": "Lena Fischer",
+        "ManagerId": "81100901",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100204",
+      "properties": {
+        "firstName": "Owen",
+        "lastName": "Castellano",
+        "Name": "Owen Castellano",
+        "ManagerId": "81100902",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100205",
+      "properties": {
+        "firstName": "Mira",
+        "lastName": "Kaplan",
+        "Name": "Mira Kaplan",
+        "ManagerId": "81100902",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100206",
+      "properties": {
+        "firstName": "Devon",
+        "lastName": "Achebe",
+        "Name": "Devon Achebe",
+        "ManagerId": "81100902",
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100901",
+      "properties": {
+        "firstName": "Bea",
+        "lastName": "Lindgren",
+        "Name": "Bea Lindgren",
+        "ManagerId": null,
+        "IsActive": true
+      }
+    },
+    {
+      "id": "81100902",
+      "properties": {
+        "firstName": "Sam",
+        "lastName": "Rousseau",
+        "Name": "Sam Rousseau",
+        "ManagerId": null,
+        "IsActive": true
+      }
+    }
+  ]
+}

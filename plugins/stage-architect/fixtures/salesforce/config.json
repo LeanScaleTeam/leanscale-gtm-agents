@@ -1,0 +1,67 @@
+{
+  "_comment": "Fixture config for the bundled Salesforce sample. Mirrors config.example.json.",
+  "crm": "salesforce",
+  "org_name": "Northwind Robotics",
+  "pipelines_in_scope": [
+    "default"
+  ],
+  "history_lookback_days": 540,
+  "min_cohort_size": 30,
+  "equivalence_band_pp": 5.0,
+  "significance_alpha": 0.05,
+  "zero_dwell_hours": 24,
+  "skip_rate_flag_pct": 25.0,
+  "regression_flag_pct": 8.0,
+  "zombie_p90_multiple": 6.0,
+  "loss_reason_fill_floor_pct": 80.0,
+  "loss_reason_dominance_pct": 60.0,
+  "history_coverage_floor_pct": 80.0,
+  "sales_accepted_stage": "Qualification",
+  "lead_lifecycle_exists": true,
+  "stages_are_meant_to_be": "buyer_verifiable",
+  "stage_definitions": {
+    "Discovery": {
+      "written_definition": "Rep has completed a first call and believes there is a fit.",
+      "verifiability": "rep_asserted"
+    },
+    "Qualification": {
+      "written_definition": "Budget, authority, need and timeline confirmed by the rep.",
+      "verifiability": "rep_asserted"
+    },
+    "Solution Validation": {
+      "written_definition": "Rep has demonstrated the product and believes the solution fits.",
+      "verifiability": "rep_asserted"
+    },
+    "Proposal": {
+      "written_definition": "Proposal has been sent to the buyer.",
+      "verifiability": "rep_asserted"
+    },
+    "Contracting": {
+      "written_definition": "Order form is out for signature in the e-signature tool.",
+      "verifiability": "buyer_verifiable"
+    }
+  },
+  "believed_conversion_rates": {
+    "headline_metric": "overall_win_rate",
+    "believed_headline_pct": 35.0,
+    "believed_by_stage_pct": {
+      "Discovery": 70.0,
+      "Qualification": 75.0,
+      "Proposal": 85.0
+    }
+  },
+  "fields": {
+    "id": "Id",
+    "name": "Name",
+    "stage": "StageName",
+    "amount": "Amount",
+    "created": "CreatedDate",
+    "close_date": "CloseDate",
+    "last_modified": "LastModifiedDate",
+    "loss_reason": "Loss_Reason__c",
+    "pipeline": "Pipeline",
+    "owner": "Owner.Name",
+    "record_type": "RecordType.Name"
+  },
+  "material_deal_floor": 5000
+}

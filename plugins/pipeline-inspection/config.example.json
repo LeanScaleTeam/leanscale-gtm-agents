@@ -1,0 +1,118 @@
+{
+  "_comment": "pipeline-inspection settings. Copied to ~/.leanscale-gtm/pipeline-inspection.json by /pipeline-inspection:setup, which fills the values in from YOUR CRM rather than these samples. Safe to hand-edit afterwards — every key has a _help line. Values here are the shipped defaults plus a worked Salesforce example so you can see the shape.",
+
+  "crm": "salesforce",
+  "_crm_help": "salesforce | hubspot | null. Null means detect from the shared profile, then from the record shape.",
+
+  "stage_order": ["Discovery", "Qualification", "Solution Review", "Proposal", "Negotiation", "Contracting"],
+  "_stage_order_help": "Open stages earliest-first. Setup reads this from OpportunityStage.SortOrder (Salesforce) or pipelines[].stages[].displayOrder (HubSpot) — it only matters for detecting deals that move backwards.",
+
+  "commit_stages": ["Negotiation", "Contracting"],
+  "_commit_stages_help": "The stages that mean 'we have told leadership this is happening'. Amount edits after a deal enters one of these are flagged. Leave empty and that check is skipped.",
+
+  "closed_won_stages": ["Closed Won"],
+  "_closed_won_stages_help": "Only needed if your CRM stage metadata does not mark won stages. Used to measure cycle time.",
+
+  "closed_lost_stages": ["Closed Lost", "Closed Lost - No Decision"],
+  "_closed_lost_stages_help": "Only needed if your CRM stage metadata does not mark closed-lost stages.",
+
+  "expected_days_in_stage": {
+    "Discovery": 14,
+    "Qualification": 21,
+    "Solution Review": 21,
+    "Proposal": 21,
+    "Negotiation": 30,
+    "Contracting": 14
+  },
+  "_expected_days_in_stage_help": "What you BELIEVE each stage should take. Setup shows you the measured median first and asks you to confirm or override. The gap between what you expected and what actually happens is usually the most interesting number in the report.",
+
+  "stagnation_basis": "measured_median",
+  "_stagnation_basis_help": "measured_median (default — use your own closed-deal medians) | expected (use expected_days_in_stage) | max_of_both (the more forgiving of the two).",
+
+  "stagnation_multiple": 2.0,
+  "_stagnation_multiple_help": "Flag a deal as stalled above this multiple of the basis. 2.0 means twice your own median.",
+
+  "severe_stagnation_multiple": 4.0,
+  "_severe_stagnation_multiple_help": "Above this multiple the deal is reported as frozen rather than slow, at critical severity.",
+
+  "min_closed_deals_for_median": 8,
+  "_min_closed_deals_for_median_help": "Minimum completed stage intervals before a measured median is trusted. Below this, the basis falls back to expected_days_in_stage, then to the all-stage median.",
+
+  "fallback_days_in_stage": 60,
+  "_fallback_days_in_stage_help": "Last-resort basis when there is no history and no expectation for a stage. If this ever gets used, the report says so.",
+
+  "next_step_mode": "field",
+  "_next_step_mode_help": "Where a next step lives for your team: field (a CRM field) | task (an open task on the deal) | both (either satisfies the rule) | none (you do not track it — the check is skipped and listed as unavailable).",
+
+  "next_step_field": "NextStep",
+  "_next_step_field_help": "API name of the next-step field. Salesforce default NextStep; HubSpot default hs_next_step; a custom field is fine.",
+
+  "next_step_staleness_days": 14,
+  "_next_step_staleness_days_help": "A next step that exists but has not been touched in this many days counts as stale. An overdue next-step task always counts as stale.",
+
+  "push_threshold": 3,
+  "_push_threshold_help": "How many close-date pushes is too many. Deals at or above this are the serial-pusher list — the highest-signal finding in the plugin.",
+
+  "push_watch_threshold": 1,
+  "_push_watch_threshold_help": "Deals between this and push_threshold appear as a low-severity watch list rather than a finding to act on.",
+
+  "history_lookback_months": 24,
+  "_history_lookback_months_help": "How far back to read closed deals and field history. Salesforce retains field history 18 months by default (24 with Field Audit Trail); asking for more just returns less.",
+
+  "single_thread_thresholds": [
+    { "min_amount": 0, "min_contacts": 1 },
+    { "min_amount": 25000, "min_contacts": 2 },
+    { "min_amount": 100000, "min_contacts": 3 },
+    { "min_amount": 250000, "min_contacts": 5 }
+  ],
+  "_single_thread_thresholds_help": "Minimum contacts by deal size — the largest matching min_amount wins. One contact on a $500k deal is the finding; one contact on a $6k deal is normal.",
+
+  "activity_silence_days": 21,
+  "_activity_silence_days_help": "No logged activity in this many days flags the deal. Deals with no activity ever are always flagged.",
+
+  "activity_silence_days_by_stage": { "Negotiation": 10, "Contracting": 7 },
+  "_activity_silence_days_by_stage_help": "Optional per-stage override. Late-stage deals should go quiet for less time than early ones.",
+
+  "deal_size_bands": [
+    { "label": "Small", "min_amount": 0 },
+    { "label": "Mid-Market", "min_amount": 50000 },
+    { "label": "Enterprise", "min_amount": 250000 }
+  ],
+  "_deal_size_bands_help": "Labels for the size cuts in the report. Purely presentational — the single-threading bar is set by single_thread_thresholds.",
+
+  "clustering_flag_pct": 30.0,
+  "_clustering_flag_pct_help": "Raise the quarter-end-clustering finding when this share or more of dated open deals close on the last day of a month.",
+
+  "amount_change_tolerance_pct": 10.0,
+  "_amount_change_tolerance_pct_help": "How much an amount may move after entering a commit stage before it is reported. Rounding and currency drift live below this.",
+
+  "same_day_close_max_days": 1,
+  "_same_day_close_max_days_help": "Closed deals created and closed within this many days are treated as backfills, not sold deals. They corrupt every cycle-time metric you have.",
+
+  "close_date_realism_multiple": 0.5,
+  "_close_date_realism_multiple_help": "Flag a deal whose close date is nearer than this multiple of the median time your own won deals took to get from that stage to signature. 0.5 means 'half as long as it has ever taken'.",
+
+  "material_deal_floor": null,
+  "_material_deal_floor_help": "Ignore open deals below this amount. Null inherits material_deal_floor from ~/.leanscale-gtm/profile.json. Deals with no amount at all are never filtered out — they are their own finding.",
+
+  "require_closed_history": true,
+  "_require_closed_history_help": "Abort the run if zero closed deals come back. Keep true: without closed history the medians are guesses. Set false only for an org with genuinely no closed deals yet.",
+
+  "escalate_amount_share_pct": 20.0,
+  "_escalate_amount_share_pct_help": "Raise a finding's severity one level when the dollars it touches exceed this share of open pipeline. Materiality can promote a finding as far as high, never into critical — critical is reserved for the rules that mean revenue is leaking right now.",
+
+  "max_rows_per_finding": 50,
+  "_max_rows_per_finding_help": "Rows carried inside each finding's evidence table. The count in the finding is always the true total; call-list.csv is always complete.",
+
+  "call_list_size": 30,
+  "_call_list_size_help": "How many deals appear in the call list at the top of the report. call-list.csv holds every flagged deal regardless.",
+
+  "inspection_cadence": "weekly",
+  "_inspection_cadence_help": "weekly | biweekly | monthly. Recorded so the report can tell you whether you are inspecting on the rhythm you said you would.",
+
+  "field_map": {},
+  "_field_map_help": "Override any field name, e.g. {\"next_step\": \"Next_Step__c\", \"amount\": \"ACV__c\"}. Keys: id, name, amount, stage, close_date, created, last_modified, last_activity, last_stage_change, next_step, owner, owner_id, account, account_id, is_closed, is_won, type, forecast_category, currency.",
+
+  "owner_scope": [],
+  "_owner_scope_help": "Limit the inspection to these owner names. Empty means the whole pipeline. Useful for a single manager running their own team."
+}

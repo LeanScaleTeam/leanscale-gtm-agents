@@ -1,0 +1,182 @@
+{
+  "results": [
+    {
+      "id": "94100300000",
+      "properties": {
+        "dealname": "Redshift Telecom - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "closedate": [
+          {
+            "value": "2026-08-31T00:00:00.000Z",
+            "timestamp": "2026-07-21T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-07-28T00:00:00.000Z",
+            "timestamp": "2026-06-15T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-06-24T00:00:00.000Z",
+            "timestamp": "2026-05-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-05-21T00:00:00.000Z",
+            "timestamp": "2026-04-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-04-17T00:00:00.000Z",
+            "timestamp": "2026-03-12T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300001",
+      "properties": {
+        "dealname": "Kestrel Semiconductor - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "closedate": [
+          {
+            "value": "2026-08-31T00:00:00.000Z",
+            "timestamp": "2026-07-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-08-01T00:00:00.000Z",
+            "timestamp": "2026-06-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-07-02T00:00:00.000Z",
+            "timestamp": "2026-05-31T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-06-02T00:00:00.000Z",
+            "timestamp": "2026-05-23T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300002",
+      "properties": {
+        "dealname": "Ionmark Energy - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "closedate": [
+          {
+            "value": "2026-08-17T00:00:00.000Z",
+            "timestamp": "2026-06-28T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-07-03T00:00:00.000Z",
+            "timestamp": "2026-05-14T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-05-19T00:00:00.000Z",
+            "timestamp": "2026-03-29T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-04-04T00:00:00.000Z",
+            "timestamp": "2026-05-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ],
+        "amount": [
+          {
+            "value": "320000",
+            "timestamp": "2026-07-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "410000",
+            "timestamp": "2026-05-19T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300003",
+      "properties": {
+        "dealname": "Meridian Foods - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "closedate": [
+          {
+            "value": "2026-06-30T00:00:00.000Z",
+            "timestamp": "2026-05-27T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-06-02T00:00:00.000Z",
+            "timestamp": "2026-04-26T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-05-05T00:00:00.000Z",
+            "timestamp": "2026-04-17T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300005",
+      "properties": {
+        "dealname": "Bexley Utilities - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "closedate": [
+          {
+            "value": "2026-08-07T00:00:00.000Z",
+            "timestamp": "2026-07-06T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-07-10T00:00:00.000Z",
+            "timestamp": "2026-06-07T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "2026-06-12T00:00:00.000Z",
+            "timestamp": "2026-05-24T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "94100300011",
+      "properties": {
+        "dealname": "Dunmore Chemicals - New Business FY26"
+      },
+      "propertiesWithHistory": {
+        "amount": [
+          {
+            "value": "240000",
+            "timestamp": "2026-07-11T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          },
+          {
+            "value": "180000",
+            "timestamp": "2026-04-05T00:00:00.000Z",
+            "sourceType": "CRM_UI"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "COMPLETE"
+}

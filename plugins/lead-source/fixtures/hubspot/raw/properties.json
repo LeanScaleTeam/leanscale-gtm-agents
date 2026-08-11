@@ -1,0 +1,95 @@
+{
+ "results": [
+  {
+   "name": "original_lead_source",
+   "label": "Original Lead Source",
+   "type": "enumeration",
+   "fieldType": "select",
+   "groupName": "contactinformation",
+   "options": [
+    {
+     "label": "Paid Search",
+     "value": "Paid Search",
+     "displayOrder": 0,
+     "hidden": false
+    },
+    {
+     "label": "Paid Social",
+     "value": "Paid Social",
+     "displayOrder": 1,
+     "hidden": false
+    },
+    {
+     "label": "Organic Search",
+     "value": "Organic Search",
+     "displayOrder": 2,
+     "hidden": false
+    },
+    {
+     "label": "Email",
+     "value": "Email",
+     "displayOrder": 3,
+     "hidden": false
+    },
+    {
+     "label": "Webinar",
+     "value": "Webinar",
+     "displayOrder": 4,
+     "hidden": false
+    },
+    {
+     "label": "Conference",
+     "value": "Conference",
+     "displayOrder": 5,
+     "hidden": false
+    },
+    {
+     "label": "Referral",
+     "value": "Referral",
+     "displayOrder": 6,
+     "hidden": false
+    },
+    {
+     "label": "Partner",
+     "value": "Partner",
+     "displayOrder": 7,
+     "hidden": false
+    },
+    {
+     "label": "Outbound",
+     "value": "Outbound",
+     "displayOrder": 8,
+     "hidden": false
+    },
+    {
+     "label": "Website",
+     "value": "Website",
+     "displayOrder": 9,
+     "hidden": false
+    },
+    {
+     "label": "Other",
+     "value": "Other",
+     "displayOrder": 10,
+     "hidden": false
+    }
+   ]
+  },
+  {
+   "name": "how_did_you_hear_about_us",
+   "label": "How did you hear about us?",
+   "type": "string",
+   "fieldType": "text",
+   "groupName": "contactinformation",
+   "options": []
+  },
+  {
+   "name": "utm_source",
+   "label": "UTM Source",
+   "type": "string",
+   "fieldType": "text",
+   "groupName": "contactinformation",
+   "options": []
+  }
+ ]
+}

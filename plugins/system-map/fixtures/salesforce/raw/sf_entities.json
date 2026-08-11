@@ -1,0 +1,22 @@
+{
+  "totalSize": 16,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Account", "QualifiedApiName": "Account", "Label": "Account", "KeyPrefix": "001", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Contact", "QualifiedApiName": "Contact", "Label": "Contact", "KeyPrefix": "003", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Lead", "QualifiedApiName": "Lead", "Label": "Lead", "KeyPrefix": "00Q", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Opportunity", "QualifiedApiName": "Opportunity", "Label": "Opportunity", "KeyPrefix": "006", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Case", "QualifiedApiName": "Case", "Label": "Case", "KeyPrefix": "500", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Task", "QualifiedApiName": "Task", "Label": "Task", "KeyPrefix": "00T", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "Event", "QualifiedApiName": "Event", "Label": "Event", "KeyPrefix": "00U", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcD", "QualifiedApiName": "Integration_Log__c", "Label": "Integration Log", "KeyPrefix": "a01", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcE", "QualifiedApiName": "Legacy_Territory__c", "Label": "Legacy Territory", "KeyPrefix": "a02", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcF", "QualifiedApiName": "Product_Usage_Event__c", "Label": "Product Usage Event", "KeyPrefix": "a03", "IsCustomSetting": false, "NamespacePrefix": null },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcG", "QualifiedApiName": "SBQQ__Quote__c", "Label": "Quote", "KeyPrefix": "a0Q", "IsCustomSetting": false, "NamespacePrefix": "SBQQ" },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcH", "QualifiedApiName": "gong__Gong_Call__c", "Label": "Gong Call", "KeyPrefix": "a0G", "IsCustomSetting": false, "NamespacePrefix": "gong" },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcI", "QualifiedApiName": "LeanData__Routing_Log__c", "Label": "Routing Log", "KeyPrefix": "a0L", "IsCustomSetting": false, "NamespacePrefix": "LeanData" },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcJ", "QualifiedApiName": "JBCXM__CustomerInfo__c", "Label": "Customer Info", "KeyPrefix": "a0J", "IsCustomSetting": false, "NamespacePrefix": "JBCXM" },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcK", "QualifiedApiName": "nortlgcy__Sync_Queue__c", "Label": "Sync Queue", "KeyPrefix": "a0N", "IsCustomSetting": false, "NamespacePrefix": "nortlgcy" },
+    { "attributes": { "type": "EntityDefinition" }, "DurableId": "01I5f000000AbcL", "QualifiedApiName": "Deal_Desk_Request__c", "Label": "Deal Desk Request", "KeyPrefix": "a04", "IsCustomSetting": false, "NamespacePrefix": null }
+  ]
+}

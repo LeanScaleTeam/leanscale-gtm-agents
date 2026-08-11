@@ -1,0 +1,61 @@
+{
+  "_comment": "executive-reporting settings. Copy to ~/.leanscale-gtm/executive-reporting.json (the :setup skill writes it for you). Edit by hand any time — every key has a _help line under it. Shared org facts (fiscal year, currency, segments, quota-carrying reps, roll-up field) live in ~/.leanscale-gtm/profile.json and are NOT repeated here.",
+
+  "window_months": 13,
+  "_window_months_help": "How many months the trend charts cover. 13 is the default on purpose, not 12 — it puts the current month directly beside the same month last year so year-over-year is an eyeball rather than a calculation.",
+
+  "conversion_basis": "created_cohort",
+  "_conversion_basis_help": "How conversion rate is defined. 'created_cohort' (recommended) groups deals by the date they were CREATED, then divides won by everything that reached a decision (won + lost); still-open deals are excluded until they resolve. 'closed_period' counts only deals that closed inside the window — easier, but it flatters a slow quarter and hides a cohort that is still stuck.",
+
+  "cohort_ripeness_days": 180,
+  "_cohort_ripeness_help": "A created-date cohort is only reported once this many days have passed, so a cohort that is still mostly open cannot publish a misleading rate. Set it to roughly your 90th-percentile sales cycle. The run reports which cohorts it suppressed and why.",
+
+  "headline_conversions": [["sql", "won"], ["mql", "sql"]],
+  "_headline_conversions_help": "The stage pairs reported as headlines, using the canonical keys from stage_map below. Deliberately NOT lead-to-won: a single number across the whole funnel hides which half is broken.",
+
+  "stage_map": {
+    "lead": [],
+    "mql": [],
+    "sal": [],
+    "sql": [],
+    "won": [],
+    "lost": []
+  },
+  "_stage_map_help": "Maps YOUR stage picklist values onto canonical keys. Setup reads the real picklist and proposes this — never assume the vendor defaults, and never assume the label means what it says. We have seen an org whose displayed 'SAL' is the canonical SQL stage and vice versa; taking the names at face value reported the wrong conversion rate and nothing looked broken.",
+
+  "pipeline_stage": "sql",
+  "_pipeline_stage_help": "Which canonical stage counts as 'pipeline' for coverage and created-pipeline. Usually the last stage before a win. Everything the pack calls pipeline is measured at this stage.",
+
+  "goals": {},
+  "_goals_help": "Targets by metric, e.g. {\"bookings\": {\"FY2026\": 1200000}, \"created_pipeline\": {\"FY2026\": 3600000}}. Capture board-level, executive-level and field-level separately if they differ — most companies need all three and they are three different numbers. Leave empty and the pack reports actuals with an explicit 'no goal configured' note rather than inventing one.",
+
+  "goal_level": "executive",
+  "_goal_level_help": "Which goal set the headline 'to plan' figures compare against: 'board', 'executive' or 'field'. Shown on every chart so nobody argues about which target was used.",
+
+  "segments": [],
+  "_segments_help": "Which account/deal attributes to cut every headline metric by. Empty means use profile.json segments. Every segment added here is real work in every chart downstream, and one you leave out means rebuilding later.",
+
+  "expansion_owner": "sales",
+  "_expansion_owner_help": "'sales' | 'cs' | 'blended'. The single highest-leverage question on this build. It decides whether expansion appears as its own pipeline on the sales view or inside customer success — and 'blended' means new business and expansion are stacked into one bookings number.",
+
+  "believed_conversion": null,
+  "_believed_conversion_help": "The conversion rate leadership currently quotes, as a decimal (e.g. 0.28). The pack reconciles its own measured number against this and reports the gap explicitly. Your number WILL differ from the one in their last board deck — finding that gap before the meeting is the entire point of this field.",
+
+  "believed_metrics": {},
+  "_believed_metrics_help": "Any other number they currently quote, e.g. {\"bookings_ytd\": 240000}. Each one gets reconciled and the delta reported. A number that moves without warning costs more trust than a number that was wrong.",
+
+  "min_sample": 12,
+  "_min_sample_help": "Below this many resolved deals, a conversion rate is reported with a low-sample warning instead of as a fact. Three-of-three is 100% and means nothing.",
+
+  "concentration_top_n": 10,
+  "_concentration_top_n_help": "How many accounts the revenue-concentration view covers.",
+
+  "amount_field": "Amount",
+  "_amount_field_help": "The field summed for bookings. Setup proposes this from fill-rate across your amount-like fields. If you report ARR or MRR rather than total contract value, point this at that field and set recurring_cadence.",
+
+  "recurring_cadence": "annual",
+  "_recurring_cadence_help": "'annual' | 'monthly' | 'none'. Decides whether the pack says ARR or MRR, and stops the run from multiplying or dividing by 12 on its own. If your revenue is recognised monthly, say monthly — reporting it as ARR is the fastest way to lose the room.",
+
+  "include_filters": false,
+  "_include_filters_help": "Whether to render viewer-facing filters beyond a date filter. Default false on purpose: every filter past a date filter hands one executive a number nobody else in the room is looking at. If they want it by rep and by territory, those are cards, not controls."
+}

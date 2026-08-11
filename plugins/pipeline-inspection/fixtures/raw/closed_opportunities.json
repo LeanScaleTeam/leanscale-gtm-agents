@@ -1,0 +1,2256 @@
+{
+  "totalSize": 75,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100000QAB"
+      },
+      "Id": "006000000100000QAB",
+      "Name": "Ivywood Property - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "CreatedDate": "2024-12-22T11:41:05.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200034QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ivywood Property"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100001QAB"
+      },
+      "Id": "006000000100001QAB",
+      "Name": "Fairhaven Bank - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "CreatedDate": "2025-01-02T04:29:08.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100002QAB"
+      },
+      "Id": "006000000100002QAB",
+      "Name": "Silverline Air - New Business 2024",
+      "StageName": "Closed Won",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "CreatedDate": "2024-09-15T03:00:10.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200018QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Silverline Air"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100003QAB"
+      },
+      "Id": "006000000100003QAB",
+      "Name": "Ionmark Energy - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "CreatedDate": "2025-05-18T07:06:42.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200008QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ionmark Energy"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100004QAB"
+      },
+      "Id": "006000000100004QAB",
+      "Name": "Quarry Mining Co - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "CreatedDate": "2025-07-29T02:34:06.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100005QAB"
+      },
+      "Id": "006000000100005QAB",
+      "Name": "Corvid Games - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "CreatedDate": "2026-02-17T02:10:03.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100006QAB"
+      },
+      "Id": "006000000100006QAB",
+      "Name": "Ivywood Property - New Business 2024",
+      "StageName": "Closed Won",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "CreatedDate": "2024-05-14T02:43:17.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200034QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ivywood Property"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100007QAB"
+      },
+      "Id": "006000000100007QAB",
+      "Name": "Vantage Rail - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "CreatedDate": "2024-12-08T06:01:10.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200021QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Vantage Rail"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100008QAB"
+      },
+      "Id": "006000000100008QAB",
+      "Name": "Pinnacle Textiles - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "CreatedDate": "2024-09-26T17:50:33.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200015QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Pinnacle Textiles"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100009QAB"
+      },
+      "Id": "006000000100009QAB",
+      "Name": "Redshift Telecom - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "CreatedDate": "2025-12-02T13:20:28.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200017QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Redshift Telecom"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100010QAB"
+      },
+      "Id": "006000000100010QAB",
+      "Name": "Cobalt Freight - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "CreatedDate": "2025-04-20T04:47:35.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100011QAB"
+      },
+      "Id": "006000000100011QAB",
+      "Name": "Ionmark Energy - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "CreatedDate": "2025-10-02T18:47:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200008QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ionmark Energy"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100012QAB"
+      },
+      "Id": "006000000100012QAB",
+      "Name": "Brightpath Health - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "CreatedDate": "2024-10-18T13:54:51.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200001QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Brightpath Health"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100013QAB"
+      },
+      "Id": "006000000100013QAB",
+      "Name": "Vantage Rail - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "CreatedDate": "2025-10-17T03:22:16.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200021QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Vantage Rail"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100014QAB"
+      },
+      "Id": "006000000100014QAB",
+      "Name": "Yarrow Biotech - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "CreatedDate": "2024-11-10T10:49:23.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200024QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Yarrow Biotech"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100015QAB"
+      },
+      "Id": "006000000100015QAB",
+      "Name": "Cobalt Freight - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "CreatedDate": "2025-09-07T21:47:39.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100016QAB"
+      },
+      "Id": "006000000100016QAB",
+      "Name": "Halcyon Marine - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "CreatedDate": "2025-03-29T20:59:09.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200033QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Halcyon Marine"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100017QAB"
+      },
+      "Id": "006000000100017QAB",
+      "Name": "Xenolith Materials - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "CreatedDate": "2025-04-14T16:31:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200023QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Xenolith Materials"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100018QAB"
+      },
+      "Id": "006000000100018QAB",
+      "Name": "Ionmark Energy - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "CreatedDate": "2025-07-24T15:39:12.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200008QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ionmark Energy"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100019QAB"
+      },
+      "Id": "006000000100019QAB",
+      "Name": "Brightpath Health - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "CreatedDate": "2025-05-11T09:04:51.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200001QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Brightpath Health"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100020QAB"
+      },
+      "Id": "006000000100020QAB",
+      "Name": "Tessellate Software - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "CreatedDate": "2025-10-26T05:47:17.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200019QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Tessellate Software"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100021QAB"
+      },
+      "Id": "006000000100021QAB",
+      "Name": "Kestrel Semiconductor - Expansion 2024",
+      "StageName": "Closed Won",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "CreatedDate": "2024-08-22T21:07:44.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200010QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Kestrel Semiconductor"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100022QAB"
+      },
+      "Id": "006000000100022QAB",
+      "Name": "Dunmore Chemicals - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "CreatedDate": "2025-10-23T08:44:26.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200029QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Dunmore Chemicals"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100023QAB"
+      },
+      "Id": "006000000100023QAB",
+      "Name": "Granite Peak Ski - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "CreatedDate": "2026-01-17T00:12:22.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200032QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Granite Peak Ski"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100024QAB"
+      },
+      "Id": "006000000100024QAB",
+      "Name": "Silverline Air - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "CreatedDate": "2025-02-25T13:56:05.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200018QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Silverline Air"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100025QAB"
+      },
+      "Id": "006000000100025QAB",
+      "Name": "Kestrel Semiconductor - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "CreatedDate": "2024-12-01T08:10:42.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200010QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Kestrel Semiconductor"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100026QAB"
+      },
+      "Id": "006000000100026QAB",
+      "Name": "Cobalt Freight - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "CreatedDate": "2025-02-05T20:15:41.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100027QAB"
+      },
+      "Id": "006000000100027QAB",
+      "Name": "Northgate Insurance - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "CreatedDate": "2025-10-03T01:40:28.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100028QAB"
+      },
+      "Id": "006000000100028QAB",
+      "Name": "Umbra Security - New Business 2024",
+      "StageName": "Closed Won",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "CreatedDate": "2024-06-28T15:41:51.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200020QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Umbra Security"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100029QAB"
+      },
+      "Id": "006000000100029QAB",
+      "Name": "Ardent Logistics - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "CreatedDate": "2024-12-06T22:44:28.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200000QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ardent Logistics"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100030QAB"
+      },
+      "Id": "006000000100030QAB",
+      "Name": "Quarry Mining Co - New Business 2024",
+      "StageName": "Closed Won",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "CreatedDate": "2024-09-08T23:02:09.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100031QAB"
+      },
+      "Id": "006000000100031QAB",
+      "Name": "Halcyon Marine - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "CreatedDate": "2025-07-13T07:54:46.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200033QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Halcyon Marine"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100032QAB"
+      },
+      "Id": "006000000100032QAB",
+      "Name": "Vantage Rail - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "CreatedDate": "2025-02-16T14:04:08.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200021QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Vantage Rail"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100033QAB"
+      },
+      "Id": "006000000100033QAB",
+      "Name": "Juniper Labs - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "CreatedDate": "2026-02-09T13:17:56.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200009QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Juniper Labs"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100034QAB"
+      },
+      "Id": "006000000100034QAB",
+      "Name": "Everline Media - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "CreatedDate": "2025-03-12T23:23:19.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200004QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Everline Media"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100035QAB"
+      },
+      "Id": "006000000100035QAB",
+      "Name": "Juniper Labs - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "CreatedDate": "2024-11-11T01:36:08.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200009QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Juniper Labs"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100036QAB"
+      },
+      "Id": "006000000100036QAB",
+      "Name": "Northgate Insurance - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "CreatedDate": "2025-10-17T08:22:10.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100037QAB"
+      },
+      "Id": "006000000100037QAB",
+      "Name": "Elmridge Schools - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "CreatedDate": "2025-08-04T05:13:25.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200030QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Elmridge Schools"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100038QAB"
+      },
+      "Id": "006000000100038QAB",
+      "Name": "Quarry Mining Co - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "CreatedDate": "2025-11-30T05:56:30.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100039QAB"
+      },
+      "Id": "006000000100039QAB",
+      "Name": "Ivywood Property - New Business 2026",
+      "StageName": "Closed Won",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "CreatedDate": "2026-03-23T17:33:38.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200034QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ivywood Property"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100040QAB"
+      },
+      "Id": "006000000100040QAB",
+      "Name": "Quarry Mining Co - Expansion 2025",
+      "StageName": "Closed Won",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "CreatedDate": "2024-12-01T17:40:44.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100041QAB"
+      },
+      "Id": "006000000100041QAB",
+      "Name": "Fairhaven Bank - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "CreatedDate": "2025-02-12T05:59:07.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100042QAB"
+      },
+      "Id": "006000000100042QAB",
+      "Name": "Fairhaven Bank - Expansion 2026",
+      "StageName": "Closed Won",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "CreatedDate": "2026-03-24T04:21:37.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100043QAB"
+      },
+      "Id": "006000000100043QAB",
+      "Name": "Orbit Pay - New Business 2025",
+      "StageName": "Closed Won",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "CreatedDate": "2025-01-09T04:42:04.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200014QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Orbit Pay"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100044QAB"
+      },
+      "Id": "006000000100044QAB",
+      "Name": "Westmark Legal - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 90000.0,
+      "CloseDate": "2025-02-15",
+      "CreatedDate": "2025-01-14T12:14:45.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200022QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Westmark Legal"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100045QAB"
+      },
+      "Id": "006000000100045QAB",
+      "Name": "Westmark Legal - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 18400.0,
+      "CloseDate": "2026-03-06",
+      "CreatedDate": "2026-01-30T13:28:06.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200022QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Westmark Legal"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100046QAB"
+      },
+      "Id": "006000000100046QAB",
+      "Name": "Dunmore Chemicals - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 12100.0,
+      "CloseDate": "2026-02-07",
+      "CreatedDate": "2026-02-01T04:46:05.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200029QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Dunmore Chemicals"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100047QAB"
+      },
+      "Id": "006000000100047QAB",
+      "Name": "Elmridge Schools - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "CreatedDate": "2025-05-21T13:14:29.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200030QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Elmridge Schools"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100048QAB"
+      },
+      "Id": "006000000100048QAB",
+      "Name": "Corvid Games - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "CreatedDate": "2025-03-21T23:10:44.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100049QAB"
+      },
+      "Id": "006000000100049QAB",
+      "Name": "Dunmore Chemicals - Expansion 2024",
+      "StageName": "Closed Lost",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "CreatedDate": "2024-10-05T06:25:44.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200029QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Dunmore Chemicals"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100050QAB"
+      },
+      "Id": "006000000100050QAB",
+      "Name": "Northgate Insurance - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 805000.0,
+      "CloseDate": "2025-02-24",
+      "CreatedDate": "2024-11-29T04:28:00.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100051QAB"
+      },
+      "Id": "006000000100051QAB",
+      "Name": "Ardent Logistics - Expansion 2026",
+      "StageName": "Closed Lost",
+      "Amount": 57000.0,
+      "CloseDate": "2026-01-24",
+      "CreatedDate": "2026-01-07T10:23:22.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200000QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ardent Logistics"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100052QAB"
+      },
+      "Id": "006000000100052QAB",
+      "Name": "Bexley Utilities - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 79000.0,
+      "CloseDate": "2025-02-24",
+      "CreatedDate": "2025-02-19T14:00:32.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200027QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Bexley Utilities"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100053QAB"
+      },
+      "Id": "006000000100053QAB",
+      "Name": "Umbra Security - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "CreatedDate": "2025-01-19T05:08:50.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200020QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Umbra Security"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100054QAB"
+      },
+      "Id": "006000000100054QAB",
+      "Name": "Alderman Motors - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "CreatedDate": "2025-05-29T05:56:34.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200026QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Alderman Motors"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100055QAB"
+      },
+      "Id": "006000000100055QAB",
+      "Name": "Quarry Mining Co - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 35100.0,
+      "CloseDate": "2025-03-26",
+      "CreatedDate": "2025-03-14T03:54:15.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100056QAB"
+      },
+      "Id": "006000000100056QAB",
+      "Name": "Vantage Rail - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 95000.0,
+      "CloseDate": "2025-07-13",
+      "CreatedDate": "2025-07-03T08:18:38.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200021QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Vantage Rail"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100057QAB"
+      },
+      "Id": "006000000100057QAB",
+      "Name": "Corvid Games - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 134000.0,
+      "CloseDate": "2026-07-20",
+      "CreatedDate": "2026-06-04T14:21:49.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100058QAB"
+      },
+      "Id": "006000000100058QAB",
+      "Name": "Glacier Robotics - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "CreatedDate": "2025-07-12T23:15:00.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200006QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Glacier Robotics"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100059QAB"
+      },
+      "Id": "006000000100059QAB",
+      "Name": "Harbourline Retail - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 26900.0,
+      "CloseDate": "2025-08-13",
+      "CreatedDate": "2025-05-23T04:00:58.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200007QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Harbourline Retail"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100060QAB"
+      },
+      "Id": "006000000100060QAB",
+      "Name": "Meridian Foods - Expansion 2024",
+      "StageName": "Closed Lost",
+      "Amount": 183000.0,
+      "CloseDate": "2024-12-12",
+      "CreatedDate": "2024-11-22T03:20:27.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200012QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Meridian Foods"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100061QAB"
+      },
+      "Id": "006000000100061QAB",
+      "Name": "Ivywood Property - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "CreatedDate": "2025-03-16T03:14:18.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200034QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ivywood Property"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100062QAB"
+      },
+      "Id": "006000000100062QAB",
+      "Name": "Alderman Motors - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 434000.0,
+      "CloseDate": "2026-05-07",
+      "CreatedDate": "2026-04-15T05:47:19.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200026QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Alderman Motors"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100063QAB"
+      },
+      "Id": "006000000100063QAB",
+      "Name": "Brightpath Health - Expansion 2025",
+      "StageName": "Closed Lost",
+      "Amount": 61000.0,
+      "CloseDate": "2025-09-16",
+      "CreatedDate": "2025-09-09T13:48:48.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200001QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Brightpath Health"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100064QAB"
+      },
+      "Id": "006000000100064QAB",
+      "Name": "Corvid Games - Expansion 2026",
+      "StageName": "Closed Lost",
+      "Amount": 62000.0,
+      "CloseDate": "2026-04-10",
+      "CreatedDate": "2026-03-10T07:25:49.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100065QAB"
+      },
+      "Id": "006000000100065QAB",
+      "Name": "Corvid Games - Expansion 2026",
+      "StageName": "Closed Lost",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "CreatedDate": "2025-10-07T11:58:14.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "Expansion",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100066QAB"
+      },
+      "Id": "006000000100066QAB",
+      "Name": "Cobalt Freight - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 25600.0,
+      "CloseDate": "2025-02-06",
+      "CreatedDate": "2025-01-24T07:52:45.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100067QAB"
+      },
+      "Id": "006000000100067QAB",
+      "Name": "Bexley Utilities - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 554000.0,
+      "CloseDate": "2026-03-26",
+      "CreatedDate": "2026-03-17T13:07:03.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200027QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Bexley Utilities"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100068QAB"
+      },
+      "Id": "006000000100068QAB",
+      "Name": "Meridian Foods - New Business 2026",
+      "StageName": "Closed Lost",
+      "Amount": 8100.0,
+      "CloseDate": "2026-02-10",
+      "CreatedDate": "2025-12-22T16:03:51.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB"
+      },
+      "AccountId": "001000000200012QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Meridian Foods"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100069QAB"
+      },
+      "Id": "006000000100069QAB",
+      "Name": "Dunmore Chemicals - New Business 2025",
+      "StageName": "Closed Lost",
+      "Amount": 777000.0,
+      "CloseDate": "2025-06-03",
+      "CreatedDate": "2025-05-04T08:56:31.000+0000",
+      "IsClosed": true,
+      "IsWon": false,
+      "Type": "New Business",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200029QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Dunmore Chemicals"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100070QAB"
+      },
+      "Id": "006000000100070QAB",
+      "Name": "Northgate Insurance - Renewal 2026",
+      "StageName": "Closed Won",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-16",
+      "CreatedDate": "2026-06-16T00:00:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Renewal",
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB"
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100071QAB"
+      },
+      "Id": "006000000100071QAB",
+      "Name": "Corvid Games - Renewal 2025",
+      "StageName": "Closed Won",
+      "Amount": 36000.0,
+      "CloseDate": "2025-12-20",
+      "CreatedDate": "2025-12-20T00:00:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Renewal",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100072QAB"
+      },
+      "Id": "006000000100072QAB",
+      "Name": "Northgate Insurance - Renewal 2026",
+      "StageName": "Closed Won",
+      "Amount": 53100.0,
+      "CloseDate": "2026-01-16",
+      "CreatedDate": "2026-01-16T00:00:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Renewal",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100073QAB"
+      },
+      "Id": "006000000100073QAB",
+      "Name": "Corvid Games - Renewal 2026",
+      "StageName": "Closed Won",
+      "Amount": 44500.0,
+      "CloseDate": "2026-06-07",
+      "CreatedDate": "2026-06-07T00:00:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Renewal",
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB"
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000100074QAB"
+      },
+      "Id": "006000000100074QAB",
+      "Name": "Fairhaven Bank - Renewal 2026",
+      "StageName": "Closed Won",
+      "Amount": 50000.0,
+      "CloseDate": "2026-04-07",
+      "CreatedDate": "2026-04-07T00:00:00.000+0000",
+      "IsClosed": true,
+      "IsWon": true,
+      "Type": "Renewal",
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB"
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank"
+      }
+    }
+  ]
+}

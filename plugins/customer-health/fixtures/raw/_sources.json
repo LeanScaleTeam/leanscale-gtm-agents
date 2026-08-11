@@ -1,0 +1,83 @@
+{
+  "_comment": "Provenance for the offline demo run. The run skill writes this file after every fetch. analyze.py recomputes record counts from the raw files themselves and uses this only for tool names, queries, required flags and diagnoses — so a run can never report a number the data does not support.",
+  "crm": "salesforce",
+  "run_started_at": "2026-08-10T13:05:00Z",
+  "window": { "start": "2026-02-11", "end": "2026-08-10" },
+  "sources": [
+    {
+      "name": "customer_accounts",
+      "tool": "run_soql_query",
+      "required": true,
+      "count": 5,
+      "query": "SELECT Id, Name, Type, ARR__c, Segment__c, CSM__c, Renewal_Date__c, Contract_Start_Date__c, Auto_Renew__c, Champion__c, Economic_Buyer__c, Owner.Name, LastActivityDate FROM Account WHERE Type = 'Customer' AND ARR__c > 0 ORDER BY ARR__c DESC",
+      "diagnosis": "Zero customer accounts means the Type/ARR filter in customer_definition does not match this org, or the connected user cannot see Account. Re-run /customer-health:setup."
+    },
+    {
+      "name": "renewals",
+      "tool": "run_soql_query",
+      "required": false,
+      "count": 4,
+      "query": "SELECT Id, Name, AccountId, Amount, CloseDate, StageName, IsClosed, IsWon, Type FROM Opportunity WHERE AccountId IN :ids AND Type IN ('Renewal','Existing Business') AND CloseDate >= LAST_N_DAYS:90",
+      "note": "Ironvale's renewal instrument is a Contract, not an Opportunity — both shapes are in this file, distinguished by record_kind."
+    },
+    {
+      "name": "expansion_pipeline",
+      "tool": "run_soql_query",
+      "required": false,
+      "count": 1,
+      "query": "SELECT Id, Name, AccountId, Amount, CloseDate, StageName, IsClosed, Type FROM Opportunity WHERE AccountId IN :ids AND Type IN ('Upsell','Expansion','Add-On') AND IsClosed = false"
+    },
+    {
+      "name": "contacts",
+      "tool": "run_soql_query",
+      "required": false,
+      "count": 12,
+      "query": "SELECT Id, AccountId, FirstName, LastName, Name, Email, Title, Is_Active__c, EmailBouncedDate, LastActivityDate FROM Contact WHERE AccountId IN :ids"
+    },
+    {
+      "name": "crm_activities",
+      "tool": "run_soql_query",
+      "required": false,
+      "count": 7,
+      "query": "SELECT Id, AccountId, Subject, ActivityDate, Status, Owner.Name, Owner.Title FROM Task WHERE AccountId IN :ids AND ActivityDate = LAST_N_DAYS:180"
+    },
+    {
+      "name": "interactions",
+      "tool": "conversation_intelligence_list + slack_search",
+      "required": false,
+      "count": 33,
+      "note": "Meeting and message metadata only — no transcript bodies leave the machine. Four of five accounts have a conversation source; Solstice Robotics has none.",
+      "diagnosis": "If this returns zero for an account that clearly has calls, the recorder is usually joining under a different workspace, or the shared channel is private to an identity the connector is not a member of."
+    },
+    {
+      "name": "sentiment_readings",
+      "tool": "claude_transcript_reading",
+      "required": false,
+      "count": 4,
+      "note": "Claude's per-interaction qualitative readings. tone and is_escalation are judgments made while reading the transcript, never a keyword match."
+    },
+    {
+      "name": "company_research",
+      "tool": "WebSearch + WebFetch",
+      "required": false,
+      "count": 5,
+      "note": "Funding, layoffs, exec changes, M&A. Refreshed on every run."
+    },
+    {
+      "name": "support_tickets",
+      "tool": "support_desk_search",
+      "required": false,
+      "count": 9
+    },
+    {
+      "name": "product_usage",
+      "tool": "not_connected",
+      "required": false,
+      "count": 0,
+      "diagnosis": "No product-usage source is configured (usage_source is null). The usage signal is dropped and its weight redistributed across the signals that do have data."
+    }
+  ],
+  "warnings": [
+    "Solstice Robotics has no connected conversation source. Its sentiment score is unavailable, not clean — it is scored on commercial signals alone."
+  ]
+}

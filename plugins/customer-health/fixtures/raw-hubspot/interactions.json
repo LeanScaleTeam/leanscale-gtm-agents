@@ -1,0 +1,119 @@
+[
+  {
+    "id": "lk-mtg-2026-03-19", "account_id": "14778211903", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-03-19T14:00:00Z",
+    "title": "Lifecycle stage rebuild — design review",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Rafa Molina", "email": "rafa.molina@larkspurmedia.example", "title": "Marketing Operations Lead", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "lk-mtg-2026-05-07", "account_id": "14778211903", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-05-07T14:00:00Z",
+    "title": "Weekly working session",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Rafa Molina", "email": "rafa.molina@larkspurmedia.example", "title": "Marketing Operations Lead", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "lk-mtg-2026-06-25", "account_id": "14778211903", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-06-25T16:00:00Z",
+    "title": "Half-year business review",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }, { "name": "Renata Oyelaran", "seniority": "exec" }],
+    "customer_participants": [
+      { "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Ingrid Sandoval", "email": "ingrid.sandoval@larkspurmedia.example", "title": "Chief Operating Officer", "seniority": "exec" }
+    ]
+  },
+  {
+    "id": "lk-mtg-2026-07-21", "account_id": "14778211903", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-07-21T14:00:00Z",
+    "title": "Weekly working session",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Rafa Molina", "email": "rafa.molina@larkspurmedia.example", "title": "Marketing Operations Lead", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "lk-mtg-2026-08-05", "account_id": "14778211903", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-08-05T14:00:00Z",
+    "title": "Adoption review",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "lk-msg-2026-07-10", "account_id": "14778211903", "source": "comms", "provider": "email",
+    "type": "message", "occurred_at": "2026-07-10T09:30:00Z", "direction": "inbound",
+    "response_latency_hours": 4,
+    "customer_participants": [{ "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "seniority": "senior", "is_champion": true }]
+  },
+  {
+    "id": "lk-msg-2026-07-30", "account_id": "14778211903", "source": "comms", "provider": "email",
+    "type": "message", "occurred_at": "2026-07-30T11:12:00Z", "direction": "inbound",
+    "response_latency_hours": 8,
+    "customer_participants": [{ "name": "Rafa Molina", "email": "rafa.molina@larkspurmedia.example", "seniority": "ic" }]
+  },
+  {
+    "id": "lk-msg-2026-08-06", "account_id": "14778211903", "source": "comms", "provider": "email",
+    "type": "message", "occurred_at": "2026-08-06T09:12:00Z", "direction": "inbound",
+    "response_latency_hours": 3,
+    "customer_participants": [{ "name": "Tomas Bergqvist", "email": "tomas.bergqvist@larkspurmedia.example", "seniority": "senior", "is_champion": true }]
+  },
+
+  {
+    "id": "af-mtg-2026-04-02", "account_id": "14778211905", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-04-02T15:00:00Z",
+    "title": "Quoting workflow — build review",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "title": "Senior Director, Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Yuki Tanabe", "email": "yuki.tanabe@atlasfreight.example", "title": "Revenue Systems Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "af-mtg-2026-06-04", "account_id": "14778211905", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-06-04T15:00:00Z",
+    "title": "Quoting workflow — go-live",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "title": "Senior Director, Revenue Operations", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "af-mtg-2026-07-16", "account_id": "14778211905", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-07-16T15:00:00Z",
+    "title": "Executive business review",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }, { "name": "Renata Oyelaran", "seniority": "exec" }],
+    "customer_participants": [
+      { "name": "Desmond Achebe", "email": "desmond.achebe@atlasfreight.example", "title": "Chief Revenue Officer", "seniority": "exec" },
+      { "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "title": "Senior Director, Revenue Operations", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "af-mtg-2026-08-07", "account_id": "14778211905", "source": "transcripts",
+    "provider": "transcript_folder", "type": "meeting", "occurred_at": "2026-08-07T11:30:00Z",
+    "title": "Seat expansion scoping",
+    "our_participants": [{ "name": "Camille Roux", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "title": "Senior Director, Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Yuki Tanabe", "email": "yuki.tanabe@atlasfreight.example", "title": "Revenue Systems Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "af-msg-2026-07-02", "account_id": "14778211905", "source": "comms", "provider": "email",
+    "type": "message", "occurred_at": "2026-07-02T10:00:00Z", "direction": "inbound",
+    "response_latency_hours": 3,
+    "customer_participants": [{ "name": "Neve Halloran", "email": "neve.halloran@atlasfreight.example", "seniority": "senior", "is_champion": true }]
+  },
+  {
+    "id": "af-msg-2026-08-03", "account_id": "14778211905", "source": "comms", "provider": "email",
+    "type": "message", "occurred_at": "2026-08-03T13:45:00Z", "direction": "inbound",
+    "response_latency_hours": 6,
+    "customer_participants": [{ "name": "Yuki Tanabe", "email": "yuki.tanabe@atlasfreight.example", "seniority": "ic" }]
+  }
+]

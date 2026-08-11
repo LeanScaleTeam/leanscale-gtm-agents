@@ -1,0 +1,43 @@
+{
+  "_shape": "Gong — POST /v2/calls/transcript plus GET /v2/calls for metadata. Sentences are grouped into monologues by speakerId, and speakerId resolves to a person through the call's parties[] array. Times are milliseconds from the start of the call.",
+  "_normalizes_to": "meetings[].transcript[] with ts as HH:MM:SS, plus attendees[] from parties[]",
+  "callId": "8842001199",
+  "metaData": {
+    "id": "8842001199",
+    "title": "Ridgeline Software <> Acme — Discovery",
+    "started": "2026-08-05T14:00:00Z",
+    "duration": 2040,
+    "url": "https://app.example-transcripts.com/call/8842",
+    "system": "Zoom",
+    "scope": "external"
+  },
+  "parties": [
+    { "id": "p1", "name": "Dana Ruiz", "emailAddress": "dana@acme.io", "affiliation": "Internal", "title": "Account Executive" },
+    { "id": "p2", "name": "Lena Fischer", "emailAddress": "lena@ridgelinesoftware.com", "affiliation": "External", "title": "Head of Revenue Operations" }
+  ],
+  "context": [
+    {
+      "system": "Salesforce",
+      "objects": [
+        { "objectType": "Opportunity", "objectId": "8801234567", "fields": [{ "name": "Name", "value": "Ridgeline Software — Post-merger consolidation" }] }
+      ]
+    }
+  ],
+  "transcript": [
+    {
+      "speakerId": "p1",
+      "topic": "Discovery",
+      "sentences": [
+        { "start": 30000, "end": 36000, "text": "Set the scene for me, what is going on internally that made this a priority now?" }
+      ]
+    },
+    {
+      "speakerId": "p2",
+      "topic": "Discovery",
+      "sentences": [
+        { "start": 130000, "end": 141000, "text": "We merged with a smaller company in April and we are now running two CRMs side by side." },
+        { "start": 141000, "end": 145000, "text": "Nobody trusts either number." }
+      ]
+    }
+  ]
+}

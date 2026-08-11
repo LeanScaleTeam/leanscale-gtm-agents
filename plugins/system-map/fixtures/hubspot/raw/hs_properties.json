@@ -1,0 +1,27 @@
+{
+  "results": [
+    { "name": "lifecyclestage", "label": "Lifecycle Stage", "type": "enumeration", "groupName": "contactinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" },
+    { "name": "hs_lead_status", "label": "Lead Status", "type": "enumeration", "groupName": "contactinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" },
+    { "name": "hubspot_owner_id", "label": "Contact owner", "type": "enumeration", "groupName": "contactinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" },
+    { "name": "zi_company_name", "label": "ZoomInfo Company Name", "type": "string", "groupName": "zoominfo", "hubspotDefined": false, "createdUserId": 107, "updatedAt": "2022-11-15T00:00:00Z" },
+    { "name": "zi_employee_count", "label": "ZoomInfo Employees", "type": "number", "groupName": "zoominfo", "hubspotDefined": false, "createdUserId": 107, "updatedAt": "2022-11-15T00:00:00Z" },
+    { "name": "zi_industry", "label": "ZoomInfo Industry", "type": "string", "groupName": "zoominfo", "hubspotDefined": false, "createdUserId": 107, "updatedAt": "2022-11-15T00:00:00Z" },
+    { "name": "gong_last_call_date", "label": "Gong Last Call", "type": "date", "groupName": "gong", "hubspotDefined": false, "createdUserId": 101, "updatedAt": "2024-05-03T00:00:00Z" },
+    { "name": "gong_call_count", "label": "Gong Calls", "type": "number", "groupName": "gong", "hubspotDefined": false, "createdUserId": 101, "updatedAt": "2024-05-03T00:00:00Z" },
+    { "name": "chilipiper_booked_meeting", "label": "Chili Piper Booked", "type": "bool", "groupName": "chilipiper", "hubspotDefined": false, "createdUserId": 103, "updatedAt": "2024-09-20T00:00:00Z" },
+    { "name": "chilipiper_router", "label": "Chili Piper Router", "type": "string", "groupName": "chilipiper", "hubspotDefined": false, "createdUserId": 103, "updatedAt": "2024-09-20T00:00:00Z" },
+    { "name": "outreach_sequence_name", "label": "Outreach Sequence", "type": "string", "groupName": "outreach", "hubspotDefined": false, "createdUserId": 102, "updatedAt": "2023-02-09T00:00:00Z" },
+    { "name": "outreach_last_touch", "label": "Outreach Last Touch", "type": "date", "groupName": "outreach", "hubspotDefined": false, "createdUserId": 102, "updatedAt": "2023-02-09T00:00:00Z" },
+    { "name": "clearbit_company_domain", "label": "Clearbit Domain", "type": "string", "groupName": "clearbit", "hubspotDefined": false, "createdUserId": 107, "updatedAt": "2022-04-01T00:00:00Z" },
+    { "name": "stripe_customer_id", "label": "Stripe Customer", "type": "string", "groupName": "billing", "hubspotDefined": false, "createdUserId": 106, "updatedAt": "2025-03-12T00:00:00Z" },
+    { "name": "hightouch_synced_at", "label": "Hightouch Synced At", "type": "datetime", "groupName": "warehouse", "hubspotDefined": false, "createdUserId": 106, "updatedAt": "2025-03-12T00:00:00Z" },
+    { "name": "hightouch_model_id", "label": "Hightouch Model", "type": "string", "groupName": "warehouse", "hubspotDefined": false, "createdUserId": 106, "updatedAt": "2025-03-12T00:00:00Z" },
+    { "name": "pendo_last_seen", "label": "Pendo Last Seen", "type": "datetime", "groupName": "product", "hubspotDefined": false, "createdUserId": 102, "updatedAt": "2025-08-04T00:00:00Z" },
+    { "name": "forecast_category", "label": "Forecast Category", "type": "enumeration", "groupName": "dealinformation", "hubspotDefined": false, "createdUserId": 103, "updatedAt": "2024-11-06T00:00:00Z" },
+    { "name": "dealstage", "label": "Deal Stage", "type": "enumeration", "groupName": "dealinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" },
+    { "name": "churn_risk", "label": "Churn Risk", "type": "bool", "groupName": "companyinformation", "hubspotDefined": false, "createdUserId": 106, "updatedAt": "2023-09-15T00:00:00Z" },
+    { "name": "tier", "label": "Tier", "type": "enumeration", "groupName": "companyinformation", "hubspotDefined": false, "createdUserId": 101, "updatedAt": "2025-04-02T00:00:00Z" },
+    { "name": "hs_ticket_priority", "label": "Priority", "type": "enumeration", "groupName": "ticketinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" },
+    { "name": "phone", "label": "Phone Number", "type": "string", "groupName": "contactinformation", "hubspotDefined": true, "createdUserId": null, "updatedAt": "2024-01-01T00:00:00Z" }
+  ]
+}

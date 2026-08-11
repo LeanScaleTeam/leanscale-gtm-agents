@@ -1,0 +1,32 @@
+{
+  "_comment": "Written by the :run skill after the fetch step. `ok:false` means the call FAILED — analyze.py uses it to tell 'blind' apart from 'clean' and puts the surface in the report's unavailable list with the scope that would fix it.",
+  "crm": "hubspot",
+  "environment": "production",
+  "org_label": "Beacon Robotics (portal 24817033)",
+  "fetched_at": "2026-08-10T14:05:00Z",
+  "sources": [
+    { "name": "hubspot_account", "file": "hs_account.json", "tool": "http_get", "ok": true, "required": false,
+      "query": "GET https://api.hubapi.com/account-info/v3/details" },
+    { "name": "hubspot_users", "file": "hs_users.json", "tool": "http_get", "ok": true, "required": true,
+      "query": "GET https://api.hubapi.com/settings/v3/users?limit=100" },
+    { "name": "hubspot_owners", "file": "hs_owners.json", "tool": "http_get", "ok": true, "required": false,
+      "query": "GET https://api.hubapi.com/crm/v3/owners?limit=500&archived=false  +  &archived=true" },
+    { "name": "hubspot_workflows", "file": "hs_workflows.json", "tool": "http_get", "ok": true, "required": false,
+      "query": "GET https://api.hubapi.com/automation/v4/flows?limit=100" },
+    { "name": "hubspot_properties", "file": "hs_properties.json", "tool": "http_get", "ok": true, "required": false,
+      "query": "GET https://api.hubapi.com/crm/v3/properties/contacts  (repeated for companies, deals, tickets)" },
+    { "name": "hubspot_schemas", "file": "hs_schemas.json", "tool": "http_get", "ok": true, "required": false,
+      "query": "GET https://api.hubapi.com/crm/v3/schemas" },
+    { "name": "hubspot_object_counts", "file": "hs_object_counts.json", "tool": "http_post", "ok": true, "required": false,
+      "query": "POST https://api.hubapi.com/crm/v3/objects/{objectType}/search  {\"limit\":1}  -> read `total`" },
+    { "name": "hubspot_api_usage", "file": "hs_api_usage.json", "tool": "http_get", "ok": true, "required": false,
+      "note": "Portal-wide only. HubSpot publishes no per-consumer API breakdown, so per-app volume stays unmeasurable.",
+      "query": "GET https://api.hubapi.com/account-info/v3/api-usage/daily" },
+    { "name": "hubspot_connected_apps", "file": "hs_connected_apps.json", "tool": "manual_export", "ok": true, "required": false,
+      "note": "Manual export from Settings -> Integrations -> Connected Apps and -> Private Apps, dated 2026-08-10.",
+      "query": "no public API — exported by hand" },
+    { "name": "hubspot_login_activity", "file": "hs_login_activity.json", "tool": "http_get", "ok": false, "required": false,
+      "error": "403 MISSING_SCOPES: this app has not been granted account-info.security.read",
+      "query": "GET https://api.hubapi.com/account-info/v3/activity/login" }
+  ]
+}

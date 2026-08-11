@@ -1,0 +1,83 @@
+{
+  "_comment": "Fixture config for the bundled HubSpot sample. notes_next_activity_date is on the allow-list on purpose, to prove the read-only guard still refuses it. restricted_fields_opt_in is empty, so amount and dealstage are refused.",
+  "schema_version": 1,
+  "org_name": "Acme",
+  "crm": "hubspot",
+  "internal_email_domains": ["acme.io"],
+
+  "transcript_source": { "kind": "gong", "tool": "gong_list_calls", "folder_id": null, "local_dir": null },
+
+  "meeting_types": {
+    "include": ["discovery", "demo", "technical_validation", "negotiation", "renewal", "qbr"],
+    "exclude": ["internal", "interview", "one_on_one", "all_hands"],
+    "title_exclude_patterns": ["(?i)standup"],
+    "require_external_attendee": true,
+    "min_duration_minutes": 10
+  },
+
+  "matching": {
+    "strategies": ["crm_link", "calendar_event", "title_convention", "contact_email_exact", "attendee_domain"],
+    "title_convention": "^\\s*(?P<account>.+?)\\s*(?:<>|\\||—|-)\\s*",
+    "min_score": 0.5,
+    "margin": 0.25,
+    "require_open_opportunity": true,
+    "allow_account_only_match": true,
+    "overrides": {}
+  },
+
+  "field_allowlist": {
+    "deals": {
+      "hs_next_step": { "overwrite": "always", "label": "Next step", "type": "text" },
+      "next_step_date": { "overwrite": "always", "label": "Next step date", "type": "date" },
+      "primary_competitor": { "overwrite": "if_blank", "label": "Competitor mentioned", "type": "picklist" },
+      "identified_pain": { "overwrite": "if_blank", "label": "Pain / use case", "type": "multiline" },
+      "decision_process": { "overwrite": "if_blank", "label": "Decision process", "type": "multiline" },
+      "decision_timeline": { "overwrite": "if_blank", "label": "Decision timeline", "type": "text" },
+      "economic_buyer": { "overwrite": "if_blank", "label": "Economic buyer", "type": "text" },
+      "description": { "overwrite": "append", "label": "Deal notes", "type": "multiline" },
+      "notes_next_activity_date": { "overwrite": "if_blank", "label": "Next activity date", "type": "date" }
+    },
+    "contacts": {
+      "firstname": { "overwrite": "if_blank", "label": "First name", "type": "text" },
+      "lastname": { "overwrite": "if_blank", "label": "Last name", "type": "text" },
+      "email": { "overwrite": "if_blank", "label": "Email", "type": "text" },
+      "jobtitle": { "overwrite": "if_blank", "label": "Job title", "type": "text" }
+    },
+    "notes": {
+      "hs_note_body": { "overwrite": "if_blank", "label": "Call summary", "type": "multiline" },
+      "hs_timestamp": { "overwrite": "if_blank", "label": "Timestamp", "type": "date" }
+    },
+    "tasks": {
+      "hs_task_subject": { "overwrite": "if_blank", "label": "Subject", "type": "text" },
+      "hs_task_body": { "overwrite": "if_blank", "label": "Body", "type": "multiline" },
+      "hs_timestamp": { "overwrite": "if_blank", "label": "Due", "type": "date" },
+      "hs_task_status": { "overwrite": "if_blank", "label": "Status", "type": "picklist" }
+    }
+  },
+
+  "restricted_fields_opt_in": [],
+  "read_only_fields": [],
+
+  "framework": {
+    "name": "SPICED",
+    "dimensions": {
+      "situation": { "object": "deals", "field": "description", "label": "Situation" },
+      "pain": { "object": "deals", "field": "identified_pain", "label": "Pain" },
+      "impact": { "object": "deals", "field": "impact", "label": "Impact" },
+      "critical_event": { "object": "deals", "field": "decision_timeline", "label": "Critical event" },
+      "decision": { "object": "deals", "field": "decision_process", "label": "Decision" }
+    }
+  },
+
+  "child_records": {
+    "contact_roles": { "enabled": true, "object": "contacts", "create_missing_contacts": true, "default_role": "Influencer" },
+    "tasks": { "enabled": true, "object": "tasks", "subject_prefix": "Next step: ", "default_status": "NOT_STARTED", "type": "TODO" },
+    "call_summary": { "enabled": true, "object": "notes", "field": "hs_note_body", "subject_prefix": "Call summary: ", "type": "NOTE" }
+  },
+
+  "min_confidence": 0.6,
+  "allow_past_dates": false,
+  "max_value_length": 65536,
+  "approval": { "approvers": [], "require_named_approver": true, "min_review_seconds": 10 },
+  "audit": { "enabled": true }
+}

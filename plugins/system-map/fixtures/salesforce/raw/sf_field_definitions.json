@@ -1,0 +1,30 @@
+{
+  "totalSize": 24,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Forecast_Category__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": null, "DataType": "Picklist" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Next_Step_Due__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": null, "DataType": "Date" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Push_Count__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": null, "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Deal_Tier__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": null, "DataType": "Picklist" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "gong__Gong_Call_Count__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": "gong", "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "gong__Last_Call_Date__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": "gong", "DataType": "Date" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "gong__Gong_Engagement_Score__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": "gong", "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "ZoomInfo__Company_ID__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": "ZoomInfo", "DataType": "Text" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "ZoomInfo__Employee_Count__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": "ZoomInfo", "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "ZoomInfo__Contact_Accuracy__c", "EntityDefinition": { "QualifiedApiName": "Contact" }, "NamespacePrefix": "ZoomInfo", "DataType": "Percent" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "SBQQ__QuoteLine__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": "SBQQ", "DataType": "Lookup" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "SBQQ__PrimaryQuote__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": "SBQQ", "DataType": "Lookup" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "mkto_si__Lead_Score__c", "EntityDefinition": { "QualifiedApiName": "Lead" }, "NamespacePrefix": "mkto_si", "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "mkto_si__Last_Interesting_Moment__c", "EntityDefinition": { "QualifiedApiName": "Lead" }, "NamespacePrefix": "mkto_si", "DataType": "Text" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "LeanData__Routing_Status__c", "EntityDefinition": { "QualifiedApiName": "Lead" }, "NamespacePrefix": "LeanData", "DataType": "Picklist" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "LeanData__Matched_Account__c", "EntityDefinition": { "QualifiedApiName": "Lead" }, "NamespacePrefix": "LeanData", "DataType": "Lookup" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "ChiliPiper__Booked_Meeting__c", "EntityDefinition": { "QualifiedApiName": "Lead" }, "NamespacePrefix": "ChiliPiper", "DataType": "Checkbox" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "dsfs__DocuSign_Completed_Date__c", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "NamespacePrefix": "dsfs", "DataType": "Date" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "JBCXM__Health_Score__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": "JBCXM", "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "nortlgcy__Legacy_Key__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": "nortlgcy", "DataType": "Text" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Health_Score__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": null, "DataType": "Number" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Territory__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": null, "DataType": "Picklist" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Tier__c", "EntityDefinition": { "QualifiedApiName": "Account" }, "NamespacePrefix": null, "DataType": "Picklist" },
+    { "attributes": { "type": "FieldDefinition" }, "QualifiedApiName": "Lifecycle_Stage__c", "EntityDefinition": { "QualifiedApiName": "Contact" }, "NamespacePrefix": null, "DataType": "Picklist" }
+  ]
+}

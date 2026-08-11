@@ -1,0 +1,17 @@
+{
+  "totalSize": 11,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000INTWRITE", "SobjectType": "Lead", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000INTWRITE", "SobjectType": "Contact", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000INTWRITE", "SobjectType": "Account", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000INTWRITE", "SobjectType": "Opportunity", "PermissionsCreate": false, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000GONGWRITE", "SobjectType": "Task", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000GONGWRITE", "SobjectType": "Event", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000GONGWRITE", "SobjectType": "Opportunity", "PermissionsCreate": false, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": false },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000HTWRITE", "SobjectType": "Account", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": true },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000HTWRITE", "SobjectType": "Contact", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": true },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000HTWRITE", "SobjectType": "Opportunity", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": false, "PermissionsModifyAllRecords": true },
+    { "attributes": { "type": "ObjectPermissions" }, "ParentId": "0PS5f00000MODALL", "SobjectType": "Opportunity", "PermissionsCreate": true, "PermissionsEdit": true, "PermissionsDelete": true, "PermissionsModifyAllRecords": true }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "id": "89000000",
+      "properties": {
+        "hs_task_subject": "Send the revised proposal",
+        "hs_task_status": "NOT_STARTED",
+        "hs_timestamp": "2026-07-19T00:00:00.000Z",
+        "dealId": "94100300024"
+      }
+    },
+    {
+      "id": "89000001",
+      "properties": {
+        "hs_task_subject": "Confirm budget owner",
+        "hs_task_status": "NOT_STARTED",
+        "hs_timestamp": "2026-08-01T00:00:00.000Z",
+        "dealId": "94100300025"
+      }
+    }
+  ]
+}

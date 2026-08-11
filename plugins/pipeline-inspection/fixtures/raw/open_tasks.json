@@ -1,0 +1,42 @@
+{
+  "totalSize": 2,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000700000QAB",
+      "WhatId": "006000000300024QAB",
+      "Subject": "Send the revised proposal",
+      "ActivityDate": "2026-07-19",
+      "Status": "Not Started",
+      "IsClosed": false,
+      "CreatedDate": "2026-07-09T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Task"
+      },
+      "Id": "00T000000700001QAB",
+      "WhatId": "006000000300025QAB",
+      "Subject": "Confirm budget owner",
+      "ActivityDate": "2026-08-01",
+      "Status": "Not Started",
+      "IsClosed": false,
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran"
+      }
+    }
+  ]
+}

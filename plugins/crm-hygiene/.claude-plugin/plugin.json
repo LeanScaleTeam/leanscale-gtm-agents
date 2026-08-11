@@ -1,0 +1,21 @@
+{
+  "name": "crm-hygiene",
+  "version": "1.0.0",
+  "description": "Read-only CRM data-quality audit for Salesforce and HubSpot: duplicates, dead fields, unenforced required fields, records owned by people who left, stale pipeline, orphans, picklist rot and governance gaps, scored as a Hygiene Index you can track over time.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "salesforce",
+    "hubspot",
+    "crm",
+    "data-quality",
+    "deduplication",
+    "audit"
+  ]
+}

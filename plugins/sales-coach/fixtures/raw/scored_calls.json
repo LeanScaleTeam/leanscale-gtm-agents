@@ -1,0 +1,627 @@
+{
+  "_comment": "Written by Claude in the :run skill, one entry per call, after reading the normalized transcript. Python never scores a framework dimension — it only checks that the evidence exists, verifies each quote really appears in the transcript, and does the arithmetic.",
+  "framework": "MEDDPICC",
+  "scored_at": "2026-08-10T13:41:00Z",
+  "calls": [
+    {
+      "call_id": "call-1042",
+      "rep": "Dana Whitfield",
+      "rep_email": "dana@acmedata.io",
+      "call_type": "discovery",
+      "deal_id": "0061",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "met",
+          "evidence": {
+            "quote": "It's about thirty hours a month between me and one analyst.",
+            "timestamp": "03:03",
+            "speaker": "Tom Reddy",
+            "speaker_side": "customer"
+          },
+          "rationale": "Quantified in the buyer's own words and pushed one level further by the rep, who converted it into the opportunity cost of the pricing model that never got built."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "Whatever we land on, I'd have to get Raj comfortable with it. He owns the budget line for anything in the data stack",
+            "timestamp": "22:14",
+            "speaker": "Ines Okafor"
+          },
+          "rationale": "The buyer volunteered the budget owner by name and the rep answered 'Understood' and moved into the demo. Raj is never mentioned again on the call."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "partial",
+          "evidence": {
+            "quote": "I'd want the board number to come out of a system instead of out of Tom's head",
+            "timestamp": "04:40",
+            "speaker": "Ines Okafor",
+            "speaker_side": "customer"
+          },
+          "rationale": "An outcome was stated, but nothing about how they will compare options, or what would disqualify one."
+        },
+        {
+          "key": "decision_process",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "I want Tom to push on it properly before we go any further.",
+            "timestamp": "38:47",
+            "speaker": "Ines Okafor"
+          },
+          "rationale": "'Before we go any further' is an invitation to ask what comes after. The rep proposed a session instead of mapping the path to a decision."
+        },
+        {
+          "key": "paper_process",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Security review is mentioned by the buyer as a ticket their team will need, and nobody asked what the contracting path looks like."
+        },
+        {
+          "key": "identify_pain",
+          "status": "met",
+          "evidence": {
+            "quote": "She was hired to build the pricing model and she has not touched it since January.",
+            "timestamp": "03:48",
+            "speaker": "Ines Okafor",
+            "speaker_side": "customer"
+          },
+          "rationale": "Strongest moment on the call. The rep got past the visible symptom (eleven days) to the thing the executive actually resents."
+        },
+        {
+          "key": "champion",
+          "status": "partial",
+          "evidence": {
+            "quote": "That versioning piece is the thing.",
+            "timestamp": "23:35",
+            "speaker": "Tom Reddy",
+            "speaker_side": "customer"
+          },
+          "rationale": "Tom is engaged and technically sold, but was never asked to do anything internally, so this is enthusiasm rather than a champion."
+        },
+        {
+          "key": "competition",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Never raised by either side. On a four-year-old incumbent stack, 'do nothing' is the competitor and it went unexamined."
+        }
+      ],
+      "next_step": {
+        "set": true,
+        "quote": "Let's do a working session with your actual data. Tuesday the twenty-first at ten, ninety minutes, you, Tom, and one of our solution architects.",
+        "timestamp": "39:12",
+        "detail": "Named day, time, length and attendees, with a checklist committed same-day."
+      },
+      "pricing": {
+        "discussed": false,
+        "rationale": "Money never came up. The word 'pricing' appears once, in the buyer describing an internal pricing model her analyst never got to build — not a price conversation."
+      },
+      "notable": {
+        "strength": "Pain work is genuinely good — three layers deep in under five minutes without a single leading question.",
+        "risk": "A $85k deal with no identified signer and no path to a decision."
+      }
+    },
+    {
+      "call_id": "call-1043",
+      "rep": "Marcus Oyelaran",
+      "rep_email": "marcus@acmedata.io",
+      "call_type": "discovery",
+      "deal_id": "0062",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "No number of any kind came from the buyer. The only figures on the call were the rep's own price and his reference customer's."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Never approached. Two operational people on the call and no question about who would fund it."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "We've been through two of these evaluations this year and both of them fell apart on price at the end",
+            "timestamp": "03:02",
+            "speaker": "Ana Petrova"
+          },
+          "rationale": "She handed over how the last two evaluations died. That is the criteria conversation, and it was answered with a price band instead of a question."
+        },
+        {
+          "key": "decision_process",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Never approached."
+        },
+        {
+          "key": "paper_process",
+          "status": "not_applicable",
+          "evidence": {},
+          "rationale": "First conversation with no qualified need established; contracting mechanics would be premature here."
+        },
+        {
+          "key": "identify_pain",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "I'm not sure how much of this is our problem. We're a freight brokerage. Our contracts don't really look like subscriptions.",
+            "timestamp": "02:31",
+            "speaker": "Wes Delacroix"
+          },
+          "rationale": "The buyer said the offer might not apply to him. The rep reassured him and moved to a demo rather than finding out whether there was a problem at all."
+        },
+        {
+          "key": "champion",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Neither attendee was asked to do anything, and neither volunteered."
+        },
+        {
+          "key": "competition",
+          "status": "partial",
+          "evidence": {
+            "quote": "Where we tend to win is when the reconciliation piece matters, because that's the part they don't really do.",
+            "timestamp": "24:33",
+            "speaker": "Marcus Oyelaran",
+            "speaker_side": "internal"
+          },
+          "missed_moment": {
+            "quote": "we've got a quote from Northlake sitting on my desk already and it's about half what you just quoted",
+            "timestamp": "24:18",
+            "speaker": "Wes Delacroix"
+          },
+          "rationale": "A differentiation claim was made, which is why this is not scored missing — but no question followed about what Northlake was quoted for or what the buyer values, so the claim landed on nothing."
+        }
+      ],
+      "next_step": {
+        "set": false,
+        "quote": "I'll send over some materials, there's a one-pager and a case study from a logistics customer that I think maps pretty closely to you. And I'll follow up in a week or so to see where your head's at.",
+        "timestamp": "35:47",
+        "detail": "No date, no attendee, no commitment from the buyer. 'Follow up in a week or so' is not a next step."
+      },
+      "pricing": {
+        "discussed": true,
+        "first_at": "03:02",
+        "raised_by": "customer",
+        "speaker": "Ana Petrova",
+        "quote": "can I ask what this costs",
+        "rationale": "The buyer asked for a number three minutes in, before any need was established, and was given a range plus an implementation fee."
+      },
+      "notable": {
+        "strength": "Answered Ana's ownership question honestly rather than overpromising.",
+        "risk": "Nothing was qualified. This call produced no information the CRM did not already have."
+      }
+    },
+    {
+      "call_id": "call-1044",
+      "rep": "Priya Raman",
+      "rep_email": "priya@acmedata.io",
+      "call_type": "demo",
+      "deal_id": "0063",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "met",
+          "evidence": {
+            "quote": "we spent about four hundred thousand dollars last year on an outsourced reporting team and we still missed our Q3 board deadline",
+            "timestamp": "03:35",
+            "speaker": "Renee Baptiste",
+            "speaker_side": "customer"
+          },
+          "rationale": "Hard cost plus a missed commitment, and the rep immediately asked what it cost beyond the money — which produced the credibility answer that is the actual buying reason."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "met",
+          "evidence": {
+            "quote": "I sign anything over fifty thousand, and I've got one more of these in front of me this quarter",
+            "timestamp": "00:42",
+            "speaker": "Alan Voss",
+            "speaker_side": "customer"
+          },
+          "rationale": "Signer in the room, authority stated in his own words, and the rep structured the whole hour around his criteria."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "met",
+          "evidence": {
+            "quote": "The two things I care about are whether it survives an audit and whether Renee's team can run it without me hiring anyone.",
+            "timestamp": "01:29",
+            "speaker": "Alan Voss",
+            "speaker_side": "customer"
+          },
+          "rationale": "Two explicit criteria plus a disqualifier (no new headcount), asked for directly at the start of the call."
+        },
+        {
+          "key": "decision_process",
+          "status": "met",
+          "evidence": {
+            "quote": "We'd take it to the operating committee on the fourteenth, then security review, then Alan signs.",
+            "timestamp": "46:33",
+            "speaker": "Renee Baptiste",
+            "speaker_side": "customer"
+          },
+          "rationale": "Sequence, forum and date, obtained by asking for the real path rather than proposing one."
+        },
+        {
+          "key": "paper_process",
+          "status": "met",
+          "evidence": {
+            "quote": "Legal turns contracts in about ten business days, and we need a BAA because of the PHI, so start that early or it becomes the long pole.",
+            "timestamp": "46:33",
+            "speaker": "Renee Baptiste",
+            "speaker_side": "customer"
+          },
+          "rationale": "Contracting duration and the specific artefact that gates it, surfaced before it could become the reason the quarter slips."
+        },
+        {
+          "key": "identify_pain",
+          "status": "met",
+          "evidence": {
+            "quote": "It costs me credibility with the board. I sat there in November and said I would have segment-level margin by February and I did not have it in February.",
+            "timestamp": "04:32",
+            "speaker": "Alan Voss",
+            "speaker_side": "customer"
+          },
+          "rationale": "Executive pain in the executive's own words, which is what the rest of the call then gets designed around."
+        },
+        {
+          "key": "champion",
+          "status": "met",
+          "evidence": {
+            "quote": "I'll build the internal case. Send me whatever you'd put in front of a CFO and I'll adapt it into our format.",
+            "timestamp": "47:26",
+            "speaker": "Renee Baptiste",
+            "speaker_side": "customer"
+          },
+          "rationale": "Volunteered to sell internally and asked for ammunition — a champion doing champion work, not just a friendly contact."
+        },
+        {
+          "key": "competition",
+          "status": "met",
+          "evidence": {
+            "quote": "we looked at Datamesh two years ago and abandoned it six months in. It technically worked. Nobody used it.",
+            "timestamp": "21:24",
+            "speaker": "Alan Voss",
+            "speaker_side": "customer"
+          },
+          "rationale": "The rep went toward the failed prior purchase, named the two ways adoption normally dies and made him choose — which surfaced that finance keeping its own spreadsheet is the real risk to this deal."
+        }
+      ],
+      "next_step": {
+        "set": true,
+        "quote": "One-pager in your board format by Friday the eighth, our BAA template to your legal contact the same day, and I'll hold Tuesday the eighteenth for the security review so it isn't waiting on my calendar.",
+        "timestamp": "47:52",
+        "detail": "Three dated commitments, one of which removes the rep's own calendar as a bottleneck."
+      },
+      "pricing": {
+        "discussed": true,
+        "first_at": "21:24",
+        "raised_by": "customer",
+        "speaker": "Alan Voss",
+        "quote": "I am more worried about that outcome than I am about the license cost.",
+        "rationale": "Raised by the signer, late, and framed as the thing he cares less about. This is the healthy version of a pricing moment."
+      },
+      "notable": {
+        "strength": "Opened by asking the signer what would make this worth doing, then held the whole hour to that answer.",
+        "risk": "Adoption, not price. The rep named it and the buyer confirmed it — that needs to show up in the implementation plan."
+      }
+    },
+    {
+      "call_id": "call-1045",
+      "rep": "Dana Whitfield",
+      "rep_email": "dana@acmedata.io",
+      "call_type": "discovery",
+      "deal_id": "0064",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "partial",
+          "evidence": {
+            "quote": "It's a couple of days each month for two people, so call it four person-days.",
+            "timestamp": "02:43",
+            "speaker": "Bea Lindqvist",
+            "speaker_side": "customer"
+          },
+          "rationale": "Effort quantified, money never was. Four person-days a month has no dollar figure attached and no one converted it."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "our CFO gets the flash report on day nine and by then half the month is gone",
+            "timestamp": "02:43",
+            "speaker": "Bea Lindqvist"
+          },
+          "rationale": "The CFO is named three times across the call as the person who feels the pain, and is never named as the person who would fund the fix."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Never approached."
+        },
+        {
+          "key": "decision_process",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "Let me think about it and I'll come back to you.",
+            "timestamp": "34:59",
+            "speaker": "Bea Lindqvist"
+          },
+          "rationale": "The call ended on the buyer's timeline with no process mapped, which is how a warm inbound becomes a six-month no-decision."
+        },
+        {
+          "key": "paper_process",
+          "status": "not_applicable",
+          "evidence": {},
+          "rationale": "First call, no evaluation agreed. Contracting mechanics would be premature."
+        },
+        {
+          "key": "identify_pain",
+          "status": "met",
+          "evidence": {
+            "quote": "She's on maternity leave in November and I genuinely do not know what we do then.",
+            "timestamp": "01:27",
+            "speaker": "Bea Lindqvist",
+            "speaker_side": "customer"
+          },
+          "rationale": "A dated forcing event surfaced in the first ninety seconds. This is the strongest compelling event in the whole set and nothing was built on it."
+        },
+        {
+          "key": "champion",
+          "status": "partial",
+          "evidence": {
+            "quote": "This is the sort of thing I'd have wanted a year ago.",
+            "timestamp": "22:58",
+            "speaker": "Bea Lindqvist",
+            "speaker_side": "customer"
+          },
+          "rationale": "Personally sold, entirely single-threaded, and never asked to bring anyone else in."
+        },
+        {
+          "key": "competition",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "An autumn ERP programme was named as a competing internal priority and was not explored as the thing this deal is actually competing with."
+        }
+      ],
+      "next_step": {
+        "set": false,
+        "quote": "I'll follow up in a couple of weeks if I haven't heard from you.",
+        "timestamp": "35:19",
+        "detail": "Control of the next step left with the buyer, against a November deadline the buyer herself raised."
+      },
+      "pricing": {
+        "discussed": false,
+        "rationale": "Never raised by either side."
+      },
+      "notable": {
+        "strength": "Found a dated compelling event inside two minutes.",
+        "risk": "Single-threaded on a $60k deal with a known CFO and no route to him."
+      }
+    },
+    {
+      "call_id": "call-1046",
+      "rep": "Priya Raman",
+      "rep_email": "priya@acmedata.io",
+      "call_type": "demo",
+      "deal_id": "0065",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "met",
+          "evidence": {
+            "quote": "Those eleven are worth about thirty-one thousand dollars.",
+            "timestamp": "00:49",
+            "speaker": "Priya Raman",
+            "speaker_side": "internal"
+          },
+          "rationale": "Quantified from the buyer's own March file inside the first minute, and the buyer confirmed the lanes. Rep-derived rather than buyer-stated, but verified live."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "Twenty minutes a day I can sell internally. Four hours in week one I can sell. Six weeks of a project I cannot.",
+            "timestamp": "14:00",
+            "speaker": "Hal Brennan"
+          },
+          "rationale": "He described himself selling this to somebody and was never asked who that somebody is."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "partial",
+          "evidence": {
+            "quote": "they all look the same until you put our own mess in front of them. Then it either survives or it doesn't",
+            "timestamp": "00:28",
+            "speaker": "Hal Brennan",
+            "speaker_side": "customer"
+          },
+          "rationale": "One clear criterion, met head-on. Nothing about cost, support or integration, which is where these usually get decided."
+        },
+        {
+          "key": "decision_process",
+          "status": "partial",
+          "evidence": {
+            "quote": "Let me get Dee to look at the Laredo numbers and confirm they're real",
+            "timestamp": "22:52",
+            "speaker": "Hal Brennan",
+            "speaker_side": "customer"
+          },
+          "rationale": "One step forward, and the rep converted a vague 'give me a week' into a dated session — but the path past validation is unmapped."
+        },
+        {
+          "key": "paper_process",
+          "status": "missing",
+          "evidence": {},
+          "rationale": "Never approached."
+        },
+        {
+          "key": "identify_pain",
+          "status": "met",
+          "evidence": {
+            "quote": "That is going to be an uncomfortable conversation with somebody. Okay. How do we not find out about that four months late next time?",
+            "timestamp": "02:32",
+            "speaker": "Hal Brennan",
+            "speaker_side": "customer"
+          },
+          "rationale": "Pain demonstrated rather than asked about — the buyer arrived at it himself from his own data, which is why he then asked for the fix."
+        },
+        {
+          "key": "champion",
+          "status": "partial",
+          "evidence": {
+            "quote": "Thursday the sixth works. Send it and I'll get Dee on it.",
+            "timestamp": "24:13",
+            "speaker": "Hal Brennan",
+            "speaker_side": "customer"
+          },
+          "rationale": "Willing to spend his own team's time, which is real. Not yet carrying anything upward."
+        },
+        {
+          "key": "competition",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "My guys have seen four demos this year",
+            "timestamp": "00:28",
+            "speaker": "Hal Brennan"
+          },
+          "rationale": "Four demos this year, in the first minute, and nobody asked whose."
+        }
+      ],
+      "next_step": {
+        "set": true,
+        "quote": "Let's put a date on it rather than a week — Thursday the sixth, thirty minutes, you, me and Dee, and I'll bring the same file rebuilt with the two lanes she'll want to check.",
+        "timestamp": "23:35",
+        "detail": "Refused a vague 'give me a week' and replaced it with a dated session and a named new attendee."
+      },
+      "pricing": {
+        "discussed": false,
+        "rationale": "Never raised. The buyer talked about internal effort cost, not price."
+      },
+      "notable": {
+        "strength": "Opened on the buyer's own data and found $31k of under-billing in ninety seconds. This is why the manager picked it as an exemplar.",
+        "risk": "Brilliant demo mechanics on a deal with no known signer, no known process and no known competitor."
+      }
+    },
+    {
+      "call_id": "call-1047",
+      "rep": "Marcus Oyelaran",
+      "rep_email": "marcus@acmedata.io",
+      "call_type": "discovery",
+      "deal_id": "0066",
+      "attribution_caveat": "One customer-side speaker could not be identified — the export labels them 'Speaker 2'. Quotes below are attributed as the transcript labels them and are not credited to any named person.",
+      "dimensions": [
+        {
+          "key": "metrics",
+          "status": "met",
+          "evidence": {
+            "quote": "We had a number in the last QBR that was off by a hundred and ten thousand",
+            "timestamp": "01:12",
+            "speaker": "Speaker 2 (unidentified, customer side)",
+            "speaker_side": "customer"
+          },
+          "rationale": "A specific error with a dollar value, volunteered early. Speaker is unidentified in the export but is definitively not the rep."
+        },
+        {
+          "key": "economic_buyer",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "I'll take it to our director's staff meeting on Monday.",
+            "timestamp": "38:25",
+            "speaker": "Corinne Vasquez"
+          },
+          "rationale": "A forum was named. Who inside it can approve spend was not asked, on the call where the buyer was most willing to answer."
+        },
+        {
+          "key": "decision_criteria",
+          "status": "met",
+          "evidence": {
+            "quote": "We can be late and survive it. We cannot hand the holding company a number that moves after we've presented it.",
+            "timestamp": "04:47",
+            "speaker": "Speaker 2 (unidentified, customer side)",
+            "speaker_side": "customer"
+          },
+          "rationale": "The rep explicitly forced a trade-off between speed and accuracy, got a clear answer, and changed what he demoed because of it. Best single move in the set."
+        },
+        {
+          "key": "decision_process",
+          "status": "partial",
+          "evidence": {
+            "quote": "Send me a written version of the phased approach — the two sources first, then the other two after the QBR. I'll take it to our director's staff meeting on Monday.",
+            "timestamp": "38:25",
+            "speaker": "Corinne Vasquez",
+            "speaker_side": "customer"
+          },
+          "rationale": "One forum and one date. What happens after the staff meeting is unknown."
+        },
+        {
+          "key": "paper_process",
+          "status": "not_applicable",
+          "evidence": {},
+          "rationale": "First conversation, no evaluation agreed yet."
+        },
+        {
+          "key": "identify_pain",
+          "status": "met",
+          "evidence": {
+            "quote": "That happened in Q4 and it was genuinely career-affecting for someone.",
+            "timestamp": "04:47",
+            "speaker": "Speaker 2 (unidentified, customer side)",
+            "speaker_side": "customer"
+          },
+          "rationale": "Personal consequence, not process friction. The rep followed it rather than jumping to the product."
+        },
+        {
+          "key": "champion",
+          "status": "partial",
+          "evidence": {
+            "quote": "That's Devi. I'll introduce you by email today.",
+            "timestamp": "39:14",
+            "speaker": "Corinne Vasquez",
+            "speaker_side": "customer"
+          },
+          "rationale": "Agreed to make an introduction the same day, which is a real action. Not yet carrying the business case."
+        },
+        {
+          "key": "competition",
+          "status": "missing",
+          "evidence": {},
+          "missed_moment": {
+            "quote": "That's a sensible answer, and it's not what the last vendor told us.",
+            "timestamp": "27:20",
+            "speaker": "Corinne Vasquez"
+          },
+          "rationale": "'The last vendor' went unexplored. Whoever that was is either still in the deal or explains the buying committee's scar tissue."
+        }
+      ],
+      "next_step": {
+        "set": true,
+        "quote": "I'll have that with you by Thursday. Can I get twenty minutes with whoever owns the finance spreadsheet before then?",
+        "timestamp": "38:52",
+        "detail": "Dated deliverable plus a request for access to a new person, which was granted."
+      },
+      "pricing": {
+        "discussed": false,
+        "rationale": "Never raised."
+      },
+      "notable": {
+        "strength": "Forced a real trade-off question and let the answer change the demo. That is a tenured-rep move from a rep ten weeks in.",
+        "risk": "Same-room speaker could not be separated, so talk-time numbers for this call are not trustworthy and were excluded."
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "totalSize": 6,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001fffFIAQ", "PermissionSetId": "0PS5f00000INTWRITE", "PermissionSet": { "Name": "Integration_Write_Access", "PermissionsModifyAllData": false, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } },
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001gggGIAQ", "PermissionSetId": "0PS5f00000GONGWRITE", "PermissionSet": { "Name": "Gong_Write_Access", "PermissionsModifyAllData": false, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } },
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001hhhHIAQ", "PermissionSetId": "0PS5f00000HTWRITE", "PermissionSet": { "Name": "Reverse_ETL_Write", "PermissionsModifyAllData": false, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } },
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001iiiIIAQ", "PermissionSetId": "0PS5f00000INTWRITE", "PermissionSet": { "Name": "Integration_Write_Access", "PermissionsModifyAllData": false, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } },
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001jjjJIAQ", "PermissionSetId": "0PS5f00000MODALL", "PermissionSet": { "Name": "Legacy_Admin_Full", "PermissionsModifyAllData": true, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } },
+    { "attributes": { "type": "PermissionSetAssignment" }, "AssigneeId": "005A0000001lllLIAQ", "PermissionSetId": "0PS5f00000READONLY", "PermissionSet": { "Name": "Fivetran_Read_Only", "PermissionsModifyAllData": false, "PermissionsViewAllData": true, "PermissionsApiEnabled": true, "IsOwnedByProfile": false } }
+  ]
+}

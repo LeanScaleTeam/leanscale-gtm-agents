@@ -1,0 +1,49 @@
+[
+  {
+    "account_id": "14778211903",
+    "company": "Larkspur Media",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Series B",
+    "last_raise": { "date": "2025-01-28", "round": "Series B", "amount_usd": 41000000 },
+    "months_since_last_raise": 18,
+    "headcount_trend": "growing",
+    "external_risk_note": "Healthy externally. One leadership change on the finance side in July that is worth knowing about before the renewal paperwork goes to procurement.",
+    "events": [
+      {
+        "type": "exec_change", "date": "2026-07-02", "severity": "medium",
+        "headline": "Larkspur Media appoints a new VP Finance",
+        "source_url": "https://example.com/press/larkspur-vp-finance",
+        "note": "New finance leadership typically re-reviews recurring vendor spend at the first renewal after they arrive. Our renewal is 46 days out and unsigned."
+      }
+    ]
+  },
+  {
+    "account_id": "14778211904",
+    "company": "Verdant Foods",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Private, family-held",
+    "last_raise": null,
+    "months_since_last_raise": null,
+    "headcount_trend": "flat",
+    "external_risk_note": "No public financing, leadership or restructuring events found. The risk on this account is entirely internal to the relationship: no renewal date is recorded anywhere and no conversation source covers it.",
+    "events": []
+  },
+  {
+    "account_id": "14778211905",
+    "company": "Atlas Freight Group",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Public",
+    "last_raise": null,
+    "months_since_last_raise": null,
+    "headcount_trend": "growing",
+    "external_risk_note": "Publicly listed, last two quarters beat guidance, commercial headcount growing. No distress signals.",
+    "events": [
+      {
+        "type": "expansion_announcement", "date": "2026-05-12", "severity": "medium",
+        "headline": "Atlas Freight Group opens two new regional operations hubs",
+        "source_url": "https://example.com/news/atlas-freight-expansion",
+        "note": "Regional expansion means more seats. Good news that offsets risk."
+      }
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "crm": "salesforce",
+  "instance_label": "Northwind Robotics Production",
+  "generated_at": "2026-08-10T00:00:00.000Z",
+  "history_source": "OpportunityHistory",
+  "history_retention_note": "OpportunityHistory is a standard child object and needs no setup. OpportunityFieldHistory requires field history tracking on StageName and is retained 18 months (24 with Field Audit Trail).",
+  "fiscal_year_start_month": 2,
+  "loss_reason_field": "Loss_Reason__c",
+  "loss_reason_values": [
+    "No Decision",
+    "Lost to Competitor",
+    "Price",
+    "No Budget",
+    "Timing",
+    "Legal / Security",
+    "Other"
+  ],
+  "pipelines": [
+    {
+      "id": "default",
+      "label": "New Business",
+      "record_type": "New Business",
+      "stages": [
+        {
+          "id": "Discovery",
+          "label": "Discovery",
+          "order": 0,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 10,
+          "is_active": true,
+          "forecast_category": "Pipeline",
+          "record_count_open": 34
+        },
+        {
+          "id": "Qualification",
+          "label": "Qualification",
+          "order": 1,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 25,
+          "is_active": true,
+          "forecast_category": "Pipeline",
+          "record_count_open": 29
+        },
+        {
+          "id": "Solution Validation",
+          "label": "Solution Validation",
+          "order": 2,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 40,
+          "is_active": true,
+          "forecast_category": "Pipeline",
+          "record_count_open": 22
+        },
+        {
+          "id": "Technical Validation",
+          "label": "Technical Validation",
+          "order": 3,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 50,
+          "is_active": true,
+          "forecast_category": "BestCase",
+          "record_count_open": 3
+        },
+        {
+          "id": "Proposal",
+          "label": "Proposal",
+          "order": 4,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 65,
+          "is_active": true,
+          "forecast_category": "BestCase",
+          "record_count_open": 18
+        },
+        {
+          "id": "Negotiation",
+          "label": "Negotiation",
+          "order": 5,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 80,
+          "is_active": true,
+          "forecast_category": "Commit",
+          "record_count_open": 6
+        },
+        {
+          "id": "Pilot",
+          "label": "Pilot",
+          "order": 6,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 85,
+          "is_active": true,
+          "forecast_category": "Commit",
+          "record_count_open": 0
+        },
+        {
+          "id": "Contracting",
+          "label": "Contracting",
+          "order": 7,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 92,
+          "is_active": true,
+          "forecast_category": "Commit",
+          "record_count_open": 4
+        },
+        {
+          "id": "Closed Won",
+          "label": "Closed Won",
+          "order": 8,
+          "is_closed": true,
+          "is_won": true,
+          "default_probability": 100,
+          "is_active": true,
+          "forecast_category": "Closed",
+          "record_count_open": 0
+        },
+        {
+          "id": "Closed Lost",
+          "label": "Closed Lost",
+          "order": 9,
+          "is_closed": true,
+          "is_won": false,
+          "default_probability": 0,
+          "is_active": true,
+          "forecast_category": "Omitted",
+          "record_count_open": 0
+        }
+      ]
+    }
+  ]
+}

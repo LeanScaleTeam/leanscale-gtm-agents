@@ -1,0 +1,90 @@
+[
+  {
+    "id": "901220001",
+    "properties": {
+      "firstname": "Tomas", "lastname": "Bergqvist",
+      "email": "tomas.bergqvist@larkspurmedia.example",
+      "jobtitle": "VP Revenue Operations",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-08-06T09:12:00Z",
+      "associatedcompanyid": "14778211903"
+    }
+  },
+  {
+    "id": "901220002",
+    "properties": {
+      "firstname": "Ingrid", "lastname": "Sandoval",
+      "email": "ingrid.sandoval@larkspurmedia.example",
+      "jobtitle": "Chief Operating Officer",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-06-25T16:00:00Z",
+      "associatedcompanyid": "14778211903"
+    }
+  },
+  {
+    "id": "901220003",
+    "properties": {
+      "firstname": "Rafa", "lastname": "Molina",
+      "email": "rafa.molina@larkspurmedia.example",
+      "jobtitle": "Marketing Operations Lead",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-07-21T13:40:00Z",
+      "associatedcompanyid": "14778211903"
+    }
+  },
+  {
+    "id": "901220010",
+    "properties": {
+      "firstname": "Wes", "lastname": "Ibarra",
+      "email": "wes.ibarra@verdantfoods.example",
+      "jobtitle": "Director of Commercial Systems",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-06-30T15:44:00Z",
+      "associatedcompanyid": "14778211904"
+    }
+  },
+  {
+    "id": "901220011",
+    "properties": {
+      "firstname": "Priscilla", "lastname": "Nkemdirim",
+      "email": "priscilla.nkemdirim@verdantfoods.example",
+      "jobtitle": "Sales Operations Analyst",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-06-12T11:05:00Z",
+      "associatedcompanyid": "14778211904"
+    }
+  },
+  {
+    "id": "901220020",
+    "properties": {
+      "firstname": "Neve", "lastname": "Halloran",
+      "email": "neve.halloran@atlasfreight.example",
+      "jobtitle": "Senior Director, Revenue Operations",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-08-07T11:30:00Z",
+      "associatedcompanyid": "14778211905"
+    }
+  },
+  {
+    "id": "901220021",
+    "properties": {
+      "firstname": "Desmond", "lastname": "Achebe",
+      "email": "desmond.achebe@atlasfreight.example",
+      "jobtitle": "Chief Revenue Officer",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-07-16T15:00:00Z",
+      "associatedcompanyid": "14778211905"
+    }
+  },
+  {
+    "id": "901220022",
+    "properties": {
+      "firstname": "Yuki", "lastname": "Tanabe",
+      "email": "yuki.tanabe@atlasfreight.example",
+      "jobtitle": "Revenue Systems Manager",
+      "is_active": "true", "hs_email_hard_bounce_reason": "",
+      "notes_last_contacted": "2026-07-30T09:25:00Z",
+      "associatedcompanyid": "14778211905"
+    }
+  }
+]

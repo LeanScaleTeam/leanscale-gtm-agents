@@ -1,0 +1,113 @@
+{
+  "_comment": "forecast-agent settings. Copy to ~/.leanscale-gtm/forecast-agent.json (the :setup skill writes it for you). Edit by hand any time — every key has a _help line under it. Shared org facts (fiscal year, currency, quota-carrying rep count, roll-up field) live in ~/.leanscale-gtm/profile.json and are NOT repeated here.",
+
+  "methodology": "category",
+  "_methodology_help": "How this company calls the number: 'category' (Commit / Best Case / Pipeline / Omitted), 'weighted' (probability-by-stage), or 'hybrid' (category for Commit and Best Case, weighted for everything below).",
+
+  "category_map": {
+    "commit": ["Commit"],
+    "best_case": ["Best Case", "Upside"],
+    "pipeline": ["Pipeline"],
+    "omitted": ["Omitted"],
+    "closed": ["Closed"]
+  },
+  "_category_map_help": "Maps YOUR forecast-category picklist values onto the four canonical buckets. Read the real picklist during setup; do not assume Salesforce defaults.",
+
+  "commit_buckets": ["commit"],
+  "_commit_buckets_help": "Which canonical buckets make up 'the number the rep called'. Most teams call Commit only; some call Commit + Best Case. This decides what the evidence-based number is compared against.",
+
+  "forecast_measure": "bookings",
+  "_forecast_measure_help": "What gets forecast: 'bookings' (total contract value signed), 'arr' (annual recurring value), or 'revenue' (recognised in period). Changes which amount field is summed.",
+
+  "amount_field_by_measure": {
+    "bookings": "Amount",
+    "arr": "ARR__c",
+    "revenue": "Recognized_Revenue__c"
+  },
+  "_amount_field_by_measure_help": "The field that holds each measure. Only the one named by forecast_measure is used. If ARR does not exist as a field, keep bookings and say so in the report rather than deriving a fake ARR.",
+
+  "count_types": {
+    "new": true,
+    "expansion": true,
+    "renewal": false
+  },
+  "_count_types_help": "Whether new business, expansion and renewal each count toward the forecast. Getting this wrong makes every number wrong. Renewals are excluded by default because most teams forecast them on a separate cadence.",
+
+  "type_field": "Type",
+  "_type_field_help": "The field holding new / expansion / renewal.",
+
+  "type_map": {
+    "new": ["New Business", "New Logo", "New"],
+    "expansion": ["Existing Business - Upsell", "Expansion", "Upsell", "Cross-sell"],
+    "renewal": ["Renewal", "Existing Business - Renewal"]
+  },
+  "_type_map_help": "Maps YOUR type picklist values onto new / expansion / renewal. Values not listed here are treated as 'new' and counted in a warning.",
+
+  "history_quarters": 8,
+  "_history_quarters_help": "How many completed fiscal quarters of closed deals to measure conversion, slip and calibration from. More is better, but only go back as far as the current stage model and the current sales team are comparable — a re-stage in Q2 makes anything older uncomparable.",
+
+  "min_cohort_n": 25,
+  "_min_cohort_n_help": "Below this many closed deals in a stage cohort, the measured conversion rate is reported but flagged as thin, and the Wilson confidence band around it widens the worst/best spread automatically.",
+
+  "run_forecast_below_threshold": false,
+  "_run_forecast_below_threshold_help": "If false (recommended), --mode forecast refuses to produce a call when the Forecast Integrity Score is under forecast_threshold. A precise number on top of fictional close dates is worse than no number.",
+
+  "forecast_threshold": 60,
+  "_forecast_threshold_help": "Minimum Forecast Integrity Score required before the call is worth producing. 60 = 'forecastable with named caveats'.",
+
+  "push_days_threshold": 7,
+  "_push_days_threshold_help": "A close-date change counts as a push only if it moves the date later by at least this many days. Stops one-day housekeeping edits from reading as slippage.",
+
+  "serial_push_count": 3,
+  "_serial_push_count_help": "Number of pushes at which a deal is called a serial pusher and treated as a date-fiction problem rather than a slow deal.",
+
+  "single_thread_max_contacts": 1,
+  "_single_thread_max_contacts_help": "A deal with this many or fewer contact roles is single-threaded. 1 is the honest default: one human between you and the number.",
+
+  "stale_activity_days": 21,
+  "_stale_activity_days_help": "A committed deal with no logged activity in this many days is stale. Tune to the sales cycle: a 30-day transactional motion should use 7.",
+
+  "next_step_field": "NextStep",
+  "_next_step_field_help": "Where the next step lives. Set to null if the team uses open Tasks instead, and the plugin will fall back to activities.json.",
+
+  "quota": {
+    "source": "manual",
+    "period_quota_by_owner": {},
+    "org_quota": null
+  },
+  "_quota_help": "Quota is usually NOT in the CRM. 'source' is 'manual' (fill period_quota_by_owner and/or org_quota here, in the forecast_measure's units for ONE period) or 'crm' (read from the quota object during the run). If neither is populated, the plugin skips coverage ratio entirely rather than inventing a denominator.",
+
+  "field_map": {
+    "id": "Id",
+    "name": "Name",
+    "amount": "Amount",
+    "amount_converted": "ConvertedAmount",
+    "close_date": "CloseDate",
+    "created_date": "CreatedDate",
+    "stage": "StageName",
+    "forecast_category": "ForecastCategoryName",
+    "is_closed": "IsClosed",
+    "is_won": "IsWon",
+    "owner_id": "OwnerId",
+    "owner_name": "Owner.Name",
+    "next_step": "NextStep",
+    "type": "Type",
+    "probability": "Probability",
+    "last_activity": "LastActivityDate",
+    "currency": "CurrencyIsoCode",
+    "contact_role_count": "ContactRoleCount"
+  },
+  "_field_map_help": "Canonical name -> the field in YOUR CRM. Defaults are Salesforce. On HubSpot the :setup skill rewrites these to dealname / closedate / dealstage / hs_is_closed_won and so on. Change a value here and every query and every calculation follows it.",
+
+  "stage_order": [],
+  "_stage_order_help": "Your open stages in sequence, earliest first. Populated by :setup from the real picklist / pipeline. Drives stage-skipping detection and the progression matrix.",
+
+  "closed_won_stages": ["Closed Won"],
+  "_closed_won_stages_help": "Stage values that mean won. Read from the picklist during setup.",
+
+  "closed_lost_stages": ["Closed Lost", "Closed Lost - No Decision"],
+  "_closed_lost_stages_help": "Stage values that mean lost, including no-decision. No-decision belongs here: it is a loss for forecasting purposes even when the CRM calls it something gentler.",
+
+  "redact_reps": false,
+  "_redact_reps_help": "Overrides profile.redact_pii_in_reports for this plugin only. When true, rep names become stable pseudonyms in report.md / report.html. findings.json and raw/ stay unredacted on your machine."
+}

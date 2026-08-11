@@ -1,0 +1,21 @@
+{
+  "name": "lead-source",
+  "version": "1.0.0",
+  "description": "Audits whether your lead source data can support the channel report you present: null/Other rates by capture route, duplicate source values, and whether source survives Lead to Opportunity conversion.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "salesforce",
+    "hubspot",
+    "lead-source",
+    "attribution",
+    "data-quality",
+    "marketing-ops"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "_comment": "crm-hygiene settings. Copied to ~/.leanscale-gtm/crm-hygiene.json by /crm-hygiene:setup. Edit it by hand any time — every key has a _<key>_help line under it. Anything you delete falls back to the default baked into scripts/analyze.py. The shared org profile (org name, CRM, fiscal year, quota-carrying reps, material deal floor, PII redaction) lives separately in ~/.leanscale-gtm/profile.json and is read by every LeanScale GTM agent.",
+
+  "crm": "salesforce",
+  "_crm_help": "salesforce | hubspot. Which CRM is the system of record. Only used as a fallback — each raw/*.json file declares its own 'crm', and that wins.",
+
+  "objects_in_scope": ["Account", "Contact", "Opportunity", "Lead"],
+  "_objects_in_scope_help": "Which objects to audit. HubSpot equivalents: Account=companies, Contact=contacts, Opportunity=deals, Lead=contacts with a lead lifecycle stage. Drop Lead if you don't use it.",
+
+  "window_days": 365,
+  "_window_days_help": "Look-back window for fill rates, picklist usage and record-type usage. 365 is the right default: a field nobody has touched in a year is dead regardless of what it held in 2019.",
+
+  "dead_field_threshold_pct": 5.0,
+  "_dead_field_threshold_pct_help": "A custom field filled on fewer than this share of records in the window is reported as low-fill. Fields at exactly 0% are reported separately as never-populated.",
+
+  "min_records_for_fill_rate": 30,
+  "_min_records_for_fill_rate_help": "Don't call a field dead on a sample smaller than this. Prevents 'all 4 of your records are missing this' theatre.",
+
+  "policy_required_fields": {
+    "Opportunity": ["NextStep", "Type", "LeadSource"],
+    "Account": ["Industry", "Website"],
+    "Contact": ["Email", "Title"],
+    "Lead": ["LeadSource"]
+  },
+  "_policy_required_fields_help": "THE MOST IMPORTANT KEY IN THIS FILE. Fields your team is told are mandatory but which the schema does not enforce. The gap between this list and what the schema actually requires is the finding. Use API names (Salesforce) or internal property names (HubSpot).",
+
+  "policy_required_scope": "open_and_recent",
+  "_policy_required_scope_help": "open_and_recent (default: open records plus anything created inside window_days) | all | open_only. Judging a 2019 closed-lost deal against today's policy is noise.",
+
+  "dedupe_keys": ["domain", "company_name", "contact_email", "contact_name_account"],
+  "_dedupe_keys_help": "Which duplicate detectors you trust enough to see. domain = accounts sharing a corporate email domain. company_name = normalized name collision. contact_email = exact email match. contact_name_account = same person name twice on one account. Remove any that generate noise in your org.",
+
+  "dedupe_min_cluster": 2,
+  "_dedupe_min_cluster_help": "Minimum records sharing a key before it counts as a duplicate cluster. Raise to 3 if 2-member clusters are mostly legitimate in your org.",
+
+  "ignore_domains": [],
+  "_ignore_domains_help": "Domains to exclude from account dedupe on top of the built-in free-email list (gmail, yahoo, outlook, ...). Put your own domain here, plus any partner/reseller domain that legitimately fronts many accounts.",
+
+  "exclude_hierarchy_clusters": true,
+  "_exclude_hierarchy_clusters_help": "When every account in a duplicate cluster is linked by parent/child, treat it as a legitimate hierarchy and exclude it from the duplicate count. Reported separately so you can see how many were excluded.",
+
+  "open_opp_staleness_days": 30,
+  "_open_opp_staleness_days_help": "An open opportunity with no logged activity in this many days is stale. 30 is a weekly-inspection default; 45-60 fits a long enterprise cycle.",
+
+  "lead_staleness_days": 45,
+  "_lead_staleness_days_help": "An unconverted, un-disqualified lead with no activity in this many days is abandoned inventory.",
+
+  "implausible_close_date_days": 730,
+  "_implausible_close_date_days_help": "Open opportunities with a close date further out than this are placeholder dates (the classic 12/31/2099) and inflate long-range pipeline.",
+
+  "owner_concentration_pct": 20.0,
+  "_owner_concentration_pct_help": "Flag when one user owns at least this share of accounts. It is almost always an integration user or a departed rep's book that was never redistributed.",
+
+  "picklist_fields": {
+    "Opportunity": ["StageName", "Type", "LeadSource", "ForecastCategoryName"],
+    "Account": ["Type", "Industry"],
+    "Contact": ["LeadSource"],
+    "Lead": ["Status", "LeadSource", "Industry"]
+  },
+  "_picklist_fields_help": "Picklists to audit for unused values, near-duplicate values and values present in data but not in the active value set. Add every picklist that feeds a report or a routing rule.",
+
+  "picklist_unused_min_records": 100,
+  "_picklist_unused_min_records_help": "Don't call a picklist value unused unless the field has at least this many records in the window. Small samples produce fake 'unused' values.",
+
+  "known_dead_fields": [],
+  "_known_dead_fields_help": "Fields you already know are dead and have decided to keep (Opportunity.Legacy_ID__c, ...). Still counted in the Hygiene Index denominator, but suppressed from the findings list so the report shows you only news. Format: Object.FieldApiName.",
+
+  "min_finding_count": 1,
+  "_min_finding_count_help": "Suppress any finding whose record count is below this. Raise it in a very large org to keep the report to what is worth a meeting.",
+
+  "data_quality_owner": "RevOps",
+  "_data_quality_owner_help": "Who owns data quality. Printed as the owner hint on every finding so the report routes itself.",
+
+  "expect_inactive_users_own_records": false,
+  "_expect_inactive_users_own_records_help": "Set true if you deliberately leave records on deactivated users (some orgs park a departed rep's history rather than reassigning). We still count them, but the finding drops from critical to low and says you told us so.",
+
+  "hygiene_index_weights": {
+    "duplicates": 20,
+    "field_discipline": 15,
+    "policy_compliance": 20,
+    "ownership": 15,
+    "freshness": 20,
+    "structure": 10
+  },
+  "_hygiene_index_weights_help": "Weights for the 0-100 Hygiene Index. Must be positive numbers; they are normalized, so they do not have to sum to 100. Any pillar with no measurable denominator is dropped and the remaining weights are renormalized — the report names which pillars were excluded. Governance findings are deliberately NOT in the index: they are binary switches, and one toggle should not swing a trend line."
+}

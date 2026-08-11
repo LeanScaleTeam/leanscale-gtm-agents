@@ -1,0 +1,18 @@
+{
+  "size": 10,
+  "totalSize": 10,
+  "done": true,
+  "entityTypeName": "InstalledSubscriberPackage",
+  "records": [
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000001", "SubscriberPackage": { "Name": "Gong for Salesforce", "NamespacePrefix": "gong", "PublisherName": "Gong.io Inc." }, "SubscriberPackageVersion": { "Name": "Summer 26", "MajorVersion": 6, "MinorVersion": 12 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000002", "SubscriberPackage": { "Name": "ZoomInfo for Salesforce", "NamespacePrefix": "ZoomInfo", "PublisherName": "ZoomInfo Technologies" }, "SubscriberPackageVersion": { "Name": "5.9", "MajorVersion": 5, "MinorVersion": 9 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000003", "SubscriberPackage": { "Name": "Salesforce CPQ", "NamespacePrefix": "SBQQ", "PublisherName": "Salesforce.com" }, "SubscriberPackageVersion": { "Name": "Winter 26", "MajorVersion": 250, "MinorVersion": 2 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000004", "SubscriberPackage": { "Name": "DocuSign eSignature for Salesforce", "NamespacePrefix": "dsfs", "PublisherName": "DocuSign, Inc." }, "SubscriberPackageVersion": { "Name": "7.11", "MajorVersion": 7, "MinorVersion": 11 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000005", "SubscriberPackage": { "Name": "LeanData", "NamespacePrefix": "LeanData", "PublisherName": "LeanData, Inc." }, "SubscriberPackageVersion": { "Name": "4.8", "MajorVersion": 4, "MinorVersion": 8 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000006", "SubscriberPackage": { "Name": "Marketo Sales Insight", "NamespacePrefix": "mkto_si", "PublisherName": "Adobe Inc." }, "SubscriberPackageVersion": { "Name": "3.4", "MajorVersion": 3, "MinorVersion": 4 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000007", "SubscriberPackage": { "Name": "Chili Piper", "NamespacePrefix": "ChiliPiper", "PublisherName": "Chili Piper, Inc." }, "SubscriberPackageVersion": { "Name": "2.2", "MajorVersion": 2, "MinorVersion": 2 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000008", "SubscriberPackage": { "Name": "Gainsight NXT Connector", "NamespacePrefix": "JBCXM", "PublisherName": "Gainsight" }, "SubscriberPackageVersion": { "Name": "6.4", "MajorVersion": 6, "MinorVersion": 4 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000009", "SubscriberPackage": { "Name": "Northwind Legacy Utilities", "NamespacePrefix": "nortlgcy", "PublisherName": "Bramble Consulting" }, "SubscriberPackageVersion": { "Name": "1.2", "MajorVersion": 1, "MinorVersion": 2 } },
+    { "attributes": { "type": "InstalledSubscriberPackage" }, "Id": "0A35f000000010", "SubscriberPackage": { "Name": "Field Trip", "NamespacePrefix": "fieldtrip", "PublisherName": "Salesforce Labs" }, "SubscriberPackageVersion": { "Name": "3.1", "MajorVersion": 3, "MinorVersion": 1 } }
+  ]
+}

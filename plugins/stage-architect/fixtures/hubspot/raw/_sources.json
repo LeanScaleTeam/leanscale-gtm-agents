@@ -1,0 +1,22 @@
+{
+  "stage_metadata": {
+    "tool": "hubspot_api_request",
+    "query": "GET /crm/v3/pipelines/deals",
+    "note": "stages[].metadata.isClosed / .probability and stages[].displayOrder define the ladder."
+  },
+  "opportunities": {
+    "tool": "hubspot_crm_search",
+    "query": "POST /crm/v3/objects/deals/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"createdate\",\"operator\":\"GTE\",\"value\":\"1723248000000\"}]}],\"properties\":[\"dealname\",\"dealstage\",\"pipeline\",\"amount\",\"createdate\",\"closedate\",\"hs_lastmodifieddate\",\"hs_is_closed_won\",\"hubspot_owner_id\",\"closed_lost_reason\"],\"sorts\":[{\"propertyName\":\"createdate\",\"direction\":\"ASCENDING\"}],\"limit\":100}",
+    "note": "Paged with `after` until paging.next.after is absent."
+  },
+  "stage_history": {
+    "tool": "hubspot_api_request",
+    "query": "POST /crm/v3/objects/deals/batch/read {\"propertiesWithHistory\":[\"dealstage\"],\"properties\":[\"dealstage\"],\"inputs\":[{\"id\":\"...\"}]}  (max 100 ids per call)",
+    "note": "HubSpot returns history newest-first; the analyser sorts ascending."
+  },
+  "lead_lifecycle": {
+    "tool": "hubspot_crm_search",
+    "query": "POST /crm/v3/objects/contacts/search {\"properties\":[\"lifecyclestage\",\"createdate\",\"hs_lead_status\"],\"limit\":100}",
+    "note": ""
+  }
+}

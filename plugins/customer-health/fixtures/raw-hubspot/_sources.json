@@ -1,0 +1,79 @@
+{
+  "_comment": "The same run against a HubSpot-as-CRM portal. Record shapes are HubSpot's ({id, properties}), the canonical files Claude writes (interactions, sentiment, company_research) are identical to the Salesforce fixture. Nothing in analyze.py branches on CRM vendor.",
+  "crm": "hubspot",
+  "run_started_at": "2026-08-10T13:05:00Z",
+  "window": { "start": "2026-02-11", "end": "2026-08-10" },
+  "sources": [
+    {
+      "name": "customer_accounts",
+      "tool": "hubspot_search_companies",
+      "required": true,
+      "count": 3,
+      "query": "POST /crm/v3/objects/companies/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"lifecyclestage\",\"operator\":\"EQ\",\"value\":\"customer\"},{\"propertyName\":\"arr\",\"operator\":\"GT\",\"value\":\"0\"}]}],\"properties\":[\"name\",\"arr\",\"lifecyclestage\",\"segment\",\"renewal_date\",\"contract_start_date\",\"auto_renew\",\"champion_contact\",\"economic_buyer\",\"hubspot_owner_id\",\"notes_last_contacted\"],\"limit\":100}",
+      "diagnosis": "Zero companies means lifecyclestage is not the property this portal uses to mark customers, or the private-app token is missing the crm.objects.companies.read scope."
+    },
+    {
+      "name": "renewals",
+      "tool": "hubspot_search_deals",
+      "required": false,
+      "count": 2,
+      "query": "POST /crm/v3/objects/deals/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"associatedcompanyid\",\"operator\":\"IN\",\"values\":[\"...\"]},{\"propertyName\":\"deal_type\",\"operator\":\"EQ\",\"value\":\"renewal\"}]}],\"properties\":[\"dealname\",\"amount\",\"closedate\",\"dealstage\",\"pipeline\",\"deal_type\",\"associatedcompanyid\",\"hs_is_closed\",\"hs_is_closed_won\"],\"limit\":200}",
+      "note": "Verdant Foods has no renewal deal and no renewal_date property — the run reports it as unmeasurable rather than low risk."
+    },
+    {
+      "name": "expansion_pipeline",
+      "tool": "hubspot_search_deals",
+      "required": false,
+      "count": 1,
+      "query": "POST /crm/v3/objects/deals/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"deal_type\",\"operator\":\"IN\",\"values\":[\"upsell\",\"expansion\"]},{\"propertyName\":\"hs_is_closed\",\"operator\":\"EQ\",\"value\":\"false\"}]}],\"properties\":[\"dealname\",\"amount\",\"closedate\",\"dealstage\",\"associatedcompanyid\",\"hs_is_closed\"],\"limit\":200}"
+    },
+    {
+      "name": "contacts",
+      "tool": "hubspot_search_contacts",
+      "required": false,
+      "count": 8,
+      "query": "POST /crm/v3/objects/contacts/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"associatedcompanyid\",\"operator\":\"IN\",\"values\":[\"...\"]}]}],\"properties\":[\"firstname\",\"lastname\",\"email\",\"jobtitle\",\"hs_email_hard_bounce_reason\",\"is_active\",\"notes_last_contacted\",\"associatedcompanyid\"],\"limit\":500}"
+    },
+    {
+      "name": "crm_activities",
+      "tool": "hubspot_search_engagements",
+      "required": false,
+      "count": 4,
+      "query": "POST /crm/v3/objects/calls/search and /emails/search and /meetings/search, filtered on hs_timestamp >= window start and the associated company id"
+    },
+    {
+      "name": "interactions",
+      "tool": "transcript_folder_scan + gmail_search_threads",
+      "required": false,
+      "count": 14,
+      "note": "This portal has no conversation-intelligence tool. Transcripts come from an exported folder and threads from the mailbox — the documented no-recorder path.",
+      "diagnosis": "If the transcript folder returns nothing, check the folder path in config and that the files are .txt/.md/.vtt rather than a proprietary export format."
+    },
+    {
+      "name": "sentiment_readings",
+      "tool": "claude_transcript_reading",
+      "required": false,
+      "count": 2,
+      "note": "Two of three accounts have a conversation source. Verdant Foods has none."
+    },
+    { "name": "company_research", "tool": "WebSearch + WebFetch", "required": false, "count": 3 },
+    {
+      "name": "support_tickets",
+      "tool": "not_connected",
+      "required": false,
+      "count": 0,
+      "diagnosis": "No support source configured. The support-burden signal is dropped and its weight redistributed."
+    },
+    {
+      "name": "product_usage",
+      "tool": "not_connected",
+      "required": false,
+      "count": 0,
+      "diagnosis": "No product-usage source configured. The usage signal is dropped and its weight redistributed."
+    }
+  ],
+  "warnings": [
+    "Verdant Foods has neither a renewal deal nor a renewal_date property. The heaviest signal in the model cannot be computed for it.",
+    "This portal has no support desk and no usage feed connected. Two of ten commercial signals are unavailable across the whole book."
+  ]
+}

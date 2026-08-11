@@ -1,0 +1,87 @@
+{
+  "_comment": "Optional CRM pull. Present so the fixture run exercises deal linkage; a run with no CRM connected simply omits this file and the linkage section is marked unavailable rather than silently skipped.",
+  "source": "salesforce",
+  "query": "SELECT Id, Name, Amount, StageName, IsClosed, IsWon, CloseDate, Original_Close_Date__c, Close_Date_Push_Count__c, Owner.Name, Owner.Email, Account.Name FROM Opportunity WHERE Id IN ('0061','0062','0063','0064','0065','0066')",
+  "records": [
+    {
+      "Id": "0061",
+      "Name": "Fabrik Robotics — Revenue Data Platform",
+      "Amount": 85000,
+      "StageName": "Proposal",
+      "IsClosed": false,
+      "IsWon": false,
+      "CloseDate": "2026-09-30",
+      "Original_Close_Date__c": "2026-07-31",
+      "Close_Date_Push_Count__c": 2,
+      "Owner": { "Name": "Dana Whitfield", "Email": "dana@acmedata.io" },
+      "Account": { "Name": "Fabrik Robotics" }
+    },
+    {
+      "Id": "0062",
+      "Name": "Halden Freight — Revenue Data Platform",
+      "Amount": 42000,
+      "StageName": "Closed Lost",
+      "IsClosed": true,
+      "IsWon": false,
+      "CloseDate": "2026-08-05",
+      "Original_Close_Date__c": "2026-08-31",
+      "Close_Date_Push_Count__c": 0,
+      "Loss_Reason__c": "No decision / status quo",
+      "Owner": { "Name": "Marcus Oyelaran", "Email": "marcus@acmedata.io" },
+      "Account": { "Name": "Halden Freight" }
+    },
+    {
+      "Id": "0063",
+      "Name": "Vantage Health — Revenue Data Platform",
+      "Amount": 120000,
+      "StageName": "Closed Won",
+      "IsClosed": true,
+      "IsWon": true,
+      "CloseDate": "2026-08-07",
+      "Original_Close_Date__c": "2026-08-31",
+      "Close_Date_Push_Count__c": 0,
+      "Owner": { "Name": "Priya Raman", "Email": "priya@acmedata.io" },
+      "Account": { "Name": "Vantage Health" }
+    },
+    {
+      "Id": "0064",
+      "Name": "Orbit Payments — Revenue Data Platform",
+      "Amount": 60000,
+      "StageName": "Closed Lost",
+      "IsClosed": true,
+      "IsWon": false,
+      "CloseDate": "2026-08-04",
+      "Original_Close_Date__c": "2026-09-15",
+      "Close_Date_Push_Count__c": 0,
+      "Loss_Reason__c": "No decision / competing priority",
+      "Owner": { "Name": "Dana Whitfield", "Email": "dana@acmedata.io" },
+      "Account": { "Name": "Orbit Payments" }
+    },
+    {
+      "Id": "0065",
+      "Name": "Kestrel Logistics — Revenue Data Platform",
+      "Amount": 18000,
+      "StageName": "Discovery",
+      "IsClosed": false,
+      "IsWon": false,
+      "CloseDate": "2026-10-15",
+      "Original_Close_Date__c": "2026-10-15",
+      "Close_Date_Push_Count__c": 0,
+      "Owner": { "Name": "Priya Raman", "Email": "priya@acmedata.io" },
+      "Account": { "Name": "Kestrel Logistics" }
+    },
+    {
+      "Id": "0066",
+      "Name": "Sunridge Media — Revenue Data Platform",
+      "Amount": 55000,
+      "StageName": "Evaluation",
+      "IsClosed": false,
+      "IsWon": false,
+      "CloseDate": "2026-10-31",
+      "Original_Close_Date__c": "2026-09-30",
+      "Close_Date_Push_Count__c": 1,
+      "Owner": { "Name": "Marcus Oyelaran", "Email": "marcus@acmedata.io" },
+      "Account": { "Name": "Sunridge Media" }
+    }
+  ]
+}

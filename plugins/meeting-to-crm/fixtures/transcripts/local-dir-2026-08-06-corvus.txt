@@ -1,0 +1,26 @@
+Corvus Logistics <> Acme — Renewal check-in
+2026-08-06 19:00 UTC
+Attendees: Dana Ruiz <dana@acme.io>, Nadia Kerr <nadia@corvuslogistics.com>
+
+[00:02:05] Nadia Kerr: Renewal is in November and my CFO has asked every vendor to justify the line item this year.
+[00:07:40] Nadia Kerr: We will start the renewal conversation in September so we are not doing it in the last two weeks.
+[00:12:18] Nadia Kerr: Honestly the team likes the product, my problem is I cannot show what it did for us.
+
+---
+Shape notes for the local_dir and google_drive adapters.
+
+This is the lowest common denominator and it is a first-class path, not a
+fallback: six in ten companies of this size have no conversation-intelligence
+tool at all. One file per meeting, in a folder the plugin can read.
+
+What the adapter looks for, in order:
+  1. Line 1 as the meeting title.
+  2. A date line (any ISO-ish date) for started_at. If absent, fall back to the
+     file's modified time and flag it in the manifest — an inferred date is a
+     weaker match signal and the report should say so.
+  3. An "Attendees:" line; emails inside angle brackets or bare.
+  4. [HH:MM:SS] Speaker: text lines. If none are found, the whole file becomes
+     transcript_text and quotes are verified against the flat text instead.
+
+Anything the adapter cannot parse becomes transcript_text. That degrades the
+timestamp on each quote, never the quote check itself.

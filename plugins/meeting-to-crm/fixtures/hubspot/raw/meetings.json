@@ -1,0 +1,46 @@
+{
+  "source": "gong",
+  "fetched_at": "2026-08-08T13:02:00Z",
+  "window": { "start": "2026-08-03", "end": "2026-08-08" },
+  "note": "hs-mtg-001 uses transcript_text — the flat, non-diarized shape you get from a Zoom VTT, an Otter export or a plain file in a Drive folder. hs-mtg-002 uses speaker segments. Both are first-class; the quote check works on either.",
+  "meetings": [
+    {
+      "id": "hs-mtg-001",
+      "source": "gong",
+      "title": "Ridgeline Software <> Acme — Discovery",
+      "meeting_type": "discovery",
+      "started_at": "2026-08-05T14:00:00Z",
+      "duration_minutes": 34,
+      "url": "https://app.example-transcripts.com/call/8842",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": "cal-99aa10",
+      "crm_links": { "deal_id": "8801234567", "company_id": "550011" },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Lena Fischer", "email": "lena@ridgelinesoftware.com", "internal": false, "title": "Head of Revenue Operations" }
+      ],
+      "transcript_text": "Dana Ruiz: Set the scene for me, what is going on internally that made this a priority now? Lena Fischer: We merged with a smaller company in April and we are now running two CRMs side by side. Nobody trusts either number. Dana Ruiz: What does that cost you? Lena Fischer: Our board deck took eleven days to build last quarter and two of the numbers were wrong when we presented them. Dana Ruiz: Who else needs to be involved in a decision like this? Lena Fischer: Our CFO, Anton Weiss, has to sign anything that touches the finance systems, and he is skeptical of anything that adds a tool. Lena Fischer: There is also Priya on my team who would run the migration day to day, she is called Priya Nandi. Dana Ruiz: What does the process look like from here? Lena Fischer: We do a written evaluation against three vendors, then a reference call, then Anton signs. No pilots, we do not have the time. Dana Ruiz: And the timing? Lena Fischer: We need this live before our fiscal year starts in February, so a decision by the middle of October. Dana Ruiz: Anyone else in the mix? Lena Fischer: We are talking to Beacon as well, they came recommended by our board. Dana Ruiz: What is the right next step? Lena Fischer: Send me the written evaluation template and I will fill it in with Priya by the twentieth of August."
+    },
+    {
+      "id": "hs-mtg-002",
+      "source": "gong",
+      "title": "Fairmont Health — Working session",
+      "meeting_type": "technical_validation",
+      "started_at": "2026-08-06T18:00:00Z",
+      "duration_minutes": 41,
+      "url": "https://app.example-transcripts.com/call/8851",
+      "organizer_email": "dana@acme.io",
+      "calendar_event_id": null,
+      "crm_links": { "deal_id": null, "company_id": null },
+      "attendees": [
+        { "name": "Dana Ruiz", "email": "dana@acme.io", "internal": true, "title": "Account Executive" },
+        { "name": "Omar Haddad", "email": "omar@fairmonthealth.example", "internal": false, "title": "VP Commercial Operations" }
+      ],
+      "transcript": [
+        { "ts": "00:01:30", "speaker": "Omar Haddad", "text": "Just so you know, the clinical team and the commercial team are both talking to you and we have not compared notes." },
+        { "ts": "00:06:15", "speaker": "Omar Haddad", "text": "What I need is one place where a rep can see the account without opening four tabs." },
+        { "ts": "00:19:44", "speaker": "Omar Haddad", "text": "Budget is set at the group level and I do not control it, that sits with our COO." }
+      ]
+    }
+  ]
+}

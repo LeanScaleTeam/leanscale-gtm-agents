@@ -1,0 +1,21 @@
+{
+  "_comment": "HubSpot-flavoured config used to exercise fixtures/raw-hubspot offline: python3 scripts/analyze.py --raw fixtures/raw-hubspot --out /tmp/h --config fixtures/config.hubspot.json. The only difference from config.example.json is that field names are HubSpot internal property names, which are lower_snake_case and do not match Salesforce API names. Copy this shape when setting up a HubSpot portal.",
+
+  "crm": "hubspot",
+  "objects_in_scope": ["Account", "Contact", "Opportunity"],
+
+  "policy_required_fields": {
+    "Opportunity": ["next_step", "dealtype", "amount"],
+    "Account": ["industry", "domain"],
+    "Contact": ["email", "jobtitle"]
+  },
+
+  "picklist_fields": {
+    "Opportunity": ["dealstage", "dealtype", "pipeline"],
+    "Account": ["industry", "type", "lifecyclestage", "segment"],
+    "Contact": ["lifecyclestage", "hs_lead_status", "persona"]
+  },
+
+  "picklist_unused_min_records": 100,
+  "open_opp_staleness_days": 30
+}

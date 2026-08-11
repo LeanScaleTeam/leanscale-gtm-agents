@@ -1,0 +1,34 @@
+[
+  {
+    "id": "27884410021",
+    "record_kind": "deal",
+    "properties": {
+      "dealname": "Larkspur Media — 2027 Renewal",
+      "amount": "180000",
+      "closedate": "2026-09-25",
+      "dealstage": "contractsent",
+      "pipeline": "renewals",
+      "deal_type": "renewal",
+      "associatedcompanyid": "14778211903",
+      "hs_is_closed": "false",
+      "hs_is_closed_won": "false",
+      "hs_lastmodifieddate": "2026-06-28T14:03:00Z"
+    }
+  },
+  {
+    "id": "27884410044",
+    "record_kind": "deal",
+    "properties": {
+      "dealname": "Atlas Freight Group — 3yr Renewal",
+      "amount": "310000",
+      "closedate": "2027-01-31",
+      "dealstage": "closedwon",
+      "pipeline": "renewals",
+      "deal_type": "renewal",
+      "associatedcompanyid": "14778211905",
+      "hs_is_closed": "true",
+      "hs_is_closed_won": "true",
+      "hs_lastmodifieddate": "2026-01-22T10:15:00Z"
+    }
+  }
+]

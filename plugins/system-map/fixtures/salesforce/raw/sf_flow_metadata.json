@@ -1,0 +1,231 @@
+{
+  "size": 11,
+  "totalSize": 11,
+  "done": true,
+  "entityTypeName": "Flow",
+  "records": [
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000001AAA",
+      "FullName": "Opportunity_Forecast_Category_Sync",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Opportunity", "recordTriggerType": "CreateAndUpdate", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Update_Forecast_Fields",
+            "object": "Opportunity",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Forecast_Category__c", "value": { "elementReference": "varForecastCategory" } },
+              { "field": "Next_Step_Due__c", "value": { "elementReference": "varNextStepDue" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000002AAA",
+      "FullName": "Opportunity_Stage_Hygiene",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Opportunity", "recordTriggerType": "Update", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Force_Stage_Alignment",
+            "object": "Opportunity",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Forecast_Category__c", "value": { "stringValue": "Pipeline" } },
+              { "field": "StageName", "value": { "elementReference": "varStage" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000003AAA",
+      "FullName": "Set_Opportunity_Defaults",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Opportunity", "recordTriggerType": "Create", "triggerType": "RecordBeforeSave" },
+        "assignments": [
+          {
+            "name": "Apply_Defaults",
+            "assignmentItems": [
+              { "assignToReference": "$Record.Forecast_Category__c", "operator": "Assign", "value": { "stringValue": "Omitted" } },
+              { "assignToReference": "$Record.Type", "operator": "Assign", "value": { "stringValue": "New Business" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000004AAA",
+      "FullName": "Lead_Routing_Assist",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Lead", "recordTriggerType": "CreateAndUpdate", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Set_Routing_Outcome",
+            "object": "Lead",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Status", "value": { "stringValue": "Working" } },
+              { "field": "OwnerId", "value": { "elementReference": "varRouteToUser" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000005AAA",
+      "FullName": "Contact_Lifecycle_Sync",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Contact", "recordTriggerType": "CreateAndUpdate", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Stamp_Lifecycle",
+            "object": "Contact",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Lifecycle_Stage__c", "value": { "elementReference": "varStage" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000006AAA",
+      "FullName": "Account_Health_Rollup",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Account", "triggerType": "Scheduled", "schedule": { "frequency": "Daily", "startDate": "2025-01-21", "startTime": "02:00:00.000Z" } },
+        "recordUpdates": [
+          {
+            "name": "Write_Health",
+            "object": "Account",
+            "inputAssignments": [
+              { "field": "Health_Score__c", "value": { "elementReference": "varScore" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000010AAA",
+      "FullName": "Lead_Convert_Field_Map",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Lead", "recordTriggerType": "Update", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Map_Convert_Fields",
+            "object": "Lead",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Status", "value": { "stringValue": "Qualified" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000011AAA",
+      "FullName": "Old_Opportunity_Amount_Sync",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Obsolete",
+        "start": { "object": "Opportunity", "recordTriggerType": "Update", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Sync_Amount",
+            "object": "Opportunity",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Amount", "value": { "elementReference": "varAmount" } },
+              { "field": "Forecast_Category__c", "value": { "stringValue": "Best Case" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000013AAA",
+      "FullName": "Territory_Assignment",
+      "Metadata": {
+        "processType": "Workflow",
+        "status": "Active",
+        "start": { "object": "Account", "recordTriggerType": "CreateAndUpdate", "triggerType": "RecordAfterSave" },
+        "recordUpdates": [
+          {
+            "name": "Assign_Territory",
+            "object": "Account",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Territory__c", "value": { "elementReference": "varTerritory" } },
+              { "field": "OwnerId", "value": { "elementReference": "varTerritoryOwner" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000017AAA",
+      "FullName": "Partner_Portal_Sync",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "triggerOrder": 100,
+        "start": { "object": "Account", "recordTriggerType": "CreateAndUpdate", "triggerType": "RecordAfterSave", "triggerOrder": 100 },
+        "recordUpdates": [
+          {
+            "name": "Sync_Partner_Territory",
+            "object": "Account",
+            "inputReference": "$Record",
+            "inputAssignments": [
+              { "field": "Territory__c", "value": { "elementReference": "varPartnerTerritory" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "attributes": { "type": "Flow" },
+      "Id": "301A0000000018AAA",
+      "FullName": "Opportunity_Push_Counter",
+      "Metadata": {
+        "processType": "AutoLaunchedFlow",
+        "status": "Active",
+        "start": { "object": "Opportunity", "recordTriggerType": "Update", "triggerType": "RecordBeforeSave" },
+        "assignments": [
+          {
+            "name": "Increment_Push",
+            "assignmentItems": [
+              { "assignToReference": "$Record.Push_Count__c", "operator": "Add", "value": { "numberValue": 1 } },
+              { "assignToReference": "$Record.Next_Step_Due__c", "operator": "Assign", "value": { "elementReference": "varDue" } }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

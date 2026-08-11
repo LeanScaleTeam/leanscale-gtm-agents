@@ -1,0 +1,15 @@
+{
+  "_comment": "MANUAL EXPORT. HubSpot publishes no API for installed apps. Exported from Settings -> Integrations -> Connected Apps and Settings -> Integrations -> Private Apps, then saved here by hand. Without this file the app-orphan section is blind and says so.",
+  "exported_at": "2026-08-10",
+  "exported_by": "Morgan Diaz",
+  "results": [
+    { "name": "Gong", "type": "marketplace_app", "installedBy": "Morgan Diaz", "createdBy": "Morgan Diaz", "installedAt": "2024-05-02", "lastUsedAt": "2026-08-09", "callsLast30Days": 41022, "scopes": ["crm.objects.contacts.read", "crm.objects.deals.read", "crm.objects.deals.write"] },
+    { "name": "ZoomInfo", "type": "marketplace_app", "installedBy": "Casey Nolan", "createdBy": "Casey Nolan", "installedAt": "2022-11-14", "lastUsedAt": "2026-08-08", "callsLast30Days": 18740, "scopes": ["crm.objects.contacts.write", "crm.objects.companies.write"] },
+    { "name": "Legacy Zapier Bridge", "type": "private_app", "installedBy": "Casey Nolan", "createdBy": "Casey Nolan", "installedAt": "2021-09-30", "lastUsedAt": null, "callsLast30Days": 0, "scopes": ["crm.objects.contacts.write", "crm.objects.deals.write", "automation"] },
+    { "name": "Warehouse Reverse Sync", "type": "private_app", "installedBy": "Jordan Wu", "createdBy": "Jordan Wu", "installedAt": "2025-03-11", "lastUsedAt": "2026-08-10", "callsLast30Days": 96204, "scopes": ["crm.objects.contacts.write", "crm.objects.companies.write", "crm.objects.deals.write", "crm.schemas.custom.read"] },
+    { "name": "Chili Piper", "type": "marketplace_app", "installedBy": "Priya Venkat", "createdBy": "Priya Venkat", "installedAt": "2024-09-19", "lastUsedAt": "2026-08-07", "callsLast30Days": 6118, "scopes": ["crm.objects.contacts.write", "crm.objects.owners.read"] },
+    { "name": "Slack", "type": "marketplace_app", "installedBy": "Morgan Diaz", "createdBy": "Morgan Diaz", "installedAt": "2023-11-02", "lastUsedAt": "2026-07-20", "callsLast30Days": 402, "scopes": ["crm.objects.deals.read"] },
+    { "name": "Outreach", "type": "marketplace_app", "installedBy": "Sam Oyelaran", "createdBy": "Sam Oyelaran", "installedAt": "2023-02-08", "lastUsedAt": "2025-12-01", "callsLast30Days": 0, "scopes": ["crm.objects.contacts.write", "crm.objects.deals.write"] },
+    { "name": "Ops Reporting Export", "type": "private_app", "installedBy": "Priya Venkat", "createdBy": "Priya Venkat", "installedAt": "2026-04-14", "lastUsedAt": "2026-08-01", "callsLast30Days": 1204, "scopes": ["crm.objects.contacts.read", "crm.objects.deals.read"] }
+  ]
+}

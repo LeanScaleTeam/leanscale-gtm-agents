@@ -1,0 +1,10 @@
+{
+ "source": "coverage",
+ "crm": "salesforce",
+ "tool": "n/a",
+ "fixture": true,
+ "as_of": "2026-08-10",
+ "records": [],
+ "unavailable": [],
+ "note": "Fixture org: a mid-market Salesforce instance carrying four years of accumulated drift. Every check in analyze.py fires against this data, which is what makes it useful as a regression test. All names and numbers are synthetic."
+}

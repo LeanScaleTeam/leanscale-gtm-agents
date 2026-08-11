@@ -1,0 +1,39 @@
+{
+  "_comment": "Fixture-only stand-in for ~/.leanscale-gtm/forecast-agent.json. Salesforce shape, category methodology, quota entered by hand, forecast withheld below threshold (the default posture).",
+  "methodology": "category",
+  "category_map": {
+    "commit": ["Commit"],
+    "best_case": ["Best Case", "Upside"],
+    "pipeline": ["Pipeline"],
+    "omitted": ["Omitted"],
+    "closed": ["Closed"]
+  },
+  "commit_buckets": ["commit"],
+  "forecast_measure": "bookings",
+  "amount_field_by_measure": { "bookings": "Amount", "arr": "ARR__c" },
+  "count_types": { "new": true, "expansion": true, "renewal": false },
+  "type_field": "Type",
+  "type_map": {
+    "new": ["New Business"],
+    "expansion": ["Existing Business - Upsell"],
+    "renewal": ["Renewal"]
+  },
+  "history_quarters": 8,
+  "min_cohort_n": 25,
+  "run_forecast_below_threshold": false,
+  "forecast_threshold": 60,
+  "push_days_threshold": 7,
+  "serial_push_count": 3,
+  "single_thread_max_contacts": 1,
+  "stale_activity_days": 21,
+  "next_step_field": "NextStep",
+  "quota": {
+    "source": "manual",
+    "period_quota_by_owner": {},
+    "org_quota": 2600000
+  },
+  "stage_order": ["Discovery", "Qualification", "Value Confirmed", "Proposal", "Negotiation", "Contracting"],
+  "closed_won_stages": ["Closed Won"],
+  "closed_lost_stages": ["Closed Lost", "Closed Lost - No Decision"],
+  "redact_reps": false
+}

@@ -1,0 +1,148 @@
+{
+  "crm": "salesforce",
+  "fetched_at": "2026-08-08T13:04:00Z",
+  "note": "Current field state of every record a meeting might match. This is the CURRENT VALUE side of the diff — without it the plugin cannot tell a blank from a value it is about to destroy.",
+  "records": [
+    {
+      "object": "Opportunity",
+      "id": "0065f00000NW1AAA",
+      "name": "Northwind Analytics — Platform Expansion",
+      "account_id": "0015f00000NWACCT",
+      "account_name": "Northwind Analytics",
+      "owner_name": "Dana Ruiz",
+      "stage": "Discovery",
+      "is_open": true,
+      "fields": {
+        "NextStep": "Follow up after discovery",
+        "Next_Step_Date__c": null,
+        "Primary_Competitor__c": null,
+        "Identified_Pain__c": null,
+        "Metrics__c": null,
+        "Economic_Buyer__c": null,
+        "Decision_Criteria__c": null,
+        "Decision_Process__c": null,
+        "Paper_Process__c": null,
+        "Champion__c": null,
+        "Decision_Timeline__c": null,
+        "Description": "Inbound from the Q2 webinar. Priya downloaded the ramp benchmark report.",
+        "Amount": 120000,
+        "CloseDate": "2026-09-30",
+        "StageName": "Discovery",
+        "LastActivityDate": "2026-08-04"
+      },
+      "children": {
+        "OpportunityContactRole": [
+          { "ContactId": "0035f00000MVAAAA", "ContactName": "Marcus Vela", "Email": "marcus@northwindanalytics.com", "Role": "Economic Buyer", "IsPrimary": true }
+        ],
+        "Contact": [
+          { "Id": "0035f00000MVAAAA", "Name": "Marcus Vela", "Email": "marcus@northwindanalytics.com" },
+          { "Id": "0035f00000PRAAAA", "Name": "Priya Raman", "Email": "priya@northwindanalytics.com" }
+        ]
+      }
+    },
+    {
+      "object": "Opportunity",
+      "id": "0065f00000HG1AAA",
+      "name": "Helio Grid — Core Rollout",
+      "account_id": "0015f00000HGACCT",
+      "account_name": "Helio Grid",
+      "owner_name": "Dana Ruiz",
+      "stage": "Demo",
+      "is_open": true,
+      "fields": {
+        "NextStep": "Send pricing to Erin, then legal review week of Aug 10",
+        "Next_Step_Date__c": "2026-08-12",
+        "Primary_Competitor__c": null,
+        "Identified_Pain__c": "Reps rebuild the same forecast spreadsheet every Monday.",
+        "Metrics__c": null,
+        "Economic_Buyer__c": null,
+        "Decision_Criteria__c": null,
+        "Decision_Process__c": null,
+        "Paper_Process__c": null,
+        "Champion__c": "Erin Salas",
+        "Decision_Timeline__c": null,
+        "Description": "Sourced by the SDR team in June.",
+        "Amount": 95000,
+        "CloseDate": "2026-10-31",
+        "StageName": "Demo",
+        "LastActivityDate": "2026-08-05"
+      },
+      "children": { "OpportunityContactRole": [], "Contact": [] }
+    },
+    {
+      "object": "Opportunity",
+      "id": "0065f00000BP1AAA",
+      "name": "Brightpath Labs — Platform",
+      "account_id": "0015f00000BPACCT",
+      "account_name": "Brightpath Labs",
+      "owner_name": "Dana Ruiz",
+      "stage": "Technical Validation",
+      "is_open": true,
+      "fields": {
+        "NextStep": "Scope the integration with Ruben's team",
+        "Identified_Pain__c": null,
+        "Decision_Timeline__c": null,
+        "Description": "Expansion into the platform team.",
+        "Amount": 60000,
+        "CloseDate": "2026-11-30",
+        "StageName": "Technical Validation",
+        "LastActivityDate": "2026-08-01"
+      },
+      "children": { "OpportunityContactRole": [], "Contact": [] }
+    },
+    {
+      "object": "Opportunity",
+      "id": "0065f00000BP2AAA",
+      "name": "Brightpath Labs — Services Add-on",
+      "account_id": "0015f00000BPACCT",
+      "account_name": "Brightpath Labs",
+      "owner_name": "Dana Ruiz",
+      "stage": "Proposal",
+      "is_open": true,
+      "fields": {
+        "NextStep": "Finance to confirm the services budget",
+        "Identified_Pain__c": null,
+        "Decision_Timeline__c": null,
+        "Description": "Services attach, sponsored by finance.",
+        "Amount": 45000,
+        "CloseDate": "2026-09-30",
+        "StageName": "Proposal",
+        "LastActivityDate": "2026-08-02"
+      },
+      "children": { "OpportunityContactRole": [], "Contact": [] }
+    },
+    {
+      "object": "Opportunity",
+      "id": "0065f00000CV1AAA",
+      "name": "Corvus Logistics — Renewal FY27",
+      "account_id": "0015f00000CVACCT",
+      "account_name": "Corvus Logistics",
+      "owner_name": "Dana Ruiz",
+      "stage": "Renewal",
+      "is_open": true,
+      "fields": {
+        "NextStep": null,
+        "Next_Step_Date__c": null,
+        "Identified_Pain__c": null,
+        "Decision_Timeline__c": null,
+        "Metrics__c": null,
+        "Description": "Auto-created renewal from the FY26 contract.",
+        "Amount": 88000,
+        "CloseDate": "2026-11-30",
+        "StageName": "Renewal",
+        "LastActivityDate": "2026-08-06"
+      },
+      "children": { "OpportunityContactRole": [], "Contact": [] }
+    },
+    {
+      "object": "Account",
+      "id": "0015f00000NWACCT",
+      "name": "Northwind Analytics",
+      "account_id": "0015f00000NWACCT",
+      "account_name": "Northwind Analytics",
+      "is_open": true,
+      "fields": { "Website": "northwindanalytics.com", "Industry": "Analytics Software" },
+      "children": {}
+    }
+  ]
+}

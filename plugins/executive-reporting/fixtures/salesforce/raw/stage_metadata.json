@@ -1,0 +1,34 @@
+{
+ "records": [
+  {
+   "MasterLabel": "Discovery",
+   "SortOrder": 1,
+   "IsClosed": false,
+   "IsWon": false
+  },
+  {
+   "MasterLabel": "Qualified",
+   "SortOrder": 2,
+   "IsClosed": false,
+   "IsWon": false
+  },
+  {
+   "MasterLabel": "Proposal",
+   "SortOrder": 3,
+   "IsClosed": false,
+   "IsWon": false
+  },
+  {
+   "MasterLabel": "Closed Won",
+   "SortOrder": 4,
+   "IsClosed": true,
+   "IsWon": true
+  },
+  {
+   "MasterLabel": "Closed Lost",
+   "SortOrder": 5,
+   "IsClosed": true,
+   "IsWon": false
+  }
+ ]
+}

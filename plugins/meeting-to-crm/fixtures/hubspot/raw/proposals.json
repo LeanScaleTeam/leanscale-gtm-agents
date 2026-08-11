@@ -1,0 +1,226 @@
+{
+  "note": "HubSpot-shaped proposals. Same guards, lower_snake_case property names, SPICED instead of MEDDPICC.",
+  "proposals": [
+    {
+      "id": "h-101",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "hs_next_step",
+      "field_label": "Next step",
+      "value_type": "text",
+      "proposed_value": "Send the written evaluation template to Lena; she and Priya Nandi return it by Aug 20.",
+      "quote": "Send me the written evaluation template and I will fill it in with Priya by the twentieth of August.",
+      "quote_ts": "00:29:40",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.93,
+      "rationale": "Explicit ask with an owner and a date."
+    },
+    {
+      "id": "h-102",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "next_step_date",
+      "field_label": "Next step date",
+      "value_type": "date",
+      "proposed_value": "2026-08-20",
+      "quote": "I will fill it in with Priya by the twentieth of August",
+      "quote_ts": "00:29:40",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.9,
+      "rationale": "Date stated by the buyer."
+    },
+    {
+      "id": "h-103",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "identified_pain",
+      "field_label": "Pain / use case",
+      "value_type": "multiline",
+      "proposed_value": "Post-merger they run two CRMs side by side and trust neither. Last quarter's board deck took 11 days to build and two figures were wrong on presentation.",
+      "quote": "We merged with a smaller company in April and we are now running two CRMs side by side. Nobody trusts either number.",
+      "quote_ts": "00:02:10",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.94,
+      "rationale": "Situation and impact in the buyer's own words."
+    },
+    {
+      "id": "h-104",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "decision_process",
+      "field_label": "Decision process",
+      "value_type": "multiline",
+      "proposed_value": "Written evaluation against three vendors, then a reference call, then the CFO signs. No pilot — they say there is no time for one.",
+      "quote": "We do a written evaluation against three vendors, then a reference call, then Anton signs.",
+      "quote_ts": "00:17:05",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.92,
+      "rationale": "SHOULD BE REFUSED: the property already holds 'Evaluation doc, then procurement.' — fill-blanks-only preserves it, even though the call is clearly better information. Change the policy to 'always' if you disagree; that is a decision, not a default."
+    },
+    {
+      "id": "h-105",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "amount",
+      "field_label": "Amount",
+      "value_type": "number",
+      "proposed_value": 180000,
+      "quote": "We need this live before our fiscal year starts in February",
+      "quote_ts": "00:21:30",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.5,
+      "rationale": "SHOULD BE REFUSED: forecast-bearing, and the quote does not even support the number."
+    },
+    {
+      "id": "h-106",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "dealstage",
+      "field_label": "Deal stage",
+      "value_type": "picklist",
+      "proposed_value": "decisionmakerboughtin",
+      "quote": "Our CFO, Anton Weiss, has to sign anything that touches the finance systems",
+      "quote_ts": "00:12:44",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.7,
+      "rationale": "SHOULD BE REFUSED: naming the signer is not the same as the signer buying in. Stage is forecast-bearing."
+    },
+    {
+      "id": "h-107",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "notes_next_activity_date",
+      "field_label": "Next activity date",
+      "value_type": "date",
+      "proposed_value": "2026-08-20",
+      "quote": "Send me the written evaluation template and I will fill it in with Priya",
+      "quote_ts": "00:29:40",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.88,
+      "rationale": "SHOULD BE REFUSED: HubSpot calculates this one. It is on the allow-list in this fixture on purpose, to show the read-only guard still refuses it."
+    },
+    {
+      "id": "h-108",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "economic_buyer",
+      "field_label": "Economic buyer",
+      "value_type": "text",
+      "proposed_value": "Anton Weiss, CFO — signs anything touching finance systems; skeptical of net-new tools",
+      "quote": "Our CFO, Anton Weiss, has to sign anything that touches the finance systems, and he is skeptical of anything that adds a tool.",
+      "quote_ts": "00:12:44",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.95,
+      "rationale": "Name, role, authority and the objection, all in one line."
+    },
+    {
+      "id": "h-109",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "decision_timeline",
+      "field_label": "Decision timeline",
+      "value_type": "text",
+      "proposed_value": "Live before the February fiscal year start, so a decision by mid-October.",
+      "quote": "We need this live before our fiscal year starts in February, so a decision by the middle of October.",
+      "quote_ts": "00:21:30",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.93,
+      "rationale": "A compelling event with a date attached to it."
+    },
+    {
+      "id": "h-110",
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "primary_competitor",
+      "field_label": "Competitor mentioned",
+      "value_type": "picklist",
+      "proposed_value": "Beacon",
+      "quote": "We are talking to Beacon as well, they came recommended by our board",
+      "quote_ts": "00:25:12",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.94,
+      "rationale": "Named, with the route in."
+    },
+    {
+      "id": "h-201",
+      "meeting_id": "hs-mtg-002",
+      "object": "deals",
+      "field": "identified_pain",
+      "field_label": "Pain / use case",
+      "value_type": "multiline",
+      "proposed_value": "Reps need one view of an account instead of four tabs.",
+      "quote": "What I need is one place where a rep can see the account without opening four tabs.",
+      "quote_ts": "00:06:15",
+      "quote_speaker": "Omar Haddad",
+      "confidence": 0.89,
+      "rationale": "SHOULD BE REFUSED: two open deals on this company and the buyer himself says the two teams have not compared notes."
+    },
+    {
+      "id": "h-202",
+      "meeting_id": "hs-mtg-002",
+      "object": "deals",
+      "field": "economic_buyer",
+      "field_label": "Economic buyer",
+      "value_type": "text",
+      "proposed_value": "Group COO controls the budget; Omar Haddad does not.",
+      "quote": "Budget is set at the group level and I do not control it, that sits with our COO.",
+      "quote_ts": "00:19:44",
+      "quote_speaker": "Omar Haddad",
+      "confidence": 0.91,
+      "rationale": "SHOULD BE REFUSED: good information, ambiguous target. Resolve the match first."
+    }
+  ],
+
+  "child_records": [
+    {
+      "id": "hc-001",
+      "meeting_id": "hs-mtg-001",
+      "object": "contacts",
+      "action": "create",
+      "label": "New stakeholder: Priya Nandi",
+      "values": {
+        "firstname": "Priya",
+        "lastname": "Nandi",
+        "jobtitle": "Revenue Operations Manager"
+      },
+      "quote": "There is also Priya on my team who would run the migration day to day, she is called Priya Nandi.",
+      "quote_ts": "00:14:20",
+      "quote_speaker": "Lena Fischer",
+      "confidence": 0.84,
+      "rationale": "Named on the call, would own the work. No email given, so none is invented."
+    },
+    {
+      "id": "hc-002",
+      "meeting_id": "hs-mtg-001",
+      "object": "notes",
+      "action": "create",
+      "label": "Call summary note",
+      "values": {
+        "hs_note_body": "Discovery, 34 min, Lena Fischer (Head of RevOps). Situation: April merger left two CRMs running side by side. Pain: nobody trusts either number; the board deck took 11 days and shipped with two wrong figures. Decision: written evaluation across three vendors, reference call, CFO Anton Weiss signs — no pilot. Timeline: live before the February fiscal year start, decision mid-October. Competition: Beacon, board-recommended. New name: Priya Nandi, would run the migration. Next step: evaluation template to Lena, back by Aug 20.",
+        "hs_timestamp": "2026-08-05T14:00:00Z"
+      },
+      "quote": "Set the scene for me, what is going on internally that made this a priority now?",
+      "quote_ts": "00:00:30",
+      "quote_speaker": "Dana Ruiz",
+      "confidence": 0.95,
+      "rationale": "The activity record of the call, associated to the deal."
+    }
+  ],
+
+  "undetermined": [
+    {
+      "meeting_id": "hs-mtg-001",
+      "object": "deals",
+      "field": "impact",
+      "dimension": "impact",
+      "why": "The 11-day board deck was described but never converted into money or headcount. No impact number was offered and none was asked for."
+    },
+    {
+      "meeting_id": "hs-mtg-002",
+      "object": "deals",
+      "field": "decision_timeline",
+      "dimension": "critical_event",
+      "why": "No date, no event, no deadline mentioned anywhere in 41 minutes."
+    }
+  ]
+}

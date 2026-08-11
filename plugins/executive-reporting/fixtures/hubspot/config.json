@@ -1,0 +1,58 @@
+{
+  "window_months": 13,
+  "conversion_basis": "created_cohort",
+  "cohort_ripeness_days": 180,
+  "headline_conversions": [
+    [
+      "sql",
+      "won"
+    ],
+    [
+      "mql",
+      "sql"
+    ]
+  ],
+  "pipeline_stage": "sql",
+  "goals": {
+    "bookings": {
+      "FY2026": 4736000.0
+    },
+    "created_pipeline": {
+      "FY2026": 13199000.0
+    }
+  },
+  "goal_level": "executive",
+  "segments": [
+    "Enterprise",
+    "Mid-Market",
+    "SMB"
+  ],
+  "expansion_owner": "sales",
+  "believed_conversion": 0.41,
+  "believed_metrics": {
+    "bookings_ytd": 4115000.0
+  },
+  "min_sample": 12,
+  "concentration_top_n": 10,
+  "recurring_cadence": "annual",
+  "include_filters": false,
+  "amount_field": "amount",
+  "stage_map": {
+    "mql": [
+      "appointmentscheduled"
+    ],
+    "sal": [
+      "qualifiedtobuy"
+    ],
+    "sql": [
+      "decisionmakerboughtin"
+    ],
+    "won": [
+      "closedwon"
+    ],
+    "lost": [
+      "closedlost"
+    ],
+    "lead": []
+  }
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "account_id": "001Kx000005NwM1QAK",
+    "company": "Northwind Logistics",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Series C",
+    "last_raise": { "date": "2024-03-12", "round": "Series C", "amount_usd": 62000000 },
+    "months_since_last_raise": 29,
+    "headcount_trend": "flat",
+    "external_risk_note": "No distress signals. One finance-side leadership change in May; the CFO who signed the original contract has moved on, which matters for the renewal paperwork even though nothing on the calls reflects it.",
+    "events": [
+      {
+        "type": "exec_change",
+        "date": "2026-05-20",
+        "severity": "medium",
+        "headline": "Northwind Logistics names a new Chief Financial Officer",
+        "source_url": "https://example.com/press/northwind-cfo-appointment",
+        "note": "The outgoing CFO approved the original purchase. New finance leadership typically re-reviews vendor spend above six figures at first renewal."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwMLQA0",
+    "company": "Bluepeak Analytics",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Series B",
+    "last_raise": { "date": "2026-04-02", "round": "Series B extension", "amount_usd": 14000000 },
+    "months_since_last_raise": 4,
+    "headcount_trend": "declining",
+    "external_risk_note": "A flat-to-down extension round in April was followed by a 12% workforce reduction in June that included the revenue operations function. Our champion's contact record went inactive within days of that announcement.",
+    "events": [
+      {
+        "type": "down_round",
+        "date": "2026-04-02",
+        "severity": "medium",
+        "headline": "Bluepeak Analytics raises a $14M Series B extension at a reduced valuation",
+        "source_url": "https://example.com/news/bluepeak-series-b-extension",
+        "note": "Extension rounds at a reduced price are usually followed by an operating-expense review within two quarters."
+      },
+      {
+        "type": "layoff",
+        "date": "2026-06-15",
+        "severity": "high",
+        "headline": "Bluepeak Analytics cuts 12% of staff, consolidating revenue operations under marketing",
+        "source_url": "https://example.com/news/bluepeak-workforce-reduction",
+        "note": "The revenue operations team our engagement supports was folded into marketing. The function that bought us no longer exists as a separate org."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwLgQAK",
+    "company": "Cascadia Health Systems",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Series D",
+    "last_raise": { "date": "2026-05-05", "round": "Series D", "amount_usd": 120000000 },
+    "months_since_last_raise": 3,
+    "headcount_trend": "growing",
+    "external_risk_note": "Well funded and hiring into commercial roles. No distress signals of any kind.",
+    "events": [
+      {
+        "type": "funding_raise",
+        "date": "2026-05-05",
+        "severity": "high",
+        "headline": "Cascadia Health Systems closes a $120M Series D to expand its commercial organisation",
+        "source_url": "https://example.com/news/cascadia-series-d",
+        "note": "Fresh capital earmarked for commercial expansion. Good news, and it offsets risk rather than adding to it."
+      }
+    ]
+  },
+  {
+    "account_id": "001Kx000005NwMVQA0",
+    "company": "Ironvale Manufacturing",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Bootstrapped / profitable",
+    "last_raise": null,
+    "months_since_last_raise": null,
+    "headcount_trend": "flat",
+    "external_risk_note": "Privately held, no public financing events, no leadership changes found. Nothing external is driving the frustration on this account — it is entirely a delivery-quality story.",
+    "events": []
+  },
+  {
+    "account_id": "001Kx000005NwMBQA0",
+    "company": "Solstice Robotics",
+    "researched_at": "2026-08-10",
+    "funding_stage": "Series B",
+    "last_raise": { "date": "2024-09-18", "round": "Series B", "amount_usd": 38000000 },
+    "months_since_last_raise": 23,
+    "headcount_trend": "declining",
+    "external_risk_note": "Twenty-three months since the last raise with visible hiring contraction, and a new Chief Revenue Officer started in June who has publicly described the commercial stack as 'over-tooled'. This is the account with the least conversation coverage and the most external risk — the two facts are related.",
+    "events": [
+      {
+        "type": "runway_risk",
+        "date": "2026-07-01",
+        "severity": "high",
+        "headline": "Solstice Robotics pauses hiring across go-to-market roles",
+        "source_url": "https://example.com/news/solstice-hiring-pause",
+        "note": "Twenty-three months past the last round with a hiring pause is the shape of a company managing runway into a bridge."
+      },
+      {
+        "type": "exec_change",
+        "date": "2026-06-10",
+        "severity": "high",
+        "headline": "Solstice Robotics appoints a new Chief Revenue Officer",
+        "source_url": "https://example.com/press/solstice-cro",
+        "note": "In a recorded podcast interview the incoming CRO said the commercial stack is 'over-tooled and under-adopted' and that she would be consolidating vendors in her first two quarters. Our renewal falls inside that window."
+      }
+    ]
+  }
+]

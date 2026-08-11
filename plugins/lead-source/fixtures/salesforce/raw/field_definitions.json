@@ -1,0 +1,222 @@
+{
+ "totalSize": 24,
+ "done": true,
+ "records": [
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Paid Search",
+   "Label": "Paid Search",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Paid Social",
+   "Label": "Paid Social",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Organic Search",
+   "Label": "Organic Search",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Email",
+   "Label": "Email",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Webinar",
+   "Label": "Webinar",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Event",
+   "Label": "Event",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Referral",
+   "Label": "Referral",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Partner",
+   "Label": "Partner",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Outbound",
+   "Label": "Outbound",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Content Syndication",
+   "Label": "Content Syndication",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Website",
+   "Label": "Website",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Lead.LeadSource",
+   "Value": "Other",
+   "Label": "Other",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Paid Search",
+   "Label": "Paid Search",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Paid Social",
+   "Label": "Paid Social",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Organic Search",
+   "Label": "Organic Search",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Email",
+   "Label": "Email",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Webinar",
+   "Label": "Webinar",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Event",
+   "Label": "Event",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Referral",
+   "Label": "Referral",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Partner",
+   "Label": "Partner",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Outbound",
+   "Label": "Outbound",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Content Syndication",
+   "Label": "Content Syndication",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Website",
+   "Label": "Website",
+   "IsActive": true
+  },
+  {
+   "attributes": {
+    "type": "PicklistValueInfo"
+   },
+   "EntityParticleId": "Opportunity.LeadSource",
+   "Value": "Other",
+   "Label": "Other",
+   "IsActive": true
+  }
+ ]
+}

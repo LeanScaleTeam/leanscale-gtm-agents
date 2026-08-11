@@ -1,0 +1,20 @@
+{
+  "name": "forecast-agent",
+  "version": "1.0.0",
+  "description": "Audits whether your CRM can support a forecast at all, scores it 0-100, then produces a worst/likely/best call and the delta against the rep-called commit.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "salesforce",
+    "hubspot",
+    "forecast",
+    "pipeline",
+    "sales-management"
+  ]
+}

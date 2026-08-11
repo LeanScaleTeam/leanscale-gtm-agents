@@ -1,0 +1,62 @@
+{
+  "total": 3,
+  "results": [
+    {
+      "id": "14778211905",
+      "createdAt": "2023-11-02T09:14:22.113Z",
+      "updatedAt": "2026-08-07T18:02:44.900Z",
+      "archived": false,
+      "properties": {
+        "name": "Atlas Freight Group",
+        "arr": "310000",
+        "lifecyclestage": "customer",
+        "segment": "Enterprise",
+        "renewal_date": "2027-01-31",
+        "contract_start_date": "2024-01-31",
+        "auto_renew": "false",
+        "champion_contact": "Neve Halloran",
+        "economic_buyer": "Desmond Achebe",
+        "hubspot_owner_id": "Camille Roux",
+        "notes_last_contacted": "2026-08-07T11:30:00Z"
+      }
+    },
+    {
+      "id": "14778211903",
+      "createdAt": "2024-06-18T14:41:09.220Z",
+      "updatedAt": "2026-08-06T16:55:01.004Z",
+      "archived": false,
+      "properties": {
+        "name": "Larkspur Media",
+        "arr": "180000",
+        "lifecyclestage": "customer",
+        "segment": "Mid-Market",
+        "renewal_date": "2026-09-25",
+        "contract_start_date": "2024-09-25",
+        "auto_renew": "false",
+        "champion_contact": "Tomas Bergqvist",
+        "economic_buyer": "Ingrid Sandoval",
+        "hubspot_owner_id": "Camille Roux",
+        "notes_last_contacted": "2026-08-06T09:12:00Z"
+      }
+    },
+    {
+      "id": "14778211904",
+      "createdAt": "2025-02-03T10:05:55.771Z",
+      "updatedAt": "2026-06-30T08:20:13.560Z",
+      "archived": false,
+      "properties": {
+        "name": "Verdant Foods",
+        "arr": "72000",
+        "lifecyclestage": "customer",
+        "segment": "SMB",
+        "renewal_date": "",
+        "contract_start_date": "2025-02-14",
+        "auto_renew": "false",
+        "champion_contact": "Wes Ibarra",
+        "economic_buyer": "",
+        "hubspot_owner_id": "Jonah Pike",
+        "notes_last_contacted": "2026-06-30T15:44:00Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_comment": "Fixture-only stand-in for ~/.leanscale-gtm/profile.json. HubSpot-as-CRM shape. Pass with --profile so the fixture run never touches a real config.",
+  "schema_version": 1,
+  "org_name": "Riverbend Example Ltd",
+  "crm": {
+    "system": "hubspot",
+    "mcp_probe": "hubspot_crm_search",
+    "instance_label": "Riverbend HubSpot (fixture)",
+    "secondary": null
+  },
+  "fiscal_year_start_month": 2,
+  "fiscal_year_naming": "ends_in",
+  "currency": { "corporate": "USD", "multi_currency": false },
+  "motion": ["inbound_led", "plg"],
+  "quota_carrying_reps": 6,
+  "segments": ["SMB", "Mid-Market"],
+  "segment_field": "segment",
+  "material_deal_floor": 5000,
+  "team_map": { "roll_up_field": "hubspot_owner_id" },
+  "objects": { "opportunity": "deals", "account": "companies", "lead": "contacts" },
+  "competitors": [],
+  "redact_pii_in_reports": false
+}

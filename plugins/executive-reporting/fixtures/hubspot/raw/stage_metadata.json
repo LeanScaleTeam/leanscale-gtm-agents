@@ -1,0 +1,29 @@
+{
+ "records": [
+  {
+   "label": "appointmentscheduled",
+   "displayOrder": 1,
+   "closed": false
+  },
+  {
+   "label": "qualifiedtobuy",
+   "displayOrder": 2,
+   "closed": false
+  },
+  {
+   "label": "decisionmakerboughtin",
+   "displayOrder": 3,
+   "closed": false
+  },
+  {
+   "label": "closedwon",
+   "displayOrder": 4,
+   "closed": true
+  },
+  {
+   "label": "closedlost",
+   "displayOrder": 5,
+   "closed": true
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "size": 8,
+  "totalSize": 8,
+  "done": true,
+  "entityTypeName": "ValidationRule",
+  "records": [
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000001", "ValidationName": "Close_Date_Not_In_Past", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "Active": true, "ErrorMessage": "Close date cannot be in the past.", "ErrorDisplayField": "CloseDate", "LastModifiedDate": "2026-04-18T10:00:00.000+0000", "LastModifiedBy": { "Name": "Priya Raman" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000002", "ValidationName": "Amount_Required_At_Proposal", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "Active": true, "ErrorMessage": "Amount is required from Proposal onward.", "ErrorDisplayField": "Amount", "LastModifiedDate": "2025-12-02T09:00:00.000+0000", "LastModifiedBy": { "Name": "Dana Whitfield" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000003", "ValidationName": "Next_Step_Required", "EntityDefinition": { "QualifiedApiName": "Opportunity" }, "Active": false, "ErrorMessage": "Next step is required.", "ErrorDisplayField": "NextStep", "LastModifiedDate": "2023-07-14T11:00:00.000+0000", "LastModifiedBy": { "Name": "Marcus Bell" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000004", "ValidationName": "Lead_Email_Format", "EntityDefinition": { "QualifiedApiName": "Lead" }, "Active": true, "ErrorMessage": "Email must be a valid business address.", "ErrorDisplayField": "Email", "LastModifiedDate": "2026-02-09T14:00:00.000+0000", "LastModifiedBy": { "Name": "Rae Lindqvist" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000005", "ValidationName": "Lead_Source_Required", "EntityDefinition": { "QualifiedApiName": "Lead" }, "Active": true, "ErrorMessage": "Lead source is required.", "ErrorDisplayField": "LeadSource", "LastModifiedDate": "2024-08-21T10:00:00.000+0000", "LastModifiedBy": { "Name": "Alicia Nowak" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000006", "ValidationName": "Account_Domain_Required", "EntityDefinition": { "QualifiedApiName": "Account" }, "Active": true, "ErrorMessage": "Website domain is required.", "ErrorDisplayField": "Website", "LastModifiedDate": "2026-01-30T09:00:00.000+0000", "LastModifiedBy": { "Name": "Priya Raman" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000007", "ValidationName": "Contact_Role_On_Close", "EntityDefinition": { "QualifiedApiName": "Contact" }, "Active": true, "ErrorMessage": "Contact must have a role.", "ErrorDisplayField": "Title", "LastModifiedDate": "2025-06-11T13:00:00.000+0000", "LastModifiedBy": { "Name": "Alicia Nowak" } },
+    { "attributes": { "type": "ValidationRule" }, "Id": "03dA00000008", "ValidationName": "Case_Priority_Justification", "EntityDefinition": { "QualifiedApiName": "Case" }, "Active": true, "ErrorMessage": "P1 requires a justification.", "ErrorDisplayField": "Priority", "LastModifiedDate": "2026-03-19T08:00:00.000+0000", "LastModifiedBy": { "Name": "Tom Okafor" } }
+  ]
+}

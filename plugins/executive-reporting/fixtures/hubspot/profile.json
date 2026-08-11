@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "org_name": "Northwind Group",
+  "crm": {
+    "system": "hubspot",
+    "mcp_probe": "hubspot_search_deals",
+    "instance_label": "Production",
+    "secondary": null
+  },
+  "fiscal_year_start_month": 1,
+  "currency": {
+    "corporate": "USD",
+    "multi_currency": false
+  },
+  "motion": [
+    "inbound_led",
+    "outbound"
+  ],
+  "quota_carrying_reps": 4,
+  "segments": [
+    "Enterprise",
+    "Mid-Market",
+    "SMB"
+  ],
+  "segment_field": "Segment",
+  "material_deal_floor": 5000,
+  "team_map": {
+    "roll_up_field": "ManagerId"
+  },
+  "objects": {
+    "opportunity": "Opportunity",
+    "account": "Account",
+    "lead": "Lead"
+  },
+  "competitors": [],
+  "redact_pii_in_reports": false
+}

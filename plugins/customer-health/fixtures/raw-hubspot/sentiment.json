@@ -1,0 +1,90 @@
+[
+  {
+    "account_id": "14778211903",
+    "account_name": "Larkspur Media",
+    "champion_signal": "engaged",
+    "summary": "Uniformly positive and stable. The champion is engaged, the COO joined the half-year review and asked for more scope. Nothing in the conversations points at risk — which is exactly why the unsigned renewal deal, untouched since 28 June and 46 days from close, is the only thing on this account worth anyone's attention.",
+    "readings": [
+      {
+        "interaction_id": "lk-mtg-2026-03-19", "occurred_at": "2026-03-19",
+        "source": "Exported transcript — Lifecycle stage rebuild design review",
+        "tone": 1, "is_escalation": false, "kind": "praise",
+        "speaker": "Tomas Bergqvist", "speaker_role": "VP Revenue Operations",
+        "quote": "You have untangled something we have been arguing about for eighteen months.",
+        "claude_note": "Positive, credibility-based. No outcome yet."
+      },
+      {
+        "interaction_id": "lk-mtg-2026-05-07", "occurred_at": "2026-05-07",
+        "source": "Exported transcript — Weekly working session",
+        "tone": 1, "is_escalation": false, "kind": "praise",
+        "speaker": "Rafa Molina", "speaker_role": "Marketing Operations Lead",
+        "quote": "The handover notes meant I did not have to book time with you this week.",
+        "claude_note": "Quiet praise about self-sufficiency."
+      },
+      {
+        "interaction_id": "lk-mtg-2026-06-25", "occurred_at": "2026-06-25",
+        "source": "Exported transcript — Half-year business review",
+        "tone": 2, "is_escalation": false, "kind": "praise",
+        "speaker": "Ingrid Sandoval", "speaker_role": "Chief Operating Officer",
+        "quote": "Our conversion reporting is finally something I would put in a board deck. What else can you take on?",
+        "claude_note": "Executive praise plus explicit pull for more scope. The strongest positive signal available — and note that it arrived without anyone touching the renewal deal."
+      },
+      {
+        "interaction_id": "lk-mtg-2026-07-21", "occurred_at": "2026-07-21",
+        "source": "Exported transcript — Weekly working session",
+        "tone": 1, "is_escalation": false, "kind": "praise",
+        "speaker": "Rafa Molina", "speaker_role": "Marketing Operations Lead",
+        "quote": "No issues from us. Genuinely.",
+        "claude_note": "Mildly positive; the emphasis reads as sincere rather than polite."
+      },
+      {
+        "interaction_id": "lk-mtg-2026-08-05", "occurred_at": "2026-08-05",
+        "source": "Exported transcript — Adoption review",
+        "tone": 2, "is_escalation": false, "kind": "praise",
+        "speaker": "Tomas Bergqvist", "speaker_role": "VP Revenue Operations",
+        "quote": "Honestly this is the smoothest vendor relationship I have. I keep waiting for something to go wrong.",
+        "claude_note": "Unprompted, superlative praise from the champion five weeks before an unsigned renewal closes. This is the sentence that makes the quadrant necessary."
+      }
+    ]
+  },
+  {
+    "account_id": "14778211905",
+    "account_name": "Atlas Freight Group",
+    "champion_signal": "engaged",
+    "summary": "Healthy on both halves of the model: renewal already signed through January 2027, expansion deal live, CRO engaged, champion responsive within hours.",
+    "readings": [
+      {
+        "interaction_id": "af-mtg-2026-04-02", "occurred_at": "2026-04-02",
+        "source": "Exported transcript — Quoting workflow build review",
+        "tone": 1, "is_escalation": false, "kind": "praise",
+        "speaker": "Neve Halloran", "speaker_role": "Senior Director, Revenue Operations",
+        "quote": "This is the first build review where I did not find something to send back.",
+        "claude_note": "Positive, specific, from the person who owns the outcome."
+      },
+      {
+        "interaction_id": "af-mtg-2026-06-04", "occurred_at": "2026-06-04",
+        "source": "Exported transcript — Quoting workflow go-live",
+        "tone": 2, "is_escalation": false, "kind": "praise",
+        "speaker": "Neve Halloran", "speaker_role": "Senior Director, Revenue Operations",
+        "quote": "Quote turnaround went from three days to same-day in the first week.",
+        "claude_note": "Outcome praise with a number attached."
+      },
+      {
+        "interaction_id": "af-mtg-2026-07-16", "occurred_at": "2026-07-16",
+        "source": "Exported transcript — Executive business review",
+        "tone": 2, "is_escalation": false, "kind": "praise",
+        "speaker": "Desmond Achebe", "speaker_role": "Chief Revenue Officer",
+        "quote": "I want the same treatment for the enterprise team next year. Put it in the plan.",
+        "claude_note": "Economic buyer pulling expansion. Renewal is already signed, so this is upside rather than defence."
+      },
+      {
+        "interaction_id": "af-mtg-2026-08-07", "occurred_at": "2026-08-07",
+        "source": "Exported transcript — Seat expansion scoping",
+        "tone": 1, "is_escalation": false, "kind": "praise",
+        "speaker": "Yuki Tanabe", "speaker_role": "Revenue Systems Manager",
+        "quote": "Our reps stopped asking me how to build a quote, which is the whole point.",
+        "claude_note": "Adoption confirmed by the person who used to field the questions."
+      }
+    ]
+  }
+]

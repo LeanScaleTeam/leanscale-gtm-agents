@@ -1,0 +1,28 @@
+{
+ "source": "governance",
+ "crm": "hubspot",
+ "tool": "hubspot pipelines API",
+ "query": "GET /crm/v3/pipelines/deals (stages, archived flags, isClosed metadata)",
+ "fetched_at": "2026-08-10T14:00:00.000+0000",
+ "as_of": "2026-08-10",
+ "fixture": true,
+ "record_count": 14,
+ "truncated": false,
+ "normalized": true,
+ "records": [
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"appointmentscheduled","label":"Discovery","probability":0.2,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"qualifiedtobuy","label":"Qualified","probability":0.4,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"presentationscheduled","label":"Demo Scheduled","probability":0.6,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"decisionmakerboughtin","label":"Proposal Sent","probability":0.8,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"contractsent","label":"Contract Sent","probability":0.9,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"2841109","label":"Verbal Commit","probability":0.9,"is_closed":false,"archived":true},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"closedwon","label":"Closed Won","probability":1.0,"is_closed":true,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"default","pipeline_label":"Sales Pipeline","pipeline_archived":false,"stage_id":"closedlost","label":"Closed Lost","probability":0.0,"is_closed":true,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"9482011","pipeline_label":"Renewals","pipeline_archived":false,"stage_id":"9482012","label":"Renewal Open","probability":0.5,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"9482011","pipeline_label":"Renewals","pipeline_archived":false,"stage_id":"9482013","label":"renewal open","probability":0.5,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"9482011","pipeline_label":"Renewals","pipeline_archived":false,"stage_id":"9482014","label":"Renewed","probability":1.0,"is_closed":true,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"9482011","pipeline_label":"Renewals","pipeline_archived":false,"stage_id":"9482015","label":"Churned","probability":0.0,"is_closed":true,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"7710455","pipeline_label":"Partner Pipeline (2023)","pipeline_archived":true,"stage_id":"7710456","label":"Partner Registered","probability":0.3,"is_closed":false,"archived":false},
+  {"kind":"pipeline_stage","pipeline":"7710455","pipeline_label":"Partner Pipeline (2023)","pipeline_archived":true,"stage_id":"7710457","label":"Partner Closed","probability":1.0,"is_closed":true,"archived":false}
+ ]
+}

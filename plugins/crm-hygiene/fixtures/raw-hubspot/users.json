@@ -1,0 +1,31 @@
+{
+ "source": "users",
+ "crm": "hubspot",
+ "tool": "hubspot-get-user-details / owners API",
+ "query": "GET /crm/v3/owners/?limit=100&archived=false  +  the same call with archived=true",
+ "fetched_at": "2026-08-10T14:00:00.000+0000",
+ "as_of": "2026-08-10",
+ "fixture": true,
+ "record_count": 18,
+ "truncated": false,
+ "records": [
+  {"id":"510000","email":"nadia.karim@example-corp.com","firstName":"Nadia","lastName":"Karim","userId":8800000,"createdAt":"2023-09-02T14:00:00.000Z","updatedAt":"2026-05-24T14:00:00.000Z","archived":false},
+  {"id":"510137","email":"bram.ellery@example-corp.com","firstName":"Bram","lastName":"Ellery","userId":8800001,"createdAt":"2024-09-19T14:00:00.000Z","updatedAt":"2026-02-07T14:00:00.000Z","archived":false},
+  {"id":"510274","email":"cleo.vance@example-corp.com","firstName":"Cleo","lastName":"Vance","userId":8800002,"createdAt":"2024-11-02T14:00:00.000Z","updatedAt":"2026-08-05T14:00:00.000Z","archived":false},
+  {"id":"510411","email":"devon.marsh@example-corp.com","firstName":"Devon","lastName":"Marsh","userId":8800003,"createdAt":"2024-04-19T14:00:00.000Z","updatedAt":"2026-06-01T14:00:00.000Z","archived":false},
+  {"id":"510548","email":"esme.quinn@example-corp.com","firstName":"Esme","lastName":"Quinn","userId":8800004,"createdAt":"2022-12-22T14:00:00.000Z","updatedAt":"2026-05-30T14:00:00.000Z","archived":false},
+  {"id":"510685","email":"ford.sandoval@example-corp.com","firstName":"Ford","lastName":"Sandoval","userId":8800005,"createdAt":"2025-05-02T14:00:00.000Z","updatedAt":"2026-04-10T14:00:00.000Z","archived":false},
+  {"id":"510822","email":"greta.tran@example-corp.com","firstName":"Greta","lastName":"Tran","userId":8800006,"createdAt":"2025-01-30T14:00:00.000Z","updatedAt":"2026-01-22T14:00:00.000Z","archived":true},
+  {"id":"510959","email":"hugo.wexler@example-corp.com","firstName":"Hugo","lastName":"Wexler","userId":8800007,"createdAt":"2025-05-23T14:00:00.000Z","updatedAt":"2026-07-12T14:00:00.000Z","archived":false},
+  {"id":"511096","email":"iris.yancey@example-corp.com","firstName":"Iris","lastName":"Yancey","userId":8800008,"createdAt":"2023-01-25T14:00:00.000Z","updatedAt":"2026-02-22T14:00:00.000Z","archived":true},
+  {"id":"511233","email":"jasper.zavala@example-corp.com","firstName":"Jasper","lastName":"Zavala","userId":8800009,"createdAt":"2023-02-24T14:00:00.000Z","updatedAt":"2026-04-27T14:00:00.000Z","archived":false},
+  {"id":"511370","email":"kira.ashby@example-corp.com","firstName":"Kira","lastName":"Ashby","userId":8800010,"createdAt":"2023-10-25T14:00:00.000Z","updatedAt":"2026-03-12T14:00:00.000Z","archived":true},
+  {"id":"511507","email":"lars.cortez@example-corp.com","firstName":"Lars","lastName":"Cortez","userId":8800011,"createdAt":"2025-10-29T14:00:00.000Z","updatedAt":"2026-06-04T14:00:00.000Z","archived":false},
+  {"id":"511644","email":"maeve.duval@example-corp.com","firstName":"Maeve","lastName":"Duval","userId":8800012,"createdAt":"2025-12-18T14:00:00.000Z","updatedAt":"2026-01-28T14:00:00.000Z","archived":false},
+  {"id":"511781","email":"nils.eriksen@example-corp.com","firstName":"Nils","lastName":"Eriksen","userId":8800013,"createdAt":"2024-08-05T14:00:00.000Z","updatedAt":"2026-05-03T14:00:00.000Z","archived":true},
+  {"id":"511918","email":"rosa.gallo@example-corp.com","firstName":"Rosa","lastName":"Gallo","userId":8800014,"createdAt":"2025-06-05T14:00:00.000Z","updatedAt":"2026-03-09T14:00:00.000Z","archived":false},
+  {"id":"512055","email":"silas.hollis@example-corp.com","firstName":"Silas","lastName":"Hollis","userId":8800015,"createdAt":"2025-11-04T14:00:00.000Z","updatedAt":"2026-02-24T14:00:00.000Z","archived":false},
+  {"id":"512192","email":"tessa.ibarra@example-corp.com","firstName":"Tessa","lastName":"Ibarra","userId":8800016,"createdAt":"2023-07-03T14:00:00.000Z","updatedAt":"2026-04-11T14:00:00.000Z","archived":true},
+  {"id":"512329","email":"wes.jessup@example-corp.com","firstName":"Wes","lastName":"Jessup","userId":8800017,"createdAt":"2024-11-12T14:00:00.000Z","updatedAt":"2026-02-20T14:00:00.000Z","archived":false}
+ ]
+}

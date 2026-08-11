@@ -1,0 +1,23 @@
+{
+  "_shape": "Fireflies — GraphQL. transcript(id:) returns sentences[] with speaker_name and start_time in SECONDS (a float), and meeting_attendees[] carries the invite list. There is no CRM link on the object, so matching falls back to attendee domain.",
+  "_normalizes_to": "meetings[].transcript[] with ts formatted from start_time seconds",
+  "data": {
+    "transcript": {
+      "id": "01H9NORTHWIND001",
+      "title": "Northwind Analytics <> Acme — Discovery",
+      "date": 1786064400000,
+      "duration": 38.4,
+      "transcript_url": "https://app.example-transcripts.com/view/mtg-001",
+      "organizer_email": "dana@acme.io",
+      "meeting_attendees": [
+        { "displayName": "Dana Ruiz", "email": "dana@acme.io" },
+        { "displayName": "Priya Raman", "email": "priya@northwindanalytics.com" }
+      ],
+      "sentences": [
+        { "index": 0, "speaker_name": "Dana Ruiz", "start_time": 41.2, "text": "Thanks for making time, Priya. Before we get into the product, tell me what made you take this call." },
+        { "index": 1, "speaker_name": "Priya Raman", "start_time": 65.0, "text": "We closed our Series B in March and the board wants us at forty million ARR in eighteen months." },
+        { "index": 2, "speaker_name": "Priya Raman", "start_time": 78.5, "text": "Right now our reps spend the first hour of every day fixing records by hand, and I cannot hire my way out of that." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "size": 10,
+  "totalSize": 10,
+  "done": true,
+  "entityTypeName": "ConnectedApplication",
+  "records": [
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000001", "Name": "Gong for Salesforce", "CreatedDate": "2023-03-14T09:00:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "LastModifiedDate": "2026-01-19T10:12:00.000+0000", "LastModifiedBy": { "Name": "Dana Whitfield" }, "OptionsAllowAdminApprovedUsersOnly": true },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000002", "Name": "ZoomInfo", "CreatedDate": "2022-08-01T12:00:00.000+0000", "CreatedBy": { "Name": "Marcus Bell" }, "LastModifiedDate": "2024-04-02T08:00:00.000+0000", "LastModifiedBy": { "Name": "Marcus Bell" }, "OptionsAllowAdminApprovedUsersOnly": false },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000003", "Name": "Legacy Data Loader (Prod)", "CreatedDate": "2021-06-11T10:10:00.000+0000", "CreatedBy": { "Name": "Marcus Bell" }, "LastModifiedDate": "2021-06-11T10:10:00.000+0000", "LastModifiedBy": { "Name": "Marcus Bell" }, "OptionsAllowAdminApprovedUsersOnly": false },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000004", "Name": "Hightouch", "CreatedDate": "2024-11-05T16:20:00.000+0000", "CreatedBy": { "Name": "Priya Raman" }, "LastModifiedDate": "2026-03-11T09:00:00.000+0000", "LastModifiedBy": { "Name": "Priya Raman" }, "OptionsAllowAdminApprovedUsersOnly": true },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000005", "Name": "Fivetran", "CreatedDate": "2024-02-20T11:00:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "LastModifiedDate": "2025-08-14T13:00:00.000+0000", "LastModifiedBy": { "Name": "Dana Whitfield" }, "OptionsAllowAdminApprovedUsersOnly": true },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000006", "Name": "Marketo Sales Insight", "CreatedDate": "2022-05-30T13:00:00.000+0000", "CreatedBy": { "Name": "Alicia Nowak" }, "LastModifiedDate": "2023-02-01T10:00:00.000+0000", "LastModifiedBy": { "Name": "Alicia Nowak" }, "OptionsAllowAdminApprovedUsersOnly": false },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000007", "Name": "Salesforce CLI", "CreatedDate": "2023-09-01T09:00:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "LastModifiedDate": "2023-09-01T09:00:00.000+0000", "LastModifiedBy": { "Name": "Dana Whitfield" }, "OptionsAllowAdminApprovedUsersOnly": false },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000008", "Name": "Workbench", "CreatedDate": "2020-09-02T14:00:00.000+0000", "CreatedBy": { "Name": "Marcus Bell" }, "LastModifiedDate": "2020-09-02T14:00:00.000+0000", "LastModifiedBy": { "Name": "Marcus Bell" }, "OptionsAllowAdminApprovedUsersOnly": false },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000009", "Name": "Chili Piper", "CreatedDate": "2024-07-08T12:30:00.000+0000", "CreatedBy": { "Name": "Priya Raman" }, "LastModifiedDate": "2026-02-04T11:00:00.000+0000", "LastModifiedBy": { "Name": "Priya Raman" }, "OptionsAllowAdminApprovedUsersOnly": true },
+    { "attributes": { "type": "ConnectedApplication" }, "Id": "0CiAA0000000010", "Name": "Slack", "CreatedDate": "2023-11-20T15:00:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "LastModifiedDate": "2025-05-06T09:00:00.000+0000", "LastModifiedBy": { "Name": "Dana Whitfield" }, "OptionsAllowAdminApprovedUsersOnly": true }
+  ]
+}

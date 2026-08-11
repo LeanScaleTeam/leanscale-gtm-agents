@@ -1,0 +1,28 @@
+{
+  "totalSize": 22,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001fffFIAQ", "LoginTime": "2026-08-10T03:00:11.000+0000", "Application": "ZoomInfo", "Status": "Success", "SourceIp": "34.201.11.4" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001fffFIAQ", "LoginTime": "2026-08-09T03:00:07.000+0000", "Application": "ZoomInfo", "Status": "Success", "SourceIp": "34.201.11.4" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001fffFIAQ", "LoginTime": "2026-08-08T03:00:09.000+0000", "Application": "ZoomInfo", "Status": "Success", "SourceIp": "34.201.11.4" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001gggGIAQ", "LoginTime": "2026-08-10T02:14:00.000+0000", "Application": "Gong", "Status": "Success", "SourceIp": "52.44.9.71" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001gggGIAQ", "LoginTime": "2026-08-09T02:14:00.000+0000", "Application": "Gong", "Status": "Success", "SourceIp": "52.44.9.71" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001hhhHIAQ", "LoginTime": "2026-08-09T23:45:00.000+0000", "Application": "Hightouch", "Status": "Success", "SourceIp": "3.14.88.201" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001hhhHIAQ", "LoginTime": "2026-08-08T23:45:00.000+0000", "Application": "Hightouch", "Status": "Success", "SourceIp": "3.14.88.201" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001iiiIIAQ", "LoginTime": "2026-08-10T01:05:00.000+0000", "Application": "Marketo", "Status": "Success", "SourceIp": "199.15.212.9" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001lllLIAQ", "LoginTime": "2026-08-10T04:00:00.000+0000", "Application": "Fivetran", "Status": "Success", "SourceIp": "35.234.176.2" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001lllLIAQ", "LoginTime": "2026-08-09T04:00:00.000+0000", "Application": "Fivetran", "Status": "Success", "SourceIp": "35.234.176.2" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001aaaAIAQ", "LoginTime": "2026-08-10T08:14:22.000+0000", "Application": "Browser", "Status": "Success", "SourceIp": "72.14.201.88" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001aaaAIAQ", "LoginTime": "2026-08-07T09:02:00.000+0000", "Application": "Salesforce CLI", "Status": "Success", "SourceIp": "72.14.201.88" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001cccCIAQ", "LoginTime": "2026-08-09T17:52:10.000+0000", "Application": "Browser", "Status": "Success", "SourceIp": "72.14.201.90" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001dddDIAQ", "LoginTime": "2026-08-10T07:02:00.000+0000", "Application": "Salesforce Mobile App", "Status": "Success", "SourceIp": "174.22.9.1" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001dddDIAQ", "LoginTime": "2026-08-06T07:02:00.000+0000", "Application": "Browser", "Status": "Success", "SourceIp": "174.22.9.1" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001kkkKIAQ", "LoginTime": "2026-08-10T06:40:00.000+0000", "Application": "Browser", "Status": "Success", "SourceIp": "98.11.4.77" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001kkkKIAQ", "LoginTime": "2026-08-05T06:40:00.000+0000", "Application": "Browser", "Status": "Success", "SourceIp": "98.11.4.77" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001cccCIAQ", "LoginTime": "2026-07-30T11:00:00.000+0000", "Application": "Chili Piper", "Status": "Success", "SourceIp": "13.58.2.44" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001aaaAIAQ", "LoginTime": "2026-07-22T15:30:00.000+0000", "Application": "Slack", "Status": "Success", "SourceIp": "72.14.201.88" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001cccCIAQ", "LoginTime": "2026-07-14T10:00:00.000+0000", "Application": "Workbench", "Status": "Success", "SourceIp": "72.14.201.90" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001gggGIAQ", "LoginTime": "2026-07-02T02:14:00.000+0000", "Application": "Gong", "Status": "Success", "SourceIp": "52.44.9.71" },
+    { "attributes": { "type": "LoginHistory" }, "UserId": "005A0000001iiiIIAQ", "LoginTime": "2026-06-20T01:05:00.000+0000", "Application": "Marketo", "Status": "Success", "SourceIp": "199.15.212.9" }
+  ]
+}

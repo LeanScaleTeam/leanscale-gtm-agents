@@ -1,0 +1,22 @@
+{
+  "primary": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, FirstName, LastName, Company, Email, Status, LeadSource, Most_Recent_Source__c, How_Did_You_Hear_About_Us__c, UTM_Source__c, UTM_Medium__c, UTM_Campaign__c, CreatedDate, CreatedBy.Name, IsConverted, ConvertedDate, ConvertedContactId, ConvertedOpportunityId FROM Lead WHERE CreatedDate = LAST_N_DAYS:540 ORDER BY CreatedDate DESC"
+  },
+  "intermediate": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, FirstName, LastName, Email, LeadSource, CreatedDate FROM Contact WHERE Id IN (SELECT ConvertedContactId FROM Lead WHERE IsConverted = true AND CreatedDate = LAST_N_DAYS:540)"
+  },
+  "deal": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, Name, LeadSource, StageName, IsWon, IsClosed, Amount, CloseDate, CreatedDate, CreatedBy.Name FROM Opportunity WHERE Id IN (SELECT ConvertedOpportunityId FROM Lead WHERE IsConverted = true AND CreatedDate = LAST_N_DAYS:540)"
+  },
+  "conversion": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, LeadSource, ConvertedContactId, ConvertedOpportunityId, ConvertedDate FROM Lead WHERE IsConverted = true AND CreatedDate = LAST_N_DAYS:540"
+  },
+  "history": {
+    "tool": "run_soql_query",
+    "query": "SELECT Id, LeadId, Field, OldValue, NewValue, CreatedDate, CreatedBy.Name FROM LeadHistory WHERE Field IN ('LeadSource','UTM_Source__c','UTM_Medium__c') AND CreatedDate = LAST_N_DAYS:540 ORDER BY CreatedDate"
+  }
+}

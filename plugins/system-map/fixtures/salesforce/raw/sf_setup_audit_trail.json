@@ -1,0 +1,13 @@
+{
+  "totalSize": 7,
+  "done": true,
+  "records": [
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000001", "Action": "changedProcessAutomation", "Section": "Flow", "CreatedDate": "2026-08-01T16:40:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "Display": "Activated flow version 9 of Lead Routing Assist" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000002", "Action": "changedProcessAutomation", "Section": "Flow", "CreatedDate": "2026-07-28T10:05:00.000+0000", "CreatedBy": { "Name": "Priya Raman" }, "Display": "Activated flow version 12 of Opportunity Stage Hygiene" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000003", "Action": "PermSetAssign", "Section": "Manage Users", "CreatedDate": "2026-08-04T11:22:00.000+0000", "CreatedBy": { "Name": "Priya Raman" }, "Display": "Assigned permission set Reverse_ETL_Write to Hightouch Sync" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000004", "Action": "changedValidationActive", "Section": "Validation Rules", "CreatedDate": "2026-08-03T09:14:00.000+0000", "CreatedBy": { "Name": "Rae Lindqvist" }, "Display": "Deactivated validation rule Next_Step_Required on Opportunity" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000005", "Action": "changedApexTrigger", "Section": "Apex Trigger", "CreatedDate": "2026-07-19T13:40:00.000+0000", "CreatedBy": { "Name": "Priya Raman" }, "Display": "Changed Apex trigger LeadTrigger" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000006", "Action": "loginAsGranted", "Section": "Manage Users", "CreatedDate": "2026-07-11T08:00:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "Display": "Login access granted" },
+    { "attributes": { "type": "SetupAuditTrail" }, "Id": "0Ym000000000007", "Action": "changedProcessAutomation", "Section": "Workflow Rule", "CreatedDate": "2026-06-02T09:11:00.000+0000", "CreatedBy": { "Name": "Dana Whitfield" }, "Display": "Changed workflow rule Update Forecast Category on Close" }
+  ]
+}

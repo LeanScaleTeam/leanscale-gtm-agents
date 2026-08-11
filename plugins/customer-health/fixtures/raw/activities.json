@@ -1,0 +1,72 @@
+[
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c01MAB",
+    "AccountId": "001Kx000005NwM1QAK",
+    "Subject": "Sent updated routing spec + Q3 adoption summary",
+    "ActivityDate": "2026-07-30",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Devon Alcaraz" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c02MAB",
+    "AccountId": "001Kx000005NwMLQA0",
+    "Subject": "Left voicemail re: Q3 check-in — no reply",
+    "ActivityDate": "2026-05-28",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Priyanka Shah" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c03MAB",
+    "AccountId": "001Kx000005NwLgQAK",
+    "Subject": "Shared analytics module scoping doc",
+    "ActivityDate": "2026-07-20",
+    "Status": "Completed",
+    "seniority": "senior",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Marisol Vega" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c04MAB",
+    "AccountId": "001Kx000005NwMVQA0",
+    "Subject": "Escalation follow-up: duplicate lead assignment",
+    "ActivityDate": "2026-08-03",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Priyanka Shah" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c05MAB",
+    "AccountId": "001Kx000005NwMBQA0",
+    "Subject": "Emailed renewal paperwork — awaiting response",
+    "ActivityDate": "2026-06-25",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Devon Alcaraz" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c06MAB",
+    "AccountId": "001Kx000005NwMBQA0",
+    "Subject": "Quarterly check-in — rescheduled by customer",
+    "ActivityDate": "2026-05-12",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Devon Alcaraz" }
+  },
+  {
+    "attributes": { "type": "Task" },
+    "Id": "00TKx00000B1c07MAB",
+    "AccountId": "001Kx000005NwM1QAK",
+    "Subject": "Renewal paperwork requested from procurement",
+    "ActivityDate": "2026-07-02",
+    "Status": "Completed",
+    "seniority": "ic",
+    "Owner": { "attributes": { "type": "User" }, "Name": "Devon Alcaraz" }
+  }
+]

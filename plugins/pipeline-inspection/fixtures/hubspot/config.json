@@ -1,0 +1,36 @@
+{
+  "_comment": "Config override used only by the bundled HubSpot fixture demo, so the stage keys line up with HubSpot's internal stage ids. Your real config is written to ~/.leanscale-gtm/pipeline-inspection.json by /pipeline-inspection:setup.",
+  "crm": "hubspot",
+  "stage_order": [
+    "appointmentscheduled",
+    "qualifiedtobuy",
+    "presentationscheduled",
+    "decisionmakerboughtin",
+    "contractsent"
+  ],
+  "commit_stages": [
+    "decisionmakerboughtin",
+    "contractsent"
+  ],
+  "closed_won_stages": [
+    "closedwon"
+  ],
+  "closed_lost_stages": [
+    "closedlost"
+  ],
+  "expected_days_in_stage": {
+    "appointmentscheduled": 14,
+    "qualifiedtobuy": 21,
+    "presentationscheduled": 21,
+    "decisionmakerboughtin": 30,
+    "contractsent": 14
+  },
+  "next_step_mode": "both",
+  "next_step_field": "hs_next_step",
+  "activity_silence_days_by_stage": {
+    "decisionmakerboughtin": 10,
+    "contractsent": 7
+  },
+  "material_deal_floor": 0,
+  "inspection_cadence": "weekly"
+}

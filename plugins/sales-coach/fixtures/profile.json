@@ -1,0 +1,22 @@
+{
+  "_comment": "Fixture-only copy of the shared org profile, so the offline test run is fully self-contained and never reads or writes your real ~/.leanscale-gtm/. Acme Data is fictional.",
+  "schema_version": 1,
+  "org_name": "Acme Data",
+  "crm": {
+    "system": "salesforce",
+    "mcp_probe": "run_soql_query",
+    "instance_label": "Acme Data Production",
+    "secondary": null
+  },
+  "fiscal_year_start_month": 1,
+  "currency": { "corporate": "USD", "multi_currency": false },
+  "motion": ["inbound_led", "outbound"],
+  "quota_carrying_reps": 3,
+  "segments": ["SMB", "Mid-Market", "Enterprise"],
+  "segment_field": "Account.Segment__c",
+  "material_deal_floor": 25000,
+  "team_map": { "roll_up_field": "User.ManagerId" },
+  "objects": { "opportunity": "Opportunity", "account": "Account", "lead": "Lead" },
+  "competitors": ["Northlake", "Datamesh"],
+  "redact_pii_in_reports": false
+}

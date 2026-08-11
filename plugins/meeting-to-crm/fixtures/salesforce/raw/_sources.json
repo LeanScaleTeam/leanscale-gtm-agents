@@ -1,0 +1,37 @@
+[
+  {
+    "name": "meetings",
+    "tool": "fireflies_get_transcripts",
+    "query": "{ transcripts(fromDate: \"2026-08-03\", toDate: \"2026-08-08\", limit: 50) { id title date duration participants sentences { index speaker_name start_time text } } }",
+    "note": "6 meetings in the window, 1 internal.",
+    "diagnosis": "the transcript connector returned nothing. Check the date window first, then whether the connected identity can see other reps' recordings — most conversation-intelligence tools default to private."
+  },
+  {
+    "name": "crm_records",
+    "tool": "run_soql_query",
+    "query": "SELECT Id, Name, AccountId, Account.Name, StageName, IsClosed, NextStep, Next_Step_Date__c, Primary_Competitor__c, Identified_Pain__c, Metrics__c, Economic_Buyer__c, Decision_Criteria__c, Decision_Process__c, Paper_Process__c, Champion__c, Decision_Timeline__c, Description, Amount, CloseDate, LastActivityDate FROM Opportunity WHERE Id IN ('0065f00000NW1AAA','0065f00000HG1AAA','0065f00000BP1AAA','0065f00000BP2AAA','0065f00000CV1AAA')",
+    "note": "Current state of every candidate record, plus existing contact roles.",
+    "diagnosis": "the integration user cannot read Opportunity, or none of the attendee domains resolve to an account."
+  },
+  {
+    "name": "match_candidates",
+    "tool": "run_soql_query",
+    "query": "SELECT Id, Name, AccountId, Account.Name, StageName, IsClosed, LastActivityDate FROM Opportunity WHERE AccountId IN (SELECT AccountId FROM Contact WHERE Email LIKE '%@northwindanalytics.com' OR Email LIKE '%@heliogrid.io' OR Email LIKE '%@brightpathlabs.com' OR Email LIKE '%@corvuslogistics.com') AND IsClosed = false",
+    "note": "Candidates plus their matching signals.",
+    "diagnosis": "no candidates for any meeting — every call will read as unmatched."
+  },
+  {
+    "name": "crm_schema",
+    "tool": "run_soql_query",
+    "query": "SELECT QualifiedApiName, Label, DataType, IsUpdatable FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName IN ('Opportunity','Task','Contact','OpportunityContactRole')",
+    "note": "Types, updateability and picklist values for every allow-listed field.",
+    "diagnosis": "no schema captured — picklist and length validation will be skipped."
+  },
+  {
+    "name": "proposals",
+    "tool": "claude",
+    "query": "read each transcript, draft values for allow-listed fields only, quote-verbatim required",
+    "note": "Deliberately includes proposals that must be refused.",
+    "diagnosis": "Claude drafted nothing. Normal for a short or purely social call."
+  }
+]

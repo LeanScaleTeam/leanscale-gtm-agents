@@ -1,0 +1,12 @@
+{
+  "total": 7,
+  "results": [
+    { "id": "5501", "email": "morgan.diaz@beaconrobotics.com", "firstName": "Morgan", "lastName": "Diaz", "userId": 101, "createdAt": "2022-01-11T10:00:00Z", "updatedAt": "2026-08-10T08:00:00Z", "archived": false },
+    { "id": "5502", "email": "sam.oyelaran@beaconrobotics.com", "firstName": "Sam", "lastName": "Oyelaran", "userId": 102, "createdAt": "2023-04-03T10:00:00Z", "updatedAt": "2026-08-09T08:00:00Z", "archived": false },
+    { "id": "5503", "email": "priya.venkat@beaconrobotics.com", "firstName": "Priya", "lastName": "Venkat", "userId": 103, "createdAt": "2023-09-18T10:00:00Z", "updatedAt": "2026-08-10T09:00:00Z", "archived": false },
+    { "id": "5504", "email": "revops-integrations@beaconrobotics.com", "firstName": "RevOps", "lastName": "Integrations", "userId": 104, "createdAt": "2024-02-02T10:00:00Z", "updatedAt": "2026-08-10T03:00:00Z", "archived": false },
+    { "id": "5505", "email": "data-sync-svc@beaconrobotics.com", "firstName": "Data", "lastName": "Sync", "userId": 105, "createdAt": "2025-03-11T10:00:00Z", "updatedAt": "2026-08-10T02:00:00Z", "archived": false },
+    { "id": "5506", "email": "jordan.wu@beaconrobotics.com", "firstName": "Jordan", "lastName": "Wu", "userId": 106, "createdAt": "2023-06-01T10:00:00Z", "updatedAt": "2026-01-30T17:00:00Z", "archived": true },
+    { "id": "5507", "email": "casey.nolan@beaconrobotics.com", "firstName": "Casey", "lastName": "Nolan", "userId": 107, "createdAt": "2021-08-09T10:00:00Z", "updatedAt": "2024-11-22T16:00:00Z", "archived": true }
+  ]
+}

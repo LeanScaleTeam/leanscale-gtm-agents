@@ -1,0 +1,6122 @@
+{
+  "totalSize": 556,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2024-12-22T11:41:05.000+0000",
+      "StageName": "Discovery",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2024-12-30T23:04:04.000+0000",
+      "StageName": "Qualification",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2025-01-19T04:04:50.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2025-01-29T00:51:48.000+0000",
+      "StageName": "Proposal",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2025-02-11T19:20:07.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2025-03-20T02:27:54.000+0000",
+      "StageName": "Contracting",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100000QAB",
+      "CreatedDate": "2025-03-28T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 181000.0,
+      "CloseDate": "2025-03-28",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-01-02T04:29:08.000+0000",
+      "StageName": "Discovery",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-01-06T06:56:38.000+0000",
+      "StageName": "Qualification",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-02-04T10:12:47.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-03-16T16:34:24.000+0000",
+      "StageName": "Proposal",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-04-03T03:39:46.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-04-25T06:29:04.000+0000",
+      "StageName": "Contracting",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100001QAB",
+      "CreatedDate": "2025-05-06T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 32300.0,
+      "CloseDate": "2025-05-06",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-09-15T03:00:10.000+0000",
+      "StageName": "Discovery",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-09-23T12:02:06.000+0000",
+      "StageName": "Qualification",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-10-08T02:24:31.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-10-30T14:22:07.000+0000",
+      "StageName": "Proposal",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-11-13T22:36:21.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-12-07T09:08:09.000+0000",
+      "StageName": "Contracting",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100002QAB",
+      "CreatedDate": "2024-12-14T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 139000.0,
+      "CloseDate": "2024-12-14",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-05-18T07:06:42.000+0000",
+      "StageName": "Discovery",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-07-09T10:03:34.000+0000",
+      "StageName": "Qualification",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-07-24T18:40:59.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-08-08T07:58:37.000+0000",
+      "StageName": "Proposal",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-08-18T18:30:34.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-09-06T22:32:36.000+0000",
+      "StageName": "Contracting",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100003QAB",
+      "CreatedDate": "2025-09-17T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 152000.0,
+      "CloseDate": "2025-09-17",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-07-29T02:34:06.000+0000",
+      "StageName": "Discovery",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-08-07T08:52:16.000+0000",
+      "StageName": "Qualification",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-08-30T09:01:26.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-10-10T09:02:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-11-13T19:16:32.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-11-27T01:02:37.000+0000",
+      "StageName": "Contracting",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100004QAB",
+      "CreatedDate": "2025-12-06T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 160000.0,
+      "CloseDate": "2025-12-06",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-02-17T02:10:03.000+0000",
+      "StageName": "Discovery",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-03-21T07:53:11.000+0000",
+      "StageName": "Qualification",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-03-31T14:12:01.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-04-19T03:08:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-05-26T00:37:02.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-06-16T15:43:07.000+0000",
+      "StageName": "Contracting",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100005QAB",
+      "CreatedDate": "2026-06-26T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 113000.0,
+      "CloseDate": "2026-06-26",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-05-14T02:43:17.000+0000",
+      "StageName": "Discovery",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-05-22T11:30:30.000+0000",
+      "StageName": "Qualification",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-06-10T07:12:27.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-07-03T03:52:12.000+0000",
+      "StageName": "Proposal",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-07-19T23:49:09.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-12-03T03:19:49.000+0000",
+      "StageName": "Contracting",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100006QAB",
+      "CreatedDate": "2024-12-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 413000.0,
+      "CloseDate": "2024-12-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2024-12-08T06:01:10.000+0000",
+      "StageName": "Discovery",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2024-12-22T07:51:18.000+0000",
+      "StageName": "Qualification",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2025-01-09T06:53:49.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2025-01-26T20:00:35.000+0000",
+      "StageName": "Proposal",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2025-01-30T15:05:13.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2025-02-13T05:28:57.000+0000",
+      "StageName": "Contracting",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100007QAB",
+      "CreatedDate": "2025-02-21T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 134000.0,
+      "CloseDate": "2025-02-21",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-09-26T17:50:33.000+0000",
+      "StageName": "Discovery",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-10-03T17:11:36.000+0000",
+      "StageName": "Qualification",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-10-21T08:34:21.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-11-03T23:37:07.000+0000",
+      "StageName": "Proposal",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-12-01T09:11:48.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2024-12-28T17:42:40.000+0000",
+      "StageName": "Contracting",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100008QAB",
+      "CreatedDate": "2025-01-25T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 118000.0,
+      "CloseDate": "2025-01-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2025-12-02T13:20:28.000+0000",
+      "StageName": "Discovery",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2025-12-11T22:43:19.000+0000",
+      "StageName": "Qualification",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2025-12-26T12:24:17.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2026-01-12T01:49:41.000+0000",
+      "StageName": "Proposal",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2026-01-19T11:39:24.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2026-02-17T14:33:48.000+0000",
+      "StageName": "Contracting",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100009QAB",
+      "CreatedDate": "2026-03-16T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 124000.0,
+      "CloseDate": "2026-03-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-04-20T04:47:35.000+0000",
+      "StageName": "Discovery",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-05-09T18:14:17.000+0000",
+      "StageName": "Qualification",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-06-07T08:28:35.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-06-29T23:21:10.000+0000",
+      "StageName": "Proposal",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-07-25T18:22:45.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-09-01T18:27:30.000+0000",
+      "StageName": "Contracting",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100010QAB",
+      "CreatedDate": "2025-09-07T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 101000.0,
+      "CloseDate": "2025-09-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2025-10-02T18:47:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2025-10-14T09:15:51.000+0000",
+      "StageName": "Qualification",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2025-11-16T05:14:50.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2025-12-10T01:59:24.000+0000",
+      "StageName": "Proposal",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2025-12-27T16:15:43.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2026-01-07T21:03:19.000+0000",
+      "StageName": "Contracting",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100011QAB",
+      "CreatedDate": "2026-01-12T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 94000.0,
+      "CloseDate": "2026-01-12",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2024-10-18T13:54:51.000+0000",
+      "StageName": "Discovery",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2024-10-30T03:41:54.000+0000",
+      "StageName": "Qualification",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2024-11-08T21:35:24.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2024-12-04T13:42:08.000+0000",
+      "StageName": "Proposal",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2025-01-07T14:58:53.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2025-02-17T02:22:54.000+0000",
+      "StageName": "Contracting",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100012QAB",
+      "CreatedDate": "2025-03-08T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 164000.0,
+      "CloseDate": "2025-03-08",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2025-10-17T03:22:16.000+0000",
+      "StageName": "Discovery",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2025-10-27T05:04:41.000+0000",
+      "StageName": "Qualification",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2025-11-15T18:42:21.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2025-11-21T15:29:11.000+0000",
+      "StageName": "Proposal",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2025-12-20T00:44:07.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2026-01-02T22:23:43.000+0000",
+      "StageName": "Contracting",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100013QAB",
+      "CreatedDate": "2026-01-30T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 80000.0,
+      "CloseDate": "2026-01-30",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2024-11-10T10:49:23.000+0000",
+      "StageName": "Discovery",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2024-11-16T20:07:48.000+0000",
+      "StageName": "Qualification",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2024-12-13T04:49:05.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2025-01-05T12:40:56.000+0000",
+      "StageName": "Proposal",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2025-02-02T13:11:31.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2025-02-21T20:59:43.000+0000",
+      "StageName": "Contracting",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100014QAB",
+      "CreatedDate": "2025-03-22T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 14100.0,
+      "CloseDate": "2025-03-22",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-09-07T21:47:39.000+0000",
+      "StageName": "Discovery",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-10-11T23:00:57.000+0000",
+      "StageName": "Qualification",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-10-25T09:41:40.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-11-06T04:24:39.000+0000",
+      "StageName": "Proposal",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-11-24T08:46:25.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2025-12-27T15:36:38.000+0000",
+      "StageName": "Contracting",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100015QAB",
+      "CreatedDate": "2026-01-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 8200.0,
+      "CloseDate": "2026-01-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-03-29T20:59:09.000+0000",
+      "StageName": "Discovery",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-04-13T17:37:52.000+0000",
+      "StageName": "Qualification",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-04-28T03:41:37.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-06-27T05:38:58.000+0000",
+      "StageName": "Proposal",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-07-11T20:25:44.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-08-13T15:20:04.000+0000",
+      "StageName": "Contracting",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100016QAB",
+      "CreatedDate": "2025-08-16T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 171000.0,
+      "CloseDate": "2025-08-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-04-14T16:31:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-04-21T10:32:05.000+0000",
+      "StageName": "Qualification",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-05-13T05:36:06.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-05-18T12:09:17.000+0000",
+      "StageName": "Proposal",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-06-11T13:28:07.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-07-18T10:00:15.000+0000",
+      "StageName": "Contracting",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100017QAB",
+      "CreatedDate": "2025-07-26T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 731000.0,
+      "CloseDate": "2025-07-26",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-07-24T15:39:12.000+0000",
+      "StageName": "Discovery",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-08-07T20:13:28.000+0000",
+      "StageName": "Qualification",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-09-01T07:01:13.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-09-05T16:30:45.000+0000",
+      "StageName": "Proposal",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-09-26T01:35:19.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-10-22T19:18:12.000+0000",
+      "StageName": "Contracting",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100018QAB",
+      "CreatedDate": "2025-10-30T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 331000.0,
+      "CloseDate": "2025-10-30",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-05-11T09:04:51.000+0000",
+      "StageName": "Discovery",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-06-07T07:02:36.000+0000",
+      "StageName": "Qualification",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-06-23T16:48:42.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-07-10T17:14:49.000+0000",
+      "StageName": "Proposal",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-08-02T10:56:12.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-09-05T01:05:18.000+0000",
+      "StageName": "Contracting",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100019QAB",
+      "CreatedDate": "2025-09-28T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 146000.0,
+      "CloseDate": "2025-09-28",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2025-10-26T05:47:17.000+0000",
+      "StageName": "Discovery",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2025-11-11T10:00:40.000+0000",
+      "StageName": "Qualification",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2025-11-24T05:54:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2025-12-28T13:32:43.000+0000",
+      "StageName": "Proposal",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2026-01-15T00:36:01.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2026-02-15T12:58:02.000+0000",
+      "StageName": "Contracting",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100020QAB",
+      "CreatedDate": "2026-02-21T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 314000.0,
+      "CloseDate": "2026-02-21",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-08-22T21:07:44.000+0000",
+      "StageName": "Discovery",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-09-02T12:26:37.000+0000",
+      "StageName": "Qualification",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-10-13T21:33:52.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-11-09T03:16:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-11-29T19:27:02.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-12-17T18:51:47.000+0000",
+      "StageName": "Contracting",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100021QAB",
+      "CreatedDate": "2024-12-25T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 13700.0,
+      "CloseDate": "2024-12-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2025-10-23T08:44:26.000+0000",
+      "StageName": "Discovery",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2025-11-25T04:25:56.000+0000",
+      "StageName": "Qualification",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2026-01-14T16:53:45.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2026-02-02T15:26:08.000+0000",
+      "StageName": "Proposal",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2026-03-10T23:10:20.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2026-04-06T14:47:22.000+0000",
+      "StageName": "Contracting",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100022QAB",
+      "CreatedDate": "2026-04-15T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 33600.0,
+      "CloseDate": "2026-04-15",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-01-17T00:12:22.000+0000",
+      "StageName": "Discovery",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-01-24T20:22:52.000+0000",
+      "StageName": "Qualification",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-02-03T08:31:48.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-02-12T09:13:17.000+0000",
+      "StageName": "Proposal",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-03-05T15:36:11.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-03-15T03:09:29.000+0000",
+      "StageName": "Contracting",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100023QAB",
+      "CreatedDate": "2026-03-30T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 147000.0,
+      "CloseDate": "2026-03-30",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-02-25T13:56:05.000+0000",
+      "StageName": "Discovery",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-03-03T09:46:28.000+0000",
+      "StageName": "Qualification",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-03-15T20:53:48.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-04-10T20:09:47.000+0000",
+      "StageName": "Proposal",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-04-21T00:57:28.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-05-24T03:04:19.000+0000",
+      "StageName": "Contracting",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100024QAB",
+      "CreatedDate": "2025-06-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 742000.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2024-12-01T08:10:42.000+0000",
+      "StageName": "Discovery",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2024-12-16T19:16:39.000+0000",
+      "StageName": "Qualification",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2025-01-15T08:03:58.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2025-02-05T06:14:07.000+0000",
+      "StageName": "Proposal",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2025-02-21T08:54:39.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2025-03-20T04:55:43.000+0000",
+      "StageName": "Contracting",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100025QAB",
+      "CreatedDate": "2025-04-12T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 18300.0,
+      "CloseDate": "2025-04-12",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-02-05T20:15:41.000+0000",
+      "StageName": "Discovery",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-02-12T05:08:52.000+0000",
+      "StageName": "Qualification",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-03-11T23:10:31.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-04-02T03:53:28.000+0000",
+      "StageName": "Proposal",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-04-11T22:20:37.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-05-21T12:26:45.000+0000",
+      "StageName": "Contracting",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100026QAB",
+      "CreatedDate": "2025-06-03T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 746000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2025-10-03T01:40:28.000+0000",
+      "StageName": "Discovery",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2025-10-14T01:16:05.000+0000",
+      "StageName": "Qualification",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2025-10-30T11:54:44.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2025-12-23T00:42:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2026-01-14T09:28:19.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2026-02-21T08:41:47.000+0000",
+      "StageName": "Contracting",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100027QAB",
+      "CreatedDate": "2026-03-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 25100.0,
+      "CloseDate": "2026-03-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-06-28T15:41:51.000+0000",
+      "StageName": "Discovery",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-07-15T09:40:54.000+0000",
+      "StageName": "Qualification",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-07-30T05:54:12.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-08-17T04:13:28.000+0000",
+      "StageName": "Proposal",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-09-09T04:54:13.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-11-13T03:04:08.000+0000",
+      "StageName": "Contracting",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100028QAB",
+      "CreatedDate": "2024-11-22T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 571000.0,
+      "CloseDate": "2024-11-22",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2024-12-06T22:44:28.000+0000",
+      "StageName": "Discovery",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2024-12-12T18:04:48.000+0000",
+      "StageName": "Qualification",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2025-01-25T16:39:24.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2025-02-15T18:36:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2025-04-12T19:12:38.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2025-05-29T00:55:18.000+0000",
+      "StageName": "Contracting",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100029QAB",
+      "CreatedDate": "2025-06-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 13900.0,
+      "CloseDate": "2025-06-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-09-08T23:02:09.000+0000",
+      "StageName": "Discovery",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-09-24T09:06:29.000+0000",
+      "StageName": "Qualification",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-10-04T22:26:23.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-10-29T11:27:03.000+0000",
+      "StageName": "Proposal",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-11-06T21:16:34.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-11-24T12:17:26.000+0000",
+      "StageName": "Contracting",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100030QAB",
+      "CreatedDate": "2024-12-11T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 80000.0,
+      "CloseDate": "2024-12-11",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-07-13T07:54:46.000+0000",
+      "StageName": "Discovery",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-07-21T12:55:15.000+0000",
+      "StageName": "Qualification",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-09-08T23:23:20.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-10-06T13:17:47.000+0000",
+      "StageName": "Proposal",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-10-13T10:15:37.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-11-10T18:48:04.000+0000",
+      "StageName": "Contracting",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100031QAB",
+      "CreatedDate": "2025-11-24T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 68000.0,
+      "CloseDate": "2025-11-24",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-02-16T14:04:08.000+0000",
+      "StageName": "Discovery",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-02-24T10:12:28.000+0000",
+      "StageName": "Qualification",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-02-28T01:30:55.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-03-18T10:10:45.000+0000",
+      "StageName": "Proposal",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-04-07T07:58:39.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-04-30T03:26:13.000+0000",
+      "StageName": "Contracting",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100032QAB",
+      "CreatedDate": "2025-05-05T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 36200.0,
+      "CloseDate": "2025-05-05",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-02-09T13:17:56.000+0000",
+      "StageName": "Discovery",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-02-18T22:04:48.000+0000",
+      "StageName": "Qualification",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-03-02T06:17:58.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-03-12T09:55:52.000+0000",
+      "StageName": "Proposal",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-03-17T08:59:14.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-04-11T09:14:54.000+0000",
+      "StageName": "Contracting",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100033QAB",
+      "CreatedDate": "2026-04-25T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 582000.0,
+      "CloseDate": "2026-04-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-03-12T23:23:19.000+0000",
+      "StageName": "Discovery",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-03-20T05:57:44.000+0000",
+      "StageName": "Qualification",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-04-13T13:23:09.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-04-30T19:58:20.000+0000",
+      "StageName": "Proposal",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-05-12T21:59:04.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-06-03T12:51:39.000+0000",
+      "StageName": "Contracting",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100034QAB",
+      "CreatedDate": "2025-06-18T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 32500.0,
+      "CloseDate": "2025-06-18",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2024-11-11T01:36:08.000+0000",
+      "StageName": "Discovery",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2024-11-18T22:02:10.000+0000",
+      "StageName": "Qualification",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2024-12-12T23:28:59.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2025-01-08T09:49:17.000+0000",
+      "StageName": "Proposal",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2025-01-15T22:31:34.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2025-02-21T14:24:06.000+0000",
+      "StageName": "Contracting",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100035QAB",
+      "CreatedDate": "2025-02-28T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 81000.0,
+      "CloseDate": "2025-02-28",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2025-10-17T08:22:10.000+0000",
+      "StageName": "Discovery",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2025-11-02T13:11:06.000+0000",
+      "StageName": "Qualification",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2025-11-23T02:25:24.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2025-12-08T00:31:28.000+0000",
+      "StageName": "Proposal",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2025-12-16T19:53:37.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2026-01-06T05:02:40.000+0000",
+      "StageName": "Contracting",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100036QAB",
+      "CreatedDate": "2026-01-14T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 841000.0,
+      "CloseDate": "2026-01-14",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-08-04T05:13:25.000+0000",
+      "StageName": "Discovery",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-08-13T20:20:38.000+0000",
+      "StageName": "Qualification",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-08-22T09:57:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-10-04T22:29:48.000+0000",
+      "StageName": "Proposal",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-10-18T19:41:22.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-11-08T18:39:54.000+0000",
+      "StageName": "Contracting",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100037QAB",
+      "CreatedDate": "2025-11-25T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 33100.0,
+      "CloseDate": "2025-11-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2025-11-30T05:56:30.000+0000",
+      "StageName": "Discovery",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2025-12-06T15:03:21.000+0000",
+      "StageName": "Qualification",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2026-01-03T08:16:42.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2026-01-21T22:53:05.000+0000",
+      "StageName": "Proposal",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2026-01-27T08:41:15.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2026-02-07T20:12:26.000+0000",
+      "StageName": "Contracting",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100038QAB",
+      "CreatedDate": "2026-02-10T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 105000.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-03-23T17:33:38.000+0000",
+      "StageName": "Discovery",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-03-31T02:42:20.000+0000",
+      "StageName": "Qualification",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-04-12T01:42:35.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-05-06T11:22:50.000+0000",
+      "StageName": "Proposal",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-05-13T03:07:36.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-06-29T20:09:25.000+0000",
+      "StageName": "Contracting",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100039QAB",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 22200.0,
+      "CloseDate": "2026-07-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2024-12-01T17:40:44.000+0000",
+      "StageName": "Discovery",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2024-12-04T15:40:43.000+0000",
+      "StageName": "Qualification",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2025-01-06T07:13:21.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2025-02-20T22:40:41.000+0000",
+      "StageName": "Proposal",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2025-03-15T13:41:17.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2025-04-21T19:53:15.000+0000",
+      "StageName": "Contracting",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100040QAB",
+      "CreatedDate": "2025-04-27T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 798000.0,
+      "CloseDate": "2025-04-27",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-02-12T05:59:07.000+0000",
+      "StageName": "Discovery",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-03-03T08:14:07.000+0000",
+      "StageName": "Qualification",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-03-22T04:21:18.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-04-10T22:24:21.000+0000",
+      "StageName": "Proposal",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-05-11T08:30:50.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-05-20T16:19:56.000+0000",
+      "StageName": "Contracting",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100041QAB",
+      "CreatedDate": "2025-06-02T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 171000.0,
+      "CloseDate": "2025-06-02",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-03-24T04:21:37.000+0000",
+      "StageName": "Discovery",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-04-13T11:44:13.000+0000",
+      "StageName": "Qualification",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-04-18T23:00:39.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-05-02T13:11:21.000+0000",
+      "StageName": "Proposal",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-05-23T13:01:24.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-06-11T05:37:33.000+0000",
+      "StageName": "Contracting",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100042QAB",
+      "CreatedDate": "2026-06-25T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-01-09T04:42:04.000+0000",
+      "StageName": "Discovery",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-01-26T05:41:01.000+0000",
+      "StageName": "Qualification",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-02-12T02:07:55.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-02-25T00:54:34.000+0000",
+      "StageName": "Proposal",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-03-02T22:07:54.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-03-16T16:40:43.000+0000",
+      "StageName": "Contracting",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100043QAB",
+      "CreatedDate": "2025-03-21T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 6900.0,
+      "CloseDate": "2025-03-21",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100044QAB",
+      "CreatedDate": "2025-01-14T12:14:45.000+0000",
+      "StageName": "Discovery",
+      "Amount": 90000.0,
+      "CloseDate": "2025-02-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100044QAB",
+      "CreatedDate": "2025-02-01T07:14:05.000+0000",
+      "StageName": "Qualification",
+      "Amount": 90000.0,
+      "CloseDate": "2025-02-15",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100044QAB",
+      "CreatedDate": "2025-02-15T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 90000.0,
+      "CloseDate": "2025-02-15",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100045QAB",
+      "CreatedDate": "2026-01-30T13:28:06.000+0000",
+      "StageName": "Discovery",
+      "Amount": 18400.0,
+      "CloseDate": "2026-03-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100045QAB",
+      "CreatedDate": "2026-02-09T19:38:44.000+0000",
+      "StageName": "Qualification",
+      "Amount": 18400.0,
+      "CloseDate": "2026-03-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100045QAB",
+      "CreatedDate": "2026-02-21T08:23:21.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 18400.0,
+      "CloseDate": "2026-03-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100045QAB",
+      "CreatedDate": "2026-03-06T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 18400.0,
+      "CloseDate": "2026-03-06",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100046QAB",
+      "CreatedDate": "2026-02-01T04:46:05.000+0000",
+      "StageName": "Discovery",
+      "Amount": 12100.0,
+      "CloseDate": "2026-02-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100046QAB",
+      "CreatedDate": "2026-02-07T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 12100.0,
+      "CloseDate": "2026-02-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-05-21T13:14:29.000+0000",
+      "StageName": "Discovery",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-05-29T10:44:11.000+0000",
+      "StageName": "Qualification",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-06-23T10:13:35.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-07-17T23:44:50.000+0000",
+      "StageName": "Proposal",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-08-01T23:11:52.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-08-16T18:36:32.000+0000",
+      "StageName": "Contracting",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100047QAB",
+      "CreatedDate": "2025-08-19T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 49000.0,
+      "CloseDate": "2025-08-19",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-03-21T23:10:44.000+0000",
+      "StageName": "Discovery",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-04-04T05:19:41.000+0000",
+      "StageName": "Qualification",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-05-10T03:23:31.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-05-24T11:01:18.000+0000",
+      "StageName": "Proposal",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-06-01T20:35:37.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100048QAB",
+      "CreatedDate": "2025-07-25T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 18800.0,
+      "CloseDate": "2025-07-25",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100049QAB",
+      "CreatedDate": "2024-10-05T06:25:44.000+0000",
+      "StageName": "Discovery",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100049QAB",
+      "CreatedDate": "2024-10-18T16:42:02.000+0000",
+      "StageName": "Qualification",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100049QAB",
+      "CreatedDate": "2024-11-01T09:40:31.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100049QAB",
+      "CreatedDate": "2024-11-21T15:52:11.000+0000",
+      "StageName": "Proposal",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100049QAB",
+      "CreatedDate": "2024-12-07T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 668000.0,
+      "CloseDate": "2024-12-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100050QAB",
+      "CreatedDate": "2024-11-29T04:28:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 805000.0,
+      "CloseDate": "2025-02-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100050QAB",
+      "CreatedDate": "2024-12-22T14:55:31.000+0000",
+      "StageName": "Qualification",
+      "Amount": 805000.0,
+      "CloseDate": "2025-02-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100050QAB",
+      "CreatedDate": "2025-02-24T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 805000.0,
+      "CloseDate": "2025-02-24",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100051QAB",
+      "CreatedDate": "2026-01-07T10:23:22.000+0000",
+      "StageName": "Discovery",
+      "Amount": 57000.0,
+      "CloseDate": "2026-01-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100051QAB",
+      "CreatedDate": "2026-01-15T11:52:45.000+0000",
+      "StageName": "Qualification",
+      "Amount": 57000.0,
+      "CloseDate": "2026-01-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100051QAB",
+      "CreatedDate": "2026-01-24T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 57000.0,
+      "CloseDate": "2026-01-24",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100052QAB",
+      "CreatedDate": "2025-02-19T14:00:32.000+0000",
+      "StageName": "Discovery",
+      "Amount": 79000.0,
+      "CloseDate": "2025-02-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100052QAB",
+      "CreatedDate": "2025-02-24T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 79000.0,
+      "CloseDate": "2025-02-24",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-01-19T05:08:50.000+0000",
+      "StageName": "Discovery",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-02-06T18:05:54.000+0000",
+      "StageName": "Qualification",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-03-11T14:49:22.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-03-25T08:57:02.000+0000",
+      "StageName": "Proposal",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-04-03T13:47:11.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100053QAB",
+      "CreatedDate": "2025-04-24T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 134000.0,
+      "CloseDate": "2025-04-24",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-05-29T05:56:34.000+0000",
+      "StageName": "Discovery",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-05-31T23:16:05.000+0000",
+      "StageName": "Qualification",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-06-15T05:49:41.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-06-28T17:44:39.000+0000",
+      "StageName": "Proposal",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-07-16T09:59:17.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100054QAB",
+      "CreatedDate": "2025-08-20T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 88000.0,
+      "CloseDate": "2025-08-20",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100055QAB",
+      "CreatedDate": "2025-03-14T03:54:15.000+0000",
+      "StageName": "Discovery",
+      "Amount": 35100.0,
+      "CloseDate": "2025-03-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100055QAB",
+      "CreatedDate": "2025-03-26T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 35100.0,
+      "CloseDate": "2025-03-26",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100056QAB",
+      "CreatedDate": "2025-07-03T08:18:38.000+0000",
+      "StageName": "Discovery",
+      "Amount": 95000.0,
+      "CloseDate": "2025-07-13",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100056QAB",
+      "CreatedDate": "2025-07-13T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 95000.0,
+      "CloseDate": "2025-07-13",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100057QAB",
+      "CreatedDate": "2026-06-04T14:21:49.000+0000",
+      "StageName": "Discovery",
+      "Amount": 134000.0,
+      "CloseDate": "2026-07-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100057QAB",
+      "CreatedDate": "2026-06-27T23:30:07.000+0000",
+      "StageName": "Qualification",
+      "Amount": 134000.0,
+      "CloseDate": "2026-07-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100057QAB",
+      "CreatedDate": "2026-07-08T04:54:24.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 134000.0,
+      "CloseDate": "2026-07-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100057QAB",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 134000.0,
+      "CloseDate": "2026-07-20",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100058QAB",
+      "CreatedDate": "2025-07-12T23:15:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100058QAB",
+      "CreatedDate": "2025-07-21T21:41:19.000+0000",
+      "StageName": "Qualification",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100058QAB",
+      "CreatedDate": "2025-08-03T18:43:09.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100058QAB",
+      "CreatedDate": "2025-08-16T08:57:37.000+0000",
+      "StageName": "Proposal",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100058QAB",
+      "CreatedDate": "2025-09-05T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 571000.0,
+      "CloseDate": "2025-09-05",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100059QAB",
+      "CreatedDate": "2025-05-23T04:00:58.000+0000",
+      "StageName": "Discovery",
+      "Amount": 26900.0,
+      "CloseDate": "2025-08-13",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100059QAB",
+      "CreatedDate": "2025-06-09T12:51:44.000+0000",
+      "StageName": "Qualification",
+      "Amount": 26900.0,
+      "CloseDate": "2025-08-13",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100059QAB",
+      "CreatedDate": "2025-07-18T13:20:56.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 26900.0,
+      "CloseDate": "2025-08-13",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100059QAB",
+      "CreatedDate": "2025-08-13T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 26900.0,
+      "CloseDate": "2025-08-13",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100060QAB",
+      "CreatedDate": "2024-11-22T03:20:27.000+0000",
+      "StageName": "Discovery",
+      "Amount": 183000.0,
+      "CloseDate": "2024-12-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100060QAB",
+      "CreatedDate": "2024-11-30T01:08:35.000+0000",
+      "StageName": "Qualification",
+      "Amount": 183000.0,
+      "CloseDate": "2024-12-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100060QAB",
+      "CreatedDate": "2024-12-12T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 183000.0,
+      "CloseDate": "2024-12-12",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100061QAB",
+      "CreatedDate": "2025-03-16T03:14:18.000+0000",
+      "StageName": "Discovery",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100061QAB",
+      "CreatedDate": "2025-03-27T07:06:21.000+0000",
+      "StageName": "Qualification",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100061QAB",
+      "CreatedDate": "2025-04-08T09:11:51.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100061QAB",
+      "CreatedDate": "2025-04-23T01:27:39.000+0000",
+      "StageName": "Proposal",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100061QAB",
+      "CreatedDate": "2025-06-05T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 35700.0,
+      "CloseDate": "2025-06-05",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100062QAB",
+      "CreatedDate": "2026-04-15T05:47:19.000+0000",
+      "StageName": "Discovery",
+      "Amount": 434000.0,
+      "CloseDate": "2026-05-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100062QAB",
+      "CreatedDate": "2026-04-26T03:52:58.000+0000",
+      "StageName": "Qualification",
+      "Amount": 434000.0,
+      "CloseDate": "2026-05-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100062QAB",
+      "CreatedDate": "2026-05-07T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 434000.0,
+      "CloseDate": "2026-05-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100063QAB",
+      "CreatedDate": "2025-09-09T13:48:48.000+0000",
+      "StageName": "Discovery",
+      "Amount": 61000.0,
+      "CloseDate": "2025-09-16",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100063QAB",
+      "CreatedDate": "2025-09-16T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 61000.0,
+      "CloseDate": "2025-09-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100064QAB",
+      "CreatedDate": "2026-03-10T07:25:49.000+0000",
+      "StageName": "Discovery",
+      "Amount": 62000.0,
+      "CloseDate": "2026-04-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100064QAB",
+      "CreatedDate": "2026-03-14T19:22:11.000+0000",
+      "StageName": "Qualification",
+      "Amount": 62000.0,
+      "CloseDate": "2026-04-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100064QAB",
+      "CreatedDate": "2026-04-10T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 62000.0,
+      "CloseDate": "2026-04-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2025-10-07T11:58:14.000+0000",
+      "StageName": "Discovery",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2025-10-11T11:53:23.000+0000",
+      "StageName": "Qualification",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2025-10-20T04:02:10.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2025-11-14T19:20:47.000+0000",
+      "StageName": "Proposal",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2025-12-23T00:39:47.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100065QAB",
+      "CreatedDate": "2026-01-05T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 167000.0,
+      "CloseDate": "2026-01-05",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100066QAB",
+      "CreatedDate": "2025-01-24T07:52:45.000+0000",
+      "StageName": "Discovery",
+      "Amount": 25600.0,
+      "CloseDate": "2025-02-06",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100066QAB",
+      "CreatedDate": "2025-02-06T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 25600.0,
+      "CloseDate": "2025-02-06",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100067QAB",
+      "CreatedDate": "2026-03-17T13:07:03.000+0000",
+      "StageName": "Discovery",
+      "Amount": 554000.0,
+      "CloseDate": "2026-03-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100067QAB",
+      "CreatedDate": "2026-03-26T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 554000.0,
+      "CloseDate": "2026-03-26",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100068QAB",
+      "CreatedDate": "2025-12-22T16:03:51.000+0000",
+      "StageName": "Discovery",
+      "Amount": 8100.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100068QAB",
+      "CreatedDate": "2026-01-08T05:58:03.000+0000",
+      "StageName": "Qualification",
+      "Amount": 8100.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100068QAB",
+      "CreatedDate": "2026-02-10T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 8100.0,
+      "CloseDate": "2026-02-10",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100069QAB",
+      "CreatedDate": "2025-05-04T08:56:31.000+0000",
+      "StageName": "Discovery",
+      "Amount": 777000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100069QAB",
+      "CreatedDate": "2025-05-13T20:59:25.000+0000",
+      "StageName": "Qualification",
+      "Amount": 777000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100069QAB",
+      "CreatedDate": "2025-05-22T16:23:38.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 777000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100069QAB",
+      "CreatedDate": "2025-06-03T00:00:00.000+0000",
+      "StageName": "Closed Lost",
+      "Amount": 777000.0,
+      "CloseDate": "2025-06-03",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100070QAB",
+      "CreatedDate": "2026-06-16T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 11100.0,
+      "CloseDate": "2026-06-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100071QAB",
+      "CreatedDate": "2025-12-20T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 36000.0,
+      "CloseDate": "2025-12-20",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100072QAB",
+      "CreatedDate": "2026-01-16T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 53100.0,
+      "CloseDate": "2026-01-16",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100073QAB",
+      "CreatedDate": "2026-06-07T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 44500.0,
+      "CloseDate": "2026-06-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000100074QAB",
+      "CreatedDate": "2026-04-07T00:00:00.000+0000",
+      "StageName": "Closed Won",
+      "Amount": 50000.0,
+      "CloseDate": "2026-04-07",
+      "ForecastCategory": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "CreatedDate": "2026-03-13T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "CreatedDate": "2026-03-21T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "CreatedDate": "2026-03-29T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "CreatedDate": "2026-04-06T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "CreatedDate": "2026-04-14T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "CreatedDate": "2026-04-27T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 265000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "CreatedDate": "2026-05-07T08:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 265000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "CreatedDate": "2026-05-17T16:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 265000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "CreatedDate": "2026-05-28T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 265000,
+      "CloseDate": "2026-08-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-05-28T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-05-30T14:24:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-06-02T04:48:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-06-04T19:12:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-06-07T09:36:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "CreatedDate": "2026-06-10T00:00:00.000+0000",
+      "StageName": "Contracting",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "CreatedDate": "2026-04-09T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "CreatedDate": "2026-04-15T18:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "CreatedDate": "2026-04-22T12:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "CreatedDate": "2026-04-29T06:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "CreatedDate": "2026-05-06T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300004QAB",
+      "CreatedDate": "2026-04-29T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 88000,
+      "CloseDate": "2026-07-29",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300004QAB",
+      "CreatedDate": "2026-05-09T16:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 88000,
+      "CloseDate": "2026-07-29",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300004QAB",
+      "CreatedDate": "2026-05-20T08:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 88000,
+      "CloseDate": "2026-07-29",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300004QAB",
+      "CreatedDate": "2026-05-31T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 88000,
+      "CloseDate": "2026-07-29",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-05T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-09T09:36:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-13T19:12:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-18T04:48:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-22T14:24:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "StageName": "Contracting",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300006QAB",
+      "CreatedDate": "2026-03-07T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 32000,
+      "CloseDate": "2026-05-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300006QAB",
+      "CreatedDate": "2026-04-02T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 32000,
+      "CloseDate": "2026-05-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300007QAB",
+      "CreatedDate": "2026-02-23T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 54000,
+      "CloseDate": "2026-10-09",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300008QAB",
+      "CreatedDate": "2026-03-12T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 175000,
+      "CloseDate": "2026-09-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300008QAB",
+      "CreatedDate": "2026-03-21T12:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 175000,
+      "CloseDate": "2026-09-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300008QAB",
+      "CreatedDate": "2026-03-31T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 175000,
+      "CloseDate": "2026-09-24",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300009QAB",
+      "CreatedDate": "2026-04-14T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 26000,
+      "CloseDate": "2026-09-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300009QAB",
+      "CreatedDate": "2026-05-11T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 26000,
+      "CloseDate": "2026-09-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "CreatedDate": "2026-05-05T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 67000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "CreatedDate": "2026-05-18T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 67000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "CreatedDate": "2026-05-31T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 67000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300010QAB",
+      "CreatedDate": "2026-06-13T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 67000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "CreatedDate": "2026-04-20T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "CreatedDate": "2026-04-26T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "CreatedDate": "2026-05-02T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "CreatedDate": "2026-05-08T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "CreatedDate": "2026-05-14T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300012QAB",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 610000,
+      "CloseDate": "2026-10-23",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300012QAB",
+      "CreatedDate": "2026-07-04T12:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 610000,
+      "CloseDate": "2026-10-23",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300012QAB",
+      "CreatedDate": "2026-07-12T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 610000,
+      "CloseDate": "2026-10-23",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "CreatedDate": "2026-07-13T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 340000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "CreatedDate": "2026-07-15T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 340000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "CreatedDate": "2026-07-17T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 340000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300013QAB",
+      "CreatedDate": "2026-07-19T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 340000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "CreatedDate": "2026-06-11T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "CreatedDate": "2026-06-18T06:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "CreatedDate": "2026-06-25T12:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "CreatedDate": "2026-07-02T18:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300014QAB",
+      "CreatedDate": "2026-07-10T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300015QAB",
+      "CreatedDate": "2026-07-24T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 120000,
+      "CloseDate": "2026-10-17",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300016QAB",
+      "CreatedDate": "2026-06-24T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 47000,
+      "CloseDate": "2026-10-04",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300016QAB",
+      "CreatedDate": "2026-07-17T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 47000,
+      "CloseDate": "2026-10-04",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300017QAB",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 155000,
+      "CloseDate": "2026-08-21",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300018QAB",
+      "CreatedDate": "2026-06-19T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 92000,
+      "CloseDate": "2026-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300018QAB",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 92000,
+      "CloseDate": "2026-08-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "CreatedDate": "2026-07-04T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 78000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "CreatedDate": "2026-07-15T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 78000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300019QAB",
+      "CreatedDate": "2026-07-26T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 78000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300020QAB",
+      "CreatedDate": "2026-06-25T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": null,
+      "CloseDate": "2026-09-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300020QAB",
+      "CreatedDate": "2026-07-08T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": null,
+      "CloseDate": "2026-09-26",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300021QAB",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": null,
+      "CloseDate": "2026-10-11",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "CreatedDate": "2026-06-07T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 130000,
+      "CloseDate": "2026-10-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "CreatedDate": "2026-07-06T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 130000,
+      "CloseDate": "2026-10-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300022QAB",
+      "CreatedDate": "2026-07-15T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 130000,
+      "CloseDate": "2026-10-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300023QAB",
+      "CreatedDate": "2026-07-11T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 58000,
+      "CloseDate": "2026-11-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300023QAB",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 58000,
+      "CloseDate": "2026-11-02",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 96000,
+      "CloseDate": "2026-09-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "CreatedDate": "2026-06-29T08:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 96000,
+      "CloseDate": "2026-09-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "CreatedDate": "2026-07-01T16:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 96000,
+      "CloseDate": "2026-09-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300024QAB",
+      "CreatedDate": "2026-07-04T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 96000,
+      "CloseDate": "2026-09-08",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "CreatedDate": "2026-06-26T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "CreatedDate": "2026-06-28T18:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "CreatedDate": "2026-07-01T12:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "CreatedDate": "2026-07-04T06:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300025QAB",
+      "CreatedDate": "2026-07-07T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "CreatedDate": "2026-07-06T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "CreatedDate": "2026-07-09T08:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "CreatedDate": "2026-07-12T16:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300026QAB",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300027QAB",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300027QAB",
+      "CreatedDate": "2026-07-23T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300028QAB",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 34000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300029QAB",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 76000,
+      "CloseDate": "2026-09-23",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300029QAB",
+      "CreatedDate": "2026-07-28T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 76000,
+      "CloseDate": "2026-09-23",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "CreatedDate": "2026-07-09T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 128000,
+      "CloseDate": "2026-10-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "CreatedDate": "2026-07-17T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 128000,
+      "CloseDate": "2026-10-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300030QAB",
+      "CreatedDate": "2026-07-25T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 128000,
+      "CloseDate": "2026-10-12",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "CreatedDate": "2026-06-28T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 210000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "CreatedDate": "2026-07-08T08:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 210000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "CreatedDate": "2026-07-18T16:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 210000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300031QAB",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 210000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "CreatedDate": "2026-07-10T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "CreatedDate": "2026-07-13T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "CreatedDate": "2026-07-19T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300032QAB",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-07-04T04:48:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-07-11T09:36:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-07-18T14:24:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-07-25T19:12:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300033QAB",
+      "CreatedDate": "2026-08-02T00:00:00.000+0000",
+      "StageName": "Contracting",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300034QAB",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 41000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300035QAB",
+      "CreatedDate": "2026-07-12T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 63000,
+      "CloseDate": "2026-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300035QAB",
+      "CreatedDate": "2026-07-30T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 63000,
+      "CloseDate": "2026-09-28",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300036QAB",
+      "CreatedDate": "2026-06-17T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 97000,
+      "CloseDate": "2026-10-04",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300036QAB",
+      "CreatedDate": "2026-07-07T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 97000,
+      "CloseDate": "2026-10-04",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300036QAB",
+      "CreatedDate": "2026-07-27T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 97000,
+      "CloseDate": "2026-10-04",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "CreatedDate": "2026-06-23T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "CreatedDate": "2026-06-29T18:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "CreatedDate": "2026-07-06T12:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "CreatedDate": "2026-07-13T06:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300037QAB",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "CreatedDate": "2026-07-11T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 143000,
+      "CloseDate": "2026-09-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "CreatedDate": "2026-07-17T16:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 143000,
+      "CloseDate": "2026-09-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "CreatedDate": "2026-07-24T08:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 143000,
+      "CloseDate": "2026-09-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300038QAB",
+      "CreatedDate": "2026-07-31T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 143000,
+      "CloseDate": "2026-09-19",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-07-01T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-07-07T19:12:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-07-14T14:24:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-07-21T09:36:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-07-28T04:48:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300039QAB",
+      "CreatedDate": "2026-08-04T00:00:00.000+0000",
+      "StageName": "Contracting",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300040QAB",
+      "CreatedDate": "2026-08-01T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 29000,
+      "CloseDate": "2026-10-31",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300041QAB",
+      "CreatedDate": "2026-06-21T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 88000,
+      "CloseDate": "2026-10-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300041QAB",
+      "CreatedDate": "2026-07-26T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 88000,
+      "CloseDate": "2026-10-01",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "CreatedDate": "2026-07-18T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 116000,
+      "CloseDate": "2026-09-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "CreatedDate": "2026-07-21T08:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 116000,
+      "CloseDate": "2026-09-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "CreatedDate": "2026-07-24T16:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 116000,
+      "CloseDate": "2026-09-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300042QAB",
+      "CreatedDate": "2026-07-28T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 116000,
+      "CloseDate": "2026-09-14",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "CreatedDate": "2026-07-18T00:00:00.000+0000",
+      "StageName": "Qualification",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "StageName": "Solution Review",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "CreatedDate": "2026-07-22T00:00:00.000+0000",
+      "StageName": "Proposal",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300043QAB",
+      "CreatedDate": "2026-07-24T00:00:00.000+0000",
+      "StageName": "Negotiation",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "ForecastCategory": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityHistory"
+      },
+      "OpportunityId": "006000000300044QAB",
+      "CreatedDate": "2026-08-03T00:00:00.000+0000",
+      "StageName": "Discovery",
+      "Amount": 52000,
+      "CloseDate": "2026-10-23",
+      "ForecastCategory": "Pipeline"
+    }
+  ]
+}

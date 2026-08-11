@@ -1,0 +1,444 @@
+[
+  {
+    "id": "nw-mtg-2026-03-04",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-03-04T15:00:00Z",
+    "title": "Routing rebuild — kickoff review",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Iris Kaminski", "email": "iris.kaminski@northwindlogistics.example", "title": "Sales Operations Analyst", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "nw-mtg-2026-04-22",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-04-22T16:00:00Z",
+    "title": "Weekly working session",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Iris Kaminski", "email": "iris.kaminski@northwindlogistics.example", "title": "Sales Operations Analyst", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "nw-mtg-2026-05-30",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-05-30T15:30:00Z",
+    "title": "Territory rules — UAT walkthrough",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Iris Kaminski", "email": "iris.kaminski@northwindlogistics.example", "title": "Sales Operations Analyst", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "nw-mtg-2026-06-18",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-06-18T17:00:00Z",
+    "title": "Q2 business review",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }, { "name": "Renata Oyelaran", "seniority": "exec" }],
+    "customer_participants": [
+      { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Grant Mbeki", "email": "grant.mbeki@northwindlogistics.example", "title": "Chief Operating Officer", "seniority": "exec" }
+    ]
+  },
+  {
+    "id": "nw-mtg-2026-07-15",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-07-15T15:30:00Z",
+    "title": "Weekly working session",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Iris Kaminski", "email": "iris.kaminski@northwindlogistics.example", "title": "Sales Operations Analyst", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "nw-mtg-2026-08-04",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-08-04T16:00:00Z",
+    "title": "Adoption check-in",
+    "our_participants": [{ "name": "Devon Alcaraz", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "title": "VP Revenue Operations", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "nw-msg-2026-07-16",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-07-16T14:22:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 3,
+    "customer_participants": [
+      { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "nw-msg-2026-07-29",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-07-29T13:05:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 6,
+    "customer_participants": [
+      { "name": "Iris Kaminski", "email": "iris.kaminski@northwindlogistics.example", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "nw-msg-2026-08-06",
+    "account_id": "001Kx000005NwM1QAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-08-06T09:41:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 2,
+    "customer_participants": [
+      { "name": "Dana Whitfield", "email": "dana.whitfield@northwindlogistics.example", "seniority": "senior", "is_champion": true }
+    ]
+  },
+
+  {
+    "id": "bp-mtg-2026-03-12",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-03-12T14:00:00Z",
+    "title": "Monthly review",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Marcus Feld", "email": "marcus.feld@bluepeakanalytics.example", "title": "Director of Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "title": "Marketing Operations Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-mtg-2026-04-18",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-04-18T14:00:00Z",
+    "title": "Attribution model — status",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Marcus Feld", "email": "marcus.feld@bluepeakanalytics.example", "title": "Director of Revenue Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "title": "Marketing Operations Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-mtg-2026-05-06",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-05-06T14:00:00Z",
+    "title": "Escalation: reporting discrepancy",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "title": "Marketing Operations Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-mtg-2026-05-28",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-05-28T14:00:00Z",
+    "title": "Escalation follow-up",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "title": "Marketing Operations Manager", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-msg-2026-04-25",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-04-25T11:00:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 96,
+    "customer_participants": [
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-msg-2026-05-10",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-05-10T10:15:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 120,
+    "customer_participants": [
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "bp-msg-2026-05-20",
+    "account_id": "001Kx000005NwMLQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-05-20T16:45:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 168,
+    "customer_participants": [
+      { "name": "Tobias Lund", "email": "tobias.lund@bluepeakanalytics.example", "seniority": "ic" }
+    ]
+  },
+
+  {
+    "id": "cs-mtg-2026-03-20",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-03-20T18:00:00Z",
+    "title": "Forecast redesign — working session",
+    "our_participants": [{ "name": "Marisol Vega", "seniority": "senior" }],
+    "customer_participants": [
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "title": "Senior Director, Revenue Systems", "seniority": "senior", "is_champion": true },
+      { "name": "Owen Delacroix", "email": "owen.delacroix@cascadiahealth.example", "title": "Manager, Sales Operations", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "cs-mtg-2026-05-02",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-05-02T18:00:00Z",
+    "title": "Forecast redesign — go-live readiness",
+    "our_participants": [{ "name": "Marisol Vega", "seniority": "senior" }],
+    "customer_participants": [
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "title": "Senior Director, Revenue Systems", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "cs-mtg-2026-06-11",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-06-11T17:00:00Z",
+    "title": "Executive business review",
+    "our_participants": [{ "name": "Marisol Vega", "seniority": "senior" }, { "name": "Renata Oyelaran", "seniority": "exec" }],
+    "customer_participants": [
+      { "name": "Rebecca Tran", "email": "rebecca.tran@cascadiahealth.example", "title": "Chief Revenue Officer", "seniority": "exec" },
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "title": "Senior Director, Revenue Systems", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "cs-mtg-2026-07-09",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-07-09T18:00:00Z",
+    "title": "Analytics module scoping",
+    "our_participants": [{ "name": "Marisol Vega", "seniority": "senior" }],
+    "customer_participants": [
+      { "name": "Owen Delacroix", "email": "owen.delacroix@cascadiahealth.example", "title": "Manager, Sales Operations", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "cs-mtg-2026-08-01",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-08-01T17:30:00Z",
+    "title": "Monthly review",
+    "our_participants": [{ "name": "Marisol Vega", "seniority": "senior" }],
+    "customer_participants": [
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "title": "Senior Director, Revenue Systems", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "cs-msg-2026-06-20",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-06-20T13:00:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 2,
+    "customer_participants": [
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "seniority": "senior", "is_champion": true }
+    ]
+  },
+  {
+    "id": "cs-msg-2026-07-14",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-07-14T15:20:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 5,
+    "customer_participants": [
+      { "name": "Owen Delacroix", "email": "owen.delacroix@cascadiahealth.example", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "cs-msg-2026-07-27",
+    "account_id": "001Kx000005NwLgQAK",
+    "source": "comms",
+    "provider": "shared_channel",
+    "type": "message",
+    "occurred_at": "2026-07-27T12:10:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 3,
+    "customer_participants": [
+      { "name": "Alina Okonkwo", "email": "alina.okonkwo@cascadiahealth.example", "seniority": "senior", "is_champion": true }
+    ]
+  },
+
+  {
+    "id": "iv-mtg-2026-03-05",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-03-05T14:30:00Z",
+    "title": "Lead routing — design review",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Hollis Bennett", "email": "hollis.bennett@ironvalemfg.example", "title": "VP Commercial Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" }
+    ]
+  },
+  {
+    "id": "iv-mtg-2026-04-16",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-04-16T14:30:00Z",
+    "title": "Routing build — checkpoint",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" }
+    ]
+  },
+  {
+    "id": "iv-mtg-2026-05-21",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-05-21T14:30:00Z",
+    "title": "Escalation: duplicate lead assignment",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Hollis Bennett", "email": "hollis.bennett@ironvalemfg.example", "title": "VP Commercial Operations", "seniority": "senior", "is_champion": true },
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" }
+    ]
+  },
+  {
+    "id": "iv-mtg-2026-06-30",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-06-30T14:30:00Z",
+    "title": "Routing rules — rework session",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" },
+      { "name": "Sasha Petrov", "email": "sasha.petrov@ironvalemfg.example", "title": "CRM Administrator", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "iv-mtg-2026-07-28",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-07-28T14:30:00Z",
+    "title": "Weekly working session",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" }
+    ]
+  },
+  {
+    "id": "iv-mtg-2026-08-05",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "transcripts",
+    "provider": "conversation_intelligence",
+    "type": "meeting",
+    "occurred_at": "2026-08-05T14:30:00Z",
+    "title": "Escalation follow-up: duplicate assignment recurrence",
+    "our_participants": [{ "name": "Priyanka Shah", "seniority": "ic" }],
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "title": "Director of Sales Operations", "seniority": "senior" },
+      { "name": "Sasha Petrov", "email": "sasha.petrov@ironvalemfg.example", "title": "CRM Administrator", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "iv-msg-2026-07-05",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-07-05T09:00:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 20,
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "seniority": "senior" }
+    ]
+  },
+  {
+    "id": "iv-msg-2026-07-22",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-07-22T11:30:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 30,
+    "customer_participants": [
+      { "name": "Sasha Petrov", "email": "sasha.petrov@ironvalemfg.example", "seniority": "ic" }
+    ]
+  },
+  {
+    "id": "iv-msg-2026-08-02",
+    "account_id": "001Kx000005NwMVQA0",
+    "source": "comms",
+    "provider": "email",
+    "type": "message",
+    "occurred_at": "2026-08-02T08:15:00Z",
+    "direction": "inbound",
+    "response_latency_hours": 26,
+    "customer_participants": [
+      { "name": "Ray Okafor", "email": "ray.okafor@ironvalemfg.example", "seniority": "senior" }
+    ]
+  }
+]

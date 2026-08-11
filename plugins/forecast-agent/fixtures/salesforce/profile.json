@@ -1,0 +1,23 @@
+{
+  "_comment": "Fixture-only stand-in for ~/.leanscale-gtm/profile.json. Pass with --profile so the fixture run never touches a real config.",
+  "schema_version": 1,
+  "org_name": "Northwind Example Corp",
+  "crm": {
+    "system": "salesforce",
+    "mcp_probe": "run_soql_query",
+    "instance_label": "Northwind Production (fixture)",
+    "secondary": "hubspot_marketing"
+  },
+  "fiscal_year_start_month": 2,
+  "fiscal_year_naming": "ends_in",
+  "currency": { "corporate": "USD", "multi_currency": true },
+  "motion": ["inbound_led", "outbound", "enterprise"],
+  "quota_carrying_reps": 9,
+  "segments": ["SMB", "Mid-Market", "Enterprise"],
+  "segment_field": "Account.Segment__c",
+  "material_deal_floor": 10000,
+  "team_map": { "roll_up_field": "User.ManagerId" },
+  "objects": { "opportunity": "Opportunity", "account": "Account", "lead": "Lead" },
+  "competitors": [],
+  "redact_pii_in_reports": false
+}

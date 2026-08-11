@@ -1,0 +1,22 @@
+{
+  "name": "customer-health",
+  "version": "1.0.0",
+  "description": "Scores every customer account twice \u2014 sentiment and commercial risk, kept separate \u2014 so the happy account with an unsigned renewal stops hiding inside a blended health score.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "customer-success",
+    "churn",
+    "renewals",
+    "salesforce",
+    "hubspot",
+    "health-score",
+    "sentiment"
+  ]
+}

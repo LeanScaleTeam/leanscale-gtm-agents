@@ -1,0 +1,160 @@
+{
+  "_comment": "Fixture-only config for the bundled offline test run. Same shape as config.example.json with three differences, each noted below, that suit a six-call sample of abridged transcripts. Do not copy this into ~/.leanscale-gtm/ — copy config.example.json.",
+  "framework": {
+    "name": "MEDDPICC",
+    "custom": false,
+    "dimensions": [
+      {
+        "key": "metrics",
+        "label": "Metrics",
+        "tier": "fundamental",
+        "evidence_rule": "A quantified business impact in the buyer's own words — money, time, headcount, volume or a missed deadline. A rep asserting a number does not count unless the buyer confirms it on the call.",
+        "met_means": "A number and what it is a number of. 'Roughly 30 hours a month between two people' is met; 'it takes ages' is missing."
+      },
+      {
+        "key": "economic_buyer",
+        "label": "Economic Buyer",
+        "tier": "fundamental",
+        "evidence_rule": "The person who can approve the spend is named, and either their authority or their criteria is stated on the call.",
+        "met_means": "Named plus one of: they are in the room, their approval threshold is stated, or the buyer describes what they will need from them. A job title with no name is partial."
+      },
+      {
+        "key": "decision_criteria",
+        "label": "Decision Criteria",
+        "tier": "advanced",
+        "evidence_rule": "What the buyer will compare options against, or what would disqualify one, stated by the buyer.",
+        "met_means": "At least two criteria, or one criterion plus a disqualifier. A single vague preference is partial."
+      },
+      {
+        "key": "decision_process",
+        "label": "Decision Process",
+        "tier": "advanced",
+        "evidence_rule": "The steps, forums and people between today and a signature, stated by the buyer.",
+        "met_means": "A sequence with at least one date or forum. One step with no sequence is partial."
+      },
+      {
+        "key": "paper_process",
+        "label": "Paper Process",
+        "tier": "advanced",
+        "evidence_rule": "How a contract actually gets signed: legal review, procurement, security review, required artefacts, typical duration.",
+        "met_means": "At least one concrete constraint with a duration or an artefact. Mark not_applicable on a first discovery call where no evaluation has been agreed."
+      },
+      {
+        "key": "identify_pain",
+        "label": "Identify Pain",
+        "tier": "fundamental",
+        "evidence_rule": "A business consequence the buyer feels, beyond a process complaint — what it costs them, personally or commercially.",
+        "met_means": "The buyer names a consequence, not just an inconvenience. 'It's annoying' is missing; 'I told the board February and I missed it' is met."
+      },
+      {
+        "key": "champion",
+        "label": "Champion",
+        "tier": "fundamental",
+        "evidence_rule": "Someone who sells internally when you are not in the room — evidenced by them taking an action, not by them being friendly.",
+        "met_means": "They commit to do something internally: build the case, make an introduction, take it to a forum. Enthusiasm with no action is partial."
+      },
+      {
+        "key": "competition",
+        "label": "Competition",
+        "tier": "advanced",
+        "evidence_rule": "What else is being considered, including do-nothing, an in-house build, and competing internal budget priorities.",
+        "met_means": "The alternative is named and something is learned about how the buyer weighs it. Naming a competitor and moving on is partial."
+      }
+    ]
+  },
+  "_framework_help": "The qualification framework you actually coach to. Built-in sets: MEDDPICC, MEDDIC, BANT, SPICED, CHALLENGER, COMMAND_OF_THE_MESSAGE. Set name to CUSTOM and replace the dimensions array to coach against your own. Every dimension needs a key, a label, a tier ('fundamental' or 'advanced'), an evidence_rule (what counts as proof) and a met_means (where the line between met and partial sits) — those two strings are what the scoring pass reads, so vague ones produce vague coaching.",
+  "call_types": [
+    "discovery",
+    "demo"
+  ],
+  "_call_types_help": "Which call types to coach. Anything not in this list is skipped. Common additions: 'technical_validation', 'negotiation', 'qbr', 'renewal'.",
+  "reps": [
+    {
+      "name": "Dana Whitfield",
+      "email": "dana@acmedata.io",
+      "start_date": "2022-11-07",
+      "role": "AE",
+      "segment": "Mid-Market"
+    },
+    {
+      "name": "Priya Raman",
+      "email": "priya@acmedata.io",
+      "start_date": "2025-09-15",
+      "role": "AE",
+      "segment": "Enterprise"
+    },
+    {
+      "name": "Marcus Oyelaran",
+      "email": "marcus@acmedata.io",
+      "start_date": "2026-06-01",
+      "role": "AE",
+      "segment": "Mid-Market"
+    }
+  ],
+  "_reps_help": "The roster being coached. start_date drives tenure-aware coaching — a rep ten weeks in is coached on fundamentals, a rep three years in on the advanced dimensions. email is also how speakers get resolved to internal when a transcript export carries no affiliation flag, so keep it accurate.",
+  "tenure_bands": {
+    "ramping_days": 90,
+    "developing_days": 365
+  },
+  "_tenure_bands_help": "Under ramping_days = ramping; under developing_days = developing; beyond that = tenured. Industry defaults — set them to your own ramp definition if you have one.",
+  "mechanics_targets": {
+    "rep_talk_ratio_max_pct": 55,
+    "longest_monologue_max_sec": 150,
+    "min_questions_per_30min": 3,
+    "next_step_set_target_pct": 90,
+    "earliest_pricing_position_pct": 25,
+    "source": "industry default"
+  },
+  "_mechanics_targets_help": "FIXTURE: question rate lowered from the shipped default of 8 because these sample transcripts are abridged excerpts, not full recordings, so every count is artificially low. Every other threshold is the shipped default.",
+  "competitors": [],
+  "_competitors_help": "Extra competitor names to count mentions of, on top of profile.json's competitors list. Include 'in-house build' style alternatives if your team says them out loud. Mention counting is a plain keyword scan and is reported as a mention count, never as a judgment about how well competition was handled — that judgment is a framework dimension.",
+  "pricing_keywords": [
+    "pricing",
+    "price",
+    "list price",
+    "discount",
+    "quote",
+    "per seat",
+    "per user",
+    "how much",
+    "what this costs",
+    "what does it cost",
+    "ballpark"
+  ],
+  "_pricing_keywords_help": "Words that locate the first pricing moment in a call. This is a locator, not an interpreter — the report says when pricing came up and who raised it, and leaves the meaning to you.",
+  "output_audience": "manager",
+  "_output_audience_help": "'manager' (default) writes one team pattern report and nothing rep-facing. 'reps' additionally writes a one-page coaching card per rep into coaching/ inside the run folder, so you can hand them out without forwarding the team report. Reps ignore per-call feedback; managers act on patterns — so the team report is the product either way.",
+  "include_per_call_reviews": false,
+  "_include_per_call_reviews_help": "Adds the full per-call scorecards to the end of the report. Off by default: the point of this plugin is one pattern the manager can coach on Monday, not nine call reviews nobody reads. Every per-call score is always in findings.json regardless.",
+  "exemplar_call_ids": [
+    "call-1044",
+    "call-1046"
+  ],
+  "_exemplar_call_ids_help": "FIXTURE: the two calls the fictional manager considers good. One of them scores well below the other, which is what makes the calibration section worth looking at.",
+  "transcript_source": {
+    "provider": "local_directory",
+    "internal_domains": [
+      "acmedata.io"
+    ],
+    "local_directory": "~/call-transcripts",
+    "folder_id": null,
+    "workspace": null
+  },
+  "_transcript_source_help": "provider is one of: gong, fireflies, chorus, grain, otter, zoom, google_drive, local_directory, mixed. internal_domains is how a speaker gets resolved to your side when the export carries no affiliation flag — list every domain your team sends mail from. local_directory is used by the local_directory provider; folder_id by google_drive; workspace by the platforms that scope tokens to one.",
+  "window_days": 30,
+  "_window_days_help": "How far back to pull calls. 30 suits a monthly cadence; 90 gives a rep with low call volume enough evidence to be coached on.",
+  "min_call_duration_sec": 300,
+  "_min_call_duration_sec_help": "Ignore anything shorter — a five-minute call is a reschedule, not a discovery call, and it drags every average down.",
+  "min_calls_per_rep": 2,
+  "_min_calls_per_rep_help": "FIXTURE: lowered from 3 because the sample has two calls per rep. In a real deployment leave it at 3.",
+  "min_instances_for_pattern": 3,
+  "_min_instances_for_pattern_help": "A dimension needs at least this many scored calls before it can be called the team's weakest. Stops a two-call fluke becoming Monday's coaching topic.",
+  "coverage_warn_pct": 60,
+  "_coverage_warn_pct_help": "Dimensions below this coverage percentage are listed as secondary gaps under the headline finding.",
+  "material_deal_floor": null,
+  "_material_deal_floor_help": "Deal size above which a framework gap is treated as expensive. null inherits profile.json's material_deal_floor, which is what you want unless coaching should use a different bar from the rest of the suite.",
+  "demote_unverified_quotes": true,
+  "_demote_unverified_quotes_help": "On (recommended): any met or partial whose supporting quote cannot be found verbatim in the transcript is demoted to unscored and listed as a data-quality finding. This is the guard against a coaching report built on a paraphrase that nobody actually said.",
+  "cadence": "monthly",
+  "_cadence_help": "Documentation only — how often you intend to run this. Nothing here schedules anything; you run it, or your own scheduler does."
+}

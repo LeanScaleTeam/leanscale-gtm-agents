@@ -1,0 +1,115 @@
+{
+  "_comment": "lead-source plugin settings. Copy to ~/.leanscale-gtm/lead-source.json — /lead-source:setup writes it for you, but it is designed to be edited by hand afterwards. Defaults below are for Salesforce; every key has a HubSpot equivalent noted in its help text. Keys beginning with _ are documentation and are ignored at runtime. Anything you omit falls back to the built-in default, and nested blocks merge key by key, so overriding one threshold does not wipe the others.",
+
+  "crm": "salesforce",
+  "_crm_help": "salesforce or hubspot. Leave it out to inherit crm.system from ~/.leanscale-gtm/profile.json.",
+
+  "window_days": 540,
+  "_window_days_help": "How far back to look, by record creation date. 540 days gives six quarters, which is the minimum needed to see a trend rather than a wobble.",
+
+  "trend_bucket": "quarter",
+  "_trend_bucket_help": "quarter or month. Quarters use your fiscal year from profile.json, so the periods match the ones on your board deck.",
+
+  "min_bucket_records": 25,
+  "_min_bucket_records_help": "Periods with fewer records than this are shown in the trend table but excluded from the worsening-trend calculation, so a half-finished quarter cannot fake a trend.",
+
+  "max_evidence_rows": 50,
+  "_max_evidence_rows_help": "Cap on rows carried into any one evidence table. The complete set always stays in findings.json.",
+
+  "objects": {
+    "primary": { "raw_file": "leads.json", "label": "Lead", "id_field": "Id", "created_field": "CreatedDate" },
+    "intermediate": { "raw_file": "contacts.json", "label": "Contact", "id_field": "Id", "created_field": "CreatedDate" },
+    "deal": { "raw_file": "opportunities.json", "label": "Opportunity", "id_field": "Id", "created_field": "CreatedDate" }
+  },
+  "_objects_help": "The three hops source has to survive. On HubSpot there is no Lead object, so set intermediate.raw_file to \"\" and use primary=contacts.json, deal=deals.json with created_field 'createdate'.",
+
+  "fields": {
+    "reported_source": { "primary": "LeadSource", "intermediate": "LeadSource", "deal": "LeadSource" },
+    "first_touch": { "primary": "LeadSource" },
+    "last_touch": { "primary": "" },
+    "self_reported": { "primary": "" },
+    "utm_source": { "primary": "" },
+    "utm_medium": { "primary": "" },
+    "utm_campaign": { "primary": "" }
+  },
+  "_fields_help": "reported_source is THE field your channel report is built on — everything headline is measured against it. first_touch and last_touch are what you INTEND those fields to mean; the run checks whether they behave that way. HubSpot equivalents: reported_source is usually a custom property such as original_lead_source, first_touch is hs_analytics_source, last_touch is hs_latest_source.",
+
+  "extra_source_fields": [],
+  "_extra_source_fields_help": "Any other field that smells like source or channel, as [{\"object\":\"primary\",\"field\":\"Channel__c\"}]. These appear in the field inventory and its null-rate table but do not drive the score.",
+
+  "intended_taxonomy": [],
+  "_intended_taxonomy_help": "The channel list you BELIEVE you have — the one on the report, not the one in the picklist. The run compares reality against it, and the gap is the deliverable. Leave it empty and off-taxonomy detection is skipped.",
+
+  "placeholder_values": [],
+  "_placeholder_values_help": "Extra values that occupy the field without attributing anything, on top of the built-ins (Other, Unknown, N/A, None, TBD, Test, Legacy, Imported, ...). Add your own, e.g. 'Not Provided'.",
+
+  "extra_synonym_groups": {},
+  "_extra_synonym_groups_help": "Your own channel vocabulary, as {\"group_name\": [\"term\", \"term\"]}. Built-in groups win ties, so you can add terms but cannot silently re-point an existing group.",
+
+  "similarity_threshold": 0.88,
+  "_similarity_threshold_help": "How close two normalised values must be before a merge is PROPOSED. Raise it towards 0.95 for fewer, safer proposals; below 0.85 it starts pairing genuinely different channels.",
+
+  "subset_min_records": 10,
+  "_subset_min_records_help": "A one-word-shorter value ('Referral' vs 'Customer Referral') is only proposed as a merge candidate once it carries at least this many records.",
+
+  "creation_route": {
+    "fields": ["Record_Creation_Route__c", "hs_object_source_label", "hs_object_source", "CreatedBy.Name"],
+    "rules": [
+      { "route": "web_form", "matches": ["form", "web to lead", "web-to-lead", "marketing site", "landing page", "website"] },
+      { "route": "import", "matches": ["import", "data loader", "dataloader", "batch", "csv", "list upload"] },
+      { "route": "api", "matches": ["api", "sync", "integration", "connector", "enrichment", "workflow", "automation"] },
+      { "route": "manual", "matches": ["crm ui", "crm_ui", "manual", "salesforce ui", "rep", "user"] }
+    ],
+    "default": "manual"
+  },
+  "_creation_route_help": "How a record got created, which is where the missing source concentrates. Fields are tried in order and the first rule whose match string appears in the value wins, so order the rules from most specific to least. On HubSpot hs_object_source_label does this natively (FORM / IMPORT / INTEGRATION / CRM_UI); on Salesforce the honest proxy is the creating user.",
+
+  "web_routes": ["web_form"],
+  "_web_routes_help": "Which routes should have carried a UTM. The UTM capture rate is measured against records created through these routes only, because expecting a UTM on a hand-typed record is not a finding.",
+
+  "conversion": {
+    "enabled": true,
+    "converted_flag_field": "IsConverted",
+    "converted_date_field": "ConvertedDate",
+    "to_intermediate_id_field": "ConvertedContactId",
+    "to_deal_id_field": "ConvertedOpportunityId",
+    "converted_by_field": "CreatedBy.Name",
+    "lifecycle_progressed_field": "",
+    "association_file": ""
+  },
+  "_conversion_help": "How to follow one record to the next. converted_by_field is read from the TARGET record first (Salesforce has no ConvertedBy on Lead, so the user who created the Opportunity is the converting user). On HubSpot: leave converted_flag_field empty, set lifecycle_progressed_field to hs_lifecyclestage_opportunity_date, and set association_file to associations.json. Set enabled to false only if you genuinely have no downstream object — it disables the single most valuable finding here.",
+
+  "won": { "boolean_field": "IsWon", "stage_field": "StageName", "won_stages": ["Closed Won"] },
+  "_won_help": "How a win is recognised, for the 'volume but never wins' check. The boolean is tried first, then the stage against won_stages. HubSpot: boolean_field hs_is_closed_won, stage_field dealstage, won_stages ['closedwon'].",
+
+  "agreement_pairs": [],
+  "_agreement_pairs_help": "Two fields on one object that are supposed to say the same thing, as [{\"object\":\"primary\",\"a\":\"...\",\"b\":\"...\",\"kind\":\"auto_vs_manual\",\"label\":\"...\"}]. kind selects the narrative: self_reported, auto_vs_manual, or generic. The tracked-vs-self-reported pair is added automatically when fields.self_reported is set.",
+
+  "history_file": "lead_history.json",
+  "_history_file_help": "Field history, which is the only way to prove a first-touch field is being overwritten. Salesforce: LeadHistory rows. HubSpot: leave this empty — history arrives inline as propertiesWithHistory on the contact records. Without history, the stability component is dropped from the score and the report says so.",
+
+  "field_definitions_file": "field_definitions.json",
+  "_field_definitions_file_help": "Picklist metadata, used to separate free-text pollution from legitimate values. Salesforce: PicklistValueInfo rows. HubSpot: properties.json from the properties API.",
+
+  "thresholds": {
+    "unattributed_report_floor_pct": 2.0,
+    "unattributed_critical_pct": 20.0,
+    "unattributed_high_pct": 12.0,
+    "unattributed_medium_pct": 6.0,
+    "survival_critical_pct": 70.0,
+    "survival_high_pct": 85.0,
+    "utm_capture_floor_pct": 80.0,
+    "disagreement_high_pct": 25.0,
+    "zero_conversion_min_leads": 25,
+    "route_concentration_multiple": 1.75,
+    "route_min_volume_pct": 5.0,
+    "duplicate_volume_high_pct": 5.0,
+    "collapsed_touch_agreement_pct": 98.0,
+    "overwrite_material_pct": 5.0,
+    "trend_worsening_points": 3.0
+  },
+  "_thresholds_help": "Where each finding starts, and where its severity steps up. Severity means the same thing in every LeanScale GTM agent: critical = the number an executive is looking at is wrong; high = a decision is being made on bad data. Loosen these if you like, but loosening a threshold does not change the underlying number, which stays in findings.json either way.",
+
+  "integrity_weights": { "coverage": 0.30, "survival": 0.25, "taxonomy": 0.20, "agreement": 0.15, "stability": 0.10 },
+  "_integrity_weights_help": "The Source Integrity Score is the weighted mean of these five components. Components that cannot be measured are dropped and the rest are rescaled to sum to 1, and the report names which ones went in. Change the weights if your priorities differ, but change them once and leave them alone — a score whose formula moves cannot be trended."
+}

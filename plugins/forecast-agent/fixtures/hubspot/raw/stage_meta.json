@@ -1,0 +1,67 @@
+{
+  "source": "stage_meta",
+  "tool": "hubspot_get_pipelines",
+  "query": "GET /crm/v3/pipelines/deals",
+  "fetched_at": "2026-09-30T07:00:00.000+0000",
+  "note": "",
+  "records": [
+    {
+      "value": "appointmentscheduled",
+      "label": "Discovery",
+      "order": 1,
+      "probability": 10,
+      "is_closed": false,
+      "forecast_category": "Pipeline"
+    },
+    {
+      "value": "qualifiedtobuy",
+      "label": "Qualified",
+      "order": 2,
+      "probability": 30,
+      "is_closed": false,
+      "forecast_category": "Pipeline"
+    },
+    {
+      "value": "presentationscheduled",
+      "label": "Demo Complete",
+      "order": 3,
+      "probability": 55,
+      "is_closed": false,
+      "forecast_category": "Best Case"
+    },
+    {
+      "value": "decisionmakerboughtin",
+      "label": "Proposal",
+      "order": 4,
+      "probability": 80,
+      "is_closed": false,
+      "forecast_category": "Best Case"
+    },
+    {
+      "value": "contractsent",
+      "label": "Contract Sent",
+      "order": 5,
+      "probability": 95,
+      "is_closed": false,
+      "forecast_category": "Commit"
+    },
+    {
+      "value": "closedwon",
+      "label": "Closed Won",
+      "order": 6,
+      "probability": 100,
+      "is_closed": true,
+      "is_won": true,
+      "forecast_category": "Closed"
+    },
+    {
+      "value": "closedlost",
+      "label": "Closed Lost",
+      "order": 7,
+      "probability": 0,
+      "is_closed": true,
+      "is_won": false,
+      "forecast_category": "Omitted"
+    }
+  ]
+}

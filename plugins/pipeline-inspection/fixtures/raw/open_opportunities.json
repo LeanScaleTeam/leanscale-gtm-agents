@@ -1,0 +1,1716 @@
+{
+  "totalSize": 45,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300000QAB"
+      },
+      "Id": "006000000300000QAB",
+      "Name": "Redshift Telecom - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 480000,
+      "CloseDate": "2026-08-31",
+      "CreatedDate": "2026-03-13T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-04-14T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-29",
+      "NextStep": "Waiting on redlines back from legal",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200017QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Redshift Telecom",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300001QAB"
+      },
+      "Id": "006000000300001QAB",
+      "Name": "Kestrel Semiconductor - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 265000,
+      "CloseDate": "2026-08-31",
+      "CreatedDate": "2026-04-27T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-05-28T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-01",
+      "NextStep": "Waiting on redlines back from legal",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200010QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Kestrel Semiconductor",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300002QAB"
+      },
+      "Id": "006000000300002QAB",
+      "Name": "Ionmark Energy - New Business FY26",
+      "StageName": "Contracting",
+      "Amount": 320000,
+      "CloseDate": "2026-08-17",
+      "CreatedDate": "2026-05-28T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-06-10T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-06",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 85,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200008QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ionmark Energy",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300003QAB"
+      },
+      "Id": "006000000300003QAB",
+      "Name": "Meridian Foods - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 145000,
+      "CloseDate": "2026-06-30",
+      "CreatedDate": "2026-04-09T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-05-06T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-03",
+      "NextStep": null,
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200012QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Meridian Foods",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300004QAB"
+      },
+      "Id": "006000000300004QAB",
+      "Name": "Harbourline Retail - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 88000,
+      "CloseDate": "2026-07-29",
+      "CreatedDate": "2026-04-29T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-05-31T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-16",
+      "NextStep": "Technical validation with the data team",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200007QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Harbourline Retail",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300005QAB"
+      },
+      "Id": "006000000300005QAB",
+      "Name": "Bexley Utilities - New Business FY26",
+      "StageName": "Contracting",
+      "Amount": 210000,
+      "CloseDate": "2026-08-07",
+      "CreatedDate": "2026-06-05T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-06-27T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-05",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 85,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200027QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Bexley Utilities",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300006QAB"
+      },
+      "Id": "006000000300006QAB",
+      "Name": "Corvid Games - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 32000,
+      "CloseDate": "2026-05-14",
+      "CreatedDate": "2026-03-07T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-04-02T00:00:00.000+0000",
+      "LastActivityDate": "2026-05-07",
+      "NextStep": null,
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200028QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Corvid Games",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300007QAB"
+      },
+      "Id": "006000000300007QAB",
+      "Name": "Quarry Mining Co - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 54000,
+      "CloseDate": "2026-10-09",
+      "CreatedDate": "2026-01-17T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-02-23T00:00:00.000+0000",
+      "LastActivityDate": "2026-03-23",
+      "NextStep": null,
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200016QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Quarry Mining Co",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300008QAB"
+      },
+      "Id": "006000000300008QAB",
+      "Name": "Umbra Security - New Business FY26",
+      "StageName": "Solution Review",
+      "Amount": 175000,
+      "CloseDate": "2026-09-24",
+      "CreatedDate": "2026-03-12T00:00:00.000+0000",
+      "LastModifiedDate": "2026-06-19T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-03-31T00:00:00.000+0000",
+      "LastActivityDate": "2026-06-10",
+      "NextStep": "Follow up",
+      "Probability": 40,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200020QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Umbra Security",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300009QAB"
+      },
+      "Id": "006000000300009QAB",
+      "Name": "Granite Peak Ski - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 26000,
+      "CloseDate": "2026-09-12",
+      "CreatedDate": "2026-04-14T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-05-11T00:00:00.000+0000",
+      "LastActivityDate": "2026-06-27",
+      "NextStep": "Waiting on redlines back from legal",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200032QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Granite Peak Ski",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300010QAB"
+      },
+      "Id": "006000000300010QAB",
+      "Name": "Foxglove Apparel - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 67000,
+      "CloseDate": "2026-09-30",
+      "CreatedDate": "2026-05-05T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-06-13T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-10",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200031QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Foxglove Apparel",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300011QAB"
+      },
+      "Id": "006000000300011QAB",
+      "Name": "Dunmore Chemicals - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 240000,
+      "CloseDate": "2026-08-28",
+      "CreatedDate": "2026-04-20T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-05-14T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-24",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200029QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Dunmore Chemicals",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300012QAB"
+      },
+      "Id": "006000000300012QAB",
+      "Name": "Glacier Robotics - New Business FY26",
+      "StageName": "Solution Review",
+      "Amount": 610000,
+      "CloseDate": "2026-10-23",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-12T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-07",
+      "NextStep": "Technical validation with the data team",
+      "Probability": 40,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200006QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Glacier Robotics",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300013QAB"
+      },
+      "Id": "006000000300013QAB",
+      "Name": "Northgate Insurance - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 340000,
+      "CloseDate": "2026-10-31",
+      "CreatedDate": "2026-07-13T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-19T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-02",
+      "NextStep": "Follow up",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200013QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Northgate Insurance",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300014QAB"
+      },
+      "Id": "006000000300014QAB",
+      "Name": "Vantage Rail - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 295000,
+      "CloseDate": "2026-09-18",
+      "CreatedDate": "2026-06-11T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-10T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-30",
+      "NextStep": "Send the revised proposal",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200021QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Vantage Rail",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300015QAB"
+      },
+      "Id": "006000000300015QAB",
+      "Name": "Zephyr Cloud - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 120000,
+      "CloseDate": "2026-10-17",
+      "CreatedDate": "2026-07-02T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-24T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-01",
+      "NextStep": "Confirm budget owner",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200025QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Zephyr Cloud",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300016QAB"
+      },
+      "Id": "006000000300016QAB",
+      "Name": "Alderman Motors - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 47000,
+      "CloseDate": "2026-10-04",
+      "CreatedDate": "2026-06-24T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-17T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-27",
+      "NextStep": null,
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200026QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Alderman Motors",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300017QAB"
+      },
+      "Id": "006000000300017QAB",
+      "Name": "Silverline Air - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 155000,
+      "CloseDate": "2026-08-21",
+      "CreatedDate": "2026-07-05T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-01T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-08",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200018QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Silverline Air",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300018QAB"
+      },
+      "Id": "006000000300018QAB",
+      "Name": "Yarrow Biotech - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 92000,
+      "CloseDate": "2026-08-19",
+      "CreatedDate": "2026-06-19T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-29T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-06",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200024QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Yarrow Biotech",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300019QAB"
+      },
+      "Id": "006000000300019QAB",
+      "Name": "Elmridge Schools - New Business FY26",
+      "StageName": "Solution Review",
+      "Amount": 78000,
+      "CloseDate": "2026-08-22",
+      "CreatedDate": "2026-07-04T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-26T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-04",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 40,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200030QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Elmridge Schools",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300020QAB"
+      },
+      "Id": "006000000300020QAB",
+      "Name": "Halcyon Marine - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": null,
+      "CloseDate": "2026-09-26",
+      "CreatedDate": "2026-06-25T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-08T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-31",
+      "NextStep": "Technical validation with the data team",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200033QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Halcyon Marine",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300021QAB"
+      },
+      "Id": "006000000300021QAB",
+      "Name": "Ivywood Property - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": null,
+      "CloseDate": "2026-10-11",
+      "CreatedDate": "2026-07-11T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-22T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-03",
+      "NextStep": null,
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200034QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ivywood Property",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300022QAB"
+      },
+      "Id": "006000000300022QAB",
+      "Name": "Tessellate Software - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 130000,
+      "CloseDate": "2026-10-20",
+      "CreatedDate": "2026-06-07T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-15T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-05",
+      "NextStep": "Send the revised proposal",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200019QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Tessellate Software",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300023QAB"
+      },
+      "Id": "006000000300023QAB",
+      "Name": "Pinnacle Textiles - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 58000,
+      "CloseDate": "2026-11-02",
+      "CreatedDate": "2026-06-23T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-20T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-28",
+      "NextStep": "Confirm budget owner",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200015QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Pinnacle Textiles",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300024QAB"
+      },
+      "Id": "006000000300024QAB",
+      "Name": "Westmark Legal - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 96000,
+      "CloseDate": "2026-09-08",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "LastModifiedDate": "2026-06-30T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-04T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-22",
+      "NextStep": "Send the revised proposal",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200022QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Westmark Legal",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300025QAB"
+      },
+      "Id": "006000000300025QAB",
+      "Name": "Orbit Pay - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 187000,
+      "CloseDate": "2026-09-01",
+      "CreatedDate": "2026-06-26T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-07T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-02",
+      "NextStep": "Confirm budget owner",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200014QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Orbit Pay",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300026QAB"
+      },
+      "Id": "006000000300026QAB",
+      "Name": "Lumen Grid - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "CreatedDate": "2026-07-06T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-16T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-04",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200011QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Lumen Grid",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300027QAB"
+      },
+      "Id": "006000000300027QAB",
+      "Name": "Lumen Grid - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 175000,
+      "CloseDate": "2026-09-20",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-23T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-26",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200011QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Lumen Grid",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300028QAB"
+      },
+      "Id": "006000000300028QAB",
+      "Name": "Ardent Logistics - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 34000,
+      "CloseDate": "2026-10-31",
+      "CreatedDate": "2026-07-04T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-02T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-08",
+      "NextStep": "Security review call booked with their CISO",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200000QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ardent Logistics",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300029QAB"
+      },
+      "Id": "006000000300029QAB",
+      "Name": "Brightpath Health - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 76000,
+      "CloseDate": "2026-09-23",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-28T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-07",
+      "NextStep": "Waiting on redlines back from legal",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200001QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Brightpath Health",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300030QAB"
+      },
+      "Id": "006000000300030QAB",
+      "Name": "Cobalt Freight - New Business FY26",
+      "StageName": "Solution Review",
+      "Amount": 128000,
+      "CloseDate": "2026-10-12",
+      "CreatedDate": "2026-07-09T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-25T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-06",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 40,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300031QAB"
+      },
+      "Id": "006000000300031QAB",
+      "Name": "Данные Analytics - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 210000,
+      "CloseDate": "2026-09-30",
+      "CreatedDate": "2026-06-28T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-29T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-05",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200003QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Данные Analytics",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300032QAB"
+      },
+      "Id": "006000000300032QAB",
+      "Name": "Everline Media - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 154000,
+      "CloseDate": "2026-09-05",
+      "CreatedDate": "2026-07-10T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-22T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-04",
+      "NextStep": "Technical validation with the data team",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200004QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Everline Media",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300033QAB"
+      },
+      "Id": "006000000300033QAB",
+      "Name": "Fairhaven Bank - New Business FY26",
+      "StageName": "Contracting",
+      "Amount": 268000,
+      "CloseDate": "2026-08-22",
+      "CreatedDate": "2026-06-27T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-02T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-03",
+      "NextStep": "Follow up",
+      "Probability": 85,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000702QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Priya Raghunathan",
+        "Id": "005A000000702QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300034QAB"
+      },
+      "Id": "006000000300034QAB",
+      "Name": "Juniper Labs - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 41000,
+      "CloseDate": "2026-10-31",
+      "CreatedDate": "2026-07-01T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-04T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-02",
+      "NextStep": "Send the revised proposal",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200009QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Juniper Labs",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300035QAB"
+      },
+      "Id": "006000000300035QAB",
+      "Name": "Xenolith Materials - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 63000,
+      "CloseDate": "2026-09-28",
+      "CreatedDate": "2026-07-12T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-30T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-01",
+      "NextStep": "Confirm budget owner",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000700QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Dana Whitfield",
+        "Id": "005A000000700QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200023QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Xenolith Materials",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300036QAB"
+      },
+      "Id": "006000000300036QAB",
+      "Name": "Rosewood Freight - New Business FY26",
+      "StageName": "Solution Review",
+      "Amount": 97000,
+      "CloseDate": "2026-10-04",
+      "CreatedDate": "2026-06-17T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-27T00:00:00.000+0000",
+      "LastActivityDate": "2026-07-31",
+      "NextStep": "Security review call booked with their CISO",
+      "Probability": 40,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200436QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Rosewood Freight",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300037QAB"
+      },
+      "Id": "006000000300037QAB",
+      "Name": "Ardent Logistics - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 189000,
+      "CloseDate": "2026-09-30",
+      "CreatedDate": "2026-06-23T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-20T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-08",
+      "NextStep": "Waiting on redlines back from legal",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000701QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Marcus Oyelaran",
+        "Id": "005A000000701QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200000QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Ardent Logistics",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300038QAB"
+      },
+      "Id": "006000000300038QAB",
+      "Name": "Brightpath Health - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 143000,
+      "CloseDate": "2026-09-19",
+      "CreatedDate": "2026-07-11T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-31T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-07",
+      "NextStep": "Mutual action plan review Thursday",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000703QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Tom Beckerley",
+        "Id": "005A000000703QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200001QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Brightpath Health",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300039QAB"
+      },
+      "Id": "006000000300039QAB",
+      "Name": "Cobalt Freight - New Business FY26",
+      "StageName": "Contracting",
+      "Amount": 355000,
+      "CloseDate": "2026-08-27",
+      "CreatedDate": "2026-07-01T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-04T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-06",
+      "NextStep": "Pricing approval from their CFO",
+      "Probability": 85,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200002QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Cobalt Freight",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300040QAB"
+      },
+      "Id": "006000000300040QAB",
+      "Name": "Everline Media - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 29000,
+      "CloseDate": "2026-10-31",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-01T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-05",
+      "NextStep": "Technical validation with the data team",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200004QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Everline Media",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300041QAB"
+      },
+      "Id": "006000000300041QAB",
+      "Name": "Fairhaven Bank - New Business FY26",
+      "StageName": "Qualification",
+      "Amount": 88000,
+      "CloseDate": "2026-10-01",
+      "CreatedDate": "2026-06-21T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-26T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-04",
+      "NextStep": "Follow up",
+      "Probability": 25,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000704QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Sofia Almeida",
+        "Id": "005A000000704QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200005QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Fairhaven Bank",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300042QAB"
+      },
+      "Id": "006000000300042QAB",
+      "Name": "Juniper Labs - New Business FY26",
+      "StageName": "Proposal",
+      "Amount": 116000,
+      "CloseDate": "2026-09-14",
+      "CreatedDate": "2026-07-18T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-28T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-03",
+      "NextStep": "Send the revised proposal",
+      "Probability": 55,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200009QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Juniper Labs",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300043QAB"
+      },
+      "Id": "006000000300043QAB",
+      "Name": "Zephyr Cloud - New Business FY26",
+      "StageName": "Negotiation",
+      "Amount": 205000,
+      "CloseDate": "2026-09-30",
+      "CreatedDate": "2026-07-16T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-07-24T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-02",
+      "NextStep": "Confirm budget owner",
+      "Probability": 70,
+      "Type": "New Business",
+      "ForecastCategoryName": "Commit",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200025QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Zephyr Cloud",
+        "Industry": "Technology"
+      }
+    },
+    {
+      "attributes": {
+        "type": "Opportunity",
+        "url": "/services/data/v61.0/sobjects/Opportunity/006000000300044QAB"
+      },
+      "Id": "006000000300044QAB",
+      "Name": "Orbit Pay - New Business FY26",
+      "StageName": "Discovery",
+      "Amount": 52000,
+      "CloseDate": "2026-10-23",
+      "CreatedDate": "2026-07-29T00:00:00.000+0000",
+      "LastModifiedDate": "2026-08-07T00:00:00.000+0000",
+      "LastStageChangeDate": "2026-08-03T00:00:00.000+0000",
+      "LastActivityDate": "2026-08-01",
+      "NextStep": "Security review call booked with their CISO",
+      "Probability": 10,
+      "Type": "New Business",
+      "ForecastCategoryName": "Pipeline",
+      "IsClosed": false,
+      "IsWon": false,
+      "OwnerId": "005A000000705QAB",
+      "Owner": {
+        "attributes": {
+          "type": "User"
+        },
+        "Name": "Ken Nakamura",
+        "Id": "005A000000705QAB",
+        "IsActive": true
+      },
+      "AccountId": "001000000200014QAB",
+      "Account": {
+        "attributes": {
+          "type": "Account"
+        },
+        "Name": "Orbit Pay",
+        "Industry": "Technology"
+      }
+    }
+  ]
+}

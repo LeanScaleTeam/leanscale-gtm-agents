@@ -1,0 +1,37 @@
+[
+  {
+    "name": "meetings",
+    "tool": "gong_list_calls",
+    "query": "GET /v2/calls?fromDateTime=2026-08-03T00:00:00Z&toDateTime=2026-08-08T23:59:59Z  then POST /v2/calls/transcript {\"filter\":{\"callIds\":[...]}}",
+    "note": "2 calls in the window.",
+    "diagnosis": "the conversation-intelligence connector returned nothing. Check the window, then whether the API key's scope covers other reps' calls."
+  },
+  {
+    "name": "crm_records",
+    "tool": "hubspot_crm_search",
+    "query": "POST /crm/v3/objects/deals/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"hs_object_id\",\"operator\":\"IN\",\"values\":[\"8801234567\",\"8809900001\",\"8809900002\"]}]}],\"properties\":[\"dealname\",\"dealstage\",\"amount\",\"closedate\",\"hs_next_step\",\"next_step_date\",\"identified_pain\",\"decision_process\",\"decision_timeline\",\"economic_buyer\",\"primary_competitor\",\"description\",\"notes_next_activity_date\"],\"limit\":100}",
+    "note": "Current property values for every candidate deal.",
+    "diagnosis": "the private app token is missing crm.objects.deals.read, or no company matches the attendee domains."
+  },
+  {
+    "name": "match_candidates",
+    "tool": "hubspot_crm_search",
+    "query": "POST /crm/v3/objects/companies/search {\"filterGroups\":[{\"filters\":[{\"propertyName\":\"domain\",\"operator\":\"IN\",\"values\":[\"ridgelinesoftware.com\",\"fairmonthealth.example\"]}]}],\"properties\":[\"name\",\"domain\"]}  then GET /crm/v4/objects/companies/{id}/associations/deals",
+    "note": "Fairmont Health has two open deals and nothing distinguishes them.",
+    "diagnosis": "no candidates — every call will read as unmatched."
+  },
+  {
+    "name": "crm_schema",
+    "tool": "hubspot_properties",
+    "query": "GET /crm/v3/properties/deals  ·  GET /crm/v3/properties/contacts",
+    "note": "Types, options and calculated/read-only flags.",
+    "diagnosis": "no schema captured — picklist and length validation will be skipped."
+  },
+  {
+    "name": "proposals",
+    "tool": "claude",
+    "query": "read each transcript, draft values for allow-listed properties only, quote-verbatim required",
+    "note": "Includes proposals that must be refused.",
+    "diagnosis": "Claude drafted nothing."
+  }
+]

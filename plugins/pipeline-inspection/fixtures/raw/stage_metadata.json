@@ -1,0 +1,110 @@
+{
+  "totalSize": 8,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Discovery",
+      "ApiName": "Discovery",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 0,
+      "DefaultProbability": 10,
+      "ForecastCategoryName": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Qualification",
+      "ApiName": "Qualification",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 1,
+      "DefaultProbability": 25,
+      "ForecastCategoryName": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Solution Review",
+      "ApiName": "Solution Review",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 2,
+      "DefaultProbability": 40,
+      "ForecastCategoryName": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Proposal",
+      "ApiName": "Proposal",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 3,
+      "DefaultProbability": 60,
+      "ForecastCategoryName": "Pipeline"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Negotiation",
+      "ApiName": "Negotiation",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 4,
+      "DefaultProbability": 80,
+      "ForecastCategoryName": "Commit"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Contracting",
+      "ApiName": "Contracting",
+      "IsActive": true,
+      "IsClosed": false,
+      "IsWon": false,
+      "SortOrder": 5,
+      "DefaultProbability": 90,
+      "ForecastCategoryName": "Commit"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Closed Won",
+      "ApiName": "Closed Won",
+      "IsActive": true,
+      "IsClosed": true,
+      "IsWon": true,
+      "SortOrder": 6,
+      "DefaultProbability": 100,
+      "ForecastCategoryName": "Closed"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityStage"
+      },
+      "MasterLabel": "Closed Lost",
+      "ApiName": "Closed Lost",
+      "IsActive": true,
+      "IsClosed": true,
+      "IsWon": false,
+      "SortOrder": 7,
+      "DefaultProbability": 0,
+      "ForecastCategoryName": "Closed"
+    }
+  ]
+}

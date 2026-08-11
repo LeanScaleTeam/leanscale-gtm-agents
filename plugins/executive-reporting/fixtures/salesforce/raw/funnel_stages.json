@@ -1,0 +1,20 @@
+{
+ "records": [
+  {
+   "stage": "mql",
+   "entered": 96
+  },
+  {
+   "stage": "sal",
+   "entered": 141
+  },
+  {
+   "stage": "sql",
+   "entered": 118
+  },
+  {
+   "stage": "won",
+   "entered": 75
+  }
+ ]
+}

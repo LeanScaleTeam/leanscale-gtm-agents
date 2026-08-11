@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+service-account*.json
+secrets/
+.netlify/
+dist/
+.cache/
+__pycache__/
+.timings/

@@ -1,0 +1,6 @@
+{
+  "_comment": "GET /account-info/v3/api-usage/daily. Portal-wide only — HubSpot publishes no per-app breakdown, so 'API call volume by consumer' stays unavailable on HubSpot.",
+  "results": [
+    { "name": "api-calls-daily", "usageLimit": 500000, "currentUsage": 318442, "collectedAt": "2026-08-10T12:00:00Z", "fetchStatus": "SUCCESS" }
+  ]
+}

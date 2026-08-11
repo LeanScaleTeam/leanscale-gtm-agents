@@ -1,0 +1,14 @@
+{
+  "primary": {
+    "tool": "hubspot crm search (POST /crm/v3/objects/contacts/search)",
+    "query": "{\"filterGroups\": [{\"filters\": [{\"propertyName\": \"createdate\", \"operator\": \"GTE\", \"value\": \"<epoch_ms_540_days_ago>\"}]}], \"properties\": [\"createdate\", \"lifecyclestage\", \"hs_lifecyclestage_opportunity_date\", \"hs_object_source_label\", \"original_lead_source\", \"hs_analytics_source\", \"hs_analytics_source_data_1\", \"hs_analytics_source_data_2\", \"hs_latest_source\", \"how_did_you_hear_about_us\", \"utm_source\", \"utm_medium\", \"utm_campaign\", \"email\"], \"propertiesWithHistory\": [\"original_lead_source\", \"hs_analytics_source\", \"utm_source\"], \"limit\": 100}"
+  },
+  "deal": {
+    "tool": "hubspot crm search (POST /crm/v3/objects/deals/search)",
+    "query": "{\"filterGroups\": [{\"filters\": [{\"propertyName\": \"createdate\", \"operator\": \"GTE\", \"value\": \"<epoch_ms_540_days_ago>\"}]}], \"properties\": [\"dealname\", \"dealstage\", \"hs_is_closed_won\", \"amount\", \"original_lead_source\", \"hs_analytics_source\", \"createdate\", \"hubspot_owner_name\", \"closedate\"], \"limit\": 100}"
+  },
+  "history": {
+    "tool": "hubspot crm search (propertiesWithHistory)",
+    "query": "propertiesWithHistory: ['original_lead_source','hs_analytics_source','utm_source'] requested on the contacts search above"
+  }
+}

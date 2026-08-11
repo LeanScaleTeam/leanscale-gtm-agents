@@ -1,0 +1,11 @@
+{
+  "_comment": "One POST /crm/v3/objects/{type}/search per object with limit 1; `total` is read off each response.",
+  "results": [
+    { "objectType": "Contact", "total": 412884 },
+    { "objectType": "Company", "total": 38204 },
+    { "objectType": "Deal", "total": 9411 },
+    { "objectType": "Ticket", "total": 21076 },
+    { "objectType": "Equipment (custom)", "total": 60533 },
+    { "objectType": "LineItem", "total": 24118 }
+  ]
+}

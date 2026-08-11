@@ -1,0 +1,141 @@
+{
+  "_comment": "customer-health settings. Copy to ~/.leanscale-gtm/customer-health.json (the :setup skill writes it for you). Lives in your home directory, not in the plugin, so a plugin update never wipes it. Every key below is followed by a _<key>_help entry explaining it — keys starting with _ are documentation and are ignored by the scripts.",
+  "schema_version": 1,
+
+  "window_days": 180,
+  "_window_days_help": "How far back a run looks for calls, messages, activities and tickets. 180 gives two comparable halves for trending; below 90 the trend is noise.",
+
+  "notice_window_days": 60,
+  "_notice_window_days_help": "Your contractual notice period in days. An unsigned renewal inside this window is the single highest-weighted risk signal in the plugin. Use the real number from your paper, not a round guess.",
+
+  "customer_definition": {
+    "crm": "salesforce",
+    "account_filter_soql": "Type = 'Customer' AND ARR__c > 0",
+    "account_filter_hubspot_property": "lifecyclestage",
+    "account_filter_hubspot_value": "customer",
+    "exclude_account_ids": [],
+    "include_paused": false
+  },
+  "_customer_definition_help": "What counts as a customer. The SOQL fragment or HubSpot property/value that separates live paying accounts from prospects, churned logos and internal test records. exclude_account_ids drops specific records (partners, your own org, demo accounts).",
+
+  "renewal_source": "renewal_opportunity",
+  "_renewal_source_help": "Where the renewal instrument lives: renewal_opportunity | account_fields | contract_object | custom_object | billing_system. This decides which query the run skill uses to populate raw/renewals.json.",
+
+  "crm_fields": {
+    "account_arr": ["ARR__c", "arr", "annual_contract_value", "Active_Contracts_ARR__c"],
+    "account_arr_is_monthly": false,
+    "account_name": ["Name", "name"],
+    "account_owner": ["CSM__c", "Owner.Name", "hubspot_owner_id", "OwnerId"],
+    "account_segment": ["Segment__c", "segment", "Type"],
+    "renewal_date": ["Renewal_Date__c", "renewal_date", "Contract_End_Date__c", "CloseDate", "closedate"],
+    "contract_start": ["Contract_Start_Date__c", "contract_start_date", "Kickoff_Date__c"],
+    "auto_renew": ["Auto_Renew__c", "auto_renew"],
+    "champion_contact": ["Champion__c", "champion_contact", "primary_champion"],
+    "economic_buyer": ["Economic_Buyer__c", "economic_buyer"],
+    "contact_is_active": ["Is_Active__c", "is_active", "Active__c"],
+    "contact_bounced_at": ["EmailBouncedDate", "email_bounced_at", "hs_email_hard_bounce_reason"]
+  },
+  "_crm_fields_help": "Candidate field names, tried in order — the first one that carries a value wins. That way one config works across a Salesforce org with custom fields and a HubSpot portal with snake_case properties. Delete the candidates you do not have so the fallbacks stay honest.",
+
+  "quadrant": {
+    "sentiment_floor": 60,
+    "risk_threshold": 50
+  },
+  "_quadrant_help": "The two cut lines that place an account in a quadrant. sentiment_floor: at or above this an account reads happy. risk_threshold: at or above this an account is commercially at risk. 'Happy but exposed' is sentiment >= floor AND risk >= threshold — the quadrant that churns.",
+
+  "risk_floors": {
+    "unsigned_renewal_inside_window": 55,
+    "unsigned_renewal_critical": 80,
+    "champion_departed": 62
+  },
+  "_risk_floors_help": "Tripwires. Two signals are not one input among ten — they are the thing itself, and a 30% weight cannot on its own carry an account over the risk line. An unsigned renewal inside the notice window floors the composite risk score at unsigned_renewal_inside_window; inside HALF the window (or already past the date) it floors at unsigned_renewal_critical; a departed champion floors at champion_departed. Keep each of these at or above quadrant.risk_threshold or the tripwire stops tripping.",
+
+  "commercial_weights": {
+    "unsigned_renewal": 30,
+    "champion_departure": 14,
+    "external_company_risk": 10,
+    "silence": 9,
+    "contract_value_trend": 8,
+    "single_threading": 8,
+    "exec_touch_gap": 7,
+    "support_burden": 6,
+    "usage_decline": 6,
+    "expansion_absent": 2
+  },
+  "_commercial_weights_help": "Weights for the commercial-risk model. They sum to 100. If a signal has no data anywhere in the book (no ticket source, no usage feed) its weight is redistributed proportionally across the signals that do have data, and the report names what was dropped — a missing feed never quietly lowers a risk score.",
+
+  "sentiment_weights": {
+    "interaction_tone": 40,
+    "escalation_load": 20,
+    "champion_engagement": 15,
+    "senior_attendance": 15,
+    "responsiveness": 10
+  },
+  "_sentiment_weights_help": "Weights for the sentiment model. Same redistribution rule. interaction_tone comes from Claude's per-call qualitative reading in raw/sentiment.json — there is no keyword list anywhere in this plugin.",
+
+  "thresholds": {
+    "recency_half_life_days": 30,
+    "champion_silence_days": 60,
+    "exec_touch_target_days": 90,
+    "min_readings_for_confident_sentiment": 3,
+    "arr_tier_high": 100000,
+    "arr_tier_mid": 25000,
+    "silence_tolerance_days": { "high": 14, "mid": 30, "low": 45 },
+    "silence_full_risk_days": { "high": 60, "mid": 90, "low": 120 },
+    "auto_renew_discount": 0.35,
+    "downsell_material_pct": 10
+  },
+  "_thresholds_help": "recency_half_life_days: a call 30 days old counts half as much as one today. silence_tolerance_days / silence_full_risk_days are keyed by ARR tier — a $400k account goes quiet faster than a $20k one. auto_renew_discount multiplies the unsigned-renewal score when the contract evergreens without a signature.",
+
+  "external_event_points": {
+    "down_round": 35,
+    "acquired": 40,
+    "runway_risk": 30,
+    "layoff": 25,
+    "restructuring": 25,
+    "exec_change": 20,
+    "champion_departure_public": 40,
+    "hiring_freeze": 15,
+    "acquisition": 15,
+    "public_incident": 10,
+    "funding_raise": -25,
+    "ipo": -15,
+    "champion_promotion": -15,
+    "expansion_announcement": -10
+  },
+  "_external_event_points_help": "Points added to the external-company-risk sub-score for each researched event, summed and clamped to 0-100. Negative values are good news that offsets risk. Multiplied by severity (high 1.0 / medium 0.6 / low 0.3) and decayed linearly over external_event_decay_days.",
+
+  "external_severity_multiplier": { "high": 1.0, "medium": 0.6, "low": 0.3 },
+  "_external_severity_multiplier_help": "Claude tags each researched event high/medium/low severity during company research; this converts that tag into a multiplier.",
+
+  "external_event_decay_days": 365,
+  "_external_event_decay_days_help": "An event's weight decays linearly to zero over this many days. A layoff last month is a live signal; the same layoff two years ago is history.",
+
+  "support_source": null,
+  "_support_source_help": "Where support tickets come from: zendesk | jira | intercom | freshdesk | salesforce_case | hubspot_ticket | null. null means the support-burden signal is dropped and its weight redistributed.",
+
+  "usage_source": null,
+  "_usage_source_help": "Where product-usage signal comes from: a warehouse table, an Amplitude/Mixpanel export, a CRM field, or null. null drops the usage signal and redistributes its weight.",
+
+  "accounts": [
+    {
+      "account_id": "REPLACE-WITH-CRM-ID",
+      "name": "Example Account (template — replace or delete this entry)",
+      "kickoff_date": "2025-09-02",
+      "kickoff_arr": 180000,
+      "kickoff_sentiment": 70,
+      "kickoff_engaged_contacts": 4,
+      "kickoff_open_escalations": 0,
+      "champion": { "name": "", "email": "", "title": "" },
+      "economic_buyer": { "name": "", "email": "", "title": "" },
+      "success_criteria": [
+        "What this account said success looks like at kickoff, in their words."
+      ],
+      "notes": "Anything a new CSM would need to know on day one."
+    }
+  ],
+  "_accounts_help": "THE KICKOFF BASELINE. One entry per customer, captured during :setup and never auto-overwritten. kickoff_sentiment is the 0-100 reading at kickoff (or your honest reconstruction, marked as such in notes). Without this, a health score is a vibe: you can say an account is at 64 but not that a year of work moved it from 41. Accounts missing an entry are named in the report as unprovable, not assumed fine.",
+
+  "champion_definition": "The person who spends their own political capital to keep you. Not the day-to-day admin, not the signer.",
+  "_champion_definition_help": "Written here so every CSM answers the champion question the same way. Shown back during :setup."
+}

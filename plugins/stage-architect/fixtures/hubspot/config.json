@@ -1,0 +1,62 @@
+{
+  "_comment": "Fixture config for the bundled HubSpot sample. Two pipelines are in scope on purpose.",
+  "crm": "hubspot",
+  "org_name": "Brightline Group",
+  "pipelines_in_scope": [
+    "default",
+    "renewals"
+  ],
+  "history_lookback_days": 540,
+  "min_cohort_size": 40,
+  "equivalence_band_pp": 5.0,
+  "significance_alpha": 0.05,
+  "zero_dwell_hours": 24,
+  "skip_rate_flag_pct": 25.0,
+  "regression_flag_pct": 8.0,
+  "zombie_p90_multiple": 6.0,
+  "loss_reason_fill_floor_pct": 80.0,
+  "loss_reason_dominance_pct": 60.0,
+  "history_coverage_floor_pct": 80.0,
+  "sales_accepted_stage": "qualifiedtobuy",
+  "lead_lifecycle_exists": true,
+  "stages_are_meant_to_be": "buyer_verifiable",
+  "stage_definitions": {
+    "Discovery Call": {
+      "written_definition": "A first call has been booked.",
+      "verifiability": "buyer_verifiable"
+    },
+    "Qualified": {
+      "written_definition": "Rep considers the deal qualified.",
+      "verifiability": "rep_asserted"
+    },
+    "Demo Delivered": {
+      "written_definition": "A demo has been given.",
+      "verifiability": "rep_asserted"
+    },
+    "Champion Confirmed": {
+      "written_definition": "Rep has identified a champion.",
+      "verifiability": "rep_asserted"
+    }
+  },
+  "believed_conversion_rates": {
+    "headline_metric": "win_rate_from_sales_accepted",
+    "believed_headline_pct": 42.0,
+    "believed_by_stage_pct": {
+      "Discovery Call": 75.0,
+      "Demo Delivered": 80.0
+    }
+  },
+  "fields": {
+    "id": "Id",
+    "name": "dealname",
+    "stage": "dealstage",
+    "amount": "amount",
+    "created": "createdate",
+    "close_date": "closedate",
+    "last_modified": "hs_lastmodifieddate",
+    "loss_reason": "closed_lost_reason",
+    "pipeline": "pipeline",
+    "owner": "hubspot_owner_id"
+  },
+  "material_deal_floor": 2500
+}

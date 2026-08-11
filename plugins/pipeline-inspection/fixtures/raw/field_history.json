@@ -1,0 +1,166 @@
+{
+  "totalSize": 16,
+  "done": true,
+  "records": [
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-04-17",
+      "NewValue": "2026-05-21",
+      "CreatedDate": "2026-04-09T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-05-21",
+      "NewValue": "2026-06-24",
+      "CreatedDate": "2026-05-18T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-06-24",
+      "NewValue": "2026-07-28",
+      "CreatedDate": "2026-06-22T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300000QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-07-28",
+      "NewValue": "2026-08-31",
+      "CreatedDate": "2026-07-20T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-06-02",
+      "NewValue": "2026-07-02",
+      "CreatedDate": "2026-05-28T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-07-02",
+      "NewValue": "2026-08-01",
+      "CreatedDate": "2026-06-29T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300001QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-08-01",
+      "NewValue": "2026-08-31",
+      "CreatedDate": "2026-07-28T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-04-04",
+      "NewValue": "2026-05-19",
+      "CreatedDate": "2026-03-29T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-05-19",
+      "NewValue": "2026-07-03",
+      "CreatedDate": "2026-05-15T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-07-03",
+      "NewValue": "2026-08-17",
+      "CreatedDate": "2026-06-29T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300002QAB",
+      "Field": "Amount",
+      "OldValue": 410000,
+      "NewValue": 320000,
+      "CreatedDate": "2026-07-17T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-05-05",
+      "NewValue": "2026-06-02",
+      "CreatedDate": "2026-04-26T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300003QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-06-02",
+      "NewValue": "2026-06-30",
+      "CreatedDate": "2026-05-30T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-06-12",
+      "NewValue": "2026-07-10",
+      "CreatedDate": "2026-06-03T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300005QAB",
+      "Field": "CloseDate",
+      "OldValue": "2026-07-10",
+      "NewValue": "2026-08-07",
+      "CreatedDate": "2026-07-05T00:00:00.000+0000"
+    },
+    {
+      "attributes": {
+        "type": "OpportunityFieldHistory"
+      },
+      "OpportunityId": "006000000300011QAB",
+      "Field": "Amount",
+      "OldValue": 180000,
+      "NewValue": 240000,
+      "CreatedDate": "2026-07-11T00:00:00.000+0000"
+    }
+  ]
+}

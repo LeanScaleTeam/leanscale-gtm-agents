@@ -1,0 +1,94 @@
+{
+  "_comment": "Fixture config for the bundled Salesforce sample. Pass it with --config so the demo runs without touching a real ~/.leanscale-gtm/meeting-to-crm.json. Two things here are deliberate: LastActivityDate is on the allow-list (to prove the read-only guard still refuses it), and restricted_fields_opt_in is empty (so Amount and CloseDate are refused).",
+  "schema_version": 1,
+  "org_name": "Acme",
+  "crm": "salesforce",
+  "internal_email_domains": ["acme.io"],
+
+  "transcript_source": { "kind": "fireflies", "tool": "fireflies_get_transcripts", "folder_id": null, "local_dir": null },
+
+  "meeting_types": {
+    "include": ["discovery", "demo", "technical_validation", "negotiation", "renewal", "qbr"],
+    "exclude": ["internal", "interview", "one_on_one", "all_hands"],
+    "title_exclude_patterns": ["(?i)standup", "(?i)internal sync"],
+    "require_external_attendee": true,
+    "min_duration_minutes": 10
+  },
+
+  "matching": {
+    "strategies": ["crm_link", "calendar_event", "title_convention", "contact_email_exact", "attendee_domain"],
+    "title_convention": "^\\s*(?P<account>.+?)\\s*(?:<>|\\||—|-)\\s*",
+    "min_score": 0.5,
+    "margin": 0.25,
+    "require_open_opportunity": true,
+    "allow_account_only_match": true,
+    "overrides": {}
+  },
+
+  "field_allowlist": {
+    "Opportunity": {
+      "NextStep": { "overwrite": "always", "label": "Next step", "type": "text" },
+      "Next_Step_Date__c": { "overwrite": "always", "label": "Next step date", "type": "date" },
+      "Primary_Competitor__c": { "overwrite": "if_blank", "label": "Competitor mentioned", "type": "picklist" },
+      "Identified_Pain__c": { "overwrite": "if_blank", "label": "Pain / use case", "type": "multiline" },
+      "Metrics__c": { "overwrite": "if_blank", "label": "Metrics", "type": "multiline" },
+      "Economic_Buyer__c": { "overwrite": "if_blank", "label": "Economic buyer", "type": "text" },
+      "Decision_Criteria__c": { "overwrite": "if_blank", "label": "Decision criteria", "type": "multiline" },
+      "Decision_Process__c": { "overwrite": "if_blank", "label": "Decision process", "type": "multiline" },
+      "Paper_Process__c": { "overwrite": "if_blank", "label": "Paper process", "type": "multiline" },
+      "Champion__c": { "overwrite": "if_blank", "label": "Champion", "type": "text" },
+      "Decision_Timeline__c": { "overwrite": "if_blank", "label": "Decision timeline", "type": "text" },
+      "Description": { "overwrite": "append", "label": "Deal notes", "type": "multiline" },
+      "LastActivityDate": { "overwrite": "if_blank", "label": "Last activity", "type": "date" }
+    },
+    "Task": {
+      "Subject": { "overwrite": "if_blank", "label": "Subject", "type": "text" },
+      "Description": { "overwrite": "if_blank", "label": "Call summary", "type": "multiline" },
+      "ActivityDate": { "overwrite": "if_blank", "label": "Due date", "type": "date" },
+      "Status": { "overwrite": "if_blank", "label": "Status", "type": "picklist" },
+      "Type": { "overwrite": "if_blank", "label": "Type", "type": "picklist" },
+      "WhatId": { "overwrite": "if_blank", "label": "Related to", "type": "text" }
+    },
+    "OpportunityContactRole": {
+      "ContactId": { "overwrite": "if_blank", "label": "Contact", "type": "text" },
+      "Role": { "overwrite": "if_blank", "label": "Role", "type": "picklist" },
+      "IsPrimary": { "overwrite": "if_blank", "label": "Primary", "type": "boolean" }
+    },
+    "Contact": {
+      "FirstName": { "overwrite": "if_blank", "label": "First name", "type": "text" },
+      "LastName": { "overwrite": "if_blank", "label": "Last name", "type": "text" },
+      "Email": { "overwrite": "if_blank", "label": "Email", "type": "text" },
+      "Title": { "overwrite": "if_blank", "label": "Title", "type": "text" },
+      "AccountId": { "overwrite": "if_blank", "label": "Account", "type": "text" }
+    }
+  },
+
+  "restricted_fields_opt_in": [],
+  "read_only_fields": [],
+
+  "framework": {
+    "name": "MEDDPICC",
+    "dimensions": {
+      "metrics": { "object": "Opportunity", "field": "Metrics__c", "label": "Metrics" },
+      "economic_buyer": { "object": "Opportunity", "field": "Economic_Buyer__c", "label": "Economic buyer" },
+      "decision_criteria": { "object": "Opportunity", "field": "Decision_Criteria__c", "label": "Decision criteria" },
+      "decision_process": { "object": "Opportunity", "field": "Decision_Process__c", "label": "Decision process" },
+      "paper_process": { "object": "Opportunity", "field": "Paper_Process__c", "label": "Paper process" },
+      "identified_pain": { "object": "Opportunity", "field": "Identified_Pain__c", "label": "Identified pain" },
+      "champion": { "object": "Opportunity", "field": "Champion__c", "label": "Champion" },
+      "competition": { "object": "Opportunity", "field": "Primary_Competitor__c", "label": "Competition" }
+    }
+  },
+
+  "child_records": {
+    "contact_roles": { "enabled": true, "object": "OpportunityContactRole", "create_missing_contacts": true, "default_role": "Influencer" },
+    "tasks": { "enabled": true, "object": "Task", "subject_prefix": "Next step: ", "default_status": "Not Started", "type": "Call" },
+    "call_summary": { "enabled": true, "object": "Task", "field": "Description", "subject_prefix": "Call summary: ", "type": "Call" }
+  },
+
+  "min_confidence": 0.6,
+  "allow_past_dates": false,
+  "max_value_length": 32000,
+  "approval": { "approvers": [], "require_named_approver": true, "min_review_seconds": 10 },
+  "audit": { "enabled": true }
+}

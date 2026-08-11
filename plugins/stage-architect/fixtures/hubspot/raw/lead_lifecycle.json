@@ -1,0 +1,6814 @@
+{
+  "stage_field": "lifecyclestage",
+  "ordered_stages": [
+    "subscriber",
+    "lead",
+    "marketingqualifiedlead",
+    "salesqualifiedlead",
+    "opportunity"
+  ],
+  "accepted_stage": "salesqualifiedlead",
+  "rejected_stages": [],
+  "records": [
+    {
+      "id": "7700000",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700001",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700002",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-12-31T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700003",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700004",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-04-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700005",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700006",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700007",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700008",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700009",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700010",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700011",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700012",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700013",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-31T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700014",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-03-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700015",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700016",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-29T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700017",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700018",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700019",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700020",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700021",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700022",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700023",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700024",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700025",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-02-13T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700026",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-08-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700027",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700028",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-15T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700029",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700030",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700031",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700032",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700033",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700034",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700035",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700036",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700037",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700038",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700039",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700040",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700041",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700042",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700043",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700044",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-22T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700045",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700046",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700047",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700048",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700049",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700050",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700051",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-02-12T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700052",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700053",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700054",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700055",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700056",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700057",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700058",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700059",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700060",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700061",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-11-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700062",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700063",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700064",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-02-12T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700065",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-20T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700066",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700067",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700068",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700069",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-12-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700070",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700071",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700072",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700073",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700074",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700075",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700076",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700077",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-12T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700078",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-13T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700079",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700080",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700081",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-03-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700082",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700083",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700084",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-09T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700085",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700086",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700087",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700088",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700089",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-05-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700090",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700091",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700092",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-29T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700093",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700094",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700095",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700096",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-20T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700097",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-25T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700098",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700099",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700100",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700101",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700102",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700103",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-17T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700104",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700105",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700106",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700107",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700108",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700109",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700110",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-11T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700111",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-04T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700112",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700113",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700114",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700115",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-10-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700116",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-01T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700117",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700118",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700119",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700120",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700121",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700122",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700123",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700124",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700125",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700126",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700127",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700128",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700129",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700130",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-06-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700131",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700132",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-31T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700133",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-25T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700134",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700135",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-07-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700136",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700137",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700138",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700139",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700140",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700141",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-10T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700142",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700143",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700144",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-15T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700145",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700146",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700147",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-09-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700148",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700149",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700150",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700151",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700152",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700153",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700154",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700155",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-18T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700156",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700157",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700158",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700159",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700160",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700161",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700162",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-09T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700163",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700164",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-02-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700165",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700166",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700167",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700168",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-09T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700169",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-08-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700170",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700171",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700172",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-21T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700173",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700174",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700175",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700176",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700177",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-06-06T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700178",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700179",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700180",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-01-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700181",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700182",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-13T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700183",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-26T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700184",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700185",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-30T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700186",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700187",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-07-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700188",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-18T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700189",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-15T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700190",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700191",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-18T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700192",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700193",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700194",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700195",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-04T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700196",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-08-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700197",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700198",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700199",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700200",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700201",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700202",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700203",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700204",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700205",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700206",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-11-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700207",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-06-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700208",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700209",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700210",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-12-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700211",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-02-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700212",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-10-25T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700213",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-11T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700214",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700215",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700216",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700217",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700218",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-15T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700219",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700220",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700221",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700222",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700223",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700224",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700225",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700226",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700227",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-03-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700228",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-09-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700229",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700230",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700231",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700232",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700233",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700234",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700235",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700236",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700237",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700238",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700239",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-06-29T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700240",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700241",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-12-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700242",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700243",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700244",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700245",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700246",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-31T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700247",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-05T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700248",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700249",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-05-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700250",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700251",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-22T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700252",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-17T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700253",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-10T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700254",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700255",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700256",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700257",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700258",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-02T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700259",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700260",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700261",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700262",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700263",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700264",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-08-05T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700265",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700266",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-11-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700267",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700268",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700269",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-26T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700270",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700271",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700272",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700273",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-23T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700274",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700275",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700276",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700277",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700278",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-12T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700279",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700280",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-15T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700281",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700282",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700283",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700284",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700285",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-21T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700286",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700287",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700288",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700289",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-06T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700290",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700291",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700292",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700293",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700294",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-21T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700295",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700296",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700297",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700298",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-09-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700299",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-06-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700300",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700301",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700302",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700303",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700304",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700305",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700306",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700307",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-21T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700308",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700309",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700310",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700311",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700312",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700313",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700314",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700315",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700316",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-03-31T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700317",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700318",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-26T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700319",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700320",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700321",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-30T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700322",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700323",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-13T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700324",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700325",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-14T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700326",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700327",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700328",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-03-22T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700329",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700330",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700331",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700332",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-05T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700333",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700334",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-14T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700335",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700336",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-08T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700337",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700338",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700339",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-11T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700340",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700341",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700342",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700343",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-10-05T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700344",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700345",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700346",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-25T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700347",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700348",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-04T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700349",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700350",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-25T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700351",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700352",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700353",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700354",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700355",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700356",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700357",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-05-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700358",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-29T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700359",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-13T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700360",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700361",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700362",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700363",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700364",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700365",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-05T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700366",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700367",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700368",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700369",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-02-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700370",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700371",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700372",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-03-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700373",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700374",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700375",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700376",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700377",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700378",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700379",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700380",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700381",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700382",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-17T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700383",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700384",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700385",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700386",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700387",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-02-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700388",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700389",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-07-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700390",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700391",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700392",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700393",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-15T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700394",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-06-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700395",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-02T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700396",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700397",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700398",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-14T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700399",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-03-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700400",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700401",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-08-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700402",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-29T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700403",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700404",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700405",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700406",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700407",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-17T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700408",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700409",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-01T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700410",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-04-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700411",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700412",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700413",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-24T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700414",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700415",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-02-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700416",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700417",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-20T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700418",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700419",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700420",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700421",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700422",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700423",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700424",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-03T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700425",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-04-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700426",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700427",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700428",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700429",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700430",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700431",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700432",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700433",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700434",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700435",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700436",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-18T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700437",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700438",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700439",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700440",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700441",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700442",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700443",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700444",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700445",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700446",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-11-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700447",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700448",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700449",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700450",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700451",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700452",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700453",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700454",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700455",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700456",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-11T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700457",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-14T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700458",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-05T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700459",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-03-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700460",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700461",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700462",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700463",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700464",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-06-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700465",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-01-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700466",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700467",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700468",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700469",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700470",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700471",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700472",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-07-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700473",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700474",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700475",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700476",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-20T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700477",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700478",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700479",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-08-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700480",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700481",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700482",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700483",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-03-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700484",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700485",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700486",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-14T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700487",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700488",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700489",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700490",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700491",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700492",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700493",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-24T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700494",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700495",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700496",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700497",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700498",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-19T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700499",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-02-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700500",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-06-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700501",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-01T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700502",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700503",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700504",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-03-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700505",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700506",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-03-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700507",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700508",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700509",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-13T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700510",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700511",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-27T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700512",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700513",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700514",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-02-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700515",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700516",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700517",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700518",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-03-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700519",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700520",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700521",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700522",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700523",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700524",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700525",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-25T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700526",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700527",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700528",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700529",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700530",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700531",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700532",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700533",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700534",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-01T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700535",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700536",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700537",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700538",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-09-13T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700539",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700540",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700541",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-06T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700542",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-17T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700543",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700544",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700545",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700546",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700547",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-29T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700548",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700549",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-07-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700550",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700551",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700552",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700553",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700554",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700555",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-05-21T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700556",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-01-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700557",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-26T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700558",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-07-13T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700559",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700560",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-06-17T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700561",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700562",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700563",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700564",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-23T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700565",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-07-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700566",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700567",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700568",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-01-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700569",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700570",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700571",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700572",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700573",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-23T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700574",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-05T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700575",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-06T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700576",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-07-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700577",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700578",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700579",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700580",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700581",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700582",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700583",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700584",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700585",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700586",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700587",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700588",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-27T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700589",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-03-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700590",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700591",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700592",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700593",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700594",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700595",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-06T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700596",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700597",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700598",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700599",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700600",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700601",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700602",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700603",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700604",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700605",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700606",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700607",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700608",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-08-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700609",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-07-10T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700610",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700611",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-04-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700612",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700613",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700614",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700615",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-15T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700616",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-20T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700617",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700618",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700619",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-02T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700620",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-02T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700621",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700622",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-04T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700623",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700624",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700625",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-08-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700626",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700627",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-21T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700628",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-01T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700629",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-18T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700630",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700631",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-03-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700632",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-03T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700633",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-30T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700634",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-11T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700635",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700636",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-08-05T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700637",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700638",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700639",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700640",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700641",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700642",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700643",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700644",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-04T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700645",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-22T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700646",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700647",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-10-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700648",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700649",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700650",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-08-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700651",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700652",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700653",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-09-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700654",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-13T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700655",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700656",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700657",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700658",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700659",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700660",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700661",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700662",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-14T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700663",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-07-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700664",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-24T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700665",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700666",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-08-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700667",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700668",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700669",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700670",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-09-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700671",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700672",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-04-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700673",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700674",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700675",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-02-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700676",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700677",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-04-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700678",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-13T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700679",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700680",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700681",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-06-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700682",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-07-15T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700683",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700684",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700685",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-04T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700686",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700687",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-21T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700688",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-08-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700689",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700690",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-12-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700691",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-01-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700692",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700693",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-15T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700694",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700695",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-11T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700696",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-06T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700697",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-13T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700698",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700699",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700700",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700701",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-04-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700702",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-01T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700703",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700704",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700705",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700706",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700707",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700708",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700709",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-15T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700710",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-09-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700711",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-04-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700712",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-14T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700713",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-29T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700714",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700715",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700716",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700717",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700718",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-18T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700719",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-08-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700720",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700721",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700722",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-04-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700723",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-29T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700724",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700725",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-05-28T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700726",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-08T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700727",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700728",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-06-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700729",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700730",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-05T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700731",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-28T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700732",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-02-25T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700733",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-05-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700734",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-14T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700735",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-05-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700736",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-02T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700737",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700738",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-05-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700739",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700740",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-19T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700741",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700742",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-08-01T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700743",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-06-22T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700744",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-06-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700745",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-05-23T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700746",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700747",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-07-13T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700748",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700749",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700750",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-21T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700751",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-10-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700752",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-22T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700753",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700754",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700755",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700756",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-05T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700757",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-07T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700758",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-11T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700759",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-22T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700760",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-03-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700761",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-04-12T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700762",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-04-30T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700763",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-09T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700764",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-09T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700765",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-02-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700766",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-11-28T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700767",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-07-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700768",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-21T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700769",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-01T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700770",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-20T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700771",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-08-03T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700772",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700773",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-07-30T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700774",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-21T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700775",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-07-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700776",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-01-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700777",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-06-06T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700778",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700779",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700780",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-23T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700781",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-09-04T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700782",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-08T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700783",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-10-27T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700784",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700785",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-07-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700786",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-25T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700787",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-09T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700788",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700789",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700790",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-08-31T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700791",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-15T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700792",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-10-07T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700793",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-05-17T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700794",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-11-30T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700795",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-09-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700796",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-04-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700797",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-25T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700798",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-19T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700799",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-06-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700800",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-20T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700801",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700802",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-08-23T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700803",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-05-20T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700804",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-07-30T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700805",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-12-16T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700806",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-10T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700807",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-13T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700808",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-05-07T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700809",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700810",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-11-17T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700811",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-06-17T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700812",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-03-28T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700813",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-12-19T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700814",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-03-29T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700815",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-07-27T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700816",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-17T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700817",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-07-11T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700818",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-12T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700819",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-05-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700820",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-07T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700821",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-06-05T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700822",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-04-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700823",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-07-10T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700824",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-01-17T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700825",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700826",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-11-15T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700827",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-26T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700828",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-18T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700829",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-07-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700830",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-01-10T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700831",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-03T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700832",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-05-05T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700833",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-12T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700834",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2026-05-02T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700835",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-09-23T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700836",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-12-08T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700837",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-06-24T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700838",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2026-02-03T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700839",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-21T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700840",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2026-07-31T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700841",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-06-09T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700842",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-10-22T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700843",
+      "properties": {
+        "lifecyclestage": "marketingqualifiedlead",
+        "createdate": "2025-09-26T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700844",
+      "properties": {
+        "lifecyclestage": "salesqualifiedlead",
+        "createdate": "2025-04-03T00:00:00.000Z",
+        "hs_lead_status": "UNQUALIFIED"
+      }
+    },
+    {
+      "id": "7700845",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2025-12-06T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700846",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2026-03-16T00:00:00.000Z",
+        "hs_lead_status": "IN_PROGRESS"
+      }
+    },
+    {
+      "id": "7700847",
+      "properties": {
+        "lifecyclestage": "lead",
+        "createdate": "2025-11-03T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    },
+    {
+      "id": "7700848",
+      "properties": {
+        "lifecyclestage": "opportunity",
+        "createdate": "2026-01-30T00:00:00.000Z",
+        "hs_lead_status": "NEW"
+      }
+    },
+    {
+      "id": "7700849",
+      "properties": {
+        "lifecyclestage": "subscriber",
+        "createdate": "2025-05-26T00:00:00.000Z",
+        "hs_lead_status": "OPEN"
+      }
+    }
+  ]
+}

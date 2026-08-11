@@ -1,0 +1,149 @@
+{
+  "crm": "hubspot",
+  "instance_label": "Brightline Portal 24401882",
+  "generated_at": "2026-08-10T00:00:00.000Z",
+  "history_source": "deal property history (propertiesWithHistory=dealstage)",
+  "history_retention_note": "HubSpot retains deal property history for the life of the record.",
+  "loss_reason_field": "closed_lost_reason",
+  "loss_reason_values": [
+    "Went dark",
+    "Chose competitor",
+    "Too expensive",
+    "Bad timing",
+    "Missing feature"
+  ],
+  "pipelines": [
+    {
+      "id": "default",
+      "label": "Sales Pipeline",
+      "stages": [
+        {
+          "id": "appointmentscheduled",
+          "label": "Discovery Call",
+          "order": 0,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 10,
+          "is_active": true,
+          "record_count_open": 19
+        },
+        {
+          "id": "qualifiedtobuy",
+          "label": "Qualified",
+          "order": 1,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 25,
+          "is_active": true,
+          "record_count_open": 24
+        },
+        {
+          "id": "presentationscheduled",
+          "label": "Demo Delivered",
+          "order": 2,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 45,
+          "is_active": true,
+          "record_count_open": 15
+        },
+        {
+          "id": "decisionmakerboughtin",
+          "label": "Champion Confirmed",
+          "order": 3,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 70,
+          "is_active": true,
+          "record_count_open": 7
+        },
+        {
+          "id": "contractsent",
+          "label": "Contract Sent",
+          "order": 4,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 90,
+          "is_active": true,
+          "record_count_open": 5
+        },
+        {
+          "id": "closedwon",
+          "label": "Closed Won",
+          "order": 5,
+          "is_closed": true,
+          "is_won": true,
+          "default_probability": 100,
+          "is_active": true,
+          "record_count_open": 0
+        },
+        {
+          "id": "closedlost",
+          "label": "Closed Lost",
+          "order": 6,
+          "is_closed": true,
+          "is_won": false,
+          "default_probability": 0,
+          "is_active": true,
+          "record_count_open": 0
+        }
+      ]
+    },
+    {
+      "id": "renewals",
+      "label": "Renewals",
+      "stages": [
+        {
+          "id": "appointmentscheduled",
+          "label": "Renewal Opened",
+          "order": 0,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 40,
+          "is_active": true,
+          "record_count_open": 8
+        },
+        {
+          "id": "qualifiedtobuy",
+          "label": "Terms Agreed",
+          "order": 1,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 70,
+          "is_active": true,
+          "record_count_open": 5
+        },
+        {
+          "id": "contractsent",
+          "label": "Paper Out",
+          "order": 2,
+          "is_closed": false,
+          "is_won": false,
+          "default_probability": 90,
+          "is_active": true,
+          "record_count_open": 3
+        },
+        {
+          "id": "closedwon",
+          "label": "Renewed",
+          "order": 3,
+          "is_closed": true,
+          "is_won": true,
+          "default_probability": 100,
+          "is_active": true,
+          "record_count_open": 0
+        },
+        {
+          "id": "closedlost",
+          "label": "Churned",
+          "order": 4,
+          "is_closed": true,
+          "is_won": false,
+          "default_probability": 0,
+          "is_active": true,
+          "record_count_open": 0
+        }
+      ]
+    }
+  ]
+}

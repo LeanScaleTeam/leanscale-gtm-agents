@@ -1,0 +1,5 @@
+{
+  "results": [
+    { "id": "2110941", "objectTypeId": "2-1109", "name": "equipment", "labels": { "singular": "Equipment", "plural": "Equipment" }, "fullyQualifiedName": "p24817033_equipment", "createdAt": "2025-02-11T10:00:00Z", "updatedAt": "2026-01-04T10:00:00Z", "archived": false, "primaryDisplayProperty": "serial_number" }
+  ]
+}

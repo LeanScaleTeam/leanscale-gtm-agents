@@ -1,0 +1,42 @@
+{
+  "_comment": "Fixture config — a Salesforce org that reports on Lead.LeadSource, believes it is first-touch, and has a separate 'most recent source' field nobody maintains. Used by the offline end-to-end test; see config.example.json for the documented version.",
+  "crm": "salesforce",
+  "window_days": 540,
+  "trend_bucket": "quarter",
+  "min_bucket_records": 25,
+
+  "objects": {
+    "primary": { "raw_file": "leads.json", "label": "Lead", "id_field": "Id", "created_field": "CreatedDate" },
+    "intermediate": { "raw_file": "contacts.json", "label": "Contact", "id_field": "Id", "created_field": "CreatedDate" },
+    "deal": { "raw_file": "opportunities.json", "label": "Opportunity", "id_field": "Id", "created_field": "CreatedDate" }
+  },
+
+  "fields": {
+    "reported_source": { "primary": "LeadSource", "intermediate": "LeadSource", "deal": "LeadSource" },
+    "first_touch": { "primary": "LeadSource" },
+    "last_touch": { "primary": "Most_Recent_Source__c" },
+    "self_reported": { "primary": "How_Did_You_Hear_About_Us__c" },
+    "utm_source": { "primary": "UTM_Source__c" },
+    "utm_medium": { "primary": "UTM_Medium__c" },
+    "utm_campaign": { "primary": "UTM_Campaign__c" }
+  },
+
+  "intended_taxonomy": [
+    "Paid Search", "Paid Social", "Organic Search", "Email", "Webinar", "Event",
+    "Referral", "Partner", "Outbound", "Content Syndication", "Website", "Other"
+  ],
+
+  "conversion": {
+    "enabled": true,
+    "converted_flag_field": "IsConverted",
+    "converted_date_field": "ConvertedDate",
+    "to_intermediate_id_field": "ConvertedContactId",
+    "to_deal_id_field": "ConvertedOpportunityId",
+    "converted_by_field": "CreatedBy.Name"
+  },
+
+  "won": { "boolean_field": "IsWon", "stage_field": "StageName", "won_stages": ["Closed Won"] },
+
+  "history_file": "lead_history.json",
+  "field_definitions_file": "field_definitions.json"
+}

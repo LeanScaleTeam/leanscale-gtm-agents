@@ -1,0 +1,64 @@
+{
+  "size": 4,
+  "totalSize": 4,
+  "done": true,
+  "entityTypeName": "WorkflowRule",
+  "records": [
+    {
+      "attributes": { "type": "WorkflowRule" },
+      "Id": "01QA00000001",
+      "Name": "Update Forecast Category on Close",
+      "TableEnumOrId": "Opportunity",
+      "LastModifiedDate": "2022-09-30T10:00:00.000+0000",
+      "LastModifiedBy": { "Name": "Marcus Bell" },
+      "Metadata": {
+        "active": true,
+        "triggerType": "onCreateOrTriggeringUpdate",
+        "formula": "ISPICKVAL(StageName, \"Closed Won\")",
+        "actions": [ { "name": "Update_Forecast_Category", "type": "FieldUpdate" } ]
+      }
+    },
+    {
+      "attributes": { "type": "WorkflowRule" },
+      "Id": "01QA00000002",
+      "Name": "Set Lead Rating",
+      "TableEnumOrId": "Lead",
+      "LastModifiedDate": "2023-02-14T09:00:00.000+0000",
+      "LastModifiedBy": { "Name": "Alicia Nowak" },
+      "Metadata": {
+        "active": true,
+        "triggerType": "onAllChanges",
+        "formula": "NOT(ISBLANK(Email))",
+        "actions": [ { "name": "Set_Lead_Rating", "type": "FieldUpdate" } ]
+      }
+    },
+    {
+      "attributes": { "type": "WorkflowRule" },
+      "Id": "01QA00000003",
+      "Name": "Stamp Account Tier",
+      "TableEnumOrId": "Account",
+      "LastModifiedDate": "2021-11-05T14:00:00.000+0000",
+      "LastModifiedBy": { "Name": "Marcus Bell" },
+      "Metadata": {
+        "active": true,
+        "triggerType": "onCreateOrTriggeringUpdate",
+        "formula": "AnnualRevenue > 5000000",
+        "actions": [ { "name": "Stamp_Account_Tier", "type": "FieldUpdate" } ]
+      }
+    },
+    {
+      "attributes": { "type": "WorkflowRule" },
+      "Id": "01QA00000004",
+      "Name": "Old Opp Notification",
+      "TableEnumOrId": "Opportunity",
+      "LastModifiedDate": "2020-04-22T09:00:00.000+0000",
+      "LastModifiedBy": { "Name": "Marcus Bell" },
+      "Metadata": {
+        "active": false,
+        "triggerType": "onCreateOnly",
+        "formula": "TRUE",
+        "actions": [ { "name": "Notify_Owner", "type": "Alert" } ]
+      }
+    }
+  ]
+}

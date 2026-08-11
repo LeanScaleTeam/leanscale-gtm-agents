@@ -1,0 +1,63 @@
+{
+  "_comment": "system-map settings. Copied to ~/.leanscale-gtm/system-map.json by the :setup skill. Edit it by hand any time — every key has a _<key>_help line beside it, and keys starting with an underscore are documentation and are ignored by the scripts. The shared org profile lives next to this file in ~/.leanscale-gtm/profile.json and is read by every LeanScale GTM agent.",
+
+  "environment": "production",
+  "_environment_help": "production | sandbox | developer. Labels the report and stops you acting on a sandbox finding in production. Salesforce reports this as Organization.IsSandbox; HubSpot as accountType on /account-info/v3/details.",
+
+  "org_label": "Acme Production",
+  "_org_label_help": "How this instance is named in the report title. Use the same wording your team uses in conversation.",
+
+  "include_managed_packages": true,
+  "_include_managed_packages_help": "Inventory installed managed packages and use their namespaces as the strongest tool-detection signal. Turn off only if you already track packages elsewhere.",
+
+  "include_integration_users": true,
+  "_include_integration_users_help": "Inventory service accounts, their last login and their write surface. This is the section security reviews ask for.",
+
+  "include_connected_apps": true,
+  "_include_connected_apps_help": "Inventory connected apps and OAuth grants, and flag the orphaned ones. HubSpot has no public API for this — see hubspot_connected_apps in the run skill for the manual export.",
+
+  "include_automation": true,
+  "_include_automation_help": "Inventory flows, workflow rules, Apex triggers, validation rules and assignment rules. Turning this off also disables conflict detection, which is the most valuable output here.",
+
+  "include_scheduled_jobs": true,
+  "_include_scheduled_jobs_help": "Include scheduled jobs and scheduled flows. These carry a true last-fired timestamp, so they are the most reliable dormancy signal available.",
+
+  "dormancy_days": 90,
+  "_dormancy_days_help": "An automation, app or integration user idle for this many days is reported as dormant. 90 catches a full quarter of seasonality; drop to 30 for a fast-moving instance, raise to 180 if you have annual processes.",
+
+  "recent_change_days": 14,
+  "_recent_change_days_help": "Window for 'what changed recently'. Set it to match the period you would investigate when a number moves unexpectedly.",
+
+  "flag_orphaned_automation": true,
+  "_flag_orphaned_automation_help": "Flag active automation whose last editor no longer has an active account. Set false only if your platform deactivates leavers in a way that makes this noisy.",
+
+  "believed_tools": [
+    "Gong",
+    "Outreach",
+    "ZoomInfo",
+    "Marketo",
+    "DocuSign",
+    "Salesforce CPQ"
+  ],
+  "_believed_tools_help": "The tools your team believes are connected to the CRM, captured during setup BEFORE anything was measured. The run compares this list against what the instance actually shows: tools detected but not listed are the finding, tools listed but not detected are the second finding. Replace this sample with your own answer — do not leave it as shipped.",
+
+  "conflict_ignore_fields": [
+    "Account.LastActivityDate"
+  ],
+  "_conflict_ignore_fields_help": "Object.Field targets to exclude from conflict detection. Use for fields you have deliberately decided may be written by several systems. Keep it short — every entry here is a finding you have chosen not to see.",
+
+  "ignore_automation_names": [],
+  "_ignore_automation_names_help": "Automation names to exclude entirely, matched case-insensitively. Useful for vendor-managed automation you cannot change.",
+
+  "ignore_namespaces": [],
+  "_ignore_namespaces_help": "Managed-package namespace prefixes to leave out of the package inventory and the stack map.",
+
+  "extra_integration_user_patterns": [],
+  "_extra_integration_user_patterns_help": "Extra substrings that identify a service account in your naming convention, e.g. 'robot', 'ops-bot', 'northwind-svc'. The built-in list already covers svc_, api_, integration, sync, connector, noreply and similar.",
+
+  "object_surface_min_records": 1000,
+  "_object_surface_min_records_help": "An object needs at least this many records before 'holds records but carries no automation' is worth reporting. Raise it if your instance has many small reference objects.",
+
+  "allow_empty_automation": false,
+  "_allow_empty_automation_help": "Leave false. When false, a run that finds zero automation across every surface aborts rather than producing a clean-looking empty report — because that result is almost always a permissions failure. Set true only after you have confirmed the instance genuinely has no automation."
+}

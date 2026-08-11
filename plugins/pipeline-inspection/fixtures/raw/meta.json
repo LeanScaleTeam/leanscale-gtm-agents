@@ -1,0 +1,60 @@
+{
+  "crm": "salesforce",
+  "org_name": "Northwind Systems",
+  "as_of": "2026-08-10",
+  "instance_label": "Northwind Production",
+  "notes": [
+    "Synthetic sample data shipped with the plugin so the scripts can be exercised offline.",
+    "Shapes match what a Salesforce MCP returns for SOQL: nested relationship objects and the",
+    "attributes bag are left in deliberately."
+  ],
+  "sources": [
+    {
+      "name": "open_opportunities",
+      "tool": "run_soql_query",
+      "query": "SELECT Id, Name, StageName, Amount, CloseDate, CreatedDate, LastModifiedDate, LastActivityDate, LastStageChangeDate, NextStep, Probability, Type, ForecastCategoryName, IsClosed, IsWon, OwnerId, Owner.Name, Owner.IsActive, AccountId, Account.Name, Account.Industry FROM Opportunity WHERE IsClosed = false ORDER BY Amount DESC NULLS LAST LIMIT 2000"
+    },
+    {
+      "name": "closed_opportunities",
+      "tool": "run_soql_query",
+      "query": "SELECT Id, Name, StageName, Amount, CloseDate, CreatedDate, IsWon, IsClosed, OwnerId, Owner.Name, AccountId, Account.Name, Type FROM Opportunity WHERE IsClosed = true AND CloseDate = LAST_N_MONTHS:24 ORDER BY CloseDate DESC LIMIT 5000"
+    },
+    {
+      "name": "stage_history",
+      "tool": "run_soql_query",
+      "query": "SELECT OpportunityId, CreatedDate, StageName, Amount, CloseDate, ForecastCategory FROM OpportunityHistory WHERE CreatedDate = LAST_N_MONTHS:24 ORDER BY OpportunityId, CreatedDate LIMIT 20000"
+    },
+    {
+      "name": "field_history",
+      "tool": "run_soql_query",
+      "query": "SELECT OpportunityId, Field, OldValue, NewValue, CreatedDate FROM OpportunityFieldHistory WHERE Field IN ('CloseDate','Amount','StageName') AND CreatedDate = LAST_N_MONTHS:24 ORDER BY OpportunityId, CreatedDate LIMIT 20000",
+      "note": "Salesforce retains field history for 18 months by default, 24 with Field Audit Trail."
+    },
+    {
+      "name": "contact_roles",
+      "tool": "run_soql_query",
+      "query": "SELECT OpportunityId, ContactId, Contact.Name, Contact.Title, Contact.Email, Role, IsPrimary FROM OpportunityContactRole WHERE Opportunity.IsClosed = false LIMIT 20000"
+    },
+    {
+      "name": "activities",
+      "tool": "run_soql_query",
+      "query": "SELECT Id, WhatId, Subject, ActivityDate, Status, IsClosed, TaskSubtype, CreatedDate, Owner.Name FROM Task WHERE WhatId IN (:openOpportunityIds) AND ActivityDate = LAST_N_DAYS:180 LIMIT 20000"
+    },
+    {
+      "name": "open_tasks",
+      "tool": "run_soql_query",
+      "query": "SELECT Id, WhatId, Subject, ActivityDate, Status, IsClosed, CreatedDate, Owner.Name FROM Task WHERE IsClosed = false AND WhatId IN (:openOpportunityIds) LIMIT 20000"
+    },
+    {
+      "name": "stage_metadata",
+      "tool": "run_soql_query",
+      "query": "SELECT MasterLabel, ApiName, IsActive, IsClosed, IsWon, SortOrder, DefaultProbability, ForecastCategoryName FROM OpportunityStage ORDER BY SortOrder"
+    },
+    {
+      "name": "quota",
+      "tool": "manual",
+      "query": "",
+      "note": "Supplied by hand during setup; no standard quota object exists in this org."
+    }
+  ]
+}

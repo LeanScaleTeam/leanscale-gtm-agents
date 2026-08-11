@@ -1,0 +1,21 @@
+[build]
+  publish = "."
+
+# Netlify's "Pretty URLs" post-processing rewrites in-page links and can mangle
+# asset paths. This page links only to real files, so turn it off rather than
+# let it edit the HTML on the way out.
+[build.processing]
+  skip_processing = true
+
+[[headers]]
+  for = "/dist/*.zip"
+  [headers.values]
+    Content-Type = "application/zip"
+    Content-Disposition = "attachment"
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
