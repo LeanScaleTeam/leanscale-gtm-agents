@@ -51,10 +51,22 @@ mkdir -p "$RUN/raw"
 
 ## 1. Probe the connector
 
-```
-ToolSearch("run_soql_query salesforce")      → Salesforce path
-ToolSearch("hubspot crm search deals")       → HubSpot path
-```
+Required capabilities: `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")      → Salesforce path
+    ToolSearch("hubspot crm search deals")       → HubSpot path
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.query  salesforce  run_soql_query
+               hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Use whichever matches `profile.crm.system`. If the expected tool does not resolve, say exactly
 that and stop — do not silently fall back to the other CRM.
@@ -301,14 +313,14 @@ write nothing and let the Buying-group component report as unmeasurable rather t
 ## 3. Analyse
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
   --raw "$RUN/raw" --out "$RUN" --mode audit
 ```
 
 For the call, once the audit has cleared the threshold:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
   --raw "$RUN/raw" --out "$RUN" --mode forecast
 ```
 
@@ -323,7 +335,7 @@ relay it verbatim, do not paraphrase it into something softer) · `3` config pro
 ## 4. Report
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN"
+"$HOME/.leanscale-gtm/bin/forecast-agent" report --run "$RUN"
 ```
 
 Writes `report.md` and `report.html` into `$RUN`. The HTML is self-contained and opens locally.

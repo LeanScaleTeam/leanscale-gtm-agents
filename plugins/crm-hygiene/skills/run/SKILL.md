@@ -56,11 +56,25 @@ to seconds at the cost of sampled rather than exact field counts. Say which mode
 
 ## 1. Resolve the tools
 
-```
-ToolSearch("run_soql_query salesforce")        → crm.query   (Salesforce)
-ToolSearch("hubspot crm objects search")       → crm.query   (HubSpot)
-ToolSearch("describe metadata object schema")  → crm.describe
-```
+Required capabilities: `crm.describe`, `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        → crm.query   (Salesforce)
+    ToolSearch("hubspot crm objects search")       → crm.query   (HubSpot)
+    ToolSearch("describe metadata object schema")  → crm.describe
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 `crm.query` **and** `crm.describe` are both required — without describe there is no field
 inventory and no picklist audit, which is half the value. On Salesforce both capabilities
@@ -302,7 +316,7 @@ HubSpot as the CRM of record. The REST shapes below are the contract; pass the e
 arguments to whichever tool resolved. The official server names them `hubspot-list-objects`,
 `hubspot-search-objects`, `hubspot-batch-read-objects`, `hubspot-list-properties`,
 `hubspot-list-associations` and `hubspot-get-user-details`, but do not hard-code those —
-resolve with `ToolSearch` and adapt.
+resolve them as in §1 and adapt.
 
 **Every HubSpot property value comes back as a string**, booleans and numbers included. Write
 them through unchanged; the analyzer coerces them.
@@ -499,7 +513,7 @@ in a large org — they are exact regardless of record volume and cost a handful
 ## 5. Analyze
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --raw "$RUN/raw" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/crm-hygiene" analyze --raw "$RUN/raw" --out "$RUN"
 ```
 
 Writes `manifest.json` and `findings.json`. Exit codes: `0` fine, `2` a required source came
@@ -517,7 +531,7 @@ alternate config, `--no-baseline` to compare against nothing.
 ## 6. Report
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --findings "$RUN/findings.json" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/crm-hygiene" report --findings "$RUN/findings.json" --out "$RUN"
 ```
 
 Writes `report.md` and `report.html` and banks the baseline snapshot. Print the absolute path

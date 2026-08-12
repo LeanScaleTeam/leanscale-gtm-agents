@@ -28,13 +28,60 @@ three of them are 90% empty"* rather than *"what fields hold source?"*
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/lead-source`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin lead-source --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/lead-source.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/lead-source" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## 1. Probe
 
-```
-ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
-ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
-ToolSearch("describe metadata object schema")  -> crm.describe
-```
+Required capabilities: `crm.describe`, `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
+    ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
+    ToolSearch("describe metadata object schema")  -> crm.describe
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report exactly which capability each resolved tool provides, by tool name. If nothing resolves
 for `crm.query`, stop: this plugin needs it and there is no degraded mode worth shipping.
@@ -243,9 +290,9 @@ Ask in terms of what you found. Every question below is one the CRM genuinely ca
 
 ## 5. Write the config
 
-Write `~/.leanscale-gtm/lead-source.json`, using `${CLAUDE_PLUGIN_ROOT}/config.example.json` as
-the template — keep its `_comment` header and every `_<key>_help` line, because customers edit
-this file by hand.
+Write `~/.leanscale-gtm/lead-source.json`, using the plugin's `config.example.json` as the
+template — `"$HOME/.leanscale-gtm/bin/lead-source" --root` prints the directory. Keep its
+`_comment` header and every `_<key>_help` line, because customers edit this file by hand.
 
 ```bash
 mkdir -p ~/.leanscale-gtm
@@ -264,8 +311,8 @@ Run the real pipeline against a narrow slice (90 days) into a temporary director
 SMOKE="./gtm-agents/lead-source/smoke-$(date +%Y-%m-%d-%H%M)"
 mkdir -p "$SMOKE/raw"
 # fetch a 90-day slice exactly as /lead-source:run does, then:
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$SMOKE" --window-days 90
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$SMOKE" --no-baseline
+"$HOME/.leanscale-gtm/bin/lead-source" analyze --run-dir "$SMOKE" --window-days 90
+"$HOME/.leanscale-gtm/bin/lead-source" report  --run-dir "$SMOKE" --no-baseline
 ```
 
 `--no-baseline` matters: a smoke test must not consume the customer's baseline slot.
@@ -275,7 +322,7 @@ which is the fastest way to show a real duplicate group:
 
 ```bash
 echo '{"Webinar": 118, "webinar": 41, "Webinars": 30, "Paid Search": 96, "PPC": 44, "SEM": 19}' > /tmp/counts.json
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/taxonomy.py" --counts-file /tmp/counts.json \
+"$HOME/.leanscale-gtm/bin/lead-source" taxonomy --counts-file /tmp/counts.json \
         --taxonomy "Paid Search,Webinar,Email,Referral"
 ```
 

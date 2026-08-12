@@ -67,7 +67,7 @@ that lives only in an instruction file is a suggestion.
 Run them yourself against the bundled fixtures:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" selftest
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff selftest
 ```
 
 38 checks, in a sandbox that does not touch your config or your audit log.

@@ -31,7 +31,92 @@ accidentally reveal a measured rate first, say so in the config note rather than
 
 ---
 
+## Step 0 — Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/stage-architect`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin stage-architect --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/stage-architect.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/stage-architect" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
+## Step 0b — The LeanScale corpus (optional)
+
+**Optional. Skip it and everything still works.** This plugin can cite the stage-design playbook from the
+LeanScale corpus when a finding matches one. Without a key it runs exactly as before and
+simply says so where a finding could have been enriched.
+
+Check what is already there:
+
+```bash
+python3 "$AGENT_ROOT/scripts/lib/config.py" mcp-key-status
+```
+
+If it reports `"present": false`, offer — do not assume:
+
+> "I can fetch a LeanScale key so this run can cite the matching playbook. That sends your
+> work email to mcp.leanscale.team and nothing else — no CRM data, now or ever. Want me to,
+> or would you rather grab one yourself at https://mcp.leanscale.team/ ?"
+
+Only if they say yes, and only with an email they give you:
+
+```bash
+curl -sS -X POST https://mcp.leanscale.team/api/access \
+     -H 'Content-Type: application/json' \
+     -d '{"email":"THEIR@EMAIL"}'
+```
+
+Store the returned key — via stdin, so it never lands in shell history or the process list:
+
+```bash
+printf '%s' 'THE_KEY' | python3 "$AGENT_ROOT/scripts/lib/config.py" save-mcp-key
+```
+
+That writes `~/.leanscale-gtm/mcp.json` at mode 0600 and prints one `export` line. **Show
+that line and ask them to add it to their shell profile themselves.** A `.mcp.json` can only
+read a real environment variable, and this setup does not edit files it does not own.
+
+Two things to say plainly, because both will otherwise confuse them later:
+
+- `claude mcp list` shows this server as **connected even with no key**, because the endpoint
+  answers unauthenticated requests with server info. Green there is not proof of a working key.
+  This check is the real one.
+- The key only takes effect after they restart the client.
+
+---
+
 ## Step 1 — probe connectors
+
+| Capability | Required | Used for |
+|---|---|---|
+| `crm.query` | yes | stages, opportunities, stage history |
+| `crm.describe` | yes | picklist values, record types, loss-reason options |
+
+If `ToolSearch` is available (Claude Code), that is the fastest route:
 
 ```
 ToolSearch("run_soql_query salesforce")
@@ -39,10 +124,15 @@ ToolSearch("hubspot crm search deals")
 ToolSearch("describe metadata object schema")
 ```
 
-| Capability | Required | Used for |
-|---|---|---|
-| `crm.query` | yes | stages, opportunities, stage history |
-| `crm.describe` | yes | picklist values, record types, loss-reason options |
+Otherwise — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools already
+connected in this client:
+
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition
+                  hubspot     hubspot-list-properties
+
+These names are the common cases, not the contract; the capability is the contract.
 
 Report which resolved tool provides which capability, by name. Be specific about failures:
 not "Salesforce unavailable" but *"`run_soql_query` resolves and `SELECT Id FROM Opportunity
@@ -225,8 +315,8 @@ slice — one pipeline, a shorter window — into a temporary run directory:
 RUN="./gtm-agents/stage-architect/setup-smoketest"
 mkdir -p "$RUN/raw"
 # fetch a reduced slice per the run skill (LAST_N_DAYS:180 is enough), then:
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run-dir "$RUN" --no-save-baseline
+"$HOME/.leanscale-gtm/bin/stage-architect" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/stage-architect" report --run-dir "$RUN" --no-save-baseline
 ```
 
 `--no-save-baseline` matters: a smoke test on a narrow slice must not become the baseline the
@@ -236,10 +326,11 @@ If no CRM is connected yet, fall back to the bundled fixtures so the customer st
 machinery work end to end:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-  --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/raw" \
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/stage-architect" --root)"
+"$HOME/.leanscale-gtm/bin/stage-architect" analyze \
+  --raw "$AGENT_ROOT/fixtures/salesforce/raw" \
   --run-dir "$RUN" \
-  --config "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/config.json" \
+  --config "$AGENT_ROOT/fixtures/salesforce/config.json" \
   --as-of 2026-08-10
 ```
 

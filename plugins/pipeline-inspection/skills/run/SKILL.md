@@ -33,18 +33,23 @@ If a CRM write tool resolves, do not call it.
    the thresholds in this plugin are *their* numbers, and running with defaults produces a
    report they will rightly ignore.
 
-2. **Resolve the CRM tool.** The customer connected their own MCP server, so never assume a
-   tool name:
+2. **Resolve the CRM tool.** Required capability: `crm.query`. The customer connected their
+   own MCP server, so never assume a tool name.
+
+   If `ToolSearch` is available (Claude Code), that is the fastest route:
 
    ```
    ToolSearch("run_soql_query salesforce query records")
    ToolSearch("hubspot crm search objects deals")
    ```
 
-   Typical resolutions: `mcp__salesforce__run_soql_query`; `hubspot-search-objects`,
-   `hubspot-batch-read-objects`, `hubspot-list-associations`, `hubspot-get-schemas`. Some
-   HubSpot servers expose only a generic request tool — the payloads below are the raw REST
-   bodies, so they work either way.
+   Otherwise — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools already
+   connected in this client. Typical resolutions: `mcp__salesforce__run_soql_query`;
+   `hubspot-search-objects`, `hubspot-batch-read-objects`, `hubspot-list-associations`,
+   `hubspot-get-schemas`. Some HubSpot servers expose only a generic request tool — the
+   payloads below are the raw REST bodies, so they work either way.
+
+   These names are the common cases, not the contract; the capability is the contract.
 
 3. **Create the run directory** under the project, and note the exact timestamp:
 
@@ -418,10 +423,10 @@ Source names must be exactly: `open_opportunities`, `closed_opportunities`, `sta
 ## 5. Analyze and report
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" analyze \
   --run-dir "./gtm-agents/pipeline-inspection/<stamp>"
 
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" \
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" report \
   --run-dir "./gtm-agents/pipeline-inspection/<stamp>"
 ```
 

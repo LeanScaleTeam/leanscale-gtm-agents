@@ -58,12 +58,28 @@ mkdir -p "$RUN_DIR/raw"
 
 Do not assume tool names — customers connect their own MCP servers.
 
-```
-ToolSearch("run_soql_query salesforce")          -> crm.query (Salesforce)
-ToolSearch("hubspot crm search objects")          -> crm.query (HubSpot)
-ToolSearch("describe metadata object schema")     -> crm.describe
-ToolSearch("retrieve metadata package")           -> metadata retrieve (Salesforce)
-```
+Required capabilities: `crm.describe`, `crm.query`, `crm.metadata`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")          -> crm.query (Salesforce)
+    ToolSearch("hubspot crm search objects")          -> crm.query (HubSpot)
+    ToolSearch("describe metadata object schema")     -> crm.describe
+    ToolSearch("retrieve metadata package")           -> metadata retrieve (Salesforce)
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    crm.metadata  salesforce  the server's metadata retrieve tool (Flow, WorkflowRule, ApexTrigger, ValidationRule)
+                  hubspot     no equivalent — HubSpot exposes no automation metadata API
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Then run the **Tooling probe**, which is the single most important thing this skill does:
 
@@ -415,8 +431,8 @@ Rules, and they matter:
 ## 5. Analyse and report
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN_DIR"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$RUN_DIR"
+"$HOME/.leanscale-gtm/bin/system-map" analyze --run-dir "$RUN_DIR"
+"$HOME/.leanscale-gtm/bin/system-map" report  --run-dir "$RUN_DIR"
 ```
 
 `analyze.py` exits `3` if a required source came back empty. It prints the diagnosis and every

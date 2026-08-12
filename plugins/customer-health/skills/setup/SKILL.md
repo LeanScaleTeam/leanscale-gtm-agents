@@ -23,17 +23,70 @@ diagnoses it.
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/customer-health`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin customer-health --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/customer-health.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/customer-health" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## 1. Probe
 
-```
-ToolSearch("run_soql_query salesforce")               -> crm.query
-ToolSearch("describe object metadata schema")         -> crm.describe
-ToolSearch("hubspot crm search companies deals")      -> crm.query
-ToolSearch("transcripts meetings recordings calls")   -> transcripts.*
-ToolSearch("slack search messages channel")           -> comms.search
-ToolSearch("gmail search threads outlook mail")       -> comms.search
-ToolSearch("read file content drive folder")          -> docs.read
-```
+Required capabilities: `crm.describe`, `crm.query`, `transcripts.*`, `comms.search`, `docs.read`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")               -> crm.query
+    ToolSearch("describe object metadata schema")         -> crm.describe
+    ToolSearch("hubspot crm search companies deals")      -> crm.query
+    ToolSearch("transcripts meetings recordings calls")   -> transcripts.*
+    ToolSearch("slack search messages channel")           -> comms.search
+    ToolSearch("gmail search threads outlook mail")       -> comms.search
+    ToolSearch("read file content drive folder")          -> docs.read
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe   salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                   hubspot     hubspot-list-properties
+    crm.query      salesforce  run_soql_query
+                   hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+    comms.search   slack       message/channel search
+                   email       gmail or outlook thread search
+    docs.read      drive       file search + read file content
+                   local       plain filesystem reads
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report exactly which resolved tool provides which capability, by name. Then prove each one
 works with a one-record read — a tool that resolves is not a tool that has permission.
@@ -274,9 +327,9 @@ mkdir -p ~/.leanscale-gtm
 ```
 
 Write `~/.leanscale-gtm/profile.json` (create or merge — never clobber another agent's keys)
-and `~/.leanscale-gtm/customer-health.json`, using
-`"${CLAUDE_PLUGIN_ROOT}/config.example.json"` as the template. Keep every `_<key>_help` line;
-customers edit these files by hand.
+and `~/.leanscale-gtm/customer-health.json`, using the plugin's `config.example.json` as the
+template — `"$HOME/.leanscale-gtm/bin/customer-health" --root` prints the directory it lives
+in. Keep every `_<key>_help` line; customers edit these files by hand.
 
 Then show them the file you wrote, in full, and tell them where it lives and that it survives
 plugin updates.
@@ -294,8 +347,8 @@ at least a few calls. Run the whole pipeline against a narrow slice:
 RUN="./gtm-agents/customer-health/setup-smoketest"
 mkdir -p "$RUN/raw"
 # fetch that one account through steps 2-7 of the run skill, then:
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$RUN" --no-save-baseline
+"$HOME/.leanscale-gtm/bin/customer-health" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/customer-health" report  --run-dir "$RUN" --no-save-baseline
 ```
 
 `--no-save-baseline` matters: a smoke test over one account must not become the baseline the
@@ -320,8 +373,9 @@ If you cannot run the pipeline offline first, do it against the bundled fixtures
 scripts work before blaming the connection:
 
 ```bash
-LEANSCALE_GTM_HOME=/tmp/ch-demo python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-  --run-dir /tmp/ch-demo-run --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/raw" --as-of 2026-08-10
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/customer-health" --root)"
+LEANSCALE_GTM_HOME=/tmp/ch-demo "$HOME/.leanscale-gtm/bin/customer-health" analyze \
+  --run-dir /tmp/ch-demo-run --raw "$AGENT_ROOT/fixtures/raw" --as-of 2026-08-10
 ```
 (copy `fixtures/profile.demo.json` and `fixtures/config.demo.json` into `/tmp/ch-demo/` first,
 as `profile.json` and `customer-health.json`.)

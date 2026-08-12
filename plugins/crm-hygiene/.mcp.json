@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "leanscale": {
+      "type": "http",
+      "url": "https://mcp.leanscale.team/mcp",
+      "headers": {
+        "Authorization": "Bearer ${LEANSCALE_MCP_KEY}"
+      }
+    }
+  }
+}

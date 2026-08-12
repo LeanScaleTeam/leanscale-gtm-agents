@@ -58,11 +58,23 @@ Arguments override config: `--window 30d`, `--rep`, `--call-type`, `--per-call`
 `transcript_source.provider` in config tells you which one to use. Probe first — never
 assume a tool name, because customers connect their own servers:
 
-```
-ToolSearch("transcripts meetings recordings calls")
-ToolSearch("get transcript")
-ToolSearch("read file content drive folder")
-```
+Required capabilities: `transcripts.*`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("transcripts meetings recordings calls")
+    ToolSearch("get transcript")
+    ToolSearch("read file content drive folder")
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Every adapter produces the same two things:
 
@@ -232,7 +244,7 @@ wrong is the one error that poisons everything downstream.
 Check what the parser actually saw before you trust it:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/transcripts.py" inspect "<file>" --internal-domain acme.com
+"$HOME/.leanscale-gtm/bin/sales-coach" transcripts inspect "<file>" --internal-domain acme.com
 ```
 
 It prints the detected format, every speaker, how many turns each has, and whether each
@@ -277,7 +289,7 @@ turns, the layout is unusual — show the user the first twenty lines and ask.
 Then normalize and read the attribution report:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/transcripts.py" normalize \
+"$HOME/.leanscale-gtm/bin/sales-coach" transcripts normalize \
   --raw "$RUN/raw" --config ~/.leanscale-gtm/sales-coach.json
 ```
 
@@ -439,8 +451,8 @@ actionable.
 Then:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/sales-coach" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/sales-coach" report  --run-dir "$RUN"
 ```
 
 `analyze.py` writes `manifest.json` first and **stops the run** if a required source came

@@ -1,6 +1,6 @@
 {
   "name": "leanscale-gtm",
-  "description": "Nine GTM and RevOps agents that run against your own Salesforce or HubSpot. Read-only by default. Built by LeanScale.",
+  "description": "Ten GTM and RevOps agents that run against your own Salesforce or HubSpot. Read-only by default. Built by LeanScale.",
   "owner": {
     "name": "LeanScale",
     "email": "anthony@leanscale.team",

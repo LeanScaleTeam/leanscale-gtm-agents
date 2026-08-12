@@ -95,18 +95,20 @@ You can prove the whole pipeline works before connecting anything, using the bun
 (two complete demo books — one Salesforce-shaped, one HubSpot-shaped):
 
 ```bash
+PLUGIN="$("$HOME/.leanscale-gtm/bin/customer-health" --root)"
+
 mkdir -p /tmp/ch-demo
 cp "$PLUGIN/fixtures/profile.demo.json" /tmp/ch-demo/profile.json
 cp "$PLUGIN/fixtures/config.demo.json"  /tmp/ch-demo/customer-health.json
 
-LEANSCALE_GTM_HOME=/tmp/ch-demo python3 "$PLUGIN/scripts/analyze.py" \
+LEANSCALE_GTM_HOME=/tmp/ch-demo "$HOME/.leanscale-gtm/bin/customer-health" analyze \
   --run-dir /tmp/ch-demo-run --raw "$PLUGIN/fixtures/raw" --as-of 2026-08-10
-LEANSCALE_GTM_HOME=/tmp/ch-demo python3 "$PLUGIN/scripts/report.py" \
+LEANSCALE_GTM_HOME=/tmp/ch-demo "$HOME/.leanscale-gtm/bin/customer-health" report \
   --run-dir /tmp/ch-demo-run
 open /tmp/ch-demo-run/report.html
 ```
 
-(`$PLUGIN` is the plugin directory — inside Claude Code it is `${CLAUDE_PLUGIN_ROOT}`.)
+(`/customer-health:setup` creates that shim. If it isn't there yet, run setup first.)
 Swap `config.demo.json` for `config.demo-hubspot.json` and `fixtures/raw` for
 `fixtures/raw-hubspot` to see the same model run against a HubSpot portal. Nothing in the
 scoring changes between them.

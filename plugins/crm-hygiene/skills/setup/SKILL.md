@@ -28,13 +28,105 @@ the product look dumb, and a question you skip that changes the analysis makes i
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/crm-hygiene`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin crm-hygiene --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/crm-hygiene.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/crm-hygiene" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
+## 0b. The LeanScale corpus (optional)
+
+**Optional. Skip it and everything still works.** This plugin can cite the CRM hygiene and migration playbooks from the
+LeanScale corpus when a finding matches one. Without a key it runs exactly as before and
+simply says so where a finding could have been enriched.
+
+Check what is already there:
+
+```bash
+python3 "$AGENT_ROOT/scripts/lib/config.py" mcp-key-status
+```
+
+If it reports `"present": false`, offer — do not assume:
+
+> "I can fetch a LeanScale key so this run can cite the matching playbook. That sends your
+> work email to mcp.leanscale.team and nothing else — no CRM data, now or ever. Want me to,
+> or would you rather grab one yourself at https://mcp.leanscale.team/ ?"
+
+Only if they say yes, and only with an email they give you:
+
+```bash
+curl -sS -X POST https://mcp.leanscale.team/api/access \
+     -H 'Content-Type: application/json' \
+     -d '{"email":"THEIR@EMAIL"}'
+```
+
+Store the returned key — via stdin, so it never lands in shell history or the process list:
+
+```bash
+printf '%s' 'THE_KEY' | python3 "$AGENT_ROOT/scripts/lib/config.py" save-mcp-key
+```
+
+That writes `~/.leanscale-gtm/mcp.json` at mode 0600 and prints one `export` line. **Show
+that line and ask them to add it to their shell profile themselves.** A `.mcp.json` can only
+read a real environment variable, and this setup does not edit files it does not own.
+
+Two things to say plainly, because both will otherwise confuse them later:
+
+- `claude mcp list` shows this server as **connected even with no key**, because the endpoint
+  answers unauthenticated requests with server info. Green there is not proof of a working key.
+  This check is the real one.
+- The key only takes effect after they restart the client.
+
+---
+
 ## 1. Probe the connectors
 
-```
-ToolSearch("run_soql_query salesforce")        → crm.query    (Salesforce)
-ToolSearch("hubspot crm objects search")       → crm.query    (HubSpot)
-ToolSearch("describe metadata object schema")  → crm.describe
-```
+Required capabilities: `crm.describe`, `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        → crm.query    (Salesforce)
+    ToolSearch("hubspot crm objects search")       → crm.query    (HubSpot)
+    ToolSearch("describe metadata object schema")  → crm.describe
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report the mapping explicitly — tool name, the capability it satisfies, and the call you used
 to prove it:
@@ -67,7 +159,7 @@ cat ~/.leanscale-gtm/profile.json 2>/dev/null || echo "no profile yet"
 
 If it exists, **show it back and confirm** — do not re-interrogate. This file is shared by
 every LeanScale GTM agent; asking about the fiscal year for the fourth time is how a suite
-starts feeling like nine separate tools.
+starts feeling like ten separate tools.
 
 > "You already have a profile: Acme, Salesforce, fiscal year starts February, 14 quota-carrying
 > reps, material deal floor $5,000, segments SMB / Mid-Market / Enterprise. Still right?"
@@ -406,11 +498,11 @@ existing file, add only the keys that are missing, keep everything another agent
 }
 ```
 
-`~/.leanscale-gtm/crm-hygiene.json` — start from
-`${CLAUDE_PLUGIN_ROOT}/config.example.json`, keep the `_<key>_help` lines, and replace the
-values with the interview answers. On HubSpot, remember the field names are lower_snake_case
-internal property names, not Salesforce API names — see
-`${CLAUDE_PLUGIN_ROOT}/fixtures/config.hubspot.json` for a worked example.
+`~/.leanscale-gtm/crm-hygiene.json` — start from the plugin's `config.example.json`, keep the
+`_<key>_help` lines, and replace the values with the interview answers. The plugin directory
+is whatever `"$HOME/.leanscale-gtm/bin/crm-hygiene" --root` prints. On HubSpot, remember the
+field names are lower_snake_case internal property names, not Salesforce API names — see
+`fixtures/config.hubspot.json` in that same directory for a worked example.
 
 Then print the file and say: *"This lives in your home directory, not in the plugin, so it
 survives updates. Edit it directly any time — every key has a help line under it."*
@@ -431,8 +523,8 @@ Fetch the five required sources with `LIMIT 300` (HubSpot: one page of 100 each)
 metadata for a single object. Same envelope as the run skill §4.1. Then:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --raw "$SMOKE/raw" --out "$SMOKE"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --findings "$SMOKE/findings.json" \
+"$HOME/.leanscale-gtm/bin/crm-hygiene" analyze --raw "$SMOKE/raw" --out "$SMOKE"
+"$HOME/.leanscale-gtm/bin/crm-hygiene" report --findings "$SMOKE/findings.json" \
         --out "$SMOKE" --no-baseline
 ```
 
@@ -446,9 +538,10 @@ If you want to check the machinery without touching their CRM at all, the bundle
 run offline:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-        --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/raw" --out /tmp/crm-hygiene-selftest
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" \
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/crm-hygiene" --root)"
+"$HOME/.leanscale-gtm/bin/crm-hygiene" analyze \
+        --raw "$AGENT_ROOT/fixtures/raw" --out /tmp/crm-hygiene-selftest
+"$HOME/.leanscale-gtm/bin/crm-hygiene" report \
         --findings /tmp/crm-hygiene-selftest/findings.json --out /tmp/crm-hygiene-selftest
 ```
 

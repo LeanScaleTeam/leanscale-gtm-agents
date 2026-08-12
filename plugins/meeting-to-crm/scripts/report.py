@@ -218,7 +218,9 @@ def diff_section_html(diff: Dict[str, Any], red: Redactor, run: Path) -> str:
 
     approve_block = (
         "<details><summary>The exact approval command (read the table first)</summary>"
-        f"<pre>python3 \"${{CLAUDE_PLUGIN_ROOT}}/scripts/diff.py\" approve \\\n"
+        # A real, pasteable path. This used to render "${CLAUDE_PLUGIN_ROOT}" literally,
+        # which expands to nothing in any shell the customer actually pastes it into.
+        f"<pre>\"$HOME/.leanscale-gtm/bin/meeting-to-crm\" diff approve \\\n"
         f"    --run {_e(run)} \\\n"
         f"    --approved-by \"Your Name\" \\\n"
         f"    --token {_e(token)} \\\n"

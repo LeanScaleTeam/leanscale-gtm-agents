@@ -25,14 +25,108 @@ a human can answer, phrased in terms of what you found.
 
 ---
 
+## Step 0 — Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/forecast-agent`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin forecast-agent --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/forecast-agent.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/forecast-agent" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
+## Step 0b — The LeanScale corpus (optional)
+
+**Optional. Skip it and everything still works.** This plugin can cite the forecast-accuracy benchmarks from the
+LeanScale corpus when a finding matches one. Without a key it runs exactly as before and
+simply says so where a finding could have been enriched.
+
+Check what is already there:
+
+```bash
+python3 "$AGENT_ROOT/scripts/lib/config.py" mcp-key-status
+```
+
+If it reports `"present": false`, offer — do not assume:
+
+> "I can fetch a LeanScale key so this run can cite the matching playbook. That sends your
+> work email to mcp.leanscale.team and nothing else — no CRM data, now or ever. Want me to,
+> or would you rather grab one yourself at https://mcp.leanscale.team/ ?"
+
+Only if they say yes, and only with an email they give you:
+
+```bash
+curl -sS -X POST https://mcp.leanscale.team/api/access \
+     -H 'Content-Type: application/json' \
+     -d '{"email":"THEIR@EMAIL"}'
+```
+
+Store the returned key — via stdin, so it never lands in shell history or the process list:
+
+```bash
+printf '%s' 'THE_KEY' | python3 "$AGENT_ROOT/scripts/lib/config.py" save-mcp-key
+```
+
+That writes `~/.leanscale-gtm/mcp.json` at mode 0600 and prints one `export` line. **Show
+that line and ask them to add it to their shell profile themselves.** A `.mcp.json` can only
+read a real environment variable, and this setup does not edit files it does not own.
+
+Two things to say plainly, because both will otherwise confuse them later:
+
+- `claude mcp list` shows this server as **connected even with no key**, because the endpoint
+  answers unauthenticated requests with server info. Green there is not proof of a working key.
+  This check is the real one.
+- The key only takes effect after they restart the client.
+
+---
+
 ## Step 1 — Probe the connectors
 
-```
-ToolSearch("run_soql_query salesforce")      → crm.query, crm.describe (Salesforce)
-ToolSearch("hubspot crm search deals")       → crm.query (HubSpot)
-ToolSearch("describe metadata object schema")→ crm.describe
-ToolSearch("transcripts meetings recordings")→ optional; deal-context colour only
-```
+Required capabilities: `crm.describe`, `crm.query`, `transcripts.*`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")      → crm.query, crm.describe (Salesforce)
+    ToolSearch("hubspot crm search deals")       → crm.query (HubSpot)
+    ToolSearch("describe metadata object schema")→ crm.describe
+    ToolSearch("transcripts meetings recordings")→ optional; deal-context colour only
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe   salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                   hubspot     hubspot-list-properties
+    crm.query      salesforce  run_soql_query
+                   hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report exactly which resolved tool provides which capability. Be specific about failures.
 Not *"Salesforce not available"* but *"`run_soql_query` resolves and returns Account rows, but
@@ -137,7 +231,7 @@ plus stage and field history — into a scratch directory using the exact querie
 DISC="./gtm-agents/forecast-agent/_setup-$(date +%Y-%m-%d-%H%M)"
 mkdir -p "$DISC/raw"
 # ... write raw/*.json from the queries above ...
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
   --raw "$DISC/raw" --out "$DISC" --mode audit --no-baseline
 ```
 
@@ -229,7 +323,8 @@ Create `~/.leanscale-gtm/` if absent. Write or update:
 
 - **`profile.json`** — only the keys that are missing, plus anything the user corrected. Never
   overwrite a key another plugin's setup already established without saying so.
-- **`forecast-agent.json`** — start from `${CLAUDE_PLUGIN_ROOT}/config.example.json`, keep the
+- **`forecast-agent.json`** — start from the plugin's `config.example.json` (find the
+  directory with `"$HOME/.leanscale-gtm/bin/forecast-agent" --root`), keep the
   `_comment` header and every `_<key>_help` line, and fill in the answers. On HubSpot, rewrite
   `field_map` to the HubSpot property names and `closed_won_stages` / `closed_lost_stages` to
   the internal stage ids (`closedwon`, `closedlost`), not the display labels.
@@ -242,9 +337,9 @@ Run the real pipeline on a small slice — the current quarter plus 4 quarters o
 show a genuine finding:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
   --raw "$DISC/raw" --out "$DISC" --mode audit --no-baseline
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$DISC"
+"$HOME/.leanscale-gtm/bin/forecast-agent" report --run "$DISC"
 ```
 
 Show the Forecast Integrity Score, its band, and one real finding with its record count and the
@@ -255,11 +350,12 @@ If you have no CRM access at all yet, prove the machinery instead, and say clear
 sample data:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-  --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/raw" --out /tmp/fa-smoke --mode audit \
-  --config "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/config.json" \
-  --profile "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/profile.json" --no-baseline
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run /tmp/fa-smoke
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/forecast-agent" --root)"
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
+  --raw "$AGENT_ROOT/fixtures/salesforce/raw" --out /tmp/fa-smoke --mode audit \
+  --config "$AGENT_ROOT/fixtures/salesforce/config.json" \
+  --profile "$AGENT_ROOT/fixtures/salesforce/profile.json" --no-baseline
+"$HOME/.leanscale-gtm/bin/forecast-agent" report --run /tmp/fa-smoke
 ```
 
 ## Step 7 — Pass / fail table

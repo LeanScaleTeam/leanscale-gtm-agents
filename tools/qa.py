@@ -4,7 +4,7 @@ Suite-wide QA gate. Run before packaging:
 
     python3 tools/qa.py
 
-Checks every plugin for the things nine independent authors get wrong:
+Checks every plugin for the things ten independent authors get wrong:
 manifest schema, required files, skill frontmatter, LeanScale-internal leakage,
 read-only statements, use of the shared library, and Python compile errors.
 
@@ -137,6 +137,32 @@ def check_plugin(path: Path) -> None:
                 fail(name, "skills/run has no Salesforce query — SPEC requires real, copy-pasteable queries")
             if "hubspot" not in low:
                 fail(name, "skills/run never mentions HubSpot — 33% of the customer base runs it as CRM")
+
+        # --- portability (SPEC §3, §8) ---------------------------------------
+        # ${CLAUDE_PLUGIN_ROOT} exists only inside Claude Code. A run skill that
+        # references it is broken on Cursor/VS Code/Codex/Gemini, and silently:
+        # the path expands to empty and every script call fails.
+        if skill == "run" and "CLAUDE_PLUGIN_ROOT" in text:
+            fail(name, "skills/run references ${CLAUDE_PLUGIN_ROOT} — use "
+                       f'"$HOME/.leanscale-gtm/bin/{name}" instead (SPEC §8)')
+        if skill == "setup":
+            if "install-shim" not in text:
+                fail(name, "skills/setup never runs `config.py install-shim` — nothing "
+                           "creates the shim every other step depends on")
+            # Only a real invocation counts; the step-0 prose names the path first.
+            elif f'"$HOME/.leanscale-gtm/bin/{name}"' in text.split("install-shim")[0]:
+                fail(name, "skills/setup invokes the shim before install-shim creates it")
+
+        if f'"$HOME/.leanscale-gtm/bin/{name}"' not in text and skill == "run":
+            fail(name, "skills/run never invokes the shim — scripts would be unreachable")
+
+        # The capability contract must not be ToolSearch-only.
+        if "ToolSearch" in text:
+            if "Required capabilit" not in text and "| Capability |" not in text:
+                fail(name, f"skills/{skill} resolves tools via ToolSearch without declaring "
+                           "capabilities — non-Claude-Code clients have no ToolSearch (SPEC §3)")
+            if "Otherwise" not in text and "otherwise" not in text:
+                warn(name, f"skills/{skill} may lack a non-ToolSearch resolution path")
 
     # --- shared library usage ---
     for script in ("analyze.py", "report.py"):

@@ -97,14 +97,17 @@ directory** install (unzip, then `/plugin marketplace add <path>`), which always
 
 | Variable | Resolves to | Use for |
 |---|---|---|
-| `${CLAUDE_PLUGIN_ROOT}` | the plugin's install dir — **changes on every update** | bundled scripts, fixtures, config examples |
+| `${CLAUDE_PLUGIN_ROOT}` | the plugin's install dir — **changes on every update** | setup only, to seed the shim |
 | `${CLAUDE_PLUGIN_DATA}` | `~/.claude/plugins/data/<plugin-id>/`, survives updates | per-plugin state, if you ever need it |
 | `${CLAUDE_PROJECT_DIR}` | project root | run output |
 
-Valid inside SKILL.md body text, hook commands, and MCP/LSP configs.
+Valid inside SKILL.md body text, hook commands, and MCP/LSP configs — **but only inside
+Claude Code.** These skills also run on Cursor, VS Code, Codex CLI and Gemini CLI, where
+`${CLAUDE_PLUGIN_ROOT}` expands to nothing. A skill that depends on it breaks silently there,
+so only the `setup` skill may reference it, and only to seed the shim (see below).
 
 **We do not use `${CLAUDE_PLUGIN_DATA}` for config** — it is per-plugin, and our profile is
-shared across all nine. Config lives in `~/.leanscale-gtm/` (see SPEC §2).
+shared across all ten. Config lives in `~/.leanscale-gtm/` (see SPEC §2).
 
 ## Hard constraints that shape the build
 
@@ -113,8 +116,17 @@ shared across all nine. Config lives in `~/.leanscale-gtm/` (see SPEC §2).
 2. **A plugin cannot reference files outside its own directory.** No `../core/lib`. The
    shared library is **copied** into every plugin at `scripts/lib/`. Build it once in
    `core/lib/`, then vendor it.
-3. Scripts must be invoked as `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" ...` —
-   always quoted, since the cache path contains a version segment.
+3. **Scripts are invoked through the shim**, never through a path variable:
+
+   ```bash
+   "$HOME/.leanscale-gtm/bin/<plugin>" analyze --run-dir "$RUN"
+   "$HOME/.leanscale-gtm/bin/<plugin>" --root      # for fixtures/, config.example.json
+   ```
+
+   `setup` creates it once via `config.py install-shim`, having resolved the plugin
+   directory from `${CLAUDE_PLUGIN_ROOT}` or — on any other client — from where the skill
+   was loaded. The shim re-checks `$CLAUDE_PLUGIN_ROOT` at call time and falls back to the
+   path baked in at setup, so a plugin update that relocates the cache cannot strand it.
 
 ## Validation
 

@@ -21,13 +21,60 @@ guess produces a confident, wrong conversion rate that nobody catches for a quar
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/executive-reporting`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin executive-reporting --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/executive-reporting.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/executive-reporting" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## 1. Probe the connector
 
-```
-ToolSearch("run_soql_query salesforce")        → Salesforce path
-ToolSearch("hubspot crm search deals")         → HubSpot path
-ToolSearch("describe metadata object schema")  → schema path (needed for the picklist)
-```
+Required capabilities: `crm.describe`, `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        → Salesforce path
+    ToolSearch("hubspot crm search deals")         → HubSpot path
+    ToolSearch("describe metadata object schema")  → schema path (needed for the picklist)
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report exactly which tool resolved for each capability. If neither CRM tool resolves, stop and
 say so — do not proceed to the interview.
@@ -141,8 +188,8 @@ Run the real pipeline against a narrow slice (one quarter is enough):
 RUN="./gtm-agents/executive-reporting/$(date +%Y-%m-%d-%H%M)-setup"
 mkdir -p "$RUN/raw"
 # … fetch the same files the run skill fetches, but for a single quarter …
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN"
+"$HOME/.leanscale-gtm/bin/executive-reporting" analyze --run "$RUN"
+"$HOME/.leanscale-gtm/bin/executive-reporting" report --run "$RUN"
 ```
 
 Show them the Reporting Readiness score and one genuine finding from their own data.

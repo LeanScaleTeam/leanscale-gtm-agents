@@ -51,14 +51,32 @@ halves are noise.
 
 ## 1. Probe what you can reach
 
-```
-ToolSearch("run_soql_query salesforce")            -> crm.query (Salesforce)
-ToolSearch("hubspot crm search companies deals")   -> crm.query (HubSpot)
-ToolSearch("transcripts meetings recordings calls")-> transcripts.list / transcripts.get
-ToolSearch("slack search messages channel")        -> comms.search
-ToolSearch("gmail search threads")                 -> comms.search
-ToolSearch("read file content drive folder")       -> docs.read (transcript folder path)
-```
+Required capabilities: `crm.query`, `transcripts.*`, `comms.search`, `docs.read`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")            -> crm.query (Salesforce)
+    ToolSearch("hubspot crm search companies deals")   -> crm.query (HubSpot)
+    ToolSearch("transcripts meetings recordings calls")-> transcripts.list / transcripts.get
+    ToolSearch("slack search messages channel")        -> comms.search
+    ToolSearch("gmail search threads")                 -> comms.search
+    ToolSearch("read file content drive folder")       -> docs.read (transcript folder path)
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.query      salesforce  run_soql_query
+                   hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+    comms.search   slack       message/channel search
+                   email       gmail or outlook thread search
+    docs.read      drive       file search + read file content
+                   local       plain filesystem reads
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 `crm.query` is **required**. Everything else is optional and the run must complete without it.
 
@@ -456,8 +474,8 @@ that is not a member of the channel."*
 ## 8. Score and render
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/customer-health" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/customer-health" report  --run-dir "$RUN"
 ```
 
 `analyze.py` aborts if `customer_accounts` came back empty. That abort is correct behaviour —

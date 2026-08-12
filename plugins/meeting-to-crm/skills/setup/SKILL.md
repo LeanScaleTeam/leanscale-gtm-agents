@@ -27,14 +27,59 @@ safety model.
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/meeting-to-crm`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin meeting-to-crm --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/meeting-to-crm.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## 1. Probe
 
-```
-ToolSearch("run_soql_query salesforce")        ToolSearch("hubspot crm search objects")
-ToolSearch("describe object metadata fields")  ToolSearch("create update record")
-ToolSearch("transcripts meetings recordings")  ToolSearch("get transcript")
-ToolSearch("read file content drive")
-```
+Required capabilities: `transcripts.*`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        ToolSearch("hubspot crm search objects")
+    ToolSearch("describe object metadata fields")  ToolSearch("create update record")
+    ToolSearch("transcripts meetings recordings")  ToolSearch("get transcript")
+    ToolSearch("read file content drive")
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report what each resolved tool provides, and be specific about failures. Not "Gong is not
 available" but: *"a Gong tool resolves and authenticates, but listing calls for last week
@@ -206,8 +251,9 @@ can answer.
 ## 5. Write the config
 
 ```bash
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/meeting-to-crm" --root)"
 mkdir -p ~/.leanscale-gtm
-cp "${CLAUDE_PLUGIN_ROOT}/config.example.json" ~/.leanscale-gtm/meeting-to-crm.json
+cp "$AGENT_ROOT/config.example.json" ~/.leanscale-gtm/meeting-to-crm.json
 # then edit it to the answers above
 ```
 
@@ -225,8 +271,8 @@ Run the real pipeline over a short window against real data:
 RUN="./gtm-agents/meeting-to-crm/setup-smoketest"
 mkdir -p "$RUN/raw"
 # fetch 1–3 real meetings from the last 7 days, follow skills/run/SKILL.md steps 2–5
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --raw "$RUN" --out "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" analyze --raw "$RUN" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" report --run "$RUN"
 ```
 
 Show the resulting diff table. A setup that ends without a real proposed change on a real
@@ -235,7 +281,7 @@ record is not finished.
 Then prove the guards on their own data, in front of them:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" selftest
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff selftest
 ```
 
 38 checks against the bundled fixtures, in a sandbox that does not touch their config or
@@ -247,10 +293,11 @@ If they have no recent meetings, run the bundled fixture instead and say plainly
 sample data:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-    --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce" --out "$RUN" \
-    --config "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/config.json"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN"
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/meeting-to-crm" --root)"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" analyze \
+    --raw "$AGENT_ROOT/fixtures/salesforce" --out "$RUN" \
+    --config "$AGENT_ROOT/fixtures/salesforce/config.json"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" report --run "$RUN"
 ```
 
 ## 7. Pass/fail table

@@ -5,7 +5,7 @@ Build the distributable zips for the catalog site.
     python3 tools/package.py
 
 Produces, into site/dist/:
-    leanscale-gtm-agents.zip   the whole marketplace (all nine + marketplace.json)
+    leanscale-gtm-agents.zip   the whole marketplace (all ten + marketplace.json)
     <plugin>.zip               one plugin, as its own single-plugin marketplace
 
 Each single-plugin zip carries its OWN .claude-plugin/marketplace.json so a

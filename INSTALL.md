@@ -1,24 +1,46 @@
 # Installing the LeanScale GTM Agents
 
-Nine agents that read your Salesforce or HubSpot and tell you what your revenue systems are
-actually doing. Eight are strictly read-only.
+Ten agents that read your Salesforce or HubSpot and tell you what your revenue systems are
+actually doing. Nine are strictly read-only.
 
 ## Before you start
 
 You need three things:
 
-1. **Claude Code** — desktop app, CLI, or the IDE extension.
+1. **A client that reads `SKILL.md` and can run local commands** — Claude Code (desktop app,
+   CLI or IDE extension), Cursor, VS Code with Copilot, OpenAI Codex CLI, or Gemini CLI.
+   See [which clients work](#which-clients-work) below — two popular ones cannot, and it is
+   better to know now.
 2. **Python 3.9 or newer** — check with `python3 --version`. There is nothing to `pip install`;
    the analysis scripts use only the standard library.
-3. **A CRM connector already authorised in Claude Code** — the Salesforce or HubSpot MCP server,
+3. **A CRM connector already authorised in that client** — the Salesforce or HubSpot MCP server,
    connected as a user who can read the objects you care about. The agents run under *your*
    permissions: if you can't see a record, neither can the agent.
 
-Optional, and only for three of the nine: a source of call transcripts. Gong, Fireflies, Chorus,
+Optional, and only for three of the ten: a source of call transcripts. Gong, Fireflies, Chorus,
 Grain, Otter, Zoom, a Google Drive folder, or just a directory of exported transcript files all
 work. **No agent requires a particular vendor.**
 
-## Install
+## Which clients work
+
+The agents read your CRM over MCP and then run **local Python** over what came back. A client
+therefore needs all three: it reads `SKILL.md`, it speaks MCP, and it can execute local
+scripts.
+
+| Client | Runs the agents? |
+|---|---|
+| Claude Code | Yes — `/plugin install`, the best experience |
+| Cursor | Yes — via `tools/install-skills.py` |
+| VS Code / Copilot | Yes — via `tools/install-skills.py` |
+| OpenAI Codex CLI | Yes — via `tools/install-skills.py` |
+| Gemini CLI | Yes — via `tools/install-skills.py` |
+| ChatGPT (web) | **No** — cannot run local scripts against your CRM |
+| Claude.ai / Claude Desktop | **No** — same reason |
+
+The last two are not a temporary gap. Those products can connect the LeanScale MCP perfectly
+well; they just cannot execute the analysis that turns CRM records into a report.
+
+## Install — Claude Code
 
 ```bash
 # 1. Point Claude Code at the marketplace (use the folder you unzipped)
@@ -30,6 +52,33 @@ work. **No agent requires a particular vendor.**
 ```
 
 Then restart Claude Code and confirm the commands appear.
+
+## Install — Cursor, VS Code, Codex CLI, Gemini CLI
+
+Clone the repo somewhere permanent, then copy the skills into your client's skills directory:
+
+```bash
+git clone https://github.com/LeanScaleTeam/leanscale-gtm-agents.git
+cd leanscale-gtm-agents
+
+python3 tools/install-skills.py --target ~/.cursor/skills
+```
+
+Use `--target .github/skills` for VS Code / Copilot, and `--plugin <name>` (repeatable) to
+install only some of them. `--dry-run` shows what it would do first.
+
+Two things it handles that copying by hand does not:
+
+- **It renames the skills.** Every plugin ships skills called `run` and `setup`. Claude Code
+  namespaces them (`/crm-hygiene:run`); a flat skills directory does not, so ten plugins would
+  give you ten skills called `run`. They install as `crm-hygiene-run`, `crm-hygiene-setup`, and
+  so on.
+- **It records where the clone lives**, so the agents can find their own analysis scripts.
+  Keep the clone where it is, or re-run the script after moving it.
+
+There are no slash commands outside Claude Code. Ask for the agent in plain language instead —
+*"set up crm hygiene"*, *"audit my CRM"*, *"how dirty is our Salesforce"*. The skills are
+written to be found that way.
 
 ## Set each one up
 
@@ -82,8 +131,16 @@ audit mode) before your next forecast call.
 
 ## What these will never do
 
-- **Send your data anywhere.** No telemetry, no phone-home, no uploads. The only network traffic is
-  the connectors you authorised. Reports are files on your disk.
+- **Send your CRM data anywhere.** No telemetry, no uploads of record data — not a sample, not
+  an aggregate, not ever. Your records go from your connector to your machine and stop there,
+  and reports are files on your disk.
+
+  There is exactly one optional exception, and it involves no CRM data at all: three of the
+  agents (`crm-hygiene`, `forecast-agent`, `stage-architect`) can cite LeanScale playbooks and
+  benchmarks alongside a finding, which needs a free key. If you don't have one, setup offers
+  to fetch it and sends **only the work email you type**, only after you say yes. Decline and
+  the agent runs exactly as it otherwise would — it just won't cite the playbook. You can also
+  get a key yourself at https://mcp.leanscale.team/ and never let setup near it.
 - **Write to your CRM** — with exactly one exception, `meeting-to-crm`, which is dry-run by default,
   proposes a diff and stops, only touches fields you've allow-listed, won't overwrite a non-empty
   value unless you tell it to, refuses to run on a schedule, and logs every applied write to
@@ -108,6 +165,9 @@ Don't delete the baselines — they're the evidence trail.
 | A whole section says "unavailable, not clean" | That connector or permission is missing | Section is skipped, not passed — grant the access named in the report |
 | Numbers differ from your dashboard | Usually the dashboard's filter, not the agent | Open the "verify this yourself" toggle on the finding and run the query |
 | `python3: command not found` | Python not installed or not on PATH | Install Python 3.9+ |
+| `cannot locate the plugin … re-run setup` | A plugin update moved the install, so the recorded path is stale | Re-run that agent's `:setup` — step 0 re-records it |
+| `no such file … /bin/<agent>` | Setup has never completed for that agent | Run its `:setup`. Outside Claude Code, re-run `tools/install-skills.py` |
+| `claude mcp list` shows LeanScale connected but playbooks never cite | The endpoint answers unauthenticated, so green there proves nothing | Run `python3 <plugin>/scripts/lib/config.py mcp-key-status`; add the `export` line and restart |
 
 ## Questions
 
