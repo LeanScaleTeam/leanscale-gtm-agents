@@ -56,11 +56,25 @@ mkdir -p "$RUN/raw" && echo "$RUN"
 
 Resolve the tools you actually have — never assume a tool name:
 
-```
-ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
-ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
-ToolSearch("describe metadata object schema")  -> crm.describe
-```
+Required capabilities: `crm.describe`, `crm.query`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
+    ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
+    ToolSearch("describe metadata object schema")  -> crm.describe
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 ---
 
@@ -336,8 +350,8 @@ it. A finding a customer cannot verify in their own CRM in sixty seconds is not 
 ## 4. Analyse and render
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/lead-source" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/lead-source" report  --run-dir "$RUN"
 ```
 
 `analyze.py` writes `manifest.json` and `findings.json`; `report.py` writes `report.md` and
@@ -350,7 +364,7 @@ identity read the object at all; (3) is the window so narrow that nothing falls 
 which one it was.
 
 To re-render without taking a second baseline snapshot:
-`python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run-dir "$RUN" --no-baseline`
+`"$HOME/.leanscale-gtm/bin/lead-source" report --run-dir "$RUN" --no-baseline`
 
 ---
 

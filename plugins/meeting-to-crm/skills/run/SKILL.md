@@ -58,15 +58,35 @@ Default window is **7 days**. `--window 1d` after a single call is the common ca
 
 ## Step 1 — resolve the tools you actually have
 
-```
-ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
-ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
-ToolSearch("describe object metadata fields")  -> crm.describe
-ToolSearch("create update record")             -> crm.write   (only used in the apply step)
-ToolSearch("transcripts meetings recordings")  -> transcripts.list
-ToolSearch("get transcript")                   -> transcripts.get
-ToolSearch("read file content drive")          -> docs.read   (Drive/folder transcript path)
-```
+Required capabilities: `crm.describe`, `crm.query`, `crm.write`, `transcripts.*`, `docs.read`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")        -> crm.query   (Salesforce)
+    ToolSearch("hubspot crm search objects")       -> crm.query   (HubSpot)
+    ToolSearch("describe object metadata fields")  -> crm.describe
+    ToolSearch("create update record")             -> crm.write   (only used in the apply step)
+    ToolSearch("transcripts meetings recordings")  -> transcripts.list
+    ToolSearch("get transcript")                   -> transcripts.get
+    ToolSearch("read file content drive")          -> docs.read   (Drive/folder transcript path)
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe   salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                   hubspot     hubspot-list-properties
+    crm.query      salesforce  run_soql_query
+                   hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    crm.write      salesforce  the server's record create/update tool
+                   hubspot     hubspot-batch-update-objects / hubspot-create-object
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+    docs.read      drive       file search + read file content
+                   local       plain filesystem reads
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Record what resolved. If `crm.query` does not resolve, stop — there is nothing to diff
 against. If the transcript capability does not resolve but `config.transcript_source.kind`
@@ -344,8 +364,8 @@ The `diagnosis` is what the user sees when a run aborts, so make it useful.
 ## Step 6 — build the diff and render it
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --raw "$RUN" --out "$RUN"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" analyze --raw "$RUN" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" report --run "$RUN"
 ```
 
 `analyze.py` aborts if a required source came back empty — that abort is correct behaviour,
@@ -373,7 +393,7 @@ than asking.
 Only when the user has read the diff and says to apply it:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" approve \
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff approve \
     --run "$RUN" --approved-by "<the user's real name>" --token <token from the report> --apply
 # subset:  --only p-101,p-104,c-001
 ```
@@ -407,8 +427,8 @@ cat > "$RUN/results.json" <<'JSON'
   {"row_id":"p-103","status":"failed","error":"INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST"} ]
 JSON
 
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" audit --run "$RUN" --results "$RUN/results.json"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run "$RUN" --no-baseline
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff audit --run "$RUN" --results "$RUN/results.json"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" report --run "$RUN" --no-baseline
 ```
 
 `audit` exits non-zero if you report a write that was not approved. If that happens, say so

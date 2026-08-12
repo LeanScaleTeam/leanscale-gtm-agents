@@ -83,7 +83,7 @@ changed since you read it, the approval is refused and you review again.
 ## 5. Check the audit log any time
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" show-audit --tail 20
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff show-audit --tail 20
 cat ~/.leanscale-gtm/audit/meeting-to-crm.log      # one JSON line per applied field
 ```
 
@@ -93,7 +93,7 @@ came from, the quote, and who approved it. It is append-only and it is yours.
 ## Verifying the guards yourself
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/diff.py" selftest
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" diff selftest
 ```
 
 38 checks against the bundled fixtures, in a temporary sandbox that does not touch your
@@ -105,10 +105,11 @@ on the deal.
 To watch a whole run without connecting anything:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-    --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce" --out ./demo \
-    --config "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/config.json"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run ./demo
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/meeting-to-crm" --root)"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" analyze \
+    --raw "$AGENT_ROOT/fixtures/salesforce" --out ./demo \
+    --config "$AGENT_ROOT/fixtures/salesforce/config.json"
+"$HOME/.leanscale-gtm/bin/meeting-to-crm" report --run ./demo
 open ./demo/report.html
 ```
 

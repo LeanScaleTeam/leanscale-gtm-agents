@@ -184,9 +184,10 @@ The plugin ships fixtures for both CRM shapes, so you can confirm the scripts wo
 pointing them at anything real:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-  --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/raw" --out /tmp/system-map-demo
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run-dir /tmp/system-map-demo
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/system-map" --root)"
+"$HOME/.leanscale-gtm/bin/system-map" analyze \
+  --raw "$AGENT_ROOT/fixtures/salesforce/raw" --out /tmp/system-map-demo
+"$HOME/.leanscale-gtm/bin/system-map" report --run-dir /tmp/system-map-demo
 open /tmp/system-map-demo/report.html
 ```
 

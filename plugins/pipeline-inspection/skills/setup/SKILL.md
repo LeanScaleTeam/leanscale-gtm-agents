@@ -29,14 +29,59 @@ Setup is **idempotent**. Re-running it is the supported way to diagnose a failed
 
 ---
 
+## Step 0 — Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/pipeline-inspection`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin pipeline-inspection --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/pipeline-inspection.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## Step 1 — Probe the connectors
 
-```
-ToolSearch("run_soql_query salesforce query records")
-ToolSearch("hubspot crm search objects deals")
-ToolSearch("describe metadata object schema fields")
-ToolSearch("transcripts meetings recordings")     # optional enrichment only
-```
+Required capabilities: `transcripts.*`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce query records")
+    ToolSearch("hubspot crm search objects deals")
+    ToolSearch("describe metadata object schema fields")
+    ToolSearch("transcripts meetings recordings")     # optional enrichment only
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report what each resolved tool actually provides, and be specific about failure. Not
 "HubSpot not available" but *"`hubspot-search-objects` resolves, but a search on `deals`
@@ -178,11 +223,12 @@ history + field history + contact roles + stage metadata), write it to a discove
 directory, and run the analyzer with the shipped defaults:
 
 ```bash
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/pipeline-inspection" --root)"
 mkdir -p "./gtm-agents/pipeline-inspection/discovery/raw"
 # ... write raw/*.json and raw/meta.json exactly as the run skill specifies ...
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" analyze \
   --run-dir "./gtm-agents/pipeline-inspection/discovery" \
-  --config "${CLAUDE_PLUGIN_ROOT}/config.example.json"
+  --config "$AGENT_ROOT/config.example.json"
 ```
 
 Then read `findings.json` → `sections` and pull out the three distributions that drive the
@@ -311,8 +357,9 @@ Sets `owner_scope`, and `redact_pii_in_reports` in the **shared profile**.
 ## Step 5 — Write the config
 
 Write `~/.leanscale-gtm/pipeline-inspection.json` (create/extend `~/.leanscale-gtm/profile.json`
-first if it was missing). Start from `${CLAUDE_PLUGIN_ROOT}/config.example.json`, keep every
-`_<key>_help` line, and replace the sample values with theirs.
+first if it was missing). Start from the plugin's `config.example.json` — find the directory
+with `"$HOME/.leanscale-gtm/bin/pipeline-inspection" --root` — keep every `_<key>_help` line,
+and replace the sample values with theirs.
 
 Then **show the user the file you wrote**, in full, and tell them it is theirs to hand-edit —
 it lives in their home directory and survives plugin updates.
@@ -325,8 +372,8 @@ Run the real pipeline on a small slice — one stage or one owner, or just the d
 you already fetched — with the config you just wrote:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "./gtm-agents/pipeline-inspection/discovery"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "./gtm-agents/pipeline-inspection/discovery"
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" analyze --run-dir "./gtm-agents/pipeline-inspection/discovery"
+"$HOME/.leanscale-gtm/bin/pipeline-inspection" report  --run-dir "./gtm-agents/pipeline-inspection/discovery"
 ```
 
 **Show them one real finding, with the deal name, the owner, the amount and the rule it

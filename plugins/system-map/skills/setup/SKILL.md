@@ -27,14 +27,63 @@ changes nothing in the CRM.
 
 ---
 
+## Step 0 — Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/system-map`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin system-map --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/system-map.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/system-map" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## Step 1 — Probe the connectors
 
-```
-ToolSearch("run_soql_query salesforce")       -> crm.query   (Salesforce)
-ToolSearch("hubspot crm search objects")      -> crm.query   (HubSpot)
-ToolSearch("describe metadata object schema") -> crm.describe
-ToolSearch("retrieve metadata package")       -> metadata retrieve (Salesforce)
-```
+Required capabilities: `crm.describe`, `crm.query`, `crm.metadata`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("run_soql_query salesforce")       -> crm.query   (Salesforce)
+    ToolSearch("hubspot crm search objects")      -> crm.query   (HubSpot)
+    ToolSearch("describe metadata object schema") -> crm.describe
+    ToolSearch("retrieve metadata package")       -> metadata retrieve (Salesforce)
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    crm.describe  salesforce  run_soql_query over EntityDefinition / FieldDefinition (useToolingApi where noted)
+                  hubspot     hubspot-list-properties
+    crm.query     salesforce  run_soql_query
+                  hubspot     hubspot-search-objects / hubspot-list-objects / hubspot-batch-read-objects
+    crm.metadata  salesforce  the server's metadata retrieve tool (Flow, WorkflowRule, ApexTrigger, ValidationRule)
+                  hubspot     no equivalent — HubSpot exposes no automation metadata API
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report exactly which resolved tool provides which capability. If neither CRM resolves, stop
 here and tell the user which MCP server to connect — everything downstream is pointless.
@@ -223,12 +272,13 @@ Ask these, informed by Step 4. Every question is one the CRM genuinely cannot an
 
 ## Step 6 — Write the config
 
-Copy `"${CLAUDE_PLUGIN_ROOT}/config.example.json"` to `~/.leanscale-gtm/system-map.json` and fill
+Copy the plugin's `config.example.json` to `~/.leanscale-gtm/system-map.json` and fill
 in the answers. Keep every `_<key>_help` line — customers edit this file by hand.
 
 ```bash
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/system-map" --root)"
 mkdir -p ~/.leanscale-gtm
-cp "${CLAUDE_PLUGIN_ROOT}/config.example.json" ~/.leanscale-gtm/system-map.json
+cp "$AGENT_ROOT/config.example.json" ~/.leanscale-gtm/system-map.json
 ```
 
 Then edit it with the interview answers and **show the user the finished file**. Point out
@@ -264,8 +314,8 @@ HubSpot, scoped to deals: `GET /automation/v4/flows?limit=100`, keep `objectType
 3. Write `_sources.json` for the slice (same rules as the run skill), then:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$SMOKE"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir "$SMOKE"
+"$HOME/.leanscale-gtm/bin/system-map" analyze --run-dir "$SMOKE"
+"$HOME/.leanscale-gtm/bin/system-map" report  --run-dir "$SMOKE"
 ```
 
 4. **Show a genuine finding, in their own words.** Not "the pipeline ran." Something like:

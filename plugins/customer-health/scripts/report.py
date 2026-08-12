@@ -8,7 +8,7 @@ Three jobs:
 
   1. Baseline diff. Compare this run's scores against the last snapshot, attach
      deltas, flag run one as the baseline run, then save a fresh snapshot.
-  2. Render through the shared library so all nine agents look like one product.
+  2. Render through the shared library so all ten agents look like one product.
   3. Splice in the two sections this plugin owns and the shared renderer does not
      know about: the SENTIMENT x COMMERCIAL RISK QUADRANT, and MOVEMENT SINCE
      KICKOFF. Both use the shared stylesheet's own classes — no second design

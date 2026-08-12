@@ -1,7 +1,7 @@
 # LeanScale GTM Agents — Build Spec v1
 
-**Read this completely before writing a single file.** Nine plugins are built against this
-spec by nine different authors. Anything in here is non-negotiable; anything not in here is
+**Read this completely before writing a single file.** Ten plugins are built against this
+spec by ten different authors. Anything in here is non-negotiable; anything not in here is
 your call. The goal is that a customer who installs three of these cannot tell they were
 built separately.
 
@@ -58,7 +58,7 @@ Consequences you must respect:
 - **Judgment lives in the skill**, not in Python. Python computes counts, rates and diffs.
   Claude interprets. Never try to encode qualification judgment in a regex.
 
-### Run directory (identical across all nine)
+### Run directory (identical across all ten)
 
 ```
 ./gtm-agents/<plugin-slug>/<YYYY-MM-DD-HHMM>/
@@ -80,7 +80,7 @@ Plugins get replaced on update. Config must survive that.
 
 ```
 ~/.leanscale-gtm/
-    profile.json              # SHARED org profile — written once, read by all nine
+    profile.json              # SHARED org profile — written once, read by all ten
     <plugin-slug>.json        # per-plugin settings
     baselines/<plugin-slug>/  # dated baseline snapshots
     audit/<plugin-slug>.log   # append-only write log (write-capable plugins only)
@@ -90,7 +90,7 @@ Plugins get replaced on update. Config must survive that.
 
 The **first** setup skill a customer runs creates this. Every subsequent setup skill reads
 it, shows the customer what's already known, and only asks for what's missing. Do not
-re-interrogate someone about their fiscal year nine times.
+re-interrogate someone about their fiscal year ten times.
 
 ```jsonc
 {
@@ -138,18 +138,29 @@ edit these files by hand.
 
 ## 3. Capability probe — how a plugin finds out what it can reach
 
-Customers connect their own MCP servers. You cannot assume tool names. Every setup skill
-opens with a probe, mapping real tools to canonical capabilities:
+Customers connect their own MCP servers. You cannot assume tool names. Every skill opens by
+declaring the **capabilities** it needs and resolving real tools onto them.
 
-| Capability | Probe query | Known providers |
+**The capability is the contract, not the tool name, and not `ToolSearch`.** `ToolSearch` is
+a Claude Code tool. On Cursor, VS Code, Codex CLI and Gemini CLI it does not exist, so a
+skill that resolves *only* through it finds no CRM and produces an empty report against a
+perfectly healthy connection. Every resolution block therefore states the capability first,
+offers `ToolSearch` as the fast path where available, and lists concrete tool names to match
+against otherwise.
+
+| Capability | Probe query (Claude Code) | Match by name elsewhere |
 |---|---|---|
-| `crm.query` | `ToolSearch("run_soql_query salesforce")` / `ToolSearch("hubspot crm search")` | Salesforce MCP, HubSpot MCP |
-| `crm.describe` | `ToolSearch("describe metadata object schema")` | Salesforce MCP |
-| `crm.write` | `ToolSearch("create update record")` | Salesforce, HubSpot |
+| `crm.query` | `ToolSearch("run_soql_query salesforce")` / `ToolSearch("hubspot crm search")` | sf: `run_soql_query` · hs: `hubspot-search-objects`, `hubspot-list-objects`, `hubspot-batch-read-objects` |
+| `crm.describe` | `ToolSearch("describe metadata object schema")` | sf: `run_soql_query` over `EntityDefinition`/`FieldDefinition` · hs: `hubspot-list-properties` |
+| `crm.write` | `ToolSearch("create update record")` | sf: the server's record create/update tool · hs: `hubspot-batch-update-objects` |
+| `crm.metadata` | `ToolSearch("retrieve metadata package")` | sf: metadata retrieve (Flow, WorkflowRule, ApexTrigger, ValidationRule) · hs: no equivalent |
 | `transcripts.list` | `ToolSearch("transcripts meetings recordings")` | Gong, Fireflies, Chorus, Grain, Otter, Zoom, Google Drive |
 | `transcripts.get` | `ToolSearch("get transcript")` | same |
 | `comms.search` | `ToolSearch("slack search")` / `ToolSearch("gmail search threads")` | Slack, Gmail, Outlook |
-| `docs.read` | `ToolSearch("read file content drive")` | Google Drive, Notion |
+| `docs.read` | `ToolSearch("read file content drive")` | Google Drive, Notion, plain filesystem |
+
+The right-hand column is the common case, not an allow-list — say so in the skill, so a model
+on an unfamiliar server adapts instead of giving up.
 
 **Field reality — plan for it.** Across a 43-company panel of exactly this ICP:
 Salesforce is CRM-of-record at **63%**, HubSpot-as-CRM at **33%**, and Gong is present at
@@ -194,7 +205,7 @@ later fails.
 
 ## 5. Safety posture — non-negotiable
 
-- **Read-only by default.** Eight of nine plugins never write. Say so in the README, in
+- **Read-only by default.** Nine of ten plugins never write. Say so in the README, in
   plain words, in the first paragraph. It is a sales feature: 30% of this ICP has an active
   AI-governance problem, and read-only is what gets approved.
 - **The one write-capable plugin** (`meeting-to-crm`) must: default to dry-run, render a
@@ -242,7 +253,7 @@ Every plugin's `findings.json` uses this envelope so the suite reads as one prod
 }
 ```
 
-**Severity means the same thing in all nine plugins:**
+**Severity means the same thing in all ten plugins:**
 - `critical` — the number an executive is looking at is wrong, or revenue is actively leaking.
 - `high` — a decision is being made on bad data; fix this quarter.
 - `medium` — real drag on the team; fix when convenient.
@@ -253,7 +264,7 @@ them**. A finding a customer cannot verify in their own CRM in 60 seconds is not
 
 ---
 
-## 7. The nine plugins
+## 7. The ten plugins
 
 Slugs, commands, required capabilities, and the interview each must run. Your plugin's
 questions are a floor, not a ceiling — add what the analysis genuinely needs.
@@ -273,6 +284,7 @@ with four installed types the same thing every time: `:run` and `:setup`.
 | 7 | `stage-architect` | `/stage-architect:run` · `:setup` | `crm.query`, `crm.describe` | — |
 | 8 | `lead-source` | `/lead-source:run` · `:setup` | `crm.query`, `crm.describe` | — |
 | 9 | `system-map` | `/system-map:run` · `:setup` | `crm.describe` | `crm.query` |
+| 10 | `executive-reporting` | `/executive-reporting:run` · `:setup` | `crm.query`, `crm.describe` | — |
 
 ### Interview requirements (minimum) — beyond the shared profile
 
@@ -325,6 +337,14 @@ connected apps, automation (flows/workflows/APEX triggers), and scheduled jobs; 
 flag orphaned automation; the tools they *believe* are connected (capture the belief, then
 show them the measured reality).
 
+**10. executive-reporting** — the stage map (every real stage value mapped onto the canonical
+funnel — never inferred from labels, since a swapped SAL/SQL silently reverses two headline
+rates); which canonical stage counts as pipeline; which amount-like field is the bookings
+number; who owns expansion (sales, CS, or blended into one number); targets at board,
+executive and field level per metric — record "no goal configured" rather than inventing one;
+and what they currently quote as their conversion rate and bookings number (`believed_conversion`
+/ `believed_metrics`), so the pack can reconcile against it and report the gap.
+
 ---
 
 ## 8. Every plugin's file layout
@@ -351,15 +371,28 @@ flat command file can't carry supporting scripts.
 homepage `https://leanscale.team`. LeanScale branding lives in the marketplace name and the
 report, not in a redundant plugin prefix.
 
-**Paths:** reference bundled files as `"${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py"` — always
-quoted, never relative, never absolute-from-the-build-machine.
+**Paths:** never reference `${CLAUDE_PLUGIN_ROOT}` outside the `setup` skill. It exists only
+inside Claude Code, and these skills also run on Cursor, VS Code, Codex CLI and Gemini CLI.
+Invoke scripts through the shim, always quoted:
 
-**Two hard constraints from the plugin runtime:**
+```bash
+"$HOME/.leanscale-gtm/bin/<plugin>" analyze --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/<plugin>" --root       # fixtures/, config.example.json
+```
+
+`setup` writes the shim in its step 0 (`config.py install-shim`), resolving the plugin
+directory from `${CLAUDE_PLUGIN_ROOT}` when it exists and from the skill's own load path
+otherwise. That is the single place path resolution happens.
+
+**Three hard constraints from the plugin runtime:**
 - A plugin **cannot read files outside its own directory** (`../core/lib` will not resolve —
   installed plugins are copied into a cache). This is why `core/lib` is *vendored* into every
   plugin. Build against `core/lib`; the packaging step copies it in.
 - `${CLAUDE_PLUGIN_ROOT}` is **read-only** on a marketplace install. Never write there. All
   output goes to the working directory; all config to `~/.leanscale-gtm/`.
+- `${CLAUDE_PLUGIN_ROOT}` is also **absent on every non-Claude-Code client**, which is why the
+  shim exists at all. Treat a bare `${CLAUDE_PLUGIN_ROOT}` in a `run` skill as a build error;
+  `tools/qa.py` enforces it.
 
 ---
 

@@ -109,11 +109,12 @@ Both CRM shapes ship as fixtures, with their own config and profile, so you can 
 before connecting anything:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" \
-  --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/raw" --out /tmp/fa --mode audit \
-  --config "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/config.json" \
-  --profile "${CLAUDE_PLUGIN_ROOT}/fixtures/salesforce/profile.json" --no-baseline
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run /tmp/fa
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/forecast-agent" --root)"
+"$HOME/.leanscale-gtm/bin/forecast-agent" analyze \
+  --raw "$AGENT_ROOT/fixtures/salesforce/raw" --out /tmp/fa --mode audit \
+  --config "$AGENT_ROOT/fixtures/salesforce/config.json" \
+  --profile "$AGENT_ROOT/fixtures/salesforce/profile.json" --no-baseline
+"$HOME/.leanscale-gtm/bin/forecast-agent" report --run /tmp/fa
 ```
 
 Swap `salesforce` for `hubspot` to see the HubSpot path, which also demonstrates how the plugin

@@ -1,7 +1,7 @@
 """
 The shared findings envelope.
 
-All nine plugins emit the same shape so the suite reads as one product and a
+All ten plugins emit the same shape so the suite reads as one product and a
 customer can diff a hygiene report against a pipeline report without a decoder
 ring.
 

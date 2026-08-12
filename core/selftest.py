@@ -70,6 +70,97 @@ except AttributeError:
     pass
 os.environ["LEANSCALE_GTM_HOME"] = TMP  # unchanged
 
+print("\nagent root + shim")
+# A believable plugin root: the sentinel is all verify_agent_root looks for.
+fake_root = Path(TMP) / "fake-plugin"
+(fake_root / "scripts").mkdir(parents=True)
+(fake_root / "scripts" / "analyze.py").write_text(
+    "import sys; print('analyzed', *sys.argv[1:])\n", encoding="utf-8")
+
+check("verify_agent_root accepts a real root",
+      config.verify_agent_root(fake_root) == fake_root.resolve())
+
+try:
+    config.verify_agent_root(Path(TMP))
+    check("verify_agent_root rejects a non-root", False, "no ConfigError raised")
+except config.ConfigError as exc:
+    check("verify_agent_root rejects a non-root", "does not look like a plugin root" in str(exc))
+
+installed = config.install_shim("fake-plugin", fake_root)
+shim = Path(installed["shim"])
+check("shim written", shim.is_file())
+check("shim is executable", os.access(shim, os.X_OK))
+check("agent_root persisted", config.load_plugin_config("fake-plugin")["agent_root"]
+      == str(fake_root.resolve()))
+check("agent_root() reads it back", config.agent_root("fake-plugin") == fake_root.resolve())
+
+# The baked path must be shell-quoted — plugin caches live under paths with spaces.
+spaced = Path(TMP) / "dir with space" / "plug"
+(spaced / "scripts").mkdir(parents=True)
+(spaced / "scripts" / "analyze.py").write_text("print('ok')\n", encoding="utf-8")
+config.install_shim("spaced-plugin", spaced)
+import subprocess as _sp  # noqa: E402
+res = _sp.run([str(config.shim_path("spaced-plugin")), "analyze"],
+              capture_output=True, text=True)
+check("shim survives spaces in the path", res.returncode == 0 and "ok" in res.stdout,
+      res.stderr.strip()[:80])
+
+res = _sp.run([str(shim), "analyze", "--flag"], capture_output=True, text=True)
+check("shim execs the script", "analyzed --flag" in res.stdout, res.stderr.strip()[:80])
+
+res = _sp.run([str(shim)], capture_output=True, text=True)
+check("shim with no args explains itself", res.returncode == 2 and "usage:" in res.stderr)
+
+res = _sp.run([str(shim), "nope"], capture_output=True, text=True)
+check("shim rejects an unknown script",
+      res.returncode == 2 and "no such script 'nope'" in res.stderr, res.stderr.strip()[:80])
+
+# --root is how a skill reaches config.example.json and fixtures/, which are not scripts.
+res = _sp.run([str(shim), "--root"], capture_output=True, text=True)
+check("shim --root prints the plugin dir",
+      res.returncode == 0 and res.stdout.strip() == str(fake_root.resolve()),
+      res.stdout.strip()[:80])
+
+res = _sp.run([str(config.shim_path("spaced-plugin")), "--root"], capture_output=True, text=True)
+check("shim --root handles spaces", res.stdout.strip() == str(spaced.resolve()),
+      res.stdout.strip()[:80])
+
+# A stale or wrong CLAUDE_PLUGIN_ROOT must not strand the user — fall back to baked.
+env = dict(os.environ, CLAUDE_PLUGIN_ROOT="/nonexistent/plugin/root")
+res = _sp.run([str(shim), "analyze"], capture_output=True, text=True, env=env)
+check("shim falls back when CLAUDE_PLUGIN_ROOT is bogus", "analyzed" in res.stdout,
+      res.stderr.strip()[:80])
+
+# ...but a valid one wins, so a plugin update that moves the cache is picked up.
+other = Path(TMP) / "other-plugin"
+(other / "scripts").mkdir(parents=True)
+(other / "scripts" / "analyze.py").write_text("print('from-env-root')\n", encoding="utf-8")
+env = dict(os.environ, CLAUDE_PLUGIN_ROOT=str(other))
+res = _sp.run([str(shim), "analyze"], capture_output=True, text=True, env=env)
+check("valid CLAUDE_PLUGIN_ROOT takes precedence", "from-env-root" in res.stdout,
+      res.stderr.strip()[:80])
+
+try:
+    config.agent_root("never-set-up")
+    check("agent_root() names the fix when unset", False, "no ConfigError raised")
+except config.ConfigError as exc:
+    check("agent_root() names the fix when unset", "never-set-up:setup" in str(exc))
+
+print("\noptional MCP key")
+check("absent key reads as None", config.load_mcp_key() is None)
+key_file = config.save_mcp_key("ls_live_selftest")
+check("key round-trips", config.load_mcp_key() == "ls_live_selftest")
+check("key file is 0600", oct(key_file.stat().st_mode & 0o777) == "0o600",
+      oct(key_file.stat().st_mode & 0o777))
+key_file.chmod(0o644)
+config.save_mcp_key("ls_live_second")
+check("re-save re-tightens a loosened file",
+      oct(key_file.stat().st_mode & 0o777) == "0o600",
+      oct(key_file.stat().st_mode & 0o777))
+os.environ["LEANSCALE_MCP_KEY"] = "from_env"
+check("env key beats the file", config.load_mcp_key() == "from_env")
+del os.environ["LEANSCALE_MCP_KEY"]
+
 print("\ncrmutil")
 sf = [{"attributes": {"type": "Opportunity"}, "Id": "006x", "Amount": 50000,
        "Owner": {"Name": "Dana", "Id": "005y"}, "CloseDate": "2026-03-15"}]

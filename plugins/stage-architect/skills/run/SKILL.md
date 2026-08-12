@@ -40,9 +40,16 @@ echo "$RUN"
 
 ## Step 1 — resolve capabilities
 
+Required capabilities: `crm.query` and `crm.describe`.
+
+If `ToolSearch` is available (Claude Code), that is the fastest route —
 `ToolSearch("run_soql_query salesforce")` and `ToolSearch("hubspot crm search deals")`.
-Required: `crm.query` and `crm.describe`. If neither CRM resolves, stop — this plugin has
-no degraded mode that works without a CRM.
+Otherwise match against the tools already connected in this client: `run_soql_query` on
+Salesforce (and the same tool over `EntityDefinition` / `FieldDefinition` for `crm.describe`),
+`hubspot-search-objects` / `hubspot-list-objects` plus `hubspot-list-properties` on HubSpot.
+Those names are the common cases, not the contract.
+
+If neither CRM resolves, stop — this plugin has no degraded mode that works without a CRM.
 
 ## Step 2 — fetch
 
@@ -343,7 +350,7 @@ a silently wrong report.
 ## Step 3 — analyse
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/stage-architect" analyze --run-dir "$RUN"
 ```
 
 Exit code 2 means a required source came back empty and the run aborted on purpose. Do not
@@ -355,7 +362,7 @@ different threshold without editing the saved config.
 ## Step 4 — report
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py" --run-dir "$RUN"
+"$HOME/.leanscale-gtm/bin/stage-architect" report --run-dir "$RUN"
 ```
 
 Writes `report.md` and `report.html` into the run directory, applies deltas against the last

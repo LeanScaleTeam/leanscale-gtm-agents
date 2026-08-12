@@ -1,7 +1,7 @@
 # LeanScale GTM Agents
 
-Nine GTM and RevOps agents, packaged as a Claude Code plugin marketplace, that run against a
-customer's own Salesforce or HubSpot. Eight are strictly read-only. Every finding carries the
+Ten GTM and RevOps agents, packaged as a Claude Code plugin marketplace, that run against a
+customer's own Salesforce or HubSpot. Nine are strictly read-only. Every finding carries the
 record count and the exact query that produced it.
 
 | Plugin | Command | Needs | What it does |
@@ -12,6 +12,7 @@ record count and the exact query that produced it.
 | `stage-architect` | `/stage-architect:run` | CRM + stage history | What your stages actually mean vs. what the team believes; buyer-verifiable exit criteria |
 | `lead-source` | `/lead-source:run` | CRM | Source-data integrity: null/Other rate, near-duplicate values, survival through conversion |
 | `system-map` | `/system-map:run` | CRM metadata | Integration users, connected apps, flows, orphaned automation, same-field write conflicts |
+| `executive-reporting` | `/executive-reporting:run` | CRM | Bookings, created pipeline, coverage, cohort conversion, retention, concentration — each against a goal, each openable to the rows underneath |
 | `sales-coach` | `/sales-coach:run` | Transcripts | Scores calls against *their* framework; one manager-facing team pattern report |
 | `customer-health` | `/customer-health:run` | CRM (+transcripts) | Two scores — sentiment and commercial risk — because they diverge |
 | `meeting-to-crm` | `/meeting-to-crm:run` | CRM + transcripts | Proposes CRM updates as an approvable diff. **The only write-capable plugin.** |
@@ -24,7 +25,7 @@ core/
   PLUGIN-SCHEMA.md     the verified Claude Code plugin/marketplace schema
   lib/                 shared library (config, manifest, findings, baseline, render, crmutil)
   selftest.py          62 checks over the shared library
-plugins/<name>/        the nine plugins
+plugins/<name>/        the ten plugins
 tools/
   vendor.py            copy core/lib -> plugins/*/scripts/lib  (installed plugins can't read ../)
   qa.py                suite-wide gate: schema, leakage, read-only statements, claude plugin validate
@@ -58,7 +59,7 @@ baselines/`. Run one says plainly that it is a baseline rather than posing as a 
 
 - Config lives in `~/.leanscale-gtm/`, never in the plugin — marketplace installs are a read-only
   cache that is replaced on update.
-- One shared `profile.json`: the customer describes their business once, not nine times.
+- One shared `profile.json`: the customer describes their business once, not ten times.
 - Python is standard-library only and never touches the network. Claude fetches via MCP; Python
   transforms local files.
 - A required source returning zero records **aborts the run** with a diagnosis. A report saying

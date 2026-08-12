@@ -23,17 +23,62 @@ Setup is idempotent — re-running it is also how you diagnose a failed run.
 
 ---
 
+## 0. Locate this plugin
+
+Everything below runs this plugin's scripts through a small shim at
+`~/.leanscale-gtm/bin/sales-coach`. Create it before anything else — nothing later works without it.
+
+`AGENT_ROOT` is this plugin's own directory: the one containing `scripts/`, `skills/` and
+`.claude-plugin/`. Inside Claude Code, `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
+VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
+this SKILL.md from, two levels up from `skills/setup/`.
+
+If the agents were installed with `tools/install-skills.py` (the non-plugin path), this is
+already done — skip to the confirmation below. Otherwise:
+
+```bash
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin sales-coach --root "$AGENT_ROOT"
+```
+
+It verifies the directory really is a plugin root, records it in
+`~/.leanscale-gtm/sales-coach.json`, and writes the shim. If it answers *"does not look like a
+plugin root"*, the path is wrong — fix it now rather than debugging a later step.
+
+Confirm it works before continuing:
+
+```bash
+"$HOME/.leanscale-gtm/bin/sales-coach" --root
+```
+
+Re-running this is safe, and is the first thing to try if a run later fails with a missing
+script — a plugin update moves the install and the recorded path goes stale.
+
+---
+
 ## 1. Probe what is actually connected
 
-```
-ToolSearch("transcripts meetings recordings calls")
-ToolSearch("get transcript")
-ToolSearch("gong calls")           ToolSearch("fireflies transcript")
-ToolSearch("chorus engagement")    ToolSearch("grain recordings")
-ToolSearch("zoom recordings")      ToolSearch("drive search files read file content")
-ToolSearch("run_soql_query salesforce")
-ToolSearch("hubspot crm search")
-```
+Required capabilities: `transcripts.*`.
+
+**If `ToolSearch` is available** (Claude Code), that is the fastest route:
+
+    ToolSearch("transcripts meetings recordings calls")
+    ToolSearch("get transcript")
+    ToolSearch("gong calls")           ToolSearch("fireflies transcript")
+    ToolSearch("chorus engagement")    ToolSearch("grain recordings")
+    ToolSearch("zoom recordings")      ToolSearch("drive search files read file content")
+    ToolSearch("run_soql_query salesforce")
+    ToolSearch("hubspot crm search")
+
+**Otherwise** — Cursor, VS Code, Codex CLI, Gemini CLI — match against the tools
+already connected in this client. Commonly:
+
+    transcripts.*  any vendor  gong / fireflies / chorus / grain / otter / zoom list+get transcript tools
+                   fallback    docs.read over a folder of exported transcripts — no vendor is required
+
+These names are the common cases, not the contract; the capability is the contract.
+Report which tool resolved for each capability before proceeding.
+
 
 Report what each resolved tool provides, mapped to a capability:
 
@@ -118,7 +163,7 @@ Take three calls, normalize them, and report what happened:
 
 ```bash
 mkdir -p /tmp/sc-probe/raw/transcripts   # write calls.json + 3 transcripts here
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/transcripts.py" normalize --raw /tmp/sc-probe/raw \
+"$HOME/.leanscale-gtm/bin/sales-coach" transcripts normalize --raw /tmp/sc-probe/raw \
   --internal-domain acme.com
 ```
 
@@ -132,7 +177,7 @@ Also run the parser tests, so an unusual export layout surfaces during setup rat
 three weeks later:
 
 ```bash
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/transcripts.py" selftest
+"$HOME/.leanscale-gtm/bin/sales-coach" transcripts selftest
 ```
 
 ### 3c. CRM discovery, if a CRM is connected
@@ -253,8 +298,9 @@ Do not skip this. It is the cheapest credibility you will ever buy.
 ## 5. Write the config
 
 ```bash
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/sales-coach" --root)"
 mkdir -p ~/.leanscale-gtm
-cp "${CLAUDE_PLUGIN_ROOT}/config.example.json" ~/.leanscale-gtm/sales-coach.json
+cp "$AGENT_ROOT/config.example.json" ~/.leanscale-gtm/sales-coach.json
 ```
 
 Then edit it with the answers. Keep every `_help` key — customers edit this file by hand.
@@ -274,8 +320,8 @@ A setup that ends without proving output is not done.
 4. Run the pipeline:
 
    ```bash
-   python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir /tmp/sc-smoke --no-baseline
-   python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir /tmp/sc-smoke
+   "$HOME/.leanscale-gtm/bin/sales-coach" analyze --run-dir /tmp/sc-smoke --no-baseline
+   "$HOME/.leanscale-gtm/bin/sales-coach" report  --run-dir /tmp/sc-smoke
    ```
 
    `--no-baseline` so the smoke test does not become the baseline the customer is measured
@@ -294,12 +340,13 @@ If no live source is connected yet, run the bundled offline sample instead so th
 the shape of the output — and say clearly that it is fictional sample data:
 
 ```bash
+AGENT_ROOT="$("$HOME/.leanscale-gtm/bin/sales-coach" --root)"
 export LEANSCALE_GTM_HOME=/tmp/sc-demo-home && mkdir -p $LEANSCALE_GTM_HOME
-cp "${CLAUDE_PLUGIN_ROOT}/fixtures/profile.json" $LEANSCALE_GTM_HOME/profile.json
-cp "${CLAUDE_PLUGIN_ROOT}/fixtures/config.json"  $LEANSCALE_GTM_HOME/sales-coach.json
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/analyze.py" --run-dir /tmp/sc-demo \
-        --raw "${CLAUDE_PLUGIN_ROOT}/fixtures/raw"
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/report.py"  --run-dir /tmp/sc-demo
+cp "$AGENT_ROOT/fixtures/profile.json" $LEANSCALE_GTM_HOME/profile.json
+cp "$AGENT_ROOT/fixtures/config.json"  $LEANSCALE_GTM_HOME/sales-coach.json
+"$HOME/.leanscale-gtm/bin/sales-coach" analyze --run-dir /tmp/sc-demo \
+        --raw "$AGENT_ROOT/fixtures/raw"
+"$HOME/.leanscale-gtm/bin/sales-coach" report  --run-dir /tmp/sc-demo
 open /tmp/sc-demo/report.html
 ```
 
