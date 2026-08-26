@@ -12,70 +12,70 @@
   "plugins": [
     {
       "name": "crm-hygiene",
-      "source": "./crm-hygiene",
+      "source": "./plugins/crm-hygiene",
       "version": "1.0.0",
       "category": "data-quality",
       "description": "Audits the integrity of your CRM: duplicate accounts and contacts, dead fields, records owned by people who left, stale pipeline, orphaned contacts, and picklist rot. Produces a Hygiene Index and a fix list. Read-only."
     },
     {
       "name": "pipeline-inspection",
-      "source": "./pipeline-inspection",
+      "source": "./plugins/pipeline-inspection",
       "version": "1.0.0",
       "category": "pipeline",
       "description": "Finds the open deals violating your own rules \u2014 stuck in stage past your measured median, no next step, close date pushed three times, single-threaded, past due. A manager's call list, not a forecast. Read-only."
     },
     {
       "name": "forecast-agent",
-      "source": "./forecast-agent",
+      "source": "./plugins/forecast-agent",
       "version": "1.0.0",
       "category": "forecasting",
       "description": "Audits whether your CRM can support a forecast at all, then calls it three ways with the method shown. Scores forecast integrity and surfaces the gap between the rep-called commit and the evidence. Read-only."
     },
     {
       "name": "sales-coach",
-      "source": "./sales-coach",
+      "source": "./plugins/sales-coach",
       "version": "1.0.0",
       "category": "enablement",
       "description": "Scores calls against your qualification framework \u2014 MEDDPICC, BANT, SPICED or your own \u2014 and rolls them into one team pattern report for the manager, with verbatim evidence and timestamps. Read-only."
     },
     {
       "name": "customer-health",
-      "source": "./customer-health",
+      "source": "./plugins/customer-health",
       "version": "1.0.0",
       "category": "retention",
       "description": "Scores every account twice, on sentiment and on commercial risk, because they diverge \u2014 the account that churns is often the happy one with an unsigned renewal. Captures a kickoff baseline so later runs prove movement. Read-only."
     },
     {
       "name": "meeting-to-crm",
-      "source": "./meeting-to-crm",
+      "source": "./plugins/meeting-to-crm",
       "version": "1.0.0",
       "category": "productivity",
       "description": "Turns each call into proposed CRM updates \u2014 next step, qualification fields, new stakeholders \u2014 as an approvable diff. Dry-run by default, strict field allow-list, every applied write logged."
     },
     {
       "name": "stage-architect",
-      "source": "./stage-architect",
+      "source": "./plugins/stage-architect",
       "version": "1.0.0",
       "category": "funnel-design",
       "description": "Derives what your pipeline stages actually mean from your own closed history and contrasts it with what your team believes. Finds skipped stages, stages that don't discriminate, and proposes buyer-verifiable exit criteria. Read-only."
     },
     {
       "name": "lead-source",
-      "source": "./lead-source",
+      "source": "./plugins/lead-source",
       "version": "1.0.0",
       "category": "attribution",
       "description": "Measures whether your lead source data can be trusted: null and Other rates, near-duplicate values, and whether source survives the lead-to-opportunity conversion. Source integrity, not multi-touch attribution. Read-only."
     },
     {
       "name": "system-map",
-      "source": "./system-map",
+      "source": "./plugins/system-map",
       "version": "1.0.0",
       "category": "architecture",
       "description": "Inventories what is actually wired into your CRM \u2014 integration users, connected apps, flows, triggers, scheduled jobs \u2014 and finds orphaned automation and multiple automations writing the same field. Read-only metadata."
     },
     {
       "name": "executive-reporting",
-      "source": "./executive-reporting",
+      "source": "./plugins/executive-reporting",
       "version": "1.0.0",
       "category": "reporting",
       "description": "Builds the executive GTM reporting pack leadership runs the business on \u2014 bookings, created pipeline, coverage, cohort conversion, retention and concentration, each against a goal and each openable to the rows underneath. Audits whether the CRM can support the reporting before it publishes a number. Read-only."
