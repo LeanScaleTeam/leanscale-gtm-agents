@@ -1,6 +1,6 @@
 {
   "name": "semantic-layer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reads your CRM, then walks you through defining your go-to-market metrics and writes them out as a real semantic layer: a git repo of versioned metric files with a named owner and a declared source of truth for each one. Starts with the three metrics your yield depends on. Read-only against the CRM.",
   "author": {
     "name": "LeanScale",
