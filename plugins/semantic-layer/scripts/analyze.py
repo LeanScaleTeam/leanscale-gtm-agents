@@ -39,17 +39,24 @@ RENEWAL_MARKERS = ("renewal", "expansion", "upsell", "cross-sell", "churn", "rev
 FRAMEWORK_MARKERS = ("bant", "champ", "medd", "anum", "gpctba", "spiced", "scotsman")
 
 
-def has_fill_rates(fields: List[Dict[str, Any]]) -> bool:
+def measured(fields: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """
-    True only if fill rates were actually measured.
+    Only the fields whose fill rate was actually measured.
 
-    Fill rate comes from `crm.query`, which is optional. When it did not resolve the
-    key is absent — and absent is NOT zero. Treating it as zero reports the org's
-    most-populated field as empty, which is a confident lie, and it is exactly the
-    failure this plugin exists to prevent. Any check that needs a fill rate must be
-    skipped and declared unavailable, never guessed.
+    Fill rate comes from `crm.query`, which is optional AND partial: a probe may
+    measure six fields out of twenty-seven. Absent is not zero. Treating it as zero
+    reports untouched fields as empty — a confident lie, and precisely the failure
+    this plugin exists to prevent.
+
+    Every fill-rate check must run over THIS list, never the full list, and must say
+    how many fields it could not see. Filtering by "did any field get measured" is
+    not enough; that is the same bug one level down.
     """
-    return any(f.get("fill_rate") is not None for f in fields)
+    return [f for f in fields if f.get("fill_rate") is not None]
+
+
+def has_fill_rates(fields: List[Dict[str, Any]]) -> bool:
+    return bool(measured(fields))
 
 
 def _rate(field: Dict[str, Any]) -> float:
@@ -150,20 +157,23 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
                 owner_hint="CFO or RevOps",
             ))
 
-        if not has_fill_rates(candidates):
+        measured_cur = measured(candidates)
+        unmeasured_cur = len(candidates) - len(measured_cur)
+        if unmeasured_cur:
             doc.unavailable.append(
-                "Currency field fill rates — no `crm.query` tool resolved, so dead-field "
-                "detection was skipped. Absent is not zero; guessing would report your "
-                "most-populated field as empty."
+                f"Currency field fill rates — {unmeasured_cur} of {len(candidates)} "
+                f"field(s) were not measured, so they are excluded from dead-field "
+                f"detection. Absent is not zero: reporting them as empty would be a "
+                f"guess, and one of them may be the field you actually use."
             )
-        dead = ([c for c in candidates if _rate(c) < 0.05]
-                if has_fill_rates(candidates) else [])
+        dead = [c for c in measured_cur if _rate(c) < 0.05]
         if len(dead) >= 3:
             doc.add(Finding(
                 id="dead-currency-fields",
                 severity="low",
                 title=f"{len(dead)} currency fields are effectively empty",
-                what=f"{len(dead)} currency fields are populated on under 5% of records.",
+                what=f"{len(dead)} of the {len(measured_cur)} measured currency field(s) "
+                     f"are populated on under 5% of records.",
                 why_it_matters="Empty fields widen the menu when someone is choosing which "
                                "amount to use, and every one of them is a wrong answer.",
                 recommended_fix="Exclude them from the definition conversation, and consider "
@@ -213,19 +223,22 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
                 effort="medium",
                 owner_hint="CRM admin",
             ))
-        if not has_fill_rates(stage_dates):
+        measured_sd = measured(stage_dates)
+        unmeasured_sd = len(stage_dates) - len(measured_sd)
+        if unmeasured_sd:
             doc.unavailable.append(
-                "Stage timestamp fill rates — no `crm.query` tool resolved. Whether these "
-                "fields are actually populated is the difference between a cycle time you "
-                "can trust and one computed over a biased sample. Unmeasured, not clean."
+                f"Stage timestamp fill rates — {unmeasured_sd} of {len(stage_dates)} "
+                f"field(s) were not measured. Whether a stage field is actually populated "
+                f"is the difference between a cycle time you can trust and one computed "
+                f"over a biased sample. Unmeasured, not clean."
             )
-        thin = ([f for f in stage_dates if _rate(f) < 0.5]
-                if has_fill_rates(stage_dates) else [])
+        thin = [f for f in measured_sd if _rate(f) < 0.5]
         if thin:
             doc.add(Finding(
                 id="stage-timestamps-thin",
                 severity="high",
-                title=f"{len(thin)} stage timestamp field(s) are under 50% populated",
+                title=f"{len(thin)} of {len(measured_sd)} measured stage timestamp "
+                      f"field(s) are under 50% populated",
                 what="Stage-entry fields exist but are sparsely filled, which usually means "
                      "they are typed by a human or written by an automation that was added late.",
                 why_it_matters="A cycle-time metric computed over half-populated timestamps is "

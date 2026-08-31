@@ -1,6 +1,6 @@
 {
   "name": "semantic-layer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Reads your CRM and reports what stands between you and a semantic layer you can defend \u2014 which currency field means bookings, whether your stage list is blending two funnels, where stage timestamps stop \u2014 then walks you through the definitions and writes them out as a git repo of versioned metric files with a named owner each. Read-only against the CRM.",
   "author": {
     "name": "LeanScale",
