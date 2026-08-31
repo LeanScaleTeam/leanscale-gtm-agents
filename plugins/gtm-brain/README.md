@@ -1,17 +1,22 @@
-# Semantic Layer
+# GTM Brain
 
-Walks you through defining your go-to-market metrics, then writes them out as a real semantic
-layer — a git repo of versioned metric files, each with one named owner and a declared source
-of truth, seeded from your actual CRM stage names and fields.
+*(Formerly `semantic-layer`. Existing config migrates automatically on `/gtm-brain:setup`.)*
+
+Builds your GTM Brain — one governed git repo holding everything an agent needs to know about
+your business: your metric definitions (the semantic layer) **and** your commercial context —
+ICP, who you sell to and don't, selling motion, style guide, competitive posture. Every file
+has one named owner and a declared source of truth, seeded from your actual CRM stage names,
+fields and picklists. The repo ships with a `CLAUDE.md` that makes any agent opened inside it
+answer from these files instead of from memory.
 
 **Read-only against your CRM.** It writes files to your working directory only.
 
 ## Two commands
 
 ```
-/semantic-layer:setup    reads your org — stages, amount fields, stage-history behaviour,
+/gtm-brain:setup    reads your org — stages, amount fields, stage-history behaviour,
                          segment picklists, fiscal year — then asks only what it can't read
-/semantic-layer:run      drafts the three core metrics from your schema, walks you through
+/gtm-brain:run      drafts the three core metrics from your schema, walks you through
                          every assumption it made, and generates the repo
 ```
 
@@ -23,7 +28,7 @@ faster, and harder to leave unfinished.
 ## What you get
 
 ```
-gtm-semantic/
+gtm-brain/
 ├─ semantic/metrics/win_rate.yml         cohort-based, not close-date
 ├─ semantic/metrics/cycle_time.yml
 ├─ semantic/metrics/pipeline_created.yml

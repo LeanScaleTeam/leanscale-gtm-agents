@@ -30,7 +30,7 @@ from lib import (  # noqa: E402
     load_plugin_config,
 )
 
-PLUGIN = "semantic-layer"
+PLUGIN = "gtm-brain"
 
 # Stage labels that signal a motion other than new business sharing one picklist.
 RENEWAL_MARKERS = ("renewal", "expansion", "upsell", "cross-sell", "churn", "review complete")
@@ -105,7 +105,7 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
         required=True,
         diagnosis="The describe call returned nothing. Either no crm.describe tool resolved, "
                   "or the connected identity cannot see the Opportunity object. Re-run "
-                  "/semantic-layer:setup --check to see which.",
+                  "/gtm-brain:setup --check to see which.",
     )
 
     doc = FindingsDoc(plugin=PLUGIN, window=window,
@@ -316,7 +316,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--out", required=True,
                     help="run directory to write findings.json + manifest.json")
     ap.add_argument("--config", help="explicit config file; "
-                                     "default is ~/.leanscale-gtm/semantic-layer.json")
+                                     "default is ~/.leanscale-gtm/gtm-brain.json")
     args = ap.parse_args(argv)
 
     raw, run_dir = Path(args.raw), Path(args.out)

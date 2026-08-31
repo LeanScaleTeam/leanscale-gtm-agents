@@ -1,15 +1,16 @@
 ---
 name: run
 description: >-
-  Walk through defining your go-to-market metrics and write them out as a real semantic layer:
-  a git repo of versioned metric files, each with one named owner, a plain-English description
-  and a declared source of truth, seeded from your actual CRM stage names and fields. Generates
-  the three metrics your yield depends on in full — win rate, cycle time, pipeline created —
-  plus a definitions worksheet for the rest. Trigger on "/semantic-layer:run", "build my
-  semantic layer", "define our metrics", "what should we define", "set up metric definitions",
-  "our dashboards disagree", "two versions of win rate", "how do we define qualified", or any
-  request to standardise, document or govern GTM metric definitions. Read-only against the CRM
-  — it writes files to your working directory only.
+  Build your GTM Brain: a governed git repo holding your metric definitions (the semantic
+  layer) AND your commercial context — ICP, selling motion, style guide, competitive posture —
+  each file with one named owner, seeded from your actual CRM stage names, fields and
+  picklists. Generates the three metrics your yield depends on in full — win rate, cycle
+  time, pipeline created — plus pre-filled context files and a definitions worksheet for the
+  rest. Trigger on "/gtm-brain:run", "build my GTM brain", "build my semantic layer",
+  "define our metrics", "set up metric definitions", "our dashboards disagree", "two versions
+  of win rate", "how do we define qualified", "document our ICP", or any request to
+  standardise, document or govern GTM definitions or commercial context. Read-only against
+  the CRM — it writes files to your working directory only.
 argument-hint: "[--group identity|funnel|time|money|source|segmentation] [--metrics-only] [--worksheet-only]"
 allowed-tools: Read, Write, Edit, Bash, Glob, Grep, ToolSearch
 ---
@@ -28,12 +29,12 @@ owner each, and a worksheet for the definitions still to settle.
 ## 0. Preflight
 
 ```bash
-cat ~/.leanscale-gtm/profile.json ~/.leanscale-gtm/semantic-layer.json 2>/dev/null \
+cat ~/.leanscale-gtm/profile.json ~/.leanscale-gtm/gtm-brain.json 2>/dev/null \
   || echo "not configured"
-"$HOME/.leanscale-gtm/bin/semantic-layer" --root || echo "shim missing — run /semantic-layer:setup"
+"$HOME/.leanscale-gtm/bin/gtm-brain" --root || echo "shim missing — run /gtm-brain:setup"
 ```
 
-If either is missing, stop and tell them to run `/semantic-layer:setup` first. Do **not**
+If either is missing, stop and tell them to run `/gtm-brain:setup` first. Do **not**
 interview someone about their stages when you could have read them.
 
 Re-read the probed values. You will reference their real stage names, their real amount fields
@@ -61,7 +62,7 @@ Create the run directory in the **current working directory** — never in the p
 read-only on a marketplace install:
 
 ```bash
-RUN="./gtm-agents/semantic-layer/$(date +%Y-%m-%d-%H%M)"
+RUN="./gtm-agents/gtm-brain/$(date +%Y-%m-%d-%H%M)"
 mkdir -p "$RUN/raw"
 echo "$RUN"
 ```
@@ -105,19 +106,19 @@ Then run the pipeline through the shim — analyze, then **draft**, then report,
 a failed step stops the run instead of letting a partial report pose as the result:
 
 ```bash
-"$HOME/.leanscale-gtm/bin/semantic-layer" analyze --raw "$RUN/raw" --out "$RUN" \
-  && "$HOME/.leanscale-gtm/bin/semantic-layer" draft  --raw "$RUN/raw" --out "$RUN" \
-  && "$HOME/.leanscale-gtm/bin/semantic-layer" report --findings "$RUN/findings.json" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/gtm-brain" analyze --raw "$RUN/raw" --out "$RUN" \
+  && "$HOME/.leanscale-gtm/bin/gtm-brain" draft  --raw "$RUN/raw" --out "$RUN" \
+  && "$HOME/.leanscale-gtm/bin/gtm-brain" report --findings "$RUN/findings.json" --out "$RUN"
 ```
 
 If the chain stops at `draft`, do not continue to the report — read the stderr diagnosis
 and fix the cause first. Two known cases: a missing describe snapshot (re-run
-`/semantic-layer:setup --check`), and `no such script 'draft'`, which means the installed
-plugin predates 1.2.0 — have the customer run `claude plugin update semantic-layer` (or
-their client's equivalent), then re-run `/semantic-layer:setup` to refresh the shim.
+`/gtm-brain:setup --check`), and `no such script 'draft'`, which means the installed
+plugin predates 1.2.0 — have the customer run `claude plugin update gtm-brain` (or
+their client's equivalent), then re-run `/gtm-brain:setup` to refresh the shim.
 
 The draft step is what makes run one end with something to react to instead of a findings
-list: `$RUN/draft/gtm-semantic/` now holds the three core metrics as YAML, seeded from their
+list: `$RUN/draft/gtm-brain/` now holds the three core metrics as YAML, seeded from their
 real stages, fields and fill rates, with every guessed value recorded as a numbered
 assumption, and `$RUN/draft/DRAFTS.md` is the review sheet. Values the customer already
 settled in setup are used silently; only genuine unknowns become assumptions.
@@ -158,7 +159,7 @@ argument rests on, plus the denominator they both need.
 | `cycle_time` | Time in stage. One day off it is worth about a quarter of that, per day, forever |
 | `pipeline_created` | The denominator both of the above are argued about with |
 
-All three are **already drafted** in `$RUN/draft/gtm-semantic/semantic/metrics/`. The
+All three are **already drafted** in `$RUN/draft/gtm-brain/semantic/metrics/`. The
 interview is therefore a review, not authorship from a blank page: walk `DRAFTS.md` top to
 bottom, one assumption at a time. For each assumption present the drafted value, the
 evidence, and the alternatives table, then get a decision — confirmed or corrected. When a
@@ -237,27 +238,62 @@ source-of-truth fields for them to complete with their team.
 
 ---
 
+## 3.5 The commercial context — the other half of the Brain
+
+Four context files are already drafted in `$RUN/draft/gtm-brain/context/`, pre-filled with
+what the CRM and profile recorded. Walk them in this order, fight-first like everything else:
+
+1. **`icp.md`** — the fight: whose definition of the ICP wins? Their segment picklist is
+   already in the file; ask which tiers they actually sell to today vs. aspire to, and get
+   the **do-not-sell-to list** — it is the most valuable section and the one nobody has
+   written down.
+2. **`selling-motion.md`** — the fight: what does a deal that closes actually look like?
+   Reference the real stage names from the metrics; capture the promises they never make.
+3. **`style-guide.md`** — ask for 2–3 exemplar pieces rather than adjectives; an example
+   beats ten rules. If they have an existing style guide, link it as source and distill.
+4. **`competitive.md`** — the honest sentence per competitor, never trash talk.
+
+Time-box this: these files are allowed to leave with FILL sections open **if each file has a
+named owner**. An empty section with an owner beats an invented answer — never fabricate a
+commercial fact to make a file look finished. Each context file gets a CODEOWNERS line
+exactly like a metric.
+
 ## 4. Generate the repo
 
-Promote the reviewed drafts: copy `$RUN/draft/gtm-semantic/` to the repo path (default
-`./gtm-semantic`), with each metric file carrying only the assumptions the customer
+Promote the reviewed drafts: copy `$RUN/draft/gtm-brain/` to the repo path (default
+`./gtm-brain`), with each metric file carrying only the assumptions the customer
 explicitly postponed — everything else resolved and marker-free. Then add the governance
 files below. A file promoted with open assumptions must say so in `definitions-worksheet.md`
 too, with the owner who'll settle it.
 
 ```
-gtm-semantic/
-├─ README.md                  what this is, how to change a definition
+gtm-brain/
+├─ README.md                  what this is, how to change anything in it
+├─ CLAUDE.md                  the enforcement rules — agents in this repo must cite these files
 ├─ semantic/
 │  └─ metrics/
 │     ├─ win_rate.yml
 │     ├─ cycle_time.yml
 │     └─ pipeline_created.yml
+├─ context/
+│  ├─ icp.md                  who we sell to, who we don't — pre-filled from their segment picklist
+│  ├─ selling-motion.md       how a deal actually closes here — motions from profile.json
+│  ├─ style-guide.md          the voice agents write in on the company's behalf
+│  └─ competitive.md          when they win, when we win, the one honest sentence
 ├─ definitions-worksheet.md   the six groups, for their team
-├─ CODEOWNERS                 file path -> named human
+├─ CODEOWNERS                 file path -> named human — metrics AND context files
 └─ .github/
    └─ pull_request_template.md
 ```
+
+**The context files are half the Brain.** They arrive pre-filled with what the CRM and
+profile already recorded (segment picklists, motions, competitors) and carry explicit FILL
+sections for the rest. Walk the customer through each one the same way as a metric: state
+the fight the file names, capture their answers in their words, and get **one named owner
+per file** — the style guide and the ICP drift exactly as fast as an unowned metric does.
+Do not fabricate commercial facts to fill a section; an empty FILL block with an owner
+beats an invented answer. `CLAUDE.md` ships as-is — it is what makes any agent opened in
+this repo answer from these files instead of from memory.
 
 **CODEOWNERS is the point, not decoration.** It is what turns "one named owner per metric" from
 a good intention into something the tooling enforces on every pull request. One line per metric
@@ -297,9 +333,9 @@ The run is complete when all of these are true:
 2. Every assumption in `DRAFTS.md` was walked with the customer — confirmed, corrected, or
    explicitly postponed by them (not by you).
 3. Each metric has one named human owner, or is listed in the worksheet with who will name one.
-4. `gtm-semantic/` exists as a git repo with CODEOWNERS — **or** the customer chose to stop
+4. `gtm-brain/` exists as a git repo with CODEOWNERS — **or** the customer chose to stop
    early, in which case say exactly what was completed, what remains, and that re-running
-   `/semantic-layer:run` resumes from the drafts.
+   `/gtm-brain:run` resumes from the drafts.
 
 If the customer has to leave mid-run, close by naming the state out loud: *"Drafts are
 written and two of five assumptions are confirmed. Nothing is adopted yet — the repo gets

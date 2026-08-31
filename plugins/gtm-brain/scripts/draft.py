@@ -33,7 +33,7 @@ from analyze import FRAMEWORK_MARKERS, _is_second_motion, _rate  # noqa: E402
 from lib import load_plugin_config  # noqa: E402
 from lib.config import load_profile  # noqa: E402
 
-PLUGIN = "semantic-layer"
+PLUGIN = "gtm-brain"
 
 # Currency fields that are computed from other fields, never entered as bookings.
 DERIVED_MARKERS = ("expected", "weighted", "forecast", "probability")
@@ -337,6 +337,58 @@ def _render(template: str, subs: Dict[str, str], extra_caveats: List[str]) -> st
     return text
 
 
+CONTEXT_TEMPLATES = ("icp.md", "selling-motion.md", "style-guide.md", "competitive.md")
+
+
+def _bullet_block(items: List[str], empty_note: str) -> str:
+    if not items:
+        return f"<!-- {empty_note} -->"
+    return "\n".join(f"- {i}" for i in items)
+
+
+def _draft_context(run_dir: Path, describe: Dict[str, Any], config: Dict[str, Any],
+                   profile: Dict[str, Any], org_name: str) -> List[Path]:
+    """Draft the commercial-context half of the Brain from what setup already knows.
+
+    Pre-fills only what a system actually recorded (segment picklists, the
+    profile's motions and competitors); everything else stays an explicit FILL
+    section for the working sessions — a context file must never invent facts
+    about the business.
+    """
+    seg_lines: List[str] = []
+    for field, values in (describe.get("segment_picklists") or {}).items():
+        seg_lines.append(f"Your CRM's `{field}` picklist today: "
+                         + ", ".join(str(v) for v in values))
+    subs = {
+        "ORG_NAME": org_name or "Your",
+        "SEGMENTS_BLOCK": _bullet_block(
+            seg_lines, "no segment picklist found in the CRM — define tiers below"),
+        "MOTIONS_BLOCK": _bullet_block(
+            [str(m) for m in (profile.get("motion") or [])],
+            "no motions recorded in profile.json — list them below"),
+        "COMPETITORS_BLOCK": _bullet_block(
+            [str(c) for c in (profile.get("competitors") or config.get("competitors") or [])],
+            "no competitors recorded in profile.json — list them below"),
+    }
+    written: List[Path] = []
+    ctx_dir = run_dir / "draft" / "gtm-brain" / "context"
+    ctx_dir.mkdir(parents=True, exist_ok=True)
+    for name in CONTEXT_TEMPLATES:
+        text = (_templates_dir() / "context" / name).read_text(encoding="utf-8")
+        for key, value in subs.items():
+            text = text.replace("{{%s}}" % key, value)
+        path = ctx_dir / name
+        path.write_text(text, encoding="utf-8")
+        written.append(path)
+    claude_md = (_templates_dir() / "CLAUDE.md").read_text(encoding="utf-8")
+    for key, value in subs.items():
+        claude_md = claude_md.replace("{{%s}}" % key, value)
+    path = run_dir / "draft" / "gtm-brain" / "CLAUDE.md"
+    path.write_text(claude_md, encoding="utf-8")
+    written.append(path)
+    return written
+
+
 def _drafts_md(decisions: List[Decision], org_name: str, generated_at: str) -> str:
     assumed = [d for d in decisions if d.assumed]
     decided = [d for d in decisions if not d.assumed]
@@ -344,7 +396,7 @@ def _drafts_md(decisions: List[Decision], org_name: str, generated_at: str) -> s
         f"# Draft semantic layer — review sheet{(' — ' + org_name) if org_name else ''}",
         "",
         f"Generated {generated_at}. Three metrics are drafted in "
-        "`gtm-semantic/semantic/metrics/`. Every blank was filled with the "
+        "`gtm-brain/semantic/metrics/`. Every blank was filled with the "
         "most defensible value the schema supports; the ones that need a "
         "human are numbered below. **This sheet is the interview agenda:** "
         "walk it top to bottom, confirm or correct each assumption, and the "
@@ -381,9 +433,17 @@ def _drafts_md(decisions: List[Decision], org_name: str, generated_at: str) -> s
     out.append("")
     out.append("When every box is ticked: each metric still needs **one named "
                "human owner** (not a team), and the drafts get promoted into "
-               "the `gtm-semantic/` repo with CODEOWNERS enforcing that name "
+               "the `gtm-brain/` repo with CODEOWNERS enforcing that name "
                "on every future change. The run is not done until that repo "
                "exists.")
+    out.append("")
+    out.append("**Also drafted — the commercial-context half of the Brain** "
+               "(`gtm-brain/context/`): icp.md, selling-motion.md, "
+               "style-guide.md, competitive.md, plus the repo's CLAUDE.md "
+               "enforcement rules. These are pre-filled with what the CRM and "
+               "profile already recorded; their FILL sections are working-"
+               "session material, and each needs a named owner just like a "
+               "metric.")
     out.append("")
     return "\n".join(out)
 
@@ -398,7 +458,7 @@ def draft(raw: Path, run_dir: Path, config: Dict[str, Any],
     if not describe_path.exists():
         print(f"draft: no describe snapshot at {describe_path}. The describe "
               "call returned nothing or was never made — re-run "
-              "/semantic-layer:setup --check. Refusing to draft metrics from "
+              "/gtm-brain:setup --check. Refusing to draft metrics from "
               "an empty schema.", file=sys.stderr)
         raise SystemExit(3)
     describe = json.loads(describe_path.read_text(encoding="utf-8"))
@@ -482,7 +542,7 @@ def draft(raw: Path, run_dir: Path, config: Dict[str, Any],
         "EXCLUDED_FILTER": _yaml_str(excluded_filter),
     }
 
-    metrics_dir = run_dir / "draft" / "gtm-semantic" / "semantic" / "metrics"
+    metrics_dir = run_dir / "draft" / "gtm-brain" / "semantic" / "metrics"
     metrics_dir.mkdir(parents=True, exist_ok=True)
     caveats_by_metric = {"win_rate": shared_caveats, "cycle_time": cycle_caveats,
                          "pipeline_created": shared_caveats}
@@ -494,6 +554,8 @@ def draft(raw: Path, run_dir: Path, config: Dict[str, Any],
         path = metrics_dir / f"{metric}.yml"
         path.write_text(_header(relevant, generated_at) + body, encoding="utf-8")
         written.append(path)
+
+    written.extend(_draft_context(run_dir, describe, config, profile, org_name))
 
     drafts_md = run_dir / "draft" / "DRAFTS.md"
     drafts_md.write_text(_drafts_md(decisions, org_name, generated_at),
@@ -507,6 +569,7 @@ def draft(raw: Path, run_dir: Path, config: Dict[str, Any],
         "plugin": PLUGIN,
         "generated_at": generated_at,
         "metrics_drafted": list(METRICS),
+        "context_drafted": list(CONTEXT_TEMPLATES),
         "assumptions_open": len(assumed),
         "decisions": [d.to_json() for d in decisions],
     }
@@ -525,7 +588,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--out", required=True,
                     help="run directory to write draft/ into")
     ap.add_argument("--config", help="explicit config file; "
-                                     "default is ~/.leanscale-gtm/semantic-layer.json")
+                                     "default is ~/.leanscale-gtm/gtm-brain.json")
     args = ap.parse_args(argv)
 
     raw, run_dir = Path(args.raw), Path(args.out)

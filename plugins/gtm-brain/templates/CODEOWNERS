@@ -1,0 +1,11 @@
+# Every file in the Brain requires its named owner's approval to merge.
+# This is what turns "one owner per definition" into something the tooling enforces.
+
+semantic/metrics/win_rate.yml          @FIXME
+semantic/metrics/cycle_time.yml        @FIXME
+semantic/metrics/pipeline_created.yml  @FIXME
+
+context/icp.md                         @FIXME
+context/selling-motion.md              @FIXME
+context/style-guide.md                 @FIXME
+context/competitive.md                 @FIXME

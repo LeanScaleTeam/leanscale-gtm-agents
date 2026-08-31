@@ -1,0 +1,22 @@
+{
+  "name": "gtm-brain",
+  "version": "2.0.0",
+  "description": "Builds your GTM Brain: a governed git repo holding your metric definitions (the semantic layer) and your commercial context \u2014 ICP, who you sell to and don't, selling motion, style guide \u2014 each with one named owner. Seeded from your actual CRM. Read-only against the CRM.",
+  "author": {
+    "name": "LeanScale",
+    "email": "anthony@leanscale.team",
+    "url": "https://leanscale.team"
+  },
+  "homepage": "https://leanscale.team",
+  "license": "LicenseRef-LeanScale-Customer",
+  "keywords": [
+    "revops",
+    "salesforce",
+    "hubspot",
+    "gtm-brain",
+    "metrics",
+    "definitions",
+    "governance",
+    "dbt"
+  ]
+}
