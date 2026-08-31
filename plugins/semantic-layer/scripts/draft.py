@@ -321,6 +321,12 @@ def _header(assumed: List[Decision], generated_at: str) -> str:
 
 def _render(template: str, subs: Dict[str, str], extra_caveats: List[str]) -> str:
     text = (_templates_dir() / template).read_text(encoding="utf-8")
+    # the hand-fill guidance is for humans copying the template — rendered
+    # output has no placeholders left, so the comment would just confuse
+    text = "\n".join(
+        l for l in text.splitlines()
+        if not l.startswith("# Double-brace placeholders")
+        and not l.startswith("# are filled by the draft step")) + "\n"
     for key, value in subs.items():
         text = text.replace("{{%s}}" % key, value)
     caveats = _caveat_lines(extra_caveats)
