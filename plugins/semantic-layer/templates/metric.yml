@@ -1,0 +1,33 @@
+# One metric. One owner. One source of truth.
+# Change this file by pull request only — never in a dashboard.
+
+metric: win_rate
+owner: "@FIXME"                 # one human. not a team. not "RevOps".
+label: "SQL → Won win rate"
+description: >
+  Of the opportunities that entered {{QUALIFIED_STAGE}} in the period,
+  the share that reached Closed Won.
+
+source_of_truth:
+  system: "{{CRM_SYSTEM}}"      # salesforce | hubspot
+  object: "{{OPP_OBJECT}}"
+  fields: ["{{QUALIFIED_STAGE_DATE_FIELD}}", "{{BOOKINGS_AMOUNT_FIELD}}", "{{STAGE_FIELD}}"]
+
+entity: opportunity
+grain: opportunity_id           # one row = one opportunity
+
+filter: "{{QUALIFIED_STAGE_DATE_FIELD}} is not null"
+
+numerator:   count(distinct if(is_won, id))    # distinct = fan-out insurance
+denominator: count(distinct id)
+
+time:
+  column: "{{QUALIFIED_STAGE_DATE_FIELD}}"     # cohort, not close
+  type: as_of
+
+policy:
+  row_access: segment
+
+# caveats the definition has to carry with it
+caveats:
+  - "Cohort-based: a recent cohort is still maturing and its rate will move. Report partial or wait."
