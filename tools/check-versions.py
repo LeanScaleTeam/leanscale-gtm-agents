@@ -90,6 +90,11 @@ def main(argv: List[str] | None = None) -> int:
     for name in sorted(touched):
         checks += 1
         rel = f"plugins/{name}/.claude-plugin/plugin.json"
+        if not (ROOT / rel).exists():
+            # the diff touches a plugin dir that no longer exists — a rename or
+            # removal; the new-name side of a rename is checked as its own entry
+            print(f"  note: plugins/{name} no longer exists (renamed or removed)")
+            continue
         current = json.loads((ROOT / rel).read_text()).get("version", "")
         previous = version_at(args.base, rel)
         if previous and current == previous:

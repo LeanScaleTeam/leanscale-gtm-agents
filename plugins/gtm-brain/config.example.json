@@ -1,6 +1,6 @@
 {
-  "_comment": "Semantic Layer builder settings. Copy to ~/.leanscale-gtm/semantic-layer.json, or just run /semantic-layer:setup.",
-  "repo_path": "./gtm-semantic",
+  "_comment": "Semantic Layer builder settings. Copy to ~/.leanscale-gtm/gtm-brain.json, or just run /gtm-brain:setup.",
+  "repo_path": "./gtm-brain",
   "_repo_path_help": "Where the generated semantic layer repo is written. Relative to the directory you run from.",
   "first_metrics": [
     "win_rate",

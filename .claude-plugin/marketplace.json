@@ -11,11 +11,11 @@
   },
   "plugins": [
     {
-      "name": "semantic-layer",
-      "source": "./plugins/semantic-layer",
-      "version": "1.2.0",
+      "name": "gtm-brain",
+      "source": "./plugins/gtm-brain",
+      "version": "2.0.0",
       "category": "foundations",
-      "description": "Reports what stands between you and a semantic layer you can defend, then walks you through the definitions and writes them out as a git repo of versioned metric files with one named owner each. Read-only against the CRM."
+      "description": "Builds your GTM Brain \u2014 metric definitions plus commercial context (ICP, selling motion, style guide) as a governed git repo with one named owner per file, seeded from your actual CRM. Formerly semantic-layer. Read-only against the CRM."
     },
     {
       "name": "crm-hygiene",

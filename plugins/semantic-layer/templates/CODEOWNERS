@@ -1,6 +1,0 @@
-# Every metric file requires its named owner's approval to merge.
-# This is what turns "one owner per metric" into something the tooling enforces.
-
-semantic/metrics/win_rate.yml          @FIXME
-semantic/metrics/cycle_time.yml        @FIXME
-semantic/metrics/pipeline_created.yml  @FIXME

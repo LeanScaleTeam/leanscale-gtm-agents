@@ -6,7 +6,7 @@ description: >-
   stage names and their order, every amount field, close-date and stage-history behaviour,
   segment and industry picklists, record types and pipelines, fiscal year start — then asks
   only the handful of questions the CRM cannot answer, and writes ~/.leanscale-gtm/profile.json
-  and ~/.leanscale-gtm/semantic-layer.json. Trigger on "/semantic-layer:setup", "set up the
+  and ~/.leanscale-gtm/gtm-brain.json. Trigger on "/gtm-brain:setup", "set up the
   semantic layer agent", "configure semantic layer", or when a run fails and you need to
   diagnose the connection. Read-only — nothing is written to the CRM.
 argument-hint: "[--reconfigure] [--check]"
@@ -32,7 +32,7 @@ their *real* fields, not invented ones.
 ## 0. Locate this plugin and install the shim
 
 Everything below runs this plugin's scripts through a shim at
-`~/.leanscale-gtm/bin/semantic-layer`. Create it before anything else — nothing later works
+`~/.leanscale-gtm/bin/gtm-brain`. Create it before anything else — nothing later works
 without it.
 
 `AGENT_ROOT` is this plugin's own directory — the one containing `scripts/`, `skills/` and
@@ -43,12 +43,26 @@ this SKILL.md from, two levels up from `skills/setup/`.
 ```bash
 AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
 mkdir -p ~/.leanscale-gtm
-python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin semantic-layer --root "$AGENT_ROOT"
-"$HOME/.leanscale-gtm/bin/semantic-layer" --root    # confirms the shim resolves
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin gtm-brain --root "$AGENT_ROOT"
+"$HOME/.leanscale-gtm/bin/gtm-brain" --root    # confirms the shim resolves
 ```
 
 `${CLAUDE_PLUGIN_ROOT}` is referenced here and nowhere else. Every other step, and the whole
 `run` skill, goes through the shim.
+
+**Migration from `semantic-layer` (this plugin's former name):** if the old config exists and
+the new one does not, carry it forward before anything else — the customer's decisions must
+survive the rename:
+
+```bash
+if [ -f ~/.leanscale-gtm/semantic-layer.json ] && [ ! -f ~/.leanscale-gtm/gtm-brain.json ]; then
+  cp ~/.leanscale-gtm/semantic-layer.json ~/.leanscale-gtm/gtm-brain.json
+  echo "migrated semantic-layer.json -> gtm-brain.json (old file left in place)"
+fi
+```
+
+Baselines under `~/.leanscale-gtm/baselines/semantic-layer/` stay where they are — mention
+that the first `gtm-brain` run is a fresh baseline, and say why in the report conversation.
 
 ---
 
@@ -219,15 +233,15 @@ Do not ask about anything in step 3. You already know it.
 `~/.leanscale-gtm/profile.json` — create it if missing, extend it if present. Never overwrite
 keys another agent wrote.
 
-`~/.leanscale-gtm/semantic-layer.json` — this plugin's own settings. Same house shape: a
+`~/.leanscale-gtm/gtm-brain.json` — this plugin's own settings. Same house shape: a
 `_comment` header, and every key followed by a `"_<key>_help"` string explaining it in one
 sentence, because customers edit these by hand.
 
 ```jsonc
 {
-  "_comment": "Semantic Layer builder settings. Edit by hand freely; re-run /semantic-layer:setup to refresh the probed values.",
+  "_comment": "Semantic Layer builder settings. Edit by hand freely; re-run /gtm-brain:setup to refresh the probed values.",
 
-  "repo_path": "./gtm-semantic",
+  "repo_path": "./gtm-brain",
   "_repo_path_help": "Where the generated semantic layer repo is written. Relative to the directory you run from.",
 
   "first_metrics": ["win_rate", "cycle_time", "pipeline_created"],
@@ -281,4 +295,4 @@ Then state the two things that matter most, in a sentence each:
 2. **Whether their stage list is one funnel or several** — because if it is several and they
    have not scoped it, every metric generated next will blend two motions.
 
-Finish by telling them to run `/semantic-layer:run`.
+Finish by telling them to run `/gtm-brain:run`.
