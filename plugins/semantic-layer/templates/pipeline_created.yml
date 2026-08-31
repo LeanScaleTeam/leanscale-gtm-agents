@@ -3,34 +3,35 @@
 # Double-brace placeholders (including the extra-caveats line at the bottom)
 # are filled by the draft step; copying by hand, replace or delete them yourself.
 
-metric: win_rate
+metric: pipeline_created
 owner: "@FIXME"                 # one human. not a team. not "RevOps".
-label: "{{QUALIFIED_STAGE}} → Won win rate"
+label: "Pipeline created"
 description: >
-  Of the opportunities that entered {{QUALIFIED_STAGE}} in the period,
-  the share that reached Closed Won.
+  The {{BOOKINGS_AMOUNT_FIELD}} value of opportunities that entered
+  {{QUALIFIED_STAGE}} in the period. Counted at qualification, not at
+  record creation — pipeline is what sales accepted, not what marketing
+  logged.
 
 source_of_truth:
   system: "{{CRM_SYSTEM}}"      # salesforce | hubspot
   object: "{{OPP_OBJECT}}"
-  fields: ["{{QUALIFIED_STAGE_DATE_FIELD}}", "{{BOOKINGS_AMOUNT_FIELD}}", "{{STAGE_FIELD}}"]
+  fields: ["{{QUALIFIED_STAGE_DATE_FIELD}}", "{{BOOKINGS_AMOUNT_FIELD}}"]
 
 entity: opportunity
 grain: opportunity_id           # one row = one opportunity
 
 filter: "{{QUALIFIED_STAGE_DATE_FIELD}} is not null{{EXCLUDED_FILTER}}"
 
-numerator:   count(distinct if(is_won, id))    # distinct = fan-out insurance
-denominator: count(distinct id)
+measure: sum({{BOOKINGS_AMOUNT_FIELD}})
 
 time:
-  column: "{{QUALIFIED_STAGE_DATE_FIELD}}"     # cohort, not close
-  type: as_of
+  column: "{{QUALIFIED_STAGE_DATE_FIELD}}"   # counted when it qualified, not when it was created
+  type: period
 
 policy:
   row_access: segment
 
 # caveats the definition has to carry with it
 caveats:
-  - "Cohort-based: a recent cohort is still maturing and its rate will move. Report partial or wait."
+  - "Amount as of today, not as of qualification. Restating 'pipeline as of' needs snapshots — a later phase."
 {{EXTRA_CAVEATS}}
