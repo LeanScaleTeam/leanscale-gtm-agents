@@ -11,6 +11,13 @@
   },
   "plugins": [
     {
+      "name": "semantic-layer",
+      "source": "./plugins/semantic-layer",
+      "version": "1.0.0",
+      "category": "foundations",
+      "description": "Walks you through defining your GTM metrics and writes them out as a real semantic layer: a git repo of versioned metric files, each with one named owner and a declared source of truth, seeded from your actual CRM stages and fields. Read-only against the CRM."
+    },
+    {
       "name": "crm-hygiene",
       "source": "./plugins/crm-hygiene",
       "version": "1.0.0",

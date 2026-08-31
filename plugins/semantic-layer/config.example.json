@@ -1,0 +1,18 @@
+{
+  "_comment": "Semantic Layer builder settings. Copy to ~/.leanscale-gtm/semantic-layer.json, or just run /semantic-layer:setup.",
+
+  "repo_path": "./gtm-semantic",
+  "_repo_path_help": "Where the generated semantic layer repo is written. Relative to the directory you run from.",
+
+  "first_metrics": ["win_rate", "cycle_time", "pipeline_created"],
+  "_first_metrics_help": "The metrics generated in full on the first run. These three are the ones conversion rate and time in stage depend on.",
+
+  "stage_transitions_system_stamped": false,
+  "_stage_transitions_system_stamped_help": "Probed in setup. If false, cycle-time metrics are generated with an explicit caveat and measure from today forward.",
+
+  "qualified_stage": "",
+  "_qualified_stage_help": "The stage whose ENTRY means an opportunity is qualified. Cohort metrics use entry into this stage, never close date.",
+
+  "bookings_amount_field": "",
+  "_bookings_amount_field_help": "The one currency field that means bookings. Chosen in setup from the real field list on your Opportunity object."
+}
