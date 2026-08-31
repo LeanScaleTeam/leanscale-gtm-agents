@@ -1,6 +1,6 @@
 {
   "name": "customer-health",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scores every customer account twice \u2014 sentiment and commercial risk, kept separate \u2014 so the happy account with an unsigned renewal stops hiding inside a blended health score.",
   "author": {
     "name": "LeanScale",
