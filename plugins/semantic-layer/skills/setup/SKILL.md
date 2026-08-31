@@ -29,9 +29,13 @@ their *real* fields, not invented ones.
 
 ---
 
-## 0. Locate this plugin
+## 0. Locate this plugin and install the shim
 
-`AGENT_ROOT` is this plugin's own directory — the one containing `skills/`, `templates/` and
+Everything below runs this plugin's scripts through a shim at
+`~/.leanscale-gtm/bin/semantic-layer`. Create it before anything else — nothing later works
+without it.
+
+`AGENT_ROOT` is this plugin's own directory — the one containing `scripts/`, `skills/` and
 `.claude-plugin/`. Inside Claude Code `${CLAUDE_PLUGIN_ROOT}` already holds it. On Cursor,
 VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
 this SKILL.md from, two levels up from `skills/setup/`.
@@ -39,8 +43,12 @@ this SKILL.md from, two levels up from `skills/setup/`.
 ```bash
 AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
 mkdir -p ~/.leanscale-gtm
-echo "$AGENT_ROOT"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim semantic-layer "$AGENT_ROOT"
+"$HOME/.leanscale-gtm/bin/semantic-layer" --root    # confirms the shim resolves
 ```
+
+`${CLAUDE_PLUGIN_ROOT}` is referenced here and nowhere else. Every other step, and the whole
+`run` skill, goes through the shim.
 
 ---
 
@@ -58,15 +66,25 @@ If it does not exist, you are the first agent here and you will create it in ste
 
 ---
 
-## 2. Resolve the tools
+## 2. Resolve the capabilities
 
-Find the CRM tools available in this session with `ToolSearch`. Name the tool you resolved back
-to the customer before you use it.
+**The capability is the contract, not the tool name, and not `ToolSearch`.** `ToolSearch` is a
+Claude Code tool — on Cursor, VS Code, Codex CLI and Gemini CLI it does not exist, and a skill
+that resolves only through it finds no CRM against a perfectly healthy connection.
 
-**Lead with the describe/schema tool, not the query tool.** Probes 3.1 through 3.5 below all come
-out of a single object-describe call — stage picklists, every currency field, every date field,
-segment picklists. You only need a query tool for fill rates (3.7) and fiscal year (3.6). Order
-your work that way: one describe call gets you most of the interview.
+| Capability | Need | Probe (Claude Code) | Otherwise, match by name |
+|---|---|---|---|
+| `crm.describe` | **required** | `ToolSearch("describe metadata object schema")` | sf: a SOQL tool over `EntityDefinition`/`FieldDefinition`, or a describe tool · hs: `hubspot-list-properties` |
+| `crm.query` | optional | `ToolSearch("run_soql_query salesforce")` / `ToolSearch("hubspot crm search")` | sf: `run_soql_query` · hs: `hubspot-search-objects`, `hubspot-list-objects` |
+
+Otherwise — on any client without `ToolSearch` — match on what a tool *does* rather than
+giving up. The right-hand column is the common case, not an allow-list.
+
+**`crm.describe` is the only hard requirement.** Probes 3.1–3.6 all come out of one object
+describe. `crm.query` adds fill rates and fiscal year and nothing else — if it does not resolve,
+the readiness report still runs.
+
+Name the tools you resolved onto each capability, back to the customer, before you use them.
 
 **If a tool's parameter schema comes back empty, stop.** Do not try candidate parameter names
 until one works — you will burn the customer's patience and possibly their API limits, and a

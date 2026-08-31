@@ -30,6 +30,7 @@ owner each, and a worksheet for the definitions still to settle.
 ```bash
 cat ~/.leanscale-gtm/profile.json ~/.leanscale-gtm/semantic-layer.json 2>/dev/null \
   || echo "not configured"
+"$HOME/.leanscale-gtm/bin/semantic-layer" --root || echo "shim missing — run /semantic-layer:setup"
 ```
 
 If either is missing, stop and tell them to run `/semantic-layer:setup` first. Do **not**
@@ -37,6 +38,79 @@ interview someone about their stages when you could have read them.
 
 Re-read the probed values. You will reference their real stage names, their real amount fields
 and their real segment picklist throughout — never a placeholder, never an invented example.
+
+## 0.5 Resolve the capabilities
+
+**The capability is the contract, not the tool name, and not `ToolSearch`** — that is a Claude
+Code tool, and on Cursor, VS Code, Codex CLI and Gemini CLI it does not exist.
+
+| Capability | Need | Probe (Claude Code) | Otherwise, match by name |
+|---|---|---|---|
+| `crm.describe` | **required** | `ToolSearch("describe metadata object schema")` | sf: a SOQL tool over `EntityDefinition`/`FieldDefinition`, or a describe tool · hs: `hubspot-list-properties` |
+| `crm.query` | optional | `ToolSearch("run_soql_query salesforce")` / `ToolSearch("hubspot crm search")` | sf: `run_soql_query` · hs: `hubspot-search-objects`, `hubspot-list-objects` |
+
+Otherwise — on any client without `ToolSearch` — match on what a tool *does* rather than giving
+up. The right-hand column is the common case, not an allow-list.
+
+`crm.describe` is the only hard requirement. Without `crm.query` you lose fill rates and fiscal
+year; everything else still runs. Name what you resolved onto each capability before using it.
+
+## 1. Snapshot the schema and produce the readiness report
+
+Create the run directory in the **current working directory** — never in the plugin, which is
+read-only on a marketplace install:
+
+```bash
+RUN="./gtm-agents/semantic-layer/$(date +%Y-%m-%d-%H%M)"
+mkdir -p "$RUN/raw"
+echo "$RUN"
+```
+
+Write the describe snapshot to `$RUN/raw/describe.json` with this shape: `stages.values[]`
+(`value`, `sort`, `is_won`, `is_closed`), `currency_fields[]` (`name`, `label`, `fill_rate`),
+`stage_date_fields[]`, `segment_picklists{}`, `record_types[]`, `fiscal_year_start_month`,
+`source_channel_fields[]`.
+
+**Salesforce**, via `crm.describe`:
+
+```sql
+SELECT QualifiedApiName, Label, DataType
+FROM FieldDefinition
+WHERE EntityDefinition.QualifiedApiName = 'Opportunity'
+```
+
+```sql
+SELECT MasterLabel, SortOrder, IsClosed, IsWon, DefaultProbability
+FROM OpportunityStage
+WHERE IsActive = true
+ORDER BY SortOrder
+```
+
+Fill rates and fiscal year need `crm.query`; skip both if it did not resolve:
+
+```sql
+SELECT COUNT(Id) total, COUNT(Amount) amount_filled, COUNT(ACV__c) acv_filled
+FROM Opportunity
+```
+
+```sql
+SELECT FiscalYearStartMonth FROM Organization
+```
+
+**HubSpot**, via `crm.describe`: `hubspot-list-properties` on `deals` — take `type: "number"`
+with a currency `fieldType` as the currency fields, `hs_date_entered_*` as the stage date
+fields, and the `dealstage` property's options as the stages.
+
+Then run the pipeline through the shim:
+
+```bash
+"$HOME/.leanscale-gtm/bin/semantic-layer" analyze --raw "$RUN/raw" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/semantic-layer" report --findings "$RUN/findings.json" --out "$RUN"
+```
+
+Walk the customer through `$RUN/report.md` before the interview. **Every finding in it is a
+decision they have to make in the next twenty minutes** — which currency field means bookings,
+whether the stage list is one funnel or two. The report is the agenda.
 
 ---
 

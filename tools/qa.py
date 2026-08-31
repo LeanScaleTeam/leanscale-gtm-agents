@@ -26,7 +26,7 @@ PLUGINS = ROOT / "plugins"
 EXPECTED = [
     "crm-hygiene", "pipeline-inspection", "meeting-to-crm", "forecast-agent",
     "sales-coach", "customer-health", "stage-architect", "lead-source", "system-map",
-    "executive-reporting",
+    "executive-reporting", "semantic-layer",
 ]
 
 REQUIRED_FILES = [
