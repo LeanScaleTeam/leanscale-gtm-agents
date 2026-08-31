@@ -40,26 +40,24 @@ without it.
 VS Code, Codex CLI or Gemini CLI that variable does not exist — use the directory you loaded
 this SKILL.md from, two levels up from `skills/setup/`.
 
+**Migration first, shim second — the order matters.** `install-shim` writes `agent_root`
+into `~/.leanscale-gtm/gtm-brain.json`, creating the file — so a migration guarded on "new
+config doesn't exist" silently skips if the shim ran first, and the customer's settled
+decisions (qualified stage, bookings field, excluded stages) fall back to heuristics:
+
 ```bash
-AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
 mkdir -p ~/.leanscale-gtm
+if [ -f ~/.leanscale-gtm/semantic-layer.json ] && [ ! -f ~/.leanscale-gtm/gtm-brain.json ]; then
+  cp ~/.leanscale-gtm/semantic-layer.json ~/.leanscale-gtm/gtm-brain.json
+  echo "migrated semantic-layer.json -> gtm-brain.json (old file left in place)"
+fi
+AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
 python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin gtm-brain --root "$AGENT_ROOT"
 "$HOME/.leanscale-gtm/bin/gtm-brain" --root    # confirms the shim resolves
 ```
 
 `${CLAUDE_PLUGIN_ROOT}` is referenced here and nowhere else. Every other step, and the whole
 `run` skill, goes through the shim.
-
-**Migration from `semantic-layer` (this plugin's former name):** if the old config exists and
-the new one does not, carry it forward before anything else — the customer's decisions must
-survive the rename:
-
-```bash
-if [ -f ~/.leanscale-gtm/semantic-layer.json ] && [ ! -f ~/.leanscale-gtm/gtm-brain.json ]; then
-  cp ~/.leanscale-gtm/semantic-layer.json ~/.leanscale-gtm/gtm-brain.json
-  echo "migrated semantic-layer.json -> gtm-brain.json (old file left in place)"
-fi
-```
 
 Baselines under `~/.leanscale-gtm/baselines/semantic-layer/` stay where they are — mention
 that the first `gtm-brain` run is a fresh baseline, and say why in the report conversation.
