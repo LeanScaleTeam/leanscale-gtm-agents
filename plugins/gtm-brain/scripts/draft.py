@@ -339,6 +339,169 @@ def _render(template: str, subs: Dict[str, str], extra_caveats: List[str]) -> st
 
 CONTEXT_TEMPLATES = ("icp.md", "selling-motion.md", "style-guide.md", "competitive.md")
 
+# same tokens and favicon as core/lib/render.py — the suite reads as one product
+_WS_FAVICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' "
+               "viewBox='0 0 32 32'%3E"
+               "%3Crect width='32' height='32' rx='7' fill='%23FFFBFF'/%3E"
+               "%3Ccircle cx='16' cy='16' r='5' fill='%23642585'/%3E%3C/svg%3E")
+
+_WS_CSS = """
+:root{--ink:#1a1420;--gray:#595959;--dpurple:#301934;--purple:#642585;--soft:#F3EAF7;
+--lime:#E8FFCF;--line:#E9E9E7;--bg:#FFFBFF;--radius:18px}
+*{box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,
+Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);margin:0;
+font-size:15.5px;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.shell{max-width:1120px;margin:0 auto;padding:44px 26px 90px}
+.pill{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.13em;
+text-transform:uppercase;color:var(--purple);border:1px solid var(--purple);
+border-radius:999px;padding:4px 14px;margin-bottom:18px}
+h1{font-size:38px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0 0 10px}
+.lede{font-size:16.5px;color:var(--gray);max-width:720px;margin:0 0 6px}
+.meta{font-size:12px;color:var(--gray);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+margin-bottom:30px}
+.kpis{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 34px}
+.kpi{background:var(--soft);border-radius:var(--radius);padding:14px 22px}
+.kpi b{font-size:24px;font-weight:800;display:block;line-height:1.1}
+.kpi span{font-size:12.5px;color:var(--gray)}
+.grp{border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px;
+margin:0 0 18px;page-break-inside:avoid}
+.grp h2{font-size:21px;font-weight:800;letter-spacing:-.01em;margin:0 0 4px}
+.gnum{color:var(--purple);font-weight:800;margin-right:8px}
+.tag{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+color:var(--purple);margin:14px 0 4px}
+.fight{background:var(--soft);border-radius:12px;padding:12px 16px;font-size:14.5px;margin:8px 0}
+.default{font-size:14.5px;color:var(--gray)}
+.read{font-size:13.5px;background:#faf5fc;border:1px solid var(--line);border-radius:12px;
+padding:10px 16px;margin:8px 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+overflow-x:auto}
+.decide{margin-top:14px;font-size:14.5px}
+.decide div{border-bottom:1px dashed var(--line);padding:9px 0;display:flex;gap:10px}
+.decide b{min-width:150px;font-weight:700}
+.blank{color:var(--gray)}
+.done{background:var(--lime);border-radius:8px;padding:1px 8px;font-weight:700;font-size:13px}
+.foot{font-size:12.5px;color:var(--gray);border-top:1px solid var(--line);
+padding-top:16px;margin-top:36px}
+@media print{.shell{padding:0}.grp{border-color:#bbb}}
+"""
+
+
+def _ws_group(num: int, title: str, fight: str, default: str,
+              read_lines: List[str], decisions: List[str]) -> str:
+    import html as _h
+    read = ""
+    if read_lines:
+        read = ("<div class='tag'>Read from your CRM</div><div class='read'>"
+                + "<br>".join(_h.escape(l) for l in read_lines) + "</div>")
+    dec = "".join(f"<div><b>{_h.escape(d)}</b><span class='blank'>"
+                  "____________________</span></div>" for d in decisions)
+    return (f"<div class='grp'><h2><span class='gnum'>{num:02d}</span>{_h.escape(title)}</h2>"
+            f"<div class='tag'>The fight</div><div class='fight'>{_h.escape(fight)}</div>"
+            f"<div class='tag'>The defensible default</div>"
+            f"<div class='default'>{_h.escape(default)}</div>{read}"
+            f"<div class='decide'>{dec}</div></div>")
+
+
+def _worksheet_html(describe: Dict[str, Any], config: Dict[str, Any],
+                    org_name: str, generated_at: str,
+                    assumptions_open: int) -> str:
+    import html as _h
+    stages = [s for s in describe.get("stages", {}).get("values", [])
+              if isinstance(s, dict) and s.get("value")]
+    stage_dates = describe.get("stage_date_fields", []) or []
+    currency = describe.get("currency_fields", []) or []
+    segs = describe.get("segment_picklists", {}) or {}
+    rtypes = [r.get("name") for r in describe.get("record_types", []) if r.get("name")]
+    sources = [f.get("name") for f in describe.get("source_channel_fields", []) if f.get("name")]
+
+    def fills(fields: List[Dict[str, Any]], limit: int = 6) -> List[str]:
+        out = []
+        for f in fields[:limit]:
+            r = f.get("fill_rate")
+            out.append("%s — %s" % (f["name"],
+                       ("%.0f%% filled" % (r * 100)) if isinstance(r, (int, float))
+                       else "fill unmeasured"))
+        return out
+
+    stage_line = " → ".join(
+        s["value"] + (" (won)" if s.get("is_won") else " (closed)" if s.get("is_closed") else "")
+        for s in sorted(stages, key=lambda s: s.get("sort", 0)))
+
+    groups = [
+        _ws_group(1, "Identity",
+                  "Does a subsidiary roll up — and the same way for reporting and for comp?",
+                  "Domain is the spine. Hierarchy is an attribute on top of identity, never "
+                  "identity itself. Decide reporting and comp separately.",
+                  [], ["Account identity key", "Owner"]),
+        _ws_group(2, "Funnel & lifecycle",
+                  "What makes an opportunity qualified — and is this one funnel or several "
+                  "sharing a picklist?",
+                  "An observable event, never a judgment. If record types carry other motions "
+                  "(renewals, partnerships), every metric filters to one motion explicitly.",
+                  ["Stages: " + stage_line] +
+                  (["Record types: " + ", ".join(rtypes)] if rtypes else []),
+                  ["Qualified means", "Motions to exclude", "Owner"]),
+        _ws_group(3, "Time",
+                  "Who stamps the date a deal entered a stage?",
+                  "System-stamped entry and exit, always. If a human can type it, cycle time "
+                  "is unmeasurable — the one prerequisite with no workaround.",
+                  fills(stage_dates),
+                  ["What writes these fields", "Stage-skip handling", "Owner"]),
+        _ws_group(4, "Money",
+                  "Which field means bookings, and what counts as a customer?",
+                  "One named bookings field. Define customer on revenue, not on a status "
+                  "field a human maintains.",
+                  fills(sorted(currency, key=_rate, reverse=True)),
+                  ["Bookings field", "Customer definition", "Fields to deprecate", "Owner"]),
+        _ws_group(5, "Source & channel",
+                  "One field or two? Most teams have one — and five fields is five opinions, "
+                  "not a taxonomy.",
+                  "Two. Source is immutable first touch; channel is mutable spend. Conflate "
+                  "them and history can never be restated.",
+                  (["Source-ish fields today: " + ", ".join(sources)] if sources else []),
+                  ["Immutable source field", "Mutable channel field",
+                   "Survives Lead→Contact conversion?", "Owner"]),
+        _ws_group(6, "Segmentation",
+                  "Whose definition of Enterprise wins — sales', marketing's or finance's?",
+                  "One segment field, computed from the resolved account. Never a picklist "
+                  "three teams maintain differently.",
+                  ["%s: %s" % (f, ", ".join(str(v) for v in vals))
+                   for f, vals in segs.items()],
+                  ["Computed or maintained?", "Owner"]),
+        _ws_group(7, "Commercial context — the other half of the Brain",
+                  "Who owns the words agents speak on your behalf?",
+                  "One named owner per file: icp.md (with the do-not-sell-to list), "
+                  "selling-motion.md, style-guide.md, competitive.md. An empty section with "
+                  "an owner beats an invented answer.",
+                  [],
+                  ["icp.md owner", "selling-motion.md owner",
+                   "style-guide.md owner", "competitive.md owner"]),
+    ]
+
+    org = _h.escape(org_name or "Your organization")
+    return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Definition Worksheet — {org}</title>
+<link rel="icon" href="{_WS_FAVICON}">
+<style>{_WS_CSS}</style></head><body><div class="shell">
+<span class="pill">LeanScale · GTM Brain</span>
+<h1>Definition Worksheet</h1>
+<p class="lede">The twenty to thirty words every number you report depends on — with what we
+read from your CRM already filled in. Walk this around the building: one named human per
+line, not a team. Thirty definitions is the ceiling, not the target.</p>
+<p class="meta">{org} · generated {generated_at} · read-only: nothing in your CRM was modified</p>
+<div class="kpis">
+<div class="kpi"><b>3</b><span>metrics drafted in full</span></div>
+<div class="kpi"><b>{assumptions_open}</b><span>assumption(s) awaiting confirmation</span></div>
+<div class="kpi"><b>7</b><span>groups below, one owner per line</span></div>
+</div>
+{"".join(groups)}
+<div class="foot">Bring the completed sheet back to <b>/gtm-brain:run</b> — each finished line
+becomes a versioned file in your Brain with its owner enforced by CODEOWNERS. In about six
+weeks, ask for one number from the Brain that contradicts your board deck; finding it is the
+point. · Produced by a LeanScale GTM Agent.</div>
+</div></body></html>"""
+
 
 def _bullet_block(items: List[str], empty_note: str) -> str:
     if not items:
@@ -556,6 +719,12 @@ def draft(raw: Path, run_dir: Path, config: Dict[str, Any],
         written.append(path)
 
     written.extend(_draft_context(run_dir, describe, config, profile, org_name))
+
+    ws_path = run_dir / "draft" / "worksheet.html"
+    ws_path.write_text(
+        _worksheet_html(describe, config, org_name, generated_at, len(assumed)),
+        encoding="utf-8")
+    written.append(ws_path)
 
     drafts_md = run_dir / "draft" / "DRAFTS.md"
     drafts_md.write_text(_drafts_md(decisions, org_name, generated_at),

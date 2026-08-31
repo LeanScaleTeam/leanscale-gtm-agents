@@ -236,6 +236,11 @@ Write the worksheet to `definitions-worksheet.md` in the repo: one section per g
 picklist values inline, the fight stated, the default pre-filled, and blank owner and
 source-of-truth fields for them to complete with their team.
 
+**The hand-out version is already rendered:** `$RUN/draft/worksheet.html` — self-contained,
+LeanScale-branded, print-ready, with their real stages, fill rates, picklists and record types
+filled in. That is the file they walk around the building; the markdown stays in the repo as
+the working copy. Open it for them before the close.
+
 ---
 
 ## 3.5 The commercial context — the other half of the Brain
