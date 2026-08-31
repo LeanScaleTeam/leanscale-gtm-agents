@@ -60,10 +60,20 @@ If it does not exist, you are the first agent here and you will create it in ste
 
 ## 2. Resolve the tools
 
-Find the CRM tools available in this session with `ToolSearch`. Salesforce orgs expose a SOQL
-query tool; HubSpot exposes CRM object search and properties tools. Name the tool you resolved
-back to the customer before you use it — if you cannot find one, stop and say so plainly
-rather than guessing at a schema.
+Find the CRM tools available in this session with `ToolSearch`. Name the tool you resolved back
+to the customer before you use it.
+
+**Lead with the describe/schema tool, not the query tool.** Probes 3.1 through 3.5 below all come
+out of a single object-describe call — stage picklists, every currency field, every date field,
+segment picklists. You only need a query tool for fill rates (3.7) and fiscal year (3.6). Order
+your work that way: one describe call gets you most of the interview.
+
+**If a tool's parameter schema comes back empty, stop.** Do not try candidate parameter names
+until one works — you will burn the customer's patience and possibly their API limits, and a
+wrong guess against a write-capable tool is how a read-only agent stops being read-only. Say
+which tool you could not resolve, say what you could not probe as a result, and continue with
+what the describe call gave you. A probe reported as **blocked** is a good outcome. A probe
+reported as passed when you never ran it is not.
 
 Prove the connection with the cheapest possible call before anything else.
 
@@ -74,32 +84,65 @@ Prove the connection with the cheapest possible call before anything else.
 This is the part that makes the interview short. Pull all of it before you ask a single
 question, and report counts as you go so the customer can see you actually read their org.
 
-### 3.1 Stages, in order — required
-Salesforce: `OpportunityStage` (`MasterLabel`, `SortOrder`, `IsClosed`, `IsWon`, `DefaultProbability`).
+### 3.1 Stages, in order — required, and check for more than one funnel
+Salesforce: the `StageName` picklist on Opportunity, plus `OpportunityStage`
+(`MasterLabel`, `SortOrder`, `IsClosed`, `IsWon`, `DefaultProbability`).
 HubSpot: deal pipelines and their stages.
 
 Record every stage label verbatim. Every funnel and time definition will name these, and they
 must match the customer's spelling exactly or the definitions are fiction.
 
+**Then read the list again and ask whether it is one funnel or several.** A single picklist
+routinely carries a new-business funnel *and* a renewal or expansion motion — stages like
+`Open Renewal`, `Review Complete` or `Expansion Identified` sitting after `Closed Won`. This is
+the common case, not the exception.
+
+It matters because a win rate computed across a mixed stage set silently blends new business
+with renewals, and renewals win at a completely different rate. The number that comes out is
+meaningless and nobody can see why.
+
+If the stage list looks like more than one motion, **stop and get a scope decision before
+continuing**: which funnel are we defining metrics for first? Do not offer to do both — one
+funnel, finished, beats two half-defined. Record it as `primary_funnel_stages` and
+`excluded_stages`, and say plainly that the excluded motion needs its own definitions later.
+
 ### 3.2 Every amount field — required
-List all currency fields on Opportunity/Deal, with fill rate. There are almost always three or
-four (`Amount`, `ExpectedRevenue`, and two custom ones). **Which one means "bookings" is one of
-the fights in the interview** — arriving with the actual list is what makes that fight short.
+List every currency field on Opportunity/Deal. **Expect ten to fifteen, not three or four.** A
+real org accumulates `Amount`, then ARR, ACV, TCV, MRR, Net ARR, Net New ARR, and a handful more
+from qualification frameworks (BANT budget, MEDDIC economic buyer amounts) that are not revenue
+at all and must not be offered as candidates for bookings.
+
+Present them grouped — plausible bookings candidates first, framework and scratch fields last —
+with fill rate where you have it. **Which one means "bookings" is one of the fights in the
+interview**, and arriving with a sorted real list rather than a raw dump of fifteen is what
+makes that fight short.
 
 ### 3.3 Stage-history behaviour — required, and the one that can stop the project
-Determine whether stage transitions are **system-stamped**.
+Determine whether stage transitions are **system-stamped**, and **for which stages**.
 
 - Salesforce: is history tracking enabled on `Opportunity.StageName`? Is there an
-  `OpportunityHistory`/`OpportunityFieldHistory` record for stage changes? Are there custom
-  date fields that a human could type into?
-- HubSpot: does the deal have `hs_date_entered_<stage>` properties populated?
+  `OpportunityHistory`/`OpportunityFieldHistory` record for stage changes? Is there a
+  `LastStageChangeDate`? Are there per-stage datetime fields (a `Date_Time_Stage_N__c` pattern
+  is common), and are they written by automation or typeable by a rep?
+- HubSpot: does the deal have `hs_date_entered_<stage>` properties, and are they populated?
 
-Record the answer as `stage_transitions_system_stamped: true | false | partial`.
+**Do not record this as a single boolean.** Per-stage timestamp fields very often cover only the
+new-business funnel and stop before the renewal and expansion stages from 3.1 — which means
+cycle time is measurable for one motion and not the other. Record it per funnel:
 
-**If false, say so immediately and plainly.** Cycle time is unmeasurable when a human can type
-the date, you cannot backfill a timestamp that was never written, and roughly half of what this
-suite can do depends on it. That is not a reason to stop — it is a reason they start measuring
-from today, and they need to hear it now rather than in month three.
+```jsonc
+"stage_timestamps": {
+  "primary_funnel":   "system_stamped",   // system_stamped | typeable | absent
+  "renewal_funnel":   "absent",
+  "coverage_note":    "Date_Time_Stage_0..6 cover new business only; no fields after Closed Won"
+}
+```
+
+**If the primary funnel is `typeable` or `absent`, say so immediately and plainly.** Cycle time
+is unmeasurable when a human can type the date, you cannot backfill a timestamp that was never
+written, and roughly half of what this suite can do depends on it. That is not a reason to stop —
+it is a reason they start measuring from today, and they need to hear it now rather than in
+month three.
 
 ### 3.4 Segment, industry, region picklists — required
 Pull the actual values. Segmentation is one of the six definition groups and the fight there is
@@ -107,15 +150,28 @@ whose definition of "Enterprise" wins. Arrive with the real picklist.
 
 ### 3.5 Record types / pipelines — required
 Multiple pipelines mean multiple funnels, and a metric that averages across them is a metric
-nobody trusts. Record them.
+nobody trusts. Record them, and reconcile against the mixed-stage check in 3.1 — a single
+pipeline with a mixed stage list is the same problem wearing different clothes.
 
-### 3.6 Fiscal year — required
-Salesforce: `Organization.FiscalYearStartMonth`. **Never assume January.** Read it, then confirm.
-
-### 3.7 Lifecycle and source fields — optional, high value
+### 3.6 Lifecycle and source fields — optional, high value
 Lead status, lifecycle stage, `LeadSource` values, campaign fields. These feed the funnel and
 source-and-channel groups. Note whether source and channel are one field or two — most orgs
 have one, and that is its own fight.
+
+---
+
+**Everything above comes from the describe call. Everything below needs a query tool.** If you
+could not resolve one in step 2, mark both as `blocked`, tell the customer which questions stay
+open as a result, and carry on — you already have enough for the interview.
+
+### 3.7 Fill rates — query tool required
+Row counts for the candidate amount fields from 3.2 and the stage timestamp fields from 3.3. A
+field that exists and is 4% populated is not a candidate for anything, and the fill rate is
+what turns a list of fifteen currency fields into a shortlist of two.
+
+### 3.8 Fiscal year — query tool required
+Salesforce: `Organization.FiscalYearStartMonth`. **Never assume January.** Read it, then confirm.
+If blocked, ask the customer directly — it is one question and they know the answer.
 
 ---
 
@@ -159,8 +215,18 @@ sentence, because customers edit these by hand.
   "first_metrics": ["win_rate", "cycle_time", "pipeline_created"],
   "_first_metrics_help": "The metrics generated in full on the first run. These three are the ones conversion rate and time in stage depend on.",
 
-  "stage_transitions_system_stamped": false,
-  "_stage_transitions_system_stamped_help": "Probed in setup. If false, cycle-time metrics are generated with an explicit caveat block and a measure-from-today start date.",
+  "stage_timestamps": {
+    "primary_funnel": "absent",
+    "renewal_funnel": "absent",
+    "coverage_note": ""
+  },
+  "_stage_timestamps_help": "Probed in setup, PER FUNNEL — system_stamped | typeable | absent. Timestamp fields often cover new business only, so cycle time is measurable for one motion and not another. Anything other than system_stamped generates cycle-time metrics with a caveat block and a measure-from-today start date.",
+
+  "primary_funnel_stages": [],
+  "_primary_funnel_stages_help": "The stages of the ONE funnel being defined first. Set when setup finds a mixed stage list (new business plus renewal or expansion in the same picklist).",
+
+  "excluded_stages": [],
+  "_excluded_stages_help": "Stages deliberately out of scope for this pass. They need their own definitions later; metrics generated now must filter them out or they blend two motions.",
 
   "qualified_stage": "",
   "_qualified_stage_help": "The stage whose ENTRY means an opportunity is qualified. Cohort metrics use entry into this stage, never close date.",
@@ -174,10 +240,27 @@ sentence, because customers edit these by hand.
 
 ## 6. Prove it
 
-Print a pass/fail table: tool resolved, stages read (count), amount fields found (count),
-stage-stamping verdict, segments read (count), fiscal year start, config written.
+Print a table with three states per probe — **pass / blocked / fail** — never just pass or fail.
+A probe you could not run because no query tool resolved is `blocked`, and saying so is the
+honest result. Never report a probe as passed when you did not run it.
 
-Then state the one thing that matters most, in a sentence: whether their stage transitions are
-system-stamped, and what that means for what they can measure.
+| Probe | Report |
+|---|---|
+| Tool resolved | which describe tool, which query tool (or `blocked`) |
+| 3.1 Stages | count, **and whether it is one funnel or several** |
+| 3.2 Amount fields | count, and the shortlist you presented |
+| 3.3 Stage timestamps | **per funnel**, with the coverage note |
+| 3.4 Segments | count |
+| 3.5 Pipelines | count |
+| 3.7 Fill rates | pass or `blocked` |
+| 3.8 Fiscal year | value, or `asked the customer` |
+| Config | files written |
+
+Then state the two things that matter most, in a sentence each:
+
+1. **Whether their stage transitions are system-stamped, and for which funnel** — this decides
+   whether cycle time is measurable at all, and for which motion.
+2. **Whether their stage list is one funnel or several** — because if it is several and they
+   have not scoped it, every metric generated next will blend two motions.
 
 Finish by telling them to run `/semantic-layer:run`.
