@@ -43,7 +43,7 @@ this SKILL.md from, two levels up from `skills/setup/`.
 ```bash
 AGENT_ROOT="${CLAUDE_PLUGIN_ROOT:-<the directory this plugin was loaded from>}"
 mkdir -p ~/.leanscale-gtm
-python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim semantic-layer "$AGENT_ROOT"
+python3 "$AGENT_ROOT/scripts/lib/config.py" install-shim --plugin semantic-layer --root "$AGENT_ROOT"
 "$HOME/.leanscale-gtm/bin/semantic-layer" --root    # confirms the shim resolves
 ```
 
