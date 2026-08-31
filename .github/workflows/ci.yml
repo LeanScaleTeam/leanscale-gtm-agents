@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # version gate diffs against the base ref
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Everything below is stdlib-only by design — no install step, nothing to pin.
+
+      - name: Core library selftest
+        run: python3 core/selftest.py
+
+      - name: Vendored lib is in sync
+        run: python3 tools/vendor.py --check
+
+      - name: Suite QA gate
+        run: python3 tools/qa.py
+
+      - name: Version gate
+        if: github.event_name == 'pull_request'
+        env:
+          BASE: ${{ github.base_ref }}
+        run: |
+          git fetch --no-tags origin "$BASE"
+          python3 tools/check-versions.py --base "origin/$BASE"
+
+      - name: Version manifests agree (push to main)
+        if: github.event_name == 'push'
+        run: python3 tools/check-versions.py --base HEAD~1

@@ -1,0 +1,187 @@
+{
+  "stages": {
+    "object": "Opportunity",
+    "field": "StageName",
+    "values": [
+      {
+        "value": "Demo Booked",
+        "sort": 0
+      },
+      {
+        "value": "Demo Completed",
+        "sort": 1
+      },
+      {
+        "value": "Use Case Defined",
+        "sort": 2
+      },
+      {
+        "value": "Proposal Sent",
+        "sort": 3
+      },
+      {
+        "value": "Negotiations Completed",
+        "sort": 4
+      },
+      {
+        "value": "Closed Won",
+        "sort": 5,
+        "is_won": true,
+        "is_closed": true
+      },
+      {
+        "value": "Closed Lost",
+        "sort": 6,
+        "is_closed": true
+      },
+      {
+        "value": "Open Renewal",
+        "sort": 7
+      },
+      {
+        "value": "Review Complete",
+        "sort": 8
+      },
+      {
+        "value": "Expansion Identified",
+        "sort": 9
+      }
+    ]
+  },
+  "currency_fields": [
+    {
+      "name": "Amount",
+      "label": "Amount",
+      "fill_rate": 0.94
+    },
+    {
+      "name": "ARR__c",
+      "label": "ARR",
+      "fill_rate": 0.71
+    },
+    {
+      "name": "ACV__c",
+      "label": "ACV",
+      "fill_rate": 0.66
+    },
+    {
+      "name": "TCV__c",
+      "label": "TCV",
+      "fill_rate": 0.41
+    },
+    {
+      "name": "MRR__c",
+      "label": "MRR",
+      "fill_rate": 0.38
+    },
+    {
+      "name": "Net_ARR__c",
+      "label": "Net ARR",
+      "fill_rate": 0.22
+    },
+    {
+      "name": "Net_New_ARR__c",
+      "label": "Net New ARR",
+      "fill_rate": 0.19
+    },
+    {
+      "name": "NRR_Total__c",
+      "label": "NRR Total",
+      "fill_rate": 0.08
+    },
+    {
+      "name": "Committed_Amount__c",
+      "label": "Committed Amount",
+      "fill_rate": 0.05
+    },
+    {
+      "name": "Consumed_Amount__c",
+      "label": "Consumed Amount",
+      "fill_rate": 0.04
+    },
+    {
+      "name": "ANUM_Money__c",
+      "label": "Money",
+      "fill_rate": 0.02
+    },
+    {
+      "name": "BANT_Budget__c",
+      "label": "Budget",
+      "fill_rate": 0.02
+    },
+    {
+      "name": "CHAMP_Money__c",
+      "label": "Money",
+      "fill_rate": 0.01
+    },
+    {
+      "name": "GPCTBA_Budget__c",
+      "label": "Budget",
+      "fill_rate": 0.01
+    }
+  ],
+  "stage_date_fields": [
+    {
+      "name": "Date_Time_Stage_0__c",
+      "label": "Demo Booked",
+      "fill_rate": 0.91
+    },
+    {
+      "name": "Date_Time_Stage_1__c",
+      "label": "Demo Completed",
+      "fill_rate": 0.83
+    },
+    {
+      "name": "Date_Time_Stage_2__c",
+      "label": "Use Case Defined",
+      "fill_rate": 0.62
+    },
+    {
+      "name": "Date_Time_Stage_3__c",
+      "label": "Proposal Sent",
+      "fill_rate": 0.48
+    },
+    {
+      "name": "Date_Time_Stage_4__c",
+      "label": "Negotiated",
+      "fill_rate": 0.31
+    },
+    {
+      "name": "Date_Time_Stage_5__c",
+      "label": "Closed Won",
+      "fill_rate": 0.22
+    },
+    {
+      "name": "Date_Time_Stage_6__c",
+      "label": "Closed Lost",
+      "fill_rate": 0.29
+    }
+  ],
+  "segment_picklists": {
+    "Segment__c": [
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+    ],
+    "Industry": [
+      "Technology",
+      "Healthcare",
+      "Financial Services"
+    ]
+  },
+  "record_types": [
+    {
+      "name": "New Business"
+    },
+    {
+      "name": "Renewal"
+    }
+  ],
+  "fiscal_year_start_month": 2,
+  "source_channel_fields": [
+    {
+      "name": "LeadSource",
+      "label": "Lead Source"
+    }
+  ]
+}
