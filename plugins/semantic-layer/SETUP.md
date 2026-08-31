@@ -44,8 +44,11 @@ That is the right first move if a run starts failing.
 /semantic-layer:run
 ```
 
-Produces a readiness report, then walks you through defining your metrics and writes a
-`gtm-semantic/` repo.
+Produces a readiness report **and a draft semantic layer** — the three core metrics
+pre-filled from your real stages, fields and fill rates, with every guessed value numbered
+as an assumption in `draft/DRAFTS.md`. The interview walks those assumptions, then writes
+the `gtm-semantic/` repo. The run is not finished at the report: if you have a report but
+no `draft/` directory and no repo, the run stopped early — re-run it.
 
 Output lands in `./gtm-agents/semantic-layer/<timestamp>/` in whatever directory you ran from.
 
@@ -58,6 +61,8 @@ Output lands in `./gtm-agents/semantic-layer/<timestamp>/` in whatever directory
 | "Probe blocked: fill rates" | No query tool resolved, only describe | Expected and fine. Fill rates and fiscal year are the only things you lose; the report still runs |
 | Report says 0 findings | Genuinely clean, or the describe snapshot was thin | Check `manifest.json` in the run directory — it lists every source read and its record count |
 | `analyze.py` aborts with a source error | A required source came back empty | That is deliberate. An empty required source produces no report rather than a confident empty one. The manifest names which source and why |
+| `no such script 'draft'` mid-run | Installed plugin predates 1.2.0 | `claude plugin update semantic-layer@leanscale-gtm`, then `/semantic-layer:setup` to refresh the shim |
+| Report exists but no `draft/` directory | The draft step failed or never ran | Read the run's stderr; a missing describe snapshot is the usual cause — `/semantic-layer:setup --check` |
 | Skills don't appear after install | Client not restarted | Restart. Plugin skills load at session start |
 | Fixed a bug but behaviour is unchanged | The installed cache still holds the old version | `claude plugin update semantic-layer@leanscale-gtm`. If it says "already at the latest version", the version was not bumped — uninstall and reinstall |
 

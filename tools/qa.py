@@ -166,12 +166,19 @@ def check_plugin(path: Path) -> None:
                 warn(name, f"skills/{skill} may lack a non-ToolSearch resolution path")
 
     # --- shared library usage ---
-    for script in ("analyze.py", "report.py"):
+    # every top-level script a plugin ships, not a hardcoded pair — a script
+    # the skill invokes but qa never parsed is how a broken zip "validates"
+    plugin_scripts = sorted(
+        p.name for p in (path / "scripts").glob("*.py")
+    ) if (path / "scripts").exists() else []
+    # pipeline entry points must go through the shared lib; helper scripts
+    # (taxonomy.py, transcripts.py, fingerprints.py) legitimately may not
+    lib_required = ("analyze.py", "report.py", "draft.py")
+    for script in plugin_scripts:
         sp = path / "scripts" / script
-        if not sp.exists():
-            continue
         src = sp.read_text(encoding="utf-8")
-        if "from lib" not in src and "import lib" not in src:
+        if script in lib_required \
+                and "from lib" not in src and "import lib" not in src:
             fail(name, f"scripts/{script} does not use the shared core library")
         try:
             ast.parse(src)
@@ -194,10 +201,8 @@ def check_plugin(path: Path) -> None:
     # that the skill calls it with flags it genuinely accepts. A skill invoking
     # a flag the script doesn't have is a broken plugin that still "validates".
     helptexts = {}
-    for script in ("analyze.py", "report.py"):
+    for script in plugin_scripts:
         sp = path / "scripts" / script
-        if not sp.exists():
-            continue
         proc = subprocess.run(
             [sys.executable, str(sp), "--help"], capture_output=True, text=True, timeout=60
         )

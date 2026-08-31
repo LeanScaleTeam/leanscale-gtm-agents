@@ -1,0 +1,36 @@
+# One metric. One owner. One source of truth.
+# Change this file by pull request only — never in a dashboard.
+# Double-brace placeholders (including the extra-caveats line at the bottom)
+# are filled by the draft step; copying by hand, replace or delete them yourself.
+
+metric: cycle_time
+owner: "@FIXME"                 # one human. not a team. not "RevOps".
+label: "{{QUALIFIED_STAGE}} → Closed Won cycle time"
+description: >
+  For opportunities that reached Closed Won, the days from entering
+  {{QUALIFIED_STAGE}} to the close. Median, not mean — one stuck deal
+  must not move the number for everyone.
+
+source_of_truth:
+  system: "{{CRM_SYSTEM}}"      # salesforce | hubspot
+  object: "{{OPP_OBJECT}}"
+  fields: ["{{QUALIFIED_STAGE_DATE_FIELD}}", "{{CLOCK_STOP_FIELD}}", "{{STAGE_FIELD}}"]
+
+entity: opportunity
+grain: opportunity_id           # one row = one opportunity
+
+filter: "is_won and {{QUALIFIED_STAGE_DATE_FIELD}} is not null{{EXCLUDED_FILTER}}"
+
+measure: median(date_diff(day, {{QUALIFIED_STAGE_DATE_FIELD}}, {{CLOCK_STOP_FIELD}}))
+
+time:
+  column: "{{CLOCK_STOP_FIELD}}"  # reported by close period; the clock starts at qualification
+  type: period
+
+policy:
+  row_access: segment
+
+# caveats the definition has to carry with it
+caveats:
+  - "Median of won deals only. Cycle time of deals still open is a different metric (deal age)."
+{{EXTRA_CAVEATS}}

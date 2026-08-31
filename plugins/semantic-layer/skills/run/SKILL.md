@@ -101,16 +101,31 @@ SELECT FiscalYearStartMonth FROM Organization
 with a currency `fieldType` as the currency fields, `hs_date_entered_*` as the stage date
 fields, and the `dealstage` property's options as the stages.
 
-Then run the pipeline through the shim:
+Then run the pipeline through the shim — analyze, then **draft**, then report, chained so
+a failed step stops the run instead of letting a partial report pose as the result:
 
 ```bash
-"$HOME/.leanscale-gtm/bin/semantic-layer" analyze --raw "$RUN/raw" --out "$RUN"
-"$HOME/.leanscale-gtm/bin/semantic-layer" report --findings "$RUN/findings.json" --out "$RUN"
+"$HOME/.leanscale-gtm/bin/semantic-layer" analyze --raw "$RUN/raw" --out "$RUN" \
+  && "$HOME/.leanscale-gtm/bin/semantic-layer" draft  --raw "$RUN/raw" --out "$RUN" \
+  && "$HOME/.leanscale-gtm/bin/semantic-layer" report --findings "$RUN/findings.json" --out "$RUN"
 ```
 
-Walk the customer through `$RUN/report.md` before the interview. **Every finding in it is a
-decision they have to make in the next twenty minutes** — which currency field means bookings,
-whether the stage list is one funnel or two. The report is the agenda.
+If the chain stops at `draft`, do not continue to the report — read the stderr diagnosis
+and fix the cause first. Two known cases: a missing describe snapshot (re-run
+`/semantic-layer:setup --check`), and `no such script 'draft'`, which means the installed
+plugin predates 1.2.0 — have the customer run `claude plugin update semantic-layer` (or
+their client's equivalent), then re-run `/semantic-layer:setup` to refresh the shim.
+
+The draft step is what makes run one end with something to react to instead of a findings
+list: `$RUN/draft/gtm-semantic/` now holds the three core metrics as YAML, seeded from their
+real stages, fields and fill rates, with every guessed value recorded as a numbered
+assumption, and `$RUN/draft/DRAFTS.md` is the review sheet. Values the customer already
+settled in setup are used silently; only genuine unknowns become assumptions.
+
+Walk the customer through `$RUN/report.md` first — the readiness findings — then open the
+drafts. **The report says what stands in the way; DRAFTS.md is the agenda for the next twenty
+minutes.** Never end the run here: a readiness report with unreviewed drafts behind it is a
+run that stopped at step one (see "Definition of done" below).
 
 ---
 
@@ -143,8 +158,18 @@ argument rests on, plus the denominator they both need.
 | `cycle_time` | Time in stage. One day off it is worth about a quarter of that, per day, forever |
 | `pipeline_created` | The denominator both of the above are argued about with |
 
-For each, run this loop. Do not batch the questions — one metric at a time, finished, then the
-next. A finished definition they've agreed to beats three half-argued ones.
+All three are **already drafted** in `$RUN/draft/gtm-semantic/semantic/metrics/`. The
+interview is therefore a review, not authorship from a blank page: walk `DRAFTS.md` top to
+bottom, one assumption at a time. For each assumption present the drafted value, the
+evidence, and the alternatives table, then get a decision — confirmed or corrected. When a
+decision lands, edit the draft file: set the value, delete that assumption's line from the
+file's header block, and tick it off in `DRAFTS.md`. An assumption the customer explicitly
+postpones stays in the header — a draft that still carries assumption lines is visibly
+unfinished, which is the point.
+
+Still run the loop below per metric — one metric finished, then the next — but anchored to
+the draft: the "fight" for each metric is its assumption #1, and the draft already names a
+defensible side of it.
 
 ### 2.1 Name the fight first
 Every metric has one decision that determines the rest of it. Put it on the table before
@@ -172,10 +197,13 @@ anything else, using their real values from setup:
    from setup.
 4. **The filter and the grain** — which records count, and what one row represents.
 
-### 2.3 Write the file
-Use `templates/metric.yml` as the shape. Fill it with their actual field names. Include the
-`# cohort, not close` comment on the time block where it applies — that one line is the
-difference between a win rate they can defend and one that reshuffles every quarter.
+### 2.3 Finish the file
+The draft already has their actual field names in it — finishing means: every assumption in
+its header resolved, the owner filled in (§2.2), and the plain-English description in their
+words. Keep the `# cohort, not close` comment on the time block where it applies — that one
+line is the difference between a win rate they can defend and one that reshuffles every
+quarter. If a corrected decision changes a field, update every occurrence (source_of_truth,
+filter, measure, time) — the draft is consistent; keep it that way.
 
 **If setup recorded `excluded_stages`, every metric must filter them out explicitly**, and the
 filter must appear in the file where a human can see it — not left implicit. A win rate that
@@ -210,6 +238,12 @@ source-of-truth fields for them to complete with their team.
 ---
 
 ## 4. Generate the repo
+
+Promote the reviewed drafts: copy `$RUN/draft/gtm-semantic/` to the repo path (default
+`./gtm-semantic`), with each metric file carrying only the assumptions the customer
+explicitly postponed — everything else resolved and marker-free. Then add the governance
+files below. A file promoted with open assumptions must say so in `definitions-worksheet.md`
+too, with the owner who'll settle it.
 
 ```
 gtm-semantic/
@@ -253,6 +287,24 @@ Then the honest checkpoint, which is the most useful thing you can leave them wi
 > everything matches perfectly, nothing has actually been defined yet.
 
 ---
+
+## Definition of done for this run
+
+The readiness report is step one, not the deliverable. **Do not end the run at the report.**
+The run is complete when all of these are true:
+
+1. `$RUN/draft/` exists — three metric drafts, `DRAFTS.md`, `assumptions.json`.
+2. Every assumption in `DRAFTS.md` was walked with the customer — confirmed, corrected, or
+   explicitly postponed by them (not by you).
+3. Each metric has one named human owner, or is listed in the worksheet with who will name one.
+4. `gtm-semantic/` exists as a git repo with CODEOWNERS — **or** the customer chose to stop
+   early, in which case say exactly what was completed, what remains, and that re-running
+   `/semantic-layer:run` resumes from the drafts.
+
+If the customer has to leave mid-run, close by naming the state out loud: *"Drafts are
+written and two of five assumptions are confirmed. Nothing is adopted yet — the repo gets
+generated when we've walked the other three."* Never let a readiness report pose as the
+finished product.
 
 ## Safety
 

@@ -11,8 +11,14 @@ of truth, seeded from your actual CRM stage names and fields.
 ```
 /semantic-layer:setup    reads your org — stages, amount fields, stage-history behaviour,
                          segment picklists, fiscal year — then asks only what it can't read
-/semantic-layer:run      the interview, and generates the repo
+/semantic-layer:run      drafts the three core metrics from your schema, walks you through
+                         every assumption it made, and generates the repo
 ```
+
+Run one ends with a draft semantic layer, not a findings list: the three metrics arrive
+already filled in from your real stages, fields and fill rates, with every guessed value
+numbered as an assumption in `DRAFTS.md`. The interview is you correcting a draft — which is
+faster, and harder to leave unfinished.
 
 ## What you get
 

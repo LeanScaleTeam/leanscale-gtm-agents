@@ -18,10 +18,43 @@ from typing import List, Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from dataclasses import asdict  # noqa: E402
+
 from lib import (  # noqa: E402
+    Score,
     load_manifest,
     write_reports,
 )
+
+
+def _apply_draft_score(doc: dict, run_dir: Path) -> None:
+    """Surface the drafted metrics in the headline, from draft/assumptions.json.
+
+    Render-time and in-memory only: findings.json stays owned by analyze.py,
+    so analyze/draft/report can re-run in any order and the report is the same.
+    """
+    ledger_path = run_dir / "draft" / "assumptions.json"
+    if not ledger_path.exists():
+        return
+    try:
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    drafted = ledger.get("metrics_drafted") or []
+    open_count = ledger.get("assumptions_open", 0)
+    if not drafted:
+        return
+    scores = [s for s in doc.get("scores", []) if s.get("key") != "metrics_drafted"]
+    scores.append(asdict(Score(
+        key="metrics_drafted",
+        label="Metrics drafted, awaiting review",
+        value=len(drafted),
+        unit="count",
+        direction_good="up",
+        context="%d assumption(s) to confirm — draft/DRAFTS.md is the agenda."
+                % open_count,
+    )))
+    doc["scores"] = scores
 
 
 def main(argv: Optional[List[str]] = None) -> int:
@@ -44,6 +77,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     doc = json.loads(findings_path.read_text(encoding="utf-8"))
     if args.no_baseline:
         doc["is_baseline_run"] = False
+    _apply_draft_score(doc, out_dir)
 
     manifest = load_manifest(out_dir) or load_manifest(findings_path.parent)
     paths = write_reports(doc, out_dir, manifest)
