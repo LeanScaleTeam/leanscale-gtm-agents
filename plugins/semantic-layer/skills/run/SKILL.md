@@ -81,9 +81,11 @@ anything else, using their real values from setup:
   their selling changing. *Cohort* takes every deal that entered qualified in the period and
   asks what share eventually won — stable, comparable, defensible. **Recommend cohort**, and be
   honest that a recent cohort isn't finished yet, so it either matures or gets reported partial.
-- **`cycle_time`** — where does the clock start and stop? Name the actual stages from setup. If
-  `stage_transitions_system_stamped` is false, say plainly that this metric measures from today
-  forward and cannot be backfilled.
+- **`cycle_time`** — where does the clock start and stop? Name the actual stages from setup. Read
+  `stage_timestamps` **for the funnel you are defining**, not the org as a whole: if that funnel
+  is `typeable` or `absent`, say plainly that this metric measures from today forward and cannot
+  be backfilled. If another funnel has no timestamps at all, say that too — they will ask for
+  renewal cycle time eventually and it is better they know now.
 - **`pipeline_created`** — created when the opportunity is created, or when it reaches qualified?
   These differ by a lot in most orgs and the gap is usually the argument.
 
@@ -100,6 +102,11 @@ anything else, using their real values from setup:
 Use `templates/metric.yml` as the shape. Fill it with their actual field names. Include the
 `# cohort, not close` comment on the time block where it applies — that one line is the
 difference between a win rate they can defend and one that reshuffles every quarter.
+
+**If setup recorded `excluded_stages`, every metric must filter them out explicitly**, and the
+filter must appear in the file where a human can see it — not left implicit. A win rate that
+silently averages new business with renewals is exactly the kind of confidently wrong number
+this whole exercise exists to prevent.
 
 Show them the finished file and ask if it's right before moving on.
 
