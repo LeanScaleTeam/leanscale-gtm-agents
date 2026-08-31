@@ -30,9 +30,11 @@ jobs:
 
       - name: Version gate
         if: github.event_name == 'pull_request'
+        env:
+          BASE: ${{ github.base_ref }}
         run: |
-          git fetch --no-tags --depth=0 origin "${{ github.base_ref }}"
-          python3 tools/check-versions.py --base "origin/${{ github.base_ref }}"
+          git fetch --no-tags origin "$BASE"
+          python3 tools/check-versions.py --base "origin/$BASE"
 
       - name: Version manifests agree (push to main)
         if: github.event_name == 'push'

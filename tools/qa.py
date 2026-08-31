@@ -16,6 +16,7 @@ from __future__ import annotations
 import ast
 import json
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -305,16 +306,28 @@ def main() -> int:
             FAILS.append("SUITE: marketplace.json owner must be an object")
 
     # --- official validator ---
-    print("running `claude plugin validate` on each plugin...")
-    for name in found:
-        proc = subprocess.run(
-            ["claude", "plugin", "validate", str(PLUGINS / name)],
-            capture_output=True, text=True,
+    # Optional by necessity: the `claude` CLI is on a developer's machine, not on a
+    # CI runner. Absent it, every other check in this file still runs — they are all
+    # pure-Python and cover the same manifest rules. Degrade loudly, never silently:
+    # a skipped check that reads like a passed check is how a gate stops being one.
+    if shutil.which("claude") is None:
+        WARNS.append(
+            "SUITE: `claude` CLI not on PATH — skipped `claude plugin validate` on "
+            f"{len(found)} plugin(s). The Python manifest checks above still ran. "
+            "Install Claude Code to run the official validator locally."
         )
-        if proc.returncode != 0:
-            FAILS.append(f"{name}: claude plugin validate failed\n{(proc.stdout + proc.stderr).strip()[:600]}")
-        else:
-            print(f"  ok   {name}")
+        print("skipping `claude plugin validate` — CLI not on PATH (see warnings)")
+    else:
+        print("running `claude plugin validate` on each plugin...")
+        for name in found:
+            proc = subprocess.run(
+                ["claude", "plugin", "validate", str(PLUGINS / name)],
+                capture_output=True, text=True,
+            )
+            if proc.returncode != 0:
+                FAILS.append(f"{name}: claude plugin validate failed\n{(proc.stdout + proc.stderr).strip()[:600]}")
+            else:
+                print(f"  ok   {name}")
 
     print()
     for w in WARNS:
