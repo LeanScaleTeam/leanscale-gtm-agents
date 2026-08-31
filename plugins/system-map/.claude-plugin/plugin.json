@@ -1,6 +1,6 @@
 {
   "name": "system-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inventories every integration user, connected app, package and automation wired into your CRM, finds the ones nobody owns and the fields two automations fight over, and contrasts the measured stack against the stack your team believes it has.",
   "author": {
     "name": "LeanScale",

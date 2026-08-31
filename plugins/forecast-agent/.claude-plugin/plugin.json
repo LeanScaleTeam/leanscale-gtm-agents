@@ -1,6 +1,6 @@
 {
   "name": "forecast-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audits whether your CRM can support a forecast at all, scores it 0-100, then produces a worst/likely/best call and the delta against the rep-called commit.",
   "author": {
     "name": "LeanScale",

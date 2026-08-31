@@ -1,6 +1,6 @@
 {
   "name": "stage-architect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Derives what your deal stages actually mean from closed history and shows the gap against what your team believes they mean.",
   "author": {
     "name": "LeanScale",

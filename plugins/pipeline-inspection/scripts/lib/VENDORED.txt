@@ -3,7 +3,7 @@ Do not edit these files here — edit core/lib and re-run tools/vendor.py.
 
 __init__.py  sha256:9328154a03ec
 baseline.py  sha256:b65f512024ea
-config.py  sha256:9fe78708ec48
+config.py  sha256:b199510dac2d
 crmutil.py  sha256:399e3e288ef0
 findings.py  sha256:e3384d2cc7f4
 manifest.py  sha256:65e3db966ab9
