@@ -382,23 +382,134 @@ overflow-x:auto}
 .done{background:var(--lime);border-radius:8px;padding:1px 8px;font-weight:700;font-size:13px}
 .foot{font-size:12.5px;color:var(--gray);border-top:1px solid var(--line);
 padding-top:16px;margin-top:36px}
-@media print{.shell{padding:0}.grp{border-color:#bbb}}
+.decide input{border:none;border-bottom:1px dashed var(--line);background:transparent;
+flex:1;font:inherit;font-size:14.5px;color:var(--ink);padding:2px 4px;min-width:120px}
+.decide input:focus{outline:none;border-bottom:1.5px solid var(--purple)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.chips button{font:inherit;font-size:13.5px;font-weight:600;border:1.5px solid var(--line);
+background:var(--bg);color:var(--ink);border-radius:999px;padding:6px 16px;cursor:pointer}
+.chips button:hover{border-color:var(--purple)}
+.chips button[aria-pressed="true"]{background:var(--purple);border-color:var(--purple);color:#FFFBFF}
+.chips button.park[aria-pressed="true"]{background:var(--dpurple);border-color:var(--dpurple)}
+.progress{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);
+padding:10px 0;margin:0 0 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+font-size:13.5px;z-index:2}
+.progress b{font-size:17px}
+.progress .ok{color:#2c6e31;font-weight:700;display:none}
+.exp{margin-left:auto;display:flex;gap:10px}
+.exp button{font:inherit;font-size:13.5px;font-weight:700;border-radius:999px;padding:8px 18px;
+cursor:pointer;border:1.5px solid var(--purple);background:var(--purple);color:#FFFBFF}
+.exp button.ghost{background:var(--bg);color:var(--purple)}
+#parked-box{border:1px solid var(--line);border-radius:var(--radius);padding:20px 26px;
+margin:0 0 18px;display:none}
+#parked-box h2{font-size:18px;margin:0 0 8px}
+#parked-box ul{margin:0;padding-left:20px;font-size:14.5px}
+@media print{.shell{padding:0}.grp{border-color:#bbb}.exp,.progress{display:none}
+.chips button{border-color:#bbb}.chips button[aria-pressed="true"]{background:#ddd;color:#000}}
+"""
+
+_WS_JS = """
+(function(){
+  var KEY='gtm-brain-worksheet';
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  function persist(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}refresh();}
+  var inputs=document.querySelectorAll('.decide input');
+  inputs.forEach(function(el){
+    var k=el.getAttribute('data-key');
+    if(state[k])el.value=state[k];
+    el.addEventListener('input',function(){state[k]=el.value.trim();persist();});
+  });
+  var chipGroups=document.querySelectorAll('.chips');
+  chipGroups.forEach(function(g){
+    var k=g.getAttribute('data-key');
+    var btns=g.querySelectorAll('button');
+    btns.forEach(function(b){
+      if(state[k]===b.getAttribute('data-val'))b.setAttribute('aria-pressed','true');
+      b.addEventListener('click',function(){
+        btns.forEach(function(o){o.setAttribute('aria-pressed','false');});
+        b.setAttribute('aria-pressed','true');
+        state[k]=b.getAttribute('data-val');persist();
+      });
+    });
+  });
+  function refresh(){
+    var owned=0,ownTotal=0,decided=0,parked=[];
+    inputs.forEach(function(el){
+      if(el.getAttribute('data-role')==='owner'){ownTotal++;if((state[el.getAttribute('data-key')]||'').length>1)owned++;}
+    });
+    chipGroups.forEach(function(g){
+      var v=state[g.getAttribute('data-key')];
+      if(v&&v!=='park')decided++;
+      if(v==='park')parked.push(g.getAttribute('data-label'));
+    });
+    var e=function(id){return document.getElementById(id);};
+    e('p-owned').textContent=owned+' / '+ownTotal;
+    e('p-decided').textContent=decided+' / '+chipGroups.length;
+    e('p-parked').textContent=parked.length;
+    e('p-ready').style.display=(owned===ownTotal&&ownTotal>0)?'inline':'none';
+    var box=e('parked-box'),ul=e('parked-list');
+    ul.innerHTML='';
+    parked.forEach(function(t){var li=document.createElement('li');li.textContent=t;ul.appendChild(li);});
+    box.style.display=parked.length?'block':'none';
+  }
+  function payload(){
+    return JSON.stringify({plugin:'gtm-brain',kind:'worksheet-answers',
+      org:document.body.getAttribute('data-org'),
+      generated:document.body.getAttribute('data-generated'),
+      exported_at:new Date().toISOString(),answers:state},null,2);
+  }
+  document.getElementById('exp-dl').addEventListener('click',function(){
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([payload()],{type:'application/json'}));
+    a.download='worksheet-answers.json';document.body.appendChild(a);a.click();a.remove();
+  });
+  document.getElementById('exp-copy').addEventListener('click',function(){
+    var b=this;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy answers';},1500);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(payload()).then(done,fallback);}
+    else fallback();
+    function fallback(){var t=document.createElement('textarea');t.value=payload();
+      document.body.appendChild(t);t.select();try{document.execCommand('copy');done();}catch(e){}t.remove();}
+  });
+  refresh();
+})();
 """
 
 
 def _ws_group(num: int, title: str, fight: str, default: str,
-              read_lines: List[str], decisions: List[str]) -> str:
+              read_lines: List[str], decisions: List[str],
+              options: Optional[List[str]] = None) -> str:
+    """One worksheet group. `decisions` become saved inputs (a line whose label
+    contains 'owner' is counted toward ownership progress); `options` become
+    the fight's decision chips, always followed by a park-for-arbitration chip."""
     import html as _h
+    gkey = f"g{num}"
     read = ""
     if read_lines:
         read = ("<div class='tag'>Read from your CRM</div><div class='read'>"
                 + "<br>".join(_h.escape(l) for l in read_lines) + "</div>")
-    dec = "".join(f"<div><b>{_h.escape(d)}</b><span class='blank'>"
-                  "____________________</span></div>" for d in decisions)
+    chips = ""
+    if options:
+        btns = "".join(
+            f"<button type='button' data-val='{_h.escape(o)}' aria-pressed='false'>"
+            f"{_h.escape(o)}</button>" for o in options)
+        chips = (f"<div class='tag'>Decide</div>"
+                 f"<div class='chips' data-key='{gkey}-fight' "
+                 f"data-label='{_h.escape(title)}: {_h.escape(fight)}'>{btns}"
+                 f"<button type='button' class='park' data-val='park' "
+                 f"aria-pressed='false'>Park for arbitration</button></div>")
+    dec = ""
+    for d in decisions:
+        sub = "".join(c if c.isalnum() else "-" for c in d.lower())
+        role = " data-role='owner'" if "owner" in d.lower() else ""
+        ph = "Name · @github-handle" if "owner" in d.lower() else "…"
+        dec += (f"<div data-key-row><b>{_h.escape(d)}</b>"
+                f"<input data-key='{gkey}-{sub}'{role} placeholder='{ph}'></div>")
     return (f"<div class='grp'><h2><span class='gnum'>{num:02d}</span>{_h.escape(title)}</h2>"
             f"<div class='tag'>The fight</div><div class='fight'>{_h.escape(fight)}</div>"
             f"<div class='tag'>The defensible default</div>"
-            f"<div class='default'>{_h.escape(default)}</div>{read}"
+            f"<div class='default'>{_h.escape(default)}</div>{read}{chips}"
             f"<div class='decide'>{dec}</div></div>")
 
 
@@ -432,7 +543,8 @@ def _worksheet_html(describe: Dict[str, Any], config: Dict[str, Any],
                   "Does a subsidiary roll up — and the same way for reporting and for comp?",
                   "Domain is the spine. Hierarchy is an attribute on top of identity, never "
                   "identity itself. Decide reporting and comp separately.",
-                  [], ["Account identity key", "Owner"]),
+                  [], ["Account identity key", "Owner"],
+                  options=["Domain is the spine (default)", "CRM ID is the spine"]),
         _ws_group(2, "Funnel & lifecycle",
                   "What makes an opportunity qualified — and is this one funnel or several "
                   "sharing a picklist?",
@@ -440,19 +552,22 @@ def _worksheet_html(describe: Dict[str, Any], config: Dict[str, Any],
                   "(renewals, partnerships), every metric filters to one motion explicitly.",
                   ["Stages: " + stage_line] +
                   (["Record types: " + ", ".join(rtypes)] if rtypes else []),
-                  ["Qualified means", "Motions to exclude", "Owner"]),
+                  ["Qualified means", "Motions to exclude", "Owner"],
+                  options=["Observable event (default)", "Rep judgment"]),
         _ws_group(3, "Time",
                   "Who stamps the date a deal entered a stage?",
                   "System-stamped entry and exit, always. If a human can type it, cycle time "
                   "is unmeasurable — the one prerequisite with no workaround.",
                   fills(stage_dates),
-                  ["What writes these fields", "Stage-skip handling", "Owner"]),
+                  ["What writes these fields", "Stage-skip handling", "Owner"],
+                  options=["System-stamped (default)", "Humans can type them today"]),
         _ws_group(4, "Money",
                   "Which field means bookings, and what counts as a customer?",
                   "One named bookings field. Define customer on revenue, not on a status "
                   "field a human maintains.",
                   fills(sorted(currency, key=_rate, reverse=True)),
-                  ["Bookings field", "Customer definition", "Fields to deprecate", "Owner"]),
+                  ["Bookings field", "Customer definition", "Fields to deprecate", "Owner"],
+                  options=["Customer = revenue-based (default)", "Customer = status field"]),
         _ws_group(5, "Source & channel",
                   "One field or two? Most teams have one — and five fields is five opinions, "
                   "not a taxonomy.",
@@ -460,14 +575,16 @@ def _worksheet_html(describe: Dict[str, Any], config: Dict[str, Any],
                   "them and history can never be restated.",
                   (["Source-ish fields today: " + ", ".join(sources)] if sources else []),
                   ["Immutable source field", "Mutable channel field",
-                   "Survives Lead→Contact conversion?", "Owner"]),
+                   "Survives Lead→Contact conversion?", "Owner"],
+                  options=["Two fields (default)", "One field"]),
         _ws_group(6, "Segmentation",
                   "Whose definition of Enterprise wins — sales', marketing's or finance's?",
                   "One segment field, computed from the resolved account. Never a picklist "
                   "three teams maintain differently.",
                   ["%s: %s" % (f, ", ".join(str(v) for v in vals))
                    for f, vals in segs.items()],
-                  ["Computed or maintained?", "Owner"]),
+                  ["Computed or maintained?", "Owner"],
+                  options=["Computed from firmographics (default)", "Maintained picklist"]),
         _ws_group(7, "Commercial context — the other half of the Brain",
                   "Who owns the words agents speak on your behalf?",
                   "One named owner per file: icp.md (with the do-not-sell-to list), "
@@ -483,24 +600,39 @@ def _worksheet_html(describe: Dict[str, Any], config: Dict[str, Any],
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Definition Worksheet — {org}</title>
 <link rel="icon" href="{_WS_FAVICON}">
-<style>{_WS_CSS}</style></head><body><div class="shell">
+<style>{_WS_CSS}</style></head>
+<body data-org="{org}" data-generated="{generated_at}"><div class="shell">
 <span class="pill">LeanScale · GTM Brain</span>
 <h1>Definition Worksheet</h1>
 <p class="lede">The twenty to thirty words every number you report depends on — with what we
-read from your CRM already filled in. Walk this around the building: one named human per
-line, not a team. Thirty definitions is the ceiling, not the target.</p>
+read from your CRM already filled in. It saves itself as you type (in this browser). Walk it
+around the building: one named human per line, not a team. Thirty definitions is the ceiling,
+not the target.</p>
 <p class="meta">{org} · generated {generated_at} · read-only: nothing in your CRM was modified</p>
 <div class="kpis">
 <div class="kpi"><b>3</b><span>metrics drafted in full</span></div>
 <div class="kpi"><b>{assumptions_open}</b><span>assumption(s) awaiting confirmation</span></div>
 <div class="kpi"><b>7</b><span>groups below, one owner per line</span></div>
 </div>
+<div class="progress">
+<span>Owners named <b id="p-owned">0</b></span>
+<span>Fights decided <b id="p-decided">0</b></span>
+<span>Parked <b id="p-parked">0</b></span>
+<span class="ok" id="p-ready">✓ every line owned — ready to bring back</span>
+<span class="exp"><button id="exp-dl" type="button">Export answers</button>
+<button id="exp-copy" type="button" class="ghost">Copy answers</button></span>
+</div>
 {"".join(groups)}
-<div class="foot">Bring the completed sheet back to <b>/gtm-brain:run</b> — each finished line
-becomes a versioned file in your Brain with its owner enforced by CODEOWNERS. In about six
-weeks, ask for one number from the Brain that contradicts your board deck; finding it is the
-point. · Produced by a LeanScale GTM Agent.</div>
-</div></body></html>"""
+<div id="parked-box"><h2>Parked for arbitration</h2>
+<p style="font-size:13.5px;color:var(--gray);margin:0 0 8px">Each of these gets a one-page
+memo within 48 hours — both options computed from your own data — and the sponsor picks.</p>
+<ul id="parked-list"></ul></div>
+<div class="foot">When you're done, <b>Export answers</b> and drop
+<b>worksheet-answers.json</b> into your run directory — <b>/gtm-brain:run</b> reads it and
+turns every answered line into versioned Brain files with CODEOWNERS enforcing each owner.
+Answers also auto-save in this browser. In about six weeks, ask for one number from the Brain
+that contradicts your board deck; finding it is the point. · Produced by a LeanScale GTM Agent.</div>
+</div><script>{_WS_JS}</script></body></html>"""
 
 
 def _bullet_block(items: List[str], empty_note: str) -> str:

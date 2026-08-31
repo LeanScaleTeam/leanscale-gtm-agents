@@ -13,7 +13,7 @@
     {
       "name": "gtm-brain",
       "source": "./plugins/gtm-brain",
-      "version": "2.1.0",
+      "version": "2.2.0",
       "category": "foundations",
       "description": "Builds your GTM Brain \u2014 metric definitions plus commercial context (ICP, selling motion, style guide) as a governed git repo with one named owner per file, seeded from your actual CRM. Formerly semantic-layer. Read-only against the CRM."
     },

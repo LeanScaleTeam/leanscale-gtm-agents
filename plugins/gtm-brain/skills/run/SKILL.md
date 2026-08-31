@@ -241,6 +241,24 @@ LeanScale-branded, print-ready, with their real stages, fill rates, picklists an
 filled in. That is the file they walk around the building; the markdown stays in the repo as
 the working copy. Open it for them before the close.
 
+**It is fillable, and the answers come back to you.** The sheet saves itself in the browser as
+they type, tracks owners-named / fights-decided / parked, and its **Export answers** button
+produces `worksheet-answers.json`. When a customer hands you that file (or drops it anywhere in
+the working directory), apply it instead of re-interviewing:
+
+- `answers["gN-fight"]` — the decided side of each group's fight (`"park"` means it goes to
+  the arbitration queue with a 48-hour memo, not into a definition).
+- `answers["gN-owner"]` and the `g7-*-owner` keys — named owners: write them into the metric
+  YAML `owner:` fields, the context files, and CODEOWNERS (a value like `Jane Chen · @jchen`
+  → CODEOWNERS gets `@jchen`; no handle → keep the name with a `# TODO: GitHub handle`).
+- Other keys (`g4-bookings-field`, `g5-immutable-source-field`, …) map onto config and the
+  worksheet's open items — confirm anything that contradicts what setup recorded, then update
+  `~/.leanscale-gtm/gtm-brain.json` so the next run starts from their answers.
+
+Never silently discard an answer you can't map — list unmapped keys and ask. An answered
+worksheet is the customer's completed homework; losing any of it costs the trust the sheet
+was built to earn.
+
 ---
 
 ## 3.5 The commercial context — the other half of the Brain
