@@ -71,7 +71,24 @@ def _read(raw: Path, name: str) -> Optional[Any]:
         return json.load(fh)
 
 
-def _is_post_close(stage: Dict[str, Any], won_sort: Optional[int]) -> bool:
+def _is_second_motion(stage: Dict[str, Any], won_sort: Optional[int]) -> bool:
+    """
+    Does this stage belong to a motion other than the new-business funnel?
+
+    Sorting after Closed Won is NOT sufficient. Closed Lost almost always sorts
+    after Closed Won, and so do terminal parks like Nurture or Disqualified —
+    they are outcomes of the SAME funnel, not a different one. Flagging them as
+    a second motion is a false positive on a high-severity finding, which is
+    worse than missing a real one.
+
+    A stage is a second motion when it is still OPEN and sorts past the won
+    stage (a renewal funnel continues after a win), or when its label names a
+    different motion outright.
+    """
+    if any(m in stage["value"].lower() for m in RENEWAL_MARKERS):
+        return True
+    if stage.get("is_closed"):
+        return False          # terminal outcome of this funnel, not another motion
     return won_sort is not None and stage.get("sort", 0) > won_sort
 
 
@@ -106,8 +123,7 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
     # ---- 1. mixed stage set --------------------------------------------------
     won_sort = next((s.get("sort") for s in stages if s.get("is_won")), None)
     post_close = [s["value"] for s in stages
-                  if _is_post_close(s, won_sort)
-                  or any(m in s["value"].lower() for m in RENEWAL_MARKERS)]
+                  if _is_second_motion(s, won_sort)]
     if post_close:
         doc.add(Finding(
             id="mixed-stage-set",
@@ -203,7 +219,7 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
         ))
     else:
         covered = len(stage_dates)
-        total = len([s for s in stages if not _is_post_close(s, won_sort)]) or covered
+        total = len([s for s in stages if not _is_second_motion(s, won_sort)]) or covered
         if post_close:
             doc.add(Finding(
                 id="stage-timestamps-partial",

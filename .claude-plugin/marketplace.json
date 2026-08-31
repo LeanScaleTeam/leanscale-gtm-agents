@@ -13,7 +13,7 @@
     {
       "name": "semantic-layer",
       "source": "./plugins/semantic-layer",
-      "version": "1.1.2",
+      "version": "1.1.3",
       "category": "foundations",
       "description": "Reports what stands between you and a semantic layer you can defend, then walks you through the definitions and writes them out as a git repo of versioned metric files with one named owner each. Read-only against the CRM."
     },
