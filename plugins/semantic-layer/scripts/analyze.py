@@ -39,6 +39,23 @@ RENEWAL_MARKERS = ("renewal", "expansion", "upsell", "cross-sell", "churn", "rev
 FRAMEWORK_MARKERS = ("bant", "champ", "medd", "anum", "gpctba", "spiced", "scotsman")
 
 
+def has_fill_rates(fields: List[Dict[str, Any]]) -> bool:
+    """
+    True only if fill rates were actually measured.
+
+    Fill rate comes from `crm.query`, which is optional. When it did not resolve the
+    key is absent — and absent is NOT zero. Treating it as zero reports the org's
+    most-populated field as empty, which is a confident lie, and it is exactly the
+    failure this plugin exists to prevent. Any check that needs a fill rate must be
+    skipped and declared unavailable, never guessed.
+    """
+    return any(f.get("fill_rate") is not None for f in fields)
+
+
+def _rate(field: Dict[str, Any]) -> float:
+    return field.get("fill_rate") or 0.0
+
+
 def _read(raw: Path, name: str) -> Optional[Any]:
     p = raw / name
     if not p.exists():
@@ -109,7 +126,9 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
         candidates = [c for c in currency if c not in framework]
         agreed = (config.get("bookings_amount_field") or "").strip()
         if not agreed:
-            top = sorted(candidates, key=lambda c: c.get("fill_rate", 0), reverse=True)[:3]
+            rated = has_fill_rates(candidates)
+            top = (sorted(candidates, key=_rate, reverse=True)[:3] if rated
+                   else candidates[:3])
             doc.add(Finding(
                 id="no-agreed-bookings-field",
                 severity="high",
@@ -120,18 +139,25 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
                 why_it_matters="Every revenue metric silently picks one. Two people picking "
                                "differently is how two dashboards disagree and both get defended.",
                 recommended_fix="Name one field as bookings, in writing, with an owner. "
-                                f"Highest-filled candidates: "
-                                f"{', '.join(c['name'] for c in top) or 'none'}.",
+                                + (f"Highest-filled candidates: " if rated
+                                   else "Candidates (fill rates unavailable — no query tool resolved): ")
+                                + f"{', '.join(c['name'] for c in top) or 'none'}.",
                 evidence={"count": len(currency),
                           "rows": [{"field": c["name"], "fill_rate": c.get("fill_rate")}
-                                   for c in sorted(candidates,
-                                                   key=lambda c: c.get("fill_rate", 0),
-                                                   reverse=True)[:10]]},
+                                   for c in (sorted(candidates, key=_rate, reverse=True)
+                                             if rated else candidates)[:10]]},
                 effort="quick",
                 owner_hint="CFO or RevOps",
             ))
 
-        dead = [c for c in candidates if c.get("fill_rate", 0) < 0.05]
+        if not has_fill_rates(candidates):
+            doc.unavailable.append(
+                "Currency field fill rates — no `crm.query` tool resolved, so dead-field "
+                "detection was skipped. Absent is not zero; guessing would report your "
+                "most-populated field as empty."
+            )
+        dead = ([c for c in candidates if _rate(c) < 0.05]
+                if has_fill_rates(candidates) else [])
         if len(dead) >= 3:
             doc.add(Finding(
                 id="dead-currency-fields",
@@ -187,7 +213,14 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
                 effort="medium",
                 owner_hint="CRM admin",
             ))
-        thin = [f for f in stage_dates if f.get("fill_rate", 0) < 0.5]
+        if not has_fill_rates(stage_dates):
+            doc.unavailable.append(
+                "Stage timestamp fill rates — no `crm.query` tool resolved. Whether these "
+                "fields are actually populated is the difference between a cycle time you "
+                "can trust and one computed over a biased sample. Unmeasured, not clean."
+            )
+        thin = ([f for f in stage_dates if _rate(f) < 0.5]
+                if has_fill_rates(stage_dates) else [])
         if thin:
             doc.add(Finding(
                 id="stage-timestamps-thin",
