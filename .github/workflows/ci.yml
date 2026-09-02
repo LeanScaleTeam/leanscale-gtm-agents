@@ -28,6 +28,12 @@ jobs:
       - name: Suite QA gate
         run: python3 tools/qa.py
 
+      # site/dist is gitignored and deployed from a workstation, so CI cannot see
+      # the zips. It can see every surface that describes them — which is where
+      # gtm-brain went missing for a day.
+      - name: Catalog agrees with what ships
+        run: python3 tools/check-catalog.py
+
       - name: Version gate
         if: github.event_name == 'pull_request'
         env:
