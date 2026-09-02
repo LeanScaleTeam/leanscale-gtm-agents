@@ -83,7 +83,7 @@
     {
       "name": "executive-reporting",
       "source": "./plugins/executive-reporting",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "reporting",
       "description": "Builds the executive GTM reporting pack leadership runs the business on \u2014 bookings, created pipeline, coverage, cohort conversion, retention and concentration, each against a goal and each openable to the rows underneath. Audits whether the CRM can support the reporting before it publishes a number. Read-only."
     }
