@@ -158,11 +158,18 @@ def coverage_note(doc: Dict[str, Any], manifest: Optional[Dict[str, Any]]) -> No
         # reaches the page turns "1,204 accounts share 511 domains" from a floor into a
         # stated total — the exact confident-wrong number the fail-loud contract exists
         # to prevent. Fold the warnings in too, skipping any already covered above.
+        known = {str(src.get("name")) for src in manifest.get("sources", [])}
         for warning in manifest.get("warnings", []):
             text = str(warning)
             if "truncated" not in text.lower():
                 continue
             source = text.split(":", 1)[0].strip()
+            # Coverage gaps are also recorded as warnings, in the form
+            # "unavailable: <check> — <reason>". Folding those in produced the
+            # nonsense caveat "Complete counts for unavailable" and invented a
+            # truncation that never happened. Only real source names qualify.
+            if source not in known:
+                continue
             if source in truncated:
                 continue
             doc.setdefault("unavailable", []).append(

@@ -89,6 +89,6 @@
   "min_confidence": 0.6,
   "allow_past_dates": false,
   "max_value_length": 32000,
-  "approval": { "approvers": [], "require_named_approver": true, "min_review_seconds": 10 },
+  "approval": { "approvers": ["Dana Ruiz"], "require_named_approver": true, "min_review_seconds": 10 },
   "audit": { "enabled": true }
 }

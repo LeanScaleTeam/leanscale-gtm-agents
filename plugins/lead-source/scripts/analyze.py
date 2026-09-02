@@ -403,7 +403,12 @@ def build_ctx(args: argparse.Namespace) -> Ctx:
             if isinstance(payload, dict):
                 ctx.queries = {k: (v if isinstance(v, dict) else {"query": str(v)})
                                for k, v in payload.items()}
-        except (OSError, json.JSONDecodeError):
+        except (OSError, json.JSONDecodeError, ConfigError):
+            # _queries.json is provenance only — it records the queries that produced
+            # the extracts and nothing depends on it. read_json now raises ConfigError
+            # on malformed JSON (so a corrupt REQUIRED extract names itself instead of
+            # ending in a traceback), which silently disarmed this guard and let a
+            # corrupt optional file abort the whole run.
             pass
 
     ctx.history = load_history(raw_dir, cfg, ctx)

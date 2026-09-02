@@ -1,6 +1,6 @@
 {
   "name": "lead-source",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Audits whether your lead source data can support the channel report you present: null/Other rates by capture route, duplicate source values, and whether source survives Lead to Opportunity conversion.",
   "author": {
     "name": "LeanScale",
