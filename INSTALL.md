@@ -1,7 +1,7 @@
 # Installing the LeanScale GTM Agents
 
-Ten agents that read your Salesforce or HubSpot and tell you what your revenue systems are
-actually doing. Nine are strictly read-only.
+Eleven agents that read your Salesforce or HubSpot and tell you what your revenue systems are
+actually doing. Ten are strictly read-only.
 
 ## Before you start
 
@@ -70,7 +70,7 @@ install only some of them. `--dry-run` shows what it would do first.
 Two things it handles that copying by hand does not:
 
 - **It renames the skills.** Every plugin ships skills called `run` and `setup`. Claude Code
-  namespaces them (`/crm-hygiene:run`); a flat skills directory does not, so ten plugins would
+  namespaces them (`/crm-hygiene:run`); a flat skills directory does not, so eleven plugins would
   give you ten skills called `run`. They install as `crm-hygiene-run`, `crm-hygiene-setup`, and
   so on.
 - **It records where the clone lives**, so the agents can find their own analysis scripts.

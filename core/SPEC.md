@@ -205,7 +205,7 @@ later fails.
 
 ## 5. Safety posture — non-negotiable
 
-- **Read-only by default.** Nine of ten plugins never write. Say so in the README, in
+- **Read-only by default.** Ten of eleven plugins never write. Say so in the README, in
   plain words, in the first paragraph. It is a sales feature: 30% of this ICP has an active
   AI-governance problem, and read-only is what gets approved.
 - **The one write-capable plugin** (`meeting-to-crm`) must: default to dry-run, render a
@@ -285,6 +285,7 @@ with four installed types the same thing every time: `:run` and `:setup`.
 | 8 | `lead-source` | `/lead-source:run` · `:setup` | `crm.query`, `crm.describe` | — |
 | 9 | `system-map` | `/system-map:run` · `:setup` | `crm.describe` | `crm.query` |
 | 10 | `executive-reporting` | `/executive-reporting:run` · `:setup` | `crm.query`, `crm.describe` | — |
+| 11 | `gtm-brain` | `/gtm-brain:run` · `:setup` | `crm.describe` | `crm.query` |
 
 ### Interview requirements (minimum) — beyond the shared profile
 

@@ -1,11 +1,12 @@
 # LeanScale GTM Agents
 
-Ten GTM and RevOps agents, packaged as a Claude Code plugin marketplace, that run against a
-customer's own Salesforce or HubSpot. Nine are strictly read-only. Every finding carries the
+Eleven GTM and RevOps agents, packaged as a Claude Code plugin marketplace, that run against a
+customer's own Salesforce or HubSpot. Ten are strictly read-only. Every finding carries the
 record count and the exact query that produced it.
 
 | Plugin | Command | Needs | What it does |
 |---|---|---|---|
+| `gtm-brain` | `/gtm-brain:run` | CRM | Your metric definitions and commercial context as a git repo you own — one named owner per file, seeded from your real stages and fields |
 | `crm-hygiene` | `/crm-hygiene:run` | CRM | Duplicate records, dead fields, records owned by leavers, stale pipeline, picklist rot → a Hygiene Index |
 | `pipeline-inspection` | `/pipeline-inspection:run` | CRM | Open deals violating your own rules: stuck in stage, no next step, pushed 3×, single-threaded |
 | `forecast-agent` | `/forecast-agent:run` | CRM | Audits whether the CRM can support a forecast, then calls it three ways with the method shown |
@@ -25,7 +26,7 @@ core/
   PLUGIN-SCHEMA.md     the verified Claude Code plugin/marketplace schema
   lib/                 shared library (config, manifest, findings, baseline, render, crmutil)
   selftest.py          62 checks over the shared library
-plugins/<name>/        the ten plugins
+plugins/<name>/        the eleven plugins
 tools/
   vendor.py            copy core/lib -> plugins/*/scripts/lib  (installed plugins can't read ../)
   qa.py                suite-wide gate: schema, leakage, read-only statements, claude plugin validate
