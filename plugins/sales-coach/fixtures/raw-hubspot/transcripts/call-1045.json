@@ -1,0 +1,27 @@
+{
+  "id": "FF-77123",
+  "title": "Orbit Payments <> Acme Data — Discovery",
+  "date": "2026-07-28T16:00:00Z",
+  "duration": 41.2,
+  "meeting_attendees": [
+    { "displayName": "Dana Whitfield", "email": "dana@acmedata.io" },
+    { "displayName": "Bea Lindqvist", "email": "bea.lindqvist@orbitpayments.com" }
+  ],
+  "sentences": [
+    { "index": 0, "speaker_name": "Dana Whitfield", "start_time": 7.4, "end_time": 24.1, "raw_text": "Bea, thanks for the time. You reached out through the site, which usually means something specific happened. What was it?" },
+    { "index": 1, "speaker_name": "Bea Lindqvist", "start_time": 24.8, "end_time": 71.3, "raw_text": "We're closing the books later every month. It used to be day five, we're at day nine now, and the reason is that our merchant revenue lives in one system and the contracted minimums live in the CRM and every month somebody has to line them up by hand." },
+    { "index": 2, "speaker_name": "Dana Whitfield", "start_time": 72.0, "end_time": 86.5, "raw_text": "Day five to day nine. When did that drift start, and what changed around then?" },
+    { "index": 3, "speaker_name": "Bea Lindqvist", "start_time": 87.2, "end_time": 143.9, "raw_text": "About a year ago when we launched the platform product. It has a completely different billing model, and the way we've handled that is a separate spreadsheet that only one person on my team knows how to run. She's on maternity leave in November and I genuinely do not know what we do then." },
+    { "index": 4, "speaker_name": "Dana Whitfield", "start_time": 144.6, "end_time": 163.2, "raw_text": "So there's a real date attached to this. What does the close actually cost you in hours right now, and who's paying it?" },
+    { "index": 5, "speaker_name": "Bea Lindqvist", "start_time": 163.9, "end_time": 205.4, "raw_text": "It's a couple of days each month for two people, so call it four person-days. But the thing that actually hurts is that our CFO gets the flash report on day nine and by then half the month is gone and there's nothing he can do about what it says." },
+    { "index": 6, "speaker_name": "Dana Whitfield", "start_time": 206.1, "end_time": 228.7, "raw_text": "That's the part I'd want to fix first. If the flash report landed on day three instead of day nine, what would your CFO do differently with those six days?" },
+    { "index": 7, "speaker_name": "Bea Lindqvist", "start_time": 229.4, "end_time": 279.8, "raw_text": "He'd catch the merchant churn earlier. We lost two mid-size merchants in Q1 and we didn't see the volume drop in the numbers until the quarter was basically over. He asks me about that roughly every second week." },
+    { "index": 8, "speaker_name": "Dana Whitfield", "start_time": 1320.5, "end_time": 1378.2, "raw_text": "So what you're looking at here is the same close, but the reconciliation runs nightly instead of at month end. The exceptions queue is what your team would work, and it's usually twenty or thirty records rather than the whole book." },
+    { "index": 9, "speaker_name": "Bea Lindqvist", "start_time": 1378.9, "end_time": 1402.6, "raw_text": "That would have saved us the November problem entirely. This is the sort of thing I'd have wanted a year ago." },
+    { "index": 10, "speaker_name": "Dana Whitfield", "start_time": 2011.3, "end_time": 2043.7, "raw_text": "Let me show you the flash report piece too, because you mentioned the CFO gets it on day nine, and I think that's the one that changes his week." },
+    { "index": 11, "speaker_name": "Bea Lindqvist", "start_time": 2044.4, "end_time": 2078.9, "raw_text": "Yeah. I like it. I need to sit with it a bit and figure out how it fits with the ERP work we've got going on in the autumn." },
+    { "index": 12, "speaker_name": "Dana Whitfield", "start_time": 2079.6, "end_time": 2098.3, "raw_text": "Of course. I'll send over the recording and the summary, and a short write-up of how it plugs into an ERP migration, since a few of our customers have done exactly that." },
+    { "index": 13, "speaker_name": "Bea Lindqvist", "start_time": 2099.0, "end_time": 2118.5, "raw_text": "That would be great. Let me think about it and I'll come back to you." },
+    { "index": 14, "speaker_name": "Dana Whitfield", "start_time": 2119.2, "end_time": 2136.4, "raw_text": "Sounds good. I'll follow up in a couple of weeks if I haven't heard from you. Thanks Bea, this was really helpful." }
+  ]
+}

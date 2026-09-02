@@ -610,18 +610,36 @@ def rep_rollup(calls: Sequence[Dict[str, Any]], framework: Dict[str, Any],
     return out
 
 
+def _first(deal: Dict[str, Any], *names: str) -> Any:
+    """First present, non-blank value among CRM field aliases."""
+    for name in names:
+        value = deal.get(name)
+        if value not in (None, ""):
+            return value
+    return None
+
+
 def deal_outcome(deal: Dict[str, Any]) -> str:
-    closed = str(deal.get("IsClosed", deal.get("is_closed", ""))).lower() in ("true", "1")
-    won = str(deal.get("IsWon", deal.get("is_won", ""))).lower() in ("true", "1")
+    # HubSpot names these hs_is_closed / hs_is_closed_won / closedate. Reading only
+    # the Salesforce names made every HubSpot deal fall through to "open", which
+    # silently deleted won/lost/slipped coaching — the plugin's headline finding —
+    # on a portal whose data was present and simply never looked at.
+    closed = str(_first(deal, "IsClosed", "is_closed", "hs_is_closed") or "").lower() \
+        in ("true", "1")
+    won = str(_first(deal, "IsWon", "is_won", "hs_is_closed_won") or "").lower() \
+        in ("true", "1")
     if closed:
         return "won" if won else "lost"
-    pushes = deal.get("Close_Date_Push_Count__c") or deal.get("close_date_pushes") or 0
+    pushes = _first(deal, "Close_Date_Push_Count__c", "close_date_pushes") or 0
     try:
         pushes = int(float(pushes))
     except (TypeError, ValueError):
         pushes = 0
-    original = deal.get("Original_Close_Date__c") or deal.get("original_close_date")
-    current = deal.get("CloseDate") or deal.get("close_date")
+    # No HubSpot equivalent of an original-close-date field ships by default, so a
+    # HubSpot deal reports "slipped" only when the portal has a mapped push counter.
+    # Inventing an alias here would fabricate slippage rather than measure it.
+    original = _first(deal, "Original_Close_Date__c", "original_close_date")
+    current = _first(deal, "CloseDate", "close_date", "closedate")
     if pushes > 0 or (original and current and str(current) > str(original)):
         return "slipped"
     return "open"

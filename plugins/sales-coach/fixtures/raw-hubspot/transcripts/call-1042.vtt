@@ -1,0 +1,97 @@
+WEBVTT
+
+1
+00:00:04.100 --> 00:00:19.800
+Dana Whitfield: Thanks for making the time, Ines. I know you moved this from Thursday, so I want to be efficient. I've got about forty minutes of questions and then whatever you want to dig into.
+
+2
+00:00:20.400 --> 00:00:33.900
+Ines Okafor: That works. Tom's on with us too, he runs analytics day to day, so anything technical he'll be the one living with it.
+
+3
+00:00:35.200 --> 00:00:52.600
+Dana Whitfield: Perfect. So start me at the beginning. What made you take this call? Something had to have happened, because you've been running the current setup for what, three years?
+
+4
+00:00:53.100 --> 00:01:24.400
+Ines Okafor: Four, actually. And honestly what happened is our board asked a question in March that we couldn't answer. They wanted net revenue retention split by product line, and it took us eleven days to produce a number that our CFO then didn't trust.
+
+5
+00:01:25.000 --> 00:01:41.700
+Dana Whitfield: Eleven days. Walk me through where those eleven days actually go. I'm not asking to be dramatic, I want to know which step is the expensive one.
+
+6
+00:01:42.300 --> 00:02:31.900
+Tom Reddy: I can take that. Most of it is reconciliation. We pull the subscription table out of the billing system, then we pull opportunity data out of the CRM, and the two don't agree on what a customer is. So somebody on my team, usually me, sits there mapping account IDs by hand in a spreadsheet.
+
+7
+00:02:32.400 --> 00:02:44.100
+Tom Reddy: And then when finance changes a mapping, we don't find out. We just produce a different number the next quarter and nobody can explain the delta.
+
+8
+00:02:45.000 --> 00:03:02.800
+Dana Whitfield: How much of your team's month goes into that? Give me a real number if you have one, an honest guess if you don't.
+
+9
+00:03:03.400 --> 00:03:29.600
+Tom Reddy: It's about thirty hours a month between me and one analyst. Call it thirty. In a quarter-close month it's closer to fifty because everyone wants a cut of it.
+
+10
+00:03:30.200 --> 00:03:47.900
+Dana Whitfield: So roughly a third of a full-time person, before you count the eleven-day board scramble on top. And what does the analyst not do while she's doing that?
+
+11
+00:03:48.400 --> 00:04:22.100
+Ines Okafor: That's the part that bothers me more, honestly. She was hired to build the pricing model and she has not touched it since January. We are making pricing decisions on instinct because the person who was supposed to model it is reconciling spreadsheets.
+
+12
+00:04:23.000 --> 00:04:39.700
+Dana Whitfield: That's the real cost. Okay. If we fixed the reconciliation problem, what would you expect to be true six months from now that isn't true today?
+
+13
+00:04:40.300 --> 00:05:12.500
+Ines Okafor: I'd want the board number to come out of a system instead of out of Tom's head. And I'd want to stop having the conversation where finance and revenue show up with two different numbers and spend the first twenty minutes of the meeting arguing about whose is right.
+
+14
+00:22:14.000 --> 00:22:41.800
+Ines Okafor: One thing I should flag. Whatever we land on, I'd have to get Raj comfortable with it. He owns the budget line for anything in the data stack and he's been burned before by a tool nobody adopted.
+
+15
+00:22:42.400 --> 00:22:58.900
+Dana Whitfield: Understood. Let me show you the reconciliation piece, because I think that's the part Tom is going to care about most.
+
+16
+00:22:59.500 --> 00:23:34.200
+Dana Whitfield: So the way this works, we read both systems and keep a mapping table that's versioned. When finance changes a mapping, the change is logged and the old number stays reproducible. You can always answer why last quarter's number was what it was.
+
+17
+00:23:35.000 --> 00:23:52.600
+Tom Reddy: That versioning piece is the thing. Can I see what happens when two systems genuinely disagree, not the happy path?
+
+18
+00:23:53.100 --> 00:24:38.400
+Dana Whitfield: Yes, let me pull up a real conflict. Here's a case where billing says the contract ended in June and the CRM says it renewed. The system doesn't pick a winner, it flags it and routes it to whoever owns that account. The point is you stop discovering the disagreement at board prep.
+
+19
+00:31:02.300 --> 00:31:29.900
+Ines Okafor: This is closer to what I hoped for than I expected. What does implementation actually look like? I don't have people to throw at a six-month project.
+
+20
+00:31:30.400 --> 00:32:05.100
+Dana Whitfield: For a stack your size it's typically four to six weeks, and the heavy lift is week one, agreeing the account mapping rules. That's a working session with Tom, not a project.
+
+21
+00:38:47.200 --> 00:39:11.800
+Ines Okafor: Okay. I want Tom to push on it properly before we go any further. What's the right next step?
+
+22
+00:39:12.400 --> 00:39:48.900
+Dana Whitfield: Let's do a working session with your actual data. Tuesday the twenty-first at ten, ninety minutes, you, Tom, and one of our solution architects. I'll send the invite today with the data-access checklist attached.
+
+23
+00:39:49.500 --> 00:40:02.700
+Tom Reddy: Tuesday works for me. Send the checklist early, some of that will need a ticket to our security team.
+
+24
+00:40:03.200 --> 00:40:18.400
+Dana Whitfield: Will do, today. Thanks both, this was genuinely useful.

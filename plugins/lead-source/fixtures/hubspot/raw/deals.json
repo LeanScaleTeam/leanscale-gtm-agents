@@ -1,1 +1,2597 @@
-{"results":[{"id":"300001","properties":{"dealname":"Example Deal 1","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"Website","hs_analytics_source":"OFFLINE","createdate":"2026-01-02T09:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-05-07T09:00:00.000Z"},"createdAt":"2026-01-02T09:00:00.000Z","archived":false},{"id":"300002","properties":{"dealname":"Example Deal 2","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Paid Search","hs_analytics_source":"OFFLINE","createdate":"2025-05-16T09:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-08-05T09:00:00.000Z"},"createdAt":"2025-05-16T09:00:00.000Z","archived":false},{"id":"300003","properties":{"dealname":"Example Deal 3","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Referral","hs_analytics_source":"REFERRALS","createdate":"2025-10-23T16:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-12-03T16:00:00.000Z"},"createdAt":"2025-10-23T16:00:00.000Z","archived":false},{"id":"300004","properties":{"dealname":"Example Deal 4","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Organic Search","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-01-12T15:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-01-04T15:00:00.000Z"},"createdAt":"2026-01-12T15:00:00.000Z","archived":false},{"id":"300005","properties":{"dealname":"Example Deal 5","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-03-21T01:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-08-25T01:00:00.000Z"},"createdAt":"2026-03-21T01:00:00.000Z","archived":false},{"id":"300006","properties":{"dealname":"Example Deal 6","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"82000","original_lead_source":"WEBINAR","hs_analytics_source":"OFFLINE","createdate":"2025-06-01T00:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-07-29T00:00:00.000Z"},"createdAt":"2025-06-01T00:00:00.000Z","archived":false},{"id":"300007","properties":{"dealname":"Example Deal 7","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-11-14T08:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-01-28T08:00:00.000Z"},"createdAt":"2025-11-14T08:00:00.000Z","archived":false},{"id":"300008","properties":{"dealname":"Example Deal 8","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2026-06-04T20:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-10-02T20:00:00.000Z"},"createdAt":"2026-06-04T20:00:00.000Z","archived":false},{"id":"300009","properties":{"dealname":"Example Deal 9","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Paid Social","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-05-18T18:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-08-16T18:00:00.000Z"},"createdAt":"2025-05-18T18:00:00.000Z","archived":false},{"id":"300010","properties":{"dealname":"Example Deal 10","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"","hs_analytics_source":"PAID_SEARCH","createdate":"2026-02-04T03:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-06-13T03:00:00.000Z"},"createdAt":"2026-02-04T03:00:00.000Z","archived":false},{"id":"300011","properties":{"dealname":"Example Deal 11","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"38000","original_lead_source":"REFERRAL","hs_analytics_source":"OFFLINE","createdate":"2026-08-07T09:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-09-25T09:00:00.000Z"},"createdAt":"2026-08-07T09:00:00.000Z","archived":false},{"id":"300012","properties":{"dealname":"Example Deal 12","dealstage":"contractsent","hs_is_closed_won":"false","amount":"38000","original_lead_source":"","hs_analytics_source":"PAID_SEARCH","createdate":"2025-04-06T03:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-06-28T03:00:00.000Z"},"createdAt":"2025-04-06T03:00:00.000Z","archived":false},{"id":"300013","properties":{"dealname":"Example Deal 13","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Webinar","hs_analytics_source":"OFFLINE","createdate":"2025-08-14T21:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-10-17T21:00:00.000Z"},"createdAt":"2025-08-14T21:00:00.000Z","archived":false},{"id":"300014","properties":{"dealname":"Example Deal 14","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Unknown","hs_analytics_source":"REFERRALS","createdate":"2026-09-01T05:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-10-12T05:00:00.000Z"},"createdAt":"2026-09-01T05:00:00.000Z","archived":false},{"id":"300015","properties":{"dealname":"Example Deal 15","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"REFERRALS","createdate":"2025-06-22T13:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-05-26T13:00:00.000Z"},"createdAt":"2025-06-22T13:00:00.000Z","archived":false},{"id":"300016","properties":{"dealname":"Example Deal 16","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Conferences","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-07-19T13:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-07-15T13:00:00.000Z"},"createdAt":"2026-07-19T13:00:00.000Z","archived":false},{"id":"300017","properties":{"dealname":"Example Deal 17","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"LinkedIn","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-05-22T07:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-08-24T07:00:00.000Z"},"createdAt":"2026-05-22T07:00:00.000Z","archived":false},{"id":"300018","properties":{"dealname":"Example Deal 18","dealstage":"contractsent","hs_is_closed_won":"false","amount":"55000","original_lead_source":"","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-10-21T05:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-12-17T05:00:00.000Z"},"createdAt":"2025-10-21T05:00:00.000Z","archived":false},{"id":"300019","properties":{"dealname":"Example Deal 19","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Webinar","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-11-08T08:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-01-29T08:00:00.000Z"},"createdAt":"2025-11-08T08:00:00.000Z","archived":false},{"id":"300020","properties":{"dealname":"Example Deal 20","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2025-12-24T01:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-01-28T01:00:00.000Z"},"createdAt":"2025-12-24T01:00:00.000Z","archived":false},{"id":"300021","properties":{"dealname":"Example Deal 21","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Outbound","hs_analytics_source":"REFERRALS","createdate":"2025-05-31T03:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-11-06T03:00:00.000Z"},"createdAt":"2025-05-31T03:00:00.000Z","archived":false},{"id":"300022","properties":{"dealname":"Example Deal 22","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"Website","hs_analytics_source":"OFFLINE","createdate":"2025-12-31T05:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-05-17T05:00:00.000Z"},"createdAt":"2025-12-31T05:00:00.000Z","archived":false},{"id":"300023","properties":{"dealname":"Example Deal 23","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Conference","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-05-25T01:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-09-02T01:00:00.000Z"},"createdAt":"2025-05-25T01:00:00.000Z","archived":false},{"id":"300024","properties":{"dealname":"Example Deal 24","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-12-04T17:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-02-23T17:00:00.000Z"},"createdAt":"2025-12-04T17:00:00.000Z","archived":false},{"id":"300025","properties":{"dealname":"Example Deal 25","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Customer Referral","hs_analytics_source":"REFERRALS","createdate":"2026-06-25T08:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-06-25T08:00:00.000Z"},"createdAt":"2026-06-25T08:00:00.000Z","archived":false},{"id":"300026","properties":{"dealname":"Example Deal 26","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Paid Search","hs_analytics_source":"PAID_SEARCH","createdate":"2026-01-19T08:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-05-15T08:00:00.000Z"},"createdAt":"2026-01-19T08:00:00.000Z","archived":false},{"id":"300027","properties":{"dealname":"Example Deal 27","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-12-14T21:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-11-20T21:00:00.000Z"},"createdAt":"2025-12-14T21:00:00.000Z","archived":false},{"id":"300028","properties":{"dealname":"Example Deal 28","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"WEBINAR","hs_analytics_source":"OFFLINE","createdate":"2026-04-01T12:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-05-02T12:00:00.000Z"},"createdAt":"2026-04-01T12:00:00.000Z","archived":false},{"id":"300029","properties":{"dealname":"Example Deal 29","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"","hs_analytics_source":"REFERRALS","createdate":"2026-04-21T17:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-07-30T17:00:00.000Z"},"createdAt":"2026-04-21T17:00:00.000Z","archived":false},{"id":"300030","properties":{"dealname":"Example Deal 30","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Unknown","hs_analytics_source":"PAID_SOCIAL","createdate":"2026-09-12T16:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2027-02-04T16:00:00.000Z"},"createdAt":"2026-09-12T16:00:00.000Z","archived":false},{"id":"300031","properties":{"dealname":"Example Deal 31","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Unknown","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-09-21T23:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-12-08T23:00:00.000Z"},"createdAt":"2025-09-21T23:00:00.000Z","archived":false},{"id":"300032","properties":{"dealname":"Example Deal 32","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-05-27T05:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-09-18T05:00:00.000Z"},"createdAt":"2025-05-27T05:00:00.000Z","archived":false},{"id":"300033","properties":{"dealname":"Example Deal 33","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Webinar","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-07-28T19:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-07-19T19:00:00.000Z"},"createdAt":"2025-07-28T19:00:00.000Z","archived":false},{"id":"300034","properties":{"dealname":"Example Deal 34","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Email","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-04-04T05:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-09-21T05:00:00.000Z"},"createdAt":"2025-04-04T05:00:00.000Z","archived":false},{"id":"300035","properties":{"dealname":"Example Deal 35","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2025-05-25T23:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-09-03T23:00:00.000Z"},"createdAt":"2025-05-25T23:00:00.000Z","archived":false},{"id":"300036","properties":{"dealname":"Example Deal 36","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Other","hs_analytics_source":"REFERRALS","createdate":"2025-07-25T01:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-08-19T01:00:00.000Z"},"createdAt":"2025-07-25T01:00:00.000Z","archived":false},{"id":"300037","properties":{"dealname":"Example Deal 37","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2025-11-25T12:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-01-02T12:00:00.000Z"},"createdAt":"2025-11-25T12:00:00.000Z","archived":false},{"id":"300038","properties":{"dealname":"Example Deal 38","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Unknown","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-09-03T17:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-11-05T17:00:00.000Z"},"createdAt":"2025-09-03T17:00:00.000Z","archived":false},{"id":"300039","properties":{"dealname":"Example Deal 39","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Other","hs_analytics_source":"REFERRALS","createdate":"2026-04-03T00:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-04-08T00:00:00.000Z"},"createdAt":"2026-04-03T00:00:00.000Z","archived":false},{"id":"300040","properties":{"dealname":"Example Deal 40","dealstage":"contractsent","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Webinars","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-09-29T14:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-12-07T14:00:00.000Z"},"createdAt":"2025-09-29T14:00:00.000Z","archived":false},{"id":"300041","properties":{"dealname":"Example Deal 41","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Referral","hs_analytics_source":"REFERRALS","createdate":"2026-01-09T13:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-05-10T13:00:00.000Z"},"createdAt":"2026-01-09T13:00:00.000Z","archived":false},{"id":"300042","properties":{"dealname":"Example Deal 42","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Outbound","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-07-01T00:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-07-30T00:00:00.000Z"},"createdAt":"2026-07-01T00:00:00.000Z","archived":false},{"id":"300043","properties":{"dealname":"Example Deal 43","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"","hs_analytics_source":"OFFLINE","createdate":"2025-03-15T18:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-06-15T18:00:00.000Z"},"createdAt":"2025-03-15T18:00:00.000Z","archived":false},{"id":"300044","properties":{"dealname":"Example Deal 44","dealstage":"contractsent","hs_is_closed_won":"false","amount":"9000","original_lead_source":"","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-11-23T07:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-12-29T07:00:00.000Z"},"createdAt":"2025-11-23T07:00:00.000Z","archived":false},{"id":"300045","properties":{"dealname":"Example Deal 45","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Website","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-09-06T05:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-01-10T05:00:00.000Z"},"createdAt":"2025-09-06T05:00:00.000Z","archived":false},{"id":"300046","properties":{"dealname":"Example Deal 46","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"82000","original_lead_source":"","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-05-25T18:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-09-18T18:00:00.000Z"},"createdAt":"2025-05-25T18:00:00.000Z","archived":false},{"id":"300047","properties":{"dealname":"Example Deal 47","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Website","hs_analytics_source":"OFFLINE","createdate":"2026-04-26T16:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-06-05T16:00:00.000Z"},"createdAt":"2026-04-26T16:00:00.000Z","archived":false},{"id":"300048","properties":{"dealname":"Example Deal 48","dealstage":"contractsent","hs_is_closed_won":"false","amount":"24000","original_lead_source":"","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2026-01-12T14:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-03-10T14:00:00.000Z"},"createdAt":"2026-01-12T14:00:00.000Z","archived":false},{"id":"300049","properties":{"dealname":"Example Deal 49","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2026-04-19T23:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-08-17T23:00:00.000Z"},"createdAt":"2026-04-19T23:00:00.000Z","archived":false},{"id":"300050","properties":{"dealname":"Example Deal 50","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Email","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-06-02T01:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-09-26T01:00:00.000Z"},"createdAt":"2025-06-02T01:00:00.000Z","archived":false},{"id":"300051","properties":{"dealname":"Example Deal 51","dealstage":"contractsent","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-04-02T11:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-05-07T11:00:00.000Z"},"createdAt":"2025-04-02T11:00:00.000Z","archived":false},{"id":"300052","properties":{"dealname":"Example Deal 52","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Website","hs_analytics_source":"REFERRALS","createdate":"2025-05-15T02:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-07-02T02:00:00.000Z"},"createdAt":"2025-05-15T02:00:00.000Z","archived":false},{"id":"300053","properties":{"dealname":"Example Deal 53","dealstage":"contractsent","hs_is_closed_won":"false","amount":"55000","original_lead_source":"OTHER","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2026-02-10T08:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-08-12T08:00:00.000Z"},"createdAt":"2026-02-10T08:00:00.000Z","archived":false},{"id":"300054","properties":{"dealname":"Example Deal 54","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Outbound","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-07-09T17:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-08-04T17:00:00.000Z"},"createdAt":"2025-07-09T17:00:00.000Z","archived":false},{"id":"300055","properties":{"dealname":"Example Deal 55","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-05-29T21:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-09-15T21:00:00.000Z"},"createdAt":"2025-05-29T21:00:00.000Z","archived":false},{"id":"300056","properties":{"dealname":"Example Deal 56","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Webinar","hs_analytics_source":"OFFLINE","createdate":"2026-04-09T14:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-06-13T14:00:00.000Z"},"createdAt":"2026-04-09T14:00:00.000Z","archived":false},{"id":"300057","properties":{"dealname":"Example Deal 57","dealstage":"closedwon","hs_is_closed_won":"true","amount":"38000","original_lead_source":"Unknown","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-01-10T09:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-04-09T09:00:00.000Z"},"createdAt":"2026-01-10T09:00:00.000Z","archived":false},{"id":"300058","properties":{"dealname":"Example Deal 58","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-05-14T13:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-05-23T13:00:00.000Z"},"createdAt":"2025-05-14T13:00:00.000Z","archived":false},{"id":"300059","properties":{"dealname":"Example Deal 59","dealstage":"contractsent","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2025-09-15T13:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-03-19T13:00:00.000Z"},"createdAt":"2025-09-15T13:00:00.000Z","archived":false},{"id":"300060","properties":{"dealname":"Example Deal 60","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Webinar","hs_analytics_source":"OFFLINE","createdate":"2025-12-31T06:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-02-12T06:00:00.000Z"},"createdAt":"2025-12-31T06:00:00.000Z","archived":false},{"id":"300061","properties":{"dealname":"Example Deal 61","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2026-03-17T12:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-06-28T12:00:00.000Z"},"createdAt":"2026-03-17T12:00:00.000Z","archived":false},{"id":"300062","properties":{"dealname":"Example Deal 62","dealstage":"contractsent","hs_is_closed_won":"false","amount":"38000","original_lead_source":"PPC","hs_analytics_source":"OFFLINE","createdate":"2025-08-26T00:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-07-20T00:00:00.000Z"},"createdAt":"2025-08-26T00:00:00.000Z","archived":false},{"id":"300063","properties":{"dealname":"Example Deal 63","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Paid Social","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-08-17T03:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-01-26T03:00:00.000Z"},"createdAt":"2025-08-17T03:00:00.000Z","archived":false},{"id":"300064","properties":{"dealname":"Example Deal 64","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Website","hs_analytics_source":"REFERRALS","createdate":"2025-08-05T12:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-07-07T12:00:00.000Z"},"createdAt":"2025-08-05T12:00:00.000Z","archived":false},{"id":"300065","properties":{"dealname":"Example Deal 65","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Other","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-01-31T00:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-06-13T00:00:00.000Z"},"createdAt":"2026-01-31T00:00:00.000Z","archived":false},{"id":"300066","properties":{"dealname":"Example Deal 66","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"Webinar","hs_analytics_source":"OFFLINE","createdate":"2025-07-13T18:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-07-09T18:00:00.000Z"},"createdAt":"2025-07-13T18:00:00.000Z","archived":false},{"id":"300067","properties":{"dealname":"Example Deal 67","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Outbound","hs_analytics_source":"PAID_SEARCH","createdate":"2026-06-17T21:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-08-19T21:00:00.000Z"},"createdAt":"2026-06-17T21:00:00.000Z","archived":false},{"id":"300068","properties":{"dealname":"Example Deal 68","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"LinkedIn","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-08-13T16:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-12-12T16:00:00.000Z"},"createdAt":"2025-08-13T16:00:00.000Z","archived":false},{"id":"300069","properties":{"dealname":"Example Deal 69","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"Other","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-09-18T16:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-08-19T16:00:00.000Z"},"createdAt":"2025-09-18T16:00:00.000Z","archived":false},{"id":"300070","properties":{"dealname":"Example Deal 70","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Other","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-01-07T18:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-12-25T18:00:00.000Z"},"createdAt":"2026-01-07T18:00:00.000Z","archived":false},{"id":"300071","properties":{"dealname":"Example Deal 71","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Referral","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-09-01T01:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-01-07T01:00:00.000Z"},"createdAt":"2025-09-01T01:00:00.000Z","archived":false},{"id":"300072","properties":{"dealname":"Example Deal 72","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Organic Search","hs_analytics_source":"REFERRALS","createdate":"2025-08-26T12:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-02-16T12:00:00.000Z"},"createdAt":"2025-08-26T12:00:00.000Z","archived":false},{"id":"300073","properties":{"dealname":"Example Deal 73","dealstage":"contractsent","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2026-02-12T04:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-05-26T04:00:00.000Z"},"createdAt":"2026-02-12T04:00:00.000Z","archived":false},{"id":"300074","properties":{"dealname":"Example Deal 74","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"UNKNOWN","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-05-26T08:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-08-18T08:00:00.000Z"},"createdAt":"2026-05-26T08:00:00.000Z","archived":false},{"id":"300075","properties":{"dealname":"Example Deal 75","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"OTHER","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-10-21T08:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-10-16T08:00:00.000Z"},"createdAt":"2025-10-21T08:00:00.000Z","archived":false},{"id":"300076","properties":{"dealname":"Example Deal 76","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"","hs_analytics_source":"OFFLINE","createdate":"2026-03-22T20:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-08-12T20:00:00.000Z"},"createdAt":"2026-03-22T20:00:00.000Z","archived":false},{"id":"300077","properties":{"dealname":"Example Deal 77","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"82000","original_lead_source":"","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-06-08T22:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-05-26T22:00:00.000Z"},"createdAt":"2025-06-08T22:00:00.000Z","archived":false},{"id":"300078","properties":{"dealname":"Example Deal 78","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Outbound","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-05-30T13:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-07-15T13:00:00.000Z"},"createdAt":"2026-05-30T13:00:00.000Z","archived":false},{"id":"300079","properties":{"dealname":"Example Deal 79","dealstage":"contractsent","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Other","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-02-02T00:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-02-28T00:00:00.000Z"},"createdAt":"2026-02-02T00:00:00.000Z","archived":false},{"id":"300080","properties":{"dealname":"Example Deal 80","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Outbound","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-03-22T11:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-06-05T11:00:00.000Z"},"createdAt":"2026-03-22T11:00:00.000Z","archived":false},{"id":"300081","properties":{"dealname":"Example Deal 81","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Email","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-05-11T05:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-08-05T05:00:00.000Z"},"createdAt":"2025-05-11T05:00:00.000Z","archived":false},{"id":"300082","properties":{"dealname":"Example Deal 82","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Outbound","hs_analytics_source":"REFERRALS","createdate":"2026-08-24T11:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-09-23T11:00:00.000Z"},"createdAt":"2026-08-24T11:00:00.000Z","archived":false},{"id":"300083","properties":{"dealname":"Example Deal 83","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Outbound","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-10-29T10:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-02-24T10:00:00.000Z"},"createdAt":"2025-10-29T10:00:00.000Z","archived":false},{"id":"300084","properties":{"dealname":"Example Deal 84","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"","hs_analytics_source":"OFFLINE","createdate":"2026-07-31T11:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-12-29T11:00:00.000Z"},"createdAt":"2026-07-31T11:00:00.000Z","archived":false},{"id":"300085","properties":{"dealname":"Example Deal 85","dealstage":"contractsent","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2025-09-06T11:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-11-07T11:00:00.000Z"},"createdAt":"2025-09-06T11:00:00.000Z","archived":false},{"id":"300086","properties":{"dealname":"Example Deal 86","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Paid Search","hs_analytics_source":"PAID_SEARCH","createdate":"2025-07-12T13:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-09-25T13:00:00.000Z"},"createdAt":"2025-07-12T13:00:00.000Z","archived":false},{"id":"300087","properties":{"dealname":"Example Deal 87","dealstage":"contractsent","hs_is_closed_won":"false","amount":"15000","original_lead_source":"PAID SEARCH","hs_analytics_source":"PAID_SEARCH","createdate":"2026-08-17T12:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-10-01T12:00:00.000Z"},"createdAt":"2026-08-17T12:00:00.000Z","archived":false},{"id":"300088","properties":{"dealname":"Example Deal 88","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"PARTNER","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-01-22T01:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-04-08T01:00:00.000Z"},"createdAt":"2026-01-22T01:00:00.000Z","archived":false},{"id":"300089","properties":{"dealname":"Example Deal 89","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"55000","original_lead_source":"webinar","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-06-20T16:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-09-12T16:00:00.000Z"},"createdAt":"2025-06-20T16:00:00.000Z","archived":false},{"id":"300090","properties":{"dealname":"Example Deal 90","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-07-30T15:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-12-25T15:00:00.000Z"},"createdAt":"2025-07-30T15:00:00.000Z","archived":false},{"id":"300091","properties":{"dealname":"Example Deal 91","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Email","hs_analytics_source":"EMAIL_MARKETING","createdate":"2025-04-09T15:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-05-06T15:00:00.000Z"},"createdAt":"2025-04-09T15:00:00.000Z","archived":false},{"id":"300092","properties":{"dealname":"Example Deal 92","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Outbound","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-02-24T19:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-01-27T19:00:00.000Z"},"createdAt":"2026-02-24T19:00:00.000Z","archived":false},{"id":"300093","properties":{"dealname":"Example Deal 93","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2025-10-01T00:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-10-13T00:00:00.000Z"},"createdAt":"2025-10-01T00:00:00.000Z","archived":false},{"id":"300094","properties":{"dealname":"Example Deal 94","dealstage":"closedwon","hs_is_closed_won":"true","amount":"38000","original_lead_source":"Referral","hs_analytics_source":"OFFLINE","createdate":"2026-08-04T05:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2027-01-10T05:00:00.000Z"},"createdAt":"2026-08-04T05:00:00.000Z","archived":false},{"id":"300095","properties":{"dealname":"Example Deal 95","dealstage":"closedwon","hs_is_closed_won":"true","amount":"82000","original_lead_source":"Unknown","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-05-29T11:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-08-19T11:00:00.000Z"},"createdAt":"2025-05-29T11:00:00.000Z","archived":false},{"id":"300096","properties":{"dealname":"Example Deal 96","dealstage":"contractsent","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Customer Referral","hs_analytics_source":"OFFLINE","createdate":"2026-04-23T14:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-07-08T14:00:00.000Z"},"createdAt":"2026-04-23T14:00:00.000Z","archived":false},{"id":"300097","properties":{"dealname":"Example Deal 97","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Unknown","hs_analytics_source":"PAID_SEARCH","createdate":"2026-01-17T16:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-02-16T16:00:00.000Z"},"createdAt":"2026-01-17T16:00:00.000Z","archived":false},{"id":"300098","properties":{"dealname":"Example Deal 98","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Organic Search","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-06-10T17:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-06-10T17:00:00.000Z"},"createdAt":"2025-06-10T17:00:00.000Z","archived":false},{"id":"300099","properties":{"dealname":"Example Deal 99","dealstage":"closedwon","hs_is_closed_won":"true","amount":"15000","original_lead_source":"Other","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2026-07-03T00:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-10-20T00:00:00.000Z"},"createdAt":"2026-07-03T00:00:00.000Z","archived":false},{"id":"300100","properties":{"dealname":"Example Deal 100","dealstage":"contractsent","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2025-11-26T12:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-03-31T12:00:00.000Z"},"createdAt":"2025-11-26T12:00:00.000Z","archived":false},{"id":"300101","properties":{"dealname":"Example Deal 101","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Unknown","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-08-07T12:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-08-14T12:00:00.000Z"},"createdAt":"2025-08-07T12:00:00.000Z","archived":false},{"id":"300102","properties":{"dealname":"Example Deal 102","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Other","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-03-23T15:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-09-27T15:00:00.000Z"},"createdAt":"2026-03-23T15:00:00.000Z","archived":false},{"id":"300103","properties":{"dealname":"Example Deal 103","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Email","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2026-03-23T12:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-03-31T12:00:00.000Z"},"createdAt":"2026-03-23T12:00:00.000Z","archived":false},{"id":"300104","properties":{"dealname":"Example Deal 104","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Paid Search","hs_analytics_source":"PAID_SEARCH","createdate":"2025-06-30T21:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-11-16T21:00:00.000Z"},"createdAt":"2025-06-30T21:00:00.000Z","archived":false},{"id":"300105","properties":{"dealname":"Example Deal 105","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Website","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-05-17T13:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-08-14T13:00:00.000Z"},"createdAt":"2026-05-17T13:00:00.000Z","archived":false},{"id":"300106","properties":{"dealname":"Example Deal 106","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"55000","original_lead_source":"","hs_analytics_source":"OFFLINE","createdate":"2026-07-28T20:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-11-03T20:00:00.000Z"},"createdAt":"2026-07-28T20:00:00.000Z","archived":false},{"id":"300107","properties":{"dealname":"Example Deal 107","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Other","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-11-10T23:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-04-24T23:00:00.000Z"},"createdAt":"2025-11-10T23:00:00.000Z","archived":false},{"id":"300108","properties":{"dealname":"Example Deal 108","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Website","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-07-01T14:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-09-12T14:00:00.000Z"},"createdAt":"2025-07-01T14:00:00.000Z","archived":false},{"id":"300109","properties":{"dealname":"Example Deal 109","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Email","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-04-17T19:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-09-05T19:00:00.000Z"},"createdAt":"2025-04-17T19:00:00.000Z","archived":false},{"id":"300110","properties":{"dealname":"Example Deal 110","dealstage":"closedwon","hs_is_closed_won":"true","amount":"82000","original_lead_source":"Unknown","hs_analytics_source":"REFERRALS","createdate":"2026-06-17T08:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-05-26T08:00:00.000Z"},"createdAt":"2026-06-17T08:00:00.000Z","archived":false},{"id":"300111","properties":{"dealname":"Example Deal 111","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-04-14T05:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-06-30T05:00:00.000Z"},"createdAt":"2026-04-14T05:00:00.000Z","archived":false},{"id":"300112","properties":{"dealname":"Example Deal 112","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2026-05-03T09:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-05-03T09:00:00.000Z"},"createdAt":"2026-05-03T09:00:00.000Z","archived":false},{"id":"300113","properties":{"dealname":"Example Deal 113","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-09-30T17:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-11-10T17:00:00.000Z"},"createdAt":"2025-09-30T17:00:00.000Z","archived":false},{"id":"300114","properties":{"dealname":"Example Deal 114","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"38000","original_lead_source":"","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-09-06T08:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-01-06T08:00:00.000Z"},"createdAt":"2025-09-06T08:00:00.000Z","archived":false},{"id":"300115","properties":{"dealname":"Example Deal 115","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"OTHER","hs_analytics_source":"PAID_SEARCH","createdate":"2026-02-20T23:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-04-11T23:00:00.000Z"},"createdAt":"2026-02-20T23:00:00.000Z","archived":false},{"id":"300116","properties":{"dealname":"Example Deal 116","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Organic Search","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-09-12T10:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-10-25T10:00:00.000Z"},"createdAt":"2025-09-12T10:00:00.000Z","archived":false},{"id":"300117","properties":{"dealname":"Example Deal 117","dealstage":"contractsent","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Other","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-02-25T04:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-07-16T04:00:00.000Z"},"createdAt":"2026-02-25T04:00:00.000Z","archived":false},{"id":"300118","properties":{"dealname":"Example Deal 118","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Partner","hs_analytics_source":"PAID_SEARCH","createdate":"2025-06-12T02:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-10-29T02:00:00.000Z"},"createdAt":"2025-06-12T02:00:00.000Z","archived":false},{"id":"300119","properties":{"dealname":"Example Deal 119","dealstage":"closedwon","hs_is_closed_won":"true","amount":"38000","original_lead_source":"Website","hs_analytics_source":"REFERRALS","createdate":"2025-06-14T20:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-10-14T20:00:00.000Z"},"createdAt":"2025-06-14T20:00:00.000Z","archived":false},{"id":"300120","properties":{"dealname":"Example Deal 120","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"82000","original_lead_source":"","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-06-21T05:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-11-29T05:00:00.000Z"},"createdAt":"2025-06-21T05:00:00.000Z","archived":false},{"id":"300121","properties":{"dealname":"Example Deal 121","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Website","hs_analytics_source":"OFFLINE","createdate":"2025-11-30T18:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-05-13T18:00:00.000Z"},"createdAt":"2025-11-30T18:00:00.000Z","archived":false},{"id":"300122","properties":{"dealname":"Example Deal 122","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Conferences","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-08-02T22:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-11-13T22:00:00.000Z"},"createdAt":"2025-08-02T22:00:00.000Z","archived":false},{"id":"300123","properties":{"dealname":"Example Deal 123","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Partner","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-04-04T12:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-07-28T12:00:00.000Z"},"createdAt":"2026-04-04T12:00:00.000Z","archived":false},{"id":"300124","properties":{"dealname":"Example Deal 124","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Webinar","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-08-21T09:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-09-23T09:00:00.000Z"},"createdAt":"2025-08-21T09:00:00.000Z","archived":false},{"id":"300125","properties":{"dealname":"Example Deal 125","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Partner","hs_analytics_source":"PAID_SEARCH","createdate":"2026-03-26T10:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-06-27T10:00:00.000Z"},"createdAt":"2026-03-26T10:00:00.000Z","archived":false},{"id":"300126","properties":{"dealname":"Example Deal 126","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2025-07-11T22:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-11-08T22:00:00.000Z"},"createdAt":"2025-07-11T22:00:00.000Z","archived":false},{"id":"300127","properties":{"dealname":"Example Deal 127","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"9000","original_lead_source":"","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-02-17T12:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-07-25T12:00:00.000Z"},"createdAt":"2026-02-17T12:00:00.000Z","archived":false},{"id":"300128","properties":{"dealname":"Example Deal 128","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Referral","hs_analytics_source":"PAID_SEARCH","createdate":"2026-01-06T01:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-04-26T01:00:00.000Z"},"createdAt":"2026-01-06T01:00:00.000Z","archived":false},{"id":"300129","properties":{"dealname":"Example Deal 129","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Paid Social","hs_analytics_source":"PAID_SOCIAL","createdate":"2025-06-26T15:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-11-24T15:00:00.000Z"},"createdAt":"2025-06-26T15:00:00.000Z","archived":false},{"id":"300130","properties":{"dealname":"Example Deal 130","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Website","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-11-25T02:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-01-20T02:00:00.000Z"},"createdAt":"2025-11-25T02:00:00.000Z","archived":false},{"id":"300131","properties":{"dealname":"Example Deal 131","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"","hs_analytics_source":"SOCIAL_MEDIA","createdate":"2025-05-25T20:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-07-23T20:00:00.000Z"},"createdAt":"2025-05-25T20:00:00.000Z","archived":false},{"id":"300132","properties":{"dealname":"Example Deal 132","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Website","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-06-27T14:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-09-11T14:00:00.000Z"},"createdAt":"2025-06-27T14:00:00.000Z","archived":false},{"id":"300133","properties":{"dealname":"Example Deal 133","dealstage":"closedlost","hs_is_closed_won":"false","amount":"82000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2025-05-22T11:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-06-05T11:00:00.000Z"},"createdAt":"2025-05-22T11:00:00.000Z","archived":false},{"id":"300134","properties":{"dealname":"Example Deal 134","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"PAID_SEARCH","createdate":"2026-03-19T18:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-09-01T18:00:00.000Z"},"createdAt":"2026-03-19T18:00:00.000Z","archived":false},{"id":"300135","properties":{"dealname":"Example Deal 135","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"","hs_analytics_source":"REFERRALS","createdate":"2026-05-20T03:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-10-15T03:00:00.000Z"},"createdAt":"2026-05-20T03:00:00.000Z","archived":false},{"id":"300136","properties":{"dealname":"Example Deal 136","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Other","hs_analytics_source":"OFFLINE","createdate":"2026-03-03T04:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-04-18T04:00:00.000Z"},"createdAt":"2026-03-03T04:00:00.000Z","archived":false},{"id":"300137","properties":{"dealname":"Example Deal 137","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Conference","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-07-17T06:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-11-08T06:00:00.000Z"},"createdAt":"2026-07-17T06:00:00.000Z","archived":false},{"id":"300138","properties":{"dealname":"Example Deal 138","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"","hs_analytics_source":"REFERRALS","createdate":"2026-05-08T21:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-07-01T21:00:00.000Z"},"createdAt":"2026-05-08T21:00:00.000Z","archived":false},{"id":"300139","properties":{"dealname":"Example Deal 139","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Outbound","hs_analytics_source":"PAID_SEARCH","createdate":"2026-10-07T21:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-09-28T21:00:00.000Z"},"createdAt":"2026-10-07T21:00:00.000Z","archived":false},{"id":"300140","properties":{"dealname":"Example Deal 140","dealstage":"closedwon","hs_is_closed_won":"true","amount":"24000","original_lead_source":"Referral","hs_analytics_source":"OFFLINE","createdate":"2026-08-11T14:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-12-21T14:00:00.000Z"},"createdAt":"2026-08-11T14:00:00.000Z","archived":false},{"id":"300141","properties":{"dealname":"Example Deal 141","dealstage":"closedwon","hs_is_closed_won":"true","amount":"55000","original_lead_source":"Webinar","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-04-09T04:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-05-28T04:00:00.000Z"},"createdAt":"2026-04-09T04:00:00.000Z","archived":false},{"id":"300142","properties":{"dealname":"Example Deal 142","dealstage":"closedlost","hs_is_closed_won":"false","amount":"24000","original_lead_source":"","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-08-20T07:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2025-10-09T07:00:00.000Z"},"createdAt":"2025-08-20T07:00:00.000Z","archived":false},{"id":"300143","properties":{"dealname":"Example Deal 143","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Other","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2026-04-25T23:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-07-13T23:00:00.000Z"},"createdAt":"2026-04-25T23:00:00.000Z","archived":false},{"id":"300144","properties":{"dealname":"Example Deal 144","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2026-10-11T00:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-09-22T00:00:00.000Z"},"createdAt":"2026-10-11T00:00:00.000Z","archived":false},{"id":"300145","properties":{"dealname":"Example Deal 145","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Outbound","hs_analytics_source":"PAID_SOCIAL","createdate":"2026-06-19T16:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-08-08T16:00:00.000Z"},"createdAt":"2026-06-19T16:00:00.000Z","archived":false},{"id":"300146","properties":{"dealname":"Example Deal 146","dealstage":"closedlost","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Partner","hs_analytics_source":"OTHER_CAMPAIGNS","createdate":"2025-10-15T05:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2026-01-05T05:00:00.000Z"},"createdAt":"2025-10-15T05:00:00.000Z","archived":false},{"id":"300147","properties":{"dealname":"Example Deal 147","dealstage":"contractsent","hs_is_closed_won":"false","amount":"15000","original_lead_source":"Paid Social","hs_analytics_source":"PAID_SOCIAL","createdate":"2026-07-11T10:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-08-14T10:00:00.000Z"},"createdAt":"2026-07-11T10:00:00.000Z","archived":false},{"id":"300148","properties":{"dealname":"Example Deal 148","dealstage":"closedwon","hs_is_closed_won":"true","amount":"82000","original_lead_source":"Outbound","hs_analytics_source":"OFFLINE","createdate":"2026-05-27T17:00:00.000Z","hubspot_owner_name":"Nia Okafor","closedate":"2026-08-03T17:00:00.000Z"},"createdAt":"2026-05-27T17:00:00.000Z","archived":false},{"id":"300149","properties":{"dealname":"Example Deal 149","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-07-06T01:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-10-06T01:00:00.000Z"},"createdAt":"2026-07-06T01:00:00.000Z","archived":false},{"id":"300150","properties":{"dealname":"Example Deal 150","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Partner","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-09-11T04:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-10-07T04:00:00.000Z"},"createdAt":"2026-09-11T04:00:00.000Z","archived":false},{"id":"300151","properties":{"dealname":"Example Deal 151","dealstage":"closedwon","hs_is_closed_won":"true","amount":"9000","original_lead_source":"Other","hs_analytics_source":"REFERRALS","createdate":"2026-02-17T05:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-05-26T05:00:00.000Z"},"createdAt":"2026-02-17T05:00:00.000Z","archived":false},{"id":"300152","properties":{"dealname":"Example Deal 152","dealstage":"closedlost","hs_is_closed_won":"false","amount":"9000","original_lead_source":"Referral","hs_analytics_source":"PAID_SEARCH","createdate":"2026-05-03T07:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-07-01T07:00:00.000Z"},"createdAt":"2026-05-03T07:00:00.000Z","archived":false},{"id":"300153","properties":{"dealname":"Example Deal 153","dealstage":"qualifiedtobuy","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Website","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2026-02-14T23:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-01-30T23:00:00.000Z"},"createdAt":"2026-02-14T23:00:00.000Z","archived":false},{"id":"300154","properties":{"dealname":"Example Deal 154","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"24000","original_lead_source":"Conference","hs_analytics_source":"EMAIL_MARKETING","createdate":"2026-03-17T08:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2026-07-22T08:00:00.000Z"},"createdAt":"2026-03-17T08:00:00.000Z","archived":false},{"id":"300155","properties":{"dealname":"Example Deal 155","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Customer Referral","hs_analytics_source":"OFFLINE","createdate":"2026-05-29T21:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-07-22T21:00:00.000Z"},"createdAt":"2026-05-29T21:00:00.000Z","archived":false},{"id":"300156","properties":{"dealname":"Example Deal 156","dealstage":"presentationscheduled","hs_is_closed_won":"false","amount":"9000","original_lead_source":"webinar","hs_analytics_source":"DIRECT_TRAFFIC","createdate":"2025-08-05T03:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-09-13T03:00:00.000Z"},"createdAt":"2025-08-05T03:00:00.000Z","archived":false},{"id":"300157","properties":{"dealname":"Example Deal 157","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"ORGANIC_SEARCH","createdate":"2025-08-21T22:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-11-11T22:00:00.000Z"},"createdAt":"2025-08-21T22:00:00.000Z","archived":false},{"id":"300158","properties":{"dealname":"Example Deal 158","dealstage":"closedlost","hs_is_closed_won":"false","amount":"38000","original_lead_source":"Referral","hs_analytics_source":"REFERRALS","createdate":"2026-08-27T15:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2027-01-13T15:00:00.000Z"},"createdAt":"2026-08-27T15:00:00.000Z","archived":false},{"id":"300159","properties":{"dealname":"Example Deal 159","dealstage":"contractsent","hs_is_closed_won":"false","amount":"38000","original_lead_source":"","hs_analytics_source":"OFFLINE","createdate":"2026-07-07T17:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2026-08-10T17:00:00.000Z"},"createdAt":"2026-07-07T17:00:00.000Z","archived":false},{"id":"300160","properties":{"dealname":"Example Deal 160","dealstage":"contractsent","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Other","hs_analytics_source":"OFFLINE","createdate":"2025-03-14T10:00:00.000Z","hubspot_owner_name":"Tobias Lin","closedate":"2025-04-28T10:00:00.000Z"},"createdAt":"2025-03-14T10:00:00.000Z","archived":false},{"id":"300161","properties":{"dealname":"Example Deal 161","dealstage":"closedlost","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Google Ads","hs_analytics_source":"PAID_SEARCH","createdate":"2025-03-25T12:00:00.000Z","hubspot_owner_name":"Sam Beaumont","closedate":"2025-07-07T12:00:00.000Z"},"createdAt":"2025-03-25T12:00:00.000Z","archived":false},{"id":"300162","properties":{"dealname":"Example Deal 162","dealstage":"contractsent","hs_is_closed_won":"false","amount":"55000","original_lead_source":"Referral","hs_analytics_source":"REFERRALS","createdate":"2025-06-23T10:00:00.000Z","hubspot_owner_name":"Rae Delacroix","closedate":"2025-10-07T10:00:00.000Z"},"createdAt":"2025-06-23T10:00:00.000Z","archived":false}],"paging":{}}
+{
+  "results": [
+    {
+      "id": "300001",
+      "properties": {
+        "dealname": "Example Deal 1",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-01-02T09:00:00.000Z",
+        "closedate": "2026-05-07T09:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-01-02T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300002",
+      "properties": {
+        "dealname": "Example Deal 2",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Paid Search",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-05-16T09:00:00.000Z",
+        "closedate": "2025-08-05T09:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-05-16T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300003",
+      "properties": {
+        "dealname": "Example Deal 3",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-10-23T16:00:00.000Z",
+        "closedate": "2025-12-03T16:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-10-23T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300004",
+      "properties": {
+        "dealname": "Example Deal 4",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Organic Search",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-01-12T15:00:00.000Z",
+        "closedate": "2026-01-04T15:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-01-12T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300005",
+      "properties": {
+        "dealname": "Example Deal 5",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-03-21T01:00:00.000Z",
+        "closedate": "2026-08-25T01:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-03-21T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300006",
+      "properties": {
+        "dealname": "Example Deal 6",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "WEBINAR",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-06-01T00:00:00.000Z",
+        "closedate": "2025-07-29T00:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-01T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300007",
+      "properties": {
+        "dealname": "Example Deal 7",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-11-14T08:00:00.000Z",
+        "closedate": "2026-01-28T08:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-11-14T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300008",
+      "properties": {
+        "dealname": "Example Deal 8",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2026-06-04T20:00:00.000Z",
+        "closedate": "2026-10-02T20:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-06-04T20:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300009",
+      "properties": {
+        "dealname": "Example Deal 9",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Paid Social",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-05-18T18:00:00.000Z",
+        "closedate": "2025-08-16T18:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-18T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300010",
+      "properties": {
+        "dealname": "Example Deal 10",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-02-04T03:00:00.000Z",
+        "closedate": "2026-06-13T03:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-02-04T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300011",
+      "properties": {
+        "dealname": "Example Deal 11",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "REFERRAL",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-08-07T09:00:00.000Z",
+        "closedate": "2026-09-25T09:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-08-07T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300012",
+      "properties": {
+        "dealname": "Example Deal 12",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-04-06T03:00:00.000Z",
+        "closedate": "2025-06-28T03:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-04-06T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300013",
+      "properties": {
+        "dealname": "Example Deal 13",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-08-14T21:00:00.000Z",
+        "closedate": "2025-10-17T21:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-08-14T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300014",
+      "properties": {
+        "dealname": "Example Deal 14",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-09-01T05:00:00.000Z",
+        "closedate": "2026-10-12T05:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-09-01T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300015",
+      "properties": {
+        "dealname": "Example Deal 15",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-06-22T13:00:00.000Z",
+        "closedate": "2025-05-26T13:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-22T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300016",
+      "properties": {
+        "dealname": "Example Deal 16",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Conferences",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-07-19T13:00:00.000Z",
+        "closedate": "2026-07-15T13:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-07-19T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300017",
+      "properties": {
+        "dealname": "Example Deal 17",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "LinkedIn",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-05-22T07:00:00.000Z",
+        "closedate": "2026-08-24T07:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-05-22T07:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300018",
+      "properties": {
+        "dealname": "Example Deal 18",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-10-21T05:00:00.000Z",
+        "closedate": "2025-12-17T05:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-10-21T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300019",
+      "properties": {
+        "dealname": "Example Deal 19",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-11-08T08:00:00.000Z",
+        "closedate": "2026-01-29T08:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-11-08T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300020",
+      "properties": {
+        "dealname": "Example Deal 20",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-12-24T01:00:00.000Z",
+        "closedate": "2026-01-28T01:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-12-24T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300021",
+      "properties": {
+        "dealname": "Example Deal 21",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-05-31T03:00:00.000Z",
+        "closedate": "2025-11-06T03:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-31T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300022",
+      "properties": {
+        "dealname": "Example Deal 22",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-12-31T05:00:00.000Z",
+        "closedate": "2026-05-17T05:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-12-31T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300023",
+      "properties": {
+        "dealname": "Example Deal 23",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Conference",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-05-25T01:00:00.000Z",
+        "closedate": "2025-09-02T01:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-25T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300024",
+      "properties": {
+        "dealname": "Example Deal 24",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-12-04T17:00:00.000Z",
+        "closedate": "2026-02-23T17:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-12-04T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300025",
+      "properties": {
+        "dealname": "Example Deal 25",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Customer Referral",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-06-25T08:00:00.000Z",
+        "closedate": "2026-06-25T08:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-06-25T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300026",
+      "properties": {
+        "dealname": "Example Deal 26",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Paid Search",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-01-19T08:00:00.000Z",
+        "closedate": "2026-05-15T08:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-01-19T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300027",
+      "properties": {
+        "dealname": "Example Deal 27",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-12-14T21:00:00.000Z",
+        "closedate": "2025-11-20T21:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-12-14T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300028",
+      "properties": {
+        "dealname": "Example Deal 28",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "WEBINAR",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-04-01T12:00:00.000Z",
+        "closedate": "2026-05-02T12:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-04-01T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300029",
+      "properties": {
+        "dealname": "Example Deal 29",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-04-21T17:00:00.000Z",
+        "closedate": "2026-07-30T17:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-04-21T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300030",
+      "properties": {
+        "dealname": "Example Deal 30",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2026-09-12T16:00:00.000Z",
+        "closedate": "2027-02-04T16:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-09-12T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300031",
+      "properties": {
+        "dealname": "Example Deal 31",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-09-21T23:00:00.000Z",
+        "closedate": "2025-12-08T23:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-09-21T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300032",
+      "properties": {
+        "dealname": "Example Deal 32",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-05-27T05:00:00.000Z",
+        "closedate": "2025-09-18T05:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-27T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300033",
+      "properties": {
+        "dealname": "Example Deal 33",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-07-28T19:00:00.000Z",
+        "closedate": "2025-07-19T19:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-07-28T19:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300034",
+      "properties": {
+        "dealname": "Example Deal 34",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-04-04T05:00:00.000Z",
+        "closedate": "2025-09-21T05:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-04-04T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300035",
+      "properties": {
+        "dealname": "Example Deal 35",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-05-25T23:00:00.000Z",
+        "closedate": "2025-09-03T23:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-05-25T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300036",
+      "properties": {
+        "dealname": "Example Deal 36",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-07-25T01:00:00.000Z",
+        "closedate": "2025-08-19T01:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-07-25T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300037",
+      "properties": {
+        "dealname": "Example Deal 37",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-11-25T12:00:00.000Z",
+        "closedate": "2026-01-02T12:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-11-25T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300038",
+      "properties": {
+        "dealname": "Example Deal 38",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-09-03T17:00:00.000Z",
+        "closedate": "2025-11-05T17:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-09-03T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300039",
+      "properties": {
+        "dealname": "Example Deal 39",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-04-03T00:00:00.000Z",
+        "closedate": "2026-04-08T00:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-04-03T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300040",
+      "properties": {
+        "dealname": "Example Deal 40",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Webinars",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-09-29T14:00:00.000Z",
+        "closedate": "2025-12-07T14:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-09-29T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300041",
+      "properties": {
+        "dealname": "Example Deal 41",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-01-09T13:00:00.000Z",
+        "closedate": "2026-05-10T13:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-01-09T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300042",
+      "properties": {
+        "dealname": "Example Deal 42",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-07-01T00:00:00.000Z",
+        "closedate": "2026-07-30T00:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-07-01T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300043",
+      "properties": {
+        "dealname": "Example Deal 43",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-03-15T18:00:00.000Z",
+        "closedate": "2025-06-15T18:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-03-15T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300044",
+      "properties": {
+        "dealname": "Example Deal 44",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-11-23T07:00:00.000Z",
+        "closedate": "2025-12-29T07:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-11-23T07:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300045",
+      "properties": {
+        "dealname": "Example Deal 45",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-09-06T05:00:00.000Z",
+        "closedate": "2026-01-10T05:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-09-06T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300046",
+      "properties": {
+        "dealname": "Example Deal 46",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-05-25T18:00:00.000Z",
+        "closedate": "2025-09-18T18:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-05-25T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300047",
+      "properties": {
+        "dealname": "Example Deal 47",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-04-26T16:00:00.000Z",
+        "closedate": "2026-06-05T16:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-04-26T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300048",
+      "properties": {
+        "dealname": "Example Deal 48",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2026-01-12T14:00:00.000Z",
+        "closedate": "2026-03-10T14:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-01-12T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300049",
+      "properties": {
+        "dealname": "Example Deal 49",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-04-19T23:00:00.000Z",
+        "closedate": "2026-08-17T23:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-04-19T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300050",
+      "properties": {
+        "dealname": "Example Deal 50",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-06-02T01:00:00.000Z",
+        "closedate": "2025-09-26T01:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-02T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300051",
+      "properties": {
+        "dealname": "Example Deal 51",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-04-02T11:00:00.000Z",
+        "closedate": "2025-05-07T11:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-04-02T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300052",
+      "properties": {
+        "dealname": "Example Deal 52",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-05-15T02:00:00.000Z",
+        "closedate": "2025-07-02T02:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-15T02:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300053",
+      "properties": {
+        "dealname": "Example Deal 53",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "OTHER",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2026-02-10T08:00:00.000Z",
+        "closedate": "2026-08-12T08:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-02-10T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300054",
+      "properties": {
+        "dealname": "Example Deal 54",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-07-09T17:00:00.000Z",
+        "closedate": "2025-08-04T17:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-07-09T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300055",
+      "properties": {
+        "dealname": "Example Deal 55",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-05-29T21:00:00.000Z",
+        "closedate": "2025-09-15T21:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-05-29T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300056",
+      "properties": {
+        "dealname": "Example Deal 56",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-04-09T14:00:00.000Z",
+        "closedate": "2026-06-13T14:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-04-09T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300057",
+      "properties": {
+        "dealname": "Example Deal 57",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "38000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-01-10T09:00:00.000Z",
+        "closedate": "2026-04-09T09:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-01-10T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300058",
+      "properties": {
+        "dealname": "Example Deal 58",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-05-14T13:00:00.000Z",
+        "closedate": "2025-05-23T13:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-05-14T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300059",
+      "properties": {
+        "dealname": "Example Deal 59",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-09-15T13:00:00.000Z",
+        "closedate": "2026-03-19T13:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-09-15T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300060",
+      "properties": {
+        "dealname": "Example Deal 60",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-12-31T06:00:00.000Z",
+        "closedate": "2026-02-12T06:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-12-31T06:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300061",
+      "properties": {
+        "dealname": "Example Deal 61",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-03-17T12:00:00.000Z",
+        "closedate": "2026-06-28T12:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-03-17T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300062",
+      "properties": {
+        "dealname": "Example Deal 62",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "PPC",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-08-26T00:00:00.000Z",
+        "closedate": "2025-07-20T00:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-08-26T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300063",
+      "properties": {
+        "dealname": "Example Deal 63",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Paid Social",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-08-17T03:00:00.000Z",
+        "closedate": "2026-01-26T03:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-08-17T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300064",
+      "properties": {
+        "dealname": "Example Deal 64",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-08-05T12:00:00.000Z",
+        "closedate": "2025-07-07T12:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-08-05T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300065",
+      "properties": {
+        "dealname": "Example Deal 65",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-01-31T00:00:00.000Z",
+        "closedate": "2026-06-13T00:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-01-31T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300066",
+      "properties": {
+        "dealname": "Example Deal 66",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-07-13T18:00:00.000Z",
+        "closedate": "2025-07-09T18:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-07-13T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300067",
+      "properties": {
+        "dealname": "Example Deal 67",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-06-17T21:00:00.000Z",
+        "closedate": "2026-08-19T21:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-06-17T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300068",
+      "properties": {
+        "dealname": "Example Deal 68",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "LinkedIn",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-08-13T16:00:00.000Z",
+        "closedate": "2025-12-12T16:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-08-13T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300069",
+      "properties": {
+        "dealname": "Example Deal 69",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-09-18T16:00:00.000Z",
+        "closedate": "2025-08-19T16:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-09-18T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300070",
+      "properties": {
+        "dealname": "Example Deal 70",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-01-07T18:00:00.000Z",
+        "closedate": "2025-12-25T18:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-01-07T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300071",
+      "properties": {
+        "dealname": "Example Deal 71",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-09-01T01:00:00.000Z",
+        "closedate": "2026-01-07T01:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-09-01T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300072",
+      "properties": {
+        "dealname": "Example Deal 72",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Organic Search",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-08-26T12:00:00.000Z",
+        "closedate": "2026-02-16T12:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-08-26T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300073",
+      "properties": {
+        "dealname": "Example Deal 73",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-02-12T04:00:00.000Z",
+        "closedate": "2026-05-26T04:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-02-12T04:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300074",
+      "properties": {
+        "dealname": "Example Deal 74",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "UNKNOWN",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-05-26T08:00:00.000Z",
+        "closedate": "2026-08-18T08:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-05-26T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300075",
+      "properties": {
+        "dealname": "Example Deal 75",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "OTHER",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-10-21T08:00:00.000Z",
+        "closedate": "2025-10-16T08:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-10-21T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300076",
+      "properties": {
+        "dealname": "Example Deal 76",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-03-22T20:00:00.000Z",
+        "closedate": "2026-08-12T20:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-03-22T20:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300077",
+      "properties": {
+        "dealname": "Example Deal 77",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-06-08T22:00:00.000Z",
+        "closedate": "2025-05-26T22:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-08T22:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300078",
+      "properties": {
+        "dealname": "Example Deal 78",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-05-30T13:00:00.000Z",
+        "closedate": "2026-07-15T13:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-05-30T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300079",
+      "properties": {
+        "dealname": "Example Deal 79",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-02-02T00:00:00.000Z",
+        "closedate": "2026-02-28T00:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-02-02T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300080",
+      "properties": {
+        "dealname": "Example Deal 80",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-03-22T11:00:00.000Z",
+        "closedate": "2026-06-05T11:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-03-22T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300081",
+      "properties": {
+        "dealname": "Example Deal 81",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-05-11T05:00:00.000Z",
+        "closedate": "2025-08-05T05:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-05-11T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300082",
+      "properties": {
+        "dealname": "Example Deal 82",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-08-24T11:00:00.000Z",
+        "closedate": "2026-09-23T11:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-08-24T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300083",
+      "properties": {
+        "dealname": "Example Deal 83",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-10-29T10:00:00.000Z",
+        "closedate": "2026-02-24T10:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-10-29T10:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300084",
+      "properties": {
+        "dealname": "Example Deal 84",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-07-31T11:00:00.000Z",
+        "closedate": "2026-12-29T11:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-07-31T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300085",
+      "properties": {
+        "dealname": "Example Deal 85",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-09-06T11:00:00.000Z",
+        "closedate": "2025-11-07T11:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-09-06T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300086",
+      "properties": {
+        "dealname": "Example Deal 86",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Paid Search",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-07-12T13:00:00.000Z",
+        "closedate": "2025-09-25T13:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-07-12T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300087",
+      "properties": {
+        "dealname": "Example Deal 87",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "PAID SEARCH",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-08-17T12:00:00.000Z",
+        "closedate": "2026-10-01T12:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-08-17T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300088",
+      "properties": {
+        "dealname": "Example Deal 88",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "PARTNER",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-01-22T01:00:00.000Z",
+        "closedate": "2026-04-08T01:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-01-22T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300089",
+      "properties": {
+        "dealname": "Example Deal 89",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "webinar",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-06-20T16:00:00.000Z",
+        "closedate": "2025-09-12T16:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-06-20T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300090",
+      "properties": {
+        "dealname": "Example Deal 90",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-07-30T15:00:00.000Z",
+        "closedate": "2025-12-25T15:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-07-30T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300091",
+      "properties": {
+        "dealname": "Example Deal 91",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2025-04-09T15:00:00.000Z",
+        "closedate": "2025-05-06T15:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-04-09T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300092",
+      "properties": {
+        "dealname": "Example Deal 92",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-02-24T19:00:00.000Z",
+        "closedate": "2026-01-27T19:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-02-24T19:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300093",
+      "properties": {
+        "dealname": "Example Deal 93",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-10-01T00:00:00.000Z",
+        "closedate": "2025-10-13T00:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-10-01T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300094",
+      "properties": {
+        "dealname": "Example Deal 94",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "38000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-08-04T05:00:00.000Z",
+        "closedate": "2027-01-10T05:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-08-04T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300095",
+      "properties": {
+        "dealname": "Example Deal 95",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "82000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-05-29T11:00:00.000Z",
+        "closedate": "2025-08-19T11:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-05-29T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300096",
+      "properties": {
+        "dealname": "Example Deal 96",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Customer Referral",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-04-23T14:00:00.000Z",
+        "closedate": "2026-07-08T14:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-04-23T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300097",
+      "properties": {
+        "dealname": "Example Deal 97",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-01-17T16:00:00.000Z",
+        "closedate": "2026-02-16T16:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-01-17T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300098",
+      "properties": {
+        "dealname": "Example Deal 98",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Organic Search",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-06-10T17:00:00.000Z",
+        "closedate": "2025-06-10T17:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-06-10T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300099",
+      "properties": {
+        "dealname": "Example Deal 99",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2026-07-03T00:00:00.000Z",
+        "closedate": "2026-10-20T00:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-07-03T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300100",
+      "properties": {
+        "dealname": "Example Deal 100",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-11-26T12:00:00.000Z",
+        "closedate": "2026-03-31T12:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-11-26T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300101",
+      "properties": {
+        "dealname": "Example Deal 101",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-08-07T12:00:00.000Z",
+        "closedate": "2025-08-14T12:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-08-07T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300102",
+      "properties": {
+        "dealname": "Example Deal 102",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-03-23T15:00:00.000Z",
+        "closedate": "2026-09-27T15:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-03-23T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300103",
+      "properties": {
+        "dealname": "Example Deal 103",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2026-03-23T12:00:00.000Z",
+        "closedate": "2026-03-31T12:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-03-23T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300104",
+      "properties": {
+        "dealname": "Example Deal 104",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Paid Search",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-06-30T21:00:00.000Z",
+        "closedate": "2025-11-16T21:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-06-30T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300105",
+      "properties": {
+        "dealname": "Example Deal 105",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-05-17T13:00:00.000Z",
+        "closedate": "2026-08-14T13:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-05-17T13:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300106",
+      "properties": {
+        "dealname": "Example Deal 106",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-07-28T20:00:00.000Z",
+        "closedate": "2026-11-03T20:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-07-28T20:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300107",
+      "properties": {
+        "dealname": "Example Deal 107",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-11-10T23:00:00.000Z",
+        "closedate": "2026-04-24T23:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-11-10T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300108",
+      "properties": {
+        "dealname": "Example Deal 108",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-07-01T14:00:00.000Z",
+        "closedate": "2025-09-12T14:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-07-01T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300109",
+      "properties": {
+        "dealname": "Example Deal 109",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Email",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-04-17T19:00:00.000Z",
+        "closedate": "2025-09-05T19:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-04-17T19:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300110",
+      "properties": {
+        "dealname": "Example Deal 110",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "82000",
+        "original_lead_source": "Unknown",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-06-17T08:00:00.000Z",
+        "closedate": "2026-05-26T08:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-06-17T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300111",
+      "properties": {
+        "dealname": "Example Deal 111",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-04-14T05:00:00.000Z",
+        "closedate": "2026-06-30T05:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-04-14T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300112",
+      "properties": {
+        "dealname": "Example Deal 112",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2026-05-03T09:00:00.000Z",
+        "closedate": "2026-05-03T09:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-05-03T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300113",
+      "properties": {
+        "dealname": "Example Deal 113",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-09-30T17:00:00.000Z",
+        "closedate": "2025-11-10T17:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-09-30T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300114",
+      "properties": {
+        "dealname": "Example Deal 114",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-09-06T08:00:00.000Z",
+        "closedate": "2026-01-06T08:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-09-06T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300115",
+      "properties": {
+        "dealname": "Example Deal 115",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "OTHER",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-02-20T23:00:00.000Z",
+        "closedate": "2026-04-11T23:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-02-20T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300116",
+      "properties": {
+        "dealname": "Example Deal 116",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Organic Search",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-09-12T10:00:00.000Z",
+        "closedate": "2025-10-25T10:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-09-12T10:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300117",
+      "properties": {
+        "dealname": "Example Deal 117",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-02-25T04:00:00.000Z",
+        "closedate": "2026-07-16T04:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-02-25T04:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300118",
+      "properties": {
+        "dealname": "Example Deal 118",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Partner",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-06-12T02:00:00.000Z",
+        "closedate": "2025-10-29T02:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-12T02:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300119",
+      "properties": {
+        "dealname": "Example Deal 119",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "38000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-06-14T20:00:00.000Z",
+        "closedate": "2025-10-14T20:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-06-14T20:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300120",
+      "properties": {
+        "dealname": "Example Deal 120",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-06-21T05:00:00.000Z",
+        "closedate": "2025-11-29T05:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-21T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300121",
+      "properties": {
+        "dealname": "Example Deal 121",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-11-30T18:00:00.000Z",
+        "closedate": "2026-05-13T18:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-11-30T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300122",
+      "properties": {
+        "dealname": "Example Deal 122",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Conferences",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-08-02T22:00:00.000Z",
+        "closedate": "2025-11-13T22:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-08-02T22:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300123",
+      "properties": {
+        "dealname": "Example Deal 123",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Partner",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-04-04T12:00:00.000Z",
+        "closedate": "2026-07-28T12:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-04-04T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300124",
+      "properties": {
+        "dealname": "Example Deal 124",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-08-21T09:00:00.000Z",
+        "closedate": "2025-09-23T09:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-08-21T09:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300125",
+      "properties": {
+        "dealname": "Example Deal 125",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Partner",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-03-26T10:00:00.000Z",
+        "closedate": "2026-06-27T10:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-03-26T10:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300126",
+      "properties": {
+        "dealname": "Example Deal 126",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-07-11T22:00:00.000Z",
+        "closedate": "2025-11-08T22:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-07-11T22:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300127",
+      "properties": {
+        "dealname": "Example Deal 127",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-02-17T12:00:00.000Z",
+        "closedate": "2026-07-25T12:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-02-17T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300128",
+      "properties": {
+        "dealname": "Example Deal 128",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-01-06T01:00:00.000Z",
+        "closedate": "2026-04-26T01:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-01-06T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300129",
+      "properties": {
+        "dealname": "Example Deal 129",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Paid Social",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2025-06-26T15:00:00.000Z",
+        "closedate": "2025-11-24T15:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-06-26T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300130",
+      "properties": {
+        "dealname": "Example Deal 130",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-11-25T02:00:00.000Z",
+        "closedate": "2026-01-20T02:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-11-25T02:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300131",
+      "properties": {
+        "dealname": "Example Deal 131",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "",
+        "hs_analytics_source": "SOCIAL_MEDIA",
+        "createdate": "2025-05-25T20:00:00.000Z",
+        "closedate": "2025-07-23T20:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-05-25T20:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300132",
+      "properties": {
+        "dealname": "Example Deal 132",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-06-27T14:00:00.000Z",
+        "closedate": "2025-09-11T14:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-06-27T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300133",
+      "properties": {
+        "dealname": "Example Deal 133",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "82000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-05-22T11:00:00.000Z",
+        "closedate": "2025-06-05T11:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-05-22T11:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300134",
+      "properties": {
+        "dealname": "Example Deal 134",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-03-19T18:00:00.000Z",
+        "closedate": "2026-09-01T18:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-03-19T18:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300135",
+      "properties": {
+        "dealname": "Example Deal 135",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-05-20T03:00:00.000Z",
+        "closedate": "2026-10-15T03:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-05-20T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300136",
+      "properties": {
+        "dealname": "Example Deal 136",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-03-03T04:00:00.000Z",
+        "closedate": "2026-04-18T04:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-03-03T04:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300137",
+      "properties": {
+        "dealname": "Example Deal 137",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Conference",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-07-17T06:00:00.000Z",
+        "closedate": "2026-11-08T06:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-07-17T06:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300138",
+      "properties": {
+        "dealname": "Example Deal 138",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-05-08T21:00:00.000Z",
+        "closedate": "2026-07-01T21:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-05-08T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300139",
+      "properties": {
+        "dealname": "Example Deal 139",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-10-07T21:00:00.000Z",
+        "closedate": "2026-09-28T21:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-10-07T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300140",
+      "properties": {
+        "dealname": "Example Deal 140",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "24000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-08-11T14:00:00.000Z",
+        "closedate": "2026-12-21T14:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-08-11T14:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300141",
+      "properties": {
+        "dealname": "Example Deal 141",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "55000",
+        "original_lead_source": "Webinar",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-04-09T04:00:00.000Z",
+        "closedate": "2026-05-28T04:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-04-09T04:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300142",
+      "properties": {
+        "dealname": "Example Deal 142",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-08-20T07:00:00.000Z",
+        "closedate": "2025-10-09T07:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2025-08-20T07:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300143",
+      "properties": {
+        "dealname": "Example Deal 143",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2026-04-25T23:00:00.000Z",
+        "closedate": "2026-07-13T23:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-04-25T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300144",
+      "properties": {
+        "dealname": "Example Deal 144",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2026-10-11T00:00:00.000Z",
+        "closedate": "2026-09-22T00:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-10-11T00:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300145",
+      "properties": {
+        "dealname": "Example Deal 145",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2026-06-19T16:00:00.000Z",
+        "closedate": "2026-08-08T16:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-06-19T16:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300146",
+      "properties": {
+        "dealname": "Example Deal 146",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Partner",
+        "hs_analytics_source": "OTHER_CAMPAIGNS",
+        "createdate": "2025-10-15T05:00:00.000Z",
+        "closedate": "2026-01-05T05:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-10-15T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300147",
+      "properties": {
+        "dealname": "Example Deal 147",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "15000",
+        "original_lead_source": "Paid Social",
+        "hs_analytics_source": "PAID_SOCIAL",
+        "createdate": "2026-07-11T10:00:00.000Z",
+        "closedate": "2026-08-14T10:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-07-11T10:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300148",
+      "properties": {
+        "dealname": "Example Deal 148",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "82000",
+        "original_lead_source": "Outbound",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-05-27T17:00:00.000Z",
+        "closedate": "2026-08-03T17:00:00.000Z",
+        "hubspot_owner_id": "77410034"
+      },
+      "createdAt": "2026-05-27T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300149",
+      "properties": {
+        "dealname": "Example Deal 149",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-07-06T01:00:00.000Z",
+        "closedate": "2026-10-06T01:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-07-06T01:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300150",
+      "properties": {
+        "dealname": "Example Deal 150",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Partner",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-09-11T04:00:00.000Z",
+        "closedate": "2026-10-07T04:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-09-11T04:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300151",
+      "properties": {
+        "dealname": "Example Deal 151",
+        "dealstage": "closedwon",
+        "hs_is_closed_won": "true",
+        "amount": "9000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-02-17T05:00:00.000Z",
+        "closedate": "2026-05-26T05:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-02-17T05:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300152",
+      "properties": {
+        "dealname": "Example Deal 152",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2026-05-03T07:00:00.000Z",
+        "closedate": "2026-07-01T07:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-05-03T07:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300153",
+      "properties": {
+        "dealname": "Example Deal 153",
+        "dealstage": "qualifiedtobuy",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Website",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2026-02-14T23:00:00.000Z",
+        "closedate": "2026-01-30T23:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-02-14T23:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300154",
+      "properties": {
+        "dealname": "Example Deal 154",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "24000",
+        "original_lead_source": "Conference",
+        "hs_analytics_source": "EMAIL_MARKETING",
+        "createdate": "2026-03-17T08:00:00.000Z",
+        "closedate": "2026-07-22T08:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2026-03-17T08:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300155",
+      "properties": {
+        "dealname": "Example Deal 155",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Customer Referral",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-05-29T21:00:00.000Z",
+        "closedate": "2026-07-22T21:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-05-29T21:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300156",
+      "properties": {
+        "dealname": "Example Deal 156",
+        "dealstage": "presentationscheduled",
+        "hs_is_closed_won": "false",
+        "amount": "9000",
+        "original_lead_source": "webinar",
+        "hs_analytics_source": "DIRECT_TRAFFIC",
+        "createdate": "2025-08-05T03:00:00.000Z",
+        "closedate": "2025-09-13T03:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-08-05T03:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300157",
+      "properties": {
+        "dealname": "Example Deal 157",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "ORGANIC_SEARCH",
+        "createdate": "2025-08-21T22:00:00.000Z",
+        "closedate": "2025-11-11T22:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-08-21T22:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300158",
+      "properties": {
+        "dealname": "Example Deal 158",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2026-08-27T15:00:00.000Z",
+        "closedate": "2027-01-13T15:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2026-08-27T15:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300159",
+      "properties": {
+        "dealname": "Example Deal 159",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "38000",
+        "original_lead_source": "",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2026-07-07T17:00:00.000Z",
+        "closedate": "2026-08-10T17:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2026-07-07T17:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300160",
+      "properties": {
+        "dealname": "Example Deal 160",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Other",
+        "hs_analytics_source": "OFFLINE",
+        "createdate": "2025-03-14T10:00:00.000Z",
+        "closedate": "2025-04-28T10:00:00.000Z",
+        "hubspot_owner_id": "77410031"
+      },
+      "createdAt": "2025-03-14T10:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300161",
+      "properties": {
+        "dealname": "Example Deal 161",
+        "dealstage": "closedlost",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Google Ads",
+        "hs_analytics_source": "PAID_SEARCH",
+        "createdate": "2025-03-25T12:00:00.000Z",
+        "closedate": "2025-07-07T12:00:00.000Z",
+        "hubspot_owner_id": "77410033"
+      },
+      "createdAt": "2025-03-25T12:00:00.000Z",
+      "archived": false
+    },
+    {
+      "id": "300162",
+      "properties": {
+        "dealname": "Example Deal 162",
+        "dealstage": "contractsent",
+        "hs_is_closed_won": "false",
+        "amount": "55000",
+        "original_lead_source": "Referral",
+        "hs_analytics_source": "REFERRALS",
+        "createdate": "2025-06-23T10:00:00.000Z",
+        "closedate": "2025-10-07T10:00:00.000Z",
+        "hubspot_owner_id": "77410032"
+      },
+      "createdAt": "2025-06-23T10:00:00.000Z",
+      "archived": false
+    }
+  ],
+  "paging": {}
+}

@@ -1,0 +1,129 @@
+{
+  "_comment": "Call index written by the :run skill after listing calls from the transcript source. Deliberately mixed-source: this fixture set exercises Zoom VTT, Teams/Meet VTT, a diarized Otter-style export, a diarized export with an unidentifiable speaker, the Gong JSON shape and the Fireflies JSON shape in one run.",
+  "source": "mixed",
+  "fetched_at": "2026-08-10T13:02:00Z",
+  "window": { "start": "2026-07-11", "end": "2026-08-10" },
+  "internal_domains": ["acmedata.io"],
+  "calls": [
+    {
+      "call_id": "call-1042",
+      "source": "zoom",
+      "title": "Fabrik Robotics <> Acme Data — Discovery",
+      "started_at": "2026-07-14T15:02:00Z",
+      "duration_sec": 2430,
+      "call_type": "discovery",
+      "account": "Fabrik Robotics",
+      "deal_id": "0061",
+      "deal_amount": 85000,
+      "rep": "Dana Whitfield",
+      "rep_email": "dana@acmedata.io",
+      "transcript_file": "transcripts/call-1042.vtt",
+      "transcript_format": "vtt",
+      "participants": [
+        { "name": "Dana Whitfield", "email": "dana@acmedata.io" },
+        { "name": "Ines Okafor", "email": "ines.okafor@fabrikrobotics.com", "title": "VP Operations" },
+        { "name": "Tom Reddy", "email": "t.reddy@fabrikrobotics.com", "title": "Director of Analytics" }
+      ]
+    },
+    {
+      "call_id": "call-1043",
+      "source": "otter",
+      "title": "Halden Freight <> Acme Data — Discovery",
+      "started_at": "2026-07-21T14:00:00Z",
+      "duration_sec": 2280,
+      "call_type": "discovery",
+      "account": "Halden Freight",
+      "deal_id": "0062",
+      "deal_amount": 42000,
+      "rep": "Marcus Oyelaran",
+      "rep_email": "marcus@acmedata.io",
+      "transcript_file": "transcripts/call-1043.txt",
+      "transcript_format": "diarized_text",
+      "participants": [
+        { "name": "Marcus Oyelaran", "email": "marcus@acmedata.io" },
+        { "name": "Wes Delacroix", "email": "wes.delacroix@haldenfreight.com", "title": "VP Supply Chain" },
+        { "name": "Ana Petrova", "email": "a.petrova@haldenfreight.com", "title": "Operations Manager" }
+      ]
+    },
+    {
+      "call_id": "call-1044",
+      "source": "gong",
+      "title": "Vantage Health <> Acme Data — Demo + Exec Review",
+      "started_at": "2026-07-23T17:00:00Z",
+      "duration_sec": 3120,
+      "call_type": "demo",
+      "account": "Vantage Health",
+      "deal_id": "0063",
+      "deal_amount": 120000,
+      "rep": "Priya Raman",
+      "rep_email": "priya@acmedata.io",
+      "transcript_file": "transcripts/call-1044.json",
+      "transcript_format": "gong_json",
+      "time_unit": "ms",
+      "participants": [
+        { "name": "Priya Raman", "email": "priya@acmedata.io", "speaker_id": "1001", "affiliation": "Internal" },
+        { "name": "Alan Voss", "email": "avoss@vantagehealth.org", "speaker_id": "2001", "affiliation": "External", "title": "COO" },
+        { "name": "Renee Baptiste", "email": "rbaptiste@vantagehealth.org", "speaker_id": "3001", "affiliation": "External", "title": "Director, Revenue Operations" }
+      ]
+    },
+    {
+      "call_id": "call-1045",
+      "source": "fireflies",
+      "title": "Orbit Payments <> Acme Data — Discovery",
+      "started_at": "2026-07-28T16:00:00Z",
+      "duration_sec": 2472,
+      "call_type": "discovery",
+      "account": "Orbit Payments",
+      "deal_id": "0064",
+      "deal_amount": 60000,
+      "rep": "Dana Whitfield",
+      "rep_email": "dana@acmedata.io",
+      "transcript_file": "transcripts/call-1045.json",
+      "transcript_format": "fireflies_json",
+      "time_unit": "s",
+      "participants": [
+        { "name": "Dana Whitfield", "email": "dana@acmedata.io" },
+        { "name": "Bea Lindqvist", "email": "bea.lindqvist@orbitpayments.com", "title": "Head of Finance Operations" }
+      ]
+    },
+    {
+      "call_id": "call-1046",
+      "source": "google_meet",
+      "title": "Kestrel Logistics <> Acme Data — Working Demo",
+      "started_at": "2026-08-04T13:30:00Z",
+      "duration_sec": 1500,
+      "call_type": "demo",
+      "account": "Kestrel Logistics",
+      "deal_id": "0065",
+      "deal_amount": 18000,
+      "rep": "Priya Raman",
+      "rep_email": "priya@acmedata.io",
+      "transcript_file": "transcripts/call-1046.vtt",
+      "transcript_format": "vtt",
+      "participants": [
+        { "name": "Priya Raman", "email": "priya@acmedata.io" },
+        { "name": "Hal Brennan", "email": "hbrennan@kestrellogistics.com", "title": "Operations Director" }
+      ]
+    },
+    {
+      "call_id": "call-1047",
+      "source": "local_directory",
+      "title": "Sunridge Media <> Acme Data — Discovery",
+      "started_at": "2026-08-06T15:00:00Z",
+      "duration_sec": 2400,
+      "call_type": "discovery",
+      "account": "Sunridge Media",
+      "deal_id": "0066",
+      "deal_amount": 55000,
+      "rep": "Marcus Oyelaran",
+      "rep_email": "marcus@acmedata.io",
+      "transcript_file": "transcripts/call-1047.txt",
+      "transcript_format": "diarized_text",
+      "note": "Recorder joined late; two attendees dialled in from one room and the export could not separate them.",
+      "participants": [
+        { "name": "Marcus Oyelaran", "email": "marcus@acmedata.io" },
+        { "name": "Corinne Vasquez", "email": "c.vasquez@sunridgemedia.com", "title": "VP Marketing Operations" }
+      ]
+    }
+  ]
+}

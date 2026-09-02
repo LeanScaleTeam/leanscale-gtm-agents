@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:06.200 --> 00:00:27.900
+<v Priya Raman>Hal, before I share anything — last time you said the thing that would make this obvious to your team was seeing it against your own route data. I've got that loaded. Is that still the thing?</v>
+
+00:00:28.500 --> 00:00:49.100
+<v Hal Brennan>Yeah. My guys have seen four demos this year and they all look the same until you put our own mess in front of them. Then it either survives or it doesn't.</v>
+
+00:00:49.800 --> 00:01:22.600
+<v Priya Raman>Good, let's find out. This is your March file, unmodified. Two hundred and nine lanes, and the first thing it does is flag the eleven where the billed rate and the contracted rate disagree. Those eleven are worth about thirty-one thousand dollars.</v>
+
+00:01:23.200 --> 00:01:44.800
+<v Hal Brennan>Thirty-one thousand in one month? On which lanes?</v>
+
+00:01:45.400 --> 00:02:31.700
+<v Priya Raman>Mostly the Laredo ones. Here — this lane has a fuel surcharge in the contract that isn't in the rate table you bill from, so every load on it is under-billed by about four percent. It's been that way since the contract was amended in January.</v>
+
+00:02:32.300 --> 00:03:04.900
+<v Hal Brennan>That is going to be an uncomfortable conversation with somebody. Okay. How do we not find out about that four months late next time?</v>
+
+00:03:05.500 --> 00:03:52.200
+<v Priya Raman>Two ways, and I'd do both. The nightly check catches the disagreement the first time a load bills against an amended contract. And the amendment itself gets logged, so when someone asks why the rate changed you have the answer instead of a theory.</v>
+
+00:12:40.100 --> 00:13:11.800
+<v Hal Brennan>What's the lift on our side? Because I've got two people and one of them is the person who'd have to do it.</v>
+
+00:13:12.400 --> 00:13:58.600
+<v Priya Raman>Week one is the only real ask: agreeing which system is the source of truth for a rate, lane by lane. That's about four hours of your person's time, spread over three sessions so it isn't one brutal afternoon. After that it runs and they work the exception queue, which for your volume is maybe twenty minutes a day.</v>
+
+00:14:00.200 --> 00:14:29.400
+<v Hal Brennan>Twenty minutes a day I can sell internally. Four hours in week one I can sell. Six weeks of a project I cannot.</v>
+
+00:22:15.700 --> 00:22:51.300
+<v Priya Raman>So where does this go from here? I'd rather know the real path than guess at it.</v>
+
+00:22:52.000 --> 00:23:34.800
+<v Hal Brennan>Let me get Dee to look at the Laredo numbers and confirm they're real, because if they are, this pays for itself and the conversation gets a lot easier. Give me a week.</v>
+
+00:23:35.400 --> 00:24:12.900
+<v Priya Raman>Let's put a date on it rather than a week — Thursday the sixth, thirty minutes, you, me and Dee, and I'll bring the same file rebuilt with the two lanes she'll want to check. If the numbers hold up we can talk about what a first phase looks like on that call.</v>
+
+00:24:13.500 --> 00:24:31.200
+<v Hal Brennan>Thursday the sixth works. Send it and I'll get Dee on it.</v>

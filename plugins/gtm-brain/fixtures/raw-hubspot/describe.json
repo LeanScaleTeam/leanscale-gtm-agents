@@ -1,187 +1,208 @@
 {
   "stages": {
-    "object": "Opportunity",
-    "field": "StageName",
+    "object": "deals",
+    "field": "dealstage",
     "values": [
       {
         "value": "Demo Booked",
+        "hs_stage_id": "appointmentscheduled",
+        "pipeline": "Sales Pipeline",
         "sort": 0
       },
       {
         "value": "Demo Completed",
+        "hs_stage_id": "presentationscheduled",
+        "pipeline": "Sales Pipeline",
         "sort": 1
       },
       {
         "value": "Use Case Defined",
+        "hs_stage_id": "qualifiedtobuy",
+        "pipeline": "Sales Pipeline",
         "sort": 2
       },
       {
         "value": "Proposal Sent",
+        "hs_stage_id": "decisionmakerboughtin",
+        "pipeline": "Sales Pipeline",
         "sort": 3
       },
       {
         "value": "Negotiations Completed",
+        "hs_stage_id": "contractsent",
+        "pipeline": "Sales Pipeline",
         "sort": 4
       },
       {
         "value": "Closed Won",
+        "hs_stage_id": "closedwon",
+        "pipeline": "Sales Pipeline",
         "sort": 5,
         "is_won": true,
         "is_closed": true
       },
       {
         "value": "Closed Lost",
+        "hs_stage_id": "closedlost",
+        "pipeline": "Sales Pipeline",
         "sort": 6,
         "is_closed": true
       },
       {
         "value": "Open Renewal",
+        "hs_stage_id": "9482012",
+        "pipeline": "Renewals",
         "sort": 7
       },
       {
         "value": "Review Complete",
+        "hs_stage_id": "9482013",
+        "pipeline": "Renewals",
         "sort": 8
       },
       {
         "value": "Expansion Identified",
+        "hs_stage_id": "9482014",
+        "pipeline": "Renewals",
         "sort": 9
       }
     ]
   },
+  "pipelines": [
+    {
+      "name": "Sales Pipeline"
+    },
+    {
+      "name": "Renewals"
+    }
+  ],
   "currency_fields": [
     {
-      "name": "Amount",
+      "name": "amount",
       "label": "Amount",
       "fill_rate": 0.94
     },
     {
-      "name": "ARR__c",
-      "label": "ARR",
+      "name": "hs_arr",
+      "label": "Annual recurring revenue",
       "fill_rate": 0.71
     },
     {
-      "name": "ACV__c",
-      "label": "ACV",
+      "name": "hs_acv",
+      "label": "Annual contract value",
       "fill_rate": 0.66
     },
     {
-      "name": "TCV__c",
-      "label": "TCV",
+      "name": "hs_tcv",
+      "label": "Total contract value",
       "fill_rate": 0.41
     },
     {
-      "name": "MRR__c",
-      "label": "MRR",
+      "name": "hs_mrr",
+      "label": "Monthly recurring revenue",
       "fill_rate": 0.38
     },
     {
-      "name": "Net_ARR__c",
+      "name": "net_arr",
       "label": "Net ARR",
       "fill_rate": 0.22
     },
     {
-      "name": "Net_New_ARR__c",
+      "name": "net_new_arr",
       "label": "Net New ARR",
       "fill_rate": 0.19
     },
     {
-      "name": "NRR_Total__c",
+      "name": "nrr_total",
       "label": "NRR Total",
       "fill_rate": 0.08
     },
     {
-      "name": "Committed_Amount__c",
+      "name": "committed_amount",
       "label": "Committed Amount",
       "fill_rate": 0.05
     },
     {
-      "name": "Consumed_Amount__c",
+      "name": "consumed_amount",
       "label": "Consumed Amount",
       "fill_rate": 0.04
     },
     {
-      "name": "ANUM_Money__c",
+      "name": "anum_money",
       "label": "Money",
       "fill_rate": 0.02
     },
     {
-      "name": "BANT_Budget__c",
+      "name": "bant_budget",
       "label": "Budget",
       "fill_rate": 0.02
     },
     {
-      "name": "CHAMP_Money__c",
+      "name": "champ_money",
       "label": "Money",
       "fill_rate": 0.01
     },
     {
-      "name": "GPCTBA_Budget__c",
+      "name": "gpctba_budget",
       "label": "Budget",
       "fill_rate": 0.01
     }
   ],
   "stage_date_fields": [
     {
-      "name": "Date_Time_Stage_0__c",
-      "label": "Demo Booked",
+      "name": "hs_date_entered_appointmentscheduled",
+      "label": "Date entered 'Demo Booked (Sales Pipeline)'",
       "fill_rate": 0.91
     },
     {
-      "name": "Date_Time_Stage_1__c",
-      "label": "Demo Completed",
+      "name": "hs_date_entered_presentationscheduled",
+      "label": "Date entered 'Demo Completed (Sales Pipeline)'",
       "fill_rate": 0.83
     },
     {
-      "name": "Date_Time_Stage_2__c",
-      "label": "Use Case Defined",
+      "name": "hs_date_entered_qualifiedtobuy",
+      "label": "Date entered 'Use Case Defined (Sales Pipeline)'",
       "fill_rate": 0.62
     },
     {
-      "name": "Date_Time_Stage_3__c",
-      "label": "Proposal Sent",
+      "name": "hs_date_entered_decisionmakerboughtin",
+      "label": "Date entered 'Proposal Sent (Sales Pipeline)'",
       "fill_rate": 0.48
     },
     {
-      "name": "Date_Time_Stage_4__c",
-      "label": "Negotiated",
+      "name": "hs_date_entered_contractsent",
+      "label": "Date entered 'Negotiations Completed (Sales Pipeline)'",
       "fill_rate": 0.31
     },
     {
-      "name": "Date_Time_Stage_5__c",
-      "label": "Closed Won",
+      "name": "hs_date_entered_closedwon",
+      "label": "Date entered 'Closed Won (Sales Pipeline)'",
       "fill_rate": 0.22
     },
     {
-      "name": "Date_Time_Stage_6__c",
-      "label": "Closed Lost",
+      "name": "hs_date_entered_closedlost",
+      "label": "Date entered 'Closed Lost (Sales Pipeline)'",
       "fill_rate": 0.29
     }
   ],
   "segment_picklists": {
-    "Segment__c": [
+    "segment": [
       "Enterprise",
       "Mid-Market",
       "SMB"
     ],
-    "Industry": [
-      "Technology",
-      "Healthcare",
-      "Financial Services"
+    "industry": [
+      "COMPUTER_SOFTWARE",
+      "HOSPITAL_HEALTH_CARE",
+      "FINANCIAL_SERVICES"
     ]
   },
-  "record_types": [
-    {
-      "name": "New Business"
-    },
-    {
-      "name": "Renewal"
-    }
-  ],
+  "record_types": [],
   "fiscal_year_start_month": 2,
   "source_channel_fields": [
     {
-      "name": "LeadSource",
-      "label": "Lead Source"
+      "name": "hs_analytics_source",
+      "label": "Original Traffic Source"
     }
   ]
 }
