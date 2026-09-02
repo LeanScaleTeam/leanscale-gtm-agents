@@ -390,6 +390,26 @@ def _get(record: Dict[str, Any], *path: str, default: Any = None) -> Any:
     return default if node is None else node
 
 
+def _person(record: Dict[str, Any], field: str, default: Any = None) -> Any:
+    """
+    Read a who-touched-this field that is a relationship on some sobjects and a
+    plain string on others.
+
+    On ConnectedApplication, ApexTrigger and WorkflowRule, LastModifiedBy is a
+    relationship and the name lives at LastModifiedBy.Name. On FlowDefinitionView
+    it is a plain text field already holding the name — selecting
+    LastModifiedBy.Name there is an INVALID_FIELD that takes the whole query down,
+    so the query rightly asks for it bare, and a relationship-only read then finds
+    a string where it expected a dict and blanks every row.
+    """
+    node = record.get(field)
+    if isinstance(node, dict):
+        return node.get("Name") or default
+    if isinstance(node, str) and node.strip():
+        return node
+    return record.get(f"{field}Name") or default
+
+
 def _days_ago(value: Any, now: datetime) -> Optional[int]:
     parsed = parse_dt(value)
     if parsed is None:
@@ -615,9 +635,9 @@ def build_salesforce_automations(
             active=str(flow.get("IsActive")).lower() in ("true", "1"),
             version=flow.get("VersionNumber"),
             last_modified=flow.get("LastModifiedDate"),
-            last_modified_by=_get(flow, "LastModifiedBy", "Name", default=flow.get("LastModifiedByName")),
+            last_modified_by=_person(flow, "LastModifiedBy"),
             modified_by_active=modified_by_active(
-                _get(flow, "LastModifiedBy", "Name", default=flow.get("LastModifiedByName"))),
+                _person(flow, "LastModifiedBy")),
             last_fired=None, fire_rank=rank, trigger=trigger_type or process_type,
             writes=writes, write_basis=basis, trigger_order=trigger_order,
             source="salesforce_flows",
@@ -639,8 +659,8 @@ def build_salesforce_automations(
             active=str(trigger.get("Status") or "Active") == "Active",
             version=trigger.get("ApiVersion"),
             last_modified=trigger.get("LastModifiedDate"),
-            last_modified_by=_get(trigger, "LastModifiedBy", "Name"),
-            modified_by_active=modified_by_active(_get(trigger, "LastModifiedBy", "Name")),
+            last_modified_by=_person(trigger, "LastModifiedBy"),
+            modified_by_active=modified_by_active(_person(trigger, "LastModifiedBy")),
             last_fired=None, fire_rank=20 if before else 50,
             trigger="before" if before else "after",
             writes=writes, write_basis=basis, trigger_order=None,
@@ -673,8 +693,8 @@ def build_salesforce_automations(
             name=name, obj=obj,
             active=bool(meta.get("active", rule.get("Active", True))),
             version=None, last_modified=rule.get("LastModifiedDate"),
-            last_modified_by=_get(rule, "LastModifiedBy", "Name"),
-            modified_by_active=modified_by_active(_get(rule, "LastModifiedBy", "Name")),
+            last_modified_by=_person(rule, "LastModifiedBy"),
+            modified_by_active=modified_by_active(_person(rule, "LastModifiedBy")),
             last_fired=None, fire_rank=80, trigger=str(meta.get("triggerType") or ""),
             writes=sorted(set(writes)), write_basis="workflow_field_update", trigger_order=None,
             source="salesforce_workflow_rules",
@@ -692,8 +712,8 @@ def build_salesforce_automations(
             kind_label="Validation rule", name=name, obj=obj,
             active=bool(rule.get("Active")), version=None,
             last_modified=rule.get("LastModifiedDate"),
-            last_modified_by=_get(rule, "LastModifiedBy", "Name"),
-            modified_by_active=modified_by_active(_get(rule, "LastModifiedBy", "Name")),
+            last_modified_by=_person(rule, "LastModifiedBy"),
+            modified_by_active=modified_by_active(_person(rule, "LastModifiedBy")),
             last_fired=None, fire_rank=30, trigger="save",
             writes=[], write_basis="n/a", trigger_order=None,
             source="salesforce_validation_rules",
@@ -708,8 +728,8 @@ def build_salesforce_automations(
             kind_label="Assignment rule", name=name, obj=obj,
             active=bool(rule.get("Active")), version=None,
             last_modified=rule.get("LastModifiedDate"),
-            last_modified_by=_get(rule, "LastModifiedBy", "Name"),
-            modified_by_active=modified_by_active(_get(rule, "LastModifiedBy", "Name")),
+            last_modified_by=_person(rule, "LastModifiedBy"),
+            modified_by_active=modified_by_active(_person(rule, "LastModifiedBy")),
             last_fired=None, fire_rank=60, trigger="assignment",
             writes=[f"{obj}.OwnerId"] if obj else [], write_basis="assignment_rule_implicit",
             trigger_order=None, source="salesforce_assignment_rules",
@@ -2035,16 +2055,21 @@ def _conflict_query(crm: str) -> str:
     return (
         "-- Reproduce the conflict list (Tooling API for Flow.Metadata, standard API for the rest)\n"
         "SELECT Id, ApiName, Label, ProcessType, TriggerType, TriggerObjectOrEvent.QualifiedApiName,\n"
-        "       IsActive, VersionNumber, LastModifiedDate, LastModifiedBy.Name\n"
+        "       IsActive, VersionNumber, LastModifiedDate, LastModifiedBy\n"
         "FROM FlowDefinitionView WHERE IsActive = true\n"
+        "-- LastModifiedBy is plain text on FlowDefinitionView, not a relationship;\n"
+        "-- LastModifiedBy.Name here is an INVALID_FIELD and fails the whole query.\n"
         "\n"
         "-- then, ONE Id at a time (Tooling API restricts Metadata to a single-Id filter):\n"
         "SELECT Id, FullName, Metadata FROM Flow WHERE Id = '301...'\n"
         "  -> Metadata.recordUpdates[].inputAssignments[].field\n"
         "  -> Metadata.assignments[].assignmentItems[].assignToReference starting '$Record.'\n"
         "\n"
-        "-- and the workflow side (Tooling API):\n"
-        "SELECT Id, Name, TableEnumOrId, Metadata FROM WorkflowFieldUpdate\n"
+        "-- and the workflow side (Tooling API), list first:\n"
+        "SELECT Id, Name, TableEnumOrId FROM WorkflowFieldUpdate\n"
+        "-- then ONE Id at a time, because Metadata is refused on any query that\n"
+        "-- can return more than one record:\n"
+        "SELECT Id, Name, Metadata FROM WorkflowFieldUpdate WHERE Id = '04Y...'\n"
         "  -> Metadata.field is the field written; TableEnumOrId is the object\n"
         "\n"
         "-- group every (object, field) target; 2+ active writers is a conflict."

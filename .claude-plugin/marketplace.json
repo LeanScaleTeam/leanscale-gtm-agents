@@ -20,7 +20,7 @@
     {
       "name": "crm-hygiene",
       "source": "./plugins/crm-hygiene",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "data-quality",
       "description": "Audits the integrity of your CRM: duplicate accounts and contacts, dead fields, records owned by people who left, stale pipeline, orphaned contacts, and picklist rot. Produces a Hygiene Index and a fix list. Read-only."
     },
@@ -41,7 +41,7 @@
     {
       "name": "sales-coach",
       "source": "./plugins/sales-coach",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "enablement",
       "description": "Scores calls against your qualification framework \u2014 MEDDPICC, BANT, SPICED or your own \u2014 and rolls them into one team pattern report for the manager, with verbatim evidence and timestamps. Read-only."
     },
@@ -55,7 +55,7 @@
     {
       "name": "meeting-to-crm",
       "source": "./plugins/meeting-to-crm",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "productivity",
       "description": "Turns each call into proposed CRM updates \u2014 next step, qualification fields, new stakeholders \u2014 as an approvable diff. Dry-run by default, strict field allow-list, every applied write logged."
     },
@@ -69,14 +69,14 @@
     {
       "name": "lead-source",
       "source": "./plugins/lead-source",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "category": "attribution",
       "description": "Measures whether your lead source data can be trusted: null and Other rates, near-duplicate values, and whether source survives the lead-to-opportunity conversion. Source integrity, not multi-touch attribution. Read-only."
     },
     {
       "name": "system-map",
       "source": "./plugins/system-map",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "architecture",
       "description": "Inventories what is actually wired into your CRM \u2014 integration users, connected apps, flows, triggers, scheduled jobs \u2014 and finds orphaned automation and multiple automations writing the same field. Read-only metadata."
     },

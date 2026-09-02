@@ -352,6 +352,10 @@ def calibration_html(doc: Dict[str, Any]) -> str:
     # whole report, so a legitimate edge case produced no document at all.
     gap_text = f"gap {gap:+.0f} points" if isinstance(gap, (int, float)) \
         else "gap not computable this run"
+    # Coverage is None in exactly the case the gap guard was written for, so it
+    # has to be guarded too — otherwise the banner reads "everyone else None%".
+    def _cov(v):
+        return f"{v}%" if isinstance(v, (int, float)) else "not scored"
     body = (
         f'<div class="{banner_class}"><b>Exemplars {calib.get("exemplar_coverage_pct")}% · '
         f'everyone else {calib.get("rest_coverage_pct")}% · {gap_text}.</b> '
@@ -499,12 +503,14 @@ def extra_markdown(doc: Dict[str, Any]) -> List[str]:
 
     calib = sections.get("calibration") or {}
     if calib.get("available"):
+        def _c(v):
+            return f"{v}%" if isinstance(v, (int, float)) else "not scored"
         _gap = calib.get("gap")
         _gap_text = f"gap {_gap:+.0f} points" if isinstance(_gap, (int, float)) \
             else "gap not computable this run"
         lines += ["## Calibration", "",
-                  f"Exemplars {calib.get('exemplar_coverage_pct')}% · everyone else "
-                  f"{calib.get('rest_coverage_pct')}% · {_gap_text}.", "",
+                  f"Exemplars {_c(calib.get('exemplar_coverage_pct'))} · everyone else "
+                  f"{_c(calib.get('rest_coverage_pct'))} · {_gap_text}.", "",
                   calib.get("verdict", ""), ""]
 
     linkage = sections.get("deal_linkage") or {}
