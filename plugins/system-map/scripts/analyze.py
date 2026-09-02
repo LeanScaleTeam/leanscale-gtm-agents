@@ -1362,12 +1362,24 @@ def build_manifest(
             query=str(entry.get("query") or ""), required=required,
             note=str(entry.get("note") or ""), diagnosis=diagnosis,
         )
-        if not entry.get("ok", True) or count == 0:
+        if not entry.get("ok", True):
             reason = str(entry.get("error") or "").strip()
             unavailable.append(
-                f"{label} — {api or name}. "
+                f"{label} — {api or name}. Could not be read. "
                 + (f"Reported: {reason}. " if reason else "")
                 + (f"Fix: {permission}" if permission else "No permission mapping recorded.")
+            )
+        elif count == 0:
+            # Read successfully, returned nothing. That is usually "this instance has
+            # none", and telling a customer to grant a permission they already hold is
+            # its own kind of dishonesty. It still belongs on the list, because
+            # Salesforce can answer an unpermitted read with an empty set rather than
+            # an error — so name both readings and let them judge.
+            unavailable.append(
+                f"{label} — {api or name}. Read successfully and came back empty: either "
+                f"this instance has none, or the connected identity can see the object but "
+                f"none of its records."
+                + (f" If you expected some, check: {permission}" if permission else "")
             )
 
     # Surfaces the run never even attempted still count as not-covered.

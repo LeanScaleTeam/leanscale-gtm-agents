@@ -191,10 +191,15 @@ FROM ConnectedApplication
 ```
 ```sql
 SELECT Id, SubscriberPackage.Name, SubscriberPackage.NamespacePrefix,
-       SubscriberPackage.PublisherName, SubscriberPackageVersion.Name,
+       SubscriberPackageVersion.Name,
        SubscriberPackageVersion.MajorVersion, SubscriberPackageVersion.MinorVersion
 FROM InstalledSubscriberPackage
 ```
+`SubscriberPackage` has **no `PublisherName`** — asking for it is `No such column` and, as
+always, kills the whole query rather than dropping the column. Verified against a live org,
+where the query above returns the installed packages and the same query plus `PublisherName`
+returns nothing at all. There is no publisher field to fall back to; the namespace prefix is
+the identifier you have.
 Standard-API fallback if Tooling is unreachable:
 ```sql
 SELECT NamespacePrefix, Status, AllowedLicenses, UsedLicenses, ExpirationDate FROM PackageLicense
@@ -215,9 +220,16 @@ inventory down with it. (It *is* a relationship on `ConnectedApplication` and
 `ApexTrigger` above, which is where the habit comes from.) Select it bare and read the
 name straight out of it.
 ```sql
-SELECT DurableId, FlowDefinitionViewId, ApiName, Label, VersionNumber, Status, ProcessType
+SELECT DurableId, FlowDefinitionViewId, Label, VersionNumber, Status, ProcessType
 FROM FlowVersionView
+WHERE FlowDefinitionViewId = '300xx0000000001'
 ```
+`FlowVersionView` **cannot be queried unfiltered**: it answers
+*"a filter on a reified column is required [FlowDefinitionViewId, DurableId]"* and returns
+nothing. It also has no `ApiName`. So this is one query per flow definition, using the
+`DurableId` values from the inventory above — or skip it, because the version numbers you
+actually need are already on `FlowDefinitionView`. Only pull it when you need per-version
+status. If you skip it, say so in `_sources.json` rather than writing an empty file.
 `ProcessType = 'Workflow'` on `FlowDefinitionView` means **Process Builder**, not a flow. Both
 of those views live on the standard API, which is why flow inventory usually survives even when
 nothing else Tooling-shaped does.
@@ -225,10 +237,22 @@ nothing else Tooling-shaped does.
 ### 2.8 Flow definitions — the field writes *(Tooling)* → `sf_flow_metadata.json`
 This is what makes conflict detection possible.
 ```sql
+-- get the version ids first; do NOT reuse FlowDefinitionView.DurableId here
+SELECT Id, DefinitionId, MasterLabel, VersionNumber, Status
+FROM Flow WHERE Status = 'Active'
+
+-- then, one at a time
 SELECT Id, FullName, Metadata FROM Flow WHERE Id = '301xx0000000001'
 ```
+**Two different ids, and mixing them fails silently.** Tooling `Flow.Id` is the `301`-prefixed
+*version*; `Flow.DefinitionId` is the `300`-prefixed definition, and *that* is what
+`FlowDefinitionView.DurableId` holds. Feeding a `300` id to `WHERE Id =` is valid SOQL that
+matches nothing, so you get zero metadata, no error, and a run that reports no field conflicts
+because it never read a flow — which is worse than failing. Get the `301` ids from the query
+above, or join on `DefinitionId`. Verified on a live org with 301 flows, 199 of them active.
+
 **One Id per query.** The Tooling API refuses `Metadata` unless the filter narrows to a single
-record; a batched `WHERE Id IN (...)` fails. Loop over the active flows from §2.7, collect the
+record; a batched `WHERE Id IN (...)` fails. Loop over the active flows, collect the
 responses into one array, and write:
 ```json
 {"records": [ {"Id": "301...", "FullName": "Opportunity_Stage_Hygiene", "Metadata": { ... }}, ... ]}
@@ -279,8 +303,13 @@ SELECT Id, Name, Metadata FROM WorkflowRule WHERE Id = '01Qxx0000000001'
 ```
 ```sql
 -- Tooling -> sf_workflow_field_updates.json   (this is where the field name lives)
-SELECT Id, Name, TableEnumOrId, LastModifiedDate FROM WorkflowFieldUpdate
+SELECT Id, Name, LastModifiedDate FROM WorkflowFieldUpdate
 ```
+`WorkflowFieldUpdate` has **no `TableEnumOrId`** — `WorkflowRule` does, which is where the
+habit comes from, and the two objects are almost always fetched together. Verified on a live
+org: with the column the query is `No such column ... on entity 'WorkflowFieldUpdate'` and you
+lose every field update; without it, the rows come back. The object a field update writes to
+comes from its `Metadata` body below, not from the list row.
 ```sql
 -- and again, one at a time, for the bodies
 SELECT Id, Name, Metadata FROM WorkflowFieldUpdate WHERE Id = '04Yxx0000000001'
@@ -309,8 +338,12 @@ without Event Monitoring. Everything else falls back to a labelled last-modified
 ### 2.12 Object and field surface
 ```sql
 -- sf_entities.json
+-- LIMIT is REQUIRED: EntityDefinition "does not support queryMore(), use LIMIT to
+-- restrict the results to a single batch". Without it the query fails outright — it
+-- does not return a first page. 200 is the batch ceiling; page by KeyPrefix or
+-- QualifiedApiName ranges if the org has more objects than that.
 SELECT DurableId, QualifiedApiName, Label, KeyPrefix, IsCustomSetting, NamespacePrefix
-FROM EntityDefinition
+FROM EntityDefinition LIMIT 200
 WHERE IsQueryable = true
 ```
 ```
