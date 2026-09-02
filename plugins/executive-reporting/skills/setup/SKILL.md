@@ -106,9 +106,14 @@ FROM Opportunity WHERE CreatedDate = LAST_N_MONTHS:13 GROUP BY StageName
 -- Do this first: Salesforce fails a whole query with INVALID_FIELD on one unknown
 -- field, so naming ARR__c or MRR__c blind kills the discovery step on any org that
 -- happens not to have them — which is most of them.
-SELECT QualifiedApiName, Label FROM FieldDefinition
+SELECT QualifiedApiName, Label, DataType FROM FieldDefinition
 WHERE EntityDefinition.QualifiedApiName = 'Opportunity'
-  AND DataType IN ('Currency', 'Number')
+  AND (DataType LIKE 'Currency%' OR DataType LIKE 'Number%')
+-- DataType holds the Setup display string, not a bare type name: Amount reads
+-- 'Currency(16, 2)' and TotalOpportunityQuantity reads 'Number(16, 2)'. An
+-- equality filter on 'Currency' therefore matches nothing and returns zero rows
+-- silently — verified against a live org, where LIKE returns 33 fields and IN
+-- returns none. Run this through the Tooling API.
 
 -- then sample the fill of the currency fields that came back, substituting the real
 -- API names into this query. Amount and TotalOpportunityQuantity are standard and
