@@ -20,7 +20,7 @@
     {
       "name": "crm-hygiene",
       "source": "./plugins/crm-hygiene",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "data-quality",
       "description": "Audits the integrity of your CRM: duplicate accounts and contacts, dead fields, records owned by people who left, stale pipeline, orphaned contacts, and picklist rot. Produces a Hygiene Index and a fix list. Read-only."
     },
@@ -34,7 +34,7 @@
     {
       "name": "forecast-agent",
       "source": "./plugins/forecast-agent",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "forecasting",
       "description": "Audits whether your CRM can support a forecast at all, then calls it three ways with the method shown. Scores forecast integrity and surfaces the gap between the rep-called commit and the evidence. Read-only."
     },
@@ -62,14 +62,14 @@
     {
       "name": "stage-architect",
       "source": "./plugins/stage-architect",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "funnel-design",
       "description": "Derives what your pipeline stages actually mean from your own closed history and contrasts it with what your team believes. Finds skipped stages, stages that don't discriminate, and proposes buyer-verifiable exit criteria. Read-only."
     },
     {
       "name": "lead-source",
       "source": "./plugins/lead-source",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "attribution",
       "description": "Measures whether your lead source data can be trusted: null and Other rates, near-duplicate values, and whether source survives the lead-to-opportunity conversion. Source integrity, not multi-touch attribution. Read-only."
     },
