@@ -55,14 +55,14 @@
     {
       "name": "meeting-to-crm",
       "source": "./plugins/meeting-to-crm",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "productivity",
       "description": "Turns each call into proposed CRM updates \u2014 next step, qualification fields, new stakeholders \u2014 as an approvable diff. Dry-run by default, strict field allow-list, every applied write logged."
     },
     {
       "name": "stage-architect",
       "source": "./plugins/stage-architect",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "funnel-design",
       "description": "Derives what your pipeline stages actually mean from your own closed history and contrasts it with what your team believes. Finds skipped stages, stages that don't discriminate, and proposes buyer-verifiable exit criteria. Read-only."
     },

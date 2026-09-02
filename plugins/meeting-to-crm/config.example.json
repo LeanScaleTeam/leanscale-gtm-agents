@@ -120,7 +120,7 @@
     "require_named_approver": true,
     "min_review_seconds": 10
   },
-  "_approval_help": "Who may approve a batch. Leave 'approvers' empty to allow any named human; fill it to restrict. min_review_seconds is the floor between rendering the diff and accepting it — it exists so a batch cannot be proposed and applied in one breath.",
+  "_approval_help": "Who may approve a batch. 'approvers' must list the humans permitted to approve writes — while require_named_approver is true an empty list refuses every write, because an approval that cannot be checked against anything is not an approval and an agent could otherwise approve its own proposals under any name. Set require_named_approver to false only in a sandbox. min_review_seconds is the floor between rendering the diff and accepting it — it exists so a batch cannot be proposed and applied in one breath.",
 
   "audit": { "enabled": true },
   "_audit_help": "Every applied write appends one JSON line per field to ~/.leanscale-gtm/audit/meeting-to-crm.log: timestamp, record, field, old value, new value, source meeting, approver. Turning this off also turns off applying — the audit log is the price of writing.",
