@@ -190,12 +190,35 @@ WHERE Opportunity.IsClosed = false
 
 **users** — the roll-up hierarchy from `profile.team_map.roll_up_field`
 
+You need active users **plus** any deactivated user still holding open pipeline — a
+departed rep's deals still roll up to somebody. That cannot be one query: SOQL rejects a
+semi-join (`Id IN (SELECT ...)`) combined with `OR` at the top level and returns
+`MALFORMED_QUERY`, so the whole users fetch fails and the roll-up hierarchy comes back
+empty. Run three and merge the two user result sets on `Id`:
+
 ```sql
+-- 1. everyone currently active
 SELECT Id, Name, ManagerId, Manager.Name, IsActive, UserRole.Name, Profile.Name
 FROM User
 WHERE IsActive = true
-   OR Id IN (SELECT OwnerId FROM Opportunity WHERE IsClosed = false)
 ```
+
+```sql
+-- 2. who owns open pipeline, including anyone deactivated
+SELECT OwnerId FROM Opportunity WHERE IsClosed = false GROUP BY OwnerId
+```
+
+```sql
+-- 3. the owners from step 2 that step 1 did not already return.
+--    Substitute the real ids; keep each batch under 200.
+SELECT Id, Name, ManagerId, Manager.Name, IsActive, UserRole.Name, Profile.Name
+FROM User
+WHERE Id IN ('005xx0000012345AAA', '005xx0000012346AAA')
+```
+
+Write the union to `raw/users.json`. A deactivated owner that appears only via step 3 is
+worth noting in itself — open pipeline owned by someone who has left is a finding the
+suite reports elsewhere, and it is the reason this cannot just be `IsActive = true`.
 
 **stage metadata** — the assigned probability, so it can be compared with measured conversion
 

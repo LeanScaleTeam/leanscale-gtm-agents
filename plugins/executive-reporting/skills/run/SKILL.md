@@ -76,10 +76,24 @@ still open belongs in the cohort.
 ```sql
 SELECT Id, Name, AccountId, Account.Name, StageName, Amount, CloseDate, CreatedDate,
        IsClosed, IsWon, Type, LeadSource, OwnerId, Owner.Name,
-       Account.Industry, Account.Segment__c
+       Account.Industry
 FROM Opportunity
 WHERE CreatedDate = LAST_N_MONTHS:13 OR CloseDate = LAST_N_MONTHS:13
 ```
+
+**The segment column is not in that query on purpose.** Add it only when you know the
+field exists. `profile.json.segment_field` holds it — it is written during setup precisely
+so this query does not have to guess — and it is commonly `Account.Segment__c`, but it is
+a custom field and most orgs do not have one by that name. **Salesforce fails the entire
+query with `INVALID_FIELD` when a selected field does not exist; it does not drop the
+column.** So a hardcoded custom field here does not degrade the report, it kills the first
+fetch of the required source, and the run ends before it starts.
+
+So: read `segment_field` from `~/.leanscale-gtm/profile.json`. If it is set, append it to
+the SELECT. If it is empty or absent, run the query exactly as written above and let the
+segment breakdown report itself as unavailable — an honest gap beats a dead run. If you
+would rather confirm first, `SELECT QualifiedApiName FROM FieldDefinition WHERE
+EntityDefinition.QualifiedApiName = 'Account'` tells you what is really there.
 
 **HubSpot** — `POST /crm/v3/objects/deals/search` with a `createdate` OR `closedate` range
 filter, requesting `dealname, dealstage, amount, closedate, createdate, hs_is_closed_won,
