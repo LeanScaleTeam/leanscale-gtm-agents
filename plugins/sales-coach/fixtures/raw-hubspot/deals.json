@@ -1,0 +1,112 @@
+{
+  "_comment": "HubSpot v3 CRM search on `deals`, shaped exactly as skills/run/SKILL.md documents. Mirrors fixtures/raw/deals.json so the two CRM paths are directly comparable.",
+  "source": "hubspot",
+  "query": "POST /crm/v3/objects/deals/search \u2014 filter hs_object_id IN [0061..0066], properties dealname, amount, dealstage, closedate, hs_is_closed, hs_is_closed_won, hs_date_entered_closedwon, hubspot_owner_id, hs_deal_stage_probability",
+  "records": [
+    {
+      "id": "0061",
+      "properties": {
+        "hs_object_id": "0061",
+        "dealname": "Fabrik Robotics \u2014 Revenue Data Platform",
+        "amount": "85000",
+        "dealstage": "decisionmakerboughtin",
+        "closedate": "2026-09-30T00:00:00Z",
+        "hs_is_closed": "false",
+        "hs_is_closed_won": "false",
+        "hubspot_owner_id": "77310021",
+        "hs_deal_stage_probability": "0.4",
+        "close_date_pushes": "2"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    },
+    {
+      "id": "0062",
+      "properties": {
+        "hs_object_id": "0062",
+        "dealname": "Halden Freight \u2014 Revenue Data Platform",
+        "amount": "42000",
+        "dealstage": "closedlost",
+        "closedate": "2026-08-05T00:00:00Z",
+        "hs_is_closed": "true",
+        "hs_is_closed_won": "false",
+        "hubspot_owner_id": "77310022",
+        "hs_deal_stage_probability": "0.0"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    },
+    {
+      "id": "0063",
+      "properties": {
+        "hs_object_id": "0063",
+        "dealname": "Vantage Health \u2014 Revenue Data Platform",
+        "amount": "120000",
+        "dealstage": "closedwon",
+        "closedate": "2026-08-07T00:00:00Z",
+        "hs_is_closed": "true",
+        "hs_is_closed_won": "true",
+        "hubspot_owner_id": "77310023",
+        "hs_deal_stage_probability": "1.0",
+        "hs_date_entered_closedwon": "2026-08-07T00:00:00Z"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    },
+    {
+      "id": "0064",
+      "properties": {
+        "hs_object_id": "0064",
+        "dealname": "Orbit Payments \u2014 Revenue Data Platform",
+        "amount": "60000",
+        "dealstage": "closedlost",
+        "closedate": "2026-08-04T00:00:00Z",
+        "hs_is_closed": "true",
+        "hs_is_closed_won": "false",
+        "hubspot_owner_id": "77310021",
+        "hs_deal_stage_probability": "0.0"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    },
+    {
+      "id": "0065",
+      "properties": {
+        "hs_object_id": "0065",
+        "dealname": "Kestrel Logistics \u2014 Revenue Data Platform",
+        "amount": "18000",
+        "dealstage": "appointmentscheduled",
+        "closedate": "2026-10-15T00:00:00Z",
+        "hs_is_closed": "false",
+        "hs_is_closed_won": "false",
+        "hubspot_owner_id": "77310023",
+        "hs_deal_stage_probability": "0.4"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    },
+    {
+      "id": "0066",
+      "properties": {
+        "hs_object_id": "0066",
+        "dealname": "Sunridge Media \u2014 Revenue Data Platform",
+        "amount": "55000",
+        "dealstage": "presentationscheduled",
+        "closedate": "2026-10-31T00:00:00Z",
+        "hs_is_closed": "false",
+        "hs_is_closed_won": "false",
+        "hubspot_owner_id": "77310022",
+        "hs_deal_stage_probability": "0.4",
+        "close_date_pushes": "1"
+      },
+      "createdAt": "2026-06-01T09:00:00Z",
+      "updatedAt": "2026-08-20T09:00:00Z",
+      "archived": false
+    }
+  ]
+}

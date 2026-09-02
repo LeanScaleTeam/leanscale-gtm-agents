@@ -232,15 +232,46 @@ def _decide_bookings(currency: List[Dict[str, Any]], config: Dict[str, Any]) -> 
 
 def _stage_date_field(stages: List[Dict[str, Any]], stage_dates: List[Dict[str, Any]],
                       stage_value: str) -> Optional[Dict[str, Any]]:
-    """Match a stage to its entry-timestamp field: by label, then by position."""
+    """
+    Match a stage to its entry-timestamp field.
+
+    Four strategies, most-certain first. The middle two exist for HubSpot, which
+    names these fields `hs_date_entered_<stage id>` and labels them
+    "Date entered 'Use Case Defined (Sales Pipeline)'" — neither of which the
+    label-equality or Salesforce `Date_Time_Stage_N__c` digit conventions can see.
+    Without them a real HubSpot org drafts `<entry timestamp for …>` placeholders
+    and a false "cycle time is unmeasurable" diagnosis.
+    """
     if not stage_value:
         return None          # startswith("") matches everything — never guess here
+    needle = stage_value.lower()
+
+    # 1. The label IS the stage name.
     for f in stage_dates:
         label = (f.get("label") or "").strip().lower()
-        if label and (label == stage_value.lower()
-                      or stage_value.lower().startswith(label)
-                      or label.startswith(stage_value.lower())):
+        if label and (label == needle
+                      or needle.startswith(label)
+                      or label.startswith(needle)):
             return f
+
+    # 2. HubSpot: the stage's own id appears in the field name. This is an exact
+    #    identifier match, so it is as trustworthy as an equal label.
+    stage = next((s for s in stages if s.get("value") == stage_value), None)
+    stage_id = str((stage or {}).get("hs_stage_id") or "").strip().lower()
+    if stage_id:
+        for f in stage_dates:
+            if stage_id in str(f.get("name", "")).lower():
+                return f
+
+    # 3. HubSpot: the label CONTAINS the stage name, usually quoted and suffixed
+    #    with the pipeline. Only accept an unambiguous hit — "Demo" would otherwise
+    #    match both "Demo Booked" and "Demo Completed" and silently pick the first.
+    contains = [f for f in stage_dates
+                if needle in (f.get("label") or "").strip().lower()]
+    if len(contains) == 1:
+        return contains[0]
+
+    # 4. Salesforce: Date_Time_Stage_N__c, positionally.
     idx = next((i for i, s in enumerate(sorted(stages, key=lambda s: s.get("sort", 0)))
                 if s["value"] == stage_value), None)
     if idx is not None:

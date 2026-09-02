@@ -1,0 +1,60 @@
+Halden Freight <> Acme Data — Discovery
+Recorded 21 July 2026 · 38 min · auto-transcribed, speaker labels from the calendar invite
+Attendees — Marcus Oyelaran (Acme Data), Wes Delacroix (VP Supply Chain, Halden), Ana Petrova (Ops Manager, Halden)
+
+Marcus Oyelaran (00:11): Hey Wes, hey Ana, thanks for hopping on. So I thought what I'd do is give you a quick overview of who we are and what we do, and then we can get into your side of it. Sound good?
+
+Wes Delacroix (00:24): Sure.
+
+Marcus Oyelaran (00:26): Great. So Acme Data was founded in 2019, we're about a hundred and forty people now, and the core of what we do is we sit between your billing system and your CRM and we keep the revenue picture consistent across both. Most of our customers are in the two hundred to two thousand employee range, and the thing they all have in common is that they've outgrown spreadsheets but they're not ready to stand up a full data warehouse team. We've got integrations with basically everything, so Salesforce, HubSpot, NetSuite, Stripe, Chargebee, and we're adding two more this quarter.
+The differentiator, and I think this is the piece that matters, is that we don't just move the data, we reconcile it, which means when your two systems disagree about what a customer is worth you find out on a Tuesday instead of at quarter close. The way that works under the hood is we keep a mapping layer between the two systems, and that mapping is versioned, so if somebody changes how an account maps you can always go back and see what the number was before and why it moved. That turns out to matter a lot at year end. Our largest customer is a payments company doing about four hundred million in processed volume and they went from a nine day close to a four day close in the first quarter after go-live, and the CFO there says the close time isn't even the thing he cares about most, it's that he stopped having to defend the numbers line by line in front of his audit committee. We also see a lot of teams use it for board reporting, because once the reconciliation is running you can produce net revenue retention and gross retention and expansion by segment without anyone building a spreadsheet, and those are usually the three numbers a board asks about that companies at your stage struggle to produce consistently. And the last thing I'd mention on the overview, and then I promise I'll stop talking, is that we deploy in about four to six weeks with a dedicated implementation lead, so this isn't one of those things where you buy it and then discover you needed to hire two data engineers to make it work.
+
+Wes Delacroix (01:38): Okay.
+
+Marcus Oyelaran (01:40): And then on top of that there's the reporting layer, which gives you cohort retention, net revenue retention, expansion, all of it out of the box. A lot of teams try to build that themselves and it takes them six months and then the person who built it leaves. We also have alerting, so if a mapping breaks you get a Slack message rather than finding out three weeks later. And we're SOC 2 Type 2, if that comes up with your security team, which it usually does.
+
+Wes Delacroix (02:31): Right. Look, I should say up front, I'm not sure how much of this is our problem. We're a freight brokerage. Our contracts don't really look like subscriptions.
+
+Marcus Oyelaran (02:44): Totally, and we work with a lot of companies that aren't classic SaaS. The model handles usage-based and contract-based revenue too. Let me actually just show you what it looks like, I think that'll be faster than me describing it.
+
+Ana Petrova (03:02): Before you do that — can I ask what this costs? We've been through two of these evaluations this year and both of them fell apart on price at the end and I'd rather not do that again.
+
+Marcus Oyelaran (03:19): Yeah, fair. So for a team your size you're looking at somewhere in the forty to sixty thousand a year range depending on connector count and volume. There's an implementation fee on top of that, usually around eight thousand, but I can often get that waived if we're moving inside a quarter.
+
+Ana Petrova (03:41): Okay. That's higher than I expected but it's not crazy.
+
+Marcus Oyelaran (03:47): And I'd say don't anchor on that number yet, because it really depends on scope. Let me show you the product and then we can talk about what a right-sized package looks like.
+
+Wes Delacroix (04:02): Sure, go ahead.
+
+Marcus Oyelaran (04:05): So this is the main dashboard. Everything you see here is live off the two source systems. Up top you've got your revenue by segment, and then this panel is the reconciliation queue, which is where anything the two systems disagree about lands. You can filter it by owner, by age, by dollar impact. This chart down here is cohort retention, and you can slice it by first-contract month or by segment.
+
+Wes Delacroix (05:22): What's that number on the left?
+
+Marcus Oyelaran (05:25): That's open exceptions. So in this demo account there are fourteen records where billing and CRM disagree. In a real deployment that number is usually big on day one and then it drops fast once you agree the mapping rules.
+
+Wes Delacroix (05:44): Hm.
+
+Marcus Oyelaran (05:46): And then the other piece I wanted to show you is the alerting. So you set a threshold, and when something crosses it you get pinged. Teams use this for churn risk mostly, but you can point it at anything.
+
+Ana Petrova (12:30): Can I ask something. Who normally owns this internally? Because if the answer is "a data person", we don't have one.
+
+Marcus Oyelaran (12:41): Great question. It varies. Sometimes it's RevOps, sometimes finance. It's designed so you don't need an engineer to run it day to day.
+
+Ana Petrova (12:55): Okay.
+
+Wes Delacroix (24:18): I'll be straight with you, we've got a quote from Northlake sitting on my desk already and it's about half what you just quoted. I'm not saying that's the deciding factor but it's on the table.
+
+Marcus Oyelaran (24:33): Sure, and I'd say Northlake is a fine product for a smaller footprint. Where we tend to win is when the reconciliation piece matters, because that's the part they don't really do. I can put together a comparison if that's useful.
+
+Wes Delacroix (24:52): Maybe.
+
+Marcus Oyelaran (24:55): Let me also show you the API, because a few people asked about that.
+
+Wes Delacroix (35:40): Marcus, I've got a hard stop in five. This was helpful, I've got a better sense of what you do.
+
+Marcus Oyelaran (35:47): Great, really glad. I'll send over some materials, there's a one-pager and a case study from a logistics customer that I think maps pretty closely to you. And I'll follow up in a week or so to see where your head's at.
+
+Wes Delacroix (36:04): Sounds good. Thanks Marcus.
+
+Marcus Oyelaran (36:07): Thanks Wes, thanks Ana. Talk soon.

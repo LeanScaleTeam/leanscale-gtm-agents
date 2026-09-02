@@ -1,6 +1,6 @@
 {
   "name": "pipeline-inspection",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read-only deal inspection for Salesforce and HubSpot: finds every open deal violating your own pipeline rules \u2014 stalled stages, no next step, serial close-date pushes, single-threading, past-due dates \u2014 and ranks them into a manager's call list.",
   "author": {
     "name": "LeanScale",

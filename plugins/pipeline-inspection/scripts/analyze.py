@@ -1003,6 +1003,15 @@ def build(
     open_deals = normalize_deals(open_raw, base_map, crm, as_of)
     closed_deals = normalize_deals(closed_raw, base_map, crm, as_of)
 
+    # Resolve the display label once, here, where the stage model and the deals first
+    # meet. HubSpot's `dealstage` is an internal id — "decisionmakerboughtin" — and
+    # every evidence table rendered it raw, so a HubSpot customer read their pipeline
+    # in machine ids while the medians table beside it showed proper names. Salesforce
+    # keys already equal their labels, so this is a no-op there.
+    _stage_labels = stage_model.get("labels") or {}
+    for _deal in list(open_deals) + list(closed_deals):
+        _deal["stage_label"] = _stage_labels.get(_deal["stage"], _deal["stage"])
+
     floor = cfg.get("material_deal_floor")
     if floor is None:
         floor = profile.get("material_deal_floor") or 0
@@ -1465,7 +1474,7 @@ def _base_row(deal: Dict[str, Any]) -> Dict[str, Any]:
         "Account": deal["account"],
         "Owner": deal["owner"],
         "Amount": money(deal["amount"]),
-        "Stage": deal["stage"],
+        "Stage": deal.get("stage_label") or deal["stage"],
     }
 
 

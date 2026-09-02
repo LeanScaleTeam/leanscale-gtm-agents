@@ -1,0 +1,38 @@
+Sunridge Media <> Acme Data — Discovery (auto-transcribed)
+NOTE — the recorder joined late and two participants dialled in from the same room, so one speaker could not be separated.
+
+[00:00:09] Marcus Oyelaran: Thanks for making time. Corinne, you mentioned on the intro call that the quarterly business review process is where this hurts most. Can you walk me through that?
+
+[00:00:31] Corinne Vasquez: Sure. Every quarter we put together a deck for the holding company and it pulls from four systems. The ad server, the CRM, the billing platform and a spreadsheet that our finance lead maintains that nobody else fully understands.
+
+[00:01:12] Speaker 2: And that's being generous about the spreadsheet. There are tabs in it that reference tabs that were deleted two years ago. We had a number in the last QBR that was off by a hundred and ten thousand and we only caught it because someone remembered the deal differently.
+
+[00:01:58] Marcus Oyelaran: A hundred and ten thousand off. What happened after that?
+
+[00:02:11] Speaker 2: Nothing formal. That's the problem. Everyone agreed it was bad, we fixed that one cell, and then we did the exact same process again the following quarter. There's no owner for the process, which means there's no owner for the mistake.
+
+[00:03:04] Corinne Vasquez: To be fair we did add a review step. It just doesn't catch anything because the person reviewing is the person who built it.
+
+[00:04:20] Marcus Oyelaran: So let me make sure I've got the shape of this right. Four sources, one fragile spreadsheet in the middle, a quarterly deadline that's externally imposed by the holding company, and no single owner. Is the deadline the hard constraint, or is it the accuracy?
+
+[00:04:47] Speaker 2: Both, but if you make me choose, accuracy. We can be late and survive it. We cannot hand the holding company a number that moves after we've presented it. That happened in Q4 and it was genuinely career-affecting for someone.
+
+[00:05:30] Marcus Oyelaran: That's helpful, and it changes what I'd show you. Let me focus on the audit and versioning side rather than the speed side.
+
+[00:18:44] Corinne Vasquez: This is interesting. How much of this depends on our source systems being clean? Because they are not clean.
+
+[00:19:02] Marcus Oyelaran: It doesn't require them to be clean, it requires them to be consistent about their own mess, which is a much lower bar. The reconciliation surfaces the disagreements rather than assuming one side is right.
+
+[00:26:15] Speaker 2: What's the realistic timeline to get to a QBR that comes out of this rather than out of the spreadsheet? Because our next one is in nine weeks and I'd rather not be half-migrated during it.
+
+[00:26:40] Marcus Oyelaran: Nine weeks is enough for the first two sources but I would not try to do all four before that QBR. I'd rather you run the old process one more time and have this running in parallel so you can compare the two numbers.
+
+[00:27:20] Corinne Vasquez: That's a sensible answer, and it's not what the last vendor told us.
+
+[00:38:10] Marcus Oyelaran: What should the next step be? I don't want to guess at your process.
+
+[00:38:25] Corinne Vasquez: Send me a written version of the phased approach — the two sources first, then the other two after the QBR. I'll take it to our director's staff meeting on Monday.
+
+[00:38:52] Marcus Oyelaran: I'll have that with you by Thursday. Can I get twenty minutes with whoever owns the finance spreadsheet before then? Everything in the phasing depends on what's actually in it.
+
+[00:39:14] Corinne Vasquez: That's Devi. I'll introduce you by email today.

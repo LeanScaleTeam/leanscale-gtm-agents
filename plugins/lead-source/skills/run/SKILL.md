@@ -270,12 +270,19 @@ Property notes that decide whether the output is right:
   ],
   "properties": [
     "dealname", "dealstage", "hs_is_closed_won", "amount", "closedate", "createdate",
-    "original_lead_source", "hs_analytics_source", "hubspot_owner_id", "hubspot_owner_name"
+    "original_lead_source", "hs_analytics_source", "hubspot_owner_id"
   ],
   "sorts": [{ "propertyName": "createdate", "direction": "ASCENDING" }],
   "limit": 100
 }
 ```
+
+**There is no `hubspot_owner_name` property** — a deal carries `hubspot_owner_id`
+only. HubSpot silently omits property names it does not recognise rather than
+erroring, so asking for a name returns no field and no warning. This analysis
+does not key anything on owners, so the id is all it needs; if you extend it to
+report per-owner, resolve the ids against `GET /crm/v3/owners` and join locally
+rather than expecting a name on the deal.
 
 ### 2c. Contact → Deal associations → `raw/associations.json`
 

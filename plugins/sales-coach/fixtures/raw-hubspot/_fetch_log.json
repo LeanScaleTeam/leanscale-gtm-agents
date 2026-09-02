@@ -1,0 +1,44 @@
+{
+  "_comment": "HubSpot variant of the sales-coach fixture.",
+  "window": {
+    "start": "2026-07-11",
+    "end": "2026-08-10"
+  },
+  "sources": [
+    {
+      "name": "calls listed (transcript source)",
+      "tool": "mixed: gong list_calls, fireflies_get_transcripts, local directory scan",
+      "query": "window 2026-07-11 -> 2026-08-10, call_types = discovery, demo",
+      "count": 6,
+      "required": true,
+      "diagnosis": "No calls came back for the window. Either the connected identity can only see its own calls (common with a personal Gong or Fireflies token \u2014 a manager needs workspace or team scope), the recordings live in a workspace the token cannot read, or the window predates retention."
+    },
+    {
+      "name": "transcripts fetched",
+      "tool": "mixed: gong retrieve_transcripts, fireflies_get_transcript, file read",
+      "query": "one fetch per call_id in the index",
+      "count": 6,
+      "required": true,
+      "diagnosis": "Calls were listed but no transcript bodies came back. Most often the recordings exist without transcription enabled, or the API scope covers call metadata but not transcript content."
+    },
+    {
+      "name": "framework scoring pass",
+      "tool": "claude (reads normalized transcripts, writes scored_calls.json)",
+      "query": "MEDDPICC, 8 dimensions, evidence required for met/partial",
+      "count": 6,
+      "required": true,
+      "diagnosis": "Transcripts normalized but nothing was scored \u2014 the scoring step did not run or wrote a malformed scored_calls.json."
+    },
+    {
+      "name": "crm deals (optional linkage)",
+      "tool": "run_soql_query",
+      "query": "SELECT Id, Name, Amount, StageName, IsClosed, IsWon, CloseDate, Original_Close_Date__c, Close_Date_Push_Count__c, Owner.Name, Account.Name FROM Opportunity WHERE Id IN (...)",
+      "count": 6,
+      "required": false,
+      "diagnosis": "Optional. Without it the report still scores every call; it just cannot show which framework gaps precede the deals that slip or lose."
+    }
+  ],
+  "warnings": [
+    "call-1047: the export could not separate two attendees dialling in from one room."
+  ]
+}

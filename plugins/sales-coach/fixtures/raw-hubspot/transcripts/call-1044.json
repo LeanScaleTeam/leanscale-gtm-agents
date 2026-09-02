@@ -1,0 +1,134 @@
+{
+  "requestId": "fixture-gong-8891",
+  "callTranscripts": [
+    {
+      "callId": "8891",
+      "transcript": [
+        {
+          "speakerId": "1001",
+          "topic": "Call Setup",
+          "sentences": [
+            { "start": 8200, "end": 31400, "text": "Alan, Renee, thanks for the time. Renee and I have talked twice, so rather than repeat that for you Alan, I'd like to spend the first fifteen minutes on what you specifically need to be true before this is worth doing, and then show you the two things Renee asked me to show you." },
+            { "start": 32000, "end": 41800, "text": "Does that use the hour well, or is there something else you'd rather start with?" }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Call Setup",
+          "sentences": [
+            { "start": 42500, "end": 74300, "text": "No, that's the right order. I'll tell you where I sit. I sign anything over fifty thousand, and I've got one more of these in front of me this quarter, so I'm going to be blunt about what would make me pick one over the other." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 75000, "end": 88600, "text": "Please be blunt, it saves us both a quarter. What are the criteria?" }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 89200, "end": 132700, "text": "The two things I care about are whether it survives an audit and whether Renee's team can run it without me hiring anyone. We are not adding headcount in this fiscal year. If the answer to this is two more analysts, the answer is no." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 133400, "end": 151900, "text": "That's clear. Renee, on the audit point, what specifically failed last time? I want to make sure I'm solving the real thing and not the version of it I've heard from other health systems." }
+          ]
+        },
+        {
+          "speakerId": "3001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 152600, "end": 214300, "text": "Our auditors asked us to reproduce the revenue recognition for three contracts from the prior year and we couldn't do it. Not because the numbers were wrong, because the mapping had changed twice in between and nobody logged it. It took us eleven weeks and an outside firm to close that finding." },
+            { "start": 215000, "end": 251800, "text": "And on the cost side, we spent about four hundred thousand dollars last year on an outsourced reporting team and we still missed our Q3 board deadline. That's the number Alan sees." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 252400, "end": 271900, "text": "Four hundred thousand and you still missed the deadline. Alan, when Renee says that number, what does it cost you beyond the money? I'm asking because the money is usually the smaller half." }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Discovery",
+          "sentences": [
+            { "start": 272600, "end": 318400, "text": "It costs me credibility with the board. I sat there in November and said I would have segment-level margin by February and I did not have it in February. That is the thing I am actually buying my way out of." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Demo",
+          "sentences": [
+            { "start": 640000, "end": 692300, "text": "So this is the audit trail, which is the piece I think matters most for what you just described. Every mapping change is versioned, with who changed it and when, and you can re-run any prior period against the mapping that was in force at the time." },
+            { "start": 693000, "end": 714600, "text": "Renee, if your auditors asked the same question again with this in place, what would that conversation look like?" }
+          ]
+        },
+        {
+          "speakerId": "3001",
+          "topic": "Demo",
+          "sentences": [
+            { "start": 715300, "end": 749800, "text": "Honestly it would be a screenshot. That's the whole answer. The eleven weeks was us reconstructing history that nobody wrote down." }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Competition",
+          "sentences": [
+            { "start": 1284000, "end": 1331500, "text": "I should tell you, we looked at Datamesh two years ago and abandoned it six months in. It technically worked. Nobody used it. I am more worried about that outcome than I am about the license cost." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Competition",
+          "sentences": [
+            { "start": 1332200, "end": 1389700, "text": "That's the right thing to be worried about, and I'd rather talk about it now than pretend it doesn't happen. What did adoption actually die of? In my experience it's one of two things: either it needed an engineer for every change, or it produced a number that disagreed with the one people already trusted and nobody reconciled the two." },
+            { "start": 1390300, "end": 1404800, "text": "Which one was it for you?" }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Competition",
+          "sentences": [
+            { "start": 1405400, "end": 1436900, "text": "The second one. Finance kept their spreadsheet and the tool became a second opinion nobody wanted." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Next Steps",
+          "sentences": [
+            { "start": 2751000, "end": 2792400, "text": "Then that's what we should design the first ninety days around, and I'd want your finance lead in week one, not week eight. Renee, what's the actual path from here to a decision on your side?" }
+          ]
+        },
+        {
+          "speakerId": "3001",
+          "topic": "Next Steps",
+          "sentences": [
+            { "start": 2793000, "end": 2845700, "text": "We'd take it to the operating committee on the fourteenth, then security review, then Alan signs. Legal turns contracts in about ten business days, and we need a BAA because of the PHI, so start that early or it becomes the long pole." },
+            { "start": 2846300, "end": 2871900, "text": "I'll build the internal case. Send me whatever you'd put in front of a CFO and I'll adapt it into our format." }
+          ]
+        },
+        {
+          "speakerId": "1001",
+          "topic": "Next Steps",
+          "sentences": [
+            { "start": 2872500, "end": 2931800, "text": "Here's what I'll do. One-pager in your board format by Friday the eighth, our BAA template to your legal contact the same day, and I'll hold Tuesday the eighteenth for the security review so it isn't waiting on my calendar. Alan, is there anything that would stop this at the operating committee that we haven't talked about?" }
+          ]
+        },
+        {
+          "speakerId": "2001",
+          "topic": "Next Steps",
+          "sentences": [
+            { "start": 2932400, "end": 2968300, "text": "No. If Renee's team can run it and the audit trail holds up, I'm comfortable. Get me the BAA early and we can move inside the quarter." }
+          ]
+        }
+      ]
+    }
+  ]
+}
