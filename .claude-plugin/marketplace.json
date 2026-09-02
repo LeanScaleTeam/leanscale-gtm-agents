@@ -27,7 +27,7 @@
     {
       "name": "pipeline-inspection",
       "source": "./plugins/pipeline-inspection",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "pipeline",
       "description": "Finds the open deals violating your own rules \u2014 stuck in stage past your measured median, no next step, close date pushed three times, single-threaded, past due. A manager's call list, not a forecast. Read-only."
     },
@@ -76,7 +76,7 @@
     {
       "name": "system-map",
       "source": "./plugins/system-map",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "architecture",
       "description": "Inventories what is actually wired into your CRM \u2014 integration users, connected apps, flows, triggers, scheduled jobs \u2014 and finds orphaned automation and multiple automations writing the same field. Read-only metadata."
     },

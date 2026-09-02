@@ -745,7 +745,16 @@ def _hs_flow_writes(flow: Dict[str, Any], obj: str) -> Tuple[List[str], str]:
         type_id = str(action.get("actionTypeId") or "")
         fields = action.get("fields") or {}
         prop = fields.get("property_name") or fields.get("propertyName") or fields.get("property")
-        if prop and (type_id in HS_SET_PROPERTY_ACTIONS or "property" in str(fields.keys()).lower()):
+        # The old fallback — `"property" in str(fields.keys())` — was dead code that
+        # always fired: `prop` is only set when a key named property_name/propertyName/
+        # property exists, so the string test could never be false once `prop` was
+        # truthy. That made the actionTypeId allow-list moot and counted every
+        # property-reading action (branches, filters, delays) as a field WRITE,
+        # inflating the write map and the same-field-conflict finding built on it.
+        # An action with no declared type is still treated as a write, because an
+        # unrecognised action that names a property is more safely over-reported than
+        # missed — but a known non-write type is now correctly excluded.
+        if prop and (type_id in HS_SET_PROPERTY_ACTIONS or not type_id):
             norm = _norm_field(obj, prop)
             if norm:
                 writes.append(norm)
