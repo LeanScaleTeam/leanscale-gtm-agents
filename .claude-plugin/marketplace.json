@@ -13,7 +13,7 @@
     {
       "name": "gtm-brain",
       "source": "./plugins/gtm-brain",
-      "version": "2.2.2",
+      "version": "2.2.3",
       "category": "foundations",
       "description": "Builds your GTM Brain \u2014 metric definitions plus commercial context (ICP, selling motion, style guide) as a governed git repo with one named owner per file, seeded from your actual CRM. Formerly semantic-layer. Read-only against the CRM."
     },
@@ -34,7 +34,7 @@
     {
       "name": "forecast-agent",
       "source": "./plugins/forecast-agent",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "forecasting",
       "description": "Audits whether your CRM can support a forecast at all, then calls it three ways with the method shown. Scores forecast integrity and surfaces the gap between the rep-called commit and the evidence. Read-only."
     },
@@ -76,14 +76,14 @@
     {
       "name": "system-map",
       "source": "./plugins/system-map",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "architecture",
       "description": "Inventories what is actually wired into your CRM \u2014 integration users, connected apps, flows, triggers, scheduled jobs \u2014 and finds orphaned automation and multiple automations writing the same field. Read-only metadata."
     },
     {
       "name": "executive-reporting",
       "source": "./plugins/executive-reporting",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "reporting",
       "description": "Builds the executive GTM reporting pack leadership runs the business on \u2014 bookings, created pipeline, coverage, cohort conversion, retention and concentration, each against a goal and each openable to the rows underneath. Audits whether the CRM can support the reporting before it publishes a number. Read-only."
     }

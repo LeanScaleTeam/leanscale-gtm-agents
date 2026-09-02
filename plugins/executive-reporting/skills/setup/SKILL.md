@@ -102,8 +102,18 @@ FROM OpportunityStage WHERE IsActive = true ORDER BY SortOrder
 SELECT StageName, COUNT(Id) n, SUM(Amount) amt
 FROM Opportunity WHERE CreatedDate = LAST_N_MONTHS:13 GROUP BY StageName
 
--- amount-like fields, so you can propose the right one rather than assuming Amount
-SELECT Id, Amount, ARR__c, MRR__c, TotalOpportunityQuantity FROM Opportunity LIMIT 200
+-- which amount-like fields EXIST, so the next query can only ask for real ones.
+-- Do this first: Salesforce fails a whole query with INVALID_FIELD on one unknown
+-- field, so naming ARR__c or MRR__c blind kills the discovery step on any org that
+-- happens not to have them — which is most of them.
+SELECT QualifiedApiName, Label FROM FieldDefinition
+WHERE EntityDefinition.QualifiedApiName = 'Opportunity'
+  AND DataType IN ('Currency', 'Number')
+
+-- then sample the fill of the currency fields that came back, substituting the real
+-- API names into this query. Amount and TotalOpportunityQuantity are standard and
+-- always safe; everything else must come from the describe above.
+SELECT Id, Amount, TotalOpportunityQuantity FROM Opportunity LIMIT 200
 
 -- source / channel fill
 SELECT LeadSource, COUNT(Id) FROM Opportunity

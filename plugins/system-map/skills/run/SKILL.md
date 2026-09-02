@@ -204,10 +204,16 @@ SELECT NamespacePrefix, Status, AllowedLicenses, UsedLicenses, ExpirationDate FR
 ```sql
 SELECT DurableId, ApiName, Label, ProcessType, TriggerType,
        TriggerObjectOrEvent.QualifiedApiName, IsActive, VersionNumber,
-       LastModifiedDate, LastModifiedBy.Name, NamespacePrefix, IsOutOfDate, Description
+       LastModifiedDate, LastModifiedBy, NamespacePrefix, IsOutOfDate, Description
 FROM FlowDefinitionView
 ORDER BY Label
 ```
+
+On `FlowDefinitionView`, **`LastModifiedBy` is a plain text field holding the name — not
+a relationship**, so `LastModifiedBy.Name` is an `INVALID_FIELD` and takes the whole flow
+inventory down with it. (It *is* a relationship on `ConnectedApplication` and
+`ApexTrigger` above, which is where the habit comes from.) Select it bare and read the
+name straight out of it.
 ```sql
 SELECT DurableId, FlowDefinitionViewId, ApiName, Label, VersionNumber, Status, ProcessType
 FROM FlowVersionView
@@ -259,14 +265,31 @@ SELECT Id, ValidationName, EntityDefinition.QualifiedApiName, Active, ErrorMessa
        ErrorDisplayField, LastModifiedDate, LastModifiedBy.Name
 FROM ValidationRule
 ```
+`Metadata` obeys the same one-Id rule here as it does on `Flow` above — the Tooling API
+refuses it on any query that can return more than one record. So list first, then fetch
+each body individually:
+
 ```sql
--- Tooling -> sf_workflow_rules.json
-SELECT Id, Name, TableEnumOrId, LastModifiedDate, LastModifiedBy.Name, Metadata FROM WorkflowRule
+-- Tooling -> sf_workflow_rules.json   (step 1: the list, no Metadata)
+SELECT Id, Name, TableEnumOrId, LastModifiedDate, LastModifiedBy.Name FROM WorkflowRule
+```
+```sql
+-- step 2: one query per rule id returned above
+SELECT Id, Name, Metadata FROM WorkflowRule WHERE Id = '01Qxx0000000001'
 ```
 ```sql
 -- Tooling -> sf_workflow_field_updates.json   (this is where the field name lives)
-SELECT Id, Name, TableEnumOrId, LastModifiedDate, Metadata FROM WorkflowFieldUpdate
+SELECT Id, Name, TableEnumOrId, LastModifiedDate FROM WorkflowFieldUpdate
 ```
+```sql
+-- and again, one at a time, for the bodies
+SELECT Id, Name, Metadata FROM WorkflowFieldUpdate WHERE Id = '04Yxx0000000001'
+```
+
+Merge each body back onto its list row before writing the file. If there are hundreds of
+rules and that is too many round trips, fetch the field updates only — that is where the
+written field name lives, which is what the same-field-conflict finding needs — and record
+the workflow-rule bodies as unavailable rather than skipping the file silently.
 ```sql
 -- standard -> sf_assignment_rules.json
 SELECT Id, Name, SobjectType, Active, LastModifiedDate, LastModifiedBy.Name FROM AssignmentRule

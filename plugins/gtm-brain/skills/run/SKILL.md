@@ -89,10 +89,24 @@ ORDER BY SortOrder
 
 Fill rates and fiscal year need `crm.query`; skip both if it did not resolve:
 
+Build this one from the fields the describe above actually returned — never from a
+guess. `ACV__c` is a plausible-looking custom field that most orgs do not have, and
+**Salesforce fails the entire query with `INVALID_FIELD` rather than dropping the
+column**, so one invented name costs you every fill rate in the run.
+
+`Amount` is standard and always safe. For each *additional* currency field the describe
+reported, add one `COUNT(<real api name>)` column:
+
 ```sql
-SELECT COUNT(Id) total, COUNT(Amount) amount_filled, COUNT(ACV__c) acv_filled
+SELECT COUNT(Id) total,
+       COUNT(Amount) amount_filled
+       -- , COUNT(ARR__c) arr_filled          <- only if describe returned ARR__c
+       -- , COUNT(ACV__c) acv_filled          <- only if describe returned ACV__c
 FROM Opportunity
 ```
+
+Fill rates are what rank the bookings candidates in the drafts, so it is worth getting
+several — but a field that does not exist takes the whole query down with it.
 
 ```sql
 SELECT FiscalYearStartMonth FROM Organization
