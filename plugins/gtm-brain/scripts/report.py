@@ -23,8 +23,11 @@ from dataclasses import asdict  # noqa: E402
 from lib import (  # noqa: E402
     Score,
     load_manifest,
+    save_baseline,
     write_reports,
 )
+
+PLUGIN = "gtm-brain"
 
 
 def _apply_draft_score(doc: dict, run_dir: Path) -> None:
@@ -81,6 +84,12 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     manifest = load_manifest(out_dir) or load_manifest(findings_path.parent)
     paths = write_reports(doc, out_dir, manifest)
+
+    # Banked after the report exists, so a run that dies while rendering never
+    # leaves a snapshot behind that nobody was shown.
+    if not args.no_baseline:
+        snapshot = save_baseline(PLUGIN, json.loads(findings_path.read_text(encoding="utf-8")))
+        print(f"baseline written: {snapshot}")
 
     for p in paths:
         print(f"report written: {p}")

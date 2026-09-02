@@ -27,6 +27,7 @@ from lib import (  # noqa: E402
     FindingsDoc,
     RunManifest,
     Score,
+    apply_deltas,
     load_plugin_config,
 )
 
@@ -97,22 +98,39 @@ def analyze(raw: Path, run_dir: Path, config: Dict[str, Any]) -> FindingsDoc:
     man = RunManifest(PLUGIN, run_dir, window=window)
 
     describe = _read(raw, "describe.json")
+    # Count what the schema actually CONTAINS, not whether the file parsed. The
+    # realistic permission failure is an API returning HTTP 200 with a well-formed
+    # but empty schema because the connected identity cannot see the object — a
+    # truthy dict. Counting `1 if describe else 0` let that through the fail-loud
+    # gate, so the run exited 0 and published a confident CRITICAL about a schema
+    # it had never seen. SPEC §5 exists to stop exactly this.
+    _schema_elements = 0
+    if isinstance(describe, dict):
+        _schema_elements = (
+            len((describe.get("stages") or {}).get("values") or [])
+            + len(describe.get("currency_fields") or [])
+            + len(describe.get("stage_date_fields") or [])
+            + len(describe.get("source_channel_fields") or [])
+            + len(describe.get("segment_picklists") or {})
+        )
     man.record(
         "describe",
         tool="crm.describe",
-        count=1 if describe else 0,
+        count=_schema_elements,
         query="object describe: Opportunity (StageName picklist, currency fields, date fields)",
         required=True,
-        diagnosis="The describe call returned nothing. Either no crm.describe tool resolved, "
-                  "or the connected identity cannot see the Opportunity object. Re-run "
-                  "/gtm-brain:setup --check to see which.",
+        diagnosis="The describe call returned no schema — no stages, no currency fields, "
+                  "no stage-date fields. Either no crm.describe tool resolved, or the "
+                  "connected identity can reach the object but cannot see its fields, "
+                  "which is what a permissions gap looks like from here: a valid, empty "
+                  "answer. Re-run /gtm-brain:setup --check to see which.",
     )
 
     doc = FindingsDoc(plugin=PLUGIN, window=window,
                       org_name=config.get("org_name", ""),
                       generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
 
-    if not describe:
+    if not _schema_elements:
         man.finalize()  # raises — a readiness report with no schema is not a report
         return doc
 
@@ -329,7 +347,14 @@ def main(argv: Optional[List[str]] = None) -> int:
         config = load_plugin_config(PLUGIN, defaults={})
 
     doc = analyze(raw, run_dir, config)
-    path = doc.write(run_dir)
+    # SPEC §0 Rule 2: run one is the baseline, run two shows what moved. This plugin
+    # implemented neither half, so every run announced itself as the baseline forever
+    # and the readiness score could never be shown to improve — on the one plugin
+    # whose entire pitch is that you re-run it and watch the number move.
+    payload = apply_deltas(doc.to_dict(), PLUGIN)
+    run_dir.mkdir(parents=True, exist_ok=True)
+    path = run_dir / "findings.json"
+    path.write_text(json.dumps(payload, indent=2, default=str) + "\n", encoding="utf-8")
     counts = doc.counts_by_severity()
     print(f"findings written: {path}")
     print(f"  critical={counts['critical']} high={counts['high']} "

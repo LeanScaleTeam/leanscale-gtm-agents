@@ -196,8 +196,20 @@ def deep_merge(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]
 
 
 def read_json(path: Path) -> Any:
-    with Path(path).open("r", encoding="utf-8") as fh:
-        return json.load(fh)
+    p = Path(path)
+    try:
+        with p.open("r", encoding="utf-8") as fh:
+            return json.load(fh)
+    except json.JSONDecodeError as exc:
+        # A truncated fetch writes valid-looking JSON that stops mid-object. The bare
+        # decoder error named no file and ended twelve frames deep in the standard
+        # library, so the customer could not tell which extract to re-fetch.
+        raise ConfigError(
+            f"{p.name} is not valid JSON — {exc.msg} at line {exc.lineno}, column "
+            f"{exc.colno}.\nThat usually means the fetch was interrupted and the file "
+            f"was written half-complete.\nDelete {p} and re-run the run skill's fetch "
+            f"step for that source."
+        ) from exc
 
 
 def extract_list(payload: Any) -> List[Dict[str, Any]]:

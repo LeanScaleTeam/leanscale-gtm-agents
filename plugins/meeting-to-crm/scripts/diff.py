@@ -53,7 +53,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from lib import GTM_HOME, load_plugin_config  # noqa: E402
+from lib import GTM_HOME, ConfigError, load_plugin_config  # noqa: E402
 from lib.crmutil import email_domain, is_blank, normalize_company, parse_dt  # noqa: E402
 
 PLUGIN = "meeting-to-crm"
@@ -203,8 +203,19 @@ def read_json(path: Path, default: Any = None) -> Any:
     p = Path(path)
     if not p.exists():
         return default
-    with p.open("r", encoding="utf-8") as fh:
-        return json.load(fh)
+    try:
+        with p.open("r", encoding="utf-8") as fh:
+            return json.load(fh)
+    except json.JSONDecodeError as exc:
+        # A truncated fetch leaves valid-looking JSON that stops mid-object. Raising
+        # the bare decoder error named no file, so the customer saw a stack trace
+        # ending in the standard library with no idea which extract was bad.
+        raise ConfigError(
+            f"{p.name} is not valid JSON — {exc.msg} at line {exc.lineno}, column "
+            f"{exc.colno}.\nThis usually means the fetch was interrupted and the file "
+            f"was written half-complete.\nDelete {p} and re-run the run skill's fetch "
+            f"step for that source."
+        ) from exc
 
 
 def write_json(path: Path, payload: Any) -> Path:
