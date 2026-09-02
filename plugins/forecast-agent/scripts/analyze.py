@@ -243,7 +243,12 @@ class Ctx:
         fm = dict(DEFAULTS["field_map"])
         if self.crm == "hubspot":
             fm.update(HUBSPOT_FIELD_MAP)
-        fm.update({k: v for k, v in (cfg.get("field_map") or {}).items() if v})
+        # Only the customer's OWN field_map may override the CRM map. cfg["field_map"]
+        # is not that: load_plugin_config layers the config file over DEFAULTS, so it
+        # carries the complete Salesforce map whenever the customer never set one —
+        # and re-applying it here silently replaced every HubSpot property name,
+        # which is how a healthy HubSpot org reported zero pipeline and zero win rate.
+        fm.update({k: v for k, v in (cfg.get("_user_field_map") or {}).items() if v})
         # Two convenience keys that live at the top level of the config because customers
         # look for them there. They win over field_map when set.
         if cfg.get("type_field"):
@@ -1701,12 +1706,19 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     raw_dir, run_dir = Path(args.raw), Path(args.out)
     run_dir.mkdir(parents=True, exist_ok=True)
 
+    # `_user_field_map` records what the CUSTOMER actually set, as opposed to the
+    # defaults layered underneath it. Ctx needs the difference: the CRM field map
+    # must win over the Salesforce defaults, but lose to a deliberate override.
     if args.config:
+        user_cfg = {k: v for k, v
+                    in json.loads(Path(args.config).read_text(encoding="utf-8")).items()
+                    if not k.startswith("_")}
         cfg = dict(DEFAULTS)
-        cfg.update({k: v for k, v in json.loads(Path(args.config).read_text(encoding="utf-8")).items()
-                    if not k.startswith("_")})
+        cfg.update(user_cfg)
     else:
+        user_cfg = load_plugin_config(PLUGIN)
         cfg = load_plugin_config(PLUGIN, defaults=DEFAULTS)
+    cfg["_user_field_map"] = user_cfg.get("field_map") or {}
 
     if args.profile:
         profile = json.loads(Path(args.profile).read_text(encoding="utf-8"))

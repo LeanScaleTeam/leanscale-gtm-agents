@@ -774,7 +774,14 @@ def analyse(raw_dir: Path, config: Dict[str, Any], as_of: datetime, run_dir: Pat
         ]
 
         is_live = sid in live_ids
-        got_past = [j for j in journeys if j.max_pos is not None and position is not None and j.max_pos > position]
+        # Only journeys with real stage history can evidence a skip. A journey without
+        # it has `entered` = {current stage} alone, so every earlier stage trivially
+        # looks un-entered and the rate comes out at 100% for the whole funnel — a
+        # confident claim manufactured from the absence of data. Excluded from both
+        # sides of the ratio, so a fully degraded run reports None, not a catastrophe.
+        got_past = [j for j in journeys
+                    if not j.history_missing and j.max_pos is not None
+                    and position is not None and j.max_pos > position]
         skipped_by = [j for j in got_past if sid not in j.entered] if is_live else []
 
         dwells = [d for j in journeys for stage, d in j.dwells if stage == sid]

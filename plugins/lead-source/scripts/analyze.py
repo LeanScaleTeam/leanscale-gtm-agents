@@ -1329,6 +1329,32 @@ def build_findings(ctx: Ctx, sections: Dict[str, Any], window: Dict[str, str],
                  "Survival %": h["survival_pct"]} for h in surv["hops"]]
         final = surv["hops"][-1]
         rate = final["survival_pct"]
+    if surv.get("available") and surv["hops"] and not surv["hops"][-1]["eligible"]:
+        # Nothing converted into the target object with a source to carry, so there is
+        # no survival to measure. pct() correctly returns 0.0 on a zero denominator, but
+        # rendering that as "Only 0.0% survive" and scoring it critical states a
+        # catastrophe the data never showed — an unmeasured hop is not a failed one.
+        final = surv["hops"][-1]
+        doc.add(Finding(
+            id="source-survival-unmeasurable",
+            severity="low",
+            title=f"Source survival to {final['hop'].split('→')[-1].strip()} cannot be measured yet",
+            what=(f"No converted {ctx.plural('primary').lower()} carrying a real source produced "
+                  f"{article(ctx.label(final['role']))} {ctx.label(final['role']).lower()} in this "
+                  f"window, so the survival denominator is zero. "
+                  f"{final['no_target_record']:,} converted without producing a target record."),
+            why_it_matters=("This is an absence of evidence, not evidence of a problem. Reported as a "
+                            "0% survival rate it would look like the worst finding in the audit while "
+                            "actually meaning the window was too short or conversion is not running."),
+            recommended_fix=("Widen the window until converted records with a source appear, or confirm "
+                             "that conversion genuinely produces no downstream record — which is its own "
+                             "finding, in a different report."),
+            evidence={"count": 0, "rows": [{"hop": final["hop"], "eligible": 0,
+                                            "converted_without_target": final["no_target_record"]}]},
+            effort="quick",
+            owner_hint="RevOps",
+        ))
+    elif surv.get("available") and surv["hops"]:
         doc.add(Finding(
             id="source-survival-conversion",
             severity=sev_below(rate, thr["survival_critical_pct"], thr["survival_high_pct"], 95.0),
@@ -1728,8 +1754,11 @@ def run(args: argparse.Namespace) -> int:
     coverage = (100.0 - head["unattributed_pct"]) if head else None
 
     surv = sections["survival"]
+    # A hop with a zero denominator is unmeasured, not 0% — scoring it as 0 would drag
+    # the index down on the strength of data that was never collected.
     survival_component = (surv["hops"][-1]["survival_pct"]
-                          if surv.get("available") and surv.get("hops") else None)
+                          if surv.get("available") and surv.get("hops")
+                          and surv["hops"][-1]["eligible"] else None)
 
     taxonomy_component = (100.0 - pct(polluted_records, attributed_records)
                           if attributed_records else None)
@@ -1784,6 +1813,14 @@ def run(args: argparse.Namespace) -> int:
             value=final["survival_pct"], unit="percent", direction_good="up",
             context=f"{final['survived']:,} of {final['eligible']:,} converted records keep their "
                     f"source. {final['no_target_record']:,} converted without a deal and are excluded."))
+    elif surv.get("available") and surv.get("hops"):
+        final = surv["hops"][-1]
+        doc.add_score(Score(
+            key="source_survival_rate", label=f"Source Survival · {final['hop']}",
+            value="not measurable", unit="text", direction_good="up",
+            context=f"No converted record carrying a source reached the "
+                    f"{ctx.label(final['role']).lower()} in this window, so there is nothing to "
+                    f"measure. Widen the window rather than reading this as a zero."))
     doc.add_score(Score(
         key="distinct_source_values", label="Distinct Source Values",
         value=sections["taxonomy"]["distinct_values"], unit="count", direction_good="down",

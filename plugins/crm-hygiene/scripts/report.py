@@ -153,6 +153,21 @@ def coverage_note(doc: Dict[str, Any], manifest: Optional[Dict[str, Any]]) -> No
             doc.setdefault("unavailable", []).append(
                 "Complete counts for " + ", ".join(truncated) +
                 " — the fetch hit a page limit, so those numbers are a floor")
+        # analyze.py records a truncated fetch as a manifest WARNING, not as a source
+        # note, and the note-only path above never saw it. A truncated fetch that never
+        # reaches the page turns "1,204 accounts share 511 domains" from a floor into a
+        # stated total — the exact confident-wrong number the fail-loud contract exists
+        # to prevent. Fold the warnings in too, skipping any already covered above.
+        for warning in manifest.get("warnings", []):
+            text = str(warning)
+            if "truncated" not in text.lower():
+                continue
+            source = text.split(":", 1)[0].strip()
+            if source in truncated:
+                continue
+            doc.setdefault("unavailable", []).append(
+                f"Complete counts for {source} — the fetch was truncated, so those "
+                "numbers are a floor, not a total")
 
 
 def main(argv: Optional[List[str]] = None) -> int:
