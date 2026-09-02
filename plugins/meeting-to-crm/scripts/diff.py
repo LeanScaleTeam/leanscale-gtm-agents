@@ -1249,9 +1249,28 @@ def cmd_approve(args: argparse.Namespace) -> int:
         )
 
     approver = (args.approved_by or "").strip()
-    if approval_cfg.get("require_named_approver", True) and len(approver) < 2:
-        raise GuardError("Refusing: --approved-by must name the human who reviewed this batch.")
+    require_named = approval_cfg.get("require_named_approver", True)
     allowed = [str(a).strip().lower() for a in approval_cfg.get("approvers") or []]
+
+    if require_named:
+        if len(approver) < 2:
+            raise GuardError(
+                "Refusing: --approved-by must name the human who reviewed this batch."
+            )
+        # The identity check IS the guard. A length test alone let anything through —
+        # including an agent approving its own proposals as "Claude" — while the
+        # allow-list defaulted to empty and therefore never ran. This is the control
+        # a security review is actually asking about, so an empty roster now refuses
+        # the write rather than waving it through.
+        if not allowed:
+            raise GuardError(
+                "Refusing: no approvers are configured, so there is nothing to check "
+                f"'{approver}' against — and an approval nobody can verify is not an "
+                "approval.\nAdd the humans permitted to approve writes to "
+                "config.approval.approvers in ~/.leanscale-gtm/meeting-to-crm.json, "
+                "then re-run.\nTo run without an identity check — never against "
+                "production — set config.approval.require_named_approver to false."
+            )
     if allowed and approver.lower() not in allowed:
         raise GuardError(
             f"Refusing: '{approver}' is not in config.approval.approvers ({', '.join(allowed)})."

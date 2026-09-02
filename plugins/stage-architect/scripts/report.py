@@ -24,6 +24,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import sys
 from pathlib import Path
@@ -67,9 +68,15 @@ def _table(rows: List[Dict[str, Any]], limit: int = 60) -> str:
 def _section(kicker: str, title: str, lede: str, body: str) -> str:
     if not body:
         return ""
+    # Escape here rather than at each call site: several ledes interpolate customer CRM
+    # values (a pipeline name, for one), and a stage or pipeline named with markup was
+    # landing in the page verbatim — proven to inject a live <script> tag into a report
+    # that gets handed to executives. `body` is already-rendered HTML from _table(),
+    # which escapes its own cells, so it is the one argument that must pass through.
     return (
-        f'<section><div class="sec-head"><div class="kick">{kicker}</div><h2>{title}</h2></div>'
-        f'<p class="sub">{lede}</p>{body}</section>'
+        f'<section><div class="sec-head"><div class="kick">{html.escape(str(kicker))}</div>'
+        f'<h2>{html.escape(str(title))}</h2></div>'
+        f'<p class="sub">{html.escape(str(lede))}</p>{body}</section>'
     )
 
 
