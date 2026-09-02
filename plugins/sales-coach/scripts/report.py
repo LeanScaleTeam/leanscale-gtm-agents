@@ -346,9 +346,15 @@ def calibration_html(doc: Dict[str, Any]) -> str:
         f"{c.get('coverage_pct')}% coverage</li>" for c in calib.get("exemplar_calls") or [])
     gap = calib.get("gap")
     banner_class = "note" if (gap or 0) >= 5 else "note warn"
+    # analyze() leaves gap as None whenever either side has no scorable coverage —
+    # every call nominated as an exemplar, a narrow --rep filter, or an exemplar with
+    # no scored dimensions this run. Formatting None raised TypeError and killed the
+    # whole report, so a legitimate edge case produced no document at all.
+    gap_text = f"gap {gap:+.0f} points" if isinstance(gap, (int, float)) \
+        else "gap not computable this run"
     body = (
         f'<div class="{banner_class}"><b>Exemplars {calib.get("exemplar_coverage_pct")}% · '
-        f'everyone else {calib.get("rest_coverage_pct")}% · gap {gap:+.0f} points.</b> '
+        f'everyone else {calib.get("rest_coverage_pct")}% · {gap_text}.</b> '
         f'{_e(calib.get("verdict", ""))}</div>'
         f"<ul style='margin:14px 0 14px 18px'>{exemplars}</ul>"
         + _table(["Dimension", "Your exemplars", "Everyone else"], rows)
@@ -493,9 +499,12 @@ def extra_markdown(doc: Dict[str, Any]) -> List[str]:
 
     calib = sections.get("calibration") or {}
     if calib.get("available"):
+        _gap = calib.get("gap")
+        _gap_text = f"gap {_gap:+.0f} points" if isinstance(_gap, (int, float)) \
+            else "gap not computable this run"
         lines += ["## Calibration", "",
                   f"Exemplars {calib.get('exemplar_coverage_pct')}% · everyone else "
-                  f"{calib.get('rest_coverage_pct')}% · gap {calib.get('gap'):+.0f} points.", "",
+                  f"{calib.get('rest_coverage_pct')}% · {_gap_text}.", "",
                   calib.get("verdict", ""), ""]
 
     linkage = sections.get("deal_linkage") or {}

@@ -32,7 +32,7 @@ from typing import Any, Dict, List, Optional, Sequence
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from lib import load_manifest, write_reports  # noqa: E402
+from lib import load_manifest, save_baseline, write_reports  # noqa: E402
 
 PLUGIN = "executive-reporting"
 
@@ -286,6 +286,8 @@ def _md_table(rows: Sequence[Dict[str, Any]], limit: int = 40) -> List[str]:
 def main(argv: Optional[Sequence[str]] = None) -> int:
     ap = argparse.ArgumentParser(description="Render executive-reporting findings into report.md/.html")
     ap.add_argument("--run", required=True, help="run directory containing findings.json")
+    ap.add_argument("--no-baseline", action="store_true",
+                    help="render only; do not save a baseline snapshot")
     args = ap.parse_args(argv)
 
     run_dir = Path(args.run)
@@ -309,6 +311,16 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         idx = md.rfind(marker)
         md = (md[:idx] + extra_markdown(doc) + md[idx:]) if idx != -1 else md + extra_markdown(doc)
         paths["markdown"].write_text(md, encoding="utf-8")
+
+    # Bank the snapshot AFTER the report exists, so a run that dies during rendering
+    # never banks a baseline it did not show anyone. analyze.py already calls
+    # apply_deltas() to read a previous snapshot — but nothing ever wrote one, so
+    # every run reported itself as the baseline forever and the pack's "run it again
+    # next week to see the movement" promise could never come true. This is SPEC §0
+    # Rule 2, and it is the discipline the whole suite's proof story rests on.
+    if not args.no_baseline:
+        snapshot = save_baseline(PLUGIN, json.loads(findings_path.read_text(encoding="utf-8")))
+        print(f"baseline  : {snapshot}")
 
     if doc.get("is_baseline_run"):
         print("Baseline run — this report is the starting point; the comparison begins next run.")

@@ -1,6 +1,6 @@
 {
   "name": "sales-coach",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scores sales calls against your own qualification framework and hands the manager one team pattern report: the weakest dimension, the calls that prove it, with verbatim quotes and timestamps.",
   "author": {
     "name": "LeanScale",

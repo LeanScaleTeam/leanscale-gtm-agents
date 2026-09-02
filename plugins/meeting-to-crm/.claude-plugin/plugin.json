@@ -1,6 +1,6 @@
 {
   "name": "meeting-to-crm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reads your call transcripts and proposes the CRM updates a rep would have typed \u2014 as a reviewable diff, dry-run by default, allow-listed fields only.",
   "author": {
     "name": "LeanScale",

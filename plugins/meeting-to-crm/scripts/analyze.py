@@ -496,7 +496,14 @@ def main(argv: Optional[List[str]] = None) -> int:
         "end": args.window_end or (dates[-1] if dates else ""),
     }
 
-    manifest = build_manifest(out, raw, window)
+    # build_manifest reads every raw extract, so a truncated or hand-edited file
+    # surfaces here. It sat outside any handler, so a malformed extract ended the
+    # run in a bare JSONDecodeError from inside the standard library, naming no file.
+    try:
+        manifest = build_manifest(out, raw, window)
+    except ConfigError as exc:
+        print(f"\n{exc}\n", file=sys.stderr)
+        return 1                      # matches this plugin's ConfigError convention
     if profile_warning:
         manifest.warn(profile_warning)
     mode, mode_warnings = diffmod.resolve_mode(False, config)

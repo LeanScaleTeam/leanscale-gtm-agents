@@ -13,7 +13,7 @@
     {
       "name": "gtm-brain",
       "source": "./plugins/gtm-brain",
-      "version": "2.2.1",
+      "version": "2.2.2",
       "category": "foundations",
       "description": "Builds your GTM Brain \u2014 metric definitions plus commercial context (ICP, selling motion, style guide) as a governed git repo with one named owner per file, seeded from your actual CRM. Formerly semantic-layer. Read-only against the CRM."
     },
@@ -41,7 +41,7 @@
     {
       "name": "sales-coach",
       "source": "./plugins/sales-coach",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "category": "enablement",
       "description": "Scores calls against your qualification framework \u2014 MEDDPICC, BANT, SPICED or your own \u2014 and rolls them into one team pattern report for the manager, with verbatim evidence and timestamps. Read-only."
     },
@@ -55,7 +55,7 @@
     {
       "name": "meeting-to-crm",
       "source": "./plugins/meeting-to-crm",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "productivity",
       "description": "Turns each call into proposed CRM updates \u2014 next step, qualification fields, new stakeholders \u2014 as an approvable diff. Dry-run by default, strict field allow-list, every applied write logged."
     },
@@ -69,7 +69,7 @@
     {
       "name": "lead-source",
       "source": "./plugins/lead-source",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "attribution",
       "description": "Measures whether your lead source data can be trusted: null and Other rates, near-duplicate values, and whether source survives the lead-to-opportunity conversion. Source integrity, not multi-touch attribution. Read-only."
     },
@@ -83,7 +83,7 @@
     {
       "name": "executive-reporting",
       "source": "./plugins/executive-reporting",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "category": "reporting",
       "description": "Builds the executive GTM reporting pack leadership runs the business on \u2014 bookings, created pipeline, coverage, cohort conversion, retention and concentration, each against a goal and each openable to the rows underneath. Audits whether the CRM can support the reporting before it publishes a number. Read-only."
     }
