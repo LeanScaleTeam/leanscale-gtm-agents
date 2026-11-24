@@ -139,6 +139,37 @@ ORDER BY CloseDate DESC
 LIMIT 5000
 ```
 
+**If this returns zero rows, find out why before writing the file.** Zero means one of two
+very different things: the user cannot see the deals, or the org has none (a partner, creator
+or community program run on contacts and campaigns). Do not guess. Run:
+
+```sql
+SELECT COUNT() FROM Opportunity
+SELECT DefaultOpportunityAccess FROM Organization
+SELECT COUNT() FROM PermissionSetAssignment
+WHERE AssigneeId = '<running user Id>' AND PermissionSet.PermissionsViewAllData = true
+SELECT COUNT() FROM ObjectPermissions
+WHERE SobjectType = 'Opportunity' AND PermissionsViewAllRecords = true
+  AND ParentId IN (SELECT PermissionSetId FROM PermissionSetAssignment
+                   WHERE AssigneeId = '<running user Id>')
+```
+
+- `COUNT()` above 0: deals exist but the window filtered them out. Fix the query; this is
+  not an empty org.
+- `COUNT()` is 0 **and** the count is trustworthy — the org-wide default is `Read` or `Edit`,
+  or the user has View All Data, or View All on Opportunity: the org has no deals. Write the
+  file with `"records": []`, `"verified_empty": true` and `"verified_by"` naming the query
+  and result, e.g. `"SELECT COUNT() FROM Opportunity = 0; DefaultOpportunityAccess = Edit"`.
+- `COUNT()` is 0 but none of those hold: the user might simply not see the deals. Ask:
+  *"The connected user sees no opportunities, and with a private sharing model I can't tell
+  whether that's because there are none. Does this org use opportunities at all?"* Only if
+  they say it does not, mark it verified with `"verified_by": "the customer confirmed the
+  org does not use opportunities"`. If it does, it is a permission problem: say so and stop.
+
+A verified-empty file lets the run finish on accounts and contacts. The report lists the deal
+checks under *not available*, never as passed. An empty file without `verified_by` still
+aborts the run, on purpose.
+
 ### 2.4 `raw/users.json` — required
 
 ```sql
@@ -361,6 +392,12 @@ contact roles live. A deal's company is an association, not a property, so a dea
 If `hs_is_closed` is not available in the portal, the analyzer falls back to the stage label,
 which makes `raw/governance.json` (§3.6) load-bearing rather than optional. Fetch it.
 
+**If there are no deals:** a missing `crm.objects.deals.read` scope fails with a 403, not an
+empty list, and a private app token sees every deal. So a 200 with zero results is proof
+the portal has none. Write the file with `"records": []`, `"verified_empty": true` and
+`"verified_by": "GET /crm/v3/objects/deals returned 200 with 0 results"`, as in §2.3. The run
+then finishes on companies and contacts and lists the deal checks as not available.
+
 ### 3.4 `raw/users.json` — owners, required
 
 ```
@@ -474,6 +511,8 @@ clean**. A reader must never mistake a missing connector for a passing check.
 - `crm` must be the same in every file. One run reads one CRM.
 - Set `truncated: true` the moment you hit a limit and stop short. The report then labels
   those counts as a floor instead of a total.
+- `verified_empty` and `verified_by` belong on `raw/opportunities.json` only, and only when
+  §2.3 or §3.3 proved the org has no deals. The analyzer ignores the flag without the proof.
 - **Record sources go in verbatim** — accounts, contacts, opportunities, users, leads,
   contact roles, field metadata. **Derived sources are normalized** to the shapes above —
   `field_fill`, `picklist_metadata`, `picklist_usage`, `governance`. That split is

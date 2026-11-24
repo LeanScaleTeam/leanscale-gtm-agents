@@ -20,7 +20,7 @@
     {
       "name": "crm-hygiene",
       "source": "./plugins/crm-hygiene",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "category": "data-quality",
       "description": "Audits the integrity of your CRM: duplicate accounts and contacts, dead fields, records owned by people who left, stale pipeline, orphaned contacts, and picklist rot. Produces a Hygiene Index and a fix list. Read-only."
     },

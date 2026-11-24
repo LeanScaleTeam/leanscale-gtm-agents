@@ -105,7 +105,16 @@ SOURCES: Dict[str, Dict[str, Any]] = {
         "required": True,
         "diagnosis": "Opportunity/Deals returned nothing. In Salesforce this is usually sharing "
                      "rules on a private OWD; in HubSpot it is usually a scope missing from the "
-                     "private app token (crm.objects.deals.read).",
+                     "private app token (crm.objects.deals.read). If the org genuinely has no "
+                     "opportunities (a partner or creator program run on contacts and campaigns), "
+                     "the skill proves it at fetch time and marks the file verified_empty.",
+        # Some orgs never use deals. An empty fetch is accepted only when the fetch step
+        # proved the object is readable and the org-wide count is zero, and wrote down how
+        # (`verified_by`). Without that evidence it still aborts: an empty pull from a
+        # broken connector must never read as a clean bill of health.
+        "may_be_verified_empty": True,
+        "empty_label": "Deal checks (duplicate open opportunities, past close dates, stage and "
+                       "contact-role hygiene)",
     },
     "users": {
         "required": True,
@@ -502,6 +511,19 @@ def load_raw(raw_dir: Path) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Any]]:
     return envelopes, coverage
 
 
+def verified_empty(name: str, env: Optional[Dict[str, Any]]) -> bool:
+    """True when a source came back empty AND the fetch proved the org really has none.
+
+    Needs all three: the source allows it, the file says `verified_empty: true`, and it
+    says how in `verified_by` (e.g. "SELECT COUNT() FROM Opportunity = 0 as a user with
+    View All Data"). A bare flag with no evidence is ignored on purpose.
+    """
+    spec = SOURCES.get(name) or {}
+    if not env or not spec.get("may_be_verified_empty") or env.get("records"):
+        return False
+    return env.get("verified_empty") is True and bool(str(env.get("verified_by") or "").strip())
+
+
 def build_manifest(raw: Dict[str, Dict[str, Any]], coverage: Dict[str, Any],
                    run_dir: Path, window: Dict[str, str]) -> RunManifest:
     man = RunManifest(PLUGIN, run_dir, window=window)
@@ -512,15 +534,19 @@ def build_manifest(raw: Dict[str, Dict[str, Any]], coverage: Dict[str, Any],
                 man.record(name, tool="(not fetched)", count=0, required=True,
                            diagnosis=f"raw/{name}.json was never written. {spec['diagnosis']}")
             continue
+        empty_ok = verified_empty(name, env)
         man.record(
             name,
             tool=str(env.get("tool") or "unknown"),
             count=len(env.get("records") or []),
             query=str(env.get("query") or ""),
-            required=bool(spec["required"]),
+            required=bool(spec["required"]) and not empty_ok,
             note=str(env.get("note") or ""),
             diagnosis=str(spec.get("diagnosis", "")),
         )
+        if empty_ok:
+            man.warn(f"{name}: the org has none ({env['verified_by']}). The checks that need "
+                     f"them were skipped, not passed.")
         if env.get("truncated"):
             man.warn(f"{name}: the fetch was truncated — counts are a floor, not a total.")
     for extra in sorted(set(raw) - set(SOURCES)):
@@ -2313,6 +2339,10 @@ def main(argv: Optional[List[str]] = None) -> int:
     for entry in (coverage.get("unavailable") or []):
         ctx.unavailable.append(f"{entry.get('check')} — {entry.get('reason')}")
     for name, spec in SOURCES.items():
+        if verified_empty(name, raw.get(name)):
+            ctx.unavailable.append(f"{spec['empty_label']} — the org has no {name} "
+                                   f"({raw[name]['verified_by']}), so these checks did not run")
+            continue
         if spec["required"] or raw.get(name):
             continue
         if spec.get("degrade"):
